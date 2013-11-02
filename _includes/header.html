@@ -1,0 +1,12 @@
+<header class="l-header" role="banner">
+	<h1>{{ site.title }}</h1>
+	<nav class="nav header__nav" role="navigation">
+		{% for item in site.topmenu %}
+			{% if item.url == page.path %}
+				<span class="item item--current">{{ item.name }}</span>
+			{% else %}
+				<a href="{{ item.url }}" class="item">{{ item.name }}</a>	
+			{% endif%}
+		{% endfor%}
+	</nav>
+</header>

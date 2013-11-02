@@ -1,0 +1,11 @@
+.post__text {
+	@include margin( bottom );
+	}
+
+.post__tags {
+	@include padding ( top );
+	@include border ( top );
+	.item {
+		display: inline-block;
+		}
+}	

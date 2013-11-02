@@ -1,0 +1,48 @@
+/* Fonts 
+-------------------------------- */
+$base-font-color: #000;
+$base-font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+$base-font-size: 16px;
+$base-line-height: 1.4;
+
+$headers-font-family: Georgia, serif;
+
+/* Colors 
+-------------------------------- */
+
+$base-link-color: crimson;
+
+$-base-border-color: #DDD;
+
+/* Margins, paddings
+-------------------------------- */
+
+$base-margin: $base-font-size * 2;
+
+@mixin margin ( $side ){
+	margin-#{$side}: $base-margin;
+	}
+
+@mixin padding ( $side ){
+	padding-#{$side}: $base-margin;
+	}	
+
+/* Borders 
+-------------------------------- */
+
+@mixin border ( $side ){
+	border-#{$side}: 1px solid $-base-border-color;
+	}
+
+/* Common
+-------------------------------- */
+%clear {
+	content: "";
+	display: table;
+	width: 100%;
+	}
+%headers-style {
+	margin-bottom: .4em;
+	line-height: 1;
+	font-family: $headers-font-family;
+	}

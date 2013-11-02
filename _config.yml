@@ -1,0 +1,26 @@
+# standard jekyll configuration
+
+permalink: /:title
+pygments: true
+exclude: ['Rakefile', 'config.rb', 'README.md','gems']
+markdown: rdiscount
+
+# configuration required for some pages
+
+domain: yoksel.github.io
+title: Название сайта
+author: yoksel
+email: yoksel@yandex.ru
+
+github:
+    username: github/yoksel
+
+# disqus:
+#     id: 
+
+topmenu: 
+- name: 'Главная'
+  url: '/'
+- name: 'О сайте'
+  url: '/about/'  
+

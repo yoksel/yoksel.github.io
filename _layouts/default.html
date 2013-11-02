@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    {% endif %}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" media="screen" href="/src/css/style.prefixed.css" type="text/css" />
+	</head>
+	<body>
+		<div class="l-page">
+			{% include header.html %}
+			<div class="l-content">
+				<main class="l-main" role="main">
+					<article class="post">
+						{% if page.title %}
+						<h2 class="post__title">{{ page.title }}</h2>
+						{% endif %}
+						<div class="post__text">
+							{{ content }}
+						</div>
+					</article>
+				</main>
+				<aside class="l-aside" role="complementary">
+					{% include sidebar.html %}
+				</aside>
+			</div>	
+			{% include footer.html %}
+		</div>
+	</body>
+</html>

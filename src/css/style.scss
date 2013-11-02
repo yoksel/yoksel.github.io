@@ -1,0 +1,85 @@
+@import '_reset.scss';
+
+/* Mixins
+-------------------------------- */
+@import '_mixins.scss';
+
+BODY {
+	padding: 20px;
+	background: #EEE;
+	font: #{$base-font-size}/#{$base-line-height} #{$base-font-family};
+	color: $base-font-color;
+	}
+A {
+	color: $base-link-color;
+	&:hover {
+		text-decoration: none;
+		color: lighten($base-link-color, 20);
+		}
+	}
+/* Headers
+-------------------------------- */	
+H1 {
+	font-size: $base-font-size * 3.5;
+	@extend %headers-style;
+	}
+H2 {
+	font-size: $base-font-size * 2.5;
+	@extend %headers-style;
+	}	
+H3 {
+	font-size: $base-font-size * 2.3;
+	@extend %headers-style;
+	}	
+H4 {
+	font-size: $base-font-size * 2;
+	@extend %headers-style;
+	}	
+H5 {
+	font-size: $base-font-size * 1.7;
+	@extend %headers-style;
+	}		
+H6 {
+	font-size: $base-font-size * 1.5;
+	@extend %headers-style;
+	}		
+	
+/* Layout
+-------------------------------- */	
+.l-page {
+	min-width: 280px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: $base-margin;
+	background: #FFF;
+    box-shadow: 0 0 10px rgba(100,100,100,.5);
+	}	
+	.l-header,
+	.l-content {
+		@include margin ( bottom );
+		@include padding ( bottom );
+		@include border ( bottom );
+		&:after {
+			@extend %clear;
+			}
+		}	
+	.l-main,	
+	.l-aside {
+		float: left;
+		}
+		.l-main {
+			width: 100%;
+			}
+		.l-aside {
+			width: 12em;
+			margin-left: -15em;
+			}
+/* Header
+-------------------------------- */
+@import '_header.scss';
+/* Post
+-------------------------------- */
+@import '_post.scss';			
+/* Aside
+-------------------------------- */
+@import '_aside.scss';	
