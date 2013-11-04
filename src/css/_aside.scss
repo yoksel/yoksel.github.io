@@ -1,3 +1,12 @@
+.aside__widget {
+	@include margin ( bottom );
+}
+.widget__list .item {
+	margin-bottom: 7px;
+	}
 .widget__list .item--current {
 	font-weight: bold;
+	@media (max-width: $break-point ) {
+		display: none;
+		}
 	}

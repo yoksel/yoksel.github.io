@@ -1,0 +1,23 @@
+---
+layout: shell
+layout_type: onecolumn
+---
+<main class="l-main" role="main">
+	<article class="post">
+		{% if page.type == 'page' and page.layout_type == 'onecolumn' %}
+		<div class="post__link-back"><a href="/pages/">&larr; Назад к страницам</a></div>
+		{% endif %}
+
+		{% if page.title %}
+		<h2 class="post__title">{{ page.title }}</h2>
+		{% endif %}
+		<div class="post__text">
+			{{ content }}
+		</div>
+		{% include post-links.html %}
+	
+		{% if page.type == 'page' and page.layout_type == 'onecolumn' %}
+		<div class="post__link-back"><a href="/pages/">&larr; Назад к страницам</a></div>
+		{% endif %}
+	</article>
+</main>

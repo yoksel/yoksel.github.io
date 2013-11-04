@@ -1,7 +1,16 @@
 ---
-layout: default
+layout: mainpage
+layout_type: mainpage
 <!-- title: Главная страница -->
-description: Place for start
+description: Статьи про Css
 ---
-
-Какой-то текст
+{% for post in site.posts %}
+<article class="post">
+    {% if post.title %}
+    <h4 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+    {% endif %}
+    <div class="post__excerpt">
+      {{ post.excerpt }}
+    </div>
+  </article>
+{% endfor %} 

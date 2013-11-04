@@ -5,10 +5,13 @@
 @import '_mixins.scss';
 
 BODY {
-	padding: 20px;
+	padding: $base-margin;
 	background: #EEE;
 	font: #{$base-font-size}/#{$base-line-height} #{$base-font-family};
 	color: $base-font-color;
+	@media (max-width: $break-point ) {
+		padding: 30px 0 0;
+		}
 	}
 A {
 	color: $base-link-color;
@@ -43,25 +46,62 @@ H6 {
 	font-size: $base-font-size * 1.5;
 	@extend %headers-style;
 	}		
-	
+/* Codes
+-------------------------------- */		
+PRE,
+CODE {
+	border-radius: 4px;	
+	}
+CODE {
+	display: inline-block;
+	padding: 0 3px;
+	background: palegoldenrod;
+	text-shadow: 1px 1px white;
+	font-family: Consolas, Monaco, Lucida Console, monospace;
+	font-size: 12px;
+	line-height: 1.6;
+	color: darkred;
+	}
+	PRE CODE {
+		display: block;
+		background: transparent;
+		color: inherit;
+		}	
+/* Common
+-------------------------------- */	
+.clear {
+	&:after {
+		@extend %clear;
+		}
+}
+.logo {
+	font-family: 'Lobster', Georgia, cursive;
+	}
+.i-ljuser-userhead {
+	vertical-align: -2px;
+	margin-right: 3px;
+	}	
 /* Layout
 -------------------------------- */	
 .l-page {
-	min-width: 280px;
-	max-width: 1200px;
-	margin: 0 auto;
+	position: relative;
+	min-width: 18em;
+	max-width: 75em;
+	margin: $half-logo-size auto 0;
 	padding: $base-margin;
 	background: #FFF;
-    box-shadow: 0 0 10px rgba(100,100,100,.5);
+    box-shadow: 0 5px 10px $base-shadow-color;
 	}	
 	.l-header,
 	.l-content {
 		@include margin ( bottom );
-		@include padding ( bottom );
-		@include border ( bottom );
 		&:after {
 			@extend %clear;
 			}
+		}	
+	.l-content {
+		@include padding ( bottom );
+		@include border ( bottom );		
 		}	
 	.l-main,	
 	.l-aside {
@@ -70,16 +110,57 @@ H6 {
 		.l-main {
 			width: 100%;
 			}
+			.post {
+				margin-right: 19em;	
+				@media (max-width: $break-point ) {
+					margin-right: 0;	
+					}
+				}
+				.p-layout-onecolumn .post {
+					margin-right: 0;
+					}
+				.p-layout-mainpage .post {
+					margin-right: 0;					
+					@media (min-width: $break-point ) {
+						float: left;
+						@include margin ( bottom );	
+						@include padding ( bottom );
+						width: 48.5%;
+						@include border ( bottom );
+						&:nth-child(2n+1){
+							clear: left;
+							}
+						&:nth-child(2n){
+							float: right;
+							clear: right;
+							}
+					}
+
+				}	
+
 		.l-aside {
-			width: 12em;
-			margin-left: -15em;
+			width: 17em;
+			margin-left: -17em;
+			@media (max-width: $break-point ) {
+				width: 100%;
+				margin-left: 0;
+				@include padding ( top );
+				@include border ( top );
+				}
 			}
+		
 /* Header
 -------------------------------- */
 @import '_header.scss';
+/* Footer
+-------------------------------- */
+@import '_footer.scss';
 /* Post
 -------------------------------- */
 @import '_post.scss';			
 /* Aside
 -------------------------------- */
 @import '_aside.scss';	
+/* Animations
+-------------------------------- */
+@import '_animations.scss';

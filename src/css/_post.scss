@@ -1,7 +1,83 @@
+.post {
+	P, 
+	PRE,
+	TABLE,
+	.post__links,
+	BLOCKQUOTE {
+		@include mid-margin( bottom );
+		}
+	.warning--before-read {
+		@include mid-margin( bottom );
+		padding: 1em;
+        border-radius: 10px;
+		background:  lightgoldenrodyellow
+		}
+		.warning--before-read P:last-child {
+			margin-bottom: 0;
+			}	
+	}
+	.post__excerpt P:last-of-type {
+		display: inline-block;
+		margin-bottom: 0;
+		}
+.post__date {
+	@include margin( bottom );
+	padding-bottom: 5px;
+	@include border ( bottom );
+	font-style: italic;
+	font-size: .9em;
+	color: #AAA;
+	}		
 .post__text {
 	@include margin( bottom );
-	}
-
+	IMG {
+		max-width: 100%;
+		height: auto;
+		&:not([class='i-ljuser-userhead']){
+			border: 1px solid $base-border-color;
+			}
+		}
+	TABLE {
+		width: 100%;
+		}
+		TH, 
+		TD {
+			@include border (bottom);
+			padding: 7px;
+			text-align: left;
+			}			
+		TH {
+			white-space: nowrap;
+			font-weight: bold;
+			font-size: 1.2em;
+			}	
+			THEAD TH {
+				@include border (top);
+				background: #EEE;
+				}
+	.jsbin {
+		width: 100%;
+		@include margin( bottom );
+		border: 1px solid $base-border-color;
+		}
+	.column {
+		width: 48%; 
+		}
+		.column-left {
+			float: left;
+			}
+		.column-right {
+			float: right;
+			}			
+	}	
+.post__links DT {
+	margin-bottom: 5px;
+	font-weight: bold;
+	}		
+.post__links DD:before {
+	content: "—";
+	margin-right: 5px;
+	}	
 .post__tags {
 	@include padding ( top );
 	@include border ( top );
@@ -9,3 +85,24 @@
 		display: inline-block;
 		}
 }	
+
+.post__link-back {
+	text-align: right;
+	}
+
+.post__nav {
+	@include padding ( top );
+	@include border ( top );
+		@media (max-width: $break-point ) {
+			@include padding ( bottom );	
+			}
+	.item--prev {
+		float: left;
+		}
+	.item--next {
+		float: right;
+		}
+	&:after {
+		@extend %clear;
+		}	
+	}	

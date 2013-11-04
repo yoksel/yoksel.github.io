@@ -1,15 +1,54 @@
+{% if page.type == 'page' %}
+
+	{% if site.pages %}
+	<div class="widget aside__widget">
+		<h5>Страницы</h5>
+		{% include pages-list.html %}
+	</div>
+	{% endif %}
+
+{% endif %}
+
 <div class="widget aside__widget">
-	<ul class="list widget__list">
-	  {% for post in site.posts %}
-	  	{% if post.url == page.url %}
-			<li class="item item--current">
-				{{ post.title }}
-			</li>
-		{% else %}
-			<li class="item">
-				<a href="{{ post.url }}">{{ post.title }}</a>
-			</li>	
-		{% endif %}
-	  {% endfor %}
-	</ul>
+	<h5>Статьи</h5>
+	{% include posts-list.html %}
 </div>
+
+{% if page.type == 'post' %}
+
+	{% if site.pages %}
+	<div class="widget aside__widget">
+		<h5>Страницы</h5>
+		{% include pages-list.html %}
+	</div>
+	{% endif %}
+
+{% endif %}
+
+{% if site.links_docs %}
+<div class="widget aside__widget">
+		<h5>Документация</h5>
+		{% include links-list.html list=site.links_docs %}
+	</div>
+{% endif %}
+
+{% if site.links_tools %}
+<div class="widget aside__widget">
+		<h5>Инструменты</h5>
+		{% include links-list.html list=site.links_tools %}
+	</div>
+{% endif %}
+
+{% if site.links_blogs %}
+<div class="widget aside__widget">
+		<h5>Блоги</h5>
+		{% include links-list.html list=site.links_blogs %}
+	</div>
+{% endif %}
+
+{% if site.links_usefull %}
+<div class="widget aside__widget">
+		<h5>Удобности</h5>
+		{% include links-list.html list=site.links_usefull %}
+	</div>
+{% endif %}

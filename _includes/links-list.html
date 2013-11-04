@@ -1,0 +1,7 @@
+<ul class="list widget__list">
+  {% for link in include.list %}
+	<li class="item">
+		<a href="{{ link.url }}">{{ link.name }}</a>
+	</li>	
+  {% endfor %}
+</ul>

@@ -1,0 +1,13 @@
+{% if page.tags %}
+<div class="post__tags">
+	<ul class="list list--tags">
+	  {% for tag in page.tags %}
+	  		<li class="item">
+	  			<a href="/tags/{{ tag }}">{{ tag }}</a>
+			</li>	
+	  {% endfor %}
+	</ul>
+</div>	
+{% endif %}
+
+<!-- {% include tags.html %} -->

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    {% endif %}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+	<link href='http://fonts.googleapis.com/css?family=Lobster&text={{ site.title }}' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen" href="/src/css/style.prefixed.css" type="text/css" />
+
+    <link rel='stylesheet' href='/assets/js/prism/prism.css' type='text/css' media='all' />
+	</head>
+	<body {% if page.layout_type %}	
+		class="p-layout-{{ page.layout_type }}"
+		{% endif %}>
+		<div class="l-page">
+			{% include header.html %}
+			<div class="l-content">
+				{{ content }}
+			</div>	
+			{% include footer.html %}
+		</div>
+		<script type="text/javascript" src="/assets/js/prism/prism.js"></script>
+	</body>
+</html>

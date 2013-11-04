@@ -1,0 +1,7 @@
+<{{ include.tag }} class="logo {{ include.place }}__logo">
+	{% if page.id or page.type == 'page' %}
+		<a href="/" data-name="{{ site.title }}">{{ site.title_markup }}</a>
+	{% else %}
+		<span class="logo__no-link">{{ site.title_markup }}</span>
+	{% endif %}
+</{{ include.tag }}>

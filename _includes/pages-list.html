@@ -1,0 +1,15 @@
+<ul class="list widget__list">
+  {% for post in site.pages %}
+  	{% if post.type == 'page' %}
+	  	{% if post.url == page.url %}
+			<li class="item item--current">
+				{{ post.title }}
+			</li>
+		{% else %}
+			<li class="item">
+				<a href="{{ post.url }}">{{ post.title }}</a>
+			</li>	
+		{% endif %}
+	{% endif %}
+  {% endfor %}
+</ul>

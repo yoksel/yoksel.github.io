@@ -8,7 +8,8 @@ markdown: rdiscount
 # configuration required for some pages
 
 domain: yoksel.github.io
-title: Название сайта
+title: Про CSS
+title_markup: '<span class="item--about">Про</span> <span class="item--css">CSS</span>'
 author: yoksel
 email: yoksel@yandex.ru
 
@@ -18,9 +19,48 @@ github:
 # disqus:
 #     id: 
 
+excerpt_separator: <!--more-->
+
 topmenu: 
 - name: 'Главная'
   url: '/'
 - name: 'О сайте'
   url: '/about/'  
 
+links_title: Ссылки по теме
+
+links_docs:
+- url: http://www.w3.org/
+  name: W3C
+- url: https://developer.mozilla.org/
+  name: developer.mozilla.org
+- url: http://docs.webplatform.org/
+  name: docs.webplatform.org
+
+links_tools:
+- url: http://jsbin.com
+  name: JsBin
+- url: http://caniuse.com/
+  name: Caniuse.com
+- url: http://css3clickchart.com/
+  name: CSS3 Click Chart
+- url: http://http://cssfontstack.com/
+  name: CssFontStack.com
+- url: http://www.google.com/fonts/
+  name: Google.com/fonts
+
+links_blogs:
+- url: http://lea.verou.me/
+  name: Lea Verou
+- url: http://css-tricks.com
+  name: Сss-tricks.com
+- url: http://nicolasgallagher.com/
+  name: Nicolas Gallagher
+- url: http://csswizardry.com/
+  name: Csswizardry.com
+- url: http://tympanus.net/codrops/
+  name: Сodrops  
+
+links_usefull:  
+- url: /pages/tablitsa-imenovanny-h-tsvetov.html
+  name: Таблица именованных цветов
