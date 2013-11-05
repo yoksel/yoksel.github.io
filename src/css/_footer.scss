@@ -1,5 +1,6 @@
 .footer__logo {
 	display: inline-block;
+	margin-bottom: 0;
 	A {	
 		display: inline-block;
 		position: relative;
@@ -27,6 +28,8 @@
 	}
 .footer__nav {
 	float: right;
+	height: 38px;
+	line-height: 38px;
 	.item {
 		margin-left: 1em;
 		}

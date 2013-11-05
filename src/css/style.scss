@@ -73,10 +73,13 @@ CODE {
 	&:after {
 		@extend %clear;
 		}
-}
+	}
 .logo {
 	font-family: 'Lobster', Georgia, cursive;
 	}
+.i-ljuser {
+	white-space: nowrap;
+	}	
 .i-ljuser-userhead {
 	vertical-align: -2px;
 	margin-right: 3px;
@@ -85,8 +88,8 @@ CODE {
 -------------------------------- */	
 .l-page {
 	position: relative;
-	min-width: 18em;
-	max-width: 75em;
+	min-width: 320px;
+	max-width: 1200px;
 	margin: $half-logo-size auto 0;
 	padding: $base-margin;
 	background: #FFF;

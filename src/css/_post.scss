@@ -6,6 +6,9 @@
 	BLOCKQUOTE {
 		@include mid-margin( bottom );
 		}
+	IFRAME {
+		max-width: 100%;
+		}	
 	.warning--before-read {
 		@include mid-margin( bottom );
 		padding: 1em;
@@ -84,7 +87,7 @@
 	.item {
 		display: inline-block;
 		}
-}	
+	}	
 
 .post__link-back {
 	text-align: right;
