@@ -109,3 +109,20 @@
 		@extend %clear;
 		}	
 	}	
+.table--colors {
+	min-width: 780px; 
+	background: white;
+	@media (max-width: $break-point ) {
+		min-width: 0;
+		TD {
+			display: inline-block;
+			width: 48%;
+			}
+		}
+	@media (max-width: $break-point / 2 ) {
+		TD {
+			display: inline-block;
+			width: 100%;
+			}
+		}	
+	}	

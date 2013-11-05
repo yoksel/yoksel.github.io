@@ -636,6 +636,29 @@ PRE CODE {
   float: right;
 }
 
+.table--colors {
+  min-width: 780px;
+  background: white;
+}
+
+@media (max-width: 900px) {
+  .table--colors {
+    min-width: 0;
+  }
+
+  .table--colors TD {
+    display: inline-block;
+    width: 48%;
+  }
+}
+
+@media (max-width: 450px) {
+  .table--colors TD {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
 /* Aside
 -------------------------------- */
 
