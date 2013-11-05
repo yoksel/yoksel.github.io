@@ -1,14 +1,25 @@
 {
-  "author": "yoksel",
-  "name": "GitPages",
+  "name": "yoksel.github.io",
   "version": "0.0.1",
+  "description": "GitPages",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yoksel/yoksel.github.io.git"
+  },
+  "author": "yoksel",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/yoksel/yoksel.github.io/issues"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-sass": "~0.5.0",
-    "matchdep": "~0.3.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-cli": "~0.1.9",
     "grunt-autoprefixer": "~0.4.0",
-    "grunt-csscomb": "~0.5.0"
+    "grunt-csso": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3"
   }
 }

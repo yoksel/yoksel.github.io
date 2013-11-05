@@ -6,11 +6,15 @@
     <meta name="description" content="{{ page.description }}" />
     {% endif %}
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width" />
 
 	<link href='http://fonts.googleapis.com/css?family=Lobster&text={{ site.title }}' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" media="screen" href="/src/css/style.prefixed.css" type="text/css" />
+    <link rel="stylesheet" media="screen" href="/assets/css/style.css" type="text/css" />
 
     <link rel='stylesheet' href='/assets/js/prism/prism.css' type='text/css' media='all' />
+    <!--[if lt IE 9]>
+        <script src="/assets/js/html5shiv.js"></script>
+    <![endif]-->
 	</head>
 	<body {% if page.layout_type %}	
 		class="p-layout-{{ page.layout_type }}"
