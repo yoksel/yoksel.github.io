@@ -131,6 +131,12 @@ CODE {
 					@include padding ( bottom );
 					@include border ( bottom );
 					
+					&:last-child {
+						margin: 0;
+						padding: 0;
+						border: 0;
+						}
+					
 					@media (min-width: $break-point ) {
 						float: left;
 						width: 48.5%;
