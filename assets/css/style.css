@@ -651,12 +651,6 @@ PRE CODE {
   font-weight: bold;
 }
 
-@media (max-width: 900px) {
-  .widget__list .item--current {
-    display: none;
-  }
-}
-
 /* Animations
 -------------------------------- */
 

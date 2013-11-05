@@ -6,7 +6,4 @@
 	}
 .widget__list .item--current {
 	font-weight: bold;
-	@media (max-width: $break-point ) {
-		display: none;
-		}
 	}
