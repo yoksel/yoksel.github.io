@@ -94,6 +94,9 @@ CODE {
 	padding: $base-margin;
 	background: #FFF;
     box-shadow: 0 5px 10px $base-shadow-color;
+    @media (max-width: $break-point ) {
+    	padding: $base-margin $base-margin * .6;
+    	}
 	}	
 	.l-header,
 	.l-content {
@@ -123,13 +126,14 @@ CODE {
 					margin-right: 0;
 					}
 				.p-layout-mainpage .post {
-					margin-right: 0;					
+					margin-right: 0;
+					@include margin ( bottom );	
+					@include padding ( bottom );
+					@include border ( bottom );
+					
 					@media (min-width: $break-point ) {
 						float: left;
-						@include margin ( bottom );	
-						@include padding ( bottom );
 						width: 48.5%;
-						@include border ( bottom );
 						&:nth-child(2n+1){
 							clear: left;
 							}
