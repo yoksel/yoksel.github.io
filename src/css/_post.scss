@@ -91,7 +91,9 @@
 	}	
 
 .post__link-back {
-	text-align: right;
+	@include mid-margin( bottom );
+	text-align: center;
+	color: darken($base-border-color, 20);
 	}
 
 .post__nav {
