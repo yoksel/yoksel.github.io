@@ -113,17 +113,50 @@
 .table--colors {
 	min-width: 780px; 
 	background: white;
+	.color-item {
+		margin-bottom: 3px;
+		white-space: nowrap;
+		}
+		.color-view,
+		.color-name {
+			display: inline-block;	
+			vertical-align: middle;
+			}
+		.color-view {
+			width: 70px;
+			}
+		.color-name {
+			padding-left: 5px;
+			font-size: 13px;
+			font-style: italic;
+			}
 	@media (max-width: $break-point ) {
 		min-width: 0;
 		TD {
 			display: inline-block;
-			width: 48%;
+			width: 47.5%;
+			padding: 0;
+			border: 0;
 			}
+			.color-view {
+				width: 120px;
+				height: 35px;
+				}
+			.color-name {
+				padding-left: 10px;
+				font-size: $base-font-size;
+				}
 		}
-	@media (max-width: $break-point / 2 ) {
+	@media (max-width: $break-point * .8 ) {
 		TD {
 			display: inline-block;
 			width: 100%;
+			border: 0;
+			padding: 0;
 			}
-		}	
+			.color-view {
+				width: 170px;
+				height: 50px;
+				}	
+			}	
 	}	
