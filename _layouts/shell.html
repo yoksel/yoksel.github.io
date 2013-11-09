@@ -17,9 +17,7 @@
         <script src="/assets/js/html5shiv.js"></script>
     <![endif]-->
 	</head>
-	<body {% if page.layout_type %}	
-		class="p-layout-{{ page.layout_type }}"
-		{% endif %}>
+	<body {% if page.layout_type %} class="p-layout-{{ page.layout_type }}"{% endif %}>
 		<div class="l-page">
 			{% include header.html %}
 			<div class="l-content">
