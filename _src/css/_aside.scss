@@ -1,5 +1,8 @@
 .aside__widget {
 	@include margin ( bottom );
+	&:last-child {
+		margin-bottom: 0;
+		}
 }
 .widget__list .item {
 	margin-bottom: 7px;
