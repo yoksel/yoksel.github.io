@@ -4,7 +4,7 @@
   font-family: 'Lobster';
   font-style: normal;
   font-weight: 400;
-  src: local('Lobster'), url(http://themes.googleusercontent.com/licensed/font?kit=NIaFDq6p6eLpSvtV2DTNDW3ijSvVR9649SYj9d1g6NU) format('woff');
+  src: local("Lobster"), url(http://themes.googleusercontent.com/licensed/font?kit=NIaFDq6p6eLpSvtV2DTNDW3ijSvVR9649SYj9d1g6NU) format("woff");
 }
 
 $base-font-color: #000;
@@ -47,7 +47,10 @@ $small-margin: $base-font-size / 2;
 
 @mixin padding ( $side ){
 	padding-#{$side}: $base-margin;
-	}	
+	}
+@mixin small-padding ( $side ){
+	padding-#{$side}: $base-font-size;
+	}		
 
 /* Borders 
 -------------------------------- */
@@ -59,7 +62,9 @@ $small-margin: $base-font-size / 2;
 /* Common
 -------------------------------- */
 
-$break-point: 900px;	    
+$break-point: 900px;
+$break-point-small: 700px;
+
 $logo-size: $base-font-size * 14;
 $half-logo-size: $logo-size / 2;
 

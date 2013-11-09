@@ -3,6 +3,9 @@
 }
 .widget__list .item {
 	margin-bottom: 7px;
+	@media ( max-width: $break-point-small ){
+		margin-bottom: 3px;
+		}
 	}
 .widget__list .item--current {
 	font-weight: bold;

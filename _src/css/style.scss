@@ -46,6 +46,24 @@ H6 {
 	font-size: $base-font-size * 1.5;
 	@extend %headers-style;
 	}		
+@media ( max-width: $break-point-small ){
+		H2 {
+			font-size: $base-font-size * 2;
+			margin-bottom: $base-font-size * .6;
+			}	
+		H3 {
+			font-size: $base-font-size * 1.7;
+			margin-bottom: $base-font-size * .6;
+			}	
+		H4 {
+			font-size: $base-font-size * 1.5;
+			margin-bottom: $base-font-size * .6;
+			}	
+		H5 {
+			font-size: $base-font-size * 1.3;
+			margin-bottom: $base-font-size * .6;
+			}	
+		}	
 /* Codes
 -------------------------------- */		
 PRE,
@@ -159,6 +177,10 @@ CODE {
 				margin-left: 0;
 				@include padding ( top );
 				@include border ( top );
+				.aside__widget {
+					@include padding ( top );
+					@include border ( top );
+					}
 				}
 			}
 		

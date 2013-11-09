@@ -100,7 +100,8 @@
 	@include padding ( top );
 	@include border ( top );
 		@media (max-width: $break-point ) {
-			@include padding ( bottom );	
+			@include small-padding ( top );
+			@include small-padding ( bottom );	
 			.item__text {
 				display: none;
 				}
