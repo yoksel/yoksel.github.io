@@ -102,6 +102,8 @@ module.exports = function (grunt) {
         '_site/Gruntfile.js',
         '_site/package.json',
         '_site/node_modules',
+        '_src/css/style.prefixed.css',
+        '_src/css/style.unprefixed.css'
       ]
     },
 
