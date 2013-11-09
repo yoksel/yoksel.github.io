@@ -1,29 +1,17 @@
-{% if page.type == 'page' %}
-
-	{% if site.pages %}
-	<div class="widget aside__widget">
-		<h5>Страницы</h5>
-		{% include pages-list.html %}
-	</div>
-	{% endif %}
-
-{% endif %}
+{% if page.type == 'page' %}{% if site.pages %}<div class="widget aside__widget">
+	<h5>Страницы</h5>
+	{% include pages-list.html %}
+</div>{% endif %}{% endif %}
 
 <div class="widget aside__widget">
 	<h5>Статьи</h5>
 	{% include posts-list.html %}
 </div>
 
-{% if page.type == 'post' %}
-
-	{% if site.pages %}
-	<div class="widget aside__widget">
-		<h5>Страницы</h5>
-		{% include pages-list.html %}
-	</div>
-	{% endif %}
-
-{% endif %}
+{% if page.type == 'post' %}{% if site.pages %}<div class="widget aside__widget">
+	<h5>Страницы</h5>
+	{% include pages-list.html %}
+</div>{% endif %}{% endif %}
 
 {% if site.links_docs %}
 <div class="widget aside__widget">
