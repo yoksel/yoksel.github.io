@@ -8,10 +8,15 @@ markdown: rdiscount
 # configuration required for some pages
 
 domain: yoksel.github.io
+url: http://yoksel.github.io
 title: Про CSS
 title_markup: '<span class="item--about">Про</span> <span class="item--css">CSS</span>'
+description: Articles about CSS
 author: yoksel
 email: yoksel@yandex.ru
+
+# feedburner:
+#   id: feedburnerid
 
 github:
     username: github/yoksel
