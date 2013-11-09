@@ -1,0 +1,2 @@
+Options +Includes +FollowSymLinks -Indexes
+AddDefaultCharset utf-8

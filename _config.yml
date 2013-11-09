@@ -8,7 +8,7 @@ markdown: rdiscount
 # configuration required for some pages
 
 domain: yoksel.github.io
-url: http://yoksel.github.io
+url: http://css.yoksel.ru/
 title: Про CSS
 title_markup: '<span class="item--about">Про</span> <span class="item--css">CSS</span>'
 description: Articles about CSS
