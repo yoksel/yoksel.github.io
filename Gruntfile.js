@@ -96,7 +96,11 @@ module.exports = function (grunt) {
      * Remove generated files for clean deploy
      */
     clean: {
-      dist: [
+      dev: [
+        '_src/css/style.prefixed.css',
+        '_src/css/style.unprefixed.css'
+      ],
+      build: [
         '_site/Gemfile',
         '_site/Gemfile.lock',
         '_site/Gruntfile.js',
@@ -113,7 +117,7 @@ module.exports = function (grunt) {
     watch: {
       sass: {
         files: '<%= project.css_src %>{,*/}*.{scss,sass}',
-        tasks: ['sass:dev', 'autoprefixer', 'csso']
+        tasks: ['sass:dev', 'autoprefixer', 'csso', 'clean:dev']
       }
     }
   });
@@ -136,7 +140,7 @@ module.exports = function (grunt) {
     'sass:dist',
     'autoprefixer:dist',
     'csso',
-    'clean'
+    'clean:build'
     ]);
 
 
