@@ -3,7 +3,6 @@
 	P, 
 	PRE,
 	TABLE,
-	.post__links,
 	BLOCKQUOTE {
 		@include mid-margin( bottom );
 		}
@@ -97,16 +96,18 @@
 	}
 
 .post__nav {
+	@include margin( top );
 	@include padding ( top );
 	@include border ( top );
 		@media (max-width: $break-point ) {
-			@include small-padding ( top );
-			@include small-padding ( bottom );	
+			@include tiny-padding ( top );
+			@include tiny-padding ( bottom );	
 			.item__text {
 				display: none;
 				}
 				A {
 					font-size: $base-font-size*3;
+					line-height: 1;
 					text-decoration: none;
 					}
 			}

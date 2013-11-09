@@ -175,8 +175,6 @@ CODE {
 			@media (max-width: $break-point ) {
 				width: 100%;
 				margin-left: 0;
-				@include padding ( top );
-				@include border ( top );
 				.aside__widget {
 					@include padding ( top );
 					@include border ( top );

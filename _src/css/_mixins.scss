@@ -50,7 +50,10 @@ $small-margin: $base-font-size / 2;
 	}
 @mixin small-padding ( $side ){
 	padding-#{$side}: $base-font-size;
-	}		
+	}
+@mixin tiny-padding ( $side ){
+	padding-#{$side}: $base-font-size / 2;
+	}			
 
 /* Borders 
 -------------------------------- */
