@@ -14,7 +14,7 @@ module.exports = function (grunt) {
      */
     project: {
       css_src: [
-        'src/css'
+        '_src/css'
       ],
       css_res: [
         'assets/css'
@@ -91,6 +91,21 @@ module.exports = function (grunt) {
     },
 
     /**
+     * Clean files and folders
+     * https://github.com/gruntjs/grunt-contrib-clean
+     * Remove generated files for clean deploy
+     */
+    clean: {
+      dist: [
+        '_site/Gemfile',
+        '_site/Gemfile.lock',
+        '_site/Gruntfile.js',
+        '_site/package.json',
+        '_site/node_modules',
+      ]
+    },
+
+    /**
      * https://npmjs.org/package/grunt-contrib-watch
      */
     watch: {
@@ -105,6 +120,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-csso');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   /**
    * Default task
@@ -117,7 +133,8 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'sass:dist',
     'autoprefixer:dist',
-    'csso'
+    'csso',
+    'clean'
     ]);
 
 

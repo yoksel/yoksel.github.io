@@ -101,6 +101,13 @@
 	@include border ( top );
 		@media (max-width: $break-point ) {
 			@include padding ( bottom );	
+			.item__text {
+				display: none;
+				}
+				A {
+					font-size: $base-font-size*3;
+					text-decoration: none;
+					}
 			}
 	.item--prev {
 		float: left;

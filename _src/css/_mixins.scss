@@ -1,5 +1,12 @@
 /* Fonts 
 -------------------------------- */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), url(http://themes.googleusercontent.com/licensed/font?kit=NIaFDq6p6eLpSvtV2DTNDW3ijSvVR9649SYj9d1g6NU) format('woff');
+}
+
 $base-font-color: #000;
 $base-font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 $base-font-size: 16px;
