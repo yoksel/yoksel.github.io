@@ -15,7 +15,7 @@ Css transform позволяет трансформировать элемент
 Спецификация: <a href="http://www.w3.org/TR/css3-transforms/">www.w3.org/TR/css3-transforms/</a>.
 
 Используя свойство <code>transform</code> можно задавать элементу одну и более функций для трансформации.
-Все функции можно найти тут: <a href="/pages/transform-functions/">Transform Functions</a>
+Все функции можно найти тут: <a href="/pages/transform-functions.html">Transform Functions</a>
 
 Возможные значения: <code>none</code> или функции трансформаций через пробел.
 
