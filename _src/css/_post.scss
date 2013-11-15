@@ -71,7 +71,15 @@
 			}
 		.column-right {
 			float: right;
-			}			
+			}	
+	LI {
+		margin: 0 0 5px 10px;
+		&:before {
+			content: "—";
+			margin-right: 5px;
+			color: #AAA;
+			}
+		}								
 	}	
 .post__links DT {
 	margin-bottom: 5px;
