@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Jekyll, Vagrant и все-все-все
+type: post
 ---
 
 В эти выходные сайт сменил не только дизайн, но и движок. Теперь это <a href="http://jekyllrb.com/">Jekyll</a> - генератор статических страниц. <!--more-->
