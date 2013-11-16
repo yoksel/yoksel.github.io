@@ -43,7 +43,7 @@ links:
 
 <p>выберет только абзацы, у которых есть атрибут <b>data-content</b>:</p>
 
-<iframe src="http://jsbin.com/aMakIZI/29/" style="height: 270px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/39/" style="height: 270px" class="jsbin"></iframe></li>
 
 <li><p><code>E[foo="bar"]</code> - выберет элементы, у которых атрибут имеет заданное значение.</p>
 
@@ -51,7 +51,7 @@ links:
   border: 2px solid orange;
 }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/22/" style="height: 270px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/40/" style="height: 270px" class="jsbin"></iframe></li>
 
 <li><p><code>E[foo~="bar"]</code> - выберет элемент, который имеет атрибут со списком значений, разделенных пробелом, одно из которых равно заданному.</p>
 
@@ -59,7 +59,7 @@ links:
   border: 2px solid yellowgreen;
 }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/26/" style="height: 270px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/41/" style="height: 270px" class="jsbin"></iframe></li>
 
 <li><p><code>E[foo|="bar"]</code> - выберет элемент, который имеет атрибут со списком значений, разделенных дефисом, который начинается с заданного.</p>
 
@@ -67,7 +67,7 @@ links:
   border: 2px solid steelblue;
 }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/33/" style="height: 270px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/42/" style="height: 270px" class="jsbin"></iframe></li>
 
 <li><p><code>E:first-child</code> - псевдоэлемент, обращающийся к первому элементу из нескольких внутри родителя.</p>
 
@@ -75,7 +75,7 @@ links:
   background: gold;
 }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/35/" style="height: 460px" class="jsbin"></iframe>
+<iframe src="http://jsbin.com/aMakIZI/35/" style="height: 480px" class="jsbin"></iframe>
 
 <p>Селектор выбирает первый элемент только если он соответствует заданному тегу или классу и только если он является самым первым потомком родителя.</p>
 
@@ -103,7 +103,7 @@ links:
   color: #FFF;
 }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/37/" style="height: 300px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/44/" style="height: 320px" class="jsbin"></iframe></li>
 
 <li><p><code>E + F</code> - выбирает второй заданный элемент, который следует непосредственно после первого заданного.</p>
 
@@ -112,7 +112,7 @@ links:
   color: lightseagreen;
 }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/38/" style="height: 270px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/38/" style="height: 300px" class="jsbin"></iframe></li>
 </ul>
 <h5>Продолжение следует.</h5>
 
