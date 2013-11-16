@@ -33,7 +33,7 @@ links:
 
 <ul>
 <li><p><code>*</code> - универсальный селектор. Например, <code>* {margin: 0; }</code> уберет отступы у всех элементов на странице.</p></li>
-<li><p><code>E[foo]</code> - выберет элементы с заданым атрибутом. </p>
+<li><p><code>E[foo]</code> - элементы с заданым атрибутом. </p>
 
 <p>Например, код:</p>
 
@@ -45,7 +45,7 @@ links:
 
 <iframe src="http://jsbin.com/aMakIZI/39/" style="height: 270px" class="jsbin"></iframe></li>
 
-<li><p><code>E[foo="bar"]</code> - выберет элементы, у которых атрибут имеет заданное значение.</p>
+<li><p><code>E[foo="bar"]</code> - элементы, у которых атрибут имеет заданное значение.</p>
 
 <pre class="language-css"><code class="language-css">P[data-content="hello"] {
   border: 2px solid orange;
@@ -53,7 +53,7 @@ links:
 
 <iframe src="http://jsbin.com/aMakIZI/40/" style="height: 270px" class="jsbin"></iframe></li>
 
-<li><p><code>E[foo~="bar"]</code> - выберет элемент, который имеет атрибут со списком значений, разделенных пробелом, одно из которых равно заданному.</p>
+<li><p><code>E[foo~="bar"]</code> - элемент, который имеет атрибут со списком значений, разделенных пробелом, одно из которых равно заданному.</p>
 
 <pre class="language-css"><code class="language-css">P[data-content~="hello"] {
   border: 2px solid yellowgreen;
@@ -61,7 +61,7 @@ links:
 
 <iframe src="http://jsbin.com/aMakIZI/41/" style="height: 270px" class="jsbin"></iframe></li>
 
-<li><p><code>E[foo|="bar"]</code> - выберет элемент, который имеет атрибут со списком значений, разделенных дефисом, который начинается с заданного.</p>
+<li><p><code>E[foo|="bar"]</code> - элемент, который имеет атрибут со списком значений, разделенных дефисом, который начинается с заданного.</p>
 
 <pre class="language-css"><code class="language-css">P[data-content|="hello"] {
   border: 2px solid steelblue;
