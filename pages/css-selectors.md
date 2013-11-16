@@ -7,6 +7,10 @@ status: publish
 type: page
 published: true
 
+links_title: К статье
+links:
+- url: /css-selectors/
+  name: Css-селекторы
 ---
 Таблица отсюда: <a href="http://www.w3.org/TR/css3-selectors/#selectors">w3.org/TR/css3-selectors/#selectors</a>
 
