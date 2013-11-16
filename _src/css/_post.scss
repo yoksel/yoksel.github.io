@@ -20,7 +20,6 @@
 			}	
 	}
 	.post__excerpt P:last-of-type {
-		display: inline-block;
 		margin-bottom: 0;
 		}
 .post__date {
@@ -71,15 +70,22 @@
 			}
 		.column-right {
 			float: right;
-			}	
-	LI {
-		margin: 0 0 5px 10px;
-		&:before {
-			content: "—";
-			margin-right: 5px;
-			color: #AAA;
 			}
-		}								
+	UL {
+		@include margin( bottom );
+		}			
+		LI {
+			margin: 0 0 5px 25px;
+			&:before {
+				content: "—";
+				position: absolute;
+				margin-left: -20px;
+				color: #AAA;
+				}
+			}								
+	P + H4 {
+		@include margin( top );
+		}		
 	}	
 .post__links DT {
 	margin-bottom: 5px;
