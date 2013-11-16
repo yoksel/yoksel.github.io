@@ -75,7 +75,7 @@ links:
   background: gold;
 }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/35/" style="height: 480px" class="jsbin"></iframe>
+<iframe src="http://jsbin.com/aMakIZI/45/" style="height: 480px" class="jsbin"></iframe>
 
 <p>Селектор выбирает первый элемент только если он соответствует заданному тегу или классу и только если он является самым первым потомком родителя.</p>
 
