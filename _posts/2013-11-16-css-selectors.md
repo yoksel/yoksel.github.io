@@ -12,6 +12,29 @@ links:
 
 Спецификацию можно найти тут: <a href="http://www.w3.org/TR/css3-selectors/#selectors">w3.org/TR/css3-selectors</a>.<!--more-->
 
+Какие вообще бывают селекторы? Они делятся на несколько видов:
+
+<ul>
+  <li>по типу (<code>H1</code>, <code>TD</code>, <code>HR</code>...);</li>
+  <li>универсальный селектор - <code>*</code> - обозначает элемент любого типа;</li>
+  <li>селекторы атрибутов (<code>[data-name]</code>, <code>[data-name$="hidden"]</code>);</li>
+  <li>селекторы по классу (<code>.main</code>, <code>.header__nav</code>);</li>
+  <li>селекторы по ID (<code>#form</code>, <code>#submit</code>);</li>
+  <li>псевдо-классы: 
+    <ul>
+      <li>динамические (<code>:hover</code> и т.д.);</li>
+      <li>селектор цели (<code>:target</code>);</li>
+      <li>селектор по языку (<code>:lang(en)</code>);</li>
+      <li>состояния элементов интерфейса (<code>:enabled</code>, <code>:checked</code>...);</li>
+      <li>структурные псевдоклассы (<code>:root</code>, <code>:nth-child</code>);</li>
+      <li>псевдокласс отрицания (<code>:not(P)</code>).</li>
+    </ul>
+  <li>псевдоэлементы (<code>:before</code>, <code>:first-line</code>);</li>
+  <li>комбинаторы (<code>DIV SPAN</code>, <code>P + H1</code>);</li>
+</ul>
+
+Селекторы ниже сгруппированы по спецификациям. Это поможет нам понять какие из них работают везде (из CSS1), какие работают почти везде (из CSS2), а какие кое-где могут и не работать.
+
 <h4>Селекторы из CSS1</h4>
 
 Самые простые и хорошо всем знакомые:
@@ -114,5 +137,5 @@ links:
 
 <iframe src="http://jsbin.com/aMakIZI/38/" style="height: 300px" class="jsbin"></iframe></li>
 </ul>
-<h5>Продолжение следует.</h5>
+<b>Продолжение:</b> <a href="/css-selectors-part2/">Css-селекторы, часть 2</a>.
 
