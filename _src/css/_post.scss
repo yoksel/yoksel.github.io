@@ -74,6 +74,9 @@
 	UL {
 		@include margin( bottom );
 		}			
+		UL UL {
+			margin-bottom: 0;	
+			}
 		LI {
 			margin: 0 0 5px 25px;
 			&:before {
