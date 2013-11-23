@@ -125,7 +125,7 @@ custom_css: selectors.css
 
 <h4>Css3</h4>
 <ul>
-	<li class="s-item s-val--begins">
+	<li class="s-item s-attr--begins">
     	<div class="s-wrapper">
 			<span class="pattern">E[foo^="bar"]</span>
 			<span class="meaning">an E element whose "foo" attribute value begins
@@ -134,7 +134,7 @@ custom_css: selectors.css
 			<span class="origin">3</span>
 		</div>
 	</li>
-    <li class="s-item s-val--ends">
+    <li class="s-item s-attr--ends">
     	<div class="s-wrapper">
 			<span class="pattern">E[foo$="bar"]</span>
 			<span class="meaning">an E element whose "foo" attribute value ends exactly
@@ -143,7 +143,7 @@ custom_css: selectors.css
 			<span class="origin">3</span>
 		</div>
 	</li>
-    <li class="s-item s-val--contains">
+    <li class="s-item s-attr--contains">
     	<div class="s-wrapper">
 			<span class="pattern">E[foo*="bar"]</span>
 			<span class="meaning">an E element whose "foo" attribute value contains the
