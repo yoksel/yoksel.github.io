@@ -46,7 +46,8 @@ module.exports = function (grunt) {
           style: 'expanded'
         },
         files: {
-          '<%= project.css_src %>/style.unprefixed.css': '<%= project.css_src %>/style.scss'
+          '<%= project.css_src %>/style.unprefixed.css': '<%= project.css_src %>/style.scss',
+          '<%= project.css_src %>/selectors.unprefixed.css': '<%= project.css_src %>/selectors.scss'
         }
       },
       dist: {
@@ -55,7 +56,8 @@ module.exports = function (grunt) {
           banner: '<%= tag.banner %>'
         },
         files: {
-          '<%= project.css_src %>/style.unprefixed.css': '<%= project.css_src %>/style.scss'
+          '<%= project.css_src %>/style.unprefixed.css': '<%= project.css_src %>/style.scss',
+          '<%= project.css_src %>/selectors.unprefixed.css': '<%= project.css_src %>/selectors.scss'
         }
       }
     },
@@ -66,13 +68,13 @@ module.exports = function (grunt) {
     autoprefixer: {
       dev: {
         options: {},
-        src: '<%= project.css_src %>/style.unprefixed.css',
-        dest: '<%= project.css_res %>/style.css'
+          src: '<%= project.css_src %>/*.css'
       },
       dist: {
         options: {},
-        src: '<%= project.css_src %>/style.unprefixed.css',
-        dest: '<%= project.css_src %>/style.prefixed.css'
+        multiple_files: {
+          src: '<%= project.css_src %>/*.css'
+        }
       },
     },
 
@@ -85,7 +87,8 @@ module.exports = function (grunt) {
           report: 'min'
         },
         files: {
-          '<%= project.css_res %>/style.css': ['<%= project.css_src %>/style.prefixed.css']
+          '<%= project.css_res %>/style.css': ['<%= project.css_src %>/style.unprefixed.css'],
+          '<%= project.css_res %>/selectors.css': ['<%= project.css_src %>/selectors.unprefixed.css']
         }
       }
     },
@@ -97,8 +100,8 @@ module.exports = function (grunt) {
      */
     clean: {
       dev: [
-        '_src/css/style.prefixed.css',
-        '_src/css/style.unprefixed.css'
+        '_src/css/*.prefixed.css',
+        '_src/css/*.unprefixed.css'
       ],
       build: [
         '_site/Gemfile',
@@ -106,8 +109,8 @@ module.exports = function (grunt) {
         '_site/Gruntfile.js',
         '_site/package.json',
         '_site/node_modules',
-        '_src/css/style.prefixed.css',
-        '_src/css/style.unprefixed.css'
+        '_src/css/*.prefixed.css',
+        '_src/css/*.unprefixed.css'
       ]
     },
 
@@ -117,7 +120,7 @@ module.exports = function (grunt) {
     watch: {
       sass: {
         files: '<%= project.css_src %>{,*/}*.{scss,sass}',
-        tasks: ['sass:dev', 'autoprefixer', 'csso', 'clean:dev']
+        tasks: ['sass:dev', 'autoprefixer', 'csso', 'clean:dev'] 
       }
     }
   });
