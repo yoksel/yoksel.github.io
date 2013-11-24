@@ -57,6 +57,12 @@
 				@include border (top);
 				background: #EEE;
 				}
+	.selectorsReview {
+		.origin,
+		.support {
+			text-align: center;
+		}
+	}
 	.jsbin {
 		width: 100%;
 		@include margin( bottom );

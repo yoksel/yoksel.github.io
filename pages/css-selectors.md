@@ -14,7 +14,11 @@ links:
 - url: /css-selectors-part2/
   name: Css-селекторы, часть 2  
 ---
-Таблица отсюда: <a href="http://www.w3.org/TR/css3-selectors/#selectors">w3.org/TR/css3-selectors/#selectors</a>
+<p>Таблица отсюда: <a href="http://www.w3.org/TR/css3-selectors/#selectors">w3.org/TR/css3-selectors/#selectors</a></p>
+
+<p><i>В крайней правой колонке я добавила информацию о поддержке селектора разными версиями IE.</p>
+
+<p>Возможно, некоторые селекторы, работающие в IE7, могут работать и в IE6, но у меня пока не было возможности это проверить.</i></p>
 
 <table class="selectorsReview">
    <thead>
@@ -29,10 +33,10 @@ links:
      <td class="pattern">*
 
      </td><td class="meaning">any element
-
      </td><td class="described"><a href="http://www.w3.org/TR/css3-selectors/#universal-selector">Universal selector</a>
 
      </td><td class="origin">2
+     </td><td class="support">IE7+
 
     </td></tr><tr>
      <td class="pattern">E
@@ -40,8 +44,8 @@ links:
      </td><td class="meaning">an element of type E
 
      </td><td class="described"><a href="http://www.w3.org/TR/css3-selectors/#type-selectors">Type selector</a>
-
      </td><td class="origin">1
+     </td><td class="support">All
 
     </td></tr><tr>
      <td class="pattern">E[foo]
@@ -52,6 +56,8 @@ links:
       selectors</a>
 
      </td><td class="origin">2
+     </td><td class="support">IE7+
+
 
     </td></tr><tr>
      <td class="pattern">E[foo="bar"]
@@ -63,6 +69,7 @@ links:
       selectors</a>
 
      </td><td class="origin">2
+     </td><td class="support">IE7+
 
     </td></tr><tr>
      <td class="pattern">E[foo~="bar"]
@@ -74,6 +81,7 @@ links:
       selectors</a>
 
      </td><td class="origin">2
+     </td><td class="support">IE7+
 
     </td></tr><tr>
      <td class="pattern">E[foo^="bar"]
@@ -85,6 +93,7 @@ links:
       selectors</a>
 
      </td><td class="origin">3
+     </td><td class="support">IE7+
 
     </td></tr><tr>
      <td class="pattern">E[foo$="bar"]
@@ -96,6 +105,7 @@ links:
       selectors</a>
 
      </td><td class="origin">3
+     </td><td class="support">IE7+
 
     </td></tr><tr>
      <td class="pattern">E[foo*="bar"]
@@ -107,6 +117,7 @@ links:
       selectors</a>
 
      </td><td class="origin">3
+     </td><td class="support">IE7+
 
     </td></tr><tr>
      <td class="pattern">E[foo|="en"]
@@ -118,6 +129,7 @@ links:
       selectors</a>
 
      </td><td class="origin">2
+     </td><td class="support">IE7+
 
     </td></tr><tr>
      <td class="pattern">E:root
@@ -128,6 +140,7 @@ links:
       pseudo-classes</a>
 
      </td><td class="origin">3
+     </td><td class="support">IE9+
 
     </td></tr><tr>
      <td class="pattern">E:nth-child(n)
@@ -138,6 +151,8 @@ links:
       pseudo-classes</a>
 
      </td><td class="origin">3
+     </td><td class="support">IE9+
+
 
     </td></tr><tr>
      <td class="pattern">E:nth-last-child(n)
@@ -149,6 +164,7 @@ links:
       pseudo-classes</a>
 
      </td><td class="origin">3
+     </td><td class="support">IE9+
 
     </td></tr><tr>
      <td class="pattern">E:nth-of-type(n)
@@ -159,6 +175,7 @@ links:
       pseudo-classes</a>
 
      </td><td class="origin">3
+     </td><td class="support">IE9+
 
     </td></tr><tr>
      <td class="pattern">E:nth-last-of-type(n)
@@ -170,6 +187,7 @@ links:
       pseudo-classes</a>
 
      </td><td class="origin">3
+     </td><td class="support">IE9+
 
     </td></tr><tr>
      <td class="pattern">E:first-child
@@ -180,6 +198,7 @@ links:
       pseudo-classes</a>
 
      </td><td class="origin">2
+     </td><td class="support">IE7+
 
     </td></tr><tr>
      <td class="pattern">E:last-child
@@ -190,6 +209,7 @@ links:
       pseudo-classes</a>
 
      </td><td class="origin">3
+     </td><td class="support">IE9+
 
     </td></tr><tr>
      <td class="pattern">E:first-of-type
@@ -200,6 +220,7 @@ links:
       pseudo-classes</a>
 
      </td><td class="origin">3
+     </td><td class="support">IE9+
 
     </td></tr><tr>
      <td class="pattern">E:last-of-type
@@ -210,6 +231,7 @@ links:
       pseudo-classes</a>
 
      </td><td class="origin">3
+     </td><td class="support">IE9+
 
     </td></tr><tr>
      <td class="pattern">E:only-child
@@ -220,6 +242,7 @@ links:
       pseudo-classes</a>
 
      </td><td class="origin">3
+     </td><td class="support">IE9+
 
     </td></tr><tr>
      <td class="pattern">E:only-of-type
@@ -230,6 +253,7 @@ links:
       pseudo-classes</a>
 
      </td><td class="origin">3
+     </td><td class="support">IE9+
 
     </td></tr><tr>
      <td class="pattern">E:empty
@@ -241,6 +265,7 @@ links:
       pseudo-classes</a>
 
      </td><td class="origin">3
+     </td><td class="support">IE9+
 
     </td></tr><tr>
      <td class="pattern">E:link<br>
@@ -253,6 +278,7 @@ links:
      </td><td class="described"><a href="http://www.w3.org/TR/css3-selectors/#link">The link pseudo-classes</a>
 
      </td><td class="origin">1
+     </td><td class="support">All
 
     </td></tr><tr>
      <td class="pattern">E:active<br>
@@ -265,6 +291,7 @@ links:
       pseudo-classes</a>
 
      </td><td class="origin">1 and 2
+     </td><td class="support">All
 
     </td></tr><tr>
      <td class="pattern">E:target
@@ -274,6 +301,7 @@ links:
      </td><td class="described"><a href="http://www.w3.org/TR/css3-selectors/#target-pseudo">The target pseudo-class</a>
 
      </td><td class="origin">3
+     </td><td class="support">IE9+
 
     </td></tr><tr>
      <td class="pattern">E:lang(fr)
@@ -284,6 +312,7 @@ links:
      </td><td class="described"><a href="http://www.w3.org/TR/css3-selectors/#lang-pseudo">The :lang() pseudo-class</a>
 
      </td><td class="origin">2
+     </td><td class="support">IE8+
 
     </td></tr><tr>
      <td class="pattern">E:enabled<br>
@@ -296,6 +325,7 @@ links:
       pseudo-classes</a>
 
      </td><td class="origin">3
+     </td><td class="support">IE9+
 
     </td></tr><tr>
      <td class="pattern">E:checked<!--<br>E:indeterminate-->
@@ -309,6 +339,7 @@ links:
       pseudo-classes</a>
 
      </td><td class="origin">3
+     </td><td class="support">IE9+
 
     </td></tr><tr>
      <td class="pattern">E::first-line
@@ -319,6 +350,7 @@ links:
       pseudo-element</a>
 
      </td><td class="origin">1
+     </td><td class="support">IE8+
 
     </td></tr><tr>
      <td class="pattern">E::first-letter
@@ -329,6 +361,7 @@ links:
       pseudo-element</a>
 
      </td><td class="origin">1
+     </td><td class="support">IE8+
 
     </td></tr><tr>
      <td class="pattern">E::before
@@ -339,6 +372,7 @@ links:
       pseudo-element</a>
 
      </td><td class="origin">2
+     </td><td class="support">IE8+
 
     </td></tr><tr>
      <td class="pattern">E::after
@@ -349,6 +383,7 @@ links:
       pseudo-element</a>
 
      </td><td class="origin">2
+     </td><td class="support">IE8+
 
     </td></tr><tr>
      <td class="pattern">E.warning
@@ -359,6 +394,7 @@ links:
      </td><td class="described"><a href="http://www.w3.org/TR/css3-selectors/#class-html">Class selectors</a>
 
      </td><td class="origin">1
+     </td><td class="support">All
 
     </td></tr><tr>
      <td class="pattern">E#myid
@@ -368,6 +404,7 @@ links:
      </td><td class="described"><a href="http://www.w3.org/TR/css3-selectors/#id-selectors">ID selectors</a>
 
      </td><td class="origin">1
+     </td><td class="support">All
 
     </td></tr><tr>
      <td class="pattern">E:not(s)
@@ -377,6 +414,7 @@ links:
      </td><td class="described"><a href="http://www.w3.org/TR/css3-selectors/#negation">Negation pseudo-class</a>
 
      </td><td class="origin">3
+     </td><td class="support">IE9+
 
     </td></tr><tr>
      <td class="pattern">E F
@@ -387,6 +425,7 @@ links:
       combinator</a>
 
      </td><td class="origin">1
+     </td><td class="support">All
 
     </td></tr><tr>
      <td class="pattern">E &gt; F
@@ -396,6 +435,7 @@ links:
      </td><td class="described"><a href="http://www.w3.org/TR/css3-selectors/#child-combinators">Child combinator</a>
 
      </td><td class="origin">2
+     </td><td class="support">IE7+
 
     </td></tr><tr>
      <td class="pattern">E + F
@@ -406,6 +446,7 @@ links:
       sibling combinator</a>
 
      </td><td class="origin">2
+     </td><td class="support">IE7+
 
     </td></tr><tr>
      <td class="pattern">E ~ F
@@ -416,4 +457,5 @@ links:
       sibling combinator</a>
 
      </td><td class="origin">3
+     </td><td class="support">IE7+
   </td></tr></tbody></table>
