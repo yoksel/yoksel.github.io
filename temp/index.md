@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: onecolumn
 title: Тестируем селекторы
 description: Тестируем селекторы в разных браузерах. Хотя бы пытаемся
 path: /temp/
@@ -8,51 +8,51 @@ custom_css: selectors.css
 ---
 
 <section class="selectors-css1">
-	<h4>Css1</h4>
-	<ul>
-		<li class="s-item s-type">
-	    	<div class="s-wrapper">
-				<span class="pattern">E</span>
-				<span class="origin">1</span>
-			</div>
-		</li>
-		<li class="s-item s-item--text s-link">
-	    	<div class="s-wrapper">
-				<span class="pattern"><a href="#">E:link</a></span>
-				<span class="origin">1</span>
-			</div>
-		</li>
-		<li class="s-item s-item--text s-first--line">
-	    	<div class="s-wrapper">
-				<span class="pattern">E::first-line</span>
-				<span class="origin">1</span>
-			</div>
-		</li>
-	    <li class="s-item s-item--text s-first--letter">
-	    	<div class="s-wrapper">
-				<span class="pattern">E::first-letter</span>
-				<span class="origin">1</span>
-			</div>
-		</li>
-		<li class="s-item s-class">
-	    	<div class="s-wrapper">
-				<span class="pattern">E.warning</span>
-				<span class="origin">1</span>
-			</div>
-		</li>
-	    <li class="s-item s-id">
-	    	<div class="s-wrapper" id="s-id__wrapper">
-				<span class="pattern">E#myid</span>
-				<span class="origin">1</span>
-			</div>
-		</li>   
-	    <li class="s-item s-desc">
-	    	<div class="s-wrapper">
-				<span class="pattern">E F</span>
-				<span class="origin">1</span>
-			</div>
-		</li>
-	</ul>
+<h4>Css1</h4>
+<ul>
+	<li class="s-item s-type">
+    	<div class="s-wrapper">
+			<span class="pattern">E</span>
+			<span class="origin">1</span>
+		</div>
+	</li>
+	<li class="s-item s-item--text s-link">
+    	<div class="s-wrapper">
+			<span class="pattern"><a href="#">E:link</a></span>
+			<span class="origin">1</span>
+		</div>
+	</li>
+	<li class="s-item s-item--text s-first--line">
+    	<div class="s-wrapper">
+			<span class="pattern">E::first-line</span>
+			<span class="origin">1</span>
+		</div>
+	</li>
+    <li class="s-item s-item--text s-first--letter">
+    	<div class="s-wrapper">
+			<span class="pattern">E::first-letter</span>
+			<span class="origin">1</span>
+		</div>
+	</li>
+	<li class="s-item s-class">
+    	<div class="s-wrapper">
+			<span class="pattern">E.warning</span>
+			<span class="origin">1</span>
+		</div>
+	</li>
+    <li class="s-item s-id">
+    	<div class="s-wrapper" id="s-id__wrapper">
+			<span class="pattern">E#myid</span>
+			<span class="origin">1</span>
+		</div>
+	</li>   
+    <li class="s-item s-desc">
+    	<div class="s-wrapper">
+			<span class="pattern">E F</span>
+			<span class="origin">1</span>
+		</div>
+	</li>
+</ul>
 </section>
 
 <section class="selectors-css2">
