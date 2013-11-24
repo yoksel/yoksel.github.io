@@ -7,60 +7,61 @@ path: /temp/
 custom_css: selectors.css
 ---
 
-<h4>Css1</h4>
+<section class="selectors-css1">
+	<h4>Css1</h4>
+	<ul>
+		<li class="s-item s-type">
+	    	<div class="s-wrapper">
+				<span class="pattern">E</span>
+				<span class="origin">1</span>
+			</div>
+		</li>
+		<li class="s-item s-item--text s-link">
+	    	<div class="s-wrapper">
+				<span class="pattern"><a href="#">E:link</a></span>
+				<span class="origin">1</span>
+			</div>
+		</li>
+		<li class="s-item s-item--text s-first--line">
+	    	<div class="s-wrapper">
+				<span class="pattern">E::first-line</span>
+				<span class="origin">1</span>
+			</div>
+		</li>
+	    <li class="s-item s-item--text s-first--letter">
+	    	<div class="s-wrapper">
+				<span class="pattern">E::first-letter</span>
+				<span class="origin">1</span>
+			</div>
+		</li>
+		<li class="s-item s-class">
+	    	<div class="s-wrapper">
+				<span class="pattern">E.warning</span>
+				<span class="origin">1</span>
+			</div>
+		</li>
+	    <li class="s-item s-id">
+	    	<div class="s-wrapper" id="s-id__wrapper">
+				<span class="pattern">E#myid</span>
+				<span class="origin">1</span>
+			</div>
+		</li>   
+	    <li class="s-item s-desc">
+	    	<div class="s-wrapper">
+				<span class="pattern">E F</span>
+				<span class="origin">1</span>
+			</div>
+		</li>
+	</ul>
+</section>
 
-<ul>
-	<li class="s-item s-type">
-    	<div class="s-wrapper">
-			<span class="pattern">E</span>
-			<span class="origin">1</span>
-		</div>
-	</li>
-	<li class="s-item s-item--text s-link">
-    	<div class="s-wrapper">
-			<span class="pattern"><a href="#">E:link</a></span>
-			<span class="origin">1</span>
-		</div>
-	</li>
-	<li class="s-item s-item--text s-first--line">
-    	<div class="s-wrapper">
-			<span class="pattern">E::first-line</span>
-			<span class="origin">1</span>
-		</div>
-	</li>
-    <li class="s-item s-item--text s-first--letter">
-    	<div class="s-wrapper">
-			<span class="pattern">E::first-letter</span>
-			<span class="origin">1</span>
-		</div>
-	</li>
-	<li class="s-item s-class">
-    	<div class="s-wrapper">
-			<span class="pattern">E.warning</span>
-			<span class="origin">1</span>
-		</div>
-	</li>
-    <li class="s-item s-id">
-    	<div class="s-wrapper" id="s-id__wrapper">
-			<span class="pattern">E#myid</span>
-			<span class="origin">1</span>
-		</div>
-	</li>   
-    <li class="s-item s-desc">
-    	<div class="s-wrapper">
-			<span class="pattern">E F</span>
-			<span class="origin">1</span>
-		</div>
-	</li>
-</ul>
-
+<section class="selectors-css2">
 <h4>Css2</h4>
 <ul>
 	<li class="s-item s-universal">
 		<div class="s-wrapper">
 			<span class="pattern">*</span>
 			<span class="meaning">any element</span>
-
 			<span class="origin">2</span>
 		</div>
 	</li>
@@ -120,7 +121,9 @@ custom_css: selectors.css
 		</div>
 	</li>
 </ul>
+</section>
 
+<section  class="selectors-css3">
 <h4>Css3</h4>
 <ul>
 	<li class="s-item s-attr--begins">
@@ -243,3 +246,4 @@ custom_css: selectors.css
 		</div>
 	</li>
 </ul>
+</section>
