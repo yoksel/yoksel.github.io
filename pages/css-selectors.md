@@ -20,13 +20,10 @@ links:
    <thead>
     <tr>
      <th class="pattern">Pattern
-
      </th><th class="meaning">Meaning
-
-     </th><th class="described">Described in section
-
-     </th><th class="origin">First defined in CSS level
-
+     </th><th class="described">Type
+     </th><th class="origin">CSS level
+     </th><th class="support">Support
    </th></tr></thead><tbody>
     <tr>
      <td class="pattern">*
