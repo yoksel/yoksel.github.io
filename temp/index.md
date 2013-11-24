@@ -110,14 +110,12 @@ custom_css: selectors.css
 	<li class="s-item s-child">
     	<div class="s-wrapper">
 			<span class="pattern">E &gt; F</span>
-			<span class="meaning">an F element child of an E element</span>
 			<span class="origin">2</span>
 		</div>
 	</li>
     <li class="s-item s-next">
     	<div class="s-wrapper">
 			<span class="pattern">E + F</span>
-			<span class="meaning">an F element immediately preceded by an E element</span>
 			<span class="origin">2</span>
 		</div>
 	</li>
@@ -128,136 +126,117 @@ custom_css: selectors.css
 	<li class="s-item s-attr--begins">
     	<div class="s-wrapper">
 			<span class="pattern">E[foo^="bar"]</span>
-			<span class="meaning">an E element whose "foo" attribute value begins
-      exactly with the string
-     </span>
 			<span class="origin">3</span>
 		</div>
 	</li>
     <li class="s-item s-attr--ends">
     	<div class="s-wrapper">
 			<span class="pattern">E[foo$="bar"]</span>
-			<span class="meaning">an E element whose "foo" attribute value ends exactly
-      with the string
-     </span>
 			<span class="origin">3</span>
 		</div>
 	</li>
     <li class="s-item s-attr--contains">
     	<div class="s-wrapper">
 			<span class="pattern">E[foo*="bar"]</span>
-			<span class="meaning">an E element whose "foo" attribute value contains the
-      substring
-     </span>
 			<span class="origin">3</span>
 		</div>
 	</li>
 	<li class="s-item s-root">
     	<div class="s-wrapper">
 			<span class="pattern">E:root</span>
-			<span class="meaning">an E element, root of the document</span>
 			<span class="origin">3</span>
 		</div>
 	</li>
     <li class="s-item s-nth">
     	<div class="s-wrapper">
 			<span class="pattern">E:nth-child(n)</span>
-			<span class="meaning">an E element, the n-th child of its parent</span>
 			<span class="origin">3</span>
 		</div>
 	</li>
-    <li class="s-item">
+    <li class="s-item s-last--n">
     	<div class="s-wrapper">
 			<span class="pattern">E:nth-last-child(n)</span>
-			<span class="meaning">an E element, the n-th child of its parent, counting
-      from the la
-     </span>
 			<span class="origin">3</span>
 		</div>
 	</li>
-    <li class="s-item">
+    <li class="s-item s-nth--type">
     	<div class="s-wrapper">
 			<span class="pattern">E:nth-of-type(n)</span>
-			<span class="meaning">an E element, the n-th sibling of its type</span>
 			<span class="origin">3</span>
 		</div>
 	</li>
-    <li class="s-item">
+    <li class="s-item s-last--type-n">
     	<div class="s-wrapper">
 			<span class="pattern">E:nth-last-of-type(n)</span>
-			<span class="meaning">an E element, the n-th sibling of its type, counting
-      from the la
-     </span>
 			<span class="origin">3</span>
 		</div>
 	</li>
-	<li class="s-item">
+	<li class="s-item s-last">
     	<div class="s-wrapper">
 			<span class="pattern">E:last-child</span>
-			<span class="meaning">an E element, last child of its parent</span>
 			<span class="origin">3</span>
 		</div>
 	</li>
-    <li class="s-item">
+    <li class="s-item s-first--type">
     	<div class="s-wrapper">
 			<span class="pattern">E:first-of-type</span>
-			<span class="meaning">an E element, first sibling of its type</span>
 			<span class="origin">3</span>
 		</div>
 	</li>
-    <li class="s-item">
+    <li class="s-item s-last--type">
     	<div class="s-wrapper">
 			<span class="pattern">E:last-of-type</span>
-			<span class="meaning">an E element, last sibling of its type</span>
 			<span class="origin">3</span>
 		</div>
 	</li>
-    <li class="s-item">
+    <li class="s-item s-only">
     	<div class="s-wrapper">
 			<span class="pattern">E:only-child</span>
-			<span class="meaning">an E element, only child of its parent</span>
 			<span class="origin">3</span>
 		</div>
 	</li>
-    <li class="s-item">
+    <li class="s-item s-only--type">
     	<div class="s-wrapper">
 			<span class="pattern">E:only-of-type</span>
-			<span class="meaning">an E element, only sibling of its type</span>
 			<span class="origin">3</span>
 		</div>
 	</li>
-    <li class="s-item">
+    <li class="s-item s-empty">
+    	<div></div>
     	<div class="s-wrapper">
 			<span class="pattern">E:empty</span>
 			<span class="origin">3</span>
 		</div>
 	</li>
-	<li class="s-item">
-    	<div class="s-wrapper">
+	<li class="s-item s-target">
+    	<div class="s-wrapper" id="s-target__wrapper">
 			<span class="pattern">E:target</span>
 			<span class="origin">3</span>
 		</div>
 	</li>
-    <li class="s-item">
+    <li class="s-item s-enabled">
     	<div class="s-wrapper">
-			<span class="pattern">E:enabled<br>
+			<span class="pattern">E:enabled, 
       E:disabled</span>
+      		<input type="text">	
 			<span class="origin">3</span>
 		</div>
 	</li>
-    <li class="s-item">
+    <li class="s-item s-checked">
     	<div class="s-wrapper">
-			<span class="pattern">E:checked<!--<br>E:indeterminate--></span>
+			<span class="pattern">E:checked</span>
+			<input type="checkbox" checked id="s-checkbox">	
+			<label class="s-label" for="s-checkbox">Label</label>
 			<span class="origin">3</span>
 		</div>
 	</li>
-	<li class="s-item">
+	<li class="s-item s-not">
     	<div class="s-wrapper">
 			<span class="pattern">E:not(s)</span>
 			<span class="origin">3</span>
 		</div>
 	</li>
-	<li class="s-item">
+	<li class="s-item s-allnext">
     	<div class="s-wrapper">
 			<span class="pattern">E ~ F</span>
 			<span class="origin">3</span>
