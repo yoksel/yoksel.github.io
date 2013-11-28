@@ -53,7 +53,7 @@ module.exports = function (grunt) {
       dist: {
         options: {
           style: 'expanded',
-          banner: '<%= tag.banner %>'
+          // banner: '<%= tag.banner %>'
         },
         files: {
           '<%= project.css_src %>/style.unprefixed.css': '<%= project.css_src %>/style.scss',
