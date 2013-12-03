@@ -38,7 +38,7 @@ links:
 
 Примеры трансформаций:
 
-<iframe class="jsbin" style="height: 470px" src="http://jsbin.com/EcebOKi/28/embed?output"></iframe>
+<iframe class="jsbin" style="height: 470px" src="http://jsbin.com/EcebOKi/47/embed?output"></iframe>
 
 <code>matrix(w, sky, skx, h, mx, my)</code>
 
@@ -64,7 +64,7 @@ w - изменение ширины. 1 - исходная ширина.
 
 Примеры матричных трансформаций:
 
-<iframe class="jsbin" style="height: 470px" src="http://jsbin.com/EcebOKi/13/embed?output"></iframe>
+<iframe class="jsbin" style="height: 470px" src="http://jsbin.com/EcebOKi/46/embed?output"></iframe>
 
 <code>transform: matrix(-.01,0,0,-.01,0,-125);</code>
 <iframe class="jsbin" style="height: 400px" src="http://jsbin.com/EcebOKi/30/embed?output"></iframe>

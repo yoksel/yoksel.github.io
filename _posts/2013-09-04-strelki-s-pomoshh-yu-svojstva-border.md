@@ -41,4 +41,4 @@ published: true
 
 А ещё таким способом легко делать ленточки:
 
-<iframe class="jsbin" style="height: 200px" src="http://jsbin.com/aKUZaB/12/embed?output"></iframe>
+<iframe class="jsbin" style="height: 200px" src="http://jsbin.com/oVagUqa/2/embed?output"></iframe>
