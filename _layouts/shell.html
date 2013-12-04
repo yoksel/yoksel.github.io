@@ -19,7 +19,7 @@
         <script src="/assets/js/html5shiv.js"></script>
     <![endif]-->
 	</head>
-	<body {% if page.layout_type %} class="p-layout-{{ page.layout_type }}"{% endif %}>
+	<body class="{% if page.layout_type %} p-layout-{{ page.layout_type }}{% endif %}{% if page.hide_demo %} p-hide-demo{% endif %}">
 		<div class="l-page">
 			{% include header.html %}
 			<div class="l-content">
@@ -28,6 +28,6 @@
 			{% include footer.html %}
 		</div>
 		{% include counters.html %}
-		<script src="/assets/js/prism/prism.js"></script>
+		<script src="/assets/js/prism.js"></script>
 	</body>
 </html>

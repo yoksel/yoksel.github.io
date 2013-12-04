@@ -58,26 +58,6 @@
 				@include border (top);
 				background: #EEE;
 				}
-	.selectorsReview {
-		.origin,
-		.support {
-			text-align: center;
-		}
-	}
-	.jsbin {
-		width: 100%;
-		@include margin( bottom );
-		border: 1px solid $base-border-color;
-		}
-	.column {
-		width: 48%; 
-		}
-		.column-left {
-			float: left;
-			}
-		.column-right {
-			float: right;
-			}
 	UL {
 		@include margin( bottom );
 		}			
@@ -96,15 +76,41 @@
 	P + H4 {
 		@include margin( top );
 		}			
-	}	
-.post__links DT {
+	}				
+	.selectorsReview {
+		.origin,
+		.support {
+			text-align: center;
+		}
+	}
+	.jsbin {
+		width: 100%;
+		@include margin( bottom );
+		border: 1px solid $base-border-color;
+		}
+		.p-hide-demo .jsbin {
+			display: none;
+			}
+	.column {
+		width: 48%; 
+		}
+		.column-left {
+			float: left;
+			}
+		.column-right {
+			float: right;
+			}
+	
+.post__links {
+	DT {
 	margin-bottom: 5px;
 	font-weight: bold;
 	}		
-.post__links DD:before {
+ 	DD:before {
 	content: "—";
 	margin-right: 5px;
 	}	
+}	
 .post__tags {
 	@include padding ( top );
 	@include border ( top );
