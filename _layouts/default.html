@@ -7,11 +7,10 @@ layout: shell
 		<h2 class="post__title">{{ page.title }}</h2>
 		{% endif %}
 		
-		{% if page.date %}
-		<div class="post__date">{{ page.date | date: "%d/%m/%Y" }}</div>
-		{% endif %}
+		{% if page.date %}<div class="post__date">{{ page.date | date: "%d/%m/%Y" }}</div>{% endif %}
 
 		<div class="post__text">
+			{% include post-nav.html %}
 			{{ content }}
 		</div>
 		{% include post-links.html %}

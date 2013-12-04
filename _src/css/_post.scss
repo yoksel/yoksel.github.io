@@ -88,9 +88,34 @@
 		@include margin( bottom );
 		border: 1px solid $base-border-color;
 		}
-		.p-hide-demo .jsbin {
+		.p-hide-demo .jsbin[data-src] {
 			display: none;
 			}
+		.js--toggle-demo {
+			margin-bottom: 20px;
+			}	
+		.js--toggle-demo__text {
+			display: inline-block;
+			position: relative;
+			cursor: pointer;
+			padding: 3px 15px;
+			background: $base-link-color linear-gradient(lighten($base-link-color, 25), $base-link-color, lighten($base-link-color, 15));
+			box-shadow: 0 0 0 1px lighten( $base-link-color, 15 ) inset,
+						0 0 0 2px lighten( $base-link-color, 20 ) inset,
+						0 -1px 2px $base-shadow-color;
+			border-radius: 5px;
+			text-shadow: 1px 0 2px darken( $base-link-color, 20 );
+			color: lighten($base-link-color, 48);
+			transition: all .5s;
+			}
+		.js--toggle-opened .js--toggle-demo__text {
+			background: $base-link-color linear-gradient(darken( $base-link-color, 5 ), $base-link-color);
+			box-shadow: 0 -1px 5px 1px darken( $base-link-color, 20 ) inset,
+						0 0 0 0 lighten( $base-link-color, 20 ) inset,
+						0 0 0 $base-shadow-color;
+			text-shadow: -1px -1px 2px darken( $base-link-color, 30 );
+			color: lighten($base-link-color, 40);
+			}	
 	.column {
 		width: 48%; 
 		}
@@ -101,7 +126,8 @@
 			float: right;
 			}
 	
-.post__links {
+.post__links,
+.post__index {
 	DT {
 	margin-bottom: 5px;
 	font-weight: bold;
@@ -111,6 +137,9 @@
 	margin-right: 5px;
 	}	
 }	
+.post__index {
+	@include margin( bottom );
+	}
 .post__tags {
 	@include padding ( top );
 	@include border ( top );
@@ -124,7 +153,6 @@
 	text-align: center;
 	color: darken($base-border-color, 20);
 	}
-
 .post__nav {
 	@include margin( top );
 	@include padding ( top );

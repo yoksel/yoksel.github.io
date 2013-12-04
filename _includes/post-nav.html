@@ -1,0 +1,2 @@
+{% if page.post_nav %}<dl class="post__index">
+<dt>Содержание:</dt>{% for link in page.post_nav %}<dd><a href="{{ link.url }}">{{ link.name }}</a></dd>{% endfor %}</dl>{% endif %}
