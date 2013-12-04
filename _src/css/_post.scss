@@ -32,6 +32,7 @@
 	}		
 .post__text {
 	@include margin( bottom );
+	
 	IMG {
 		max-width: 100%;
 		height: auto;
@@ -94,7 +95,7 @@
 			}								
 	P + H4 {
 		@include margin( top );
-		}		
+		}			
 	}	
 .post__links DT {
 	margin-bottom: 5px;
