@@ -53,7 +53,7 @@ jQuery(document).ready(function($) {
 			}	
 			
 		var top = target_elem.offset().top - 30;
-		$(".p-hide-demo").animate({scrollTop: top});
+		$("body").animate({scrollTop: top});
 	    event.preventDefault();
 	}
 	
