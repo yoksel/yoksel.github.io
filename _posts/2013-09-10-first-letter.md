@@ -44,6 +44,7 @@ published: true
 <iframe class="jsbin" style="height: 250px" src="http://jsbin.com/afawEqu/5/embed?output"></iframe>
 
 <code>float</code> позволяет установить для <code>:first-letter</code>  ширину и выравнивание текста по центру.
-Правда, использовать этот эффект можно, только если точно знать, что в оформляемом тексте не будет картинок.
+
+Можно по-разному оформить первый символ в тексте, но при этом нужно точно знать, что текст не будет начинаться с картинки.
 
 Спецификация: <a href="http://www.w3.org/TR/css3-selectors/#first-letter">w3.org/TR/css3-selectors/#first-letter</a>
