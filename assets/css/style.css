@@ -165,6 +165,7 @@ H6 {
 .clear:after,
 .l-header:after,
 .l-content:after,
+.post__text SECTION:before,
 .post__nav:after {
   content: "";
   display: table;
@@ -287,11 +288,12 @@ PRE CODE {
   margin-right: 3px;
 }
 
-:target:before {
+.no-js :target:before,
+.js--target-marker {
   content: "";
   display: block;
   position: absolute;
-  margin-left: -84px;
+  margin: 6px 0 0 -84px;
   width: 44px;
   height: 44px;
   background: #c9e052 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0-0.781 0.781-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z" fill="#FFF" /></svg>') center center no-repeat;
@@ -303,6 +305,19 @@ PRE CODE {
   animation: movemarker .5s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.js--target-marker {
+  display: none;
+}
+
+.js--target-marker:hover {
+  background-color: steelblue;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 @-webkit-keyframes movemarker {
@@ -672,6 +687,10 @@ P:empty {
   margin-top: 32px;
 }
 
+.post__text SECTION H4 {
+  margin-top: 16px;
+}
+
 .selectorsReview .origin,
 .selectorsReview .support {
   text-align: center;
@@ -696,11 +715,11 @@ P:empty {
   position: relative;
   cursor: pointer;
   padding: 3px 15px;
-  background: steelblue-webkit-gradient(linear, top left, bottom left, from(#a0bfda), color-stop(steelblue), to(#7ba7cc));
-  background: steelblue -webkit-linear-gradient(#a0bfda, steelblue, #7ba7cc);
-  background: steelblue linear-gradient(#a0bfda, steelblue, #7ba7cc);
-  -webkit-box-shadow: 0 0 0 1px #7ba7cc inset, 0 0 0 2px #8db3d3 inset, 0 -1px 2px rgba(100, 100, 100, 0.5);
-  box-shadow: 0 0 0 1px #7ba7cc inset, 0 0 0 2px #8db3d3 inset, 0 -1px 2px rgba(100, 100, 100, 0.5);
+  background: steelblue-webkit-gradient(linear, top left, bottom left, from(#7ba7cc), to(#38678f));
+  background: steelblue -webkit-linear-gradient(#7ba7cc, #38678f);
+  background: steelblue linear-gradient(#7ba7cc, #38678f);
+  -webkit-box-shadow: 0 0 0 1px steelblue inset, 0 0 0 2px #699bc4 inset, 0 -1px 2px rgba(100, 100, 100, 0.5);
+  box-shadow: 0 0 0 1px steelblue inset, 0 0 0 2px #699bc4 inset, 0 -1px 2px rgba(100, 100, 100, 0.5);
   border-radius: 5px;
   text-shadow: 1px 0 2px #294d6b;
   color: #f4f8fb;
@@ -714,7 +733,7 @@ P:empty {
   background: steelblue linear-gradient(#3f75a2, steelblue);
   -webkit-box-shadow: 0 -1px 5px 1px #294d6b inset, 0 0 0 0 #8db3d3 inset, 0 0 0 rgba(100, 100, 100, 0.5);
   box-shadow: 0 -1px 5px 1px #294d6b inset, 0 0 0 0 #8db3d3 inset, 0 0 0 rgba(100, 100, 100, 0.5);
-  text-shadow: -1px -1px 2px #1b3246;
+  text-shadow: 0 1px 2px #1b3246;
   color: #d7e4ef;
 }
 
