@@ -44,7 +44,7 @@ links:
 
 Или вот такую штуку:
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/eCahIfa/13/embed?output"></iframe>
+<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/ivifaji/2/embed?output"></iframe>
 
 А можно мячик : )
 
