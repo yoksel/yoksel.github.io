@@ -322,13 +322,13 @@ PRE CODE {
 
 @-webkit-keyframes movemarker {
   100% {
-    margin-left: -64px;
+    margin-left: -60px;
   }
 }
 
 @keyframes movemarker {
   100% {
-    margin-left: -64px;
+    margin-left: -60px;
   }
 }
 
@@ -685,6 +685,10 @@ P:empty {
 
 .post__text P + H4 {
   margin-top: 32px;
+}
+
+.post__text P {
+  white-space: pre-line;
 }
 
 .post__text SECTION H4 {

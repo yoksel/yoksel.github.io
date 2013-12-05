@@ -75,9 +75,12 @@
 			}								
 	P + H4 {
 		@include margin( top );
-		}	
+		}
+	P {
+		white-space: pre-line;
+		}		
 	SECTION {
-			H4 {
+		H4 {
 			@include mid-margin( top );
 			}
 		&:before {
