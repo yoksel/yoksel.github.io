@@ -46,8 +46,8 @@ module.exports = function (grunt) {
           style: 'expanded'
         },
         files: {
-          '<%= project.css_src %>/style.unprefixed.css': '<%= project.css_src %>/style.scss',
-          '<%= project.css_src %>/selectors.unprefixed.css': '<%= project.css_src %>/selectors.scss'
+          '<%= project.css_res %>/style.css': '<%= project.css_src %>/style.scss',
+          '<%= project.css_res %>/selectors.css': '<%= project.css_src %>/selectors.scss'
         }
       },
       dist: {
@@ -56,8 +56,8 @@ module.exports = function (grunt) {
           // banner: '<%= tag.banner %>'
         },
         files: {
-          '<%= project.css_src %>/style.unprefixed.css': '<%= project.css_src %>/style.scss',
-          '<%= project.css_src %>/selectors.unprefixed.css': '<%= project.css_src %>/selectors.scss'
+          '<%= project.css_res %>/style.css': '<%= project.css_src %>/style.scss',
+          '<%= project.css_res %>/selectors.css': '<%= project.css_src %>/selectors.scss'
         }
       }
     },
@@ -68,12 +68,12 @@ module.exports = function (grunt) {
     autoprefixer: {
       dev: {
         options: {},
-          src: '<%= project.css_src %>/*.css'
+          src: '<%= project.css_res %>/*.css'
       },
       dist: {
         options: {},
         multiple_files: {
-          src: '<%= project.css_src %>/*.css'
+          src: '<%= project.css_res %>/*.css'
         }
       },
     },
@@ -87,8 +87,8 @@ module.exports = function (grunt) {
           report: 'min'
         },
         files: {
-          '<%= project.css_res %>/style.css': ['<%= project.css_src %>/style.unprefixed.css'],
-          '<%= project.css_res %>/selectors.css': ['<%= project.css_src %>/selectors.unprefixed.css']
+          '<%= project.css_res %>/style.css': ['<%= project.css_res %>/style.css'],
+          '<%= project.css_res %>/selectors.css': ['<%= project.css_res %>/selectors.css']
         }
       }
     },
@@ -120,7 +120,7 @@ module.exports = function (grunt) {
     watch: {
       sass: {
         files: '<%= project.css_src %>{,*/}*.{scss,sass}',
-        tasks: ['sass:dev', 'autoprefixer', 'csso', 'clean:dev'] 
+        tasks: ['sass:dev', 'autoprefixer', 'clean:dev'] 
       }
     }
   });
@@ -142,7 +142,6 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'sass:dist',
     'autoprefixer:dist',
-    'csso',
     'clean:build'
     ]);
 
