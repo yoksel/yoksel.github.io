@@ -75,6 +75,14 @@
 			}								
 	P + H4 {
 		@include margin( top );
+		}	
+	SECTION {
+			H4 {
+			@include mid-margin( top );
+			}
+		&:before {
+			@extend %clear;
+			}	
 		}			
 	}				
 	.selectorsReview {
@@ -99,9 +107,9 @@
 			position: relative;
 			cursor: pointer;
 			padding: 3px 15px;
-			background: $base-link-color linear-gradient(lighten($base-link-color, 25), $base-link-color, lighten($base-link-color, 15));
-			box-shadow: 0 0 0 1px lighten( $base-link-color, 15 ) inset,
-						0 0 0 2px lighten( $base-link-color, 20 ) inset,
+			background: $base-link-color linear-gradient(lighten($base-link-color, 15), darken($base-link-color, 10));
+			box-shadow: 0 0 0 1px $base-link-color inset,
+						0 0 0 2px lighten( $base-link-color, 10 ) inset,
 						0 -1px 2px $base-shadow-color;
 			border-radius: 5px;
 			text-shadow: 1px 0 2px darken( $base-link-color, 20 );
@@ -113,7 +121,7 @@
 			box-shadow: 0 -1px 5px 1px darken( $base-link-color, 20 ) inset,
 						0 0 0 0 lighten( $base-link-color, 20 ) inset,
 						0 0 0 $base-shadow-color;
-			text-shadow: -1px -1px 2px darken( $base-link-color, 30 );
+			text-shadow: 0 1px 2px darken( $base-link-color, 30 );
 			color: lighten($base-link-color, 40);
 			}	
 	.column {
