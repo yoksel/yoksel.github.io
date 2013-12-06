@@ -9,8 +9,20 @@ tags: []
 status: publish
 type: post
 published: true
+
+post_nav:
+- url: '#transform-origin'
+  name: 'transform-origin'
+- url: '#transform-style'
+  name: 'transform-style'
+- url: '#perspective'
+  name: 'perspective'
+- url: '#perspective-origin'
+  name: 'perspective-origin'
+- url: '#backface-visibility'
+  name: 'backface-visibility'
 ---
-Css transform позволяет трансформировать элементы, в том числе в трехмерном пространстве.<!--more-->
+<section>Css transform позволяет трансформировать элементы, в том числе в трехмерном пространстве.<!--more-->
 
 Спецификация: <a href="http://www.w3.org/TR/css3-transforms/">www.w3.org/TR/css3-transforms/</a>.
 
@@ -21,7 +33,7 @@ Css transform позволяет трансформировать элемент
 
 Примеры трансформаций:
 
-<iframe class="jsbin" style="height: 470px" src="http://jsbin.com/EcebOKi/45/embed?output"></iframe>
+<iframe class="jsbin" style="height: 470px" src="http://jsbin.com/EcebOKi/48/embed?output"></iframe>
 
 Важно помнить, что функции применяются в той последовательности, в какой записаны, и предыдущие функции могут влиять на следующие.
 То есть строчки
@@ -32,13 +44,14 @@ Css transform позволяет трансформировать элемент
 
 <pre><code class="language-css">transform: rotateY(90deg) translateZ(5em);</code></pre>
 
-Дадут совершенно разный результат, а строчка:
+дадут совершенно разный результат, а строчка:
 
 <pre><code class="language-css">transform: rotateY(45deg) rotateY(45deg);</code></pre>
 
-Повернет объект на 90 градусов, потому что обе функции будут выполнены последовательно.
+повернет объект на 90 градусов, потому что обе функции будут выполнены последовательно.
 
-Свойство <code>transform-origin</code> определяет центр трансформации.
+</section><section id="transform-origin" data-name="transform-origin"><h4>Transform-origin</h4>
+Свойство определяет центр трансформации.
 
 Возможные значения: расстояния в пикселях или процентах или ключевые слова (<code>left</code>, <code>center</code>, <code>right</code>, <code>top</code>, <code>bottom</code>).
 
@@ -50,7 +63,8 @@ Css transform позволяет трансформировать элемент
 
 <iframe class="jsbin" style="height: 300px" src="http://jsbin.com/EcebOKi/36/embed?output"></iframe>
 
-Поддержку 3D внутри трансформируемого элемента определяет <code>transform-style</code>.
+</section><section id="transform-style" data-name="transform-style"><h4>Transform-style</h4>
+Определяет поддержку 3D внутри трансформируемого элемента.
 
 Возможные значения:
 
@@ -62,10 +76,11 @@ Css transform позволяет трансформировать элемент
 Следующие свойства могут перекрывать действие <code>transform-style: preserve-3d;</code> и делать отображение элемента плоским не зависимо от значения <code>transform-style</code>:
 
 <code>overflow</code> с любым значением кроме <code>visible</code>
-<code>opacity</code> с любым значением кроме <code>1</code> (блокирует трехмерность, если задан обертке трансформируемого объекта, то есть уровнем выше, чем <code>transform-style: preserve-3d;</code>. На одном уровне они не мешают друг другу)
+<code>opacity</code> с любым значением кроме <code>1</code> (блокирует трехмерность, если задан обертке трансформируемого объекта, то есть уровнем выше, чем <code>transform-style: preserve-3d;</code>. На одном уровне они не мешают друг другу).
 <code>filter</code> с любым значением кроме <code>none</code>
 
-Глубину сцены определяет свойство <code>perspective</code>.
+</section><section id="perspective" data-name="perspective"><h4>Perspective</h4>
+Свойство определяет глубину сцены.
 Чем меньше значение, тем больше вытянута сцена в сторону зрителя.
 Задается родителю трансформируемых элементов.
 
@@ -73,14 +88,16 @@ Css transform позволяет трансформировать элемент
 
 <iframe class="jsbin" style="height: 300px" src="http://jsbin.com/EcebOKi/40/embed?output"></iframe>
 
-Свойство <code>perspective-origin</code> отвечает за расположение точки, от которой отсчитывается перспектива.
+</section><section id="perspective-origin" data-name="perspective-origin"><h4>Perspective-origin</h4>
+Отвечает за расположение точки, от которой отсчитывается перспектива.
 По сути, задается положение зрителя относительно сцены.
 
 Возможные значения: расстояния в пикселях или процентах или ключевые слова (<code>left</code>, <code>center</code>, <code>right</code>, <code>top</code>, <code>bottom</code>).
 
 <iframe class="jsbin" style="height: 300px" src="http://jsbin.com/EcebOKi/41/embed?output"></iframe>
 
-<code>backface-visibility</code> определяет видимость задней стороны объекта.
+</section><section id="backface-visibility" data-name="backface-visibility"><h4>Backface-visibility</h4>
+Определяет видимость задней стороны объекта.
 
 Возможные значения:
 <code>visible</code> - объект виден всегда, вне зависимости от того, какой стороной повернут (значение по умолчанию).
@@ -88,6 +105,6 @@ Css transform позволяет трансформировать элемент
 
 Кубик справа показывает действие <code>backface-visibility: hidden</code>:
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/ELipoZE/16/embed?output"></iframe>
+<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/ELipoZE/16/embed?output"></iframe></section>
 
 Вдохновляющие эффекты с трансформами: <a href="http://tympanus.net/Development/CreativeLinkEffects/">tympanus.net/Development/CreativeLinkEffects/</a>
