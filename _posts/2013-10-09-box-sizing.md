@@ -18,15 +18,15 @@ published: true
 
 <code>content-box</code> - отступы и рамки рисуются снаружи блока блока и увеличивают его размеры (значение по умолчанию).
 
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/eTiGuB/4/embed?css,output"></iframe>
+<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/eTiGuB/6/embed?css,output"></iframe>
 
 <code>padding-box</code> - рамки рисуются снаружи блока блока и увеличивают его размеры, <code>padding</code> отрисовывается внутри элемента и не влияет на размеры. Работает только в Firefox.
 
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/eTiGuB/3/embed?css,output"></iframe>
+<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/eTiGuB/7/embed?css,output"></iframe>
 
 <code>border-box</code> - элемент сохраняет заданные размеры, отступы и рамки отрисовываются внутрь элемента.
 
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/eTiGuB/5/embed?css,output"></iframe>
+<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/eTiGuB/8/embed?css,output"></iframe>
 
 Свойство довольно широко поддерживается браузерами, в некоторых случаях требуются префиксы. 
 Подробнее можно посмотреть на <a href="http://caniuse.com/#feat=css3-boxsizing">caniuse.com/#feat=css3-boxsizing</a>
