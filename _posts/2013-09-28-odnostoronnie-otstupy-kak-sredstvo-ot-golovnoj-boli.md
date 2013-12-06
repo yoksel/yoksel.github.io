@@ -16,7 +16,7 @@ published: true
 
 В качестве подобпытного кролика возьмем такой макет:
 
-<iframe class="jsbin" style="height: 500px" src="http://jsbin.com/ITeqiRo/2/embed?output"></iframe>
+<iframe class="jsbin" style="height: 530px" src="http://jsbin.com/ITeqiRo/2/embed?output"></iframe>
 
 Всем элементам шапки задан одинаковый отступ в одном направлении. В данном случае, вниз.
 
@@ -31,10 +31,10 @@ published: true
 
 Первый блок задает одинаковый отступ вниз для всех блоков в шапке, второй убирает его у последнего элемента.
 
-<iframe class="jsbin" style="height: 500px" src="http://jsbin.com/ITeqiRo/3/embed?output"></iframe>
+<iframe class="jsbin" style="height: 530px" src="http://jsbin.com/ITeqiRo/3/embed?output"></iframe>
 
 Теперь можно сколько угодно менять местами элементы шапки, и всё равно все варианты будут аккуратно смотреться:
 
-<iframe class="jsbin" style="height: 1000px" src="http://jsbin.com/ITeqiRo/4/embed?output"></iframe>
+<iframe class="jsbin" style="height: 1060px" src="http://jsbin.com/ITeqiRo/4/embed?output"></iframe>
 
 По-моему, идея гениальна в своей простоте.
