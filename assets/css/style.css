@@ -594,7 +594,10 @@ P:empty {
   word-break: break-word;
 }
 
-.post P,
+.post P {
+  margin: 16px 0;
+}
+
 .post PRE,
 .post TABLE,
 .post BLOCKQUOTE {

@@ -1,6 +1,8 @@
 .post {
 	word-break: break-word;
-	P, 
+	P {
+		margin: $base-font-size 0;
+		} 
 	PRE,
 	TABLE,
 	BLOCKQUOTE {
@@ -21,12 +23,12 @@
 	}
 	.post__excerpt {
 		P {
-		white-space: pre-line;
+			white-space: pre-line;
+			&:last-of-type {
+				margin-bottom: 0;
+				}
+			}	
 		}
-		P:last-of-type {
-			margin-bottom: 0;
-			}
-		}	
 .post__date {
 	@include margin( bottom );
 	padding-bottom: 5px;
