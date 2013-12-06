@@ -6,13 +6,38 @@ type: post
 links:
 - url: /pages/css-selectors.html
   name: CSS-селекторы одной таблицей	
+
+post_nav:
+- url: '#asteriks'
+  name: '*'
+- url: '#has-attr'
+  name: 'E[foo]'
+- url: '#has-attr-val'
+  name: 'E[foo="bar"]'
+- url: '#has-attr-val-wtsp'
+  name: 'E[foo~="bar"]'
+- url: '#has-attr-val-hpsp'
+  name: 'E[foo|="bar"]'
+- url: '#first-child'
+  name: 'E:first-child'
+- url: '#lang'
+  name: 'E:lang(fr)'
+- url: '#before'
+  name: 'E::before'
+- url: '#after'
+  name: 'E::after'
+- url: '#child'
+  name: 'E > F'
+- url: '#next'
+  name: 'E + F'
+
 ---
 В CSS есть достаточно способов обратиться к нужным элементам. <br/>
 В каждой новой спецификацией CSS добавлялось что-то новое, и теперь у нас есть много самых разных селекторов. Кроме того, различие в спецификациях можно использовать, например, чтобы спрятать стили от старых браузеров.
 
 Спецификацию можно найти тут: <a href="http://www.w3.org/TR/css3-selectors/#selectors">w3.org/TR/css3-selectors</a>.<!--more-->
 
-Какие вообще бывают селекторы? Они делятся на несколько видов:
+Селекторы делятся на несколько видов:
 
 <ul>
   <li>по типу (<code>H1</code>, <code>TD</code>, <code>HR</code>...);</li>
@@ -55,8 +80,8 @@ links:
 В этой спецификации добавилось много интересного:
 
 <ul>
-<li><p><code>*</code> - универсальный селектор. Например, <code>* {margin: 0; }</code> уберет отступы у всех элементов на странице.</p></li>
-<li><p><code>E[foo]</code> - элементы с заданым атрибутом. </p>
+<li id="asteriks" data-name="*"><p><code>*</code> - универсальный селектор. Например, <code>* {margin: 0; }</code> уберет отступы у всех элементов на странице.</p></li>
+<li id="has-attr" data-name="E[foo]"><p><code>E[foo]</code> - элементы с заданым атрибутом. </p>
 
 <p>Например, код:</p>
 
@@ -68,7 +93,7 @@ links:
 
 <iframe src="http://jsbin.com/aMakIZI/39/" style="height: 270px" class="jsbin"></iframe></li>
 
-<li><p><code>E[foo="bar"]</code> - элементы, у которых атрибут имеет заданное значение.</p>
+<li id="has-attr-val" data-name="E[foo='bar']"><p><code>E[foo="bar"]</code> - элементы, у которых атрибут имеет заданное значение.</p>
 
 <pre class="language-css"><code class="language-css">P[data-content="hello"] {
   border: 2px solid orange;
@@ -76,7 +101,7 @@ links:
 
 <iframe src="http://jsbin.com/aMakIZI/40/" style="height: 270px" class="jsbin"></iframe></li>
 
-<li><p><code>E[foo~="bar"]</code> - элемент, который имеет атрибут со списком значений, разделенных пробелом, одно из которых равно заданному.</p>
+<li id="has-attr-val-wtsp" data-name="E[foo~='bar']"><p><code>E[foo~="bar"]</code> - элемент, который имеет атрибут со списком значений, разделенных пробелом, одно из которых равно заданному.</p>
 
 <pre class="language-css"><code class="language-css">P[data-content~="hello"] {
   border: 2px solid yellowgreen;
@@ -84,7 +109,7 @@ links:
 
 <iframe src="http://jsbin.com/aMakIZI/41/" style="height: 270px" class="jsbin"></iframe></li>
 
-<li><p><code>E[foo|="bar"]</code> - элемент, который имеет атрибут со списком значений, разделенных дефисом, который начинается с заданного.</p>
+<li id="has-attr-val-hpsp" data-name="E[foo|='bar']"><p><code>E[foo|="bar"]</code> - элемент, который имеет атрибут со списком значений, разделенных дефисом, который начинается с заданного.</p>
 
 <pre class="language-css"><code class="language-css">P[data-content|="hello"] {
   border: 2px solid steelblue;
@@ -92,7 +117,7 @@ links:
 
 <iframe src="http://jsbin.com/aMakIZI/42/" style="height: 270px" class="jsbin"></iframe></li>
 
-<li><p><code>E:first-child</code> - псевдоэлемент, обращающийся к первому элементу из нескольких внутри родителя.</p>
+<li id="first-child" data-name="E:first-child"><p><code>E:first-child</code> - псевдоэлемент, обращающийся к первому элементу из нескольких внутри родителя.</p>
 
 <pre class="language-css"><code class="language-css">P:first-child {
   background: gold;
@@ -104,7 +129,7 @@ links:
 
 <p>Для выбора первого элемента из списка дочерних элементов определенного типа существует другой селектор - <code>:first-of-type</code>, добавленный в CSS3.</p></li>
 
-<li><p><code>E:lang(fr)</code> - выбирает элементы на заданном языке. Язык элемента может быть получен из HTTP-заголовков, отдаваемых сервером, из <code>meta</code>-тега, заданного в <code>head</code>, либо если у элемента задан атрибут <code>lang</code></p>
+<li id="lang" data-name="E:lang(fr)"><p><code>E:lang(fr)</code> - выбирает элементы на заданном языке. Язык элемента может быть получен из HTTP-заголовков, отдаваемых сервером, из <code>meta</code>-тега, заданного в <code>head</code>, либо если у элемента задан атрибут <code>lang</code></p>
 
 <p>Например, этот код добавит малиновый фон всем элементам, для которых язык определен как русский:</p>
 
@@ -114,12 +139,12 @@ links:
 
 <iframe src="http://jsbin.com/aMakIZI/9/" style="height: 270px" class="jsbin"></iframe></li>
 
-<li><p><code>E::before</code> - генерируемый контент перед заданным элементом.</p></li>
-<li><p><code>E::after</code> - генерируемый контент после элемента.</p>
+<li id="before" data-name="E::before"><p><code>E::before</code> - генерируемый контент перед заданным элементом.</p></li>
+<li id="after" data-name="E::after"><p><code>E::after</code> - генерируемый контент после элемента.</p>
 
 <iframe src="http://jsbin.com/aMakIZI/11/" style="height: 150px" class="jsbin"></iframe></li>
 
-<li><p><code>E > F</code> - выбирает элемент, только если он является прямым потомком родителя (ни во что больше не вложен).</p>
+<li id="child" data-name="E > F"><p><code>E > F</code> - выбирает элемент, только если он является прямым потомком родителя (ни во что больше не вложен).</p>
 
 <pre class="language-css"><code class="language-css">DIV > A {
   background: darkviolet;
@@ -128,7 +153,7 @@ links:
 
 <iframe src="http://jsbin.com/aMakIZI/44/" style="height: 320px" class="jsbin"></iframe></li>
 
-<li><p><code>E + F</code> - выбирает второй заданный элемент, который следует непосредственно после первого заданного.</p>
+<li id="next" data-name="E + F"><p><code>E + F</code> - выбирает второй заданный элемент, который следует непосредственно после первого заданного.</p>
 
 <pre class="language-css"><code class="language-css">P + H3 {
   background: darkturquoise;

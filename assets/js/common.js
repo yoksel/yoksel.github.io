@@ -43,6 +43,10 @@ jQuery(document).ready(function($) {
 		var anchor_id = anchor.substr(1);
 		var target_elem = $("#" + anchor_id);
 		var position = target_elem.position();
+		var tag = $(target_elem).prop("tagName")
+		tag = tag.toLowerCase();
+		$(marker_class).attr("data-target-tag", tag);
+		
 		var marker_position = position.top;// - $( marker_class ).height()/2;
 		$( marker_class ).css({ "top" : marker_position });
 		if( anchor == begin_id ){

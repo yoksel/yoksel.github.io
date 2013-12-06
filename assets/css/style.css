@@ -309,6 +309,10 @@ PRE CODE {
   transition: all .5s;
 }
 
+.js--target-marker[data-target-tag="li"] {
+  margin-top: -16px;
+}
+
 .js--target-marker {
   display: none;
 }
