@@ -64,11 +64,11 @@ links:
 
 Или пузырь с текстом:
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/OTiNOGO/2/embed?output"></iframe>
+<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/OTiNOGO/3/embed?output"></iframe>
 
 Просто удивительное количество возможностей предоставляет такое простое свойство.
 
-Также в последнее время становятся популярными длинные тени:
+Также в последнее время становятся популярными длинные тени (в данном случае это <code>box-shadow</code> + <code>text-shadow</code>):
 
 <iframe class="jsbin" style="height: 400px" src="http://jsbin.com/IGiXESO/1/embed?output"></iframe>
 
