@@ -168,7 +168,7 @@ post_nav:
 <iframe style="height: 330px;" class="jsbin" src="http://jsbin.com/owICoyi/17/embed?output"></iframe>
 
 </section><section id="animation-fill-mode" data-name="animation-fill-mode"><h4>Animation-fill-mode</h4>
-Свойство пределяет будет ли анимация воздействовать на элемент вне времени воспроизведения анимации.
+Свойство определяет будет ли анимация воздействовать на элемент вне времени воспроизведения анимации.
 
 Возможные значения: 
 
