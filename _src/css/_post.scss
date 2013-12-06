@@ -19,9 +19,14 @@
 			margin-bottom: 0;
 			}	
 	}
-	.post__excerpt P:last-of-type {
-		margin-bottom: 0;
+	.post__excerpt {
+		P {
+		white-space: pre-line;
 		}
+		P:last-of-type {
+			margin-bottom: 0;
+			}
+		}	
 .post__date {
 	@include margin( bottom );
 	padding-bottom: 5px;
