@@ -72,11 +72,9 @@ module.exports = function (grunt) {
       },
       dist: {
         options: {},
-        multiple_files: {
           src: '<%= project.css_res %>/*.css'
         }
       },
-    },
 
     /**
      * https://npmjs.org/package/grunt-csso
