@@ -35,33 +35,36 @@ jQuery(document).ready(function($) {
 	var begin_id = "#begin";
 
 	if ( $( begin_id ).length > 0) {
-		var target_marker = "<a href='" + begin_id + "' class='" + marker + "'></a>";
+		var target_marker = "<a href='" + begin_id + "' class='" + marker + "'><svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><path id='arrow' d='M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0-0.781 0.781-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z'/></svg></a>";
 		$( begin_id ).before(target_marker);
 	}
 
 	function add_target_marker( anchor ){
-		var anchor_id = anchor.substr(1);
-		var target_elem = $("#" + anchor_id);
-		var position = target_elem.position();
-		var tag = $(target_elem).prop("tagName")
-		tag = tag.toLowerCase();
-		$(marker_class).attr("data-target-tag", tag);
-		
-		var marker_position = position.top;// - $( marker_class ).height()/2;
-		$( marker_class ).css({ "top" : marker_position });
-		if( anchor == begin_id ){
-			$(marker_class).hide();
-			}
-		else {
-			$(marker_class).show();
-			}	
+		if ( $(document).width() > 900 ) {
+			var anchor_id = anchor.substr(1);
+			var target_elem = $("#" + anchor_id);
+			var position = target_elem.position();
+			var tag = $(target_elem).prop("tagName")
+			tag = tag.toLowerCase();
+			$(marker_class).attr("data-target-tag", tag);
 			
-		var top = target_elem.offset().top - 30;
-		$("body").animate({scrollTop: top});
-	    event.preventDefault();
+			var marker_position = position.top;// - $( marker_class ).height()/2;
+			$( marker_class ).css({ "top" : marker_position });
+			if( anchor == begin_id ){
+				$(marker_class).hide();
+				}
+			else {
+				$(marker_class).show();
+				}	
+			
+			var top = target_elem.offset().top - 30;
+			$("body").animate({scrollTop: top}, 100);
+			// event.preventDefault();
+		}
+	    
 	}
 	
-	$("a[href^='#']").click( function () {
+	$("a[href^='#']").click( function (event) {
 		var target = $(this).attr("href");
 		add_target_marker( target );
 	});
