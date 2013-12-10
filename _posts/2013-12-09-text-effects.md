@@ -25,6 +25,21 @@ published: true
 
 <iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/4/"></iframe>
 
+<h4>Вдавленный текст</h4>
+
+<pre><code class="language-css">H1 {
+  text-shadow: -1px -1px #000,
+               0 1px 0 #444;
+  color: #222;
+  transition: all 1s;
+  }
+  H1:hover {
+    text-shadow: -1px -1px #000,
+               0 1px 0 #444;
+    color: #1A1A1A;
+    }</code></pre>
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/17/"></iframe>
+
 <h4>Размытие</h4>
 
 <pre><code class="language-css">H1 {
@@ -37,7 +52,6 @@ published: true
   }
   H1:hover {
     text-shadow: 0 0 0 #333;
-    cursor: pointer;
     }</code></pre>
 <iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/9/"></iframe>
 
@@ -114,6 +128,38 @@ published: true
       border-bottom-width: 1px;  
       }</code></pre>
 <iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/8/"></iframe>
+
+<h4>Подводка</h4>
+
+<pre><code class="language-css">H1 {
+  text-shadow: 1px 1px white,
+               2px 2px #777;
+  color: #333;
+  transition: all 1s;
+  }
+  H1:hover {
+    text-shadow: 1px 1px white,
+                 2px 2px tomato;
+    color: crimson;
+    }</code></pre>
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/10/"></iframe>
+
+<h4>Разъезжающийся текст</h4>
+
+<pre><code class="language-css">H1 {
+  overflow: hidden;
+  text-shadow: 0 0 tomato,
+               0 0 yellowgreen,
+               0 0 skyblue;
+  color: transparent;
+  transition: all 1s;
+  }
+  H1:hover {
+    text-shadow: -400px 0 tomato,
+                 400px 0 yellowgreen,
+                 0 0 skyblue;
+    }</code></pre>
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/16/"></iframe>
 
 Используя тени, градиенты и псевдо-элементы можно придумать много разных вариантов оформления текста.
 
