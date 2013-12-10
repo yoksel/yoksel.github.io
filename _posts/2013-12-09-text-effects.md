@@ -28,16 +28,18 @@ published: true
 <h4>Размытие</h4>
 
 <pre><code class="language-css">H1 {
+  font-size: 50px;
+  font-weight: normal;
+  cursor: pointer;
   text-shadow: 0 0 15px #999;
   color: transparent;
   transition: all 1s;
   }
   H1:hover {
-    text-shadow: 0 0 0px silver;
+    text-shadow: 0 0 0 #333;
     cursor: pointer;
-    color: #333;
     }</code></pre>
-<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/5/"></iframe>
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/9/"></iframe>
 
 <h4>Контуры</h4>
 
