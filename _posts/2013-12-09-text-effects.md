@@ -74,6 +74,27 @@ published: true
     }</code></pre>
 <iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/6/"></iframe>
 
+<pre><code class="language-css">H1 {
+  text-shadow: -1px -1px #FFF,
+               -2px -2px #FFF,
+               -1px 1px #FFF,
+               -2px 2px #FFF,
+               1px 1px #FFF,
+               2px 2px #FFF,
+               1px -1px #FFF,
+               2px -2px #FFF,
+               -3px -3px 2px #BBB,
+               -3px 3px 2px #BBB,
+               3px 3px 2px #BBB,
+               3px -3px 2px #BBB;
+  color: steelblue;
+  transition: all 1s;
+  }
+  H1:hover {
+    color: yellowgreen;
+    }</code></pre>
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/18/"></iframe>
+
 <h4>Длинные тени</h4>
 
 <pre><code class="language-css">H1 {
