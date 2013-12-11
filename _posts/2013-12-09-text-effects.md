@@ -152,8 +152,7 @@ published: true
     left: 0;
     z-index: -1;
     background: linear-gradient(-45deg, 
-      mediumturquoise 0, transparent 1px, transparent 2px, 
-      mediumturquoise 3px, transparent 4px ) repeat;
+    rgba(72, 209, 204, 0) 2px, mediumturquoise 3px, rgba(72, 209, 204, 0) 3px ) repeat;
     background-size: 4px 4px;
     }
   H1:after {
@@ -188,7 +187,7 @@ published: true
     background-position: 40px 40px;
   }
 }</code></pre>
-<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/21/"></iframe>
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/24/"></iframe>
 
 <i>Идея не моя, найдено тут: <a href="http://codepen.io/lbebber/pen/BzoHi">codepen.io/lbebber/pen/BzoHi</a></i>
 
