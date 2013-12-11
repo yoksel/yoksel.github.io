@@ -7,7 +7,15 @@ type: post
 published: true
 ---
 
-В посте представлены некоторые эффекты на основе <code>text-shadow</code>. Проведите курсором над текстом, чтобы увидеть эффекты при наведении.<!--more-->
+В посте представлены некоторые эффекты на основе <code>text-shadow</code>. 
+
+<code>text-shadow</code> - это свойство, описывающее тень, отбрасываемую текстом. В отличие от <code>box-shadow</code>, тень не обрезается фигурой, ей нельзя задать размер (только радиус размытия) и она не поддерживает параметр <code>inset</code>, то есть нельзя сделать внутреннюю тень. 
+
+Тем не менее, используя несколько теней с различными параметрами можно сделать имитацию обводки (которую можно было бы просто получить, если бы тень поддерживала размер) и имитацию внутренней тени, что позволяет сделать вдавленный текст.
+
+Сочетая тени, градиенты и псевдо-элементы можно сделать много интересного.
+
+Проведите курсором над текстом примеров, чтобы увидеть эффекты при наведении.<!--more-->
 
 <h4>Выдавленный текст</h4>
 
@@ -122,6 +130,66 @@ published: true
     }</code></pre>
 <iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/7/"></iframe>
 
+<h4>Полосатая тень</h4>
+
+<pre><code class="language-css">H1 {
+  display: inline-block;
+  position: relative;
+  letter-spacing: .05em;
+  text-shadow: 1px 1px mediumturquoise,
+               -1px 1px mediumturquoise,
+               -1px -1px mediumturquoise,
+               1px -1px mediumturquoise;
+  color: white;
+  transition: all 1s;
+  }
+  H1:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -15px;
+    bottom: -15px;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(-45deg, 
+      mediumturquoise 0, transparent 1px, transparent 2px, 
+      mediumturquoise 3px, transparent 4px ) repeat;
+    background-size: 4px 4px;
+    }
+  H1:after {
+    content: attr(data-name);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: -2;
+    text-shadow: 1px 1px white,
+                 2px 2px white,
+                 3px 3px white,
+                 4px 4px white;
+    color: white;
+    transition: all 1s;
+    }
+
+  H1:hover {
+    color: lemonchiffon;
+    }
+    H1:hover:before {
+      animation: 5s move_lines infinite linear;
+      }
+    H1:hover:after {
+      color: lemonchiffon;
+      text-shadow: 1px 1px lemonchiffon,
+        2px 2px lemonchiffon,
+        3px 3px lemonchiffon,
+        4px 4px lemonchiffon;
+      }
+@keyframes move_lines {
+  100% {
+    background-position: 40px 40px;
+  }
+}</code></pre>
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/21/"></iframe>
+
 <h4>Живое подчеркивание</h4>
 
 <pre><code class="language-css">H1 {
@@ -181,6 +249,4 @@ published: true
                  0 0 skyblue;
     }</code></pre>
 <iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/16/"></iframe>
-
-Используя тени, градиенты и псевдо-элементы можно придумать много разных вариантов оформления текста.
 
