@@ -190,6 +190,8 @@ published: true
 }</code></pre>
 <iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/21/"></iframe>
 
+<i>Идея не моя, найдено тут: <a href="http://codepen.io/lbebber/pen/BzoHi">codepen.io/lbebber/pen/BzoHi</a></i>
+
 <h4>Живое подчеркивание</h4>
 
 <pre><code class="language-css">H1 {
