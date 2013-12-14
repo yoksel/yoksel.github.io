@@ -63,6 +63,8 @@ published: true
     }</code></pre>
 <iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/9/"></iframe>
 
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/32/"></iframe>
+
 <h4>Контуры</h4>
 
 <pre><code class="language-css">H1 {
@@ -129,6 +131,8 @@ published: true
       color: hsl(300,100%,30%);
     }</code></pre>
 <iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/7/"></iframe>
+
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/27/"></iframe>
 
 <h4>Полосатая тень</h4>
 
