@@ -71,3 +71,5 @@ links_blogs:
 links_usefull:  
 - url: /pages/tablitsa-imenovanny-h-tsvetov.html
   name: Таблица именованных цветов
+- url: http://yoksel.github.io/unicode-table/
+  name: Символы юникода  
