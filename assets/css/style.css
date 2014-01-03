@@ -272,6 +272,11 @@ PRE CODE {
   color: inherit;
 }
 
+.specifity {
+  background: #DDD;
+  color: #222;
+}
+
 /* Common
 -------------------------------- */
 
@@ -773,6 +778,15 @@ P:empty {
 
 .column-right {
   float: right;
+}
+
+.wrapper--selector {
+  display: inline-block;
+  width: 120px;
+  background: -webkit-linear-gradient(0deg, #bbbbbb 1px, rgba(255, 255, 255, 0) 1px) repeat-x right 90%;
+  background: linear-gradient(90deg, #bbbbbb 1px, rgba(255, 255, 255, 0) 1px) repeat-x right 90%;
+  -webkit-background-size: 3px 1px;
+  background-size: 3px 1px;
 }
 
 .post__links DT,

@@ -143,7 +143,13 @@
 		.column-right {
 			float: right;
 			}
-	
+	.wrapper--selector {
+		display: inline-block;
+		width: 120px;
+		background: linear-gradient( 90deg, #BBB 1px, 
+    rgba(255,255,255,0) 1px ) repeat-x right 90%;
+		background-size: 3px 1px;
+		}
 .post__links,
 .post__index {
 	DT {
