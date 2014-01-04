@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Специфичность селекторов в CSS
+title: Сколько весят селекторы?
 type: post
 
 links:
