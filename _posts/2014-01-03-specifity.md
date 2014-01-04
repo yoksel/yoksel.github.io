@@ -169,4 +169,6 @@ links:
 
 В качестве общих рекомендаций так же следует упомянуть, что нужно как можно меньше использовать селекторы по тегу и как можно больше - селекторы по классу. Это поможет избежать проблем при повторном использовании блоков сайта, а при использовании "умных" классов - может значительно сократить цепочки селекторов, увеличить читабельность кода и скорость отрисовки страницы.
 
-Спецификация: <a href="http://www.w3.org/TR/CSS2/cascade.html#specificity">w3.org/TR/CSS2/cascade.html#specificity</a>
+Спецификации: 
+<a href="http://www.w3.org/TR/CSS2/cascade.html#specificity">w3.org/TR/CSS2/cascade.html#specificity</a>
+<a href="http://www.w3.org/TR/css3-selectors/#specificity">w3.org/TR/css3-selectors/#specificity</a>
