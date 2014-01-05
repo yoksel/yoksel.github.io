@@ -4,6 +4,8 @@ title:  Css-селекторы
 type: post
 
 links:
+- url: /specifity/
+  name: Сколько весят селекторы?
 - url: /pages/css-selectors.html
   name: CSS-селекторы одной таблицей	
 
