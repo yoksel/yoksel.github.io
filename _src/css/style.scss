@@ -148,7 +148,16 @@ CODE {
 	}
 P:empty {
 	display: none;
-	}		
+	}	
+A[href*="wikipedia"]:after {
+	content: "";
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	margin-left: 2px;
+	background: url(/assets/img/wiki-24.png) no-repeat 50% 50%;
+	vertical-align: middle;
+}		
 /* Layout
 -------------------------------- */	
 .l-page {
