@@ -14,6 +14,9 @@
 
 	<link rel="stylesheet" media="screen" href="/assets/css/style.css" />
 	{% if page.custom_css %}<link rel="stylesheet" media="screen" href="/assets/css/{{ page.custom_css }}" />{% endif %}
+
+	<script src="http://kittycheck.com/js/inject.js"></script>
+	<meta name="kittycheck_parent" content=".kitten" />
 	
 	<!--[if lt IE 9]>
         <script src="/assets/js/html5shiv.js"></script>
@@ -21,6 +24,7 @@
 	</head>
 	<body class="no-js{% if page.layout_type %} p-layout-{{ page.layout_type }}{% endif %}{% if page.hide_demo %} p-hide-demo{% endif %}">
 		<div class="l-page">
+			<div class="kitten"></div>
 			{% include header.html %}
 			<div class="l-content">
 				{{ content }}

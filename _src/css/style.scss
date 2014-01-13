@@ -157,7 +157,15 @@ A[href*="wikipedia"]:after {
 	margin-left: 2px;
 	background: url(/assets/img/wiki-24.png) no-repeat 50% 50%;
 	vertical-align: middle;
-}		
+	}	
+.kitten {
+	position: absolute;
+	right: 0;
+	top: -77px;
+		@media (max-width: $break-point-small ) {
+	    	right: -15px;
+		}	
+	}
 /* Layout
 -------------------------------- */	
 .l-page {
