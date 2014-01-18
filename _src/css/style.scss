@@ -198,7 +198,8 @@ A[href*="wikipedia"]:after {
 		.l-main {
 			width: 100%;
 			}
-			.post {
+			.post,
+			.posts {
 				margin-right: 19em;	
 				@media (max-width: $break-point ) {
 					margin-right: 0;	
@@ -219,7 +220,7 @@ A[href*="wikipedia"]:after {
 						border: 0;
 						}
 					
-					@media (min-width: $break-point ) {
+					/*@media (min-width: $break-point ) {
 						float: left;
 						width: 48.5%;
 						&:nth-child(2n+1){
@@ -229,7 +230,7 @@ A[href*="wikipedia"]:after {
 							float: right;
 							clear: right;
 							}
-					}
+					}*/
 
 				}	
 

@@ -417,12 +417,14 @@ A[href*="wikipedia"]:after {
   width: 100%;
 }
 
-.post {
+.post,
+.posts {
   margin-right: 19em;
 }
 
 @media (max-width: 900px) {
-  .post {
+  .post,
+  .posts {
     margin-right: 0;
   }
 }
@@ -442,22 +444,6 @@ A[href*="wikipedia"]:after {
   margin: 0;
   padding: 0;
   border: 0;
-}
-
-@media (min-width: 900px) {
-  .p-layout-mainpage .post {
-    float: left;
-    width: 48.5%;
-  }
-
-  .p-layout-mainpage .post:nth-child(2n+1) {
-    clear: left;
-  }
-
-  .p-layout-mainpage .post:nth-child(2n) {
-    float: right;
-    clear: right;
-  }
 }
 
 .l-aside {
@@ -552,8 +538,8 @@ A[href*="wikipedia"]:after {
   top: -22.4px;
   left: -22.4px;
   border-radius: 50%;
-  -webkit-box-shadow: -0 -0 0 0 rgba(255, 0, 0, 0.3), -0 0 0 0 rgba(255, 170, 0, 0.3), -0 0 0px 0 rgba(170, 255, 0, 0.3), 0 0 0px 0 rgba(0, 255, 0, 0.3), 0 0 0px 0 rgba(0, 255, 170, 0.3), 0 0 0px 0 rgba(0, 170, 255, 0.3), 0 -0 0px 0 rgba(170, 0, 255, 0.3), 0 -0 0px 0 rgba(255, 0, 170, 0.3);
-  box-shadow: -0 -0 0 0 rgba(255, 0, 0, 0.3), -0 0 0 0 rgba(255, 170, 0, 0.3), -0 0 0px 0 rgba(170, 255, 0, 0.3), 0 0 0px 0 rgba(0, 255, 0, 0.3), 0 0 0px 0 rgba(0, 255, 170, 0.3), 0 0 0px 0 rgba(0, 170, 255, 0.3), 0 -0 0px 0 rgba(170, 0, 255, 0.3), 0 -0 0px 0 rgba(255, 0, 170, 0.3);
+  -webkit-box-shadow: -0 -0 0 0 transparent, -0 0 0 0 transparent, -0 0 0px 0 transparent, 0 0 0px 0 transparent, 0 0 0px 0 transparent, 0 0 0px 0 transparent, 0 -0 0px 0 transparent, 0 -0 0px 0 transparent;
+  box-shadow: -0 -0 0 0 transparent, -0 0 0 0 transparent, -0 0 0px 0 transparent, 0 0 0px 0 transparent, 0 0 0px 0 transparent, 0 0 0px 0 transparent, 0 -0 0px 0 transparent, 0 -0 0px 0 transparent;
   -webkit-transition: all .5s;
   transition: all .5s;
 }

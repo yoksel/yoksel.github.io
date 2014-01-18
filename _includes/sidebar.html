@@ -3,12 +3,13 @@
 	{% include pages-list.html %}
 </div>{% endif %}{% endif %}
 
+{% if page.layout_type != 'mainpage' %}
 <div class="widget aside__widget">
 	<h3>Статьи</h3>
 	{% include posts-list.html %}
-</div>
+</div>{% endif %}
 
-{% if page.type == 'post' %}{% if site.pages %}<div class="widget aside__widget">
+{% if page.type == 'post' or page.layout_type == 'mainpage' %}{% if site.pages %}<div class="widget aside__widget">
 	<h3>Страницы</h3>
 	{% include pages-list.html %}
 </div>{% endif %}{% endif %}
