@@ -1,0 +1,78 @@
+.l-page {
+    position: relative;
+    min-width: 320px;
+    max-width: 1200px;
+    margin: $half-logo-size auto 0;
+    padding: $base-margin;
+    background: #FFF;
+    box-shadow: 0 5px 10px $base-shadow-color;
+    @media (max-width: $break-point ) {
+        padding: $base-margin $base-margin * .6;
+        }
+    }   
+    .l-header,
+    .l-content {
+        @include margin ( bottom );
+        &:after {
+            @extend %clear;
+            }
+        }   
+    .l-content {
+        @include padding ( bottom );
+        @include border ( bottom );     
+        }   
+    .l-main,    
+    .l-aside {
+        float: left;
+        }
+        .l-main {
+            width: 100%;
+            }
+            .post,
+            .posts {
+                margin-right: 19em; 
+                @media (max-width: $break-point ) {
+                    margin-right: 0;    
+                    }
+                }
+                .p-layout-onecolumn .post {
+                    margin-right: 0;
+                    }
+                .p-layout-mainpage .post {
+                    margin-right: 0;
+                    @include margin ( bottom ); 
+                    @include padding ( bottom );
+                    @include border ( bottom );
+                    
+                    &:last-child {
+                        margin: 0;
+                        padding: 0;
+                        border: 0;
+                        }
+                    
+                    /*@media (min-width: $break-point ) {
+                        float: left;
+                        width: 48.5%;
+                        &:nth-child(2n+1){
+                            clear: left;
+                            }
+                        &:nth-child(2n){
+                            float: right;
+                            clear: right;
+                            }
+                    }*/
+
+                }   
+
+        .l-aside {
+            width: 17em;
+            margin-left: -17em;
+            @media (max-width: $break-point ) {
+                width: 100%;
+                margin-left: 0;
+                .aside__widget {
+                    @include padding ( top );
+                    @include border ( top );
+                    }
+                }
+            }

@@ -25,9 +25,12 @@
 		P {
 			white-space: pre-line;
 			&:last-of-type {
-				margin-bottom: 0;
+				margin-bottom: 10px;
 				}
-			}	
+			}
+		.link--readmore {
+			font-size: 12px;
+			}		
 		}
 .post__date {
 	@include margin( bottom );

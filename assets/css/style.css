@@ -247,36 +247,6 @@ H6 {
   }
 }
 
-/* Codes
--------------------------------- */
-
-PRE,
-CODE {
-  border-radius: 4px;
-}
-
-CODE {
-  display: inline-block;
-  padding: 0 3px;
-  background: palegoldenrod;
-  text-shadow: 1px 1px white;
-  font-family: Consolas, Monaco, Lucida Console, monospace;
-  font-size: 12px;
-  line-height: 1.6;
-  color: darkred;
-}
-
-PRE CODE {
-  display: block;
-  background: transparent;
-  color: inherit;
-}
-
-.specifity {
-  background: #DDD;
-  color: #222;
-}
-
 /* Common
 -------------------------------- */
 
@@ -376,6 +346,36 @@ A[href*="wikipedia"]:after {
   .kitten {
     right: -15px;
   }
+}
+
+/* Codes
+-------------------------------- */
+
+PRE,
+CODE {
+  border-radius: 4px;
+}
+
+CODE {
+  display: inline-block;
+  padding: 0 3px;
+  background: palegoldenrod;
+  text-shadow: 1px 1px white;
+  font-family: Consolas, Monaco, Lucida Console, monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  color: darkred;
+}
+
+PRE CODE {
+  display: block;
+  background: transparent;
+  color: inherit;
+}
+
+.specifity {
+  background: #DDD;
+  color: #222;
 }
 
 /* Layout
@@ -652,7 +652,11 @@ A[href*="wikipedia"]:after {
 }
 
 .post__excerpt P:last-of-type {
-  margin-bottom: 0;
+  margin-bottom: 10px;
+}
+
+.post__excerpt .link--readmore {
+  font-size: 12px;
 }
 
 .post__date {
