@@ -11,7 +11,7 @@ status: publish
 type: post
 published: true
 ---
-Из одного <code>div</code> с помощью <code>border-radius</code> легко можно сделать лепесток<!--more-->:
+Из одного <code>div</code> с помощью <code>border-radius</code> легко можно сделать лепесток:<!--more-->
 
 <iframe class="jsbin" style="height: 300px" src="http://jsbin.com/iheGIL/1/embed?output,css"></iframe>
 

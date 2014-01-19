@@ -10,7 +10,7 @@ description: Статьи про Css
     <h4 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
     {% endif %}
     <div class="post__excerpt">
-      {{ post.excerpt }} <a href="{{ post.url }}" class="link--readmore">Читать дальше &#8594;</a>
+      {{ post.excerpt | replace: ':</p>', '.</p>' }} <a href="{{ post.url }}" class="link--readmore">Читать дальше &#8594;</a>
     </div>
   </li>
 {% endfor %} </ul>

@@ -14,7 +14,7 @@ published: true
 
 Работает только для блочных элементов.
 
-К <code>:first-letter</code> применяется ограниченное количество свойств<!--more-->: 
+К <code>:first-letter</code> применяется ограниченное количество свойств:<!--more-->
 
 <ul><li><code>float</code></li>
 <li><code>width</code> (только к элементу c float)</li>

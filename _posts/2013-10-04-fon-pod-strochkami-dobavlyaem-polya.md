@@ -13,7 +13,7 @@ links:
 - url: /box-shadow
   name: Box shadow
 ---
-Проблема: если задать фон строчным элементам, получается вот так <!--more-->:
+Проблема: если задать фон строчным элементам, получается вот так<!--more-->:
 
 <iframe class="jsbin" style="height: 200px" src="http://jsbin.com/IRiheKO/2/embed?output"></iframe>
 

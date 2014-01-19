@@ -25,7 +25,7 @@ links:
 ---
 На  <a href="http://css-tricks.com/">css-tricks.com</a> опубликовали интересный способ получить цветовой круг с помощью Css: <a href="http://css-tricks.com/conical-gradients-css/">css-tricks.com/conical-gradients-css</a>.
 
-В уроке код для SASS, я попробовала сделать это простым CSS и используя меньшее количество элементов<!--more-->:
+В уроке код для SASS, я попробовала сделать это простым CSS и используя меньшее количество элементов:<!--more-->
 
 <iframe class="jsbin" style="height: 420px" src="http://jsbin.com/ewIRARe/3/embed?output"></iframe>
 

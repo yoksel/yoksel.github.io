@@ -10,7 +10,7 @@ type: post
 published: true
 ---
 Прекрасная статья от <strong>Harry Roberts</strong>
-<a href="http://csswizardry.com/2012/06/single-direction-margin-declarations/">csswizardry.com/2012/06/single-direction-margin-declarations/</a>
+<a href="http://csswizardry.com/2012/06/single-direction-margin-declarations/">csswizardry.com/2012/06/single-direction-margin-declarations/</a>.
 
 Суть идеи состоит в использовании односторонних вертикальных марджинов.<!--more--> Это создает аккуратный вертикальный ритм и позволяет менять элементы местами не опасаясь, что вертикальные отступы разной величины где-то схлопнутся непредсказуемым образом.
 

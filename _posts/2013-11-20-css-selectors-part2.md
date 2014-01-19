@@ -48,7 +48,7 @@ post_nav:
   name: 'E ~ F'
   
 ---
-Начало тут: <a href="/css-selectors">Css-селекторы</a><!--more-->
+Начало тут: <a href="/css-selectors">Css-селекторы</a>.<!--more-->
 
 <h4>Селекторы из CSS3</h4>
 
