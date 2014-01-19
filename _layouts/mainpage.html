@@ -1,9 +1,13 @@
 ---
-layout: default
+layout: shell
 <!-- type: mainpage -->
 ---
 <main class="l-main" role="main">
     <div class="posts">
-	   {{ content }}
+        <h3>Статьи</h3>
+       {{ content }}
     </div>
 </main>
+<aside class="l-aside" role="complementary">
+    {% include sidebar.html %}
+</aside>
