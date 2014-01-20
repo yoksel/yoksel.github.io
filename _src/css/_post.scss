@@ -256,3 +256,8 @@
 				}	
 			}	
 	}	
+.widget--disqus {
+	@include margin( top );
+	@include padding ( top );
+	@include border ( top );
+	}	

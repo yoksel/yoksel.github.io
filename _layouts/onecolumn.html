@@ -19,5 +19,9 @@ layout_type: onecolumn
 		{% if page.type == 'page' and page.layout_type == 'onecolumn' %}
 		<div class="post__link-back"><a href="/pages/">Страницы</a> &bull; <a href="/">Статьи</a></div>
 		{% endif %}
+
+		{% if page.title %}
+		{% include disqus.html %}	
+		{% endif %}
 	</article>
 </main>
