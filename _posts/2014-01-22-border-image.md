@@ -141,7 +141,7 @@ border-image-repeat: repeat;</code></pre>
 <code>&lt;длина></code> - значения в px или em;
 <code>&lt;%></code> - значения в процентах относительно размера изображения;
 <code>&lt;числа></code> - числовое значение, на которое умножается <code>border-width</code>
-<code>auto</code> - ключевое слово. <i>If ‘auto’ is specified then the border image width is the intrinsic width or height (whichever is applicable) of the corresponding image slice (see ‘border-image-slice’). If the image does not have the required intrinsic dimension then the corresponding border-width is used instead.</i> Пока не получилось перевести.
+<code>auto</code> - ключевое слово. Если оно задано, значение равно соответственному <code>border-image-slice</code>. Если подходящего размера нет, используется значение <code>border-width</code>, при этом картинка заполняет весь угол рамки, заползая под контент. Немного странно работает.
 
 <pre><code class="language-css">border: 60px solid transparent;
 border-image: url("http://img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786d4_L.png");
