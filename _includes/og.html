@@ -3,4 +3,4 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ site.url }}{{ page.url  | replace: '/', '' }}" />
     {% if page.image %}<meta property="og:image" content="{{ page.image }}" />{% endif %}
-    {% if page.excerpt %}<meta property="og:description" content="{{ page.excerpt | replace: ':</p>', '.</p>' }} "/>{% endif %}
+    {% if page.desc %}<meta property="og:description" content="{{ page.desc }} "/>{% endif %}
