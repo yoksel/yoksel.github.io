@@ -1,12 +1,9 @@
 ---
 layout: default
 title: 'Responsive Web Design: Clever Tips and Techniques'
-categories:
-- Видео
-tags: []
-status: publish
 type: post
-published: true
+
+desc: Выступление Виталия Фридмана на Яке2013.
 ---
 Искала выступление Виталия Фридмана на Яке2013, нашла вот это<!--more-->:
 

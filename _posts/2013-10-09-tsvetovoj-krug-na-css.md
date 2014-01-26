@@ -6,9 +6,9 @@ categories:
 - Filtres
 - Transform
 tags: []
-status: publish
 type: post
-published: true
+
+desc: На css-tricks.com опубликовали интересный способ получить цветовой круг с помощью Css. В уроке код для SASS, я попробовала сделать это простым CSS и используя меньшее количество элементов.
 
 links: 
 - url: http://docs.webplatform.org/wiki/svg/tutorials/smarter_svg_filters

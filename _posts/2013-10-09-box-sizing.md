@@ -4,10 +4,9 @@ title: Box-sizing
 categories:
 - Box-sizing
 - Css
-tags: []
-status: publish
 type: post
-published: true
+
+desc: Свойство box-sizing позволяет указать как ведут себя размеры блока при наличии рамок и полей.
 ---
 Свойство <code>box-sizing</code> позволяет указать как ведут себя размеры блока при наличии рамок и полей.
 Применяются к элементам, у которых заданы размеры.<!--more-->

@@ -3,6 +3,8 @@ layout: default
 title:  Css-селекторы, часть 2
 type: post
 
+desc: Продолжение справочника по селекторам.
+
 links:
 - url: /specifity/
   name: Сколько весят селекторы?
