@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Текстовые эффекты
-
-status: publish
 type: post
-published: true
+
+image: http://img-fotki.yandex.ru/get/9749/5091629.9a/0_7ec7c_17590c11_L.png
+desc: CSS-эффекты на основе text-shadow.
 ---
 
 В посте представлены некоторые эффекты на основе <code>text-shadow</code>. 
