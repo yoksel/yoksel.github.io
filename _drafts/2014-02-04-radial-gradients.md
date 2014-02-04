@@ -16,7 +16,7 @@ links:
 
 Радиальные градиенты работают иначе, чем линейные. Если цвета линейных располагаются перпендикулярно линии, задающей направление, то в радиальных цвета расходятся от заданного центра и могут располагаться в форме круга или эллипса.
 
-Спецификация: <a href="http://www.w3.org/TR/css3-images/#radial-gradients">.w3.org/TR/css3-images/#radial-gradients</a><!--more-->
+Спецификация: <a href="http://www.w3.org/TR/css3-images/#radial-gradients">w3.org/TR/css3-images/#radial-gradients</a>.<!--more-->
 
 Для самого простого градиента достаточно задать только цвета:
 
@@ -44,20 +44,28 @@ links:
 
 <b>Размер</b> определяет размеры конечной фигуры градиента. Для эллиптических градиентов значения можно задавать в процентах, для круглых - нет.
 
+Если задано одно значение - оно считается радиусом круглого градиента.
+Если задано два значение - первое считается горизонтальным радиусом фигуры, второе - вертикальным.
+
+Примеры круглых и элиптических градиентов, форма фигуры определяется заданными размерами:
+
+<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/EHuREfA/16/"></iframe>
+
+
+
+
 Также можно использовать ключевые слова:
 
-
-<code>closest-side</code>
-The ending shape is sized so that that it exactly meets the side of the gradient box closest to the gradient's center. If the shape is an ellipse, it exactly meets the closest side in each dimension.
-<code>farthest-side</code>
-Same as ‘closest-side’, except the ending shape is sized based on the farthest side(s).
-<code>closest-corner</code>
+<code>closest-side</code> - градиент заканчивается у границы элемента ближайшей к центру градиента. Если это эллипс, градиент касается всех границ элемента.
+<code>farthest-side</code> - градиент заканчивается у дальней границы элемента. Если это эллипс, градиент касается всех границ элемента.
+<code>closest-corner</code> - непонятно
 The ending shape is sized so that that it passes through the corner of the gradient box closest to the gradient's center. If the shape is an ellipse, the ending shape is given the same aspect-ratio it would have if ‘closest-side’ were specified.
-<code>farthest-corner</code>
+<code>farthest-corner</code> - непонятно
 Same as ‘closest-corner’, except the ending shape is sized based on the farthest corner. If the shape is an ellipse, the ending shape is given the same aspect ratio it would have if ‘farthest-side’ were specified.
 
+<iframe class="jsbin" style="height: 700px" src="http://jsbin.com/EHuREfA/15/"></iframe>
 
-<iframe class="jsbin" style="height: 700px" src="http://jsbin.com/EHuREfA/14/"></iframe>
+-------
 
 <shape>
 Can be either ‘circle’ or ‘ellipse’; determines whether the gradient's ending shape is a circle or an ellipse, respectively. If <shape> is omitted, the ending shape defaults to a circle if the <size> is a single <length>, and to an ellipse otherwise.
