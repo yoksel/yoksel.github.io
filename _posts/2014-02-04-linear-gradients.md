@@ -2,16 +2,16 @@
 layout: default
 title: CSS-градиенты
 type: post
-image: 
-desc: 
+image: http://img-fotki.yandex.ru/get/9760/5091629.9b/0_7ee9b_73c4e981_XL.png
+desc: CSS-градиенты позволяют сделать фон из двух и более цветов, плавно переходящих из одного в другой. Они могут быть использованы везде, где используются картинки&#58; в фонах, в качестве буллетов списков, они могут быть заданы в content или border-image.
 
 links:
-- url: /tsveta
-  name: Цвета в Css	
-- url: http://css.coloratum.com/
-  name: CSS.coloratum  
 - url: http://www.colorzilla.com/gradient-editor/
   name: Ultimate CSS Gradient Generator
+- url: http://css.coloratum.com/
+  name: CSS.coloratum  
+- url: /tsveta
+  name: Цвета в Css
 ---
 
 CSS-градиенты позволяют сделать фон из двух и более цветов, плавно переходящих из одного в другой.
@@ -41,6 +41,8 @@ CSS-градиенты позволяют сделать фон из двух и
 <code>to right</code> = <code>90deg</code>;
 <code>to bottom</code> = <code>180deg</code> - значение по умолчанию;
 <code>to left</code> = <code>270deg</code>.
+
+Ключевые слова можно сочетать между собой, чтобы получить диагональный градиент, например <code>to top left</code>.
 
 Ниже можно увидеть как работают разные направления в растяжке от сиреневого до желтого:
 

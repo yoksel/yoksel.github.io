@@ -16,10 +16,10 @@
     "url": "https://github.com/yoksel/yoksel.github.io/issues"
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-sass": "~0.5.0",
-    "grunt-autoprefixer": "~0.4.0",
-    "grunt-csso": "~0.5.0",
+    "grunt": "~0.4.2",
+    "grunt-contrib-sass": "~0.7.2",
+    "grunt-autoprefixer": "~0.6.5",
+    "grunt-csso": "~0.5.3",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-htmlmin": "~0.1.3"
