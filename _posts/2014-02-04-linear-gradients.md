@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CSS-градиенты
+title: CSS-градиенты&#58; линейные градиенты
 type: post
 image: http://img-fotki.yandex.ru/get/9760/5091629.9b/0_7ee9b_73c4e981_XL.png
 desc: CSS-градиенты позволяют сделать фон из двух и более цветов, плавно переходящих из одного в другой. Они могут быть использованы везде, где используются картинки&#58; в фонах, в качестве буллетов списков, они могут быть заданы в content или border-image.
@@ -10,6 +10,8 @@ links:
   name: Ultimate CSS Gradient Generator
 - url: http://css.coloratum.com/
   name: CSS.coloratum  
+- url: http://www.webdirections.org/resources/lea-verou-mastering-css3-gradients/
+  name: Презентация про градиенты от Lea Verou
 - url: /tsveta
   name: Цвета в Css
 ---
