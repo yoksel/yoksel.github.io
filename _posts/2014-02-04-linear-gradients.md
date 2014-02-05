@@ -116,11 +116,12 @@ CSS-градиенты позволяют сделать фон из двух и
 
 Примерный код:
 
-<pre><code class="language-css">background: repeating-linear-gradient( 90deg,
-    green, green 1em, 
-    transparent 1em, transparent 2em);</code></pre>
+<pre><code class="language-css">background: repeating-linear-gradient( 
+    green, green .5em, 
+    transparent .5em, transparent 1em
+    );</code></pre>
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/OvOwEma/8/"></iframe>
+<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/OvOwEma/9/"></iframe>
 
 К сожалению, повторяющиеся градиенты ведут себя как попало и подойдут только для узоров, которым не важна точность. Если нужна аккуратность, используйте <code>linear-gradient</code> в сочетании с <code>background-size</code> и <code>background-repeat</code>.
 

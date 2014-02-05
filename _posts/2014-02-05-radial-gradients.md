@@ -51,6 +51,8 @@ links:
 
 <pre><code class="language-css">background: radial-gradient(at top left, purple, crimson, orangered, gold);</code></pre>
 
+Также можно задавать точное положение градиента, например <code>at 20% 50%</code> или <code>at 10px 150px</code>.
+
 <b>Размер</b> определяет размеры конечной фигуры градиента. Для эллиптических градиентов значения можно задавать в процентах, для круглых - нет.
 
 Если задано одно значение - оно считается радиусом круглого градиента.
@@ -70,6 +72,18 @@ links:
 
 Некоторым градиентам добавлено положение <code>at bottom</code>, чтобы было лучше видно действие кода:
 <iframe class="jsbin" style="height: 700px" src="http://jsbin.com/EHuREfA/22/"></iframe>
+
+<code>radial-gradient</code> также можно сделать повторяющимся: <code>repeating-radial-gradient</code>.
+
+Примерный код:
+
+<pre><code class="language-css">background: repeating-radial-gradient(circle,
+    darkkhaki, darkkhaki .5em, 
+    transparent .5em, transparent 1.5em);</code></pre>
+
+<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/OvOwEma/10/"></iframe>
+
+Как и в случае с линейным градиентом, повторяющийся градиент не очень аккуратно отрисовывается.
 
 Сочетая несколько фонов с разными параметрами можно получить удивительные вещи:
 
