@@ -19,7 +19,8 @@ desc:
   background-size: 2em 2em;
   background-color: black;</code></pre>
 
-<iframe class="jsbin" style="height: 200px" src="http://jsbin.com/OvOwEma/12/"></iframe>
+<p data-height="250" data-theme-id="0" data-slug-hash="lcbAa" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/lcbAa'>lcbAa</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Общий принцип такой: создается градиент, который нужно повторить. По умолчанию он займет всю доступную площадь, но если задать размер фону - получится картинка желаемого размера, которая замостит собой весь фон элемента.
 Если значения градиента задавать в процентах или <code>em</code>, потом можно будет легко управлять размером узора редактируя размер шрифта и/или <code>background-size</code>.
@@ -27,16 +28,23 @@ desc:
 Белые полоски в паттерне выше чередуются с прозрачностью, и могут быть положены на любой фон. Управляя границей между цветами можно регулировать ширину полос.
 Если вместо белого цвета задать полупрозрачный белый или черный, можно получить универсальный паттерн, который будет хорошо выглядеть на любом фоне:
 
-<iframe class="jsbin" style="height: 200px" src="http://jsbin.com/OvOwEma/13/"></iframe>
+<p data-height="234" data-theme-id="0" data-slug-hash="IeDAp" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/IeDAp'>IeDAp</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+Используя два градиента с цветными полупрозрачными линиями можно сделать клетчатую скатерть:
+
+<p data-height="268" data-theme-id="0" data-slug-hash="qclad" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/qclad'>Diagonal stripes</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Ещё с помощью простых полосок можно делать небольшие декоративные элементы:
 
-<iframe class="jsbin" style="height: 200px" src="http://jsbin.com/OvOwEma/18/"></iframe>
+<p data-height="215" data-theme-id="0" data-slug-hash="zfcjm" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/zfcjm'>zfcjm</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Если нужен полосатый фон посложнее, имеет смысл обратить внимание на принцип цикады:
 
 - <a href="http://www.sitepoint.com/the-cicada-principle-and-why-it-matters-to-web-designers/">The Cicada Principle and Why It Matters to Web Designers</a>
-- <a href="http://habrahabr.ru/post/117160/">Принцип цикады и почему он важен для веб-дизайнеров (перевод предыдущей статьи)</a>
+- <a href="http://habrahabr.ru/post/117160/">Принцип цикады и почему он важен для веб-дизайнеров</a> (перевод предыдущей статьи)
 - <a href="http://habrahabr.ru/post/148639/">Принцип цикады на чистом CSS</a>
 
 Принцип заключается в использовании нескольких фонов разного размера. Это означает, что стыковаться они тоже будут в разных местах, таким образом на фоне невозможно будет найти повторяющиеся участки или места стыковки. По-моему, гениально придумано.
@@ -49,32 +57,106 @@ desc:
 
 Это простые числа, то есть те, которые не делятся ни на что кроме себя. 
 
-Вот как выглядит результат (<a href="http://jsbin.com/OvOwEma/14">ссылка на полный размер</a>):
+Вот как выглядит результат (<a href="http://cdpn.io/khprw">ссылка на полный размер</a>):
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/OvOwEma/14/"></iframe>
+<p data-height="300" data-theme-id="0" data-slug-hash="khprw" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/khprw'>khprw</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Похоже на волшебство : )
 
 Также из полосатых градиентов легко получить, например, тетрадный лист в линейку:
 
-<iframe class="jsbin" style="height: 270px" src="http://jsbin.com/OvOwEma/19/"></iframe>
+<p data-height="270" data-theme-id="0" data-slug-hash="jBobD" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/jBobD'>jBobD</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Или в клетку:
 
-<iframe class="jsbin" style="height: 270px" src="http://jsbin.com/OvOwEma/17/"></iframe>
+<p data-height="268" data-theme-id="0" data-slug-hash="zkImJ" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/zkImJ'>zkImJ</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 
 С простыми линиями понятно, но что если нужен паттерн из косых линий?
-<code>repeating-linear-gradient</code> должен бы помочь, но на практике градиент ведет себя <a href="http://jsbin.com/OvOwEma/20">как попало</a> (порастягивайте окно браузера).
+<code>repeating-linear-gradient</code> должен бы помочь, но на практике градиент ведет себя <a href="http://cdpn.io/IBCJD">как попало</a> (порастягивайте окно браузера).
 
+Попробуем сделать простыми полосками, повернутыми на 45&deg;.
+
+Примерный код:
+
+<pre><code class="language-css">background: linear-gradient(-45deg,
+      $transparent 50%, 
+      darkkhaki 50%, darkkhaki 60%, 
+      $transparent 60%
+      );
+</code></pre>
+
+Результат:
+
+<p data-height="268" data-theme-id="0" data-slug-hash="uBdhC" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/uBdhC'>uBdhC</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+В примере хорошо видно, что паттерн состоит из повторяющихся квадратиков, градиент идет из нижнего левого угла в верхний правый, но в противоположных углах ничего нет, и линия получается прерывистой. 
+
+Чтобы закрыть пробелы, добавим ещё один градиент:
+
+<pre><code class="language-css">background: linear-gradient(-45deg,
+      $transparent 50%, 
+      darkkhaki 50%, darkkhaki 60%, 
+      $transparent 60%
+      ),
+    linear-gradient(-45deg,
+      crimson 10%,
+      $transparent 10%
+      );</code></pre>
+
+Я сделала уголок ярким, чтобы было видно куда он попал:
+
+<p data-height="268" data-theme-id="0" data-slug-hash="jmeEd" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/jmeEd'>Diagonal stripes</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+Красим уголок в нужный цвет и получаем аккуратные косые линии:
+
+<p data-height="268" data-theme-id="0" data-slug-hash="ExBcC" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/ExBcC'>Diagonal stripes</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+Правда, пришлось немного подрегулировать точки остановки цветов в первом градиенте (<code>50%</code> &rarr; <code>49.9%</code>), но зато теперь стыков вообще не видно.
+
+Если вместо угла указать направление ключевыми словами, например <code>to left top</code>, это позволит изменять угол градиента через изменение его размера, потому что в этом случае градиент будет всегда направлен из одного угла в другой независимо от <code>background-size</code>.
+
+Примерный код:
+
+<pre><code class="language-css">background: linear-gradient(to left top,
+      transparent 48.9%, 
+      skyblue 51%, skyblue 78%, 
+      transparent 80%
+      ),
+    linear-gradient(to left top,
+      skyblue 28%,
+      transparent 30%
+      );
+  background-size: 2em 6em;</code></pre>
+
+В последней строчке задан градиент прямоугольной формы. Благодаря направлению и значениям остановок в процентах можно сколько угодно менять его размеры - изменится угол наклона линий, но сам паттерн от этого не пострадает:
+
+<p data-height="268" data-theme-id="0" data-slug-hash="qlCjz" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/qlCjz'>Diagonal stripes</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+В некоторых случаях края линий становятся зубчатыми, причем их отрисовка зависит от браузера: Chrome справляется лучше, в Firefox видны ступеньки.
+Чтобы сделать край плавным, можно сделать стык между цветами не четкий, а размытый, шириной 1-2%.
+Также следует помнить о проблеме с прозрачными цветами в Firefox - это решается использованием нужного оттенка со полной прозрачностью.
+
+Экспериментируя с линиями можно получить другие интересные узоры:
+
+<p data-height="268" data-theme-id="0" data-slug-hash="brosh" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/brosh'>Diagonal stripes</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+<p data-height="268" data-theme-id="0" data-slug-hash="fFJpl" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/fFJpl'>Diagonal stripes</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+<p data-height="268" data-theme-id="0" data-slug-hash="rqcHC" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/rqcHC'>Diamonds</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+<p data-height="268" data-theme-id="0" data-slug-hash="ajJes" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/ajJes'>Tablecloth</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 ---------
-
-Используя только градиенты, можно сделать очень много интересного. <a href="http://lea.verou.me/">Lea Verou</a> целую подборку паттернов, сделанных на CSS: <a href="http://lea.verou.me/css3patterns/">lea.verou.me/css3patterns</a>. Там есть много прекрасных вещей, некоторые, поначалу, даже непонятно как сделаны.
-
-
-
-
-
 
 <pre><code class="language-css"></code></pre>
 
-<iframe class="jsbin" style="height: 200px" src="http://jsbin.com/OvOwEma/3/"></iframe>
