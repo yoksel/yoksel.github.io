@@ -87,9 +87,11 @@ links:
 
 Сочетая несколько фонов с разными параметрами можно получить удивительные вещи:
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/EHuREfA/24/"></iframe>
+<p data-height="268" data-theme-id="0" data-slug-hash="lxrhg" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/lxrhg'>Rounds</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/EHuREfA/25/"></iframe>
+<p data-height="268" data-theme-id="0" data-slug-hash="ijxKy" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/ijxKy'>Circles</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Если при создании узоров использовать относительные единицы (<code>em</code>, <code>%</code>), а не абсоюлютные (<code>px</code>), размер получившихся паттернов потом можно будет легко регулировать изменяя только размер шрифта.
 

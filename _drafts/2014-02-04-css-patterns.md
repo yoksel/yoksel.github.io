@@ -7,9 +7,12 @@ desc:
 
 ---
 
-Возможности управления фонами через CSS с cочетании с градиентами дают совершенно невероятные возможности. Градиентами можно нарисовать всё что угодно от простых клеточек, полосочек и кружочков до достаточно сложных узоров. Играться можно до бесконечности.
+Возможности управления фонами через CSS в cочетании с градиентами дают совершенно невероятные возможности. Градиентами можно нарисовать всё что угодно от простых клеточек, полосочек и кружочков до достаточно сложных узоров. Играться можно до бесконечности.
 
 <!--more-->
+
+Общий принцип такой: создается градиент, который нужно повторить. По умолчанию он займет всю доступную площадь, но если задать размер фону - получится картинка желаемого размера, которая замостит собой весь фон элемента.
+Если значения градиента задавать в процентах или <code>em</code>, потом можно будет легко управлять размером узора редактируя размер шрифта и/или <code>background-size</code>.
 
 Например, можно сделать простые полоски:
 
@@ -22,10 +25,8 @@ desc:
 <p data-height="250" data-theme-id="0" data-slug-hash="lcbAa" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/lcbAa'>lcbAa</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-Общий принцип такой: создается градиент, который нужно повторить. По умолчанию он займет всю доступную площадь, но если задать размер фону - получится картинка желаемого размера, которая замостит собой весь фон элемента.
-Если значения градиента задавать в процентах или <code>em</code>, потом можно будет легко управлять размером узора редактируя размер шрифта и/или <code>background-size</code>.
+Белые полоски чередуются с прозрачностью, и могут быть положены на любой фон. Управляя границей между цветом и прозрачностью можно регулировать ширину полос.
 
-Белые полоски в паттерне выше чередуются с прозрачностью, и могут быть положены на любой фон. Управляя границей между цветами можно регулировать ширину полос.
 Если вместо белого цвета задать полупрозрачный белый или черный, можно получить универсальный паттерн, который будет хорошо выглядеть на любом фоне:
 
 <p data-height="234" data-theme-id="0" data-slug-hash="IeDAp" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/IeDAp'>IeDAp</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
@@ -36,7 +37,7 @@ desc:
 <p data-height="268" data-theme-id="0" data-slug-hash="qclad" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/qclad'>Diagonal stripes</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-Ещё с помощью простых полосок можно делать небольшие декоративные элементы:
+С помощью разноцветных полосок можно делать небольшие декоративные элементы:
 
 <p data-height="215" data-theme-id="0" data-slug-hash="zfcjm" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/zfcjm'>zfcjm</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
@@ -74,7 +75,8 @@ desc:
 <p data-height="268" data-theme-id="0" data-slug-hash="zkImJ" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/zkImJ'>zkImJ</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-С простыми линиями понятно, но что если нужен паттерн из косых линий?
+С простыми линиями всё просто, но что если нужен паттерн из косых линий?
+
 <code>repeating-linear-gradient</code> должен бы помочь, но на практике градиент ведет себя <a href="http://cdpn.io/IBCJD">как попало</a> (порастягивайте окно браузера).
 
 Попробуем сделать простыми полосками, повернутыми на 45&deg;.
@@ -156,7 +158,47 @@ desc:
 
 <p data-height="268" data-theme-id="0" data-slug-hash="ajJes" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/ajJes'>Tablecloth</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
----------
 
-<pre><code class="language-css"></code></pre>
+<p data-height="268" data-theme-id="0" data-slug-hash="EHbBw" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/EHbBw'>Corners</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+<p data-height="268" data-theme-id="0" data-slug-hash="saJtl" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/saJtl'>Corners</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+<p data-height="268" data-theme-id="0" data-slug-hash="Etomx" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/Etomx'>Corners</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+Впрочем, я увлеклась. С радиальными градиентами тоже можно делать интересное. Вот, например, обычный горох:
+
+<p data-height="268" data-theme-id="0" data-slug-hash="eolqw" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/eolqw'>Corners</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+Чтобы граница градиента была ровной, без зубчиков, границу прозрачности нужно делать чуть дальше, чем точка остановки цвета. 
+Вебкиты, как обычно, лучше справляются со сглаживанием. 
+
+Вот ещё пример:
+
+<p data-height="268" data-theme-id="0" data-slug-hash="muxnF" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/muxnF'>Circles and dottes</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+Принцип создания узоров тот же, что и для линейных градиентов. Причем сочетая линейные и радиальные градиенты можно получить из простых геометрических форм более сложные:
+
+<p data-height="268" data-theme-id="0" data-slug-hash="jufvg" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/jufvg'>Hearts</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+<p data-height="268" data-theme-id="0" data-slug-hash="oeksa" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/oeksa'>Drops</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+Можно делать довольно сложные узоры, для этого дучше всего использовать возможности препроцессоров:
+
+<p data-height="268" data-theme-id="0" data-slug-hash="DiIBm" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/DiIBm'>Waves</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+<p data-height="268" data-theme-id="0" data-slug-hash="ijxKy" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/ijxKy'>Circles</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+Минусы таких паттернов обычно в длине и сложности кода, а также в недостаточной поддержке старыми браузерами. Для них может потребоваться картинка. 
+Плюсы - градиенты ничего не весят, их не надо запрашивать с сервера, и можно легко менять цвета и размер узора.
+
+Больше паттернов можно увидеть во вдохновляющей галерее от Lea Verou: <a href="http://lea.verou.me/css3patterns/">lea.verou.me/css3patterns/</a>.
 
