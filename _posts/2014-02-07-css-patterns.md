@@ -75,7 +75,7 @@ desc: Возможности управления фонами через CSS в
 <p data-height="268" data-theme-id="0" data-slug-hash="zkImJ" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/zkImJ'>zkImJ</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-С простыми линиями всё просто, но что если нужен паттерн из косых линий?
+С простыми линиями всё довольно понятно, но что если нужен паттерн из косых линий?
 
 <code>repeating-linear-gradient</code> должен бы помочь, но на практике градиент ведет себя <a href="http://cdpn.io/IBCJD">как попало</a> (порастягивайте окно браузера).
 
@@ -189,7 +189,7 @@ desc: Возможности управления фонами через CSS в
 <p data-height="268" data-theme-id="0" data-slug-hash="oeksa" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/oeksa'>Drops</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-Можно делать довольно сложные узоры, для этого дучше всего использовать возможности препроцессоров:
+Можно делать довольно сложные узоры, для этого лучше всего использовать возможности препроцессоров:
 
 <p data-height="268" data-theme-id="0" data-slug-hash="DiIBm" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/DiIBm'>Waves</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
