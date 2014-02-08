@@ -18,7 +18,8 @@ links:
 Результат игры обрабатывается с помощью CSS. 
 Игра заканчивается при однозначном выигрыше либо при ничьей и полностью заполненном поле.
 
-<iframe class="jsbin" style="height: 450px" src="http://jsbin.com/aWamijum/7"></iframe>
+<p data-height="450" data-theme-id="0" data-slug-hash="lnAuh" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/lnAuh'>lnAuh</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Теоретически можно было бы учитывать ничью до заполнения поля, это возможно, но код будет совсем длинным, так что я отказалась от этой затеи.
 
