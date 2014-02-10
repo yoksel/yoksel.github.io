@@ -43,6 +43,8 @@ links_docs:
   name: docs.webplatform.org
 
 links_tools:
+- url: http://codepen.io/
+  name: Codepen
 - url: http://jsbin.com
   name: JsBin
 - url: http://caniuse.com/
@@ -67,6 +69,8 @@ links_blogs:
   name: Csswizardry.com
 - url: http://tympanus.net/codrops/
   name: Сodrops  
+- url: http://frontender.info/
+  name: Frontender Magazine
 
 links_usefull:  
 - url: /pages/tablitsa-imenovanny-h-tsvetov.html
