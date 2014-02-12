@@ -2,8 +2,8 @@
 layout: default
 title: Свежие CSS-паттерны
 type: post
-image: 
-desc: 
+image: http://img-fotki.yandex.ru/get/9322/5091629.9b/0_7efbf_83aa6b97_L.png
+desc: Неожиданно увлеклась темой CSS-паттернов и сделала несколько новых. Меня интересовало&#58; можно ли сделать плавные волны и спирали, получится ли имитировать узор из цветной бумаги и как сделать почтовую марку не используя изображения.
 
 ---
 
@@ -14,7 +14,7 @@ desc:
 
 При создании паттернов ни одной картинки не пострадало.
 
-<b>Волны</b>. Рюшки - тоже градиент!
+<b>Волны</b>. Рюшки тоже сделаны градиентом!
 
 <p data-height="350" data-theme-id="0" data-slug-hash="mgakB" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/mgakB'>Thinking of Sea</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
