@@ -202,3 +202,5 @@ desc: Возможности управления фонами через CSS в
 
 Больше паттернов можно увидеть во вдохновляющей галерее от Lea Verou: <a href="http://lea.verou.me/css3patterns/">lea.verou.me/css3patterns/</a>.
 
+Урок по паттернам от Lea Verou: <a href="http://24ways.org/2011/css3-patterns-explained/">CSS3 Patterns, Explained</a>
+
