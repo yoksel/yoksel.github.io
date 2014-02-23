@@ -139,7 +139,7 @@ module.exports = function (grunt) {
     ]);
 
   grunt.registerTask('build', [
-    'sass:dist',
+    //'sass:dist',
     'autoprefixer:dist',
     'clean:build'
     ]);
