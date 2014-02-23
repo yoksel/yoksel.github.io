@@ -13,8 +13,7 @@ desc:
 <div style="text-align: center"><iframe src="http://yoksel.github.io/shadowPainter/" frameborder="0" width="700" height="540"></iframe></div>
 
 На отдельной странице: <a href="http://yoksel.github.io/shadowPainter/">yoksel.github.io/shadowPainter/</a>.
-
-Проект на гитхабе: <a href="https://github.com/yoksel/shadowPainter">github.com/yoksel/shadowPainter</a>
+Проект на гитхабе: <a href="https://github.com/yoksel/shadowPainter">github.com/yoksel/shadowPainter</a>.
 
 Редактор позволяет рисовать разноцветные анимированные узоры из клеточек. Можно управлять скоростью анимации, размером поля, количеством клеточек и кадров.
 
