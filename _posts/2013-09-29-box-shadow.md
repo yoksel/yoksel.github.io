@@ -12,6 +12,8 @@ published: true
 links: 
 - url: /cells/
   name: Клеточки на CSS
+- url: /shadowpainter/
+  name: Рисовалка анимированных теней    
 ---
 Свойство <code>box-shadow</code> позволяет добавить элементам одну или несколько теней.<!--more-->
 
