@@ -19,6 +19,8 @@ links:
 На отдельной странице: <a href="http://yoksel.github.io/shadowPainter/">yoksel.github.io/shadowPainter/</a>.
 Проект на гитхабе: <a href="https://github.com/yoksel/shadowPainter">github.com/yoksel/shadowPainter</a>.
 
+А вот здесь можно посмотреть что получается в итоге: <a href="http://codepen.io/collection/rmoKl">Box-shadows Animations</a>
+
 Редактор позволяет рисовать разноцветные анимированные узоры из клеточек. Можно управлять скоростью анимации, размером поля, количеством клеточек и кадров.
 
 Готовую анимацию можно получить в виде кода.
