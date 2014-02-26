@@ -8,4 +8,11 @@ path: /about/
 
 Цель публикаций - разобраться в новых технологиях, познакомиться поближе со старыми и сохранить находки.
 
-Обсудить статьи и задать вопросы можно у меня в журнале <span class="i-ljuser"><a href="http://yoksel.livejournal.com/profile"><img width="16" height="16" class="i-ljuser-userhead" src="http://l-files.livejournal.net/userhead/721?v=1333628744"></a><a href="http://yoksel.livejournal.com/" class="i-ljuser-username">yoksel</a></span> или в сообществе <span class="i-ljuser"><a href="http://journals-covers.livejournal.com/profile"><img width="16" height="16" class="i-ljuser-userhead" src="http://l-stat.livejournal.com/img/community.gif?v=556?v=108.4"></a><a href="http://journals-covers.livejournal.com/" class="i-ljuser-username">journals_covers</a></span>
+Профили на других сайтах:
+
+<a href="https://github.com/yoksel">github.com/yoksel</a>
+<a href="http://codepen.io/yoksel/">codepen.io/yoksel</a> - играюсь с CSS;
+<a href="http://yoksel.livejournal.com/">yoksel</a> - ЖЖ;
+<a href="http://journals-covers.livejournal.com/">journals_covers</a> - дизайны для ЖЖ;
+<a href="http://www.colourlovers.com/lover/yoksel">colourlovers.com/lover/yoksel</a> - векторные паттерны.
+
