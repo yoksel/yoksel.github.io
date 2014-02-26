@@ -3,3 +3,5 @@ _site/
 node_modules
 temp
 src/css/*prefixed.css
+*.psd
+*.sketch
