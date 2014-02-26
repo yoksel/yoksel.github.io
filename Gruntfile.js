@@ -47,6 +47,10 @@ module.exports = function (grunt) {
     },
 
     /**
+     * https://npmjs.org/package/grunt-autoprefixer
+     */
+    
+    /**
      * https://npmjs.org/package/grunt-contrib-sass
      */
     sass: {
@@ -69,9 +73,6 @@ module.exports = function (grunt) {
       }
     },
 
-    /**
-     * https://npmjs.org/package/grunt-autoprefixer
-     */
     autoprefixer: {
       dev: {
         options: {},
@@ -84,6 +85,8 @@ module.exports = function (grunt) {
         dest: '<%= project.css_res %>/style.css'
       },
     },
+
+    
 
     svgmin: {                        
         options: {                   
@@ -102,7 +105,7 @@ module.exports = function (grunt) {
             }]
         }
     },  
-    
+
     imagemin: {
       dynamic: {   
         files: [{
@@ -132,6 +135,7 @@ module.exports = function (grunt) {
         '_site/package.json',
         '_site/node_modules',
         '_site/temp/drafts',
+        '_site/temp/img',
         '_src/css/*.prefixed.css',
         '_src/css/*.unprefixed.css'
       ]
@@ -167,7 +171,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     //'sass:dist',
-    'autoprefixer:dist',
+    //'autoprefixer:dist',
     'clean:build'
     ]);
 
