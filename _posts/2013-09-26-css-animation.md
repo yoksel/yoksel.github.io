@@ -12,6 +12,8 @@ published: true
 links: 
 - url: /pages/svojstva-animation.html
   name: Свойства Animation одной таблицей
+- url: /3d-and-gradients/  
+  name: СSS-градиенты и 3D
 
 post_nav:
 - url: '#keyframes'
