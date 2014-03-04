@@ -41,6 +41,8 @@ links_docs:
   name: developer.mozilla.org
 - url: http://docs.webplatform.org/
   name: docs.webplatform.org
+- url: http://learn.javascript.ru/
+  name: learn.javascript.ru
 
 links_tools:
 - url: http://codepen.io/
