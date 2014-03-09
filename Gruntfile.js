@@ -54,14 +54,6 @@ module.exports = function (grunt) {
      * https://npmjs.org/package/grunt-contrib-sass
      */
     sass: {
-      dev: {
-        options: {
-          style: 'expanded'
-        },
-        files: {
-          '<%= project.css_src %>/style.unprefixed.css': '<%= project.css_src %>/style.scss'
-        }
-      },
       dist: {
         options: {
           style: 'expanded',
@@ -74,11 +66,6 @@ module.exports = function (grunt) {
     },
 
     autoprefixer: {
-      dev: {
-        options: {},
-        src: '<%= project.css_src %>/style.unprefixed.css',
-        dest: '<%= project.css_res %>/style.css'
-      },
       dist: {
         options: {},
         src: '<%= project.css_src %>/style.unprefixed.css',
@@ -147,7 +134,7 @@ module.exports = function (grunt) {
     watch: {
       sass: {
         files: '<%= project.css_src %>{,*/}*.{scss,sass}',
-        tasks: ['sass:dev', 'autoprefixer', 'clean:dev'] 
+        tasks: ['sass', 'autoprefixer', 'clean:dev'] 
       }
     }
   });
@@ -164,14 +151,13 @@ module.exports = function (grunt) {
    * Run `grunt` on the command line
    */
   grunt.registerTask('default', [
-    'svgmin',
-    'imagemin',
+    //'svgmin',
+    //'imagemin',
     'watch'
     ]);
 
   grunt.registerTask('build', [
     //'sass:dist',
-    //'autoprefixer:dist',
     'clean:build'
     ]);
 
