@@ -105,6 +105,10 @@ desc: CSS-эффекты на основе text-shadow.
     }</code></pre>
 <iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/18/"></iframe>
 
+Для создания контура вокруг текста можно воспользоваться такой Sass-функцией:
+
+{% gist 9467758 %}
+
 <h4>Длинные тени</h4>
 
 <pre><code class="language-css">H1 {
