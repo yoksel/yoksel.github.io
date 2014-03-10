@@ -90,6 +90,11 @@ H1, H2, H3, H4, H5, H6 {
 
 /* MultyShadows
 -------------------------------- */
+/* 
+
+
+
+*/
 BODY {
   padding: 32px;
   background: #EEE;
@@ -433,9 +438,9 @@ PRE CODE {
   top: -22.4px;
   left: -22.4px;
   border-radius: 50%;
-  -webkit-box-shadow: -0 -0 0 0 rgba(255, 0, 0, 0.3), -0 0 0 0 rgba(255, 170, 0, 0.3), -0 0 0px 0 rgba(170, 255, 0, 0.3), 0 0 0px 0 rgba(0, 255, 0, 0.3), 0 0 0px 0 rgba(0, 255, 170, 0.3), 0 0 0px 0 rgba(0, 170, 255, 0.3), 0 -0 0px 0 rgba(170, 0, 255, 0.3), 0 -0 0px 0 rgba(255, 0, 170, 0.3);
-  box-shadow: -0 -0 0 0 rgba(255, 0, 0, 0.3), -0 0 0 0 rgba(255, 170, 0, 0.3), -0 0 0px 0 rgba(170, 255, 0, 0.3), 0 0 0px 0 rgba(0, 255, 0, 0.3), 0 0 0px 0 rgba(0, 255, 170, 0.3), 0 0 0px 0 rgba(0, 170, 255, 0.3), 0 -0 0px 0 rgba(170, 0, 255, 0.3), 0 -0 0px 0 rgba(255, 0, 170, 0.3);
+  /* @include shadow ( 0, 0, transparent); */
   -webkit-transition: all .5s;
+  /* @include shadow ( 0, 0, transparent); */
   transition: all .5s;
 }
 .header__logo A:hover {
@@ -446,8 +451,8 @@ PRE CODE {
   color: #DDD;
 }
 .header__logo A:hover:after {
-  -webkit-box-shadow: -14.56px -14.56px 0 0 rgba(255, 0, 0, 0.3), -20.384px 0 0 0 rgba(255, 170, 0, 0.3), -14.56px 14.56px 0px 0 rgba(170, 255, 0, 0.3), 0 20.384px 0px 0 rgba(0, 255, 0, 0.3), 14.56px 14.56px 0px 0 rgba(0, 255, 170, 0.3), 20.384px 0 0px 0 rgba(0, 170, 255, 0.3), 14.56px -14.56px 0px 0 rgba(170, 0, 255, 0.3), 0 -20.384px 0px 0 rgba(255, 0, 170, 0.3);
-  box-shadow: -14.56px -14.56px 0 0 rgba(255, 0, 0, 0.3), -20.384px 0 0 0 rgba(255, 170, 0, 0.3), -14.56px 14.56px 0px 0 rgba(170, 255, 0, 0.3), 0 20.384px 0px 0 rgba(0, 255, 0, 0.3), 14.56px 14.56px 0px 0 rgba(0, 255, 170, 0.3), 20.384px 0 0px 0 rgba(0, 170, 255, 0.3), 14.56px -14.56px 0px 0 rgba(170, 0, 255, 0.3), 0 -20.384px 0px 0 rgba(255, 0, 170, 0.3);
+  -webkit-box-shadow: -14.56px -14.56px 0 0 rgba(255, 0, 0, 0.3), -20.384px 0 0 0 rgba(255, 170, 0, 0.3), -14.56px 14.56px 0px 0 rgba(170, 255, 0, 0.3), 0 20.384px 0px 0 rgba(0, 255, 0, 0.3), 14.56px 14.56px 0px 0 rgba(0, 255, 170, 0.3), 20.384px 0 0px 0 rgba(0, 170, 255, 0.3), 14.56px -14.56px 0px 0 rgba(0, 0, 255, 0.3), 0 -20.384px 0px 0 rgba(170, 0, 255, 0.3);
+  box-shadow: -14.56px -14.56px 0 0 rgba(255, 0, 0, 0.3), -20.384px 0 0 0 rgba(255, 170, 0, 0.3), -14.56px 14.56px 0px 0 rgba(170, 255, 0, 0.3), 0 20.384px 0px 0 rgba(0, 255, 0, 0.3), 14.56px 14.56px 0px 0 rgba(0, 255, 170, 0.3), 20.384px 0 0px 0 rgba(0, 170, 255, 0.3), 14.56px -14.56px 0px 0 rgba(0, 0, 255, 0.3), 0 -20.384px 0px 0 rgba(170, 0, 255, 0.3);
   -webkit-animation: rotate 2s linear infinite;
   animation: rotate 2s linear infinite;
 }

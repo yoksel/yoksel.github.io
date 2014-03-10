@@ -15,10 +15,10 @@ $base-line-height: 1.5;
 $headers-font-family: Georgia, serif;
 
 %headers-style {
-	margin-bottom: $base-font-size;
-	line-height: 1.2;
-	font-family: $headers-font-family;
-	}
+    margin-bottom: $base-font-size;
+    line-height: 1.2;
+    font-family: $headers-font-family;
+    }
 
 /* Colors 
 -------------------------------- */
@@ -36,31 +36,31 @@ $base-margin: $base-font-size * 2;
 $small-margin: $base-font-size / 2;
 
 @mixin margin ( $side ){
-	margin-#{$side}: $base-margin;
-	}
+    margin-#{$side}: $base-margin;
+    }
 @mixin mid-margin ( $side ){
-	margin-#{$side}: $base-font-size;
-	}	
+    margin-#{$side}: $base-font-size;
+    }   
 @mixin small-margin ( $side ){
-	margin-#{$side}: $small-margin;
-	}	
+    margin-#{$side}: $small-margin;
+    }   
 
 @mixin padding ( $side ){
-	padding-#{$side}: $base-margin;
-	}
+    padding-#{$side}: $base-margin;
+    }
 @mixin small-padding ( $side ){
-	padding-#{$side}: $base-font-size;
-	}
+    padding-#{$side}: $base-font-size;
+    }
 @mixin tiny-padding ( $side ){
-	padding-#{$side}: $base-font-size / 2;
-	}			
+    padding-#{$side}: $base-font-size / 2;
+    }           
 
 /* Borders 
 -------------------------------- */
 
 @mixin border ( $side ){
-	border-#{$side}: 1px solid $base-border-color;
-	}
+    border-#{$side}: 1px solid $base-border-color;
+    }
 
 /* Common
 -------------------------------- */
@@ -82,58 +82,63 @@ $logo-circ-decor-size: $logo-size + $logo-circ-size-diff*2;
 $logo-bgcolor: crimson;
 
 @mixin transition {
-	transition: all .5s;
+    transition: all .5s;
 }
 
 %clear {
-	content: "";
-	display: table;
-	width: 100%;
-	clear: both;
-	}
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both;
+    }
 
 @mixin animation {
-	animation: rotate 2s linear infinite;
+    animation: rotate 2s linear infinite;
 }
 
 /* MultyShadows
--------------------------------- */
-$logo-shadow-size: 10px;	
+-------------------------------- */ 
 
 $transp: .3;
 $step: 360 / 9;
-
-$colors: hsla(0, 100%, 50%, $transp), 
-         hsla($step, 100%, 50%, $transp), 
-         hsla($step*2, 100%, 50%, $transp), 
-         hsla($step*3, 100%, 50%, $transp), 
-         hsla($step*4, 100%, 50%, $transp), 
-         hsla($step*5, 100%, 50%, $transp), 
-         hsla($step*7, 100%, 50%, $transp), 
-         hsla($step*8, 100%, 50%, $transp) ;
-
 $koeff: 1.4;
 
-@mixin shadow ( $size, $offset, $color ) {
-  @if ( $color == 'transparent' ){
-    box-shadow: -#{$offset} -#{$offset} 0 $size $color, 
-				-#{$offset*$koeff} 0 0 $size $color, 
-        -#{$offset} $offset 0px $size $color, 
-				0 $offset*$koeff 0px $size $color, 
-        $offset $offset 0px $size $color, 
-				$offset*$koeff 0 0px $size $color,
-        $offset -#{$offset} 0px $size $color,
-        0 -#{$offset*$koeff} 0px $size $color;  
-  }
-@else {
-  box-shadow: -#{$offset} -#{$offset} 0 $size nth($colors, 1), 
-				-#{$offset*$koeff} 0 0 $size nth($colors, 2), 
-        -#{$offset} $offset 0px $size nth($colors, 3), 
-				0 $offset*$koeff 0px $size nth($colors, 4), 
-        $offset $offset 0px $size nth($colors, 5), 
-				$offset*$koeff 0 0px $size nth($colors, 6),
-        $offset -#{$offset} 0px $size nth($colors, 7),
-        0 -#{$offset*$koeff} 0px $size nth($colors, 8);
-  }
-	
+$debug: null;
+
+@function getColors( $transp: .3 ){
+    $out: null;
+    $max: 9;
+    
+    @for $i from 1 through $max {
+        $color: hsla($step*($i - 1), 100%, 50%, $transp);
+        @if ( $i == 1){
+            $out: $color;
+        }
+        @else {
+            $out: append($out, $color, comma);
+        }
+    }
+            
+    @return $out;
 }
+
+$colors: getColors();
+
+
+@mixin shadow ( $size, $offset, $color ) {
+
+    box-shadow: -#{$offset} -#{$offset} 0 $size nth($colors, 1), 
+                -#{$offset*$koeff} 0 0 $size nth($colors, 2), 
+                -#{$offset} $offset 0px $size nth($colors, 3), 
+                0 $offset*$koeff 0px $size nth($colors, 4), 
+                $offset $offset 0px $size nth($colors, 5), 
+                $offset*$koeff 0 0px $size nth($colors, 6),
+                $offset -#{$offset} 0px $size nth($colors, 7),
+                0 -#{$offset*$koeff} 0px $size nth($colors, 8);
+}
+
+/* 
+
+#{$debug}
+
+*/
