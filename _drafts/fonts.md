@@ -13,3 +13,10 @@ I have asked myself "What's the closest Google font to..." so many times that I 
 
 http://cssfontstack.com/
 
+http://shapecatcher.com/unicodefonts.html
+Unicode fonts
+To display text that contains Unicode characters, you need the appropriate fonts installed on your system. 
+
+
+http://unicod.es/
+Unitools is a suite of tools for working with Unicode in the browser. 
