@@ -151,8 +151,8 @@ module.exports = function (grunt) {
    * Run `grunt` on the command line
    */
   grunt.registerTask('default', [
-    //'svgmin',
-    //'imagemin',
+    'svgmin',
+    'imagemin',
     'watch'
     ]);
 
