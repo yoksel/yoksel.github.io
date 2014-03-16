@@ -164,6 +164,17 @@ H6 {
 }
 /* Common
 -------------------------------- */
+HR {
+  height: 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.svg {
+  border: 1px dashed #dddddd;
+}
+
 .logo {
   font-family: 'Lobster', Georgia, cursive;
 }
@@ -520,6 +531,9 @@ PRE CODE {
 .post BLOCKQUOTE {
   margin-bottom: 16px;
 }
+.post .marg--bottom {
+  margin-bottom: 32px;
+}
 .post IFRAME {
   max-width: 100%;
 }
@@ -564,6 +578,9 @@ PRE CODE {
 }
 .post__text TABLE {
   width: 100%;
+}
+.post__text .table--w-auto {
+  width: auto;
 }
 .post__text TH,
 .post__text TD {
@@ -650,13 +667,15 @@ PRE CODE {
 .column {
   width: 48%;
 }
-
 .column-left {
   float: left;
 }
-
 .column-right {
   float: right;
+}
+.column .svg {
+  display: block;
+  margin: 16px 0 32px;
 }
 
 .wrapper--selector {
@@ -677,6 +696,30 @@ PRE CODE {
 .post__index DD:before {
   content: "—";
   margin-right: 5px;
+}
+
+.table--with-border {
+  border: 1px solid #dddddd;
+  border-bottom: 0;
+}
+.table--with-border THEAD {
+  font-weight: bold;
+}
+.table--with-border TD {
+  text-align: center;
+  border-left: 1px solid #dddddd;
+}
+.table--with-border TD:first-child {
+  border-left: 0;
+}
+
+.table--zebra-vert TD {
+  text-align: center;
+}
+
+.table--zebra-vert TD:nth-child(2n) {
+  background: #DDD;
+  border-bottom-color: #FFF;
 }
 
 .post__index {

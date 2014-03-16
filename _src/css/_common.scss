@@ -1,3 +1,14 @@
+HR {
+    height: 0;
+    background: transparent; 
+    border: 0;
+    @include border (bottom);
+    }
+
+.svg {
+    border: 1px dashed $base-border-color;
+    }    
+
 .clear {
     &:after {
         @extend %clear;
@@ -64,6 +75,7 @@ P:empty {
             right: -15px;
         }   
     }
+
 /* Codes
 -------------------------------- */     
 PRE,
