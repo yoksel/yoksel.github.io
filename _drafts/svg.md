@@ -10,8 +10,12 @@ links:
   name: Browsers support for SVG
 - url: http://css-tricks.com/svg-fallbacks/
   name: SVG Fallbacks
+- url: http://modernizr.com/
+  name: Modernizr  
 - url: http://lynn.ru/examples/svg/
   name: Трюки с SVG и тегом image
+- url: caniuse.com/#search=svg
+  name: Support SVG in browsers
 ---
 
 SVG - это формат векторных изображений, основанный на XML. 
@@ -49,25 +53,39 @@ SVG хорошо поддерживается всеми современным�
 
 <h5>Embed/object/iframe</h5>
 
-<embed src="../assets/img/svg/sign.svg" style="display: inline-block; margin-right: 20px;"> <iframe src="../assets/img/svg/sign.svg" width="199px"
- height="200px"></iframe>
+<table class="marg--bottom">
+    <thead>
+        <tr>
+            <td>Embed:</td>
+            <td>Object:</td>
+            <td>Iframe:</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><embed src="../assets/img/svg/sign.svg" width="199" height="200"></td>
+            <td><object type="image/svg+xml" data="../assets/img/svg/sign.svg" width="199" height="200"></object></td>
+            <td><iframe src="../assets/img/svg/sign.svg" width="199px" height="200px"></iframe></td>
+        </tr>
+    </tbody>
+</table>
 
- <object type="image/svg+xml" data="../assets/img/svg/sign.svg" width="199" height="200">
- <param name="src" value="../assets/img/svg/sign.svg">
-</object>
+<h6>Embed:</h6>
+<pre><code class="language-markup">&lt;embed src="your.svg" 
+        width="199" height="200"></code></pre> 
 
-<pre><code class="language-markup">&lt;embed src="your.svg">
-&lt;iframe src="../assets/img/svg/sign.svg" width="199px"
- height="200px">&lt;/iframe></code></pre>     
+<h6>Object:</h6>
+<pre><code class="language-markup">&lt;object data="your.svg" 
+        type="image/svg+xml" width="199" height="200">&lt;/object></code></pre>
+
+<h6>Iframe:</h6>
+<pre><code class="language-markup">&lt;iframe src="your.svg" 
+        width="199px" height="200px">&lt;/iframe></code></pre> 
 
  <b>Плюсы:</b>
 
- - содержимое SVG доступно для JavaScript
- - фолбек??? (ПРОВЕРИТЬ! + param)
-
-<b>Замена для старых браузеров:</b>
-
-123
+ - содержимое SVG доступно для JavaScript (ПРОВЕРИТЬ!!!);
+ - хорошая поддержка браузерами (все, кроме IE8 и ниже)
 
 <b>Поддержка браузерами:</b>
 
@@ -77,8 +95,8 @@ SVG хорошо поддерживается всеми современным�
             <td>IE</td>
             
             <td>Opera</td>
-            <td>Opera Mobile</td>
             <td>Opera Mini</td>
+            <td>Opera Mobile</td>
             
             <td>Chrome</td>
             <td>Firefox</td>
@@ -137,8 +155,8 @@ SVG хорошо поддерживается всеми современным�
             <td>IE</td>
             
             <td>Opera</td>
-            <td>Opera Mobile</td>
             <td>Opera Mini</td>
+            <td>Opera Mobile</td>
             
             <td>Chrome</td>
             <td>Firefox</td>
@@ -185,8 +203,8 @@ div {
             <td>IE</td>
             
             <td>Opera</td>
-            <td>Opera Mobile</td>
             <td>Opera Mini</td>
+            <td>Opera Mobile</td>
             
             <td>Chrome</td>
             <td>Firefox</td>
@@ -214,10 +232,6 @@ div {
 
 <svg width="199" height="200"><g fill="#7ED321"><path d="M110 10h-20v76.567l-.605-.605-62.933 62.933 14.142 14.142 49.395-49.395v76.358h20v-76.358l49.395 49.395 14.142-14.142-62.933-62.933-.605.605v-76.567z" /><path d="M99.5 0c-54.965 0-99.5 44.784-99.5 100s44.535 100 99.5 100 99.5-44.784 99.5-100-44.535-100-99.5-100zm0 20c43.894 0 79.5 35.805 79.5 80s-35.606 80-79.5 80-79.5-35.805-79.5-80 35.606-80 79.5-80z" /></g></svg>
 
-<b>Замена для старых браузеров:</b>
-
-123
-
 <b>Поддержка браузерами:</b>
 
 <table class="table--with-border table--w-auto marg--bottom">
@@ -226,8 +240,8 @@ div {
             <td>IE</td>
             
             <td>Opera</td>
-            <td>Opera Mobile</td>
             <td>Opera Mini</td>
+            <td>Opera Mobile</td>
             
             <td>Chrome</td>
             <td>Firefox</td>
@@ -252,19 +266,79 @@ div {
 </table>
 
 
+<i>Примеры в посте вставлены как есть, без фолбеков. Можно открыть страницу в интересующем браузере и посмотреть как ведут себя разные способы вставки.</i>
+
+
+<h4>Отображение в старых браузерах</h4>
+
+- <h5>Modernizr</h5>
+Элементы, содержащие SVG-графику, заворачиваются в <code>div.svg</code> (например).
+Затем определяем поддержку SVG с помощью <a href="http://modernizr.com/">Modernizr</a>, браузеры без SVG определяем по классу <code>.no-svg</code>, дальше немного CSS:
+
+<pre><code class="language-css">/* Задаем обертке размеры и фон в PNG: */
+.no-svg .svg {
+  width: 200px;
+  height: 200px;
+  background: url(your.png); /* PNG-заглушка */
+  }
+/* Скрываем содержимое обертки (иначе будут отображаться
+иконки незагрузившихся картинок) */    
+.no-svg .svg IFRAME,
+.no-svg .svg OBJECT,
+.no-svg .svg EMBED,
+.no-svg .svg IMG {
+  display: none;
+} </code></pre>
+
+Стили сработают только в браузерах, не поддерживающих SVG.
  
+Хорошее решение для IE8 и старше, но оно не поможет для Opera 12 и старше и для Opera Mini. Они частично поддерживают SVG, поэтому селектор не сработает. !!!!!!! ФОНЫ!!!!
+
+Для IE также можно использовать <a href="http://www.paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/">вот такое определение версии браузера</a>.
+
+- <h5>:root</h5>
+Селектор <code>:root</code> сработает только в браузерах с поддержкой CSS3, следовательно с его помощью можно отфильтровать стили для старых и для новых браузеров.
+
+<pre><code class="language-css">/* По умолчанию показываем PNG: */
+.svg {
+  width: 200px; 
+  height: 200px;
+  background: url(your.png);
+}
+
+/* Контейнеры с SVG скрыты. */
+.svg IFRAME,
+.svg OBJECT,
+.svg EMBED,
+.svg IMG {
+  display: none;  
+}
+
+/* Включаем содержимое для браузеров с поддержкой CSS3 */
+:root IFRAME,
+:root OBJECT,
+:root EMBED,
+:root IMG {
+  display: inline-block;
+}
+</code></pre>
+
+Как и предыдущее решение, подойдет для IE8 и старше, но не сработает в Opera 12 и старше и в Opera Mini, потому что они поддерживают CSS3. !!!!!!! ФОНЫ!!!!
+
+- <h5>решение для Opera</h5>
 
 
-
+<!-- @media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) { 
+  :root .bg {
+    background-image: url(http://img-fotki.yandex.ru/get/9895/5091629.99/0_7eb13_84c8f776_orig);
+  }
+  
+} -->
 
 ---------
 
 <img src="../assets/img/svg/sign.svg" alt="">
 <img src="../assets/img/svg/sign.png" alt="">
-
-
-
-Источник данных: <a href="http://caniuse.com/#search=svg">caniuse.com/#search=svg</a>.</i>
 
 <!-- Opera Mini при прямой вставке SVG в HTML показывает decription. 
 
@@ -300,6 +374,7 @@ div {
  Nice!!
 
 
+http://jsbin.com/velix/1/edit
 
 
 
