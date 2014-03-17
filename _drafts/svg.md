@@ -328,6 +328,8 @@ div {
 - <h5>решение для Opera</h5>
 
 
+http://jsbin.com/velix/2/edit
+
 <!-- @media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) { 
   :root .bg {
     background-image: url(http://img-fotki.yandex.ru/get/9895/5091629.99/0_7eb13_84c8f776_orig);
