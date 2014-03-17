@@ -44,9 +44,10 @@ H5 {
 	@extend %headers-style;
 	}		
 H6 {
-	font-size: $base-font-size * 1.2;
+	font-size: $base-font-size * 1.1;
 	@extend %headers-style;
-	}		
+	}	
+
 @media ( max-width: $break-point-small ){
 		H2 {
 			font-size: $base-font-size * 2;

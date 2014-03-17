@@ -138,7 +138,7 @@ H5 {
 }
 
 H6 {
-  font-size: 19.2px;
+  font-size: 17.6px;
 }
 
 @media (max-width: 700px) {
@@ -259,6 +259,10 @@ P:empty {
   .kitten {
     right: -15px;
   }
+}
+
+.disp-inblock {
+  display: inline-block;
 }
 
 /* Codes
@@ -667,15 +671,17 @@ PRE CODE {
 .column {
   width: 48%;
 }
-.column-left {
-  float: left;
-}
-.column-right {
-  float: right;
-}
 .column .svg {
   display: block;
   margin: 16px 0 32px;
+}
+
+.column-left {
+  float: left;
+}
+
+.column-right {
+  float: right;
 }
 
 .wrapper--selector {

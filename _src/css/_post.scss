@@ -146,17 +146,17 @@
 	.column {
 		width: 48%; 
 
-		&-left {
-			float: left;
-			}
-		&-right {
-			float: right;
-			}
 		.svg {
 			display: block;
 			margin: $mid-margin 0 $base-margin;
 			}
 		}
+		.column-left {
+			float: left;
+			}
+		.column-right {
+			float: right;
+			}
 		
 	.wrapper--selector {
 		display: inline-block;
