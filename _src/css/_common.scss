@@ -5,6 +5,10 @@ HR {
     @include border (bottom);
     }
 
+.font--small {
+    font-size: .8em;
+    }
+    
 .svg {
     border: 1px dashed $base-border-color;
     }    
