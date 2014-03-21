@@ -1,28 +1,28 @@
 ---
 layout: default
-title: SVG-path
+title: SVG-пути
 type: post
 image: 
 desc: 
 
 links:
-- url: http://www.w3.org/TR/SVG/
-  name: w3.org/TR/SVG
-- url: http://caniuse.com/#search=svg
-  name: Browsers support for SVG  
+- url: http://www.w3.org/TR/SVG/paths.html
+  name: Paths
 ---
 
-<h4>Path</h4>
-
-Более сложный вариант линии. С помощью <code>path</code> можно рисовать <code>line</code>, <code>polyline</code>, <code>polygon</code>, <code>circle</code> и <code>rect</code>.
+<code>path</code> - Более сложный вариант линии. С его помощью можно рисовать <code>line</code>, <code>polyline</code>, <code>polygon</code>, <code>circle</code> и <code>rect</code>.
 
 В отличие от <code>polygon</code>, фигура не замыкается сама по себе, но это можно сделать с помощью дополнительного параметра.<!--more-->
 
-<svg class="svg" width="142" height="122"><path d="M 10 110 L 10 10 L 40 50 L 70 10 L 100 50 L 130 10 L 130 110 L 10 110" fill="yellow" stroke="gold" stroke-width="5" /></svg>
+<svg class="svg" width="150" height="130"><symbol id="s-crown"><path d="M 10 110 L 10 10 L 40 50 L 70 10 L 100 50 L 130 10 L 130 110 z" fill="gold" stroke="orange" stroke-width="5"/></symbol><use xlink:href="#s-crown" x="5" y="7"/></svg>
 
-<pre><code class="language-markup">&lt;svg class="svg" width="142" height="122">
-    &lt;path d="M 10 110 L 10 10 L 40 50 L 70 10 L 100 50 L 130 10 L 130 110 L 10 110" 
-          fill="yellow" stroke="gold" stroke-width="5"/>
+<pre><code class="language-markup">&lt;svg class="svg" width="150" height="130">
+    &lt;symbol id="s-crown">
+        &lt;path d="M 10 110 L 10 10 L 40 50 L 70 10 L 100 50 L 130 10 L 130 110 z" 
+          fill="gold" stroke="orange" stroke-width="5"/>
+    &lt;/symbol>  
+  
+  &lt;use xlink:href="#s-crown" x="5" y="7"/> 
 &lt;/svg></code></pre> 
 
 
@@ -30,6 +30,7 @@ path
 
 разная обводка
 
-reusable, группировка
+http://codepen.io/yoksel/pen/ivIgt
 
-text 'image' and 'use'."6
+
+text, 'image' 
