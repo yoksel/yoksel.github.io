@@ -704,6 +704,13 @@ PRE CODE {
   margin-right: 5px;
 }
 
+.post__linkedit {
+  margin: 48px 0 0 0;
+  font-style: italic;
+  font-size: .9em;
+  color: #AAA;
+}
+
 .table--with-border {
   border: 1px solid #dddddd;
   border-bottom: 0;

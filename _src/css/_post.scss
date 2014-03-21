@@ -177,6 +177,13 @@
 	}	
 }	
 
+.post__linkedit {
+	margin: $base-margin * 1.5 0 0 0;
+	font-style: italic;
+	font-size: .9em;
+	color: #AAA;
+	}
+
 .table--with-border {
 	border: 1px solid $base-border-color;
 	border-bottom: 0;
