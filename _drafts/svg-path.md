@@ -16,7 +16,7 @@ links:
 
 Более сложный вариант линии. С помощью <code>path</code> можно рисовать <code>line</code>, <code>polyline</code>, <code>polygon</code>, <code>circle</code> и <code>rect</code>.
 
-В отличие от <code>polygon</code>, фигура не замыкается сама по себе.
+В отличие от <code>polygon</code>, фигура не замыкается сама по себе, но это можно сделать с помощью дополнительного параметра.<!--more-->
 
 <svg class="svg" width="142" height="122"><path d="M 10 110 L 10 10 L 40 50 L 70 10 L 100 50 L 130 10 L 130 110 L 10 110" fill="yellow" stroke="gold" stroke-width="5" /></svg>
 
