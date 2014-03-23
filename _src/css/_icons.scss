@@ -64,3 +64,9 @@
         background-position: -240px 0;
         }        
 }
+
+A[href*="rss"]:before,
+A[href*="feed"]:before {
+        @include icon;
+        background-position: -260px 0;
+        }

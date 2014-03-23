@@ -1017,6 +1017,18 @@ PRE CODE {
   background-position: -240px 0;
 }
 
+A[href*="rss"]:before,
+A[href*="feed"]:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+  vertical-align: middle;
+  background: url(/assets/img/sprite.png);
+  background-position: -260px 0;
+}
+
 /* Prism
 -------------------------------- */
 /**
