@@ -24,7 +24,7 @@ links:
 Возможные значения: <code>none</code>, ключевые слова, цвета, паттерны и градиенты.
 Значение по умолчанию - <code>black</code>.
 
-<svg class="svg" width="200" height="200"><defs><symbol id="s-rect"><rect width="70" height="70"/></symbol><linearGradient id="g-green" x1="0%" y1="0%" x2="0%" y2="90%">  <stop offset="0%" stop-color="yellowgreen" />  <stop offset="90%" stop-color="green" /></linearGradient></defs><use xlink:href="#s-rect" x="20" y="20" fill="hsl(348, 83%, 47%)"/><use xlink:href="#s-rect" x="110" y="20" fill="rgb(255, 215, 0)"/> <use xlink:href="#s-rect" x="20" y="110" fill="url(#g-green)"/><use xlink:href="#s-rect" x="110" y="110" fill="skyblue"/>  </svg>
+<svg class="svg" width="200" height="200"><defs><symbol id="s-rect"><rect width="70" height="70"/></symbol><linearGradient id="g-green" x1="0%" y1="0%" x2="0%" y2="90%">  <stop offset="0%" stop-color="yellowgreen" />  <stop offset="90%" stop-color="green" /></linearGradient></defs><use xlink:href="#s-rect" x="20" y="20" fill="hsla(348, 83%, 47%,.3)"/><use xlink:href="#s-rect" x="110" y="20" fill="rgb(255, 215, 0)"/> <use xlink:href="#s-rect" x="20" y="110" fill="url(#g-green)"/><use xlink:href="#s-rect" x="110" y="110" fill="skyblue"/>  </svg>
 
 <pre><code class="language-markup">&lt;svg width="200" height="200">
   &lt;defs>
@@ -41,7 +41,7 @@ links:
   
   &lt;use xlink:href="#s-rect"
        x="20" y="20"
-       fill="hsl(348, 83%, 47%)"/> &lt;!-- HSL -->
+       fill="hsla(348, 83%, 47%,.3)"/> &lt;!-- HSLA -->
   &lt;use xlink:href="#s-rect"
        x="110" y="20"
        fill="rgb(255, 215, 0)"/> &lt;!-- RGB -->  
@@ -54,7 +54,7 @@ links:
 &lt;/svg></code></pre> 
 
 
-<h4>fill-rule</h4>
+<h4>Fill-rule</h4>
 
 Свойство определяет как будут заливаться сложные фигуры, имеющие пересечения внутри себя. Для простых фигур ни на что не влияет.
 
@@ -86,5 +86,91 @@ links:
     </div>
 </div> 
 
-<h4>fill-opacity</h4>
+<h4>Fill-opacity</h4>
+
+Управление прозрачностью заливки. Можно задавать значения от 0.0 до 1.0 или в процентах. Правда, Firefox не любит значения в процентах для градиентов (<a href="http://cdpn.io/nstGK">пруфлинк</a>, смотреть в FF).
+
+<svg class="svg" width="200" height="200"><defs><symbol id="s-rect2"><rect width="100" height="100"/></symbol><linearGradient id="g-red" x1="0%" y1="0%" x2="0%" y2="90%"><stop offset="0%" stop-color="orange" /><stop offset="90%" stop-color="crimson" /></linearGradient><linearGradient id="g-green" x1="0%" y1="0%" x2="0%" y2="90%"><stop offset="0%" stop-color="yellowgreen" /><stop offset="90%" stop-color="green" /></linearGradient></defs><use xlink:href="#s-rect2" x="20" y="20" fill="url(#g-red)" fill-opacity=".5"/>  <use xlink:href="#s-rect2" x="50" y="50" fill="hsl(50, 100%, 50%)" fill-opacity=".5"/> <use xlink:href="#s-rect2" x="80" y="80" fill="url(#g-green)" fill-opacity=".5"/></svg>
+
+<pre><code class="language-markup">&lt;!-- ... -->
+&lt;use xlink:href="#s-rect"
+     x="20" y="20"
+     fill="url(#g-red)" fill-opacity=".5"/>
+&lt;use xlink:href="#s-rect"
+     x="50" y="50"
+     fill="hsl(50, 100%, 50%)" fill-opacity=".5"/>
+&lt;use xlink:href="#s-rect"
+     x="80" y="80"
+     fill="url(#g-green)" fill-opacity=".5"/>
+&lt;!-- ... --></code></pre>
+
+
+<h4>Stroke</h4>
+
+Цвет обводки. Значения по умолчанию нет.
+
+<svg class="svg" width="200" height="200"><rect width="160" height="160" x="20" y="20" fill="none" stroke="yellowgreen"/></svg>
+
+<pre><code class="language-markup">&lt;svg width="200" height="200">
+  &lt;rect width="160" height="160" x="20" y="20"
+        fill="none"
+        stroke="yellowgreen"/>
+&lt;/svg></code></pre>
+
+
+<h4>Stroke-width</h4>
+
+Толщина обводки, можно задавать в единицах длины или в процентах.
+Значение по умолчанию: 1.
+
+<svg class="svg" width="200" height="200"><rect width="160" height="160" x="20" y="20" fill="none" stroke="yellowgreen" stroke-width="10%"/><rect width="100" height="100" x="50" y="50" fill="none" stroke="gold" stroke-width="10"/></svg>
+
+<pre><code class="language-markup">&lt;svg width="200" height="200">
+  &lt;rect width="100" height="100" x="50" y="50"
+        fill="none" stroke="gold" 
+        stroke-width="10"/>
+  &lt;rect width="160" height="160" x="20" y="20"
+        fill="none" stroke="yellowgreen" 
+        stroke-width="10%"/>      
+&lt;/svg></code></pre>
+
+<h4>Stroke-linecap</h4>
+
+Свойство определяет как будут выглядеть концы линий. 
+Возможные значения: <code>butt</code>, <code>round</code>, <code>square</code>.
+Значение по умолчанию: <code>butt</code>.
+
+<svg class="svg" width="200" height="205"><symbol id="s-path-guide"><circle r="3" cx="30" cy="15"/><circle r="3" cx="170" cy="15"/><path d="M 30 15 170 15" stroke-width="2"/></symbol><symbol id="s-path"><path d="M 30 15 170 15" stroke-width="30"/></symbol><use xlink:href="#s-path" stroke="orangered" y="20" stroke-linecap="butt"/><use xlink:href="#s-path" stroke="olivedrab" y="85" stroke-linecap="round"/><use xlink:href="#s-path" stroke="steelblue" y="150" stroke-linecap="square"/><g class="guides"><use xlink:href="#s-path-guide" y="20" stroke="orange" fill="orange"/><use xlink:href="#s-path-guide" y="85" stroke="yellowgreen" fill="yellowgreen"/><use xlink:href="#s-path-guide" y="150" stroke="skyblue" fill="skyblue"/></g></svg>
+
+<pre><code class="language-markup">&lt;!-- ... -->
+  &lt;use xlink:href="#s-path" stroke="orangered" y="20"
+       stroke-linecap="butt"/>
+  
+  &lt;use xlink:href="#s-path" stroke="olivedrab" y="85"
+       stroke-linecap="round"/>
+  
+  &lt;use xlink:href="#s-path" stroke="steelblue" y="150"
+       stroke-linecap="square"/>
+  &lt;!-- ... --></code></pre>
+
+<h4>Stroke-linejoin</h4>
+
+Свойство определяет как будут выглядеть соединения линий на углах.
+Возможные значения: <code>miter</code>, <code>round</code>, <code>bevel</code>.
+Значение по умолчанию: <code>miter</code>.
+
+<svg class="svg" width="215" height="300"><symbol id="s-corner-guide"><circle r="3" cx="50" cy="100"/><circle r="3" cx="164" cy="100"/><path d="M 30 50 h 80 v 80" stroke-width="2" fill="none" transform="rotate(-45 100 50)"/></symbol><symbol id="s-corner"><path d="M 30 50 h 80 v 80" stroke-width="30" fill="none" transform="rotate(-45 100 50)"/></symbol><use xlink:href="#s-corner" stroke="orangered" y="0" stroke-linejoin="miter"/><use xlink:href="#s-corner" stroke="olivedrab" y="80" stroke-linejoin="round"/><use xlink:href="#s-corner" stroke="steelblue" y="160" stroke-linejoin="bevel"/><g class="guides"> <use xlink:href="#s-corner-guide" y="0" stroke="orange" fill="orange"/> <use xlink:href="#s-corner-guide" y="80" stroke="yellowgreen" fill="yellowgreen"/><use xlink:href="#s-corner-guide" y="160" stroke="skyblue" fill="skyblue"/></g></svg>
+
+<pre><code class="language-markup">&lt;!-- ... -->
+  &lt;use xlink:href="#s-corner" stroke="orangered" y="0"
+       stroke-linejoin="miter"/>
+  
+  &lt;use xlink:href="#s-corner" stroke="olivedrab" y="80"
+       stroke-linejoin="round"/>
+  
+  &lt;use xlink:href="#s-corner" stroke="steelblue" y="160"
+       stroke-linejoin="bevel"/>
+  &lt;!-- ... --></code></pre>
+
+
 
