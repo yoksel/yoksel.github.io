@@ -2,8 +2,8 @@
 layout: default
 title: SVG&#58; заливка и обводка
 type: post
-image: 
-desc: 
+image: http://img-fotki.yandex.ru/get/9825/5091629.9d/0_7fd41_3b1bf3e6_L.png
+desc: В SVG заливка и обводка имеют много разных интересных опций, которые предоставляют возможности гораздо шире того, что есть в CSS. Например, можно нарисовать SVG-паттерн и использовать его не только в заливке, но и в обводке. Заливке и обводке можно указывать разную прозрачность, также можно управлять пунктирной обводкой, на чем можно построить интересные анимированные эффекты.
 
 links:
 - url: http://www.w3.org/TR/SVG/
@@ -13,13 +13,13 @@ links:
 В SVG заливка и обводка имеют много разных интересных опций, которые предоставляют возможности гораздо шире того, что есть в CSS.
 <!--more-->
 
-Например, можно нарисовать SVG-паттерн и использовать его не только в заливке, но и в обводке. Также для них можно указывать разную прозрачность (в CSS это делается полупрозрачными цветами или <code>opacity</code> для всего элемента), также можно управлять пунктирной обводкой, на чем можно построить интересные эффекты с использованием анимации.
+Например, можно нарисовать SVG-паттерн и использовать его не только в заливке, но и в обводке. Заливке и обводке можно указывать разную прозрачность, также можно управлять пунктирной обводкой, на чем можно построить интересные анимированные эффекты.
 
 В качестве заливки и обводки можно задавать <code>none</code>, <a href="/tsveta">цвета</a>, ключевые слова (<code>currentColor</code> и <code>transparent</code>), а также градиенты и паттерны.
 
 <h4>Fill</h4>
 
-<code>fill</code> - заливка элемента. 
+Заливка элемента. 
 
 Возможные значения: <code>none</code>, ключевые слова, цвета, паттерны и градиенты.
 Значение по умолчанию - <code>black</code>.
@@ -155,7 +155,7 @@ links:
 
 <h4>Stroke-linejoin</h4>
 
-Свойство определяет как будут выглядеть соединения линий на углах.
+Определяет как будут выглядеть соединения линий на углах.
 Возможные значения: <code>miter</code>, <code>round</code>, <code>bevel</code>.
 Значение по умолчанию: <code>miter</code>.
 
@@ -174,7 +174,7 @@ links:
 
 <h4>Stroke-dasharray</h4>
 
-Свойство, управляющее видом пунктирной обводки. Можно задавать в единицах длины или в процентах.
+Управляет видом пунктирной обводки. Можно задавать в единицах длины или в процентах.
 Если задано одно значение, второе значение считается равным первому. Например, <code>stroke-dasharray="1"</code> нарисует линию из отрезков длиной одну единицу разделенных пробелами такой же ширины.
 
 Примеры разных пунктирных линий:
@@ -209,4 +209,72 @@ links:
 
 <p data-height="304" data-theme-id="4974" data-slug-hash="bwDzx" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/bwDzx/'>SVG-patterns</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
+<br>
 
+Также <code>stroke-dasharray</code> интересно сочетается с анимацией:
+
+<p data-height="268" data-theme-id="4974" data-slug-hash="uGfBE" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/uGfBE/'>Animated stroke</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+<h4>Stroke-dashoffset</h4>
+
+Свойство позволяет задать смещение пунктирной обводки относительно первоначального положения. Значение задается в единицах длины или в процентах, значения могут быть отрицательными.
+Значение по умолчанию: 0.
+
+В этом примере оранжевые и желтые линии смещены относительно красной с помощью разных значений <code>stroke-dashoffset</code>:
+
+<svg class="svg" width="270" height="270"><g class="g-circles"  fill="none" stroke-width="15" stroke-dasharray="25% 110%" transform="rotate(72 135 135)"><circle r="115" cx="135" cy="135" stroke="crimson"/><circle r="115" cx="135" cy="135" stroke="orangered" stroke-dashoffset="25%"/><circle r="115" cx="135" cy="135" stroke="gold" stroke-dashoffset="50%"/></g></svg>
+
+<pre><code class="language-markup">&lt;svg width="270" height="270">
+  &lt;g class="g-circles"  fill="none"
+       stroke-width="15"
+       stroke-dasharray="25% 110%"
+       transform="rotate(72 135 135)">
+       &lt;circle r="115" cx="135" cy="135"
+          stroke="crimson"/> &lt;!-- Красная обводка без смещения -->
+      &lt;circle r="115" cx="135" cy="135"
+           stroke="orangered" 
+           stroke-dashoffset="25%"/> &lt;!-- Оранжевая обводка смещена на 25% -->
+      &lt;circle r="115" cx="135" cy="135"
+           stroke="gold" 
+           stroke-dashoffset="50%"/> &lt;!-- Желтая обводка смещена на 50% -->
+      &lt;/g> 
+&lt;/svg></code></pre> 
+
+Сочетая <code>stroke-dashoffset</code> и <code>stroke-dasharray</code> можно получить интересные эффекты.
+
+<i>Для полноценного просмотра воспользуйтесь браузерами на Webkit. <a href="http://codepen.io/yoksel/full/CgrFz/">Ссылка на полную версию</a>.</i>
+
+<p data-height="415" data-theme-id="4974" data-slug-hash="CgrFz" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/CgrFz/'>dasharray + dashoffset = magic</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+<i>Для перезапуска нажмите Rerun.</i>
+
+Несколько вдохновляющих ссылок про анимацию на <code>stroke-dashoffset</code>: 
+
+- <a href="http://css-tricks.com/svg-line-animation-works/">How SVG Line Animation Works</a>
+- <a href="http://jakearchibald.com/2013/animated-line-drawing-svg/">Animated line drawing in SVG</a>
+- <a href="http://tympanus.net/Development/SVGDrawingAnimation/">SVG Drawing Animation</a>
+
+<h4>Stroke-opacity</h4>
+
+Прозрачность обводки. Задаются значения от 0.0 до 1.0.
+
+<svg class="svg" width="200" height="200"><g class="g-circles" fill="none" stroke-width="15"><circle r="40" cx="60" cy="60" stroke="crimson" stroke-opacity=".7"/><circle r="55" cx="100" cy="100" stroke="orangered" stroke-opacity=".5" /><circle r="40" cx="140" cy="140" stroke="gold" stroke-opacity=".25"/></g></svg>
+
+<pre><code class="language-markup">&lt;svg width="200" height="200">
+  &lt;g class="g-circles" fill="none"
+       stroke-width="15">
+       &lt;circle r="40" cx="60" cy="60"
+          stroke="crimson"
+          stroke-opacity=".7"/>
+      &lt;circle r="55" cx="100" cy="100"
+          stroke="orangered"
+          stroke-opacity=".5" />
+      &lt;circle r="40" cx="140" cy="140"
+          stroke="gold"
+          stroke-opacity=".25"/>
+      &lt;/g> 
+&lt;/svg></code></pre> 
+
+Анимация обводки позволяет получить совершенно удивительные вещи. Правда, я в своих примерах использовала CSS (и это демо не играет в Firefox) и SVG-анимацию, которая работает таки везде, но задается странно, длинно и неудобно. Думаю, что оптимальнее всего для анимации SVG использовать JavaScript-библиотеки.
