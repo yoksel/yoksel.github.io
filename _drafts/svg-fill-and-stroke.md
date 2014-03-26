@@ -172,5 +172,41 @@ links:
        stroke-linejoin="bevel"/>
   &lt;!-- ... --></code></pre>
 
+<h4>Stroke-dasharray</h4>
 
+Свойство, управляющее видом пунктирной обводки. Можно задавать в единицах длины или в процентах.
+Если задано одно значение, второе значение считается равным первому. Например, <code>stroke-dasharray="1"</code> нарисует линию из отрезков длиной одну единицу разделенных пробелами такой же ширины.
+
+Примеры разных пунктирных линий:
+
+<svg class="svg" width="300" height="160"><path d="M 20 20 h 260" stroke="purple" stroke-width="1" stroke-dasharray="1" /><path d="M 20 40 h 260" stroke="mediumspringgreen" stroke-width="15" stroke-dasharray="1 3" /><path d="M 20 60 h 260" stroke="orangered" stroke-width="1" stroke-dasharray="5%" /><path d="M 20 80 h 260" stroke="green" stroke-width="1" stroke-dasharray="1 5" /><path d="M 20 100 h 260" stroke="steelblue" stroke-width="1" stroke-dasharray="2 7 6" /> <path d="M 20 120 h 260" stroke="orange" stroke-width="5" stroke-dasharray="5" /> <path d="M 20 140 h 260" stroke="mediumseagreen" stroke-width="1" stroke-dasharray="12% 5%" /></svg>
+
+<pre><code class="language-markup">&lt;svg width="300" height="160">
+  &lt;path d="M 20 20 h 260"
+        stroke="purple" stroke-width="1"
+        stroke-dasharray="1" />
+  &lt;path d="M 20 40 h 260"
+        stroke="mediumspringgreen" stroke-width="15"
+        stroke-dasharray="1 3" />
+  &lt;path d="M 20 60 h 260"
+        stroke="orangered" stroke-width="1"
+        stroke-dasharray="5%" />
+  &lt;path d="M 20 80 h 260"
+        stroke="green" stroke-width="1"
+        stroke-dasharray="1 5" />
+  &lt;path d="M 20 100 h 260"
+        stroke="steelblue" stroke-width="1"
+        stroke-dasharray="2 7 6" />  
+  &lt;path d="M 20 120 h 260"
+        stroke="orange" stroke-width="5"
+        stroke-dasharray="5" />
+  &lt;path d="M 20 140 h 260"
+        stroke="mediumseagreen" stroke-width="1"
+        stroke-dasharray="12% 5%" />
+&lt;/svg></code></pre>  
+
+Используя обводку и простые фигуры можно получить удивительные вещи:
+
+<p data-height="304" data-theme-id="4974" data-slug-hash="bwDzx" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/bwDzx/'>SVG-patterns</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 
