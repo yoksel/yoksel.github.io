@@ -89,7 +89,9 @@
 				color: #AAA;
 				}
 			}								
-	P + H4 {
+	P + H4,
+	SCRIPT + H4,
+	PRE + H4 {
 		@include margin( top );
 		}
 	P {

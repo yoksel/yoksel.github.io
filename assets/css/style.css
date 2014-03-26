@@ -620,7 +620,9 @@ PRE CODE {
   margin-left: -20px;
   color: #AAA;
 }
-.post__text P + H4 {
+.post__text P + H4,
+.post__text SCRIPT + H4,
+.post__text PRE + H4 {
   margin-top: 32px;
 }
 .post__text P {
