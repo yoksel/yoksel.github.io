@@ -11,8 +11,10 @@ desc:
 
 SVG-графику удобно использовать для иконок, при этом они не будут выглядеть мыльными на устройствах с ретиной и их можно растягивать без потери качества.
 
-Пример:
--
+В этом примере один SVG-спрайт используется в 4-х разных размерах, исходный - 32px:
+
+<p data-height="400" data-theme-id="4974" data-slug-hash="yuIFe" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/yuIFe/'>Svg-icons: one sprite, four sizes</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 
 
 SVG в код страницы можно вставлять разными способами:
