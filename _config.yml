@@ -59,6 +59,8 @@ links_tools:
   name: Google.com/fonts
 - url: http://css.coloratum.com/
   name: Css.coloratum.com
+- url: http://icomoon.io/
+  name: Icomoon.io
 
 links_blogs:
 - url: http://lea.verou.me/
