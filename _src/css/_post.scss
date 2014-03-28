@@ -80,15 +80,24 @@
 		UL UL {
 			margin-bottom: 0;	
 			}
-		LI {
+		UL LI {
 			margin: 0 0 5px 25px;
-			&:before {
+			}
+		UL LI:before {
 				content: "—";
 				position: absolute;
 				margin-left: -20px;
 				color: #AAA;
 				}
-			}								
+		OL {
+			@include mid-margin( left );
+			counter-reset: num-list;
+			}		
+		OL LI:before {
+			content: counter( num-list )". ";
+			counter-increment: num-list;
+			}			
+
 	P + H4,
 	SCRIPT + H4,
 	PRE + H4 {

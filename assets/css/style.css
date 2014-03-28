@@ -611,14 +611,22 @@ PRE CODE {
 .post__text UL UL {
   margin-bottom: 0;
 }
-.post__text LI {
+.post__text UL LI {
   margin: 0 0 5px 25px;
 }
-.post__text LI:before {
+.post__text UL LI:before {
   content: "—";
   position: absolute;
   margin-left: -20px;
   color: #AAA;
+}
+.post__text OL {
+  margin-left: 16px;
+  counter-reset: num-list;
+}
+.post__text OL LI:before {
+  content: counter(num-list) ". ";
+  counter-increment: num-list;
 }
 .post__text P + H4,
 .post__text SCRIPT + H4,
