@@ -179,13 +179,16 @@
 .post__links,
 .post__index {
 	DT {
-	margin-bottom: 5px;
-	font-weight: bold;
-	}		
- 	DD:before {
-	content: "—";
-	margin-right: 5px;
-	}	
+		margin-bottom: 5px;
+		font-weight: bold;
+		}
+	DD {
+		margin-bottom: 5px;
+		&:before {
+			content: "—";
+			margin-right: 5px;
+			}	
+		}	
 }	
 
 .post__linkedit {

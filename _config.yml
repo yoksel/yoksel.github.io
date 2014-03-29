@@ -45,6 +45,10 @@ links_docs:
   name: learn.javascript.ru
 
 links_tools:
+- url: https://github.com/
+  name: GitHub    
+- url: http://gruntjs.com/
+  name: Grunt
 - url: http://codepen.io/
   name: Codepen
 - url: http://jsbin.com
@@ -59,6 +63,7 @@ links_tools:
   name: Google.com/fonts
 - url: http://css.coloratum.com/
   name: Css.coloratum.com
+  status: dead 
 - url: http://icomoon.io/
   name: Icomoon.io
 
@@ -73,6 +78,8 @@ links_blogs:
   name: Csswizardry.com
 - url: http://tympanus.net/codrops/
   name: Сodrops  
+- url: http://css-weekly.com/archives/  
+  name: CSS Weekly
 - url: http://frontender.info/
   name: Frontender Magazine
 

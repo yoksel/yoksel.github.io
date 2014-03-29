@@ -4,12 +4,16 @@
 		margin-bottom: 0;
 		}
 }
-.widget__list .item {
+.widget__item {
 	margin-bottom: 7px;
 	@media ( max-width: $break-point-small ){
 		margin-bottom: 3px;
 		}
 	}
-.widget__list .item--current {
+.widget__item--current {
 	font-weight: bold;
 	}
+.widget__item--dead A {
+	text-decoration: line-through;
+	color: #CCC;
+	}	

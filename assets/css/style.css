@@ -712,6 +712,10 @@ PRE CODE {
   margin-bottom: 5px;
   font-weight: bold;
 }
+.post__links DD,
+.post__index DD {
+  margin-bottom: 5px;
+}
 .post__links DD:before,
 .post__index DD:before {
   content: "—";
@@ -861,17 +865,22 @@ PRE CODE {
   margin-bottom: 0;
 }
 
-.widget__list .item {
+.widget__item {
   margin-bottom: 7px;
 }
 @media (max-width: 700px) {
-  .widget__list .item {
+  .widget__item {
     margin-bottom: 3px;
   }
 }
 
-.widget__list .item--current {
+.widget__item--current {
   font-weight: bold;
+}
+
+.widget__item--dead A {
+  text-decoration: line-through;
+  color: #CCC;
 }
 
 /* Animations
