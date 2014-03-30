@@ -61,9 +61,8 @@ links_tools:
   name: CssFontStack.com
 - url: http://www.google.com/fonts/
   name: Google.com/fonts
-- url: http://css.coloratum.com/
+- url: http://leaverou.github.io/css-colors/
   name: Css.coloratum.com
-  status: dead 
 - url: http://icomoon.io/
   name: Icomoon.io
 
