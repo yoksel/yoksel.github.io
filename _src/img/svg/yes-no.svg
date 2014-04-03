@@ -17,7 +17,7 @@
             </text>
         </g>
         <g id="yes" class="hidden">
-            <rect id="Rectangle-1" fill="#7ED321" x="0" y="0" width="200" height="200" rx="8"></rect>
+            <rect id="Rectangle-1" fill="#a2d529" x="0" y="0" width="200" height="200" rx="8"></rect>
             <text id="Yes!" font-family="Palatino" font-size="90" font-weight="normal" fill="#FFFFFF">
                 <tspan x="18" y="130">Yes!</tspan>
             </text>
