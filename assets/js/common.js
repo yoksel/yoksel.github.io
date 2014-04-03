@@ -42,6 +42,10 @@ jQuery(document).ready(function($) {
 	function add_target_marker( anchor ){
 		if ( $(document).width() > 900 ) {
 			var anchor_id = anchor.substr(1);
+			if (anchor_id == "yes" || anchor_id == "no"){
+				return; // switch off for demo of SVG-stacks
+			}
+
 			var target_elem = $("#" + anchor_id);
 			var position = target_elem.position();
 			var tag = $(target_elem).prop("tagName")
