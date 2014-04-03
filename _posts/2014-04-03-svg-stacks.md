@@ -51,7 +51,7 @@ links:
 
 <svg width="200" height="200" viewbox="0 0 200 200"><style>.hidden { display: none; } :target { display: block; }</style><g id="no"><rect fill="#FF4646" width="200" height="200" rx="8"/><text id="No." font-family="Palatino" font-size="90" fill="#fff"><tspan x="28" y="130">No.</tspan></text></g><g id="yes" class="hidden"><rect fill="#a2d529" width="200" height="200" rx="8"/><text id="Yes!" font-family="Palatino" font-size="90" fill="#fff"><tspan x="18" y="130">Yes!</tspan></text></g></svg>
 
-Аналогично можно поиграться запрашивая файл по прямой ссылке: <a href="http://yoksel.github.io/assets/img/svg/yes-no.svg">без Id</a> и <a href="http://yoksel.github.io/assets/img/svg/yes-no.svg#yes">с Id</a>
+Аналогично можно поиграться запрашивая файл по прямой ссылке: <a href="http://yoksel.github.io/assets/img/svg/yes-no.svg">без ID</a> и <a href="http://yoksel.github.io/assets/img/svg/yes-no.svg#yes">с ID</a>
 
 Отлично работает!
 
