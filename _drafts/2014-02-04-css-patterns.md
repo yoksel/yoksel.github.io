@@ -15,3 +15,6 @@ text
 
 <!--more-->
 text
+
+
+http://r.va.gg/2012/05/data-uri-svg.html
