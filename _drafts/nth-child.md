@@ -1,17 +1,243 @@
 ---
 layout: default
-title: Nth-child
+title: Nth-child и nth-of-type
 type: post
 image: 
 desc: 
 
+custom_css: nth-child.css
+
 links:
+- url: http://nthmaster.com/
+  name: nthmaster.com
+- url: http://css-tricks.com/examples/nth-child-tester/
+  name: css-tricks.com/examples/nth-child-tester  
+- url: http://nth-test.com/
+  name: nth-test.com
 ---
 
+<code>nth-child</code> - один из моих самых любимых селекторов, потому что с помощью него можно <s>делать клевые разноцветные штуки</s> собирать элементы списка в группы произвольной длины и делать с ними разные интересные вещи: от полосатых таблиц до целых разноцветных дизайнов, и все это без необходимости задавать дополнительные классы или как-то менять разметку. <!--more-->
 
-http://nthmaster.com/
+Вот простой пример полосатых таблиц:
 
-http://css-tricks.com/examples/nth-child-tester/#
+<p data-height="260" data-theme-id="4974" data-slug-hash="IfaoC" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/IfaoC/'>IfaoC</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 
+Полоски помогают легче скользить глазами по длинной строке или столбцу, это увеличивает читабельность больших таблиц, а сделать это можно всего парой строчек в CSS:
 
-http://nth-test.com/
+<pre><code class="language-css">/* Горизонтальные полоски */
+TR:nth-child(odd) {
+    background: #EEE;
+    }
+/* Вертикальные полоски */    
+TD:nth-child(odd) {
+    background: #EEE;
+    }</code></pre>
+
+Или вот что можно сделать с обычным списком вроде такого:
+
+<pre><code class="language-markup">&lt;ul>
+  &lt;li> &lt;/li>
+  &lt;li> &lt;/li>
+  &lt;li> &lt;/li>
+  &lt;li> &lt;/li>
+  &lt;li> &lt;/li>
+&lt;/ul></code></pre> 
+
+Никаких дополнительных классов, все сделано только с помощью <code>:nth-child</code>:
+
+<p data-height="420" data-theme-id="4974" data-slug-hash="jpKzL" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/jpKzL/'>Nth-child games</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+Вот пример разноцветного дизайна, где используется этот же эффект:
+
+<a href="http://img-fotki.yandex.ru/get/5631/5091629.85/0_73b6b_b16dcc9c_orig"></a><img src="http://img-fotki.yandex.ru/get/5631/5091629.85/0_73b6b_b16dcc9c_L" alt="Lobster">
+
+<i>Это дизайн для ЖЖ. Если у вас есть ЖЖ, вы можете установить его <a href="http://www.livejournal.com/customize/?search=colorful">из каталога</a>.</i>
+
+<h4>Как работает nth-child()?</h4>
+
+В круглых скобках задается размер цикла: например <code>(3n)</code> выберет каждый третий элемент.
+Также можно задать сдвиг вперед или назад: <code>(3n+1)</code> - найдет каждый третий и сделает один шаг вперед, а <code>(3n-2)</code> - два шага назад от найденого.
+Если размер цикла не задан - <code>(n)</code> - выберется каждый элемент списка.
+Если размер цикла не задан, но задано конкретное число - <code>(5)</code> - выберется элемент списка с этим индексом.
+
+<code>nth-child</code> в своем цикле считает все элементы, находящиеся на одном уровне вложенности относительно родительского элемента.
+
+<h4>Примеры</h4>
+
+<h5>:nth-child(3n)</h5>
+<ul class="demo-ul demo-ul--1">
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+</ul>
+<i>Выбирает каждый 3-й элемент списка.</i>
+
+---    
+
+<h5>:nth-child(3n+1)</h5>
+<ul class="demo-ul demo-ul--2">
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+</ul>
+
+<i>Выбирает каждый 3-й элемент списка и делает сдвиг на один шаг вперед. Таким образом можно выбрать первые элементы в каждой группе.</i>
+
+---    
+
+<h5>:nth-child(even) <span class="text--light"> = :nth-child(2n)</span>
+</h5>
+<ul class="demo-ul demo-ul--3">
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+</ul>
+
+<i><code>(even)</code> - ключевое слово, выбирает четные элементы списка, как если бы мы задали <code>(2n)</code>.</i>
+
+---
+
+<h5>:nth-child(odd) <span class="text--light">= :nth-child(2n+1)
+</span></h5>
+<ul class="demo-ul demo-ul--4">
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+</ul>
+
+<i><code>(odd)</code> - ключевое слово, выбирает нечетные элементы, как если бы мы задали <code>(2n+1)</code>.</i>
+
+---
+
+<h5>:nth-child(3n-1) <span class="text--light">= :nth-child(3n+2)</span></h5>
+<ul class="demo-ul demo-ul--5">
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+</ul>
+
+<i>Выбирает каждый 3-й элемент списка и делает сдвиг на один шаг назад.</i>
+
+---
+
+<h5>:nth-child(5) <span class="text--light">= :nth-child(0n+5)</span></h5>
+<ul class="demo-ul demo-ul--6">
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+</ul>
+
+<i>Выберет 5-й элемент списка.</i>
+
+---
+
+<h5>:nth-child(n+6)</h5>
+<ul class="demo-ul demo-ul--7">
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+</ul>
+
+<i>Выберет все элементы начиная с 6-го.</i>
+
+---
+
+<h5>:nth-child(-n+6)</h5>
+<ul class="demo-ul demo-ul--8">
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+</ul>
+
+<i>Выберет 6 элементов с начала списка.</i>
+
+<h4>Сочетания селекторов</h4>
+
+<h5>:nth-child(n+3):nth-child(-n+8)</h5>
+<ul class="demo-ul demo-ul--9">
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+</ul>
+
+<i>Выберет элементы в диапазоне от 3 до 8-ми.</i>
+
+---
+
+<h5>:nth-child(n+4):nth-child(even)</h5>
+<ul class="demo-ul demo-ul--10">
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+</ul>
+
+<i>Выберет элементы начиная с 4-го, а потом выделит только четные из них.</i>
+
+---
+
+<h5>:nth-child(3n+1):nth-child(even)</h5>
+<ul class="demo-ul demo-ul--11">
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+</ul>
+
+<i>Выберет 4-й, 7-й и 10-й элементы, а затем только четные из них.</i>
+
+---
+
+<h5>:nth-child(n+3):nth-child(-n+8):nth-child(even)</h5>
+<ul class="demo-ul demo-ul--12">
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+    <li></li> <li></li>
+</ul>
+
+<i>Выберет элементы с 3-го по 8-й, а затем только четные из них.</i>
+
+Все примеры сделаны на основе однородного списка, но что если нам требуется выбрать, например, несколько абзацев в статье, которая содержит не только абзацы, но и заголовки?
+
+Предположим, мы хотим покрасить абзацы через один, поэтому напишем что-то вроде:
+
+<pre><code class="language-css">P:nth-child(odd)</code></pre>
+
+но результат будет каким-то странным (слева), и если попробовать написать то же самое, но без тега (справа) - сразу становится ясно почему:
+
+<p data-height="510" data-theme-id="4974" data-slug-hash="itagK" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/itagK/'>itagK</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+<code>:nth-child</code> считает все элементы, не обращая внимания на тег, хотя показывает только те, что соответствуют заданному тегу или классу.
+
+Чтобы выбрать только абзацы, нам потребуется другой селектор - <code>:nth-of-type</code>:
+
+<p data-height="510" data-theme-id="4974" data-slug-hash="jAxuF" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/jAxuF/'>jAxuF</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+<code>:nth-of-type</code> работает также, как <code>:nth-child</code>, но считает только элементы заданного типа.
+
