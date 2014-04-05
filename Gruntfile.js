@@ -60,18 +60,27 @@ module.exports = function (grunt) {
           banner: '<%= tag.banner %>'
         },
         files: {
-          '<%= project.css_src %>/style.unprefixed.css': '<%= project.css_src %>/style.scss'
+          '<%= project.css_src %>/style.css': '<%= project.css_src %>/style.scss',
+          '<%= project.css_src %>/nth-child.css': '<%= project.css_src %>/nth-child.scss'
         }
       }
     },
 
     autoprefixer: {
-      dist: {
-        options: {},
-        src: '<%= project.css_src %>/style.unprefixed.css',
-        dest: '<%= project.css_res %>/style.css'
+      // dist: {
+      //   options: {},
+      //   src: '<%= project.css_src %>/style.unprefixed.css',
+      //   dest: '<%= project.css_res %>/style.css'
+      // },
+      multiple_files: {
+        expand: true,
+        flatten: true,
+        src: '<%= project.css_src %>/*.css', // -> src/css/file1.css, src/css/file2.css
+        dest: '<%= project.css_res %>/' // -> dest/css/file1.css, dest/css/file2.css
       },
     },
+
+
 
     
 
@@ -112,8 +121,7 @@ module.exports = function (grunt) {
      */
     clean: {
       dev: [
-        '_src/css/*.prefixed.css',
-        '_src/css/*.unprefixed.css'
+        '_src/css/*.css'
       ],
       build: [
         '_site/Gemfile',
