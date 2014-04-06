@@ -92,6 +92,9 @@ P:nth-child(6) {
   }</code></pre>
 
 <iframe src="http://jsbin.com/aMakIZI/49/" style="height: 270px" class="jsbin"></iframe>
+
+Подробнее про селектор: <a href="/nth-child/">
+Nth-child и nth-of-type</a>
 </li>
 
 <li id="nth-last-child" data-name="E:nth-last-child(n)"><p><code>E:nth-last-child(n)</code> - <code>n</code> по счету дочерний элемент, начиная с конца.</p>
