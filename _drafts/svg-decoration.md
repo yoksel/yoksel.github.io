@@ -17,15 +17,17 @@ links:
 
 Из всех способов вставки SVG для этого подходят всего два: использование в виде шрифта и через <code>use</code>.
 
+В обоих способах можно использовать <code>сurrentColor</code>.
+
 Что можно сделать со шрифтом? Можно задать цвет, добавить тени и анимацию:
 
 <p data-height="312" data-theme-id="4974" data-slug-hash="LnJEK" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/LnJEK/'>LnJEK</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-В обоих способах можно использовать CurrentColor
 
+Но если вставлять SVG через <code>use</code>, возможности стилизации становятся значительно шире. Например, можно красить отдельные части изображения, а также использовать различные SVG-эффекты, например, градиенты, размытие и тени.
 
-Но если вставлять SVG через <code>use</code>, возможности стилизации становятся значительно шире. Например, можно красить отдельные части изображения, а также использовать градиенты, размытие и 
+При этом в SVG можно использовать далеко не все CSS-свойства, полный список <a href="http://www.w3.org/TR/SVG11/styling.html#SVGStylingProperties">можно найти вот тут</a>.
 
 
 ---------
