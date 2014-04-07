@@ -1,15 +1,15 @@
 ---
 layout: default
-title: SVG-стеки
+title: "SVG-стеки"
 type: post
-image: http://img-fotki.yandex.ru/get/9809/5091629.9d/0_80720_8dc116f0_L.png
-desc: Стеки - это ещё один способ организации SVG. Как спрайт, только лучше - как если бы мы могли использовать use в CSS. К сожалению, способ очень неравномерно поддерживается современными браузерами.
-
-links:
-- url: http://simurai.com/blog/2012/04/02/svg-stacks/
-  name: SVG Stacks
-- url: https://github.com/preciousforever/SVG-Stacker
-  name: SVG-Stacker  
+image: "http://img-fotki.yandex.ru/get/9809/5091629.9d/0_80720_8dc116f0_L.png"
+desc: "Стеки - это ещё один способ организации SVG. Как спрайт, только лучше - как если бы мы могли использовать use в CSS. К сожалению, способ очень неравномерно поддерживается современными браузерами."
+links: 
+  - url: "http://simurai.com/blog/2012/04/02/svg-stacks/"
+    name: SVG Stacks
+  - url: "https://github.com/preciousforever/SVG-Stacker"
+    name: "SVG-Stacker"
+published: true
 ---
 
 Стеки - это ещё один способ организации SVG. Как спрайт, только лучше - как если бы мы могли использовать <code>use</code> в CSS.
