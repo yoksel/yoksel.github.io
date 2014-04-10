@@ -61,7 +61,8 @@ module.exports = function (grunt) {
         },
         files: {
           '<%= project.css_src %>/style.css': '<%= project.css_src %>/style.scss',
-          '<%= project.css_src %>/nth-child.css': '<%= project.css_src %>/nth-child.scss'
+          '<%= project.css_src %>/nth-child.css': '<%= project.css_src %>/demos/nth-child.scss',
+          '<%= project.css_src %>/css-and-svg-masks.css': '<%= project.css_src %>/demos/css-and-svg-masks.scss'
         }
       }
     },
