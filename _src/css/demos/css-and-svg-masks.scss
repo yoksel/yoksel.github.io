@@ -1,0 +1,68 @@
+
+.item--svg-clip-path-svg image,
+#fo-text {
+  clip-path: url(#clipping);
+  }
+
+.item--svg-mask-svg image {
+  mask: url(#masking);
+}
+
+.item--svg-fill text {
+  fill: url(#pattern);
+}
+
+/*.demo, */
+#clipping,
+#masking text,
+.svg-fill {
+  font: bold italic 7em/1.5 Georgia;
+  }
+.svg-clip-path--text {
+  font: bold italic .8em/1.2 Georgia;
+}
+/* Common 
+------------------------------------------- */
+.svg-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  font-size: 12px;
+  }
+
+.demo-item {
+  position: relative;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  padding-right: 3em;
+  &:after {
+    content: '';
+    display: table;
+    width: 100%;
+    }
+  }
+
+.demo {
+    position: relative;
+    float: left;
+    margin-right: 30px;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: -2;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: url(http://img-fotki.yandex.ru/get/5607/5091629.6b/0_612e6_b9039c0d_M.jpg) no-repeat;
+      opacity: 0;
+      transition: .7s;
+      }
+   .item:hover &:before {
+        opacity: .4;
+        }
+    }
+.text {
+  padding-left: 230px;
+  }
