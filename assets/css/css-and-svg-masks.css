@@ -5,6 +5,13 @@
  * Version: 0.0.1
  */
 
+.svg-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  font-size: 12px;
+}
+
 .g--clip-path-img {
   clip-path: url(#clipping-star);
 }
@@ -23,6 +30,10 @@
   fill: #006432;
 }
 
+#pattern-text {
+  font: bold italic 1.1em/1 Georgia;
+}
+
 .g--svg-mask-svg image {
   mask: url(#masking);
 }
@@ -31,25 +42,23 @@
   mask: url(#masking-soft);
 }
 
+.g--svg-mask-svg-lum rect {
+  mask: url(#masking-lum);
+}
+
 .g--svg-fill text {
   fill: url(#pattern);
-  font: bold italic 12em/1 Georgia;
+  font: bold italic 10em/1 Georgia;
 }
 
 .g--svg-fill-text text {
   fill: url(#pattern-text);
-  font: bold italic 12em/1 Georgia;
+  font: bold italic 10em/1 Georgia;
 }
 
-/* Common 
-------------------------------------------- */
-.svg-defs {
-  position: absolute;
-  width: 0;
-  height: 0;
-  font-size: 12px;
-}
-
-svg {
-  border: 2px solid crimson;
+.g--svg-stroke {
+  stroke: url(#pattern);
+  stroke-width: 4;
+  fill: none;
+  font: bold italic 10em/1 Georgia;
 }
