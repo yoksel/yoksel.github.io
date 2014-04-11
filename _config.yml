@@ -4,7 +4,8 @@ permalink: /:title
 pygments: true
 exclude: ['Rakefile','config.rb', 'README.md','gems','node_modules','*.sketch',
           'Gemfile','Gemfile.*','Gruntfile.*','package.json','temp']
-markdown: rdiscount
+# markdown: rdiscount
+markdown: kramdown
 
 # configuration required for some pages
 
