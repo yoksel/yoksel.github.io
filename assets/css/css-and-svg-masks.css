@@ -13,7 +13,7 @@
 }
 
 .g--clip-path-img {
-  clip-path: url(#clipping-star);
+  clip-path: url(/css-and-svg-masks/#clipping-star);
 }
 
 #clipping-text {
@@ -24,7 +24,7 @@
   -webkit-transform: translate(100);
   -ms-transform: translate(100);
   transform: translate(100);
-  clip-path: url(#clipping-text);
+  clip-path: url(/css-and-svg-masks/#clipping-text);
   font: bold italic .8em/1 Georgia;
   stroke: red;
   fill: #006432;
@@ -35,29 +35,29 @@
 }
 
 .g--svg-mask-svg image {
-  mask: url(#masking);
+  mask: url(/css-and-svg-masks/#masking);
 }
 
 .g--svg-mask-svg-soft image {
-  mask: url(#masking-soft);
+  mask: url(/css-and-svg-masks/#masking-soft);
 }
 
 .g--svg-mask-svg-lum rect {
-  mask: url(#masking-lum);
+  mask: url(/css-and-svg-masks/#masking-lum);
 }
 
 .g--svg-fill text {
-  fill: url(#pattern);
+  fill: url(/css-and-svg-masks/#pattern);
   font: bold italic 10em/1 Georgia;
 }
 
 .g--svg-fill-text text {
-  fill: url(#pattern-text);
+  fill: url(/css-and-svg-masks/#pattern-text);
   font: bold italic 10em/1 Georgia;
 }
 
 .g--svg-stroke {
-  stroke: url(#pattern);
+  stroke: url(/css-and-svg-masks/#pattern);
   stroke-width: 4;
   fill: none;
   font: bold italic 10em/1 Georgia;
