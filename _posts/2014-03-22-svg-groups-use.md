@@ -42,7 +42,16 @@ SVG-фигуры можно группировать, чтобы удобно с
 
 Группе, как и фигурам, можно задавать заливку и рамки. Стиль будет работать для фигур внутри группы, у которых нет своего стиля:
 
-<svg class="svg" width="170" height="50"><g id="to-sun" fill="tomato"><ellipse rx="30" ry="10" cx="25" cy="25" transform="rotate(-45 25 25)"/><ellipse rx="30" ry="10" cx="105" cy="25" transform="rotate(-45 105 25)"/></g><g id="to-sun" fill="skyblue"><ellipse rx="30" ry="10" cx="65" cy="25" transform="rotate(45 65 25)"/><ellipse rx="30" ry="10" cx="145" cy="25" transform="rotate(45 145 25)"/></g</svg>
+<svg class="svg" width="170" height="50">
+  <g id="to-sun" fill="tomato">
+    <ellipse rx="30" ry="10" cx="25" cy="25" transform="rotate(-45 25 25)"/>
+    <ellipse rx="30" ry="10" cx="105" cy="25" transform="rotate(-45 105 25)"/>
+  </g>
+  <g id="to-sun" fill="skyblue">
+    <ellipse rx="30" ry="10" cx="65" cy="25" transform="rotate(45 65 25)"/>
+    <ellipse rx="30" ry="10" cx="145" cy="25" transform="rotate(45 145 25)"/>
+  </g>
+</svg>
 
 <pre><code class="language-markup">&lt;svg width="170" height="50">
   &lt;!-- Красные фигуры -->
@@ -65,8 +74,10 @@ SVG-фигуры можно группировать, чтобы удобно с
 
 Тег <code>defs</code> служит библиотекой элементов и эффектов, которые будут использоваться позже. Содержимое тега не отображается на странице.
 
-<svg class="svg" width="200" height="200"><defs><g><linearGradient id="g1" x1="0%" y1="0%" x2="90%" y2="90%"><stop stop-color="crimson" offset="0%"/><stop stop-color="gold" offset="100%"/></linearGradient><linearGradient id="g2" x1="0%" y1="0%" x2="90%" y2="90%"><stop stop-color="yellowgreen" offset="0%"/><stop stop-color="green" offset="100%"/></linearGradient></g><g><circle fill="url(#g1)" r="50" id="sun"/><rect width="200" height="70" id="rect" fill="url(#g2)"/></g></defs>
-<use xlink:href="#sun" x="120" y="60"/><use xlink:href="#rect" x="0" y="110" transform="rotate(10 100 110)"/></svg>
+<svg class="svg" width="200" height="200">
+  <defs><g><linearGradient id="g1" x1="0%" y1="0%" x2="90%" y2="90%"><stop stop-color="crimson" offset="0%"/><stop stop-color="gold" offset="100%"/></linearGradient><linearGradient id="g2" x1="0%" y1="0%" x2="90%" y2="90%"><stop stop-color="yellowgreen" offset="0%"/><stop stop-color="green" offset="100%"/></linearGradient></g><g><circle fill="url(#g1)" r="50" id="sun"/><rect width="200" height="70" id="rect" fill="url(#g2)"/></g></defs>
+  <use xlink:href="#sun" x="120" y="60"/><use xlink:href="#rect" x="0" y="110" transform="rotate(10 100 110)"/>
+</svg>
 
 <pre><code class="language-markup">&lt;svg width="200" height="200">
   &lt;!-- Скрытый контейнер для эффектов и фигур -->

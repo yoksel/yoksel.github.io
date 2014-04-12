@@ -18,9 +18,11 @@ links:
 <iframe class="jsbin" style="height: 200px" src="http://jsbin.com/IRiheKO/2/embed?output"></iframe>
 
 Пробуем <code>padding</code>, отступы добавились только в начале и в конце строки
+
 <iframe class="jsbin" style="height: 200px" src="http://jsbin.com/IRiheKO/3/embed?output"></iframe>
 
 Аналогичная ситуация с <code>border</code>:
+
 <iframe class="jsbin" style="height: 200px" src="http://jsbin.com/IRiheKO/4/embed?output"></iframe>
 
 Прекрасное решение было найдено здесь: <strong><a href="http://codepen.io/davatron5000/pen/HGjuv">codepen.io/davatron5000/pen/HGjuv</a></strong>.

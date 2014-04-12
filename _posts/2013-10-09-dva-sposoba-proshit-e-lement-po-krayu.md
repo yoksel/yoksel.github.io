@@ -48,6 +48,7 @@ outline-offset: -15px;</code></pre>
       }</code></pre>
 
 Результат:
+
 <iframe class="jsbin" style="height: 350px" src="http://jsbin.com/IlecUP/2/embed?output"></iframe>
 
 <strong>Плюс:</strong>

@@ -57,7 +57,9 @@ post_nav:
       <li>состояния элементов интерфейса (<code>:enabled</code>, <code>:checked</code>...);</li>
       <li>структурные псевдоклассы (<code>:root</code>, <code>:nth-child</code>);</li>
       <li>псевдокласс отрицания (<code>:not(P)</code>).</li>
+
     </ul>
+  </li>
   <li>псевдоэлементы (<code>:before</code>, <code>:first-line</code>);</li>
   <li>комбинаторы (<code>DIV SPAN</code>, <code>P + H1</code>);</li>
 </ul>
@@ -141,7 +143,7 @@ post_nav:
   background: crimson;
 }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/9/" style="height: 270px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/71/" style="height: 270px" class="jsbin"></iframe></li>
 
 <li id="before" data-name="E::before"><p><code>E::before</code> - генерируемый контент перед заданным элементом.</p></li>
 <li id="after" data-name="E::after"><p><code>E::after</code> - генерируемый контент после элемента.</p>

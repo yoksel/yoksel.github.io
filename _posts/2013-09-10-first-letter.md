@@ -32,15 +32,19 @@ published: true
 <li><code>color</code></li></ul>
 
 Пример:
+
 <iframe class="jsbin" style="height: 250px" src="http://jsbin.com/afawEqu/4/embed?output"></iframe>
 
 Добавление <code>float</code> "утапливает" букву в текст
+
 <iframe class="jsbin" style="height: 250px" src="http://jsbin.com/afawEqu/2/embed?output"></iframe>
 
 <code>:first-letter</code> не срабатывает, если до текста стоит картинка, но работает, если её скрыть c <code>display: none</code>:
+
 <iframe class="jsbin" style="height: 250px" src="http://jsbin.com/afawEqu/3/embed?output"></iframe>
 
 Мне понравилось такое оформление <code>:first-letter</code>:
+
 <iframe class="jsbin" style="height: 250px" src="http://jsbin.com/afawEqu/5/embed?output"></iframe>
 
 <code>float</code> позволяет установить для <code>:first-letter</code>  ширину и выравнивание текста по центру.

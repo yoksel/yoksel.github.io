@@ -28,6 +28,7 @@ links:
 
 По умолчанию центр градиента находится по центру, градиент имеет форму эллипса:
 
+
 <iframe class="jsbin" style="height: 200px" src="http://jsbin.com/OvOwEma/3/"></iframe>
 
 Помимо цветов градиенту можно задавать форму, положение и размер. Параметры сочетаются и ведут себя сложнее, чем в линейных градиентах.
@@ -35,6 +36,7 @@ links:
 <b>Форма</b> (конечная фигура градиента) может быть кругом и эллипсом. По умолчанию - эллипс, градиент стремится занять всё свободное пространство элемента, вытягиваясь, если это необходимо. 
 
 Чтобы градиент имел форму круга - это нужно задать явно с помощью ключевого слова <code>circle</code>.
+
 
 <iframe class="jsbin" style="height: 300px" src="http://jsbin.com/EHuREfA/13/"></iframe>
 
@@ -46,6 +48,7 @@ links:
 Их так же можно сочетать между собой, чтобы расположить градиент на заданной стороне, например: <code>at right top</code> - в верхнем правом углу.
 
 Ниже можно увидеть как работают разные положения:
+
 
 <iframe class="jsbin" style="height: 450px" src="http://jsbin.com/EHuREfA/18/"></iframe>
 
@@ -62,6 +65,7 @@ links:
 
 Ниже примеры круглых и эллиптических градиентов. Форма фигуры определяется заданными размерами:
 
+
 <iframe class="jsbin" style="height: 320px" src="http://jsbin.com/EHuREfA/23/"></iframe>
 
 Также можно использовать ключевые слова:
@@ -73,6 +77,7 @@ links:
 <code>farthest-corner</code> - аналогично <code>closest-corner</code>, только конечная фигура проходит через угол, дальний от центра градиента. Значение по умолчанию.
 
 Некоторым градиентам добавлено положение <code>at bottom</code>, чтобы было лучше видно действие кода:
+
 <iframe class="jsbin" style="height: 700px" src="http://jsbin.com/EHuREfA/22/"></iframe>
 
 <code>radial-gradient</code> также можно сделать повторяющимся: <code>repeating-radial-gradient</code>.
@@ -82,6 +87,7 @@ links:
 <pre><code class="language-css">background: repeating-radial-gradient(circle,
     darkkhaki, darkkhaki .5em, 
     transparent .5em, transparent 1.5em);</code></pre>
+
 
 <iframe class="jsbin" style="height: 300px" src="http://jsbin.com/OvOwEma/10/"></iframe>
 

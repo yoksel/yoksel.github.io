@@ -39,6 +39,7 @@ links:
 
 Инь-ян, удивительно просто, на самом деле <em>(добавлено 3.03.2013)</em>.
 По-моему, на <a href="http://css-tricks.com/examples/ShapesOfCSS/">css-tricks.com/examples/ShapesOfCSS/</a> предлагается более изящное решение, которое, к тому же, решает проблему просвечивающего контура у фигуры с тенями.
+
 <iframe class="jsbin" style="height: 350px" src="http://jsbin.com/oLeqAhI/1/embed?output,css"></iframe>
 
 Стрелочки:

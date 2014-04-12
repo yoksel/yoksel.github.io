@@ -22,7 +22,7 @@ post_nav:
 - url: '#backface-visibility'
   name: 'backface-visibility'
 ---
-<section>Css transform позволяет трансформировать элементы, в том числе в трехмерном пространстве.<!--more-->
+<section markdown="1">Css <code>transform</code> позволяет трансформировать элементы, в том числе в трехмерном пространстве.<!--more-->
 
 Спецификация: <a href="http://www.w3.org/TR/css3-transforms/">www.w3.org/TR/css3-transforms/</a>.
 
@@ -50,7 +50,7 @@ post_nav:
 
 повернет объект на 90 градусов, потому что обе функции будут выполнены последовательно.
 
-</section><section id="transform-origin" data-name="transform-origin"><h4>Transform-origin</h4>
+</section><section markdown="1" id="transform-origin" data-name="transform-origin"><h4>Transform-origin</h4>
 Свойство определяет центр трансформации.
 
 Возможные значения: расстояния в пикселях или процентах или ключевые слова (<code>left</code>, <code>center</code>, <code>right</code>, <code>top</code>, <code>bottom</code>).
@@ -63,7 +63,7 @@ post_nav:
 
 <iframe class="jsbin" style="height: 300px" src="http://jsbin.com/EcebOKi/36/embed?output"></iframe>
 
-</section><section id="transform-style" data-name="transform-style"><h4>Transform-style</h4>
+</section><section markdown="1" id="transform-style" data-name="transform-style"><h4>Transform-style</h4>
 Определяет поддержку 3D внутри трансформируемого элемента.
 
 Возможные значения:
@@ -79,7 +79,7 @@ post_nav:
 <code>opacity</code> с любым значением кроме <code>1</code> (блокирует трехмерность, если задан обертке трансформируемого объекта, то есть уровнем выше, чем <code>transform-style: preserve-3d;</code>. На одном уровне они не мешают друг другу).
 <code>filter</code> с любым значением кроме <code>none</code>
 
-</section><section id="perspective" data-name="perspective"><h4>Perspective</h4>
+</section><section markdown="1" id="perspective" data-name="perspective"><h4>Perspective</h4>
 Свойство определяет глубину сцены.
 Чем меньше значение, тем больше вытянута сцена в сторону зрителя.
 Задается родителю трансформируемых элементов.
@@ -88,7 +88,7 @@ post_nav:
 
 <iframe class="jsbin" style="height: 300px" src="http://jsbin.com/EcebOKi/40/embed?output"></iframe>
 
-</section><section id="perspective-origin" data-name="perspective-origin"><h4>Perspective-origin</h4>
+</section><section markdown="1" id="perspective-origin" data-name="perspective-origin"><h4>Perspective-origin</h4>
 Отвечает за расположение точки, от которой отсчитывается перспектива.
 По сути, задается положение зрителя относительно сцены.
 
@@ -96,7 +96,7 @@ post_nav:
 
 <iframe class="jsbin" style="height: 300px" src="http://jsbin.com/EcebOKi/41/embed?output"></iframe>
 
-</section><section id="backface-visibility" data-name="backface-visibility"><h4>Backface-visibility</h4>
+</section><section markdown="1" id="backface-visibility" data-name="backface-visibility"><h4>Backface-visibility</h4>
 Определяет видимость задней стороны объекта.
 
 Возможные значения:
@@ -105,6 +105,8 @@ post_nav:
 
 Кубик справа показывает действие <code>backface-visibility: hidden</code>:
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/ELipoZE/16/embed?output"></iframe></section>
+<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/ELipoZE/16/embed?output"></iframe>
+
+</section>
 
 Вдохновляющие эффекты с трансформами: <a href="http://tympanus.net/Development/CreativeLinkEffects/">tympanus.net/Development/CreativeLinkEffects/</a>
