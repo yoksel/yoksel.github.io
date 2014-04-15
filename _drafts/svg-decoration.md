@@ -11,21 +11,40 @@ links:
 
 ---
 
-Внешний вид SVG-элементам можно задавать как с помощью CSS, так и через SVG-фильтры. 
+Внешний вид SVG-элементам можно задавать как с помощью CSS, так и через SVG-фильтры.
 
 Стили, и даже скрипты, можно задавать прямо внутри SVG-файла, но если мы хотим, чтобы один и тот же файл в разных окружениях выглядел по-разному - стили внутри файла не годятся - нужно, чтобы SVG был доступен для внешних стилей.<!--more-->
 
 Из всех способов вставки SVG для этого подходят всего два: использование в виде шрифта и через <code>use</code>.
 
 В обоих способах можно использовать <code>сurrentColor</code>.
+Для этого нужно задать заливку фигуры:
 
-Что можно сделать со шрифтом? Можно задать цвет, добавить тени и анимацию:
+<pre><code class="language-css">.icon {
+  fill: currentColor;
+  }</code></pre>
+
+Если потом для родительского элемента задать цвет текста
+
+<pre><code class="language-css">A {
+  color: crimson;
+  }</code></pre>
+
+Фигура зальется этим же цветом. Очень удобно для ссылок по наведению и для страниц с несколькими темами оформления.
+
+Пример:  
+
+<p data-height="400" data-theme-id="4974" data-slug-hash="xiLen" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/xiLen/'>SVG and currentColor</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+Если вставлять иконки через шрифт, как их можно оформить? 
+Можно задать цвет, добавить тени и анимацию:
 
 <p data-height="312" data-theme-id="4974" data-slug-hash="LnJEK" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/LnJEK/'>LnJEK</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-
-Но если вставлять SVG через <code>use</code>, возможности стилизации становятся значительно шире. Например, можно красить отдельные части изображения, а также использовать различные SVG-эффекты, например, градиенты, размытие и тени.
+Не так уж и много, по сравнению с возможностями, предоставляемыми SVG.
+При вставке SVG через <code>use</code>, иконки не только становятся доступны для стилей страницы, но также получают возможность использовать градиенты и фильтры, находящиеся на странице, например, размымие или тени. Возмож Также можно красить отдельные части изображений и получать разноцветные иконки.
 
 При этом в SVG можно использовать далеко не все CSS-свойства, полный список <a href="http://www.w3.org/TR/SVG11/styling.html#SVGStylingProperties">можно найти вот тут</a>.
 
