@@ -8,51 +8,38 @@ desc:
 links:
 - url: http://www.html5rocks.com/en/tutorials/masking/adobe/
   name: CSS Masking
-
+- url: http://tympanus.net/codrops/2013/11/27/svg-icons-ftw/
+  name: SVG icons FTW  
+- url: http://docs.webplatform.org/wiki/svg/tutorials/smarter_svg_filters
+  name: SVG filters
+- url: http://www.w3.org/TR/SVG11/filters.html
+  name: Filter Effects
 ---
 
-Внешний вид SVG-элементам можно задавать как с помощью CSS, так и через SVG-фильтры.
+Внешний вид SVG-элементам можно задавать как с помощью CSS, так и с помощью SVG-фильтров, градиентов и паттернов - их можно прописывать элементам прямо в коде либо задавать также через CSS.
 
-Стили и скрипты, можно задавать прямо внутри SVG-файла, но если мы хотим, чтобы один и тот же файл в разных окружениях выглядел по-разному - стили внутри файла не годятся - нужно, чтобы SVG был доступен для внешних стилей.<!--more-->
+Стили и скрипты можно задавать внутри SVG-файла, но если мы хотим, чтобы одно и то же изображение в разных условиях выглядело по-разному - стили внутри файла не годятся - нужно, чтобы векторное содержимое было доступно для внешних стилей.<!--more-->
 
-Из всех способов вставки SVG для этого подходят всего два: использование в виде шрифта и через <code>use</code>.
+Из всех способов вставки SVG для этого подходят всего два: иконочный шрифт или инлановый SVG в HTML (удобнее всего делать это через <code>use</code>).
 
-В обоих способах можно использовать <code>сurrentColor</code>.
-Для этого нужно задать его в качестве заливки (или обводки) фигуры:
-
-<pre><code class="language-css">.icon {
-  fill: currentColor;
-  }</code></pre>
-
-Если потом для родительского элемента задать цвет текста -
-
-<pre><code class="language-css">A {
-  color: crimson;
-  }</code></pre>
-
- фигура зальется этим же цветом. Очень удобно для ссылок по наведению и для страниц с несколькими темами оформления.
-
-Пример:  
-
-<p data-height="450" data-theme-id="4974" data-slug-hash="xiLen" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/xiLen/'>SVG and currentColor</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//codepen.io/assets/embed/ei.js"></script>
-
-Если вставлять иконки через шрифт, как их можно оформить? 
+Какие стили оформления можно использовать для иконочных шрифтов? 
 Можно задать цвет, добавить тени и анимацию:
 
-<p data-height="312" data-theme-id="4974" data-slug-hash="LnJEK" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/LnJEK/'>LnJEK</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="200" data-theme-id="4974" data-slug-hash="LnJEK" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/LnJEK/'>LnJEK</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Не так уж и много, по сравнению с возможностями, предоставляемыми SVG.
 
-При вставке SVG через <code>use</code>, иконки не только становятся доступны для стилей страницы, но также получают возможность использовать градиенты и фильтры, находящиеся на странице, например, размытие или тени. Также можно использовать в качестве обводки и заливки паттерны и изображения, а ещё можно красить отдельные части картинок и получать разноцветные иконки.
+Для SVG-изображений можно использовать SVG-градиенты и фильтры, например, размытие или тени. Также можно использовать в качестве обводки и заливки паттерны и изображения, а ещё можно красить отдельные части картинок и таким образом получать разноцветные иконки.
+
+При вставке SVG через <code>use</code> иконки становятся доступны для стилей страницы, и всеми этими прекрасными возможностями оформления можно управлять через внешний CSS.
 
 Вот пример иконок с паттернами в качестве фона:
 
 <p data-height="480" data-theme-id="4974" data-slug-hash="mfdIE" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/mfdIE/'>SVG icons with patterns</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-Пример немного диковат, но он хорошо показывает, что фоном может быть любая картинка.
+Пример немного диковат, но он хорошо показывает, что фоном может быть любая картинка. Паттерны заданы в коде страницы и подключены с помощью CSS.
 
 Вот код деревянного паттерна:
 
@@ -66,17 +53,26 @@ links:
 
 В паттерн можно класть всё что угодно: комбинации фигур, объекты с градиентами, текст... Правда, есть подозрение, что сложные фоны могут плохо влиять на производительность страницы, но тестов не делала.
 
-Подключаем паттерн (код в Sass):
+Подключаем паттерн:
 <pre><code class="language-css">.icons--wood {
   fill: url(#wood); 
   }</code></pre>
 
-Также можно делать разные интересные эффекты с обводкой:
+Чтобы при наведении менять местами обводку и заливку, нужно добавить ещё пару строчек:
+<pre><code class="language-css">.icons--wood {
+  fill: url(#wood); 
+  }
+  .icons--wood .icon:hover {
+    fill: none; 
+    stroke: url(#wood); 
+    }</code></pre>
 
-<p data-height="480" data-theme-id="4974" data-slug-hash="cmslA" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/cmslA/'>SVG Icons with outlines</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+Также можно делать интересные эффекты на основе обводки:
+
+<p data-height="550" data-theme-id="4974" data-slug-hash="cmslA" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/cmslA/'>SVG Icons with outlines</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-Обводки могут быть пунктирными, для них можно использовать градиент или паттерн.
+Обводки могут быть пунктирными, для них можно использовать градиент или паттерн. 
 
 <pre><code class="language-css">/* Обычная обводка, по наведению меняет цвет */
 .icons--stroke .icon {
@@ -102,14 +98,14 @@ links:
   stroke: url(#stripes);
   }</code></pre>
 
-Иконкам в последней строке в качестве обводки задан градиент, уходящий в прозрачность.
+Иконкам в последней строке в качестве обводки задан градиент, уходящий в прозрачность, почему-то не работает в последней опере.
 
-С анимацией обводки можно делать интересные штуки:
+С анимацией пуктирной обводки можно делать интересные штуки:
 
 <p data-height="320" data-theme-id="4974" data-slug-hash="blKmc" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/blKmc/'>A little magic with stroke-dasharray</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-Не уверена, что эффект подходит для иконок, но он может быть интересно использован для иллюстраций.
+Не уверена, что эта анимация подходит для иконок (будет не очень хорошо, если иконки будут шевелиться или исчезать), но она может быть использована для эффектно появляющихся иллюстраций.
 
 Примерный код:
 
@@ -125,7 +121,7 @@ links:
 
 @keyframes dasharray {
   100% {
-  	/* Черточки нулевой длины */
+  	/* Черточки нулевой длины с длинными пробелами, линиия исчезнет */
     stroke-dasharray: 0 500;
   }
 }</code></pre>
@@ -135,17 +131,45 @@ links:
 <p data-height="470" data-theme-id="4974" data-slug-hash="kszeJ" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/kszeJ/'>SVG Icons with filters</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-Размытие, тень, повторяющийся контур и внутренняя тень.
+Размытие, тень, повторяющийся контур и внутренняя тень (её не очень хорошо видно).
 
 Конечно, размытие врядли подойдет для иконок, но с ним можно придумать другие интересные штуки.
 
 У фильтров есть недостаток: результатом наложения фильтров является растровое изображение, из-за чего картинки утрачивают способность тянуться без потерь в качестве и хуже выглядят на экранах с ретиной.
 
-При этом в SVG можно использовать далеко не все CSS-свойства, полный список <a href="http://www.w3.org/TR/SVG11/styling.html#SVGStylingProperties">можно найти вот тут</a>.
+В качестве заливки (или обводки) SVG-элементов удобно использовать <code>сurrentColor</code>. Это ключевое слово, обозначающее текущий цвет текста, и если задать его в качестве заливки (обводки) - элемент будет краситься вместе с окружающим текстом.
+
+Код:
+
+<pre><code class="language-css">.icon {
+  fill: currentColor;
+  }</code></pre>
+
+Если потом для родительского элемента задать цвет текста
+
+<pre><code class="language-css">A {
+  color: crimson;
+  }</code></pre>
+
+ фигура зальется этим же цветом. Очень удобно для ссылок по наведению и для страниц с несколькими темами оформления.
+
+Пример:  
+
+<p data-height="450" data-theme-id="4974" data-slug-hash="xiLen" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/xiLen/'>SVG and currentColor</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+Интересно, что в SVG можно использовать далеко не все CSS-свойства, относительно полный список <a href="http://www.w3.org/TR/SVG11/styling.html#SVGStylingProperties">можно найти вот тут</a>.
+Можно использовать <code>animation</code>, но <code>transition</code> работает странно и не во всех браузерах. CSS-градиенты использовать, к сожалению, нельзя. Трансформации работают.
+
+Также перед использованием различных фильтров и эффектов нужно всегда проверять как они поддерживаются разными браузерами. 
+
+Из всего этого можно сделать следующие выводы: 
+
+- самые широкие возможности для оформления дает инлайновый SVG;
+- меньше возможностей, но более удобное подключение на страницу предоставляет иконочный шрифт. Существенный минус состоит в проблемах с поддержкой встраиваемых шрифтов в разных браузерах;
+- если SVG-графика нужна только в одном стиле и нет необходимости управления через внешний CSS - лучше всего воспользоваться спрайтом.
 
 
-http://docs.webplatform.org/wiki/svg/tutorials/smarter_svg_filters
-http://www.w3.org/TR/SVG11/filters.html#feCompositeElement
 
 ---------
 
