@@ -52,7 +52,7 @@ links:
 <p data-height="480" data-theme-id="4974" data-slug-hash="mfdIE" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/mfdIE/'>SVG icons with patterns</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-Пример, конечно, немного диковат, но ясно показывает, что фоном может быть все, что угодно.
+Пример немного диковат, но он хорошо показывает, что фоном может быть любая картинка.
 
 Вот код деревянного паттерна:
 
@@ -61,7 +61,7 @@ links:
          patternUnits="userSpaceOnUse">
   &lt;!-- Внутрь вставляется картинка для фона -->       
   &lt;image xlink:href="http://img-fotki.yandex.ru/get/6447/5091629.86/0_74298_17a84446_L.jpg" 
-  width="400" height="400">
+         width="400" height="400">
 &lt;/pattern></code></pre> 
 
 В паттерн можно класть всё что угодно: комбинации фигур, объекты с градиентами, текст... Правда, есть подозрение, что сложные фоны могут плохо влиять на производительность страницы, но тестов не делала.
@@ -75,10 +75,6 @@ links:
 
 <p data-height="480" data-theme-id="4974" data-slug-hash="cmslA" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/cmslA/'>SVG Icons with outlines</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
-
-<i>В этом демо был ещё пример с анимацией контура, но в некоторых случаях он мог положить браузер, поэтому был скрыт.
-Во второй строке анимация запускается только по наведению, но и в этом случае может вызывать проблемы. 
-Эффект красивый, но очень прожорливый.</i>
 
 Обводки могут быть пунктирными, для них можно использовать градиент или паттерн.
 
@@ -97,7 +93,7 @@ links:
   stroke-dasharray: 10 5;
   fill: rgba(0, 0, 0, .1);
   &:hover {
-    stroke-dasharray: 0;
+    stroke-dasharray: 100 0;
     }
   }
 /* Обводка с градиентом */
@@ -108,6 +104,32 @@ links:
 
 Иконкам в последней строке в качестве обводки задан градиент, уходящий в прозрачность.
 
+С анимацией обводки можно делать интересные штуки:
+
+<p data-height="320" data-theme-id="4974" data-slug-hash="blKmc" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/blKmc/'>A little magic with stroke-dasharray</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+Не уверена, что эффект подходит для иконок, но он может быть интересно использован для иллюстраций.
+
+Примерный код:
+
+<pre><code class="language-css">path {
+  fill: none;
+  /* В качестве обводки задан градиент */
+  stroke: url(#stripes);
+  stroke-width: 2;
+  /* Исходное состояние обводки - длинные черточки с нулевыми пробелами */
+  stroke-dasharray: 550 0;
+  animation: dasharray 5s infinite alternate;
+  }
+
+@keyframes dasharray {
+  100% {
+  	/* Черточки нулевой длины */
+    stroke-dasharray: 0 500;
+  }
+}</code></pre>
+
 Следующий пример демонстрирует иконки с SVG-фильтрами:
 
 <p data-height="470" data-theme-id="4974" data-slug-hash="kszeJ" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/kszeJ/'>SVG Icons with filters</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
@@ -115,9 +137,15 @@ links:
 
 Размытие, тень, повторяющийся контур и внутренняя тень.
 
+Конечно, размытие врядли подойдет для иконок, но с ним можно придумать другие интересные штуки.
+
+У фильтров есть недостаток: результатом наложения фильтров является растровое изображение, из-за чего картинки утрачивают способность тянуться без потерь в качестве и хуже выглядят на экранах с ретиной.
+
 При этом в SVG можно использовать далеко не все CSS-свойства, полный список <a href="http://www.w3.org/TR/SVG11/styling.html#SVGStylingProperties">можно найти вот тут</a>.
 
 
+http://docs.webplatform.org/wiki/svg/tutorials/smarter_svg_filters
+http://www.w3.org/TR/SVG11/filters.html#feCompositeElement
 
 ---------
 
