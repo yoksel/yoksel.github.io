@@ -71,13 +71,13 @@ links:
   fill: url(#wood); 
   }</code></pre>
 
-Можно делать разные интересные эффекты с обводкой:
+Также можно делать разные интересные эффекты с обводкой:
 
 <p data-height="480" data-theme-id="4974" data-slug-hash="cmslA" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/cmslA/'>SVG Icons with outlines</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 <i>В этом демо был ещё пример с анимацией контура, но в некоторых случаях он мог положить браузер, поэтому был скрыт.
-Во второй строке он запускается только по наведению, но и в этом случае может вызывать проблемы. 
+Во второй строке анимация запускается только по наведению, но и в этом случае может вызывать проблемы. 
 Эффект красивый, но очень прожорливый.</i>
 
 Обводки могут быть пунктирными, для них можно использовать градиент или паттерн.
