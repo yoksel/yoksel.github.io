@@ -216,7 +216,7 @@ SVG-фигуры можно видоизменять с помощью свой�
     <div class="column column-right">
         <code>rotate(45 100 100)</code>
 
-        <svg class="svg" width="200" height="200"><rect x="25" y="25" width="150" height="150" fill="hsla(120,100%,50%,.2)"/><rect x="25" y="25" width="150" height="150" fill="hsla(50,100%,50%,.6)"transform="rotate(45 100 100)"/></svg>
+        <svg class="svg" width="200" height="200"><rect x="25" y="25" width="150" height="150" fill="hsla(120,100%,50%,.2)"/><rect x="25" y="25" width="150" height="150" fill="hsla(50,100%,50%,.6)" transform="rotate(45 100 100)"/></svg>
     </div>
 </div>        
 
@@ -226,7 +226,7 @@ SVG-фигуры можно видоизменять с помощью свой�
     <div class="column column-left">
       <code>skewX(5)</code>
 
-      <svg class="svg" width="200" height="200"><rect x="25" y="25" width="150" height="150" fill="hsla(120,100%,50%,.2)"/><rect x="25" y="25" width="150" height="150" fill="hsla(50,100%,50%,.6)"transform="skewX(5)"/></svg>
+      <svg class="svg" width="200" height="200"><rect x="25" y="25" width="150" height="150" fill="hsla(120,100%,50%,.2)"/><rect x="25" y="25" width="150" height="150" fill="hsla(50,100%,50%,.6)" transform="skewX(5)"/></svg>
     </div>
 
     <div class="column column-right">
