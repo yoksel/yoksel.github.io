@@ -11,12 +11,12 @@
             }
 
             
-        @media (min-width: 400px) {
+        @media (min-width: 100px) {
             #hair {
                 stroke-opacity: 1;
                 }    
             }
-        @media (min-width: 600px) {
+        @media (min-width: 200px) {
             #head {
                 stroke-opacity: 1;
                 }    
