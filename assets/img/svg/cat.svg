@@ -22,17 +22,17 @@
                 stroke-opacity: 1;
                 }    
             }
-        @media (min-width: 800px) {
+        @media (min-width: 300px) {
             #forepaws {
                 stroke-opacity: 1;
                 }    
             }        
-        @media (min-width: 900px) {
+        @media (min-width: 400px) {
             #body {
                 stroke-opacity: 1;
                 }
         }
-        @media (min-width: 920px) {
+        @media (min-width: 420px) {
             #tail {
                 stroke-opacity: 1;
                 }
