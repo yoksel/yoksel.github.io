@@ -91,6 +91,8 @@ border-image: url("http://img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786
 <a href="http://jsbin.com/edOHEwOQ/4">Пример 2</a>
 <a href="http://jsbin.com/edOHEwOQ/6">Пример 3</a>
 
+<b>Upd:</b> В Firefox работают начиная с <a href="https://developer.mozilla.org/en-US/Firefox/Releases/29">29-й версии</a>.
+
 Размер картинки равен толщине рамки. Цвет и стиль рамки игнорируются.
 
 Если задать только <code>border-image-source</code>, картинка заполнит собой уголки, не зная что ей делать дальше:
