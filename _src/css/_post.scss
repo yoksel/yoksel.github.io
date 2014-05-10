@@ -1,321 +1,321 @@
 .post {
-	word-break: break-word;
-	P {
-		margin: $base-font-size 0;
-		} 
-	PRE,
-	TABLE,
-	BLOCKQUOTE {
-		@include mid-margin( bottom );
-		}
-		.marg--bottom {
-		    @include margin(bottom);
-		    }
-	IFRAME {
-		max-width: 100%;
-		}	
-	.warning--before-read {
-		@include mid-margin( bottom );
-		padding: 1em;
+    word-break: break-word;
+    P {
+        margin: $base-font-size 0;
+        }
+    PRE,
+    TABLE,
+    BLOCKQUOTE {
+        @include mid-margin( bottom );
+        }
+        .marg--bottom {
+            @include margin(bottom);
+            }
+    IFRAME {
+        max-width: 100%;
+        }
+    .warning--before-read {
+        @include mid-margin( bottom );
+        padding: 1em;
         border-radius: 10px;
-		background:  lightgoldenrodyellow
-		}
-		.warning--before-read P:last-child {
-			margin-bottom: 0;
-			}	
-	}
-	.post__excerpt {
-		P {
-			white-space: pre-line;
-			&:last-of-type {
-				margin-bottom: 10px;
-				}
-			}
-		.link--readmore {
-			font-size: 12px;
-			}		
-		}
+        background:  lightgoldenrodyellow
+        }
+        .warning--before-read P:last-child {
+            margin-bottom: 0;
+            }
+    }
+    .post__excerpt {
+        P {
+            white-space: pre-line;
+            &:last-of-type {
+                margin-bottom: 10px;
+                }
+            }
+        .link--readmore {
+            font-size: 12px;
+            }
+        }
 .post__date {
-	@include margin( bottom );
-	padding-bottom: 5px;
-	@include border ( bottom );
-	font-style: italic;
-	font-size: .9em;
-	color: #AAA;
-	}		
+    @include margin( bottom );
+    padding-bottom: 5px;
+    @include border ( bottom );
+    font-style: italic;
+    font-size: .9em;
+    color: #AAA;
+    }
 .post__text {
-	@include margin( bottom );
-	
-	IMG {
-		max-width: 100%;
-		height: auto;
-		&:not([class='i-ljuser-userhead']){
-			border: 1px solid $base-border-color;
-			}
-		}
-	TABLE {
-		width: 100%;
-		}
-		.table--w-auto {
-			width: auto;
-			}
-		TH, 
-		TD {
-			@include border (bottom);
-			padding: 7px;
-			text-align: left;
-			}			
-		TH {
-			white-space: nowrap;
-			font-weight: bold;
-			font-size: 1.2em;
-			}	
-			THEAD TH {
-				@include border (top);
-				background: #EEE;
-				}
-	UL {
-		@include margin( bottom );
-		}			
-		UL UL {
-			margin-bottom: 0;	
-			}
-		UL LI {
-			margin: 0 0 5px 25px;
-			}
-		UL LI:before {
-				content: "—";
-				position: absolute;
-				margin-left: -20px;
-				color: #AAA;
-				}
-		OL {
-			@include mid-margin( left );
-			counter-reset: num-list;
-			}		
-		OL LI:before {
-			content: counter( num-list )". ";
-			counter-increment: num-list;
-			}			
+    @include margin( bottom );
 
-	P + H4,
-	SCRIPT + H4,
-	PRE + H4 {
-		@include margin( top );
-		}
-	P {
-		white-space: pre-line;
-		}		
-	SECTION {
-		H4 {
-			@include mid-margin( top );
-			}
-		&:before {
-			@extend %clear;
-			}	
-		}			
-	}				
-	.selectorsReview {
-		.origin,
-		.support {
-			text-align: center;
-		}
-	}
-	.jsbin {
-		width: 100%;
-		@include margin( bottom );
-		border: 1px solid $base-border-color;
-		}
-		.p-hide-demo .jsbin[data-src] {
-			display: none;
-			}
-		.js--toggle-demo {
-			margin-bottom: 20px;
-			}	
-		.js--toggle-demo__text {
-			display: inline-block;
-			position: relative;
-			cursor: pointer;
-			padding: 3px 15px;
-			background: $base-link-color linear-gradient(lighten($base-link-color, 15), darken($base-link-color, 10));
-			box-shadow: 0 0 0 1px $base-link-color inset,
-						0 0 0 2px lighten( $base-link-color, 10 ) inset,
-						0 -1px 2px $base-shadow-color;
-			border-radius: 5px;
-			text-shadow: 1px 0 2px darken( $base-link-color, 20 );
-			color: lighten($base-link-color, 48);
-			transition: all .5s;
-			}
-		.js--toggle-opened .js--toggle-demo__text {
-			background: $base-link-color linear-gradient(darken( $base-link-color, 5 ), $base-link-color);
-			box-shadow: 0 -1px 5px 1px darken( $base-link-color, 20 ) inset,
-						0 0 0 0 lighten( $base-link-color, 20 ) inset,
-						0 0 0 $base-shadow-color;
-			text-shadow: 0 1px 2px darken( $base-link-color, 30 );
-			color: lighten($base-link-color, 40);
-			}	
-	.column {
-		width: 48%; 
+    IMG {
+        max-width: 100%;
+        height: auto;
+        &:not([class='i-ljuser-userhead']){
+            border: 1px solid $base-border-color;
+            }
+        }
+    TABLE {
+        width: 100%;
+        }
+        .table--w-auto {
+            width: auto;
+            }
+        TH,
+        TD {
+            @include border (bottom);
+            padding: 7px;
+            text-align: left;
+            }
+        TH {
+            white-space: nowrap;
+            font-weight: bold;
+            font-size: 1.2em;
+            }
+            THEAD TH {
+                @include border (top);
+                background: #EEE;
+                }
+    UL {
+        @include margin( bottom );
+        }
+        UL UL {
+            margin-bottom: 0;
+            }
+        UL LI {
+            margin: 0 0 5px 25px;
+            }
+        UL LI:before {
+                content: "—";
+                position: absolute;
+                margin-left: -20px;
+                color: #AAA;
+                }
+        OL {
+            @include mid-margin( left );
+            counter-reset: num-list;
+            }
+        OL LI:before {
+            content: counter( num-list )". ";
+            counter-increment: num-list;
+            }
 
-		.svg {
-			display: block;
-			margin: $mid-margin 0 $base-margin;
-			}
-		}
-		.column-left {
-			float: left;
-			}
-		.column-right {
-			float: right;
-			}
-		
-	.wrapper--selector {
-		display: inline-block;
-		width: 120px;
-		background: linear-gradient( 90deg, #BBB 1px, 
+    P + H4,
+    SCRIPT + H4,
+    PRE + H4 {
+        @include margin( top );
+        }
+    P {
+        white-space: pre-line;
+        }
+    SECTION {
+        H4 {
+            @include mid-margin( top );
+            }
+        &:before {
+            @extend %clear;
+            }
+        }
+    }
+    .selectorsReview {
+        .origin,
+        .support {
+            text-align: center;
+        }
+    }
+    .jsbin {
+        width: 100%;
+        @include margin( bottom );
+        border: 1px solid $base-border-color;
+        }
+        .p-hide-demo .jsbin[data-src] {
+            display: none;
+            }
+        .js--toggle-demo {
+            margin-bottom: 20px;
+            }
+        .js--toggle-demo__text {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            padding: 3px 15px;
+            background: $base-link-color linear-gradient(lighten($base-link-color, 15), darken($base-link-color, 10));
+            box-shadow: 0 0 0 1px $base-link-color inset,
+                        0 0 0 2px lighten( $base-link-color, 10 ) inset,
+                        0 -1px 2px $base-shadow-color;
+            border-radius: 5px;
+            text-shadow: 1px 0 2px darken( $base-link-color, 20 );
+            color: lighten($base-link-color, 48);
+            transition: all .5s;
+            }
+        .js--toggle-opened .js--toggle-demo__text {
+            background: $base-link-color linear-gradient(darken( $base-link-color, 5 ), $base-link-color);
+            box-shadow: 0 -1px 5px 1px darken( $base-link-color, 20 ) inset,
+                        0 0 0 0 lighten( $base-link-color, 20 ) inset,
+                        0 0 0 $base-shadow-color;
+            text-shadow: 0 1px 2px darken( $base-link-color, 30 );
+            color: lighten($base-link-color, 40);
+            }
+    .column {
+        width: 48%;
+
+        .svg {
+            display: block;
+            margin: $mid-margin 0 $base-margin;
+            }
+        }
+        .column-left {
+            float: left;
+            }
+        .column-right {
+            float: right;
+            }
+
+    .wrapper--selector {
+        display: inline-block;
+        width: 120px;
+        background: linear-gradient( 90deg, #BBB 1px,
     rgba(255,255,255,0) 1px ) repeat-x right 90%;
-		background-size: 3px 1px;
-		}
+        background-size: 3px 1px;
+        }
 .post__links,
 .post__index {
-	DT {
-		margin-bottom: 5px;
-		font-weight: bold;
-		}
-	DD {
-		margin-bottom: 5px;
-		&:before {
-			content: "—";
-			margin-right: 5px;
-			}	
-		}	
-}	
+    DT {
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+    DD {
+        margin-bottom: 5px;
+        &:before {
+            content: "—";
+            margin-right: 5px;
+            }
+        }
+}
 
 .post__linkedit {
-	margin: $base-margin * 1.5 0 0 0;
-	font-style: italic;
-	font-size: .9em;
-	color: #AAA;
-	}
+    margin: $base-margin * 1.5 0 0 0;
+    font-style: italic;
+    font-size: .9em;
+    color: #AAA;
+    }
 
 .table--with-border {
-	border: 1px solid $base-border-color;
-	border-bottom: 0;
-	& THEAD {
-		font-weight: bold;
-		}
-	& TD {
-		text-align: center;
-		@include border (left);	
-		}
-	& TD:first-child {
-		border-left: 0;
-		}	
-	}		
-	
+    border: 1px solid $base-border-color;
+    border-bottom: 0;
+    & THEAD {
+        font-weight: bold;
+        }
+    & TD {
+        text-align: center;
+        @include border (left);
+        }
+    & TD:first-child {
+        border-left: 0;
+        }
+    }
+
 .table--zebra-vert TD {
-	text-align: center;
-	}		
-	.table--zebra-vert TD:nth-child(2n) {
-		background: #DDD;
-		border-bottom-color: #FFF;
-		}	
+    text-align: center;
+    }
+    .table--zebra-vert TD:nth-child(2n) {
+        background: #DDD;
+        border-bottom-color: #FFF;
+        }
 
 
 .post__index {
-	@include margin( bottom );
-	}
+    @include margin( bottom );
+    }
 .post__tags {
-	@include padding ( top );
-	@include border ( top );
-	.item {
-		display: inline-block;
-		}
-	}	
+    @include padding ( top );
+    @include border ( top );
+    .item {
+        display: inline-block;
+        }
+    }
 
 .post__link-back {
-	@include mid-margin( bottom );
-	text-align: center;
-	color: darken($base-border-color, 20);
-	}
+    @include mid-margin( bottom );
+    text-align: center;
+    color: darken($base-border-color, 20);
+    }
 .post__nav {
-	@include margin( top );
-	@include padding ( top );
-	@include border ( top );
-		@media (max-width: $break-point ) {
-			@include tiny-padding ( top );
-			@include tiny-padding ( bottom );	
-			.item__text {
-				display: none;
-				}
-				A {
-					font-size: $base-font-size*3;
-					line-height: 1;
-					text-decoration: none;
-					}
-			}
-	.item--prev {
-		float: left;
-		}
-	.item--next {
-		float: right;
-		}
-	&:after {
-		@extend %clear;
-		}	
-	}	
+    @include margin( top );
+    @include padding ( top );
+    @include border ( top );
+        @media (max-width: $break-point ) {
+            @include tiny-padding ( top );
+            @include tiny-padding ( bottom );
+            .item__text {
+                display: none;
+                }
+                A {
+                    font-size: $base-font-size*3;
+                    line-height: 1;
+                    text-decoration: none;
+                    }
+            }
+    .item--prev {
+        float: left;
+        }
+    .item--next {
+        float: right;
+        }
+    &:after {
+        @extend %clear;
+        }
+    }
 .table--colors {
-	min-width: 780px; 
-	background: white;
-	.color-item {
-		margin-bottom: 3px;
-		white-space: nowrap;
-		}
-		.color-view,
-		.color-name {
-			display: inline-block;	
-			vertical-align: middle;
-			}
-		.color-view {
-			width: 70px;
-			}
-		.color-name {
-			padding-left: 5px;
-			font-size: 13px;
-			font-style: italic;
-			}
-	@media (max-width: $break-point ) {
-		min-width: 0;
-		TD {
-			display: inline-block;
-			width: 47.5%;
-			padding: 0;
-			border: 0;
-			}
-			.color-view {
-				width: 120px;
-				height: 35px;
-				}
-			.color-name {
-				padding-left: 10px;
-				font-size: $base-font-size;
-				}
-		}
-	@media (max-width: $break-point * .8 ) {
-		TD {
-			display: inline-block;
-			width: 100%;
-			border: 0;
-			padding: 0;
-			}
-			.color-view {
-				width: 170px;
-				height: 50px;
-				}	
-			}	
-	}	
+    min-width: 780px;
+    background: white;
+    .color-item {
+        margin-bottom: 3px;
+        white-space: nowrap;
+        }
+        .color-view,
+        .color-name {
+            display: inline-block;
+            vertical-align: middle;
+            }
+        .color-view {
+            width: 70px;
+            }
+        .color-name {
+            padding-left: 5px;
+            font-size: 13px;
+            font-style: italic;
+            }
+    @media (max-width: $break-point ) {
+        min-width: 0;
+        TD {
+            display: inline-block;
+            width: 47.5%;
+            padding: 0;
+            border: 0;
+            }
+            .color-view {
+                width: 120px;
+                height: 35px;
+                }
+            .color-name {
+                padding-left: 10px;
+                font-size: $base-font-size;
+                }
+        }
+    @media (max-width: $break-point * .8 ) {
+        TD {
+            display: inline-block;
+            width: 100%;
+            border: 0;
+            padding: 0;
+            }
+            .color-view {
+                width: 170px;
+                height: 50px;
+                }
+            }
+    }
 .widget--disqus {
-	@include margin( top );
-	@include padding ( top );
-	@include border ( top );
-	}	
+    @include margin( top );
+    @include padding ( top );
+    @include border ( top );
+    }

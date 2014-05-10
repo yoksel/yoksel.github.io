@@ -1035,6 +1035,9 @@ PRE CODE {
   background: url(/assets/img/sprite.png);
   background-position: -240px 0;
 }
+.post .no-favicon:before {
+  content: none !important;
+}
 
 A[href*="rss"]:before,
 A[href*="feed"]:before {

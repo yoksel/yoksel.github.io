@@ -1,36 +1,36 @@
 .footer__logo {
-	display: inline-block;
-	margin-bottom: 0;
-	A {	
-		display: inline-block;
-		position: relative;
-		text-decoration: none;
-		color: #333;
-		@include transition;
-		&:before {
-			content: attr(data-name);
-			display: inline-block;
-			position: absolute;
-			left: 0;
-			width: 0;
-			overflow: hidden;
-			white-space: nowrap;
-			color: $logo-bgcolor;
-			@include transition;
-			}
-		&:hover {
-			text-shadow: 0 2px 2px #CCC;
-			&:before{
-				width: 100%;
-				}
-			}
-    	}
-	}
+    display: inline-block;
+    margin-bottom: 0;
+    A {
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        color: #333;
+        @include transition;
+        &:before {
+            content: attr(data-name);
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            width: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            color: $logo-bgcolor;
+            @include transition;
+            }
+        &:hover {
+            text-shadow: 0 2px 2px #CCC;
+            &:before{
+                width: 100%;
+                }
+            }
+        }
+    }
 .footer__nav {
-	float: right;
-	height: 38px;
-	line-height: 38px;
-	.item {
-		margin-left: 1em;
-		}
-	}    
+    float: right;
+    height: 38px;
+    line-height: 38px;
+    .item {
+        margin-left: 1em;
+        }
+    }

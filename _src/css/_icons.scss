@@ -58,11 +58,14 @@
     A[href*="caniuse.com"]:before {
         @include icon;
         background-position: -220px 0;
-        }    
+        }
     A[href*="google.com"]:before {
         @include icon;
         background-position: -240px 0;
-        }        
+        }
+    .no-favicon:before {
+        content: none !important;
+        }
 }
 
 A[href*="rss"]:before,
