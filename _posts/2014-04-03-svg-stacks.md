@@ -4,7 +4,7 @@ title: "SVG-стеки"
 type: post
 image: "http://img-fotki.yandex.ru/get/9809/5091629.9d/0_80720_8dc116f0_L.png"
 desc: "Стеки - это ещё один способ организации SVG. Как спрайт, только лучше - как если бы мы могли использовать use в CSS. К сожалению, способ очень неравномерно поддерживается современными браузерами."
-links: 
+links:
   - url: "http://simurai.com/blog/2012/04/02/svg-stacks/"
     name: SVG Stacks
   - url: "https://github.com/preciousforever/SVG-Stacker"
@@ -59,10 +59,10 @@ published: true
 
 Я сделала демо c разными способами, чтобы это проверить: <a href="http://codepen.io/yoksel/full/KDpqu/">http://codepen.io/yoksel/full/KDpqu/</a>.
 
-И вот тут обнаруживается интересное: 
+И вот тут обнаруживается интересное:
 
 - вставка через <code>embed</code> и <code>iframe</code> работает во всех браузерах;
-- вставка через <code>img</code> и <code>background-image</code> - в IE9+, Firefox и старой Опере, и совсем не работает в вебкитах.
+- вставка через <code>img</code> и <code>background-image</code> - в IE9+, Firefox и старой Опере (только <code>img</code>), и совсем не работает в вебкитах.
 
 Отсутствие поддержки ID для <code>background-image</code> в вебкитах означает, что стеками пользоваться пока нельзя.
 
