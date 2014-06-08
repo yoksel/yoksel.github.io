@@ -18,7 +18,7 @@ desc: Известно, что кастомные шрифты могут раб
     <a href="http://img-fotki.yandex.ru/get/9542/5091629.9e/0_83050_af90c20f_orig"><img src="http://img-fotki.yandex.ru/get/9542/5091629.9e/0_83050_af90c20f_L.png" alt="entypo.com" title="entypo.com"/></a>
 </figure>  <figure>
     <figcaption>Opera Mini</figcaption>
-    <a href="http://img-fotki.yandex.ru/get/9307/5091629.9e/0_8304f_e631f284_L.png"><img src="http://img-fotki.yandex.ru/get/9307/5091629.9e/0_8304f_e631f284_L.png" alt="entypo.com in Opera Mini" title="entypo.com in Opera Mini"/></a>
+    <a href="http://img-fotki.yandex.ru/get/9307/5091629.9e/0_8304f_e631f284_orig"><img src="http://img-fotki.yandex.ru/get/9307/5091629.9e/0_8304f_e631f284_L.png" alt="entypo.com in Opera Mini" title="entypo.com in Opera Mini"/></a>
 </figure>
 
 
