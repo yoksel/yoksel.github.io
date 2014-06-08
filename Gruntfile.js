@@ -49,14 +49,15 @@ module.exports = function (grunt) {
     /**
      * https://npmjs.org/package/grunt-autoprefixer
      */
-    
+
     /**
      * https://npmjs.org/package/grunt-contrib-sass
      */
     sass: {
       dist: {
         options: {
-          style: 'expanded',
+          sourcemap: true,
+          style: 'nested',
           banner: '<%= tag.banner %>'
         },
         files: {
@@ -66,6 +67,7 @@ module.exports = function (grunt) {
         }
       }
     },
+
 
     autoprefixer: {
       // dist: {
@@ -82,11 +84,8 @@ module.exports = function (grunt) {
     },
 
 
-
-    
-
-    svgmin: {                        
-        options: {                   
+    svgmin: {
+        options: {
             plugins: [{
                 removeViewBox: false
             }]
@@ -101,19 +100,20 @@ module.exports = function (grunt) {
                 // ie: optimise img/src/branding/logo.svg and store it in img/branding/logo.min.svg
             }]
         }
-    },  
+    },
+
 
     imagemin: {
-      dynamic: {   
+      dynamic: {
         files: [{
           expand: true,
-          cwd: '_src/img',                   
-          src: ['**/*.{png,jpg,gif}'],   
-          dest: 'assets/img'             
+          cwd: '_src/img',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'assets/img'
         }]
       }
-    }, 
-    
+    },
+
 
     /**
      * Clean files and folders
@@ -143,7 +143,7 @@ module.exports = function (grunt) {
     watch: {
       sass: {
         files: '<%= project.css_src %>{,*/}*.{scss,sass}',
-        tasks: ['sass', 'autoprefixer', 'clean:dev'] 
+        tasks: ['sass', 'autoprefixer', 'clean:dev']
       }
     }
   });
@@ -160,9 +160,9 @@ module.exports = function (grunt) {
    * Run `grunt` on the command line
    */
   grunt.registerTask('default', [
+    'watch',
     'svgmin',
-    'imagemin',
-    'watch'
+    'imagemin'
     ]);
 
   grunt.registerTask('build', [
