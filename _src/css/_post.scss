@@ -46,6 +46,16 @@
 .post__text {
     @include margin( bottom );
 
+    FIGURE {
+        display: inline-block;
+        &:not(:last-of-type){
+            @include margin( right );
+            }
+        }
+        FIGCAPTION {
+            font-style: italic;
+            color: #777;
+            }
     IMG {
         max-width: 100%;
         height: auto;
