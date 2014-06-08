@@ -9,16 +9,13 @@
   position: absolute;
   width: 0;
   height: 0;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 .g--clip-path-img {
-  clip-path: url(/css-and-svg-masks/#clipping-star);
-}
+  clip-path: url(/css-and-svg-masks/#clipping-star); }
 
 #clipping-text {
-  font: bold italic 15em/1 Georgia;
-}
+  font: bold italic 15em/1 Georgia; }
 
 .g--clip-path-text {
   -webkit-transform: translate(100);
@@ -27,38 +24,32 @@
   clip-path: url(/css-and-svg-masks/#clipping-text);
   font: bold italic .8em/1 Georgia;
   stroke: red;
-  fill: #006432;
-}
+  fill: #006432; }
 
 #pattern-text {
-  font: bold italic 1.1em/1 Georgia;
-}
+  font: bold italic 1.1em/1 Georgia; }
 
 .g--svg-mask-svg image {
-  mask: url(/css-and-svg-masks/#masking);
-}
+  mask: url(/css-and-svg-masks/#masking); }
 
 .g--svg-mask-svg-soft image {
-  mask: url(/css-and-svg-masks/#masking-soft);
-}
+  mask: url(/css-and-svg-masks/#masking-soft); }
 
 .g--svg-mask-svg-lum rect {
-  mask: url(/css-and-svg-masks/#masking-lum);
-}
+  mask: url(/css-and-svg-masks/#masking-lum); }
 
 .g--svg-fill text {
   fill: url(/css-and-svg-masks/#pattern);
-  font: bold italic 10em/1 Georgia;
-}
+  font: bold italic 10em/1 Georgia; }
 
 .g--svg-fill-text text {
   fill: url(/css-and-svg-masks/#pattern-text);
-  font: bold italic 10em/1 Georgia;
-}
+  font: bold italic 10em/1 Georgia; }
 
 .g--svg-stroke {
   stroke: url(/css-and-svg-masks/#pattern);
   stroke-width: 4;
   fill: none;
-  font: bold italic 10em/1 Georgia;
-}
+  font: bold italic 10em/1 Georgia; }
+
+/*# sourceMappingURL=css-and-svg-masks.css.map */
