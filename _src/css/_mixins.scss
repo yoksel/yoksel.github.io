@@ -1,4 +1,4 @@
-/* Fonts 
+/* Fonts
 -------------------------------- */
 @font-face {
   font-family: 'Lobster';
@@ -20,7 +20,7 @@ $headers-font-family: Georgia, serif;
     font-family: $headers-font-family;
     }
 
-/* Colors 
+/* Colors
 -------------------------------- */
 
 $base-link-color: steelblue;
@@ -41,10 +41,10 @@ $small-margin: $base-font-size / 2;
     }
 @mixin mid-margin ( $side ){
     margin-#{$side}: $mid-margin;
-    }   
+    }
 @mixin small-margin ( $side ){
     margin-#{$side}: $small-margin;
-    }   
+    }
 
 @mixin padding ( $side ){
     padding-#{$side}: $base-margin;
@@ -54,9 +54,9 @@ $small-margin: $base-font-size / 2;
     }
 @mixin tiny-padding ( $side ){
     padding-#{$side}: $base-font-size / 2;
-    }           
+    }
 
-/* Borders 
+/* Borders
 -------------------------------- */
 
 @mixin border ( $side ){
@@ -75,7 +75,7 @@ $half-logo-size: $logo-size / 2;
 $logo-size-koeff: .2;
 $logo-size-diff: $logo-size * $logo-size-koeff;
 $logo-decor-size: $logo-size + $logo-size-diff*2;
- 
+
 $logo-circ-size-koeff: .1;
 $logo-circ-size-diff: $logo-size * $logo-circ-size-koeff;
 $logo-circ-decor-size: $logo-size + $logo-circ-size-diff*2;
@@ -98,7 +98,7 @@ $logo-bgcolor: crimson;
 }
 
 /* MultyShadows
--------------------------------- */ 
+-------------------------------- */
 
 $transp: .3;
 $step: 360 / 9;
@@ -109,7 +109,7 @@ $debug: null;
 @function getColors( $transp: .3 ){
     $out: null;
     $max: 9;
-    
+
     @for $i from 1 through $max {
         $color: hsla($step*($i - 1), 100%, 50%, $transp);
         @if ( $i == 1){
@@ -119,7 +119,7 @@ $debug: null;
             $out: append($out, $color, comma);
         }
     }
-            
+
     @return $out;
 }
 
@@ -128,17 +128,17 @@ $colors: getColors();
 
 @mixin shadow ( $size, $offset, $color ) {
 
-    box-shadow: -#{$offset} -#{$offset} 0 $size nth($colors, 1), 
-                -#{$offset*$koeff} 0 0 $size nth($colors, 2), 
-                -#{$offset} $offset 0px $size nth($colors, 3), 
-                0 $offset*$koeff 0px $size nth($colors, 4), 
-                $offset $offset 0px $size nth($colors, 5), 
+    box-shadow: -#{$offset} -#{$offset} 0 $size nth($colors, 1),
+                -#{$offset*$koeff} 0 0 $size nth($colors, 2),
+                -#{$offset} $offset 0px $size nth($colors, 3),
+                0 $offset*$koeff 0px $size nth($colors, 4),
+                $offset $offset 0px $size nth($colors, 5),
                 $offset*$koeff 0 0px $size nth($colors, 6),
                 $offset -#{$offset} 0px $size nth($colors, 7),
                 0 -#{$offset*$koeff} 0px $size nth($colors, 8);
 }
 
-/* 
+/*
 
 #{$debug}
 

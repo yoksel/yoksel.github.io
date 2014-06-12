@@ -51,7 +51,7 @@ table {
 
 /* Mixins
 -------------------------------- */
-/* Fonts 
+/* Fonts
 -------------------------------- */
 @font-face {
   font-family: 'Lobster';
@@ -63,11 +63,11 @@ H1, H2, H3, H4, H5, H6 {
   line-height: 1.2;
   font-family: Georgia, serif; }
 
-/* Colors 
+/* Colors
 -------------------------------- */
 /* Margins, paddings
 -------------------------------- */
-/* Borders 
+/* Borders
 -------------------------------- */
 /* Common
 -------------------------------- */
@@ -80,7 +80,7 @@ H1, H2, H3, H4, H5, H6 {
 
 /* MultyShadows
 -------------------------------- */
-/* 
+/*
 
 
 
@@ -217,7 +217,7 @@ P:empty {
   top: -77px; }
   @media (max-width: 700px) {
     .kitten {
-      right: -15px; } }
+      display: none; } }
 
 .disp-inblock {
   display: inline-block; }
