@@ -12,6 +12,12 @@ links:
   name: Background blending now available in Firefox 30
 - url: http://bennettfeely.com/gradients/
   name: Gradients gallery
+- url: /css-patterns/
+  name: CSS-паттерны
+- url: /new-patterns/
+  name: Свежие CSS-паттерны
+- url: /3d-and-gradients/
+  name: СSS-градиенты и 3D
 ---
 
 На этой неделе в <a href="https://developer.mozilla.org/en-US/Firefox/Releases/30">Firefox 30</a> было включено по умолчанию свойство <code>background-blend-mode</code>. Таким образом, Firefox стал третьим браузером, поддерживающим это свойство (два других - Opera и Chrome). Safari будет поддерживать это свойство в следующей версии, про планы IE мне ничего найти не удалось.
