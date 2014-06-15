@@ -4,7 +4,7 @@ permalink: /:title
 pygments: true
 exclude: ['Rakefile','config.rb', 'README.md','gems','node_modules','*.sketch',
           'Gemfile','Gemfile.*','Gruntfile.*','package.json','temp']
-# markdown: rdiscount
+# markdown: rdiscount // kramdown : problem with tables // redcarpet: problem with more
 markdown: kramdown
 
 # configuration required for some pages
@@ -24,15 +24,15 @@ github:
     username: github/yoksel
 
 # disqus:
-#     id: 
+#     id:
 
 excerpt_separator: <!--more-->
 
-topmenu: 
+topmenu:
 - name: 'Главная'
   url: '/'
 - name: 'О сайте'
-  url: '/about/'  
+  url: '/about/'
 
 links_title: Ссылки по теме
 
@@ -48,7 +48,7 @@ links_docs:
 
 links_tools:
 - url: https://github.com/
-  name: GitHub    
+  name: GitHub
 - url: http://gruntjs.com/
   name: Grunt
 - url: http://codepen.io/
@@ -78,16 +78,16 @@ links_blogs:
 - url: http://csswizardry.com/
   name: Csswizardry.com
 - url: http://tympanus.net/codrops/
-  name: Сodrops  
-- url: http://css-weekly.com/archives/  
+  name: Сodrops
+- url: http://css-weekly.com/archives/
   name: CSS Weekly
 - url: http://frontender.info/
   name: Frontender Magazine
 
-links_usefull:  
+links_usefull:
 - url: /pages/tablitsa-imenovanny-h-tsvetov.html
   name: Таблица именованных цветов
 - url: http://yoksel.github.io/unicode-table/
-  name: Символы юникода  
+  name: Символы юникода
 - url: https://github.com/miripiruni/frontdesk
-  name: Frontdesk  
+  name: Frontdesk
