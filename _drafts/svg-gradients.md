@@ -7,6 +7,8 @@ desc:
 
 ---
 
+<!--more-->
+
 За поведение размеров отвечает
 gradientUnits="userSpaceOnUse"
 gradientUnits="objectBoundingBox"

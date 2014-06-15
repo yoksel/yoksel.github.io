@@ -7,6 +7,7 @@ desc:
 
 ---
 
+<!--more-->
 weloveiconfonts.com
 <img src="http://img-fotki.yandex.ru/get/9103/5091629.9e/0_83056_d0c4d6a6_L.png" alt="" title=""/>
 <img src="http://img-fotki.yandex.ru/get/9832/5091629.9e/0_83053_255d4ba5_L.png" alt="" title=""/>

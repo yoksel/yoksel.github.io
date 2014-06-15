@@ -2,12 +2,14 @@
 layout: default
 title: Js
 type: post
-image: 
-desc: 
+image:
+desc:
 
 ---
 
 http://jsbin.com/yajot/1/edit
+
+<!--more-->
 
 <iframe class="jsbin" style="height: 300px" src="http://jsbin.com/yajot/1/embed?output"></iframe>
 
