@@ -12,6 +12,8 @@ links:
   name: Background blending now available in Firefox 30
 - url: http://bennettfeely.com/gradients/
   name: Gradients gallery
+- url: http://dev.opera.com/articles/getting-to-know-css-blend-modes/
+  name: Getting to know CSS Blend Modes
 - url: /css-patterns/
   name: CSS-паттерны
 - url: /new-patterns/
