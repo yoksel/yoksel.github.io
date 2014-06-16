@@ -1,3 +1,4 @@
+encoding: utf-8
 # standard jekyll configuration
 
 permalink: /:title
