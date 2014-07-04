@@ -58,5 +58,11 @@ SVG без размеров, но с <code>viewBox</code> стремится з�
 <p data-height="350" data-theme-id="4974" data-slug-hash="dcqmr" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/dcqmr/'>dcqmr</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
+Таким образом, чтобы получить картинку определенного размера, нужно:
+
+- задать <code>viewBox</code> самому SVG
+- задать внешние размеры внешнему контейнеру либо SVG-элементу (это зависит от способа вставки).
+
+
 
 
