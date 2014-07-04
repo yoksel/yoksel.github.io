@@ -28,4 +28,4 @@ desc: Предыдущее решение мне всё-таки кажется 
 <p data-height="268" data-theme-id="4974" data-slug-hash="JoraL" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/JoraL/'>Blurry buttons with softly animated gradients</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-Конечно, лучше бы градиенты просто анимировались, хотя отстутствие такой возможности стимулирует поиски новых способов обойти ограничения.
+Конечно, лучше бы градиенты просто анимировались, но отстутствие такой возможности стимулирует поиски новых способов обойти ограничения.
