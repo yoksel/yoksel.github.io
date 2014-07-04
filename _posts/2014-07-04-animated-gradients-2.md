@@ -2,15 +2,15 @@
 layout: default
 title: Анимируем градиенты ещё раз
 type: post
-image: 
-desc: 
+image: http://img-fotki.yandex.ru/get/6846/5091629.a0/0_83fcf_1a481db2_orig
+desc: Предыдущее решение мне всё-таки кажется несколько избыточным, а тут пришел в голову ещё один способ, на этот раз - с псевдоэлементами и opacity.
 ---
 
 Предыдущее <a href="/animation-for-gradients/">решение</a> мне всё-таки кажется несколько избыточным, а тут пришел в голову ещё один способ, на этот раз - с псевдоэлементами и <code>opacity</code>.<!--more-->
 
 Демо:
 
-<p data-height="352" data-theme-id="4974" data-slug-hash="rEzbe" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/rEzbe/'>Animated gradient with pseudo elements</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="390" data-theme-id="4974" data-slug-hash="rEzbe" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/rEzbe/'>Animated gradient with pseudo elements</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Принцип работы:
@@ -28,3 +28,4 @@ desc:
 <p data-height="268" data-theme-id="4974" data-slug-hash="JoraL" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/JoraL/'>Blurry buttons with softly animated gradients</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
+Конечно, лучше бы градиенты просто анимировались, хотя отстутствие такой возможности стимулирует поиски новых способов обойти ограничения.
