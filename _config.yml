@@ -72,18 +72,22 @@ links_tools:
 links_blogs:
 - url: http://lea.verou.me/
   name: Lea Verou
-- url: http://css-tricks.com
-  name: Сss-tricks.com
 - url: http://nicolasgallagher.com/
   name: Nicolas Gallagher
 - url: http://csswizardry.com/
   name: Csswizardry.com
+- url: http://sarasoueidan.com/
+  name: Sara Soueidan
+- url: http://css-tricks.com
+  name: Сss-tricks.com
 - url: http://tympanus.net/codrops/
   name: Сodrops
 - url: http://css-weekly.com/archives/
   name: CSS Weekly
 - url: http://frontender.info/
   name: Frontender Magazine
+- url: http://frontendbabel.info/
+  name: Frontend Babel
 
 links_usefull:
 - url: /pages/tablitsa-imenovanny-h-tsvetov.html
