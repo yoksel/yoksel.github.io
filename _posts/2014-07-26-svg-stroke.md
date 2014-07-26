@@ -10,6 +10,10 @@ links:
   name: Clipping, Masking and Compositing
 - url: http://www.w3.org/TR/SVG/painting.html#StrokeProperties
   name: Stroke Properties
+- url: /css-and-svg-masks/
+  name: CSS и SVG маски
+- url: /svg-shapes/
+  name: SVG-фигуры и трансформации
 ---
 
 Экспериментируя с SVG можно обнаружить много странных моментов. Получить странное при манипуляциях с масштабированием ещё как-то ожидаемо, но внезапно сюрпризы преподнесло свойство <code>stroke-width</code>.
@@ -213,4 +217,6 @@ stroke-dasharray: 5;</code></pre>
 
 Анимируя <code>stroke-width</code> в маске можно делать разные другие интересные штуки, но это уже тема для отдельного поста.
 
-Версии браузеров на момент написания поста: Chrome 36, Firefox 11, Safari 7, Opera 23.
+Версии браузеров на момент написания поста: Chrome 36, Firefox 31, Safari 7, Opera 23, IE 11.
+
+Картинка с пионами <a href="http://www.colourlovers.com/pattern/2693008/Amethyst_peonies">отсюда</a>.
