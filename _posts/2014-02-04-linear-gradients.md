@@ -9,7 +9,7 @@ links:
 - url: http://www.colorzilla.com/gradient-editor/
   name: Ultimate CSS Gradient Generator
 - url: http://css.coloratum.com/
-  name: CSS.coloratum  
+  name: CSS.coloratum
 - url: http://www.webdirections.org/resources/lea-verou-mastering-css3-gradients/
   name: Презентация про градиенты от Lea Verou
 - url: /tsveta
@@ -29,7 +29,7 @@ CSS-градиенты позволяют сделать фон из двух и
 
 <pre><code class="language-css">background: linear-gradient(orangered, gold);</code></pre>
 
-<iframe class="jsbin" style="height: 200px" src="http://jsbin.com/EHuREfA/1/"></iframe>
+<iframe class="jsbin" style="height: 200px" src="http://jsbin.com/EHuREfA/1/embed?output"></iframe>
 
 Цветов может быть любое количество больше двух.
 Также можно управлять направлением градиента и границами (точками остановки) цветов.
@@ -48,7 +48,7 @@ CSS-градиенты позволяют сделать фон из двух и
 
 Ниже можно увидеть как работают разные направления в растяжке от сиреневого до желтого:
 
-<iframe class="jsbin" style="height: 450px" src="http://jsbin.com/EHuREfA/2/"></iframe>
+<iframe class="jsbin" style="height: 450px" src="http://jsbin.com/EHuREfA/2/embed?output"></iframe>
 
 Вот код самого первого квадрата, для примера:
 
@@ -63,21 +63,21 @@ CSS-градиенты позволяют сделать фон из двух и
 
 Разница в поведении хорошо видна на прямоугольных фигурах:
 
-<iframe class="jsbin" style="height: 320px" src="http://jsbin.com/EHuREfA/4/"></iframe>
+<iframe class="jsbin" style="height: 320px" src="http://jsbin.com/EHuREfA/4/embed?output"></iframe>
 
 Также можно задавать точки остановки для цветов градиента, значения задаются в единицах или в процентах и могут быть больше 100% и меньше 0%.
 
 Примеры задания значений в <code>%</code>, в <code>em</code> и значения, выходящие за границы элемента:
 
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/EHuREfA/6/"></iframe>
+<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/EHuREfA/6/embed?output"></iframe>
 
 Чем ближе находятся точки остановки соседних цветов, тем четче будет граница между ними. Таким образом можно легко делать полосатые фоны:
 
-<iframe class="jsbin" style="height: 450px" src="http://jsbin.com/EHuREfA/7/"></iframe>
+<iframe class="jsbin" style="height: 450px" src="http://jsbin.com/EHuREfA/7/embed?output"></iframe>
 
 Так можно сделать, например, фон под боковую колонку, растянутый на всю высоту родительского элемента:
 
-<iframe class="jsbin" style="height: 450px" src="http://jsbin.com/EHuREfA/9/"></iframe>
+<iframe class="jsbin" style="height: 450px" src="http://jsbin.com/EHuREfA/9/embed?output"></iframe>
 
 Полоски на фоне сайдбара (простите, не удержалась) - ещё один градиент, состоящий из чередования полной прозрачности и белого цвета с прозрачностью 30%.
 Градиенты с полупрозрачными цветами удобны тем, что их можно наложить поверх фона любого цвета.
@@ -96,7 +96,7 @@ CSS-градиенты позволяют сделать фон из двух и
     ) center center / 100% 1em;
   }</code></pre>
 
-<iframe class="jsbin" style="height: 310px" src="http://jsbin.com/EHuREfA/10/"></iframe>
+<iframe class="jsbin" style="height: 310px" src="http://jsbin.com/EHuREfA/10/embed?output"></iframe>
 
 В первой строчке задаем фоновый цвет элемента, тип и направление (цвет и направление можно опустить), во второй - определяем цвета градиента и границу между ними, в третьей - задаем положение и размер получившегося изображения. Самая важная часть - размер. По умолчанию фон повторяется, поэтому получившийся паттерн заполнит собой фон элемента.
 Очень легко и понятно : )
@@ -116,12 +116,12 @@ CSS-градиенты позволяют сделать фон из двух и
 
 Примерный код:
 
-<pre><code class="language-css">background: repeating-linear-gradient( 
-    green, green .5em, 
+<pre><code class="language-css">background: repeating-linear-gradient(
+    green, green .5em,
     transparent .5em, transparent 1em
     );</code></pre>
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/OvOwEma/9/"></iframe>
+<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/OvOwEma/9/embed?output"></iframe>
 
 К сожалению, повторяющиеся градиенты ведут себя как попало и подойдут только для узоров, которым не важна точность. Если нужна аккуратность, используйте <code>linear-gradient</code> в сочетании с <code>background-size</code> и <code>background-repeat</code>.
 

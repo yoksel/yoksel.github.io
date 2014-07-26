@@ -11,8 +11,8 @@ desc: С познавательно-развлекательной целью с
 Показывают текущее время, меняют цвет, умеют подгоняться под размер окна браузера.
 <!--more-->
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/urEYedUq/2"></iframe>
-
+<p data-height="370" data-theme-id="4974" data-slug-hash="oAchH" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/oAchH/'>oAchH</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Цифры сделаны из cписков, каждая цифра - <code>ul</code>. Линии - <code>li</code>.
 Острые концы линий - это треугольники с помощью <code>border</code> для <code>:before</code> и <code>:after</code> (<a href="/strelki-s-pomoshh-yu-svojstva-border">описание уголков есть тут</a>).

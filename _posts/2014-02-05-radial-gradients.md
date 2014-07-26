@@ -9,13 +9,13 @@ links:
 - url: http://www.colorzilla.com/gradient-editor/
   name: Ultimate CSS Gradient Generator
 - url: http://css.coloratum.com/
-  name: CSS.coloratum  
+  name: CSS.coloratum
 - url: http://www.webdirections.org/resources/lea-verou-mastering-css3-gradients/
   name: Презентация про градиенты от Lea Verou
 - url: /tsveta
   name: Цвета в Css
-- url: /3d-and-gradients/  
-  name: СSS-градиенты и 3D  
+- url: /3d-and-gradients/
+  name: СSS-градиенты и 3D
 ---
 
 Радиальные градиенты отрисовываются иначе, чем линейные. Если цвета линейных располагаются перпендикулярно линии, задающей направление, то в радиальных цвета расходятся от заданного центра, а градиент может принимать форму круга или эллипса.
@@ -29,16 +29,16 @@ links:
 По умолчанию центр градиента находится по центру, градиент имеет форму эллипса:
 
 
-<iframe class="jsbin" style="height: 200px" src="http://jsbin.com/OvOwEma/3/"></iframe>
+<iframe class="jsbin" style="height: 200px" src="http://jsbin.com/OvOwEma/3/embed?output"></iframe>
 
 Помимо цветов градиенту можно задавать форму, положение и размер. Параметры сочетаются и ведут себя сложнее, чем в линейных градиентах.
 
-<b>Форма</b> (конечная фигура градиента) может быть кругом и эллипсом. По умолчанию - эллипс, градиент стремится занять всё свободное пространство элемента, вытягиваясь, если это необходимо. 
+<b>Форма</b> (конечная фигура градиента) может быть кругом и эллипсом. По умолчанию - эллипс, градиент стремится занять всё свободное пространство элемента, вытягиваясь, если это необходимо.
 
 Чтобы градиент имел форму круга - это нужно задать явно с помощью ключевого слова <code>circle</code>.
 
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/EHuREfA/13/"></iframe>
+<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/EHuREfA/13/embed?output"></iframe>
 
 Если форма не задана, но задан размер - одно значение задает радиус круга, если значений два - градиент получает форму эллипса.
 При наличии размеров явное задание формы градиента игнорируется.
@@ -50,7 +50,7 @@ links:
 Ниже можно увидеть как работают разные положения:
 
 
-<iframe class="jsbin" style="height: 450px" src="http://jsbin.com/EHuREfA/18/"></iframe>
+<iframe class="jsbin" style="height: 450px" src="http://jsbin.com/EHuREfA/18/embed?output"></iframe>
 
 Код первого квадрата:
 
@@ -66,30 +66,30 @@ links:
 Ниже примеры круглых и эллиптических градиентов. Форма фигуры определяется заданными размерами:
 
 
-<iframe class="jsbin" style="height: 320px" src="http://jsbin.com/EHuREfA/23/"></iframe>
+<iframe class="jsbin" style="height: 320px" src="http://jsbin.com/EHuREfA/23/embed?output"></iframe>
 
 Также можно использовать ключевые слова:
 
 <code>closest-side</code> - градиент заканчивается у границы элемента ближайшей к центру градиента. Если это эллипс, градиент касается всех границ элемента.
 <code>farthest-side</code> - градиент заканчивается у дальней границы элемента. Если это эллипс, градиент касается всех границ элемента.
-<code>closest-corner</code> - конечная фигура растягивается таким образом, чтобы она проходила через угол элемента, ближайший к центру градиента. Если конечная фигура - эллипс, градиент растягивается на всю фигуру. 
+<code>closest-corner</code> - конечная фигура растягивается таким образом, чтобы она проходила через угол элемента, ближайший к центру градиента. Если конечная фигура - эллипс, градиент растягивается на всю фигуру.
 При этом параметре градиент заполняет собой всю фигуру, частично выходя за её пределы.
 <code>farthest-corner</code> - аналогично <code>closest-corner</code>, только конечная фигура проходит через угол, дальний от центра градиента. Значение по умолчанию.
 
 Некоторым градиентам добавлено положение <code>at bottom</code>, чтобы было лучше видно действие кода:
 
-<iframe class="jsbin" style="height: 700px" src="http://jsbin.com/EHuREfA/22/"></iframe>
+<iframe class="jsbin" style="height: 700px" src="http://jsbin.com/EHuREfA/22/embed?output"></iframe>
 
 <code>radial-gradient</code> также можно сделать повторяющимся: <code>repeating-radial-gradient</code>.
 
 Примерный код:
 
 <pre><code class="language-css">background: repeating-radial-gradient(circle,
-    darkkhaki, darkkhaki .5em, 
+    darkkhaki, darkkhaki .5em,
     transparent .5em, transparent 1.5em);</code></pre>
 
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/OvOwEma/10/"></iframe>
+<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/OvOwEma/10/embed?output"></iframe>
 
 Как и в случае с линейным градиентом, повторяющийся градиент не очень аккуратно отрисовывается.
 

@@ -9,7 +9,7 @@ links:
 - url: /specifity/
   name: Сколько весят селекторы?
 - url: /pages/css-selectors.html
-  name: CSS-селекторы одной таблицей	
+  name: CSS-селекторы одной таблицей
 
 post_nav:
 - url: '#attr-begin'
@@ -48,7 +48,7 @@ post_nav:
   name: 'E:not(s)'
 - url: '#next'
   name: 'E ~ F'
-  
+
 ---
 Начало тут: <a href="/css-selectors">Css-селекторы</a>.<!--more-->
 
@@ -60,14 +60,14 @@ post_nav:
   border: 2px solid tomato;
   }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/46/" style="height: 270px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/46/embed?output" style="height: 270px" class="jsbin"></iframe></li>
 
 <li id="attr-end" data-name="E[foo$='bar']"><p><code>E[foo$="bar"]</code> - элемент с заданным атрибутом, значение которого заканчивается заданной строкой.</p>
 <pre class="language-css"><code class="language-css">P[data-content$="hello"] {
   border: 2px solid chartreuse;
   }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/47/" style="height: 270px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/47/embed?output" style="height: 270px" class="jsbin"></iframe></li>
 
 <li id="attr-contains" data-name="E[foo*='bar']"><p><code>E[foo*="bar"]</code> - элемент с заданным атрибутом, значение которого содержит заданную строку.</p>
 
@@ -75,7 +75,7 @@ post_nav:
   border: 2px solid mediumseagreen;
   }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/48/" style="height: 270px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/48/embed?output" style="height: 270px" class="jsbin"></iframe></li>
 
 <li id="root" data-name=":root"><p><code>E:root</code> - псевдокласс, представляющий корневой элемент документа. Обычно это тег <code>html</code>.</p></li>
 
@@ -91,7 +91,7 @@ P:nth-child(6) {
   border-color: gold;
   }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/49/" style="height: 270px" class="jsbin"></iframe>
+<iframe src="http://jsbin.com/aMakIZI/49/embed?output" style="height: 270px" class="jsbin"></iframe>
 
 Подробнее про селектор: <a href="/nth-child/">
 Nth-child и nth-of-type</a>
@@ -109,7 +109,7 @@ P:nth-last-child(5) {
   border-color: gold;
   }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/58/" style="height: 270px" class="jsbin"></iframe>
+<iframe src="http://jsbin.com/aMakIZI/58/embed?output" style="height: 270px" class="jsbin"></iframe>
 </li>
 
 <li id="nth-of-type" data-name="E:nth-of-type(n)"><p><code>E:nth-of-type(n)</code> - <code>n</code> по счету дочерний элемент определенного типа.</p>
@@ -124,7 +124,7 @@ P:nth-of-type(6) {
   border-color: gold;
   }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/52/" style="height: 350px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/52/embed?output" style="height: 350px" class="jsbin"></iframe></li>
 
 <li id="nth-last-of-type" data-name="E:nth-last-of-type(n)"><p><code>E:nth-last-of-type(n)</code> - <code>n</code> по счету дочерний элемент определенного типа, начиная с конца.</p>
 
@@ -138,7 +138,7 @@ P:nth-last-of-type(6) {
   border-color: gold;
   }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/56/" style="height: 370px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/56/embed?output" style="height: 370px" class="jsbin"></iframe></li>
 
 <li id="last-child" data-name="E:last-child"><p><code>E:last-child</code> - последний дочерний элемент.</p>
 
@@ -146,7 +146,7 @@ P:nth-last-of-type(6) {
   border-color: slateblue;
   }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/59/" style="height: 200px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/59/embed?output" style="height: 200px" class="jsbin"></iframe></li>
 
 <li id="first-of-type" data-name="E:first-of-type"><p><code>E:first-of-type</code> - первый дочерний элемент определенного типа.</p>
 
@@ -154,7 +154,7 @@ P:nth-last-of-type(6) {
   border-color: orchid;
   }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/60/" style="height: 250px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/60/embed?output" style="height: 250px" class="jsbin"></iframe></li>
 
 <li id="last-of-type" data-name="E:last-of-type"><p><code>E:last-of-type</code> - последний дочерний элемент определенного типа.</p>
 
@@ -162,7 +162,7 @@ P:nth-last-of-type(6) {
   border-color: fuchsia;
   }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/62/" style="height: 250px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/62/embed?output" style="height: 250px" class="jsbin"></iframe></li>
 
 <li id="only-child" data-name="E:only-child"><p><code>E:only-child</code> - единственный дочерний элемент родителя.</p>
 
@@ -170,7 +170,7 @@ P:nth-last-of-type(6) {
   border-color: lightsalmon;
   }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/63/" style="height: 330px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/63/embed?output" style="height: 330px" class="jsbin"></iframe></li>
 
 <li id="only-of-type" data-name="E:only-of-type"><p><code>E:only-of-type</code> - единственный дочерний элемент такого типа</p>
 
@@ -178,7 +178,7 @@ P:nth-last-of-type(6) {
   border-color: crimson;
   }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/64/" style="height: 370px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/64/embed?output" style="height: 370px" class="jsbin"></iframe></li>
 
 <li id="empty" data-name="E:empty"><p><code>E:empty</code> - пустой элемент.</p></li>
 
@@ -188,9 +188,9 @@ P:nth-last-of-type(6) {
   border-color: orangered;
   }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/65/#test" style="height: 190px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/65/embed?output#test" style="height: 190px" class="jsbin"></iframe></li>
 
-<li id="enabled" data-name="E:enabled, E:disabled"><p><code>E:enabled</code>, 
+<li id="enabled" data-name="E:enabled, E:disabled"><p><code>E:enabled</code>,
 <code>E:disabled</code> - инпуты с разрешенным редактированием и заблокированные.</p>
 
 <pre class="language-css"><code class="language-css">INPUT:enabled {
@@ -201,7 +201,7 @@ INPUT:disabled {
   color: #CCC;
   }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/67/" style="height: 100px" class="jsbin"></li>
+<iframe src="http://jsbin.com/aMakIZI/67/embed?output" style="height: 100px" class="jsbin"></li>
 
 <li id="checked" data-name="E:checked"><p><code>E:checked</code> - a user interface element E which is checked (for instance a radio-button or checkbox) 	The UI element states pseudo-classes 	3</p>
 
@@ -213,7 +213,7 @@ INPUT:disabled {
   color: #CCC;
   }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/67/" style="height: 170px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/67/embed?output" style="height: 170px" class="jsbin"></iframe></li>
 
 <li id="not" data-name="E:not(s)"><p><code>E:not(s)</code> - элементы, которые не отвечают условию, заданному в скобках</p>
 
@@ -224,7 +224,7 @@ P:not([class="one"]) {
   border-color: skyblue;
   }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/69/" style="height: 250px" class="jsbin"></iframe>
+<iframe src="http://jsbin.com/aMakIZI/69/embed?output" style="height: 250px" class="jsbin"></iframe>
 </li>
 
 <li id="next" data-name="E ~ F"><p><code>E ~ F</code> - второй элемент, который следует после первого, независимо от их удаленности друг от друга. Выбираются все следующие элементы, в отличие от <code>E + F</code>, который выбирает только те, которые находятся непосредственно друг за другом.</p>
@@ -233,5 +233,5 @@ P:not([class="one"]) {
   border-color: yellowgreen;
   }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/70/" style="height: 300px" class="jsbin"></iframe></li>
+<iframe src="http://jsbin.com/aMakIZI/70/embed?output" style="height: 300px" class="jsbin"></iframe></li>
 </ul>

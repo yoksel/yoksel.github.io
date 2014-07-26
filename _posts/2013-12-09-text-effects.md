@@ -7,9 +7,9 @@ image: http://img-fotki.yandex.ru/get/9749/5091629.9a/0_7ec7c_17590c11_L.png
 desc: CSS-эффекты на основе text-shadow.
 ---
 
-В посте представлены некоторые эффекты на основе <code>text-shadow</code>. 
+В посте представлены некоторые эффекты на основе <code>text-shadow</code>.
 
-<code>text-shadow</code> - это свойство, описывающее тень, отбрасываемую текстом. <!--more-->В отличие от <code>box-shadow</code>, тень не обрезается фигурой, ей нельзя задать размер (только радиус размытия) и она не поддерживает параметр <code>inset</code>, то есть нельзя сделать внутреннюю тень. 
+<code>text-shadow</code> - это свойство, описывающее тень, отбрасываемую текстом. <!--more-->В отличие от <code>box-shadow</code>, тень не обрезается фигурой, ей нельзя задать размер (только радиус размытия) и она не поддерживает параметр <code>inset</code>, то есть нельзя сделать внутреннюю тень.
 
 Тем не менее, используя несколько теней с различными параметрами можно сделать имитацию обводки (которую можно было бы просто получить, если бы тень поддерживала размер) и имитацию внутренней тени, что позволяет сделать вдавленный текст.
 
@@ -31,7 +31,7 @@ desc: CSS-эффекты на основе text-shadow.
     color: white;
     }</code></pre>
 
-<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/4/"></iframe>
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/4/embed?output"></iframe>
 
 <h4>Вдавленный текст</h4>
 
@@ -46,7 +46,7 @@ desc: CSS-эффекты на основе text-shadow.
                0 1px 0 #444;
     color: #1A1A1A;
     }</code></pre>
-<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/17/"></iframe>
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/17/embed?output"></iframe>
 
 <h4>Размытие</h4>
 
@@ -61,9 +61,9 @@ desc: CSS-эффекты на основе text-shadow.
   H1:hover {
     text-shadow: 0 0 0 #333;
     }</code></pre>
-<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/9/"></iframe>
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/9/embed?output"></iframe>
 
-<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/32/"></iframe>
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/32/embed?output"></iframe>
 
 <h4>Контуры</h4>
 
@@ -82,7 +82,7 @@ desc: CSS-эффекты на основе text-shadow.
                 -1px -1px 0 yellowgreen;
     color: white;
     }</code></pre>
-<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/6/"></iframe>
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/6/embed?output"></iframe>
 
 <pre><code class="language-css">H1 {
   text-shadow: -1px -1px #FFF,
@@ -103,7 +103,7 @@ desc: CSS-эффекты на основе text-shadow.
   H1:hover {
     color: yellowgreen;
     }</code></pre>
-<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/18/"></iframe>
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/18/embed?output"></iframe>
 
 Для создания контура вокруг текста можно воспользоваться такой Sass-функцией:
 
@@ -134,9 +134,9 @@ desc: CSS-эффекты на основе text-shadow.
                8px -8px 0 hsl(260,100%,90%);
       color: hsl(300,100%,30%);
     }</code></pre>
-<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/7/"></iframe>
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/7/embed?output"></iframe>
 
-<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/27/"></iframe>
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/27/embed?output"></iframe>
 
 <h4>Полосатая тень</h4>
 
@@ -159,7 +159,7 @@ desc: CSS-эффекты на основе text-shadow.
     bottom: -15px;
     left: 0;
     z-index: -1;
-    background: linear-gradient(-45deg, 
+    background: linear-gradient(-45deg,
     rgba(72, 209, 204, 0) 2px, mediumturquoise 3px, rgba(72, 209, 204, 0) 3px ) repeat;
     background-size: 4px 4px;
     }
@@ -195,7 +195,7 @@ desc: CSS-эффекты на основе text-shadow.
     background-position: 40px 40px;
   }
 }</code></pre>
-<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/24/"></iframe>
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/24/embed?output"></iframe>
 
 <i>Идея не моя, найдено тут: <a href="http://codepen.io/lbebber/pen/BzoHi">codepen.io/lbebber/pen/BzoHi</a></i>
 
@@ -223,9 +223,9 @@ desc: CSS-эффекты на основе text-shadow.
     }
     H1:hover:after {
       width: 0%;
-      border-bottom-width: 1px;  
+      border-bottom-width: 1px;
       }</code></pre>
-<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/8/"></iframe>
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/8/embed?output"></iframe>
 
 <h4>Подводка</h4>
 
@@ -240,7 +240,7 @@ desc: CSS-эффекты на основе text-shadow.
                  2px 2px tomato;
     color: crimson;
     }</code></pre>
-<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/10/"></iframe>
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/10/embed?output"></iframe>
 
 <h4>Разъезжающийся текст</h4>
 
@@ -257,5 +257,5 @@ desc: CSS-эффекты на основе text-shadow.
                  400px 0 yellowgreen,
                  0 0 skyblue;
     }</code></pre>
-<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/16/"></iframe>
+<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/EVAViNA/16/embed?output"></iframe>
 
