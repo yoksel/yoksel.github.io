@@ -55,10 +55,11 @@ type: page
 </li>
 <li><a href="http://www.bohemiancoding.com/sketch/">Sketch</a>
 </li>
-<li><a href="https://code.google.com/p/svg-edit/">SVG-edit</a> (<a href="http://svg-edit.googlecode.com/svn/branches/stable/editor/svg-editor.html">Онлайн демо</a>)
+<li><a href="https://code.google.com/p/svg-edit/">SVG-edit</a> (<a href="http://svg-edit.googlecode.com/svn/branches/stable/editor/svg-editor.html">онлайн демо</a>)
 </li>
 <li><a href="http://www.inkscape.org/en/">Inkscape</a>
 </li>
+<li><a href="https://projectparfait.adobe.com/">Parfait</a> - позволяет извлекать SVG из PSD</li>
 </ul>
 
 <h4>Сайты с SVG-графикой</h4>
