@@ -39,6 +39,7 @@
             }
         }
 .post__date {
+    display: block;
     @include margin( bottom );
     padding-bottom: 5px;
     @include border ( bottom );

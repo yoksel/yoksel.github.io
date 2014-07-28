@@ -475,6 +475,7 @@ PRE CODE {
   font-size: 12px; }
 
 .post__date {
+  display: block;
   margin-bottom: 32px;
   padding-bottom: 5px;
   border-bottom: 1px solid #dddddd;

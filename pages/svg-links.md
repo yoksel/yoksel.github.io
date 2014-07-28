@@ -5,8 +5,11 @@ type: page
 ---
 <h4>Спецификация</h4>
 
-<a href="http://www.w3.org/TR/SVG/">w3.org/TR/SVG/</a>
-<a href="http://www.w3.org/TR/SVG/expanded-toc.html">Expanded Table of Contents</a>
+<ul>
+  <li><a href="http://www.w3.org/TR/SVG/">w3.org/TR/SVG/</a>
+  </li>
+  <li><a href="http://www.w3.org/TR/SVG/expanded-toc.html">Expanded Table of Contents</a></li>
+</ul>
 
 <h4>Авторы</h4>
 
