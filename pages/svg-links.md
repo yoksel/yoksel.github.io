@@ -69,3 +69,11 @@ type: page
   <li><a href="http://thenounproject.com/">Thenounproject.com</a>
   </li>
 </ul>
+
+<h4>Оптимизация</h4>
+
+<ul>
+  <li><a href="http://petercollingridge.appspot.com/svg-optimiser">SVG Optimiser</a></li>
+  <li>SVGO: <a href="https://github.com/svg/svgo">консоль</a>, <a href="https://github.com/svg/svgo-gui">gui</a>, <a href="https://github.com/sindresorhus/grunt-svgmin">grunt</a>
+  </li>
+</ul>
