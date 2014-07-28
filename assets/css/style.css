@@ -603,6 +603,9 @@ PRE CODE {
     content: "—";
     margin-right: 5px; }
 
+.post__share {
+  margin: 48px 0 0 0; }
+
 .post__linkedit {
   margin: 48px 0 0 0;
   font-style: italic;
