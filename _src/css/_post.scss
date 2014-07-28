@@ -205,8 +205,17 @@
 }
 
 .post__share {
-    margin: $base-margin * 1.5 0 0 0;
+    margin: $base-margin 0 0 0;
 }
+    .share-list {
+        &__item {
+            display: inline-block;
+            vertical-align: bottom;
+        }
+        IFRAME {
+            vertical-align: bottom;
+            }
+    }
 
 .post__linkedit {
     margin: $base-margin * 1.5 0 0 0;

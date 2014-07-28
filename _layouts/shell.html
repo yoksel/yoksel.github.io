@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
-	<head>
-		<title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
+    <head>
+        <title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
     {% if page.description %}
     <meta name="description" content="{{ page.description }}" />
     {% endif %}
@@ -13,31 +13,32 @@
     <meta name='yandex-verification' content='50720d52dcb3b0b9' />
 
     <link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}feed.xml" />
- 	<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.url }}atom.xml" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}feed.xml" />
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.url }}atom.xml" />
 
-	<link rel="stylesheet" media="screen" href="/assets/css/style.css" />
-	{% if page.custom_css %}<link rel="stylesheet" media="screen" href="/assets/css/{{ page.custom_css }}" />{% endif %}
+    <link rel="stylesheet" media="screen" href="/assets/css/style.css" />
+    {% if page.custom_css %}<link rel="stylesheet" media="screen" href="/assets/css/{{ page.custom_css }}" />{% endif %}
 
-	<script src="http://kittycheck.com/js/inject.js"></script>
-	<meta name="kittycheck_parent" content=".kitten" />
-	
-	<!--[if lt IE 9]>
+    <script src="http://kittycheck.com/js/inject.js"></script>
+    <meta name="kittycheck_parent" content=".kitten" />
+
+    <!--[if lt IE 9]>
         <script src="/assets/js/html5shiv.js"></script>
     <![endif]-->
-	</head>
-	<body class="no-js{% if page.layout_type %} p-layout-{{ page.layout_type }}{% endif %}{% if page.hide_demo %} p-hide-demo{% endif %}">
-		<div class="l-page">
-			<div class="kitten"></div>
-			{% include header.html %}
-			<div class="l-content">
-				{{ content }}
-			</div>	
-			{% include footer.html %}
-		</div>
-		{% include counters.html %}
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="/assets/js/prism.js"></script>
-		<script src="/assets/js/common.js"></script>
-	</body>
+    </head>
+    <body class="no-js{% if page.layout_type %} p-layout-{{ page.layout_type }}{% endif %}{% if page.hide_demo %} p-hide-demo{% endif %}">
+        {% include fb.html %}
+        <div class="l-page">
+            <div class="kitten"></div>
+            {% include header.html %}
+            <div class="l-content">
+                {{ content }}
+            </div>
+            {% include footer.html %}
+        </div>
+        {% include counters.html %}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="/assets/js/prism.js"></script>
+        <script src="/assets/js/common.js"></script>
+    </body>
 </html>

@@ -604,7 +604,13 @@ PRE CODE {
     margin-right: 5px; }
 
 .post__share {
-  margin: 48px 0 0 0; }
+  margin: 32px 0 0 0; }
+
+.share-list__item {
+  display: inline-block;
+  vertical-align: bottom; }
+.share-list IFRAME {
+  vertical-align: bottom; }
 
 .post__linkedit {
   margin: 48px 0 0 0;
