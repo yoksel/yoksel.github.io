@@ -1,18 +1,14 @@
 ---
 layout: onecolumn
 title: CSS-селекторы одной таблицей
-categories: []
-tags: []
-status: publish
 type: page
-published: true
 
 links_title: К статье
 links:
 - url: /css-selectors/
   name: Css-селекторы
 - url: /css-selectors-part2/
-  name: Css-селекторы, часть 2  
+  name: Css-селекторы, часть 2
 ---
 <p>Таблица отсюда: <a href="http://www.w3.org/TR/css3-selectors/#selectors">w3.org/TR/css3-selectors/#selectors</a></p>
 
