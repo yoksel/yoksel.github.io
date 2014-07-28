@@ -1,6 +1,6 @@
 ---
 layout: default
-title: SVG&#58; заливка и обводка
+title: 'SVG: заливка и обводка'
 type: post
 image: http://img-fotki.yandex.ru/get/9825/5091629.9d/0_7fd41_3b1bf3e6_L.png
 desc: В SVG заливка и обводка имеют много разных интересных опций, которые предоставляют возможности гораздо шире того, что есть в CSS. Например, можно нарисовать SVG-паттерн и использовать его не только в заливке, но и в обводке. Заливке и обводке можно указывать разную прозрачность, также можно управлять пунктирной обводкой, на чем можно построить интересные анимированные эффекты.
@@ -19,7 +19,7 @@ links:
 
 <h4>Fill</h4>
 
-Заливка элемента. 
+Заливка элемента.
 
 Возможные значения: <code>none</code>, ключевые слова, цвета, паттерны и градиенты.
 Значение по умолчанию - <code>black</code>.
@@ -31,27 +31,27 @@ links:
     &lt;symbol id="s-rect">
       &lt;rect width="70" height="70"/>
     &lt;/symbol>
-    &lt;linearGradient id="g-green" 
-                   x1="0%" y1="0%" 
+    &lt;linearGradient id="g-green"
+                   x1="0%" y1="0%"
                    x2="0%" y2="90%">
         &lt;stop offset="0%" stop-color="yellowgreen" />
         &lt;stop offset="90%" stop-color="green" />
       &lt;/linearGradient>
   &lt;/defs>
-  
+
   &lt;use xlink:href="#s-rect"
        x="20" y="20"
        fill="hsla(348, 83%, 47%,.3)"/> &lt;!-- HSLA -->
   &lt;use xlink:href="#s-rect"
        x="110" y="20"
-       fill="rgb(255, 215, 0)"/> &lt;!-- RGB -->  
+       fill="rgb(255, 215, 0)"/> &lt;!-- RGB -->
   &lt;use xlink:href="#s-rect"
        x="20" y="110"
        fill="url(#g-green)"/> &lt;!-- Градиент -->
   &lt;use xlink:href="#s-rect"
        x="110" y="110"
-       fill="skyblue"/> &lt;!-- Цвет по названию -->  
-&lt;/svg></code></pre> 
+       fill="skyblue"/> &lt;!-- Цвет по названию -->
+&lt;/svg></code></pre>
 
 
 <h4>Fill-rule</h4>
@@ -68,11 +68,11 @@ links:
     </div>
     <div class="column column-right">
         <code>fill-rule="evenodd"</code>
-        
+
         <svg class="svg" width="200" height="200"><path stroke="orange" stroke-width="5" fill="gold" fill-rule="evenodd" d="M 100,20 L 50,180 180,80 20,80 150,180 z"/></svg>
-        
+
     </div>
-</div> 
+</div>
 
 <code>fill-rule="nonzero"</code> интересно ведет себя для фигур из двух путей. Например, если внешний круг нарисован по часовой стрелке, а внутренний в обратном направлении, центральный круг останется без заливки (слева). Если же оба круга нарисованы в одном направлении - фигура зальется полностью (справа):
 
@@ -84,7 +84,7 @@ links:
         <svg class="svg" width="200" height="200"><g fill="yellowgreen" fill-rule="nonzero" stroke="green" stroke-width="5"><path d="M 20,100 A20,20 0 0,1 180,100 M 20,100 A20,20 0 0,0 180,100 M 50,100 A 50,50 0 0,1 150,100 M 50,100 A 50,50 0 0,0 150,100"/></g></svg>
 
     </div>
-</div> 
+</div>
 
 <h4>Fill-opacity</h4>
 
@@ -127,16 +127,16 @@ links:
 
 <pre><code class="language-markup">&lt;svg width="200" height="200">
   &lt;rect width="100" height="100" x="50" y="50"
-        fill="none" stroke="gold" 
+        fill="none" stroke="gold"
         stroke-width="10"/>
   &lt;rect width="160" height="160" x="20" y="20"
-        fill="none" stroke="yellowgreen" 
-        stroke-width="10%"/>      
+        fill="none" stroke="yellowgreen"
+        stroke-width="10%"/>
 &lt;/svg></code></pre>
 
 <h4>Stroke-linecap</h4>
 
-Свойство определяет как будут выглядеть концы линий. 
+Свойство определяет как будут выглядеть концы линий.
 Возможные значения: <code>butt</code>, <code>round</code>, <code>square</code>.
 Значение по умолчанию: <code>butt</code>.
 
@@ -145,10 +145,10 @@ links:
 <pre><code class="language-markup">&lt;!-- ... -->
   &lt;use xlink:href="#s-path" stroke="orangered" y="20"
        stroke-linecap="butt"/>
-  
+
   &lt;use xlink:href="#s-path" stroke="olivedrab" y="85"
        stroke-linecap="round"/>
-  
+
   &lt;use xlink:href="#s-path" stroke="steelblue" y="150"
        stroke-linecap="square"/>
   &lt;!-- ... --></code></pre>
@@ -164,10 +164,10 @@ links:
 <pre><code class="language-markup">&lt;!-- ... -->
   &lt;use xlink:href="#s-corner" stroke="orangered" y="0"
        stroke-linejoin="miter"/>
-  
+
   &lt;use xlink:href="#s-corner" stroke="olivedrab" y="80"
        stroke-linejoin="round"/>
-  
+
   &lt;use xlink:href="#s-corner" stroke="steelblue" y="160"
        stroke-linejoin="bevel"/>
   &lt;!-- ... --></code></pre>
@@ -196,14 +196,14 @@ links:
         stroke-dasharray="1 5" />
   &lt;path d="M 20 100 h 260"
         stroke="steelblue" stroke-width="1"
-        stroke-dasharray="2 7 6" />  
+        stroke-dasharray="2 7 6" />
   &lt;path d="M 20 120 h 260"
         stroke="orange" stroke-width="5"
         stroke-dasharray="5" />
   &lt;path d="M 20 140 h 260"
         stroke="mediumseagreen" stroke-width="1"
         stroke-dasharray="12% 5%" />
-&lt;/svg></code></pre>  
+&lt;/svg></code></pre>
 
 Используя обводку и простые фигуры можно получить удивительные вещи:
 
@@ -233,13 +233,13 @@ links:
        &lt;circle r="115" cx="135" cy="135"
           stroke="crimson"/> &lt;!-- Красная обводка без смещения -->
       &lt;circle r="115" cx="135" cy="135"
-           stroke="orangered" 
+           stroke="orangered"
            stroke-dashoffset="25%"/> &lt;!-- Оранжевая обводка смещена на 25% -->
       &lt;circle r="115" cx="135" cy="135"
-           stroke="gold" 
+           stroke="gold"
            stroke-dashoffset="50%"/> &lt;!-- Желтая обводка смещена на 50% -->
-      &lt;/g> 
-&lt;/svg></code></pre> 
+      &lt;/g>
+&lt;/svg></code></pre>
 
 Сочетая <code>stroke-dashoffset</code> и <code>stroke-dasharray</code> можно получить интересные эффекты.
 
@@ -250,7 +250,7 @@ links:
 
 <i>Для перезапуска нажмите Rerun.</i>
 
-Несколько вдохновляющих ссылок про анимацию на <code>stroke-dashoffset</code>: 
+Несколько вдохновляющих ссылок про анимацию на <code>stroke-dashoffset</code>:
 
 - <a href="http://css-tricks.com/svg-line-animation-works/">How SVG Line Animation Works</a>
 - <a href="http://jakearchibald.com/2013/animated-line-drawing-svg/">Animated line drawing in SVG</a>
@@ -274,7 +274,7 @@ links:
       &lt;circle r="40" cx="140" cy="140"
           stroke="gold"
           stroke-opacity=".25"/>
-      &lt;/g> 
-&lt;/svg></code></pre> 
+      &lt;/g>
+&lt;/svg></code></pre>
 
 Анимация обводки позволяет получить совершенно удивительные вещи. Правда, я в своих примерах использовала CSS (и это демо не играет в Firefox) и SVG-анимацию, которая работает таки везде, но задается странно, длинно и неудобно. Думаю, что оптимальнее всего для анимации SVG использовать JavaScript-библиотеки.

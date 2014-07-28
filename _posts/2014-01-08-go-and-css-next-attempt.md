@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Игра Го на CSS&#8758; ещё одна попытка
+title: "Игра Го на CSS: ещё одна попытка"
 type: post
 
 image: http://img-fotki.yandex.ru/get/9826/5091629.9a/0_7ec70_55aed3e8_L.png
