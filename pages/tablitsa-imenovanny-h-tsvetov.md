@@ -1,11 +1,7 @@
 ---
 layout: onecolumn
 title: Таблица именованных цветов
-categories: []
-tags: []
-status: publish
 type: page
-published: true
 
 links:
 - url: /tsveta

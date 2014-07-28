@@ -1,14 +1,10 @@
 ---
 layout: default
 title: Разный синтаксис Flexbox
-categories: []
-tags: []
-status: publish
 type: page
-published: true
 
 links_title: К статье
-links: 
+links:
 - url: /flexbox
   name: Flexbox
 ---

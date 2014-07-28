@@ -1,18 +1,14 @@
 ---
 layout: default
 title: Функции Transform
-categories: []
-tags: []
-status: publish
 type: page
-published: true
 
 links_title: К статьям
 links:
 - url: /transform
   name: Transform
-- url: /3d-cube  
-  name: 3D cube	
+- url: /3d-cube
+  name: 3D cube
 ---
 <h4>2D</h4>
 
@@ -22,7 +18,7 @@ links:
 
 <code>translate(25px, 30%)</code> - сдвиг по осям X и Y. Если задано одно значение, оно используется как сдвиг по X, второе значение при этом равно 0.
 
-<code>scaleX(2)</code> - масштабирование по оси X. При этом 1 - это 100%. 
+<code>scaleX(2)</code> - масштабирование по оси X. При этом 1 - это 100%.
 
 <code>scaleY(2)</code> - масштабирование по оси Y.
 
@@ -32,7 +28,7 @@ links:
 
 <code>skewX(20deg)</code> - наклон по оси X. Значения задаются в градусах (<i>deg</i>).
 
-<code>skewY(20deg)</code> - наклон по оси Y. 
+<code>skewY(20deg)</code> - наклон по оси Y.
 
 <code>skew(5deg, -20deg)</code> - наклон по осям X и Y. Если задано одно значение, второе будет равно 0.
 
@@ -92,9 +88,9 @@ w - изменение ширины. 1 - исходная ширина.
 
 <iframe class="jsbin" style="height: 400px" src="http://jsbin.com/EcebOKi/34/embed?output"></iframe>
 
-<pre><code class="language-css">matrix3d(num, num, num, num, 
-         num, num, num, num, 
-         num, num, num, num, 
+<pre><code class="language-css">matrix3d(num, num, num, num,
+         num, num, num, num,
+         num, num, num, num,
          num, num, num, num)</code></pre>
 
 Значения матрицы мне не удалось выяснить до конца, кроме того, что первые три значения нижнего ряда отвечают за центр трансформации, а весь последний столбец - за перспективу. Причем первые три за перспективы по конкретным осям, а последняя - общая.

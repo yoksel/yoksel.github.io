@@ -1,18 +1,14 @@
 ---
 layout: onecolumn
 title: Свойства Transform
-categories: []
-tags: []
-status: publish
 type: page
-published: true
 
 links_title: К статьям
 links:
 - url: /transform
   name: Transform
-- url: /3d-cube  
-  name: 3D cube 
+- url: /3d-cube
+  name: 3D cube
 ---
 <table class="proptable">
    <thead>

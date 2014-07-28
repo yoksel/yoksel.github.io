@@ -1,14 +1,10 @@
 ---
 layout: onecolumn
 title: Свойства Flexbox одной таблицей
-categories: []
-tags: []
-status: publish
 type: page
-published: true
 
 links_title: К статье
-links: 
+links:
 - url: /flexbox
   name: Flexbox
 ---
@@ -27,10 +23,10 @@ links:
 <tbody>
 <tr>
 <th><a class="property" href="http://www.w3.org/TR/css3-flexbox#align-content">align-content</a></th>
-<td>flex-start 
-flex-end 
-center 
-space-between 
+<td>flex-start
+flex-end
+center
+space-between
 space-around
 stretch</td>
 <td>stretch</td>
@@ -39,10 +35,10 @@ stretch</td>
 </tr>
 <tr>
 <th><a class="property" href="http://www.w3.org/TR/css3-flexbox#align-items">align-items</a></th>
-<td>flex-start 
-flex-end 
-center 
-baseline 
+<td>flex-start
+flex-end
+center
+baseline
 stretch</td>
 <td>stretch</td>
 <td>flex containers</td>
@@ -50,11 +46,11 @@ stretch</td>
 </tr>
 <tr>
 <th><a class="property" href="http://www.w3.org/TR/css3-flexbox#align-self">align-self</a></th>
-<td>auto 
-flex-start 
-flex-end 
-center 
-baseline 
+<td>auto
+flex-start
+flex-end
+center
+baseline
 stretch</td>
 <td>auto</td>
 <td>flex items</td>
@@ -78,9 +74,9 @@ stretch</td>
 </tr>
 <tr>
 <th><a class="property" href="http://www.w3.org/TR/css3-flexbox#flex-direction">flex-direction</a></th>
-<td>row 
-row-reverse 
-column 
+<td>row
+row-reverse
+column
 column-reverse</td>
 <td>row</td>
 <td>flex containers</td>
@@ -110,7 +106,7 @@ column-reverse</td>
 </tr>
 <tr>
 <th><a class="property" href="http://www.w3.org/TR/css3-flexbox#flex">flex</a></th>
-<td>none 
+<td>none
 	[ &lt;'flex-grow'&gt; &lt;'flex-shrink'&gt;?|
 &lt;'flex-basis'&gt; ]</td>
 <td>see individual properties</td>
@@ -119,8 +115,8 @@ column-reverse</td>
 </tr>
 <tr>
 <th><a class="property" href="http://www.w3.org/TR/css3-flexbox#flex-wrap">flex-wrap</a></th>
-<td>nowrap 
-wrap 
+<td>nowrap
+wrap
 wrap-reverse</td>
 <td>nowrap</td>
 <td>flex containers</td>
@@ -128,10 +124,10 @@ wrap-reverse</td>
 </tr>
 <tr>
 <th><a class="property" href="http://www.w3.org/TR/css3-flexbox#justify-content">justify-content</a></th>
-<td>flex-start 
-flex-end 
-center 
-space-between 
+<td>flex-start
+flex-end
+center
+space-between
 space-around</td>
 <td>flex-start</td>
 <td>flex containers</td>
