@@ -108,6 +108,9 @@ H1 {
 H2 {
   font-size: 40px; }
 
+.p-type-page H2 {
+  margin-bottom: 32px; }
+
 H3 {
   font-size: 33.6px; }
 

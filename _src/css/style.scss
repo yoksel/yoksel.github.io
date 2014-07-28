@@ -31,6 +31,9 @@ H2 {
     font-size: $base-font-size * 2.5;
     @extend %headers-style;
     }
+    .p-type-page H2 {
+        @include margin( bottom );
+        }
 H3 {
     font-size: $base-font-size * 2.1;
     @extend %headers-style;
