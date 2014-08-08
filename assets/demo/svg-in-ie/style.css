@@ -16,6 +16,16 @@ LI {
     list-style: none;
     }
 
+.svg-icons-set {
+    margin-top: 1em;
+    }
+    .svg-icon {
+        width: 2em;
+        height: 2em;
+        margin: 0 .5em;
+        vertical-align: middle;
+        }
+
 .l-wrapper {
     min-width: 500px;
     max-width: 900px;
