@@ -16,6 +16,10 @@ LI {
     list-style: none;
     }
 
+I {
+    background: gold;
+}
+
 .svg-icons-set {
     margin-top: 1em;
     }
