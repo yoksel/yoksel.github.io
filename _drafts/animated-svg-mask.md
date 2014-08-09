@@ -27,28 +27,30 @@ links:
 
 SVG:
 
-<pre><code class="language-markup">&lt;mask id="m-line">
-    &lt;line x1="0" y1="0" x2="100%" y2="100%" class="ln-mask"/>
-    &lt;line x1="0" y1="100%" x2="100%" y2="0%" class="ln-mask"/>
+<pre><code class="language-markup">&lt;mask id="m-lines">
+    &lt;line x1="0" y1="0" x2="100%" y2="100%" class="elem-mask"/>
+    &lt;line x1="0" y1="100%" x2="100%" y2="0%" class="elem-mask"/>
 &lt;/mask></code></pre>
 
 Внутри две линии. Я не использовала <code>path</code>, потому что ему нельзя задавать координаты в процентах.
 
 CSS для линий:
 
-<pre><code class="language-css">.ln-mask {
-  stroke: #FFF;
-  stroke-width: 0;
-  animation: stroke-width 8s infinite;
-  }
+<pre><code class="language-css">$mask-time: 7s;
+
+.elem-mask {
+    stroke: #FFF;
+    stroke-width: 0;
+    animation: stroke-width $mask-time infinite;
+    }
 
 @keyframes stroke-width {
-  50% {
-    stroke-width: 300;
-  }
+    50% {
+        stroke-width: 300;
+    }
 }</code></pre>
 
-В исходном состоянии линии не видны, потому что <code>stroke-width: 0</code>. Для того, чтобы обводки в процессе анимации служили видимой областью маски, им задан белый цвет <code>stroke: #FFF</code>. Также задана анимация, которая увеличивает толщину рамки до 400.
+В исходном состоянии линии не видны, потому что <code>stroke-width: 0</code>. Для того, чтобы обводки в процессе анимации служили видимой областью маски, им задан белый цвет <code>stroke: #FFF</code>. Также задана анимация, которая увеличивает толщину рамки до 300.
 
 Если вытащить маску наружу, она будет выглядеть вот так:
 
@@ -93,10 +95,10 @@ CSS для линий:
 <p data-height="320" data-theme-id="4974" data-slug-hash="cxkDi" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/cxkDi/'>Simple animated mask in SVG (wavy shutter)</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-Да и вообще необязательно это должны быть линии:
+Да и вообще, необязательно это должны быть линии:
 
 <p data-height="320" data-theme-id="4974" data-slug-hash="HvLzE" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/HvLzE/'>Simple animated mask in SVG (wavy shutter)</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
------
 
-, которые можно использовать, к примеру, для анимированных галерей
+Используя круги следует помнить про странности обводки в разных браузерах (<a href="/svg-stroke">статья тут</a>).
+
