@@ -12,7 +12,7 @@ links:
 
 В <a href="/svg-stroke">прошлой статье</a> я рассматривала странности SVG-обводки, а также возможность сделать анимированные маски.
 
-Так как трансформации в масках не анимируются в Firefox ( 31-я версия на момент написания статьи), я решила продолжить эксперименты с обводками. <!--more-->
+Так как трансформации в масках не анимируются в Firefox ( 31-я версия на момент написания статьи), я продолжила эксперименты с обводками. <!--more-->
 
 Обводками можно имитировать трансформации в масках, и, таким образом, получить много разных интересных эффектов.
 
@@ -57,10 +57,44 @@ CSS для линий:
 
 Маска применяется к фигуре с помощью атрибута <code>mask="url(#m-line)"</code> или через CSS <code>mask: url(#m-line);</code>
 
-Понимая принцип работы такой маски, можно сделать много других вариантов:
+Понимая принцип работы такой маски, можно сделать много других вариантов.
 
+Простое разворачивание из центра:
 
+<p data-height="320" data-theme-id="4974" data-slug-hash="sktnE" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/sktnE/'>Simple animated mask in SVG</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 
+И под углом:
+
+<p data-height="320" data-theme-id="4974" data-slug-hash="IBxJt" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/IBxJt/'>Simple animated mask in SVG</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+Использование паттернов позволяет делать узорные маски.
+
+Клеточки:
+
+<p data-height="320" data-theme-id="4974" data-slug-hash="xAybm" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/xAybm/'>Simple animated mask in SVG</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+Ромбики:
+
+<p data-height="320" data-theme-id="4974" data-slug-hash="cHFJw" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/cHFJw/'>Simple animated mask in SVG</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+Паттерны позволяют добиться интересного результата минимумом фигур, но ещё интереснее можно сделать, если задать несколько фигур внутри маски и анимировать их по отдельности.
+
+<p data-height="320" data-theme-id="4974" data-slug-hash="dCFrG" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/dCFrG/'>Simple animated mask in SVG (shutter)</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+При этом пути в маске вовсе не обязательно должны быть прямыми линиями:
+
+<p data-height="320" data-theme-id="4974" data-slug-hash="cxkDi" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/cxkDi/'>Simple animated mask in SVG (wavy shutter)</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+Да и вообще необязательно это должны быть линии:
+
+<p data-height="320" data-theme-id="4974" data-slug-hash="HvLzE" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/HvLzE/'>Simple animated mask in SVG (wavy shutter)</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 -----
 
 , которые можно использовать, к примеру, для анимированных галерей
