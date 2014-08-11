@@ -2,19 +2,25 @@
 layout: default
 title: CSS-анимации для ротации изображений
 type: post
-image:
-desc:
+image: http://img-fotki.yandex.ru/get/6737/5091629.a1/0_848b9_3d07c8ba_orig
+desc: 'В процессе создания демо с анимированными SVG-масками, мне пришлось как следует разобраться с алгоритмами CSS-анимаций. В таких демо используется две анимации: одна для маски, другая для последовательного показа изображений. Меня интересовали варианты алгоритмов для второй анимации.'
 
 links:
 - url: /css-animation/
   name: Css Animation
 - url: /svg-stroke/
   name: Странности обводки в SVG
+- url: /animated-svg-mask/
+  name: Анимированные SVG-маски
 ---
 
-В процессе создания демо с анимированными масками на SVG, мне пришлось как следует разобраться с алгоритмами CSS-анимаций. <!--more-->
+В процессе экспериментов с <a href="/animated-svg-mask/">анимированными SVG-масками</a>, мне пришлось как следует разобраться с алгоритмами CSS-анимаций. <!--more-->
 
 Например, в <a href="http://codepen.io/yoksel/pen/eIxmr">этом демо</a> используется две анимации: одна для маски, вторая - для смены изображений. Сейчас речь пойдет о второй (и её вариантах).
+
+Такая анимация нужна, чтобы последовательно показывать и скрывать картинки, в то время, когда эффект их появления обеспечивается другой анимацией.
+
+При использовании HTML-элементов это можно было бы сделать одной анимацией, но при использовании SVG-масок для всех элементов ротации используется одна маска, и ей нельзя задать задержку воспроизведения в зависимости от позиции элемента, к которому она применилась. Есть два решения: создавать для каждого шага по маске с нужной задержкой воспроизведения или просто скрывать элементы, которые не нужны в данный момент. Я выбрала второй вариант.
 
 Мне не хотелось использовать JS, потому что простую анимацию можно сделать средствами CSS. Кроме того, использование переменных в Sass позволяет легко синхронизировать между собой анимации масок и смены изображений.
 
@@ -35,6 +41,8 @@ links:
     &lt;li class="rotation__item">&lt;/li>
     &lt;li class="rotation__item">&lt;/li>
 &lt;/ul></code></pre>
+
+В демо я добавила картинки фоном, но внутри элементов галереи может быть любое содержимое. Для демонстрации SVG-масок структура галереи переносится, соответственно, в SVG.
 
 Добавляем Sass:
 
@@ -135,7 +143,7 @@ $step-perc: percentage(1/$max); </code></pre>
 <p data-height="320" data-theme-id="4974" data-slug-hash="kJwCb" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/kJwCb/'>kJwCb</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-Для этого демо вся ротация была перенесена в SVG.
+Для этого демо структура галереи была перенесена в SVG.
 
 <b>Второй вариант анимации.</b>
 
@@ -197,7 +205,7 @@ $step-perc: percentage(1/$max*2);</code></pre>
     opacity: 0;
     animation: hide $duration step-end infinite;
 
-    /* переопределяем имя анимации для последнего шага */
+    /* имя анимации для последнего шага */
     &:nth-of-type(#{$max}n) {
         animation-name: hide-half-step;
         }
@@ -210,7 +218,7 @@ $step-perc: percentage(1/$max*2);</code></pre>
         }
     }</code></pre>
 
-Визуально результат практически не отличается от предыдущего варианта анимации:
+Визуально результат практически не отличается от предыдущего варианта:
 
 <p data-height="320" data-theme-id="4974" data-slug-hash="rJogH" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/rJogH/'>rJogH</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
@@ -220,7 +228,7 @@ $step-perc: percentage(1/$max*2);</code></pre>
 <p data-height="320" data-theme-id="4974" data-slug-hash="zcmki" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/zcmki/'>Simple animated mask in SVG (rhomb)</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-Синхронизация слоёных анимаций не самая простая задача, но результат стоит того.
+Синхронизация слоёных анимаций не самая простая задача, но результат того стоит.
 
 Уверена, что на основе таких анимаций можно придумать много интересных эффектов, а понимание принципа их работы может сэкономить вам кучу времени.
 
