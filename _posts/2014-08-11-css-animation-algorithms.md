@@ -8,8 +8,6 @@ desc: 'В процессе создания демо с анимированны
 links:
 - url: /css-animation/
   name: Css Animation
-- url: /svg-stroke/
-  name: Странности обводки в SVG
 - url: /animated-svg-mask/
   name: Анимированные SVG-маски
 ---
