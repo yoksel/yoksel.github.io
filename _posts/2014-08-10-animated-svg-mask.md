@@ -8,6 +8,8 @@ desc: В прошлой статье я рассматривала странн�
 links:
 - url: /css-animation/
   name: Css Animation
+- url: /css-and-svg-masks/
+  name: CSS и SVG маски
 - url: /svg-stroke/
   name: Странности обводки в SVG
 - url: /pages/svg-links.html
