@@ -105,6 +105,7 @@
                 }
         OL {
             @include mid-margin( left );
+            @include margin( bottom );
             counter-reset: num-list;
             }
         OL LI:before {

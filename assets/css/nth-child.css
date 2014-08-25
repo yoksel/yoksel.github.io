@@ -52,7 +52,7 @@
     height: 2.5em;
     margin: 0;
     line-height: 2.5em;
-    background: #eeeeee;
+    background: #EEE;
     text-align: center; }
   .post__text .demo-ul LI:before {
     content: counter(list) !important;
