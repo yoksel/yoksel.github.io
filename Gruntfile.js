@@ -56,7 +56,7 @@ module.exports = function (grunt) {
     sass: {
       dist: {
         options: {
-          sourcemap: true,
+          // sourcemap: true,
           style: 'nested',
           banner: '<%= tag.banner %>'
         },

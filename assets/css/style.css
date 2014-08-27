@@ -888,6 +888,9 @@ A[href*="feed"]:before {
   background: url(/assets/img/sprite.png);
   background-position: -260px 0; }
 
+.post CODE A:before {
+  content: none !important; }
+
 /* Prism
 -------------------------------- */
 /**

@@ -73,3 +73,7 @@ A[href*="feed"]:before {
         @include icon;
         background-position: -260px 0;
         }
+
+.post CODE A:before {
+    content: none !important;
+    }

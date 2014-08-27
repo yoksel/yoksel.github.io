@@ -131,13 +131,11 @@ heart--w150--steelblue.svg</b></pre>
 2. В начале документа (после открывающего <code>&lt;body></code>) разместить библиотеку иконок (содержимое файла <b>myicons.svg</b>).
 3. Отдельные иконки на страницу вставляются вот таким образом:
 
- <pre><code class="language-markup">&lt;span class="myicons myicons--heart">
-    &lt;svg>&lt;use xlink:href="#myicons--heart">&lt;/use>&lt;/svg>
-&lt;/span></code></pre>
+ <pre><code class="language-markup">&lt;svg xmlns="http://www.w3.org/2000/svg" class="myicons myicons--heart">
+    &lt;use xlink:href="#myicons--heart"/>
+&lt;/svg></code></pre>
 
-<code>span</code> нужен для отображения PNG-иконок в браузерах, где не поддерживается SVG.
-
-В CSS это обеспечивается вот таким кодом:
+Отображение иконки в старых браузерах обеспечивается вот таким кодом:
 
 <pre><code class="language-css">.ie8 .myicons {
     background-image: url(noconfig.png);
