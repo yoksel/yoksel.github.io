@@ -135,6 +135,10 @@ heart--w150--steelblue.svg</b></pre>
     &lt;use xlink:href="#myicons--heart">&lt;/use>
 &lt;/svg></code></pre>
 
+<b>Upd:</b> если в SVG опустить закрывающие теги (написать <code>&lt;use/></code>, a не <code>&lt;use>...&lt;/use></code>), в старых браузерах перестаёт работать HTML5-разметка.
+Всем SVG-тегам на странице обязательно нужен закрывающий парный тег.
+За уточнение спасибо <a href="https://twitter.com/mista_k">@mista_k</a>.
+
 Отображение иконки в старых браузерах обеспечивается вот таким кодом:
 
 <pre><code class="language-css">.ie8 .myicons {
