@@ -132,7 +132,7 @@ heart--w150--steelblue.svg</b></pre>
 3. Отдельные иконки на страницу вставляются вот таким образом:
 
  <pre><code class="language-markup">&lt;svg xmlns="http://www.w3.org/2000/svg" class="myicons myicons--heart">
-    &lt;use xlink:href="#myicons--heart"></use>
+    &lt;use xlink:href="#myicons--heart">&lt;/use>
 &lt;/svg></code></pre>
 
 Отображение иконки в старых браузерах обеспечивается вот таким кодом:
