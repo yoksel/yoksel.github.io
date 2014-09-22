@@ -28,6 +28,7 @@ type: page
 <ul>
     <li><a href="http://css-tricks.com/mega-list-svg-information/">A Compendium of SVG Information</a>
     </li>
+    <li><a href="https://github.com/willianjusten/awesome-svg">Awesome SVG</a></li>
     <li><a href="http://www.smashingmagazine.com/2013/06/02/clown-car-technique-solving-for-adaptive-images-in-responsive-web-design/">Clown Car Technique: Solving Adaptive Images In Responsive Web Design</a>
     </li>
     <li><a href="http://www.sitepoint.com/tips-accessible-svg/">Tips for Creating Accessible SVG</a>
