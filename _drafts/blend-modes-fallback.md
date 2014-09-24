@@ -11,6 +11,8 @@ links:
 
 ---
 
+http://www.w3.org/TR/SVG/filters.html#feBlendElement
+
 В <a href="https://developer.mozilla.org/en-US/Firefox/Releases/32">Firefox 32</a> включили <code>mix-blend-mode</code> (это как <a href="/background-blend-mode/">background-blend-mode</a>, только для элементов). А в <a href="http://www.chromestatus.com/features/5163890719588352">Chrome 37</a> - поддержку <a href="http://dev.w3.org/csswg/css-shapes/">CSS shapes</a>, то есть возможность управлять формой, по которой текст будет обтекать элемент. Обе технологии выглядят очень интересно, так что я решила попробовать их в действии, заодно выяснив как будет выглядеть страница в браузерах, где они не поддерживаются.
 
 <!--more-->
@@ -106,7 +108,7 @@ Firefox:
 
 <img src="http://img-fotki.yandex.ru/get/5112/5091629.a1/0_855c7_76e07640_M.jpg"/>
 
-В Firefox можно так и оставить, но с Safari надо что-то делать: белый фон у картинок и белый в тенях заголовка выглядят не очень. Самый простой вариант - добавить блоку с текстом белую подложку:
+Firefox, по-моему, можно так и оставить, но с IE и Safari надо что-то делать: белый фон у картинок и белый в тенях заголовка выглядят не очень. Самый простой вариант - добавить блоку с текстом белую подложку:
 
 <pre><code class="language-css">.l-wrapper {
   ...
@@ -123,16 +125,43 @@ Firefox:
 
 Результат: <a href="http://codepen.io/yoksel/full/AJKEh/">codepen.io/yoksel/full/AJKEh/</a>
 
-В Хроме ничего не изменилось, потому что при режиме смешивания <code>multiply</code> белый цвет исчезает, а в Safari появились фон и поля:
+В Хроме ничего не изменилось, потому что при режиме смешивания <code>multiply</code> белый цвет исчезает, а в IE и Safari появились фон и поля:
 
 <img src="http://img-fotki.yandex.ru/get/4800/5091629.a1/0_855cb_3998ac74_M.jpg"/>
 
-При этом получается, что демо в разных браузерах может выглядеть сильно по-разному, и явно можно сделать лучше. Для этого нам потребуется SVG и его фильтры.
+При этом получается, что демо в разных браузерах может выглядеть сильно по-разному, и можно попробовать сделать лучше. Для этого нам потребуется SVG и его фильтры.
 
 В SVG-фильтрах есть режимы смешивания. Их меньше, чем в CSS, но среди них есть нужный нам <code>multiply</code>.
 
+Создаем фильтр:
+
+<pre><code class="language-markup">&lt;svg class="svg-defs">
+  &lt;filter id="multiply" x="0" y="0">
+      &lt;!-- задаем картинку фона для фильтра -->
+      &lt;feImage id="bgimage" result="bgimage" x="0" y="0" width="300" height="206" xlink:href="http://img-fotki.yandex.ru/get/6846/5091629.a1/0_8558d_406830d_M">&lt;/feImage>
+      &lt;!-- задаем повторение фона -->
+      &lt;feTile in="bgimage">&lt;/feTile>
+      &lt;!-- накладываем картинку, к которой применен фильтр,
+      с режимом multiply на предыдущий фон -->
+      &lt;feBlend mode="multiply" in2="SourceGraphic"/>
+    &lt;/filter>
+&lt;/svg></code></pre>
+
+Чтобы фильтры работали везде, картинки, к которым они применяются, тоже надо завернуть в SVG. Примерный код:
+
+<pre><code class="language-markup">&lt;svg class="pic pic--dragon" viewBox="0 0 300 161">
+   &lt;image xlink:href="http://img-fotki.yandex.ru/get/6840/5091629.a1/0_855a9_b872dbe5_M" width="100%" height="100%"
+       filter="url(#multiply)"/>
+&lt;/svg></code></pre>
+
+Размеры картинок задаются в CSS.
+
+Результат: <a href="http://codepen.io/yoksel/pen/heFJB">codepen.io/yoksel/pen/heFJB</a>.
+
+SVG-фильтры для SVG элементов работают во всех современных браузерах, в IE начиная  с 10-й версии. Фильтры были бы отличным решением, если бы не некоторые ньюансы.
+
+1. У Safari сильно свои представления о том, как в нем должны отображаться цвета.
 
 
-http://www.w3.org/TR/SVG/filters.html#feBlendElement
 
 
