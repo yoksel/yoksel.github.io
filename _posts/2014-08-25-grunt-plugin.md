@@ -12,6 +12,8 @@ links:
   name: npmjs.org/~yoksel
 - url: http://gruntjs.com/
   name: gruntjs.com
+- url: /svg-in-ie8
+  name: Грабли на чистом SVG
 ---
 
 В один прекрасный день перед нами (мной и моими коллегами) встала задача обработать большое количество SVG-иконок.
