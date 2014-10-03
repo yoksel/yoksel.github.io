@@ -10,9 +10,6 @@ links:
   name: Name
 
 ---
-
-http://www.w3.org/TR/SVG/filters.html#feBlendElement
-
 В <a href="https://developer.mozilla.org/en-US/Firefox/Releases/32">Firefox 32</a> включили <code>mix-blend-mode</code> (это как <a href="/background-blend-mode/">background-blend-mode</a>, только для элементов). А в <a href="http://www.chromestatus.com/features/5163890719588352">Chrome 37</a> - поддержку <a href="http://dev.w3.org/csswg/css-shapes/">CSS shapes</a>, то есть возможность управлять формой, по которой текст будет обтекать элемент. Обе технологии выглядят очень интересно, так что я решила попробовать их в действии, заодно выяснив как будет выглядеть страница в браузерах, где они не поддерживаются.
 
 <!--more-->
@@ -26,7 +23,7 @@ http://www.w3.org/TR/SVG/filters.html#feBlendElement
     <li><a href="https://dev.opera.com/articles/getting-to-know-css-blend-modes/">Getting to Know CSS Blend Modes</a></li>
 </ul>
 
-Для более глубокого изучения подойдут ссылки на спецификации:
+Для более глубокого изучения есть спецификации:
 <ul>
     <li><a href="http://dev.w3.org/fxtf/compositing-1/">Compositing and Blending Level 1</a></li>
     <li><a href="http://dev.w3.org/csswg/css-shapes/">CSS Shapes Module Level 1</a></li>
@@ -53,11 +50,11 @@ http://www.w3.org/TR/SVG/filters.html#feBlendElement
 
 <img src="http://img-fotki.yandex.ru/get/4805/5091629.a1/0_855c2_8fe321a9_M.jpg"/>
 
- Чтобы увидеть неработающие формы, достаточно открыть демо в Firefox:
+ Чтобы увидеть неработающие формы, достаточно открыть демо в Firefox или в Safari:
 
 <img src="http://img-fotki.yandex.ru/get/6836/5091629.a1/0_855c4_79b5ff4_M.jpg"/>
 
- а неработающие режимы смешивания -  IE и Safari:
+ а неработающие режимы смешивания - Internet Explorer:
 
 <img src="http://img-fotki.yandex.ru/get/4803/5091629.a1/0_855c3_f9ded859_M.jpg"/>
 
@@ -100,15 +97,15 @@ Chrome:
 
 <img src="http://img-fotki.yandex.ru/get/6822/5091629.a1/0_855c5_cbc28eee_M.jpg"/>
 
-Firefox:
+Firefox/Safari:
 
 <img src="http://img-fotki.yandex.ru/get/6834/5091629.a1/0_855c6_f6f1b1a1_M.jpg"/>
 
-  В Safari:
+В IE:
 
-<img src="http://img-fotki.yandex.ru/get/5112/5091629.a1/0_855c7_76e07640_M.jpg"/>
+<img src="http://img-fotki.yandex.ru/get/5112/5091629.a1/0_855c7_76e07640_M"/>
 
-Firefox, по-моему, можно так и оставить, но с IE и Safari надо что-то делать: белый фон у картинок и белый в тенях заголовка выглядят не очень. Самый простой вариант - добавить блоку с текстом белую подложку:
+Firefox и Safari можно так и оставить, но с IE надо что-то делать: белый фон у картинок и белый в тенях заголовка выглядят не очень. Самый простой вариант - добавить блоку с текстом белую подложку:
 
 <pre><code class="language-css">.l-wrapper {
   ...
@@ -125,43 +122,85 @@ Firefox, по-моему, можно так и оставить, но с IE и S
 
 Результат: <a href="http://codepen.io/yoksel/full/AJKEh/">codepen.io/yoksel/full/AJKEh/</a>
 
-В Хроме ничего не изменилось, потому что при режиме смешивания <code>multiply</code> белый цвет исчезает, а в IE и Safari появились фон и поля:
+В Chrome и Firefox ничего не изменилось, потому что при режиме смешивания <code>multiply</code> белый цвет исчезает, а в IE появились фон и поля:
 
 <img src="http://img-fotki.yandex.ru/get/4800/5091629.a1/0_855cb_3998ac74_M.jpg"/>
 
-При этом получается, что демо в разных браузерах может выглядеть сильно по-разному, и можно попробовать сделать лучше. Для этого нам потребуется SVG и его фильтры.
+Правда, в Safari тоже будут поля, потому что он не понимает <code>@supports</code>.
+
+При этом получается, что демо в разных браузерах может выглядеть сильно по-разному, и можно попробовать сделать лучше, например, с помощью SVG.
 
 В SVG-фильтрах есть режимы смешивания. Их меньше, чем в CSS, но среди них есть нужный нам <code>multiply</code>.
 
 Создаем фильтр:
 
 <pre><code class="language-markup">&lt;svg class="svg-defs">
-  &lt;filter id="multiply" x="0" y="0">
-      &lt;!-- задаем картинку фона для фильтра -->
-      &lt;feImage id="bgimage" result="bgimage" x="0" y="0" width="300" height="206" xlink:href="http://img-fotki.yandex.ru/get/6846/5091629.a1/0_8558d_406830d_M">&lt;/feImage>
-      &lt;!-- задаем повторение фона -->
-      &lt;feTile in="bgimage">&lt;/feTile>
-      &lt;!-- накладываем картинку, к которой применен фильтр,
-      с режимом multiply на предыдущий фон -->
-      &lt;feBlend mode="multiply" in2="SourceGraphic"/>
+    &lt;filter id="multiply" x="0" y="0">
+        &lt;!-- задаем картинку фона для фильтра -->
+        &lt;feImage id="bgimage" result="bgimage" x="0" y="0" width="300" height="206" xlink:href="http://img-fotki.yandex.ru/get/6846/5091629.a1/0_8558d_406830d_M">&lt;/feImage>
+        &lt;!-- задаем повторение фона -->
+        &lt;feTile in="bgimage">&lt;/feTile>
+        &lt;!-- накладываем картинку, к которой применен фильтр,
+        на предыдущий фон с режимом multiply -->
+        &lt;feBlend mode="multiply" in2="SourceGraphic"/>
     &lt;/filter>
 &lt;/svg></code></pre>
+
+<i>Было бы куда удобнее задавать режим наложения исходной картинки на нижележащие слои страницы, а не на картинку, заданную в фильтре (здесь это <code>feImage</code>). Для этого в SVG предусмотрена возможность в качестве одного из источников фильтра задавать <code>BackgroundImage</code> - по смыслу это снимок экрана под областью действия фильтра. <code>BackgroundImage</code> позволил бы сделать фильтр гораздо короче:</i>
+
+<pre><code class="language-markup">&lt;svg class="svg-defs">
+    &lt;filter id="multiply" x="0" y="0">
+        &lt;feBlend mode="multiply" in2="BackgroundImage" in="SourceGraphic"/>
+    &lt;/filter>
+&lt;/svg></code></pre>
+
+<i>К сожалению, на момент написания статьи <code>BackgroundImage</code> в фильтрах не работает.</i>
 
 Чтобы фильтры работали везде, картинки, к которым они применяются, тоже надо завернуть в SVG. Примерный код:
 
 <pre><code class="language-markup">&lt;svg class="pic pic--dragon" viewBox="0 0 300 161">
-   &lt;image xlink:href="http://img-fotki.yandex.ru/get/6840/5091629.a1/0_855a9_b872dbe5_M" width="100%" height="100%"
-       filter="url(#multiply)"/>
+    &lt;image xlink:href="http://img-fotki.yandex.ru/get/6840/5091629.a1/0_855a9_b872dbe5_M" width="100%" height="100%"
+        filter="url(#multiply)"/>
 &lt;/svg></code></pre>
 
-Размеры картинок задаются в CSS.
+Для SVG-элементов обязательно надо задавать размеры, можно с помощью CSS.
 
-Результат: <a href="http://codepen.io/yoksel/pen/heFJB">codepen.io/yoksel/pen/heFJB</a>.
+В тенях заголовка остался белый цвет. В случае с относительно однородным фоном (как у меня) можно заменить белый на более подходящий оттенок, с пестрым это не сработает, и придется придумывать что-то ещё.
 
-SVG-фильтры для SVG элементов работают во всех современных браузерах, в IE начиная  с 10-й версии. Фильтры были бы отличным решением, если бы не некоторые ньюансы.
+Результат:
 
-1. У Safari сильно свои представления о том, как в нем должны отображаться цвета.
+<p data-height="500" data-theme-id="4974" data-slug-hash="wavqm" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/wavqm/'>Blend and shapes</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+SVG-фильтры для SVG элементов работают во всех современных браузерах, в IE начиная  с 10-й версии. Фильтры были бы отличным решением, если бы не некоторые ньюансы:
+
+1. SVG-фильтры <a href="http://caniuse.com/#feat=svg-filters">не работают в IE9</a>. Его можно отфильтровывать, например, с помощью modernizr, и отдельно для него задавать белую подложку.
+2. При использовании фильтров фон под картинкой ресайзится вместе с картинкой. То есть картинка приклеивается к фону с применением заданного режима наложения, и дальнейшие манипуляции делаются уже с этой новой склейкой.
+
+Пример:
+
+<p data-height="300" data-theme-id="4974" data-slug-hash="gocDK" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/gocDK/'>Resizing image with SVG-filter</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+На фонах с четким рисунком несовпадение фона будет очень заметно. Если исходное изображение имеет белые поля, можно попробовать применить маску. Для этого делается копия картинки, где белые поля сделаны прозрачными или залиты черным, а часть картинки, которая должна быть показана - полностью белая. Картинка маски для рыцаря выглядит вот так:
+
+<img src="http://img-fotki.yandex.ru/get/4509/5091629.a2/0_85a64_94d6d625_M">
+
+Код маски:
+
+<pre><code class="language-markup">&lt;mask id="mask">
+     &lt;image xlink:href="http://img-fotki.yandex.ru/get/4509/5091629.a2/0_85a64_94d6d625_M" width="203" height="300"/>
+  &lt;/mask></code></pre>
+
+Результат применения:
+
+<p data-height="300" data-theme-id="4974" data-slug-hash="AblID" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/AblID/'>Resizing image with SVG-filter</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 
 
+
+Таким образом, способ с фильтрами отличают не только громоздкие конструкции, но и потенциальные проблемы с отображением.
+
+http://www.w3.org/TR/SVG/filters.html#feBlendElement
 
 
