@@ -8,6 +8,12 @@ desc:
 links:
 - url: http://www.w3.org/TR/SVG/filters.html
   name: SVG Filter Effects
+- url: http://caniuse.com/#feat=css-shapes
+  name: CSS Shapes
+- url: http://caniuse.com/#feat=css-backgroundblendmode
+  name: background-blend-mode
+- url: http://caniuse.com/#feat=css-mixblendmode
+  name: mix-blend-mode
 - url: /css-and-svg-masks
   name: CSS и SVG маски
 - url: /svg-in-ie8
@@ -17,6 +23,8 @@ links:
 В <a href="https://developer.mozilla.org/en-US/Firefox/Releases/32">Firefox 32</a> включили <code>mix-blend-mode</code> (это как <a href="/background-blend-mode/">background-blend-mode</a>, только для элементов). А в <a href="http://www.chromestatus.com/features/5163890719588352">Chrome 37</a> - поддержку <a href="http://dev.w3.org/csswg/css-shapes/">CSS shapes</a>, то есть возможность управлять формой, по которой текст будет обтекать элемент. Обе технологии выглядят очень интересно, так что я решила попробовать их в действии, заодно выяснив как будет выглядеть страница в браузерах, где они не поддерживаются.
 
 <!--more-->
+В процессе написания статьи Safari обновился до версии 7.1, и в нем тоже появилась поддержка режимов наложения. Таким образом, режим наложения слоев фона имеет уже <a href="http://caniuse.com/#feat=css-backgroundblendmode">довольно неплохую поддержку браузерами</a>, с наложением друг на друга элементов страницы дела пока обстоят <a href="http://caniuse.com/#feat=css-mixblendmode">похуже</a>.
+
 
 По обеим темам уже были хорошие статьи на английском языке, например:
 
@@ -44,6 +52,8 @@ links:
 
 Полноценно оно отображается только в последних Хроме/Опере со включенными экспериментальными возможностями (они умеют CSS shapes, но <code>mix-blend-mode</code> пока что за флагом, и их надо включать отдельно).
 
+Также оно будет корректно отображаться в Safari 7.1, он умеет и режимы смешивания, и CSS shapes, но формы пока работают с префиксом <code>-webkit</code>.
+
 Включить в Хроме:
 <code>chrome://flags/#enable-experimental-web-platform-features</code>
 
@@ -54,7 +64,7 @@ links:
 
 <img src="http://img-fotki.yandex.ru/get/4805/5091629.a1/0_855c2_8fe321a9_M.jpg"/>
 
- Чтобы увидеть неработающие формы, достаточно открыть демо в Firefox или в Safari:
+ Чтобы увидеть неработающие формы, достаточно открыть демо в Firefox:
 
 <img src="http://img-fotki.yandex.ru/get/6836/5091629.a1/0_855c4_79b5ff4_M.jpg"/>
 
