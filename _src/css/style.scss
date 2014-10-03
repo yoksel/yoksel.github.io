@@ -15,7 +15,10 @@ BODY {
         }
     }
 A {
-    color: $base-link-color;
+    color: darken($base-link-color, 10);
+    &:visited {
+        color: lighten($base-link-color, 5);
+        }
     &:hover {
         text-decoration: none;
         color: lighten($base-link-color, 20);

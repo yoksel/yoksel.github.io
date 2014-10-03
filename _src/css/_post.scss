@@ -98,7 +98,7 @@
             margin: 0 0 5px 25px;
             }
         UL LI:before {
-                content: "—";
+                content: "\2014";
                 position: absolute;
                 margin-left: -20px;
                 color: #AAA;
@@ -200,7 +200,7 @@
     DD {
         margin-bottom: 5px;
         &:before {
-            content: "—";
+            content: "\2014";
             margin-right: 5px;
             }
         }
