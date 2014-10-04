@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        BODY {
+            font: 17px/1.4 Georgia;
+            color: #222;
+            }
+        A {
+            color: steelblue;
+            }
+        H1 {
+            margin-bottom: .8em;
+            font-size: 2em;
+            font-style: italic;
+            }
+        H2 {
+            margin-bottom: .6em;
+            font-size: 1.2em;
+            font-style: italic;
+            }
+        P {
+            margin: 1em 0;
+            }
+        UL, LI {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            }
+        IFRAME {
+            border: 0;
+            }
+        .wrapper {
+            width: 450px;
+            margin: 2em auto;
+            }
+        .yes, .no {
+            padding: 3px 5px;
+            border-radius: 5px;
+            color: #FFF;
+            }
+        .yes {
+            background: #7ED321;
+            }
+        .no {
+            background: #FF4646;
+            }
+        UL {
+            margin-top: 1.5em;
+            padding-top: 1.5em;
+            border-top: 1px solid #DDD;
+            }
+        LI {
+            float: left;
+            width: 50%;
+            margin-bottom: 1.2em;
+            &:nth-child(2n){
+                float: right;
+                }
+            }
+        .bg {
+            width: 150px;
+            height: 150px;
+            background-image: url(http://yoksel.github.io/assets/img/svg/yes-no.svg#yes);
+            }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>How browsers support <a href="http://simurai.com/blog/2012/04/02/svg-stacks/">Svg-stacks?</a></h1>
+
+        <p>I use this url: http://yoksel.github.io/assets/img/svg/yes-no.svg#yes</p>
+
+        <p>With support we'll see <span class="yes">Yes</span>, without - <span class="no">No</span></p>
+
+        <ul>
+            <li>
+                <h2>Embed:</h2>
+              <embed src="http://yoksel.github.io/assets/img/svg/yes-no.svg#yes"
+                  width="150" height="150"/>
+            </li>
+            <li>
+                <h2>Iframe</h2>
+              <iframe src="http://yoksel.github.io/assets/img/svg/yes-no.svg#yes"
+                  width="150px" height="150px"></iframe>
+            </li>
+            <li>
+                <h2>Img</h2>
+                <img src="http://yoksel.github.io/assets/img/svg/yes-no.svg#yes">
+            </li>
+            <li>
+                <h2>Background</h2>
+                <div class="bg"></div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
