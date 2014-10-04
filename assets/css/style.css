@@ -94,12 +94,12 @@ BODY {
       padding: 30px 0 0; } }
 
 A {
-  color: #38678f; }
+  color: steelblue; }
   A:visited {
-    color: #568ebd; }
+    color: #8db3d3; }
   A:hover {
     text-decoration: none;
-    color: #8db3d3; }
+    color: tomato; }
 
 /* Headers
 -------------------------------- */

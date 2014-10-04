@@ -15,13 +15,13 @@ BODY {
         }
     }
 A {
-    color: darken($base-link-color, 10);
+    color: $base-link-color;
     &:visited {
-        color: lighten($base-link-color, 5);
+        color: lighten($base-link-color, 20);
         }
     &:hover {
         text-decoration: none;
-        color: lighten($base-link-color, 20);
+        color: tomato;
         }
     }
 /* Headers
