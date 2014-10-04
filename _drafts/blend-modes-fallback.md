@@ -6,21 +6,27 @@ image:
 desc:
 
 links:
-- url: http://www.w3.org/TR/SVG/filters.html
-  name: SVG Filter Effects
-- url: http://caniuse.com/#feat=css-shapes
-  name: CSS Shapes
+- url: http://dev.w3.org/fxtf/compositing-1
+  name: Compositing and Blending Level 1
 - url: http://caniuse.com/#feat=css-backgroundblendmode
   name: background-blend-mode
 - url: http://caniuse.com/#feat=css-mixblendmode
   name: mix-blend-mode
+- url: http://dev.w3.org/csswg/css-shapes/
+  name: CSS Shapes Module Level 1
+- url: http://caniuse.com/#feat=css-shapes
+  name: CSS Shapes
+- url: http://www.w3.org/TR/SVG/filters.html
+  name: SVG Filter Effects
+- url: http://caniuse.com/#feat=svg-filters
+  name: SVG filters
 - url: /css-and-svg-masks
   name: CSS и SVG маски
 - url: /svg-in-ie8
   name: Грабли на чистом SVG
 
 ---
-Не так давно в <a href="https://developer.mozilla.org/en-US/Firefox/Releases/32">Firefox 32</a> включили поддержку <code>mix-blend-mode</code>, a в <a href="http://www.chromestatus.com/features/5163890719588352">Chrome 37</a> - поддержку <a href="http://dev.w3.org/csswg/css-shapes/">CSS shapes</a>, то есть возможность управлять формой, по которой текст будет обтекать элемент. Обе технологии выглядят очень интересно, так что я решила попробовать их в действии, заодно выяснив как будет выглядеть страница в браузерах, где они не поддерживаются.
+Не так давно в <a href="https://developer.mozilla.org/en-US/Firefox/Releases/32">Firefox 32</a> включили поддержку <code>mix-blend-mode</code>, a в <a href="http://www.chromestatus.com/features/5163890719588352">Chrome 37</a> - <a href="http://dev.w3.org/csswg/css-shapes/">CSS shapes</a>, то есть возможность управлять формой, по которой текст будет обтекать элемент. Обе технологии выглядят очень интересно, так что я решила попробовать их в действии, заодно выяснив как будет выглядеть страница в браузерах, где они не поддерживаются.
 
 <!--more-->
 В процессе написания статьи Safari обновился до версии 7.1, и в нем тоже появилась поддержка режимов наложения. Таким образом, режим наложения слоев фона имеет уже <a href="http://caniuse.com/#feat=css-backgroundblendmode">довольно неплохую поддержку браузерами</a>, с наложением друг на друга элементов страницы дела пока обстоят <a href="http://caniuse.com/#feat=css-mixblendmode">похуже</a>, но я уверена, что у них всё впереди.
@@ -160,7 +166,7 @@ SVG-фильтры для SVG элементов работают во всех 
 <p data-height="500" data-theme-id="4974" data-slug-hash="gocDK" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/gocDK/'>Resizing image with SVG-filter</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-На фонах с четким рисунком несовпадение фона будет очень заметно.
+На фонах с четким рисунком несовпадение и "размыливание" фона будет очень заметно.
 
 Если исходное изображение имеет белые поля, можно попробовать использовать SVG-маску. Для этого делается копия картинки, где белые поля сделаны прозрачными или залиты черным, а часть картинки, которая должна быть показана - полностью белая. Картинка для рыцаря выглядит вот так:
 
