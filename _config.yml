@@ -96,3 +96,5 @@ links_usefull:
   name: Символы юникода
 - url: https://github.com/miripiruni/frontdesk
   name: Frontdesk
+- url: http://yoksel.github.io/url-encoder/
+  name: URL-encoder для SVG
