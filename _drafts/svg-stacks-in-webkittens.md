@@ -17,4 +17,7 @@ links:
 
 Новые возможности обновленного Safari породили целую череду приятных открытий. Одним из них стало то, что SVG-стеки начали поддерживаться браузерами на основе Webkit. <!--more-->Согласно <a href="http://caniuse.com/#feat=svg-fragment">caniuse.com</a>, в данный момент поддержка стеков выглядит вот так:
 
-<img src="http://img-fotki.yandex.ru/get/3407/5091629.a1/0_856de_50bad275_orig">
+<img src="http://img-fotki.yandex.ru/get/3407/5091629.a1/0_856de_50bad275_orig"/>
+
+
+<img src="http://yoksel.github.io/about-svg/assets/img/preview/stacks-scheme.svg" width="600" height="454"/>
