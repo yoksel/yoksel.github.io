@@ -68,7 +68,7 @@ links:
 В Опере:
 <code>opera://flags/#enable-experimental-web-platform-features</code>
 
-В Chrome/Opera/Safari демо выглядит вот так:
+В Safari и Chrome/Opera с флагами демо выглядит вот так:
 
 <img src="http://img-fotki.yandex.ru/get/4805/5091629.a1/0_855c2_8fe321a9_M.jpg"/>
 
