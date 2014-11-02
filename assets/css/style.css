@@ -87,8 +87,8 @@ H1, H2, H3, H4, H5, H6 {
 BODY {
   padding: 32px;
   background: #EEE;
-  font: 16px/1.5 "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  color: black; }
+  font: 16px/1.5 Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  color: #000; }
   @media (max-width: 900px) {
     BODY {
       padding: 30px 0 0; } }
@@ -146,13 +146,13 @@ HR {
   height: 0;
   background: transparent;
   border: 0;
-  border-bottom: 1px solid #dddddd; }
+  border-bottom: 1px solid #DDD; }
 
 .font--small {
   font-size: .8em; }
 
 .svg {
-  border: 1px dashed #dddddd; }
+  border: 1px dashed #DDD; }
 
 .logo {
   font-family: 'Lobster', Georgia, cursive; }
@@ -226,6 +226,9 @@ P:empty {
 .disp-inblock {
   display: inline-block; }
 
+.vlm {
+  vertical-align: middle; }
+
 /* Codes
 -------------------------------- */
 PRE,
@@ -272,7 +275,7 @@ PRE CODE {
 
 .l-content {
   padding-bottom: 32px;
-  border-bottom: 1px solid #dddddd; }
+  border-bottom: 1px solid #DDD; }
 
 .l-main,
 .l-aside {
@@ -296,7 +299,7 @@ PRE CODE {
   margin-right: 0;
   margin-bottom: 32px;
   padding-bottom: 32px;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #DDD;
   /*@media (min-width: $break-point ) {
       float: left;
       width: 48.5%;
@@ -322,7 +325,7 @@ PRE CODE {
       margin-left: 0; }
       .l-aside .aside__widget {
         padding-top: 32px;
-        border-top: 1px solid #dddddd; } }
+        border-top: 1px solid #DDD; } }
 
 /* Header
 -------------------------------- */
@@ -351,7 +354,7 @@ PRE CODE {
 .header__logo A {
   text-decoration: none;
   text-shadow: 0 0 5px #7f0b22;
-  color: white; }
+  color: #FFF; }
 
 .header__logo .logo__no-link,
 .header__logo A {
@@ -479,7 +482,7 @@ PRE CODE {
   display: block;
   margin-bottom: 32px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #DDD;
   font-style: italic;
   font-size: .9em;
   color: #AAA; }
@@ -497,14 +500,14 @@ PRE CODE {
     max-width: 100%;
     height: auto; }
     .post__text IMG:not([class='i-ljuser-userhead']) {
-      border: 1px solid #dddddd; }
+      border: 1px solid #DDD; }
   .post__text TABLE {
     width: 100%; }
   .post__text .table--w-auto {
     width: auto; }
   .post__text TH,
   .post__text TD {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #DDD;
     padding: 7px;
     text-align: left; }
   .post__text TH {
@@ -512,7 +515,7 @@ PRE CODE {
     font-weight: bold;
     font-size: 1.2em; }
   .post__text THEAD TH {
-    border-top: 1px solid #dddddd;
+    border-top: 1px solid #DDD;
     background: #EEE; }
   .post__text UL {
     margin-bottom: 32px; }
@@ -548,7 +551,7 @@ PRE CODE {
 .jsbin {
   width: 100%;
   margin-bottom: 32px;
-  border: 1px solid #dddddd; }
+  border: 1px solid #DDD; }
 
 .p-hide-demo .jsbin[data-src] {
   display: none; }
@@ -592,8 +595,8 @@ PRE CODE {
 .wrapper--selector {
   display: inline-block;
   width: 120px;
-  background: -webkit-linear-gradient(0deg, #bbbbbb 1px, rgba(255, 255, 255, 0) 1px) repeat-x right 90%;
-  background: linear-gradient(90deg, #bbbbbb 1px, rgba(255, 255, 255, 0) 1px) repeat-x right 90%;
+  background: -webkit-linear-gradient(0deg, #BBB 1px, rgba(255, 255, 255, 0) 1px) repeat-x right 90%;
+  background: linear-gradient(90deg, #BBB 1px, rgba(255, 255, 255, 0) 1px) repeat-x right 90%;
   -webkit-background-size: 3px 1px;
   background-size: 3px 1px; }
 
@@ -625,13 +628,13 @@ PRE CODE {
   color: #AAA; }
 
 .table--with-border {
-  border: 1px solid #dddddd;
+  border: 1px solid #DDD;
   border-bottom: 0; }
   .table--with-border THEAD {
     font-weight: bold; }
   .table--with-border TD {
     text-align: center;
-    border-left: 1px solid #dddddd; }
+    border-left: 1px solid #DDD; }
   .table--with-border TD:first-child {
     border-left: 0; }
 
@@ -647,7 +650,7 @@ PRE CODE {
 
 .post__tags {
   padding-top: 32px;
-  border-top: 1px solid #dddddd; }
+  border-top: 1px solid #DDD; }
   .post__tags .item {
     display: inline-block; }
 
@@ -659,7 +662,7 @@ PRE CODE {
 .post__nav {
   margin-top: 32px;
   padding-top: 32px;
-  border-top: 1px solid #dddddd; }
+  border-top: 1px solid #DDD; }
   @media (max-width: 900px) {
     .post__nav {
       padding-top: 8px;
@@ -718,7 +721,7 @@ PRE CODE {
 .widget--disqus {
   margin-top: 32px;
   padding-top: 32px;
-  border-top: 1px solid #dddddd; }
+  border-top: 1px solid #DDD; }
 
 /* Aside
 -------------------------------- */
@@ -1018,3 +1021,5 @@ pre.line-numbers > code {
 
 .token a {
   color: inherit; }
+
+/*# sourceMappingURL=style.css.map */
