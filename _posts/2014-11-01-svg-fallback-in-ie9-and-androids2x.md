@@ -2,7 +2,7 @@
 layout: default
 title: Трюк на CSS для поддержки SVG в старых браузерах
 type: post
-image: https://img-fotki.yandex.ru/get/6839/5091629.a3/0_86374_e2ad9cf7_orig.png
+image: https://img-fotki.yandex.ru/get/6734/5091629.a3/0_86377_63bd7b1e_orig
 desc: "Есть решение для замены инлайнового SVG на фоновые картинки в браузерах, где инлайновый SVG не поддерживается. Оно построено на допущении, что на странице есть нужный нам класс .ie8, по которому SVG-элементам включаются фоновые изображения. Мне стало интересно: можно ли обеспечить поддержку способа во всех старых браузерах, используя только CSS?"
 
 links:
@@ -35,20 +35,22 @@ links:
  SVG:
 
 <pre><code class="language-markup">&lt;svg xmlns="http://www.w3.org/2000/svg" class="svg-icon">
-      &lt;circle r="55" cx="50%" cy="50%" fill="greenyellow"/>
-      &lt;text x="50%" y="50%" dy=".4em" text-anchor="middle" style="font: 38px/1 Trebuchet MS; fill: #FFF">SVG&lt;/text>
+    &lt;circle r="55" cx="50%" cy="50%" fill="yellowgreen"/>
+    &lt;text x="50%" y="50%" dy=".4em" text-anchor="middle"
+          style="font: 38px/1 Trebuchet MS; fill: #FFF">SVG&lt;/text>
 &lt;/svg></code></pre>
 
 CSS:
 
 <pre><code class="language-css">.svg-icon {
-  display: inline-block;
-  margin: 3em 2em;
-  width: 180px;
-  height: 130px;
-  background: url(https://img-fotki.yandex.ru/get/5807/5091629.a3/0_86371_b2660de0_orig) no-repeat center center;
-  border: 1px solid #555;
-  }</code></pre>
+    display: inline-block;
+    margin: 3em 2em;
+    width: 180px;
+    height: 130px;
+    background: url(https://img-fotki.yandex.ru/get/5807/5091629.a3/0_86371_b2660de0_orig)
+                no-repeat center center;
+    border: 1px solid #555;
+    }</code></pre>
 
 Если SVG не поддерживается браузером, мы увидим — только эту фоновую картинку:
 
@@ -65,11 +67,11 @@ CSS:
 
 Картинки для понятности:
 
-<img src="https://img-fotki.yandex.ru/get/6839/5091629.a3/0_86374_e2ad9cf7_orig.png" class="vlm"/> — сейчас демо выглядит вот так
+<img src="https://img-fotki.yandex.ru/get/6734/5091629.a3/0_86377_63bd7b1e_orig" class="vlm"/> — сейчас демо выглядит вот так
 
 <img src="https://img-fotki.yandex.ru/get/6828/5091629.a3/0_86372_1655bbc0_orig.png" class="vlm"/> — так оно должно выглядеть в браузерах без поддержки SVG
 
-<img src="https://img-fotki.yandex.ru/get/6839/5091629.a3/0_86373_7b9a03fd_orig.png" class="vlm"/> — а вот так в браузерах, где SVG поддерживается
+<img src="https://img-fotki.yandex.ru/get/2914/5091629.a3/0_86378_6105ccc8_orig" class="vlm"/> — а вот так в браузерах, где SVG поддерживается
 
 То есть по умолчанию всегда показывается PNG-заглушка, и её нужно скрыть только в современных браузерах. Нам нужна некая конструкция в CSS, поддержка которой в разных браузерах совпадает с поддержкой SVG.
 
