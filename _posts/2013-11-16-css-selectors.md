@@ -45,7 +45,7 @@ post_nav:
 
 <ul>
   <li>по типу (<code>H1</code>, <code>TD</code>, <code>HR</code>...);</li>
-  <li>универсальный селектор - <code>*</code> - обозначает элемент любого типа;</li>
+  <li>универсальный селектор — <code>*</code> — обозначает элемент любого типа;</li>
   <li>селекторы атрибутов (<code>[data-name]</code>, <code>[data-name$="hidden"]</code>);</li>
   <li>селекторы по классу (<code>.main</code>, <code>.header__nav</code>);</li>
   <li>селекторы по ID (<code>#form</code>, <code>#submit</code>);</li>
@@ -76,8 +76,8 @@ post_nav:
 	<li> по классу (<code>.header-image</code>);</li>
 	<li> обращение к потомку через родителя (<code>UL A</code>, <code>.sidebar .widget</code>);</li>
 	<li> состояния ссылок <code>A:link</code>, <code>A:visited</code>, <code>A:hover</code>;</li>
-	<li> псевдоэлемент для первой строки текста - <code>P::first-line</code>;</li>
-	<li> псевдоэлемент для первого символа в тексте - <code>P::first-letter</code>.</li>
+	<li> псевдоэлемент для первой строки текста — <code>P::first-line</code>;</li>
+	<li> псевдоэлемент для первого символа в тексте — <code>P::first-letter</code>.</li>
 </ul>
 Не густо : )
 
@@ -86,8 +86,8 @@ post_nav:
 В этой спецификации добавилось много интересного:
 
 <ul>
-<li id="asteriks" data-name="*"><p><code>*</code> - универсальный селектор. Например, <code>* {margin: 0; }</code> уберет отступы у всех элементов на странице.</p></li>
-<li id="has-attr" data-name="E[foo]"><p><code>E[foo]</code> - элементы с заданым атрибутом. </p>
+<li id="asteriks" data-name="*"><p><code>*</code> — универсальный селектор. Например, <code>* {margin: 0; }</code> уберет отступы у всех элементов на странице.</p></li>
+<li id="has-attr" data-name="E[foo]"><p><code>E[foo]</code> — элементы с заданым атрибутом. </p>
 
 <p>Например, код:</p>
 
@@ -99,7 +99,7 @@ post_nav:
 
 <iframe src="http://jsbin.com/aMakIZI/39/embed?output" style="height: 270px" class="jsbin"></iframe></li>
 
-<li id="has-attr-val" data-name="E[foo='bar']"><p><code>E[foo="bar"]</code> - элементы, у которых атрибут имеет заданное значение.</p>
+<li id="has-attr-val" data-name="E[foo='bar']"><p><code>E[foo="bar"]</code> — элементы, у которых атрибут имеет заданное значение.</p>
 
 <pre class="language-css"><code class="language-css">P[data-content="hello"] {
   border: 2px solid orange;
@@ -107,7 +107,7 @@ post_nav:
 
 <iframe src="http://jsbin.com/aMakIZI/40/embed?output" style="height: 270px" class="jsbin"></iframe></li>
 
-<li id="has-attr-val-wtsp" data-name="E[foo~='bar']"><p><code>E[foo~="bar"]</code> - элемент, который имеет атрибут со списком значений, разделенных пробелом, одно из которых равно заданному.</p>
+<li id="has-attr-val-wtsp" data-name="E[foo~='bar']"><p><code>E[foo~="bar"]</code> — элемент, который имеет атрибут со списком значений, разделенных пробелом, одно из которых равно заданному.</p>
 
 <pre class="language-css"><code class="language-css">P[data-content~="hello"] {
   border: 2px solid yellowgreen;
@@ -115,7 +115,7 @@ post_nav:
 
 <iframe src="http://jsbin.com/aMakIZI/41/embed?output" style="height: 270px" class="jsbin"></iframe></li>
 
-<li id="has-attr-val-hpsp" data-name="E[foo|='bar']"><p><code>E[foo|="bar"]</code> - элемент, который имеет атрибут со списком значений, разделенных дефисом, который начинается с заданного.</p>
+<li id="has-attr-val-hpsp" data-name="E[foo|='bar']"><p><code>E[foo|="bar"]</code> — элемент, который имеет атрибут со списком значений, разделенных дефисом, который начинается с заданного.</p>
 
 <pre class="language-css"><code class="language-css">P[data-content|="hello"] {
   border: 2px solid steelblue;
@@ -123,7 +123,7 @@ post_nav:
 
 <iframe src="http://jsbin.com/aMakIZI/42/embed?output" style="height: 270px" class="jsbin"></iframe></li>
 
-<li id="first-child" data-name="E:first-child"><p><code>E:first-child</code> - псевдоэлемент, обращающийся к первому элементу из нескольких внутри родителя.</p>
+<li id="first-child" data-name="E:first-child"><p><code>E:first-child</code> — псевдоэлемент, обращающийся к первому элементу из нескольких внутри родителя.</p>
 
 <pre class="language-css"><code class="language-css">P:first-child {
   background: gold;
@@ -133,9 +133,9 @@ post_nav:
 
 <p>Селектор выбирает первый элемент только если он соответствует заданному тегу или классу и только если он является самым первым потомком родителя.</p>
 
-<p>Для выбора первого элемента из списка дочерних элементов определенного типа существует другой селектор - <code>:first-of-type</code>, добавленный в CSS3.</p></li>
+<p>Для выбора первого элемента из списка дочерних элементов определенного типа существует другой селектор — <code>:first-of-type</code>, добавленный в CSS3.</p></li>
 
-<li id="lang" data-name="E:lang(fr)"><p><code>E:lang(fr)</code> - выбирает элементы на заданном языке. Язык элемента может быть получен из HTTP-заголовков, отдаваемых сервером, из <code>meta</code>-тега, заданного в <code>head</code>, либо если у элемента задан атрибут <code>lang</code></p>
+<li id="lang" data-name="E:lang(fr)"><p><code>E:lang(fr)</code> — выбирает элементы на заданном языке. Язык элемента может быть получен из HTTP-заголовков, отдаваемых сервером, из <code>meta</code>-тега, заданного в <code>head</code>, либо если у элемента задан атрибут <code>lang</code></p>
 
 <p>Например, этот код добавит малиновый фон всем элементам, для которых язык определен как русский:</p>
 
@@ -145,12 +145,12 @@ post_nav:
 
 <iframe src="http://jsbin.com/aMakIZI/71/embed?output" style="height: 270px" class="jsbin"></iframe></li>
 
-<li id="before" data-name="E::before"><p><code>E::before</code> - генерируемый контент перед заданным элементом.</p></li>
-<li id="after" data-name="E::after"><p><code>E::after</code> - генерируемый контент после элемента.</p>
+<li id="before" data-name="E::before"><p><code>E::before</code> — генерируемый контент перед заданным элементом.</p></li>
+<li id="after" data-name="E::after"><p><code>E::after</code> — генерируемый контент после элемента.</p>
 
 <iframe src="http://jsbin.com/aMakIZI/11/embed?output" style="height: 150px" class="jsbin"></iframe></li>
 
-<li id="child" data-name="E > F"><p><code>E > F</code> - выбирает элемент, только если он является прямым потомком родителя (ни во что больше не вложен).</p>
+<li id="child" data-name="E > F"><p><code>E > F</code> — выбирает элемент, только если он является прямым потомком родителя (ни во что больше не вложен).</p>
 
 <pre class="language-css"><code class="language-css">DIV > A {
   background: darkviolet;
@@ -159,7 +159,7 @@ post_nav:
 
 <iframe src="http://jsbin.com/aMakIZI/44/embed?output" style="height: 320px" class="jsbin"></iframe></li>
 
-<li id="next" data-name="E + F"><p><code>E + F</code> - выбирает второй заданный элемент, который следует непосредственно после первого заданного.</p>
+<li id="next" data-name="E + F"><p><code>E + F</code> — выбирает второй заданный элемент, который следует непосредственно после первого заданного.</p>
 
 <pre class="language-css"><code class="language-css">P + H3 {
   background: darkturquoise;

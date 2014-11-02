@@ -22,7 +22,7 @@ links:
 Заливка элемента.
 
 Возможные значения: <code>none</code>, ключевые слова, цвета, паттерны и градиенты.
-Значение по умолчанию - <code>black</code>.
+Значение по умолчанию — <code>black</code>.
 
 <svg class="svg" width="200" height="200"><defs><symbol id="s-rect"><rect width="70" height="70"/></symbol><linearGradient id="g-green" x1="0%" y1="0%" x2="0%" y2="90%">  <stop offset="0%" stop-color="yellowgreen" />  <stop offset="90%" stop-color="green" /></linearGradient></defs><use xlink:href="#s-rect" x="20" y="20" fill="hsla(348, 83%, 47%,.3)"/><use xlink:href="#s-rect" x="110" y="20" fill="rgb(255, 215, 0)"/> <use xlink:href="#s-rect" x="20" y="110" fill="url(#g-green)"/><use xlink:href="#s-rect" x="110" y="110" fill="skyblue"/>  </svg>
 
@@ -74,7 +74,7 @@ links:
     </div>
 </div>
 
-<code>fill-rule="nonzero"</code> интересно ведет себя для фигур из двух путей. Например, если внешний круг нарисован по часовой стрелке, а внутренний в обратном направлении, центральный круг останется без заливки (слева). Если же оба круга нарисованы в одном направлении - фигура зальется полностью (справа):
+<code>fill-rule="nonzero"</code> интересно ведет себя для фигур из двух путей. Например, если внешний круг нарисован по часовой стрелке, а внутренний в обратном направлении, центральный круг останется без заливки (слева). Если же оба круга нарисованы в одном направлении — фигура зальется полностью (справа):
 
 <div class="clear">
     <div class="column column-left">

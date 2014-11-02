@@ -11,13 +11,13 @@ desc: Возможности управления фонами через CSS в
 
 <!--more-->
 
-Общий принцип такой: создается градиент, который нужно повторить. По умолчанию он займет всю доступную площадь, но если задать размер фону - получится картинка желаемого размера, которая замостит собой весь фон элемента.
+Общий принцип такой: создается градиент, который нужно повторить. По умолчанию он займет всю доступную площадь, но если задать размер фону — получится картинка желаемого размера, которая замостит собой весь фон элемента.
 Если значения градиента задавать в процентах или <code>em</code>, потом можно будет легко управлять размером узора редактируя размер шрифта и/или <code>background-size</code>.
 
 Например, можно сделать простые полоски:
 
-<pre><code class="language-css">background: linear-gradient( 
-  white 50%, 
+<pre><code class="language-css">background: linear-gradient(
+  white 50%,
   transparent 50%);
   background-size: 2em 2em;
   background-color: black;</code></pre>
@@ -56,7 +56,7 @@ desc: Возможности управления фонами через CSS в
 
 <pre><code class="language-css">background-size: 7em 7em, 5em 5em, 3em 3em, 1em 1em;</code></pre>
 
-Это простые числа, то есть те, которые не делятся ни на что кроме себя. 
+Это простые числа, то есть те, которые не делятся ни на что кроме себя.
 
 Вот как выглядит результат (<a href="http://cdpn.io/khprw">ссылка на полный размер</a>):
 
@@ -84,8 +84,8 @@ desc: Возможности управления фонами через CSS в
 Примерный код:
 
 <pre><code class="language-css">background: linear-gradient(-45deg,
-      $transparent 50%, 
-      darkkhaki 50%, darkkhaki 60%, 
+      $transparent 50%,
+      darkkhaki 50%, darkkhaki 60%,
       $transparent 60%
       );
 </code></pre>
@@ -95,13 +95,13 @@ desc: Возможности управления фонами через CSS в
 <p data-height="268" data-theme-id="0" data-slug-hash="uBdhC" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/uBdhC'>uBdhC</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-В примере хорошо видно, что паттерн состоит из повторяющихся квадратиков, градиент идет из нижнего левого угла в верхний правый, но в противоположных углах ничего нет, и линия получается прерывистой. 
+В примере хорошо видно, что паттерн состоит из повторяющихся квадратиков, градиент идет из нижнего левого угла в верхний правый, но в противоположных углах ничего нет, и линия получается прерывистой.
 
 Чтобы закрыть пробелы, добавим ещё один градиент:
 
 <pre><code class="language-css">background: linear-gradient(-45deg,
-      $transparent 50%, 
-      darkkhaki 50%, darkkhaki 60%, 
+      $transparent 50%,
+      darkkhaki 50%, darkkhaki 60%,
       $transparent 60%
       ),
     linear-gradient(-45deg,
@@ -126,8 +126,8 @@ desc: Возможности управления фонами через CSS в
 Примерный код:
 
 <pre><code class="language-css">background: linear-gradient(to left top,
-      transparent 48.9%, 
-      skyblue 51%, skyblue 78%, 
+      transparent 48.9%,
+      skyblue 51%, skyblue 78%,
       transparent 80%
       ),
     linear-gradient(to left top,
@@ -136,14 +136,14 @@ desc: Возможности управления фонами через CSS в
       );
   background-size: 2em 6em;</code></pre>
 
-В последней строчке задан градиент прямоугольной формы. Благодаря направлению и значениям остановок в процентах можно сколько угодно менять его размеры - изменится угол наклона линий, но сам паттерн от этого не пострадает:
+В последней строчке задан градиент прямоугольной формы. Благодаря направлению и значениям остановок в процентах можно сколько угодно менять его размеры — изменится угол наклона линий, но сам паттерн от этого не пострадает:
 
 <p data-height="268" data-theme-id="0" data-slug-hash="qlCjz" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/qlCjz'>Diagonal stripes</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 В некоторых случаях края линий становятся зубчатыми, причем их отрисовка зависит от браузера: Chrome справляется лучше, в Firefox видны ступеньки.
 Чтобы сделать край плавным, можно сделать стык между цветами не четкий, а размытый, шириной 1-2%.
-Также следует помнить о проблеме с прозрачными цветами в Firefox - это решается использованием нужного оттенка с полной прозрачностью.
+Также следует помнить о проблеме с прозрачными цветами в Firefox — это решается использованием нужного оттенка с полной прозрачностью.
 
 Экспериментируя с линиями можно получить другие интересные узоры:
 
@@ -173,8 +173,8 @@ desc: Возможности управления фонами через CSS в
 <p data-height="268" data-theme-id="0" data-slug-hash="eolqw" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/eolqw'>Corners</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-Чтобы граница градиента была ровной, без зубчиков, границу прозрачности нужно делать чуть дальше, чем точка остановки цвета. 
-Вебкиты, как обычно, лучше справляются со сглаживанием. 
+Чтобы граница градиента была ровной, без зубчиков, границу прозрачности нужно делать чуть дальше, чем точка остановки цвета.
+Вебкиты, как обычно, лучше справляются со сглаживанием.
 
 Вот ещё пример:
 
@@ -197,8 +197,8 @@ desc: Возможности управления фонами через CSS в
 <p data-height="268" data-theme-id="0" data-slug-hash="ijxKy" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/ijxKy'>Circles</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-Минусы таких паттернов обычно в длине и сложности кода, а также в недостаточной поддержке старыми браузерами. Для них может потребоваться картинка. 
-Плюсы - градиенты ничего не весят, их не надо запрашивать с сервера, и можно легко менять цвета и размер узора.
+Минусы таких паттернов обычно в длине и сложности кода, а также в недостаточной поддержке старыми браузерами. Для них может потребоваться картинка.
+Плюсы — градиенты ничего не весят, их не надо запрашивать с сервера, и можно легко менять цвета и размер узора.
 
 Больше паттернов можно увидеть во вдохновляющей галерее от Lea Verou: <a href="http://lea.verou.me/css3patterns/">lea.verou.me/css3patterns/</a>.
 

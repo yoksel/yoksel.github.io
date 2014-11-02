@@ -9,14 +9,14 @@ status: publish
 type: post
 published: true
 
-links: 
+links:
 - url: /css-figury/
   name: Css-фигуры
 ---
-<strong>Border-radius</strong> - это свойство, добавляющее элементам скругление углов.
+<strong>Border-radius</strong> — это свойство, добавляющее элементам скругление углов.
 
-Скругление можно задать для всего элемента сразу: 
-<code>border-radius: 10px;</code> 
+Скругление можно задать для всего элемента сразу:
+<code>border-radius: 10px;</code>
 
 или разным углам поотдельности, например:
 <code>border-top-left-radius: 25px;</code>
@@ -26,7 +26,7 @@ links:
 
 <iframe class="jsbin" style="height: 250px" src="http://jsbin.com/eCahIfa/2/embed?output"></iframe>
 
-Если задать два значения<!--more-->, первое будет отвечать за верхний левый и нижний правый углы, а второе - за верхний правый и нижний левый:
+Если задать два значения<!--more-->, первое будет отвечать за верхний левый и нижний правый углы, а второе — за верхний правый и нижний левый:
 
 <iframe class="jsbin" style="height: 180px" src="http://jsbin.com/eCahIfa/4/embed?output"></iframe>
 

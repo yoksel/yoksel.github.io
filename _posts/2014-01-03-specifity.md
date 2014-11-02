@@ -44,7 +44,7 @@ links:
     background: mediumspringgreen;
     }</code></pre>
 
-Казалось бы, ссылки в тексте должны получить оранжевый фон, а ссылки в списке - зеленый, но нет:
+Казалось бы, ссылки в тексте должны получить оранжевый фон, а ссылки в списке — зеленый, но нет:
 
 <iframe class="jsbin" style="height: 270px" src="http://jsbin.com/iJeqAru/5/embed?output"></iframe>
 
@@ -73,26 +73,26 @@ links:
 <span class="wrapper--selector"><code>LI</code></span> <code class="specifity">0,0,0,<b>1</b></code>
 <span class="wrapper--selector"><code>*</code></span> <code class="specifity">0,0,0,0</code>
 
-У стилей, заданных в атрибуте <code>style</code>, на первой позиции будет единица - <code class="specifity"><b>1</b>,0,0,0</code>. Это самая высокая специфичность, которая перевешивает свойства, заданные другими способами.
+У стилей, заданных в атрибуте <code>style</code>, на первой позиции будет единица — <code class="specifity"><b>1</b>,0,0,0</code>. Это самая высокая специфичность, которая перевешивает свойства, заданные другими способами.
 
 Переопределить стили, заданные в <code>style</code>, можно дописав <code>!important</code> к значению свойства в таблице стилей.
 
-Обратный вариант - универсальный селектор <code>*</code>. Он не имеет веса: <code class="specifity">0,0,0,0</code>.
+Обратный вариант — универсальный селектор <code>*</code>. Он не имеет веса: <code class="specifity">0,0,0,0</code>.
 
 <b>Примеры:</b>
 
-<span class="wrapper--selector"><code>LI</code></span> <code class="specifity">0,0,0,<b>1</b></code> - селектор по тегу
-<span class="wrapper--selector"><code>UL LI</code></span> <code class="specifity">0,0,0,<b>2</b></code> - селектор c двумя тегами весит больше, чем с одним.
-<span class="wrapper--selector"><code>.orange</code></span> <code class="specifity">0,0,<b>1</b>,0</code> - селектор с классом весит больше, чем селектор с тегом.
-<span class="wrapper--selector"><code>.orange A SPAN</code></span> <code class="specifity">0,0,<b>1</b>,<b>2</b></code> - селектор перевесит предыдущий, потому что помимо класса содержит два тега.
-<span class="wrapper--selector"><code>#page .orange</code></span> <code class="specifity">0,<b>1</b>,<b>1</b>,0</code> - селектор с ID перевесит всё, кроме inline-стилей.
+<span class="wrapper--selector"><code>LI</code></span> <code class="specifity">0,0,0,<b>1</b></code> — селектор по тегу
+<span class="wrapper--selector"><code>UL LI</code></span> <code class="specifity">0,0,0,<b>2</b></code> — селектор c двумя тегами весит больше, чем с одним.
+<span class="wrapper--selector"><code>.orange</code></span> <code class="specifity">0,0,<b>1</b>,0</code> — селектор с классом весит больше, чем селектор с тегом.
+<span class="wrapper--selector"><code>.orange A SPAN</code></span> <code class="specifity">0,0,<b>1</b>,<b>2</b></code> — селектор перевесит предыдущий, потому что помимо класса содержит два тега.
+<span class="wrapper--selector"><code>#page .orange</code></span> <code class="specifity">0,<b>1</b>,<b>1</b>,0</code> — селектор с ID перевесит всё, кроме inline-стилей.
 
 Теперь сравним селекторы из исходного примера:
 
 <span class="wrapper--selector"><code>#container A</code></span> <code class="specifity">0,<b>1</b>,0,<b>1</b></code>
 <span class="wrapper--selector"><code>.list A</code></span> <code class="specifity">0,0,<b>1</b>,<b>1</b></code>
 
-<code class="specifity">0,<b>1</b>,0,<b>1</b></code> <b>&gt;</b> <code class="specifity">0,0,<b>1</b>,<b>1</b></code>  - хорошо видно, что селектор с ID весит больше, чем селектор с классом, поэтому все ссылки имеют оранжевый фон, хотя ниже в коде им задан зеленый.
+<code class="specifity">0,<b>1</b>,0,<b>1</b></code> <b>&gt;</b> <code class="specifity">0,0,<b>1</b>,<b>1</b></code>  — хорошо видно, что селектор с ID весит больше, чем селектор с классом, поэтому все ссылки имеют оранжевый фон, хотя ниже в коде им задан зеленый.
 
 <h4>Варианты решений:</h4>
 
@@ -112,7 +112,7 @@ links:
 В общих случаях использовать <code>!important</code> не рекомендуется, но может пригодиться, если нужно, чтобы часто используемый блок на всех страницах выглядел одинаково, независимо от окружения.
 В любом случае нужно всегда четко понимать зачем вы его используете.
 
-<b>2.</b> Следующий очевидный способ - добавить <code>#container</code> ко второму селектору, чтобы увеличить его вес:
+<b>2.</b> Следующий очевидный способ — добавить <code>#container</code> ко второму селектору, чтобы увеличить его вес:
 
 <pre><code class="language-css">#container A {
     background: orange;
@@ -125,17 +125,17 @@ links:
 Так тоже делать не стоит.
 
 1-й и 2-й способ могут использоваться, если у вас нет доступа к разметке, а в ней нет нужных классов.
-Если же вы можете редактировать разметку либо классы у элементов таки есть - используйте последний способ, самый правильный:
+Если же вы можете редактировать разметку либо классы у элементов таки есть — используйте последний способ, самый правильный:
 
 <b>3.</b> Просто не используйте в стилях селекторы с ID, используйте классы.
 
 Посмотрим на разницу между <code>#container</code> и с <code>.container</code>:
 
-<span class="wrapper--selector"><code>#container A</code></span> <code class="specifity">0,<b>1</b>,0,<b>1</b></code> - селектор с ID перевешивает всё вне зависимости от своего расположения в коде.
+<span class="wrapper--selector"><code>#container A</code></span> <code class="specifity">0,<b>1</b>,0,<b>1</b></code> — селектор с ID перевешивает всё вне зависимости от своего расположения в коде.
 
 Заменим в разметке страницы <code>id</code> на <code>class</code>:
 
-<span class="wrapper--selector"><code>.container A</code></span> <code class="specifity">0,0,<b>1</b>,<b>1</b></code> - селектор с классом весит меньше, он менее специфичен.
+<span class="wrapper--selector"><code>.container A</code></span> <code class="specifity">0,0,<b>1</b>,<b>1</b></code> — селектор с классом весит меньше, он менее специфичен.
 
 Селектор ссылок в списке весит столько же:
 
@@ -155,7 +155,7 @@ links:
 &lt;/div>
 </code></pre>
 
-А стили - такими:
+А стили — такими:
 
 <pre><code class="language-css">.container A {
     background: orange;
@@ -168,9 +168,9 @@ links:
 
 <iframe class="jsbin" style="height: 270px" src="http://jsbin.com/iJeqAru/4/embed?output"></iframe>
 
-<i>Если <code>id</code> в вашей разметке уже используется в Js, логичнее будет добавить элементу класс и перевесить стили на него. Если же <code>id</code> участвует только в разметке - лучше заменить его на <code>class</code>.</i>
+<i>Если <code>id</code> в вашей разметке уже используется в Js, логичнее будет добавить элементу класс и перевесить стили на него. Если же <code>id</code> участвует только в разметке — лучше заменить его на <code>class</code>.</i>
 
-В качестве общих рекомендаций так же следует упомянуть, что нужно как можно меньше использовать селекторы по тегу и как можно больше - селекторы по классу. Это поможет избежать проблем при повторном использовании блоков сайта, а при использовании "умных" классов - может значительно сократить цепочки селекторов, увеличить читабельность кода и скорость отрисовки страницы.
+В качестве общих рекомендаций так же следует упомянуть, что нужно как можно меньше использовать селекторы по тегу и как можно больше — селекторы по классу. Это поможет избежать проблем при повторном использовании блоков сайта, а при использовании "умных" классов — может значительно сократить цепочки селекторов, увеличить читабельность кода и скорость отрисовки страницы.
 
 Спецификации:
 <a href="http://www.w3.org/TR/CSS2/cascade.html#specificity">w3.org/TR/CSS2/cascade.html#specificity</a>

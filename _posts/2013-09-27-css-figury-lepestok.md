@@ -15,11 +15,11 @@ published: true
 
 <iframe class="jsbin" style="height: 300px" src="http://jsbin.com/iheGIL/1/embed?output,css"></iframe>
 
-С помощью <code>box-shadow</code> - ещё один:
+С помощью <code>box-shadow</code> — ещё один:
 
 <iframe class="jsbin" style="height: 300px" src="http://jsbin.com/iheGIL/2/embed?output,css"></iframe>
 
-С помощью <code>:before</code> - ещё парочку, и получается 4 лепестка:
+С помощью <code>:before</code> — ещё парочку, и получается 4 лепестка:
 
 <iframe class="jsbin" style="height: 300px" src="http://jsbin.com/iheGIL/3/embed?output,css"></iframe>
 
@@ -27,11 +27,11 @@ published: true
 
 <iframe class="jsbin" style="height: 350px" src="http://jsbin.com/iheGIL/7/embed?output,css"></iframe>
 
-Для понятности покрасим лепестки в разные цвета. Красный - исходный <code>div</code>, зеленый - <code>:before</code>, оранжевый - <code>:after</code>,  желтые - <code>box-shadow</code> этих трех элементов.
+Для понятности покрасим лепестки в разные цвета. Красный — исходный <code>div</code>, зеленый — <code>:before</code>, оранжевый — <code>:after</code>,  желтые — <code>box-shadow</code> этих трех элементов.
 
 <iframe class="jsbin" style="height: 350px" src="http://jsbin.com/iheGIL/8/embed?output,css"></iframe>
 
-Цветок с 4 или 6-ю лепестками на основе одного элемента! : ) 
+Цветок с 4 или 6-ю лепестками на основе одного элемента! : )
 Причем с помощью <code>border-radius</code> можно управлять формой лепестков.
 
 Теперь сделаем лепестки овальной формы с помощью псевдо-элементов и <code>transform</code>. В основе два <code>div</code>'а:
