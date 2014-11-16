@@ -10,11 +10,15 @@ links:
   name: "The invisible gradient technique: Cross-browser support for SVG (with image fallback) using CSS"
 - url: /svg-in-ie8
   name: Грабли на чистом SVG
+- url: https://www.npmjs.org/package/svg_fallback
+  name: svg_fallback (plugin)
 - url: /grunt-plugin
   name: Зачем я написала плагин для Grunt
+- url: http://blogs.telerik.com/kendoui/posts/12-02-17/using_svg_on_android_2_x_and_kendo_ui_dataviz
+  name: Using SVG on Android 2.x
 
 ---
-В один прекрасный день у меня возник интересный вопрос. Есть <a href="https://www.npmjs.org/package/svg_fallback">решение</a> для замены инлайнового SVG на фоновые картинки в браузерах, где инлайновый SVG не поддерживается. Оно построено на допущении, что на странице есть нужный нам класс <code>.ie8</code>, по которому SVG-элементам включаются фоновые изображения.
+Как-то у меня возник интересный вопрос. Есть <a href="https://www.npmjs.org/package/svg_fallback">решение</a> для замены инлайнового SVG на фоновые картинки в браузерах, где инлайновый SVG не поддерживается. Оно построено на допущении, что на странице есть нужный нам класс <code>.ie8</code>, по которому SVG-элементам включаются фоновые изображения.
 
 Очевидный недостаток способа состоит в том, что мы должны  отдельно позаботиться о том, чтобы нужный нам класс был — при генерации страницы на сервере или же определив браузер с помощью JS.
 
