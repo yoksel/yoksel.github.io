@@ -729,6 +729,8 @@ PRE CODE {
   margin-bottom: 32px; }
   .aside__widget:last-child {
     margin-bottom: 0; }
+  .aside__widget IMG {
+    max-width: 100%; }
 
 .widget__item {
   margin-bottom: 7px; }
@@ -742,6 +744,10 @@ PRE CODE {
 .widget__item--dead A {
   text-decoration: line-through;
   color: #CCC; }
+
+.widget--about IMG {
+  margin-bottom: 8px;
+  border-radius: 10px; }
 
 /* Animations
 -------------------------------- */
@@ -760,7 +766,9 @@ PRE CODE {
 /* Icons
 -------------------------------- */
 .post A[href*="github"]:before,
-.post A[href^="github"]:before {
+.post A[href^="github"]:before,
+.widget--about A[href*="github"]:before,
+.widget--about A[href^="github"]:before {
   content: "";
   display: inline-block;
   width: 16px;
@@ -770,7 +778,9 @@ PRE CODE {
   background: url(/assets/img/sprite.png);
   background-position: 0 0; }
 .post A[href*="codepen.io"]:before,
-.post A[href*="cdpn.io"]:before {
+.post A[href*="cdpn.io"]:before,
+.widget--about A[href*="codepen.io"]:before,
+.widget--about A[href*="cdpn.io"]:before {
   content: "";
   display: inline-block;
   width: 16px;
@@ -779,7 +789,8 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -20px 0; }
-.post A[href*="wikipedia"]:before {
+.post A[href*="wikipedia"]:before,
+.widget--about A[href*="wikipedia"]:before {
   content: "";
   display: inline-block;
   width: 16px;
@@ -788,7 +799,8 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -40px 0; }
-.post A[href*="colourlovers"]:before {
+.post A[href*="colourlovers"]:before,
+.widget--about A[href*="colourlovers"]:before {
   content: "";
   display: inline-block;
   width: 16px;
@@ -797,7 +809,8 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -60px 0; }
-.post A[href*="yoksel.livejournal"]:before {
+.post A[href*="yoksel.livejournal"]:before,
+.widget--about A[href*="yoksel.livejournal"]:before {
   content: "";
   display: inline-block;
   width: 16px;
@@ -806,7 +819,8 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -80px 0; }
-.post A[href*="covers.livejournal"]:before {
+.post A[href*="covers.livejournal"]:before,
+.widget--about A[href*="covers.livejournal"]:before {
   content: "";
   display: inline-block;
   width: 16px;
@@ -815,7 +829,8 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -100px 0; }
-.post A[href*="jsbin.com"]:before {
+.post A[href*="jsbin.com"]:before,
+.widget--about A[href*="jsbin.com"]:before {
   content: "";
   display: inline-block;
   width: 12px;
@@ -824,7 +839,8 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -120px 0; }
-.post A[href*="w3.org"]:before {
+.post A[href*="w3.org"]:before,
+.widget--about A[href*="w3.org"]:before {
   content: "";
   display: inline-block;
   width: 20px;
@@ -833,7 +849,8 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -140px 1px; }
-.post A[href*="css-tricks.com"]:before {
+.post A[href*="css-tricks.com"]:before,
+.widget--about A[href*="css-tricks.com"]:before {
   content: "";
   display: inline-block;
   width: 16px;
@@ -842,7 +859,8 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -160px 0; }
-.post A[href*="webplatform.org"]:before {
+.post A[href*="webplatform.org"]:before,
+.widget--about A[href*="webplatform.org"]:before {
   content: "";
   display: inline-block;
   width: 14px;
@@ -851,7 +869,8 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -180px 0; }
-.post A[href*="html5rocks.com"]:before {
+.post A[href*="html5rocks.com"]:before,
+.widget--about A[href*="html5rocks.com"]:before {
   content: "";
   display: inline-block;
   width: 16px;
@@ -860,7 +879,8 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -200px 0; }
-.post A[href*="caniuse.com"]:before {
+.post A[href*="caniuse.com"]:before,
+.widget--about A[href*="caniuse.com"]:before {
   content: "";
   display: inline-block;
   width: 16px;
@@ -869,7 +889,8 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -220px 0; }
-.post A[href*="google.com"]:before {
+.post A[href*="google.com"]:before,
+.widget--about A[href*="google.com"]:before {
   content: "";
   display: inline-block;
   width: 16px;
@@ -878,7 +899,8 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -240px 0; }
-.post .no-favicon:before {
+.post .no-favicon:before,
+.widget--about .no-favicon:before {
   content: none !important; }
 
 A[href*="rss"]:before,

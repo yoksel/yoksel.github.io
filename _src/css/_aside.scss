@@ -3,6 +3,9 @@
     &:last-child {
         margin-bottom: 0;
         }
+    IMG {
+        max-width: 100%
+        }
 }
 .widget__item {
     margin-bottom: 7px;
@@ -16,4 +19,9 @@
 .widget__item--dead A {
     text-decoration: line-through;
     color: #CCC;
+    }
+
+.widget--about IMG {
+    @include small-margin ( bottom );
+    border-radius: 10px;
     }

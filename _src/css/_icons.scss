@@ -8,7 +8,8 @@
     background: url(/assets/img/sprite.png);
 }
 
-.post {
+.post,
+.widget--about {
     A[href*="github"]:before,
     A[href^="github"]:before {
         @include icon;
