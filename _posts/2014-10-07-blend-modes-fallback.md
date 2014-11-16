@@ -20,6 +20,8 @@ links:
   name: SVG Filter Effects
 - url: http://caniuse.com/#feat=svg-filters
   name: SVG filters
+- url: /background-blend-mode/
+  name: Background-blend-mode
 - url: /css-and-svg-masks
   name: CSS и SVG маски
 - url: /svg-in-ie8
