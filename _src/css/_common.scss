@@ -5,6 +5,11 @@ HR {
     @include border (bottom);
     }
 
+.imd--left {
+    float: left;
+    margin: 0 $base-margin $base-margin 0;
+    }
+
 .font--small {
     font-size: .8em;
     }

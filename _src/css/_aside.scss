@@ -21,7 +21,10 @@
     color: #CCC;
     }
 
-.widget--about IMG {
-    @include small-margin ( bottom );
+.img--about {
+    float: right;
+    max-width: 200px !important;
+    height: auto;
+    margin: 0 0 $base-margin $base-margin;
     border-radius: 10px;
     }

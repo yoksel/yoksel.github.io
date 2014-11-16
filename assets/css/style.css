@@ -148,6 +148,10 @@ HR {
   border: 0;
   border-bottom: 1px solid #DDD; }
 
+.imd--left {
+  float: left;
+  margin: 0 32px 32px 0; }
+
 .font--small {
   font-size: .8em; }
 
@@ -745,8 +749,11 @@ PRE CODE {
   text-decoration: line-through;
   color: #CCC; }
 
-.widget--about IMG {
-  margin-bottom: 8px;
+.img--about {
+  float: right;
+  max-width: 200px !important;
+  height: auto;
+  margin: 0 0 32px 32px;
   border-radius: 10px; }
 
 /* Animations
