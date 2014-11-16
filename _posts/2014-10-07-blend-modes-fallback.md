@@ -156,7 +156,7 @@ Firefox можно оставить как есть, но с IE надо что-
 <p data-height="500" data-theme-id="4974" data-slug-hash="wavqm" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/wavqm/'>Blend and shapes</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-SVG-фильтры для SVG элементов работают во всех современных браузерах, в IE начиная  с <nobr>10-й</nobr> версии. Фильтры были бы отличным решением, если бы не некоторые ньюансы:
+SVG-фильтры для SVG элементов работают во всех современных браузерах, в IE начиная  с <nobr>10-й</nobr> версии. Фильтры были бы отличным решением, если бы не некоторые нюансы:
 
 1. Некоторые браузеры вообще не понимают SVG (IE8 и старше, например). Для них SVG-элементам нужно будет задать  фоном растровые изображения.
 2. SVG-фильтры <a href="http://caniuse.com/#feat=svg-filters">не работают в IE9</a>. Его нужно будет как-то определить, чтобы задавать белую подложку для него и для более старых версий IE.
