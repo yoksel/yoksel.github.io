@@ -98,3 +98,15 @@ links_usefull:
   name: Frontdesk
 - url: http://yoksel.github.io/url-encoder/
   name: URL-encoder для SVG
+
+links_profiles:
+- url: https://github.com/yoksel
+  name: github.com/yoksel
+- url: http://codepen.io/yoksel/
+  name: codepen.io/yoksel
+- url: http://yoksel.livejournal.com/
+  name: yoksel.livejournal.com
+- url: http://journals-covers.livejournal.com/
+  name: journals-covers.livejournal.com
+- url: http://colourlovers.com/lover/yoksel
+  name: colourlovers.com/lover/yoksel
