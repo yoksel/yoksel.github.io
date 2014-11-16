@@ -102,6 +102,8 @@ links_usefull:
 links_profiles:
 - url: https://github.com/yoksel
   name: github.com/yoksel
+- url: https://www.npmjs.org/~yoksel
+  name: npmjs.org/~yoksel
 - url: http://codepen.io/yoksel/
   name: codepen.io/yoksel
 - url: http://yoksel.livejournal.com/
