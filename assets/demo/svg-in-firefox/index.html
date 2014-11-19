@@ -63,13 +63,11 @@ Test it in Firefox to see the whole problem
     var button = document.querySelector("#button");
     var head = document.querySelector("head");
     var oldSvg = document.querySelector("#old-svg");
-    var location = document.location.href;
-    oldSvg.setAttribute("xml:base", location);
+    var currentLoc = document.location.href;
+    oldSvg.setAttribute("xml:base", currentLoc);
     var newSvg = oldSvg.cloneNode(true);
 
     var recipient = document.querySelector("#recipient");
-
-    console.log(newSvg);
 
     button.onclick = function(){
       console.log("button is clicked");
