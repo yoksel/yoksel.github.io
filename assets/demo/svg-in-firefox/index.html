@@ -1,8 +1,7 @@
 
 <!DOCTYPE html><html class=''>
-<head><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="canonical" href="http://codepen.io/yoksel/pen/oggWwK?editors=101" />
+<head><meta charset='UTF-8'><meta name="robots" content="noindex">
 
-<link rel='stylesheet' href='http://s.codepen.io/assets/reset/reset.css'>
 <style class="cp-pen-styles">BODY {
   font: 16px/1.4 Arial, sans-serif;
 }
@@ -60,26 +59,26 @@ Test it in Firefox to see the whole problem
     </div>
   </div>
 
-<script>var button = document.querySelector("#button");
-var head = document.querySelector("head");
-var oldSvg = document.querySelector("#old-svg");
-// oldSvg.setAttribute("xml:base",document.location.href);
-// console.log(oldSvg);
-var newSvg = oldSvg.cloneNode(true);
+<script>
+    var button = document.querySelector("#button");
+    var head = document.querySelector("head");
+    var oldSvg = document.querySelector("#old-svg");
+    // oldSvg.setAttribute("xml:base",document.location.href);
+    // console.log(oldSvg);
+    var newSvg = oldSvg.cloneNode(true);
 
-var recipient = document.querySelector("#recipient");
+    var recipient = document.querySelector("#recipient");
 
-console.log(newSvg);
+    console.log(newSvg);
 
-button.onclick = function(){
-  console.log("button is clicked");
-  var baseElem = document.createElement("base");
-  baseElem.setAttribute("href","/new-url/");
+    button.onclick = function(){
+      console.log("button is clicked");
+      var baseElem = document.createElement("base");
+      baseElem.setAttribute("href","/new-url/");
 
-  head.appendChild(baseElem);
+      head.appendChild(baseElem);
 
-  recipient.appendChild(newSvg);
-}//@ sourceURL=pen.js
+      recipient.appendChild(newSvg);
+    }
 </script>
-<script src='http://codepen.io/assets/editor/live/css_live_reload_init.js'></script>
 </body></html>
