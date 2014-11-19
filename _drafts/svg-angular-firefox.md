@@ -7,7 +7,7 @@ desc:
 
 ---
 
-SVG удивительная технология, не в последнюю очередь из-за количества подводных камней.
+SVG удивительная технология, не в последнюю очередь из-за оригинальных подводных камней.
 
 Парочку свежих обнаружилось при взаимодействие SVG с Angular, причем проблемы возникали только в Firefox. Я решила зафиксировать их описание здесь: и другим на пользу, и себе на память.
 
@@ -17,8 +17,8 @@ SVG удивительная технология, не в последнюю о
 
 Демо (смотреть в Firefox):
 
-<p data-height="600" data-theme-id="4974" data-slug-hash="bNbMPR" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/bNbMPR/'>bNbMPR</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<iframe src="http://yoksel.github.io/assets/demo/svg-in-firefox/index.html" style="width: 100%; height: 650px">
+</iframe>
 
 
 Про это даже есть схожий <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=652991">баг</a> от 2011 года, но до сих пор ничего не изменилось.
