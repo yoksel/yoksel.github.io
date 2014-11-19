@@ -1,0 +1,84 @@
+
+<!DOCTYPE html><html class=''>
+<head><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="canonical" href="http://codepen.io/yoksel/pen/oggWwK?editors=101" />
+
+<link rel='stylesheet' href='http://s.codepen.io/assets/reset/reset.css'>
+<style class="cp-pen-styles">BODY {
+  font: 16px/1.4 Arial, sans-serif;
+}
+
+H3 {
+  margin: 0 0 1em;
+  font-size: 1.3em;
+  color: steelblue;
+}
+
+button {
+  margin: .5em 0;
+  cursor: pointer;
+  font-size: 1.6em;
+}
+
+.layout {
+  width: 450px;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.wrapper {
+  margin: 1em;
+  padding: 1em;
+  border: 2px solid #CCC;
+}
+</style></head><body>
+<!--
+*******
+
+Test it in Firefox to see the whole problem
+
+*******
+-->
+
+<div class="layout">
+  <div class="wrapper">
+    <h3>Original SVG</h3>
+
+    <svg id="old-svg" style="border: 3px solid red; background: gold; " xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="flaticon--test" viewBox="0 0 30 20"><path id="Path-45" d="M12.957,17.881L14.952,20l2.001-2.113L30,4.105L26.01,0L14.952,11.701L4.001,0.03L0,4.124L12.957,17.881L12.957,17.881z"></path></symbol>
+      <circle r="150" cx="150" cy="150" fill="yellowgreen" stroke="white" stroke-width="15"></circle>
+      <use xlink:href="#flaticon--test" fill="steelblue"></use>
+    </svg>
+  </div>
+
+  <button id="button">Add &lt;base&gt; and clone shape</button>
+
+  <div class="wrapper">
+    <h3>Copy of original SVG added after new base</h3>
+    <div id="recipient">
+
+    </div>
+  </div>
+
+<script>var button = document.querySelector("#button");
+var head = document.querySelector("head");
+var oldSvg = document.querySelector("#old-svg");
+oldSvg.setAttribute("xml:base",document.location.href);
+console.log(oldSvg);
+var newSvg = oldSvg.cloneNode(true);
+
+var recipient = document.querySelector("#recipient");
+
+console.log(newSvg);
+
+button.onclick = function(){
+  console.log("button is clicked");
+  var baseElem = document.createElement("base");
+  baseElem.setAttribute("href","/new-url/");
+
+  head.appendChild(baseElem);
+
+  recipient.appendChild(newSvg);
+}//@ sourceURL=pen.js
+</script>
+<script src='http://codepen.io/assets/editor/live/css_live_reload_init.js'></script>
+</body></html>
