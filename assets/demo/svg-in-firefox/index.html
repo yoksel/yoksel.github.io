@@ -43,7 +43,7 @@ Test it in Firefox to see the whole problem
     <h3>Original SVG</h3>
 
     <svg id="old-svg" style="border: 3px solid red; background: gold; " xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
-    xml:base="http://yoksel.github.io/assets/demo/svg-in-firefox/index.html">
+    >
       <symbol id="flaticon--test" viewBox="0 0 30 20"><path id="Path-45" d="M12.957,17.881L14.952,20l2.001-2.113L30,4.105L26.01,0L14.952,11.701L4.001,0.03L0,4.124L12.957,17.881L12.957,17.881z"></path></symbol>
       <circle r="150" cx="150" cy="150" fill="yellowgreen" stroke="white" stroke-width="15"></circle>
       <use xlink:href="#flaticon--test" fill="steelblue"></use>
@@ -63,8 +63,8 @@ Test it in Firefox to see the whole problem
     var button = document.querySelector("#button");
     var head = document.querySelector("head");
     var oldSvg = document.querySelector("#old-svg");
-    // oldSvg.setAttribute("xml:base",document.location.href);
-    // console.log(oldSvg);
+    var location = document.location.href;
+    oldSvg.setAttribute("xml:base", location);
     var newSvg = oldSvg.cloneNode(true);
 
     var recipient = document.querySelector("#recipient");
