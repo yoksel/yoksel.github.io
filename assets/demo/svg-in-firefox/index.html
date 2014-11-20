@@ -47,12 +47,19 @@ Test it in Firefox to see the whole problem
   <div class="wrapper">
     <h3>Original SVG</h3>
 
-    <svg id="old-svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
-    xml:base="http://yoksel.github.io/assets/demo/svg-in-firefox/index.html">
-      <symbol id="test-use" viewBox="0 0 30 20"><path id="Path-45" d="M12.957,17.881L14.952,20l2.001-2.113L30,4.105L26.01,0L14.952,11.701L4.001,0.03L0,4.124L12.957,17.881L12.957,17.881z"></path></symbol>
-      <circle r="150" cx="150" cy="150" fill="yellowgreen" stroke="white" stroke-width="15"></circle>
-      <use xlink:href="#test-use" fill="steelblue"></use>
-    </svg>
+    <svg id="old-svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:base="http://yoksel.github.io/assets/demo/svg-in-firefox/index.html" width="250" height="100">
+        <symbol id="test-use">
+          <g>
+            <circle r="50" cx="50" cy="50" fill="orangered"></circle>
+            <text x="50" y="50%" text-anchor="middle" fill="#FFF">Symbol</text>
+          </g>
+        </symbol>
+        <g>
+          <circle r="50" cx="50" cy="50" fill="skyblue"></circle>
+          <text x="50" y="50%" dy="-.5em" text-anchor="middle" fill="#FFF">Shape</text>
+        </g>
+        <use xlink:href="#test-use" transform="translate(150)"></use>
+  </svg>
   </div>
 
   <button id="button">Add &lt;base&gt; and clone shape</button>
