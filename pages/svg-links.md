@@ -33,34 +33,40 @@ type: page
     </li>
     <li><a href="http://www.sitepoint.com/tips-accessible-svg/">Tips for Creating Accessible SVG</a>
     </li>
+    <li><a href="http://www.paciellogroup.com/blog/2013/12/using-aria-enhance-svg-accessibility/">Using ARIA to enhance SVG accessibility</a></li>
+    <li><a href="http://www.smashingmagazine.com/2014/11/03/styling-and-animating-svgs-with-css/">Styling And Animating SVGs With CSS</a></li>
+    <li><a href="http://css-tricks.com/guide-svg-animations-smil/">A Guide to SVG Animations (SMIL)</a></li>
+    <li><a href="http://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/">Making SVGs responsive with CSS</a></li>
 </ul>
 
 <h4>Презентации</h4>
 <ul>
-  <li><a href="https://docs.google.com/presentation/d/1CNQLbqC0krocy_fZrM5fZ-YmQ2JgEADRh3qR6RbOOGk/present#slide=id.p">Leaving Pixels Behind - Todd Parker</a>
+  <li><a href="https://docs.google.com/presentation/d/1CNQLbqC0krocy_fZrM5fZ-YmQ2JgEADRh3qR6RbOOGk/present#slide=id.p">Leaving Pixels Behind — Todd Parker</a>
   </li>
-  <li><a href="https://docs.google.com/presentation/d/1Iuvf3saPCJepVJBDNNDSmSsA0_rwtRYehSmmSSLYFVQ/present#slide=id.p">Styling & Animating Scalable Vector Graphics with CSS - Sara Soueidan</a>
+  <li><a href="http://slides.com/sarasoueidan/styling-animating-svgs-with-css#/">Styling & Animating Scalable Vector Graphics with CSS — Sara Soueidan</a> (<a href="https://www.youtube.com/watch?v=lf7L8X6ZBu8">видео</a>)
   </li>
-  <li><a href="https://speakerdeck.com/pukhalski/next-level-svg">Next Level SVG - Ilya Pukhalski</a>
+  <li><a href="http://slides.com/sarasoueidan/working-with-svg-a-primer#/">Working with SVG, A Primer — Sara Soueidan</a></li>
+  <li><a href="https://speakerdeck.com/pukhalski/next-level-svg">Next Level SVG — Ilya Pukhalski</a>
   </li>
   <li><a href="http://pepelsbey.net/pres/web-in-curves/">Веб в кривых.
-  Второе рождение SVG - Вадим Макеев</a> (<a href="http://www.youtube.com/watch?v=XPseFBICcVU">видео</a>)
+  Второе рождение SVG — Вадим Макеев</a> (<a href="http://www.youtube.com/watch?v=XPseFBICcVU">видео</a>)
   </li>
-  <li><a href="http://www.youtube.com/watch?v=SeLOt_BRAqc">Dmitry Baranovskiy - You Don't Know SVG</a>
+  <li><a href="http://www.youtube.com/watch?v=SeLOt_BRAqc">You Don't Know SVG — Dmitry Baranovskiy</a>
   </li>
 </ul>
 
 <h4>Векторные редакторы</h4>
 <ul>
-<li><a href="http://www.adobe.com/ru/products/illustrator.html">Adobe Illustrator</a>
-</li>
-<li><a href="http://www.bohemiancoding.com/sketch/">Sketch</a>
-</li>
-<li><a href="https://code.google.com/p/svg-edit/">SVG-edit</a> (<a href="http://svg-edit.googlecode.com/svn/branches/stable/editor/svg-editor.html">онлайн демо</a>)
-</li>
-<li><a href="http://www.inkscape.org/en/">Inkscape</a>
-</li>
-<li><a href="https://projectparfait.adobe.com/">Parfait</a> - позволяет извлекать SVG из PSD</li>
+  <li><a href="http://www.adobe.com/ru/products/illustrator.html">Adobe Illustrator</a>
+  </li>
+  <li><a href="http://www.bohemiancoding.com/sketch/">Sketch</a>
+  </li>
+  <li><a href="https://code.google.com/p/svg-edit/">SVG-edit</a> (<a href="http://svg-edit.googlecode.com/svn/branches/stable/editor/svg-editor.html">онлайн демо</a>)
+  </li>
+  <li><a href="http://www.inkscape.org/en/">Inkscape</a>
+  </li>
+  <li><a href="https://projectparfait.adobe.com/">Parfait</a> — позволяет извлекать SVG из PSD</li>
+  <li><a href="http://www.webdesignblog.org/create-svg-with-photoshop/">Create SVG with Photoshop</a></li>
 </ul>
 
 <h4>Сайты с SVG-графикой</h4>
