@@ -546,7 +546,8 @@ PRE CODE {
     counter-increment: num-list; }
   .post__text P + H4,
   .post__text SCRIPT + H4,
-  .post__text PRE + H4 {
+  .post__text PRE + H4,
+  .post__text IFRAME + H4 {
     margin-top: 32px; }
   .post__text P {
     white-space: pre-line; }
