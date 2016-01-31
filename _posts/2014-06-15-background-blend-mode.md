@@ -20,6 +20,10 @@ links:
   name: Свежие CSS-паттерны
 - url: /3d-and-gradients/
   name: СSS-градиенты и 3D
+- url: http://prgssr.ru/development/sekrety-rezhimov-nalozheniya.html
+  name: Секреты режимов наложения
+- url: http://una.im/vintage-washout/
+  name: CSS Image Effects #1: Vintage Washout
 ---
 
 На этой неделе в <a href="https://developer.mozilla.org/en-US/Firefox/Releases/30">Firefox 30</a> было включено по умолчанию свойство <code>background-blend-mode</code>. Таким образом, Firefox стал третьим браузером, поддерживающим это свойство (два других — Opera и Chrome). Safari будет поддерживать это свойство в следующей версии, про планы IE мне ничего найти не удалось.
