@@ -107,7 +107,7 @@ desc: CSS-эффекты на основе text-shadow.
 
 Для создания контура вокруг текста можно воспользоваться такой Sass-функцией:
 
-{% gist 9467758 %}
+<script src="https://gist.github.com/yoksel/9467758.js"></script>
 
 <h4>Длинные тени</h4>
 
