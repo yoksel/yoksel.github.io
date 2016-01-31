@@ -9,6 +9,8 @@ links:
   name: SVG Stacks
 - url: "https://github.com/preciousforever/SVG-Stacker"
   name: "SVG-Stacker"
+- url: http://www.broken-links.com/2012/08/14/better-svg-sprites-with-fragment-identifiers/
+  name: Better SVG Sprites With Fragment Identifiers
 published: true
 ---
 
