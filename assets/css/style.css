@@ -362,7 +362,7 @@ PRE CODE {
 .header__logo,
 .header__logo A {
   text-decoration: none;
-  text-shadow: 0 0 5px #7f0b22;
+  text-shadow: 0 0 5px #7f0c23;
   color: #FFF; }
 
 .header__logo .logo__no-link,
@@ -485,16 +485,23 @@ PRE CODE {
   .post__excerpt P:last-of-type {
     margin-bottom: 10px; }
 .post__excerpt .link--readmore {
+  float: left;
   font-size: 12px; }
 
 .post__date {
   display: block;
+  font-style: italic;
+  color: #AAA; }
+
+.p-layout-mainpage .post__date {
+  float: right;
+  font-size: 12px; }
+
+.p-type-post .post__date {
   margin-bottom: 32px;
   padding-bottom: 5px;
   border-bottom: 1px solid #DDD;
-  font-style: italic;
-  font-size: .9em;
-  color: #AAA; }
+  font-size: .9em; }
 
 .post__text {
   margin-bottom: 32px; }
@@ -727,6 +734,11 @@ PRE CODE {
     .table--colors .color-view {
       width: 170px;
       height: 50px; } }
+
+.post__footer:after {
+  content: '';
+  display: table;
+  clear: both; }
 
 .widget--disqus {
   margin-top: 32px;
