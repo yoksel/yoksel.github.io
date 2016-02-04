@@ -790,10 +790,8 @@ PRE CODE {
     transform: rotate(360deg); } }
 /* Icons
 -------------------------------- */
-.post A[href*="github"]:before,
-.post A[href^="github"]:before,
-.widget--about A[href*="github"]:before,
-.widget--about A[href^="github"]:before {
+.has-link-icons A[href*="github"]:before,
+.widget--about A[href*="github"]:before {
   content: "";
   display: inline-block;
   width: 16px;
@@ -802,8 +800,8 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: 0 0; }
-.post A[href*="codepen.io"]:before,
-.post A[href*="cdpn.io"]:before,
+.has-link-icons A[href*="codepen.io"]:before,
+.has-link-icons A[href*="cdpn.io"]:before,
 .widget--about A[href*="codepen.io"]:before,
 .widget--about A[href*="cdpn.io"]:before {
   content: "";
@@ -814,7 +812,7 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -20px 0; }
-.post A[href*="wikipedia"]:before,
+.has-link-icons A[href*="wikipedia"]:before,
 .widget--about A[href*="wikipedia"]:before {
   content: "";
   display: inline-block;
@@ -824,7 +822,7 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -40px 0; }
-.post A[href*="colourlovers"]:before,
+.has-link-icons A[href*="colourlovers"]:before,
 .widget--about A[href*="colourlovers"]:before {
   content: "";
   display: inline-block;
@@ -834,7 +832,7 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -60px 0; }
-.post A[href*="yoksel.livejournal"]:before,
+.has-link-icons A[href*="yoksel.livejournal"]:before,
 .widget--about A[href*="yoksel.livejournal"]:before {
   content: "";
   display: inline-block;
@@ -844,7 +842,7 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -80px 0; }
-.post A[href*="covers.livejournal"]:before,
+.has-link-icons A[href*="covers.livejournal"]:before,
 .widget--about A[href*="covers.livejournal"]:before {
   content: "";
   display: inline-block;
@@ -854,7 +852,7 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -100px 0; }
-.post A[href*="jsbin.com"]:before,
+.has-link-icons A[href*="jsbin.com"]:before,
 .widget--about A[href*="jsbin.com"]:before {
   content: "";
   display: inline-block;
@@ -864,7 +862,7 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -120px 0; }
-.post A[href*="w3.org"]:before,
+.has-link-icons A[href*="w3.org"]:before,
 .widget--about A[href*="w3.org"]:before {
   content: "";
   display: inline-block;
@@ -874,7 +872,7 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -140px 1px; }
-.post A[href*="css-tricks.com"]:before,
+.has-link-icons A[href*="css-tricks.com"]:before,
 .widget--about A[href*="css-tricks.com"]:before {
   content: "";
   display: inline-block;
@@ -884,7 +882,7 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -160px 0; }
-.post A[href*="webplatform.org"]:before,
+.has-link-icons A[href*="webplatform.org"]:before,
 .widget--about A[href*="webplatform.org"]:before {
   content: "";
   display: inline-block;
@@ -894,7 +892,7 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -180px 0; }
-.post A[href*="html5rocks.com"]:before,
+.has-link-icons A[href*="html5rocks.com"]:before,
 .widget--about A[href*="html5rocks.com"]:before {
   content: "";
   display: inline-block;
@@ -904,7 +902,7 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -200px 0; }
-.post A[href*="caniuse.com"]:before,
+.has-link-icons A[href*="caniuse.com"]:before,
 .widget--about A[href*="caniuse.com"]:before {
   content: "";
   display: inline-block;
@@ -914,7 +912,7 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -220px 0; }
-.post A[href*="google.com"]:before,
+.has-link-icons A[href*="google.com"]:before,
 .widget--about A[href*="google.com"]:before {
   content: "";
   display: inline-block;
@@ -924,7 +922,7 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -240px 0; }
-.post .no-favicon:before,
+.has-link-icons .no-favicon:before,
 .widget--about .no-favicon:before {
   content: none !important; }
 

@@ -8,10 +8,9 @@
     background: url(/assets/img/sprite.png);
 }
 
-.post,
+.has-link-icons,
 .widget--about {
-    A[href*="github"]:before,
-    A[href^="github"]:before {
+    A[href*="github"]:before {
         @include icon;
         background-position: 0 0;
         }
