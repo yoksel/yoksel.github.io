@@ -84,6 +84,8 @@ links_blogs:
   name: Сodrops
 - url: http://css-weekly.com/archives/
   name: CSS Weekly
+- url: http://css-live.ru/
+  name: CSS-Live
 - url: http://frontender.info/
   name: Frontender Magazine
 - url: http://frontendbabel.info/
@@ -100,6 +102,10 @@ links_usefull:
   name: URL-encoder для SVG
 
 links_profiles:
+- url: https://twitter.com/yoksel
+  name: '@yoksel'
+- url: https://twitter.com/yoksel_en
+  name: '@yoksel_en'
 - url: https://github.com/yoksel
   name: github.com/yoksel
 - url: https://www.npmjs.org/~yoksel
