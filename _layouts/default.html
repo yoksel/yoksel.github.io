@@ -9,7 +9,7 @@ layout: shell
 
 		{% if page.date %}<time datetime="{{ page.date | date: "%Y-%m-%d" }}" class="post__date">{{ page.date | date: "%d/%m/%Y" }}</time>{% endif %}
 
-		<div class="post__text">
+		<div class="post__text has-link-icons">
 			{% include post-nav.html %}
 			{{ content }}
 		</div>
