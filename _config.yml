@@ -2,7 +2,7 @@ encoding: utf-8
 # standard jekyll configuration
 
 permalink: /:title
-highlighter: pygments
+highlighter: rouge
 exclude: ['Rakefile','config.rb', 'README.md','gems','node_modules','*.sketch',
           'Gemfile','Gemfile.*','Gruntfile.*','package.json','temp']
 # markdown: rdiscount // kramdown : problem with tables // redcarpet: problem with more
