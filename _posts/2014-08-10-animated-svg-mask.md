@@ -12,7 +12,7 @@ links:
   name: CSS и SVG маски
 - url: /svg-stroke/
   name: Странности обводки в SVG
-- url: /pages/svg-links.html
+- url: /pages/svg-links/
   name: 'SVG: полезные ссылки'
 ---
 
