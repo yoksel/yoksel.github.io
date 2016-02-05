@@ -18,25 +18,30 @@ type: page
   </li>
   <li><a href="http://jonibologna.com/">Joni Trythall</a>
   </li>
-  <li><a href="http://blog.legomushroom.com/">legomushroom</a>
-  </li>
   <li><a href="http://demosthenes.info/blog/svg">Dudley Storey</a>
+  </li>
+  <li><a href="https://twitter.com/ChrisGannon">Chris Gannon</a>
+  </li>
+  <li><a href="https://twitter.com/AmeliasBrain">Amelia Bellamy-Royds</a>
+  </li>
+  <li><del><a href="http://blog.legomushroom.com/">blog.legomushroom.com</a></del>
   </li>
 </ul>
 
 <h4>Статьи и подборки</h4>
 <ul>
+    <li><a href="https://www.smashingmagazine.com/tag/svg/">smashingmagazine.com/tag/svg/</a>
+    </li>
+    <li><a href="http://tympanus.net/codrops/?s=svg&search-type=posts">SVG on tympanus.net/codrops</a>
+    </li>
+    <li><a href="https://css-tricks.com/search-results/?q=svg">SVG on css-tricks.com</a>
     <li><a href="http://css-tricks.com/mega-list-svg-information/">A Compendium of SVG Information</a>
     </li>
-    <li><a href="https://github.com/willianjusten/awesome-svg">Awesome SVG</a></li>
-    <li><a href="http://www.smashingmagazine.com/2013/06/02/clown-car-technique-solving-for-adaptive-images-in-responsive-web-design/">Clown Car Technique: Solving Adaptive Images In Responsive Web Design</a>
     </li>
+    <li><a href="https://github.com/willianjusten/awesome-svg">Awesome SVG</a></li>
     <li><a href="http://www.sitepoint.com/tips-accessible-svg/">Tips for Creating Accessible SVG</a>
     </li>
     <li><a href="http://www.paciellogroup.com/blog/2013/12/using-aria-enhance-svg-accessibility/">Using ARIA to enhance SVG accessibility</a></li>
-    <li><a href="http://www.smashingmagazine.com/2014/11/03/styling-and-animating-svgs-with-css/">Styling And Animating SVGs With CSS</a></li>
-    <li><a href="http://css-tricks.com/guide-svg-animations-smil/">A Guide to SVG Animations (SMIL)</a></li>
-    <li><a href="http://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/">Making SVGs responsive with CSS</a></li>
 </ul>
 
 <h4>Презентации</h4>
@@ -53,6 +58,7 @@ type: page
   </li>
   <li><a href="http://www.youtube.com/watch?v=SeLOt_BRAqc">You Don't Know SVG — Dmitry Baranovskiy</a>
   </li>
+  <li><a href="yoksel.github.io/about-svg">Позвольте представить: SVG</a></li>
 </ul>
 
 <h4>Векторные редакторы</h4>
@@ -65,19 +71,19 @@ type: page
   </li>
   <li><a href="http://www.inkscape.org/en/">Inkscape</a>
   </li>
-  <li><a href="https://projectparfait.adobe.com/">Parfait</a> — позволяет извлекать SVG из PSD</li>
+  <li><del><a href="https://projectparfait.adobe.com/">Parfait</a></del> <a href="https://assets.adobe.com">assets.adobe.com</a> — позволяет извлекать SVG из PSD</li>
   <li><a href="http://www.webdesignblog.org/create-svg-with-photoshop/">Create SVG with Photoshop</a></li>
 </ul>
 
 <h4>Сайты с SVG-графикой</h4>
 <ul>
-  <li><a href="http://iconmelon.com/">Iconmelon.com</a>
-  </li>
   <li><a href="http://icomoon.io/app/#/select">Icomoon.io</a>
   </li>
   <li><a href="http://www.flaticon.com/">Flaticon.com</a>
   </li>
   <li><a href="http://thenounproject.com/">Thenounproject.com</a>
+  </li>
+  <li><del><a href="http://iconmelon.com/">Iconmelon.com</a></del>
   </li>
 </ul>
 
