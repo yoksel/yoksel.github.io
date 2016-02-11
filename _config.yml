@@ -92,7 +92,7 @@ links_blogs:
   name: Frontend Babel
 
 links_usefull:
-- url: /pages/tablitsa-imenovanny-h-tsvetov.html
+- url: /pages/tablitsa-imenovanny-h-tsvetov
   name: Таблица именованных цветов
 - url: http://yoksel.github.io/unicode-table/
   name: Символы юникода
