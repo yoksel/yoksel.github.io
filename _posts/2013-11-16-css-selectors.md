@@ -123,7 +123,7 @@ post_nav:
 
 <iframe src="http://jsbin.com/aMakIZI/42/embed?output" style="height: 270px" class="jsbin"></iframe></li>
 
-<li id="first-child" data-name="E:first-child"><p><code>E:first-child</code> — псевдоэлемент, обращающийся к первому элементу из нескольких внутри родителя.</p>
+<li id="first-child" data-name="E:first-child"><p><code>E:first-child</code> — псевдокласс, обращающийся к первому элементу из нескольких внутри родителя.</p>
 
 <pre class="language-css"><code class="language-css">P:first-child {
   background: gold;
