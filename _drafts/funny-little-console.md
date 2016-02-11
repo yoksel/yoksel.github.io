@@ -2,8 +2,8 @@
 layout: default
 title: Весёлая консолька
 type: post
-image:
-desc:
+image: https://img-fotki.yandex.ru/get/64326/5091629.a4/0_8db28_39e1a15b_orig
+desc: Недавно мне пришлось отлаживать капризный скрипт, в котором явно происходило что-то паранормальное. Чтобы найти проблему, понадобилось вывести в консоль браузера большое количество отладочной информации. Содержимое консоли превратилось в бесконечную колбасу однообразного текста, и с этим надо было что-то делать.
 
 links:
 - url: https://developers.google.com/web/tools/chrome-devtools/debug/console/console-reference
