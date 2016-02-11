@@ -505,10 +505,8 @@ PRE CODE {
 
 .post__text {
   margin-bottom: 32px; }
-  .post__text FIGURE {
-    display: inline-block; }
-    .post__text FIGURE:not(:last-of-type) {
-      margin-right: 32px; }
+  .post__text FIGURE:not(:last-of-type) {
+    margin-right: 32px; }
   .post__text FIGCAPTION {
     font-style: italic;
     color: #777; }

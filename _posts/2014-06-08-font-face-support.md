@@ -13,10 +13,10 @@ desc: Известно, что кастомные шрифты могут раб
 
 Увидеть как выглядит неработающий шрифт, можно, например, в Опере Мини:
 
-<figure>
+<figure style="display: inline-block;">
     <figcaption>Chrome</figcaption>
     <a href="http://img-fotki.yandex.ru/get/9542/5091629.9e/0_83050_af90c20f_orig"><img src="http://img-fotki.yandex.ru/get/9542/5091629.9e/0_83050_af90c20f_L.png" alt="entypo.com" title="entypo.com"/></a>
-</figure>  <figure>
+</figure>  <figure style="display: inline-block;">
     <figcaption>Opera Mini</figcaption>
     <a href="http://img-fotki.yandex.ru/get/9307/5091629.9e/0_8304f_e631f284_orig"><img src="http://img-fotki.yandex.ru/get/9307/5091629.9e/0_8304f_e631f284_L.png" alt="entypo.com in Opera Mini" title="entypo.com in Opera Mini"/></a>
 </figure>

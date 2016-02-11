@@ -63,7 +63,6 @@
     @include margin( bottom );
 
     FIGURE {
-        display: inline-block;
         &:not(:last-of-type){
             @include margin( right );
             }
