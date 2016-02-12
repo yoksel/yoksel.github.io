@@ -197,18 +197,18 @@ function log ( msg, style ) {
     if ( !style || !consoleStyles[ style ] ) {
         style = 'bold';
     }
-    console.log( '%c' + msg, consoleStyles[ style ] );
+    console.log ( '%c' + msg, consoleStyles[ style ] );
 }
 {% endhighlight %}
 
 Пример использования:
 
 {% highlight javascript %}
-log('Заголовок 1', 'h1');
-log('Заголовок 2', 'h2');
-log('Заголовок 3', 'h3');
-log('Жирный текст', 'bold');
-log('Ошибка', 'warn');
+log ( 'Заголовок 1', 'h1' );
+log ( 'Заголовок 2', 'h2' );
+log ( 'Заголовок 3', 'h3' );
+log ( 'Жирный текст', 'bold' );
+log ( 'Ошибка', 'warn' );
 {% endhighlight %}
 
 <img src="/assets/img/articles/funny-console/fig11.png" alt="Заголовки">
@@ -235,7 +235,7 @@ var styles = [
 'background: steelblue',
 'background: darkviolet'
 ];
-console.log('%c R %c A %c I %c N %c B %c O %c W ',
+console.log ( '%c R %c A %c I %c N %c B %c O %c W ',
     styles[0], styles[1], styles[2], styles[3],
     styles[4], styles[5], styles[6] );
 {% endhighlight %}
@@ -245,7 +245,7 @@ console.log('%c R %c A %c I %c N %c B %c O %c W ',
 Чтобы покрасить только часть строки, один из стилей можно задать пустым:
 
 {% highlight javascript %}
-console.log('%c text1 %c text2', 'color: crimson;', '' );
+console.log ( '%c text1 %c text2', 'color: crimson;', '' );
 {% endhighlight %}
 
 <img src="/assets/img/articles/funny-console/fig22.png" alt="Двухцветный текст">
@@ -259,8 +259,8 @@ console.log('%c text1 %c text2', 'color: crimson;', '' );
 Также можно выделять из общего потока отдельные строчки, используя <code>console.info()</code> и <code>console.warn()</code>:
 
 {% highlight javascript %}
-console.info('your text');
-console.warn('your text');
+console.info ( 'your text' );
+console.warn ( 'your text' );
 {% endhighlight %}
 
 <img src="/assets/img/articles/funny-console/fig15.png" alt="warn & info">
@@ -270,7 +270,7 @@ console.warn('your text');
 Ещё можно выводить сообщения об ошибке и дополнительную отладочную информацию. Например, с помощью <code>console.error()</code>:
 
 {% highlight javascript %}
-console.error('Houston, we have a problem');
+console.error ( 'Houston, we have a problem' );
 {% endhighlight %}
 
 <img src="/assets/img/articles/funny-console/fig16.png" alt="console.error()">
@@ -286,7 +286,7 @@ var fruitsObj = {
 };
 var expression = fruitsObj.apple.color === 'blue';
 
-console.assert(expression, 'There is no blue apple');
+console.assert ( expression, 'There is no blue apple' );
 {% endhighlight %}
 
 Сообщение будет выведено только если <code>expression</code> будет равно <code>false</code>:
@@ -296,7 +296,7 @@ console.assert(expression, 'There is no blue apple');
 Чтобы просто вывести в консоль сообщение с отладочной информацией, можно использовать <code>console.trace()</code>:
 
 {% highlight javascript %}
-console.trace( 'Hello' );
+console.trace ( 'Hello' );
 {% endhighlight %}
 
 <img src="/assets/img/articles/funny-console/fig18.png" alt="console.trace()">
@@ -304,10 +304,10 @@ console.trace( 'Hello' );
 Для визуальной группировки сообщений можно использовать <code>console.group()</code> и <code>console.groupEnd()</code>, обозначающие начало и конец группы соответственно:
 
 {% highlight javascript %}
-console.group( 'Animals' );
-console.log( 'cat' );
-console.log( 'dog' );
-console.groupEnd();
+console.group ( 'Animals' );
+console.log ( 'cat' );
+console.log ( 'dog' );
+console.groupEnd ();
 {% endhighlight %}
 
 <img src="/assets/img/articles/funny-console/fig19.png" alt="console.group()">
@@ -318,11 +318,11 @@ console.groupEnd();
 
 {% highlight javascript %}
 function myFunc() {
-    console.count('myFunc() called');
+    console.count ( 'myFunc() called' );
 }
 
 for (var i = 0; i < 3; i++) {
-    myFunc();
+    myFunc ();
 }
 {% endhighlight %}
 
