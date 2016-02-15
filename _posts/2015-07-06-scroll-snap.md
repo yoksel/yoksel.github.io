@@ -11,7 +11,7 @@ links:
   name: CSS Scroll Snap Points
 - url: http://caniuse.com/#search=snap
   name: caniuse.com/#search=snap
-- url: http://blog.gospodarets.com/css-scroll-snap/
+- url: https://blog.gospodarets.com/css-scroll-snap
   name: Native CSS Scroll Snap Points
 
 post_nav:
