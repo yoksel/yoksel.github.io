@@ -139,7 +139,7 @@ heart--w150--steelblue.svg</b></pre>
 
 <b>Upd:</b> если в SVG опустить закрывающие теги (написать <code>&lt;use/></code>, a не <code>&lt;use>...&lt;/use></code>), в старых браузерах перестаёт работать HTML5-разметка.
 Всем SVG-тегам на странице обязательно нужен закрывающий парный тег.
-За уточнение спасибо <a href="https://twitter.com/mista_k">@mista_k</a>.
+За уточнение спасибо <a href="https://twitter.com/mista_k">mista_k</a>.
 
 Отображение иконки в старых браузерах обеспечивается вот таким кодом:
 
@@ -161,6 +161,6 @@ heart--w150--steelblue.svg</b></pre>
 
 Также следует уточнить, что мои познания в Js оставляют желать лучшего, и мой код может показаться вам странным. Кстати, буду признательна за советы как его улучшить.
 
-<b>Upd:</b> за помощь и ценные советы спасибо <a href="https://twitter.com/mista_k">@mista_k</a> и <a href="https://twitter.com/alexeyten">@alexeyten</a>.
+<b>Upd:</b> за помощь и ценные советы спасибо <a href="https://twitter.com/mista_k">mista_k</a> и <a href="https://twitter.com/alexeyten">alexeyten</a>.
 
 

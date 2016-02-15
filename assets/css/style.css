@@ -920,6 +920,26 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -240px 0; }
+.has-link-icons A[href*="twitter.com"]:before,
+.widget--about A[href*="twitter.com"]:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+  vertical-align: middle;
+  background: url(/assets/img/sprite.png);
+  background-position: -300px 0; }
+.has-link-icons A[href*="developer.mozilla.org"]:before,
+.widget--about A[href*="developer.mozilla.org"]:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+  vertical-align: middle;
+  background: url(/assets/img/sprite.png);
+  background-position: -280px 0; }
 .has-link-icons .no-favicon:before,
 .widget--about .no-favicon:before {
   content: none !important; }
