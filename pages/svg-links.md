@@ -58,7 +58,7 @@ type: page
   </li>
   <li><a href="http://www.youtube.com/watch?v=SeLOt_BRAqc">You Don't Know SVG — Dmitry Baranovskiy</a>
   </li>
-  <li><a href="yoksel.github.io/about-svg">Позвольте представить: SVG</a></li>
+  <li><a href="http://yoksel.github.io/about-svg">Позвольте представить: SVG</a></li>
 </ul>
 
 <h4>Векторные редакторы</h4>
