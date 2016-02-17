@@ -63,10 +63,7 @@
         @include icon;
         background-position: -240px 0;
         }
-    A[href*="twitter.com"]:before {
-        @include icon;
-        background-position: -300px 0;
-        }
+
     A[href*="developer.mozilla.org"]:before {
         @include icon;
         background-position: -280px 0;
@@ -75,6 +72,11 @@
         content: none !important;
         }
 }
+
+A[href*="twitter.com"]:before {
+    @include icon;
+    background-position: -300px 0;
+    }
 
 A[href*="rss"]:before,
 A[href*="feed"]:before {

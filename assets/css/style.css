@@ -293,19 +293,15 @@ PRE CODE {
 .l-main {
   width: 100%; }
 
-.post,
-.posts {
+.posts,
+.post--single {
   margin-right: 19em; }
   @media (max-width: 900px) {
-    .post,
-    .posts {
+    .posts,
+    .post--single {
       margin-right: 0; } }
 
-.p-layout-onecolumn .post {
-  margin-right: 0; }
-
 .p-layout-mainpage .post {
-  margin-right: 0;
   margin-bottom: 32px;
   padding-bottom: 32px;
   border-bottom: 1px solid #DDD;
@@ -753,7 +749,7 @@ PRE CODE {
     max-width: 100%; }
 
 .widget__item {
-  margin-bottom: 7px; }
+  margin-bottom: 8px; }
   @media (max-width: 700px) {
     .widget__item {
       margin-bottom: 3px; } }
@@ -771,6 +767,42 @@ PRE CODE {
   height: auto;
   margin: 0 0 32px 32px;
   border-radius: 10px; }
+
+/* Tags
+-------------------------------- */
+@media (max-width: 900px) {
+  .posts-by-tags {
+    margin-bottom: 32px; } }
+
+.tags-list {
+  margin-bottom: 16px;
+  padding: 1rem;
+  background: #EEE; }
+
+.tags-list__item {
+  display: inline-block;
+  margin-right: .75em;
+  line-height: 1.75; }
+
+.tags-button {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px dashed;
+  font: inherit;
+  line-height: 1;
+  color: #333;
+  cursor: pointer; }
+  .tags-button--current {
+    border: 0;
+    -webkit-box-shadow: 0 0 0 4px #333;
+    box-shadow: 0 0 0 4px #333;
+    background: #333;
+    color: #FFF; }
+
+.posts__list---by-tag .post {
+  display: none;
+  margin-bottom: 8px; }
 
 /* Animations
 -------------------------------- */
@@ -920,16 +952,6 @@ PRE CODE {
   vertical-align: middle;
   background: url(/assets/img/sprite.png);
   background-position: -240px 0; }
-.has-link-icons A[href*="twitter.com"]:before,
-.widget--about A[href*="twitter.com"]:before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-right: 3px;
-  vertical-align: middle;
-  background: url(/assets/img/sprite.png);
-  background-position: -300px 0; }
 .has-link-icons A[href*="developer.mozilla.org"]:before,
 .widget--about A[href*="developer.mozilla.org"]:before {
   content: "";
@@ -943,6 +965,16 @@ PRE CODE {
 .has-link-icons .no-favicon:before,
 .widget--about .no-favicon:before {
   content: none !important; }
+
+A[href*="twitter.com"]:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+  vertical-align: middle;
+  background: url(/assets/img/sprite.png);
+  background-position: -300px 0; }
 
 A[href*="rss"]:before,
 A[href*="feed"]:before {

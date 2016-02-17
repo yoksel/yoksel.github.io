@@ -9,47 +9,43 @@
     @media (max-width: $break-point ) {
         padding: $base-margin $base-margin * .6;
         }
-    }   
+    }
     .l-header,
     .l-content {
         @include margin ( bottom );
         &:after {
             @extend %clear;
             }
-        }   
+        }
     .l-content {
         @include padding ( bottom );
-        @include border ( bottom );     
-        }   
-    .l-main,    
+        @include border ( bottom );
+        }
+    .l-main,
     .l-aside {
         float: left;
         }
         .l-main {
             width: 100%;
             }
-            .post,
-            .posts {
-                margin-right: 19em; 
+            .posts,
+            .post--single {
+                margin-right: 19em;
                 @media (max-width: $break-point ) {
-                    margin-right: 0;    
+                    margin-right: 0;
                     }
                 }
-                .p-layout-onecolumn .post {
-                    margin-right: 0;
-                    }
                 .p-layout-mainpage .post {
-                    margin-right: 0;
-                    @include margin ( bottom ); 
+                    @include margin ( bottom );
                     @include padding ( bottom );
                     @include border ( bottom );
-                    
+
                     &:last-child {
                         margin: 0;
                         padding: 0;
                         border: 0;
                         }
-                    
+
                     /*@media (min-width: $break-point ) {
                         float: left;
                         width: 48.5%;
@@ -62,7 +58,7 @@
                             }
                     }*/
 
-                }   
+                }
 
         .l-aside {
             width: 17em;
