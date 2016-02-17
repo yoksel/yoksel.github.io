@@ -1,2 +1,8 @@
-{% if page.post_nav %}<dl class="post__index">
-<dt>Содержание:</dt>{% for link in page.post_nav %}<dd><a href="{{ link.url }}">{{ link.name }}</a></dd>{% endfor %}</dl>{% endif %}
+{% if page.post_nav %}<dl class="post__index post-index">
+    <dt class="post-index__title">Содержание:</dt>
+    {% for link in page.post_nav %}
+        <dd class="post-index__item">
+        <a href="{{ link.url }}">{{ link.name }}</a>
+        </dd>
+    {% endfor %}
+</dl>{% endif %}

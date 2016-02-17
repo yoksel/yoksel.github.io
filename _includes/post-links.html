@@ -1,2 +1,7 @@
-{% if page.links %}<dl class="post__links post__links--readmore has-link-icons">
-<dt>{% if page.links_title %}{{ page.links_title }}:{% else %}{{ site.links_title}}:{% endif %}</dt>{% for link in page.links %}<dd><a href="{{ link.url }}">{% if link.name %}{{ link.name }}{% else %}{{ link.url | replace:'http://','' }}{% endif %}</a>{% if link.desc %}&mdash; {{ link.desc }}{% endif%}</dd>{% endfor %}</dl>{% endif %}
+{% if page.links %}
+    <dl class="post__links post-links post__links--readmore has-link-icons">
+    <dt class="post-links__title">{% if page.links_title %}{{ page.links_title }}:{% else %}{{ site.links_title}}:{% endif %}</dt>
+    {% for link in page.links %}
+        <dd class="post-links__item"><a href="{{ link.url }}">{% if link.name %}{{ link.name }}{% else %}{{ link.url | replace:'http://','' }}{% endif %}</a>{% if link.desc %}&mdash; {{ link.desc }}{% endif%}</dd>{% endfor %}
+    </dl>
+{% endif %}

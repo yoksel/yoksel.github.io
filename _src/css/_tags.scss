@@ -8,11 +8,12 @@
     @include mid-margin( bottom );
     padding: 1rem;
     background: #EEE;
+    text-align: center;
     }
     .tags-list__item {
         display: inline-block;
-        margin-right: .75em;
-        line-height: 1.75;
+        margin-right: .5em;
+        line-height: 2;
         }
 
 .tags-button {
@@ -27,6 +28,7 @@
 
     &--current {
         border: 0;
+        outline: 0;
         box-shadow: 0 0 0 4px #333;
         background: #333;
         color: #FFF;

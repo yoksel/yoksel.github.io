@@ -1,5 +1,0 @@
-<h3>Посты по тегу "{{ include.tagname }}"</h3>
-
-<ul class="list widget__list">
-{% for post in {{ include.items }} %}{% if post.type == 'post' %}{% if post.url == page.url %}
-<li class="item widget__item widget__item--current">{{ post.title }}</li>{% else %}<li class="item widget__item"><a href="{{ post.url }}">{{ post.title }}</a></li>{% endif %}{% endif %}{% endfor %}</ul>

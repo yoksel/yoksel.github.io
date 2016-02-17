@@ -1,18 +1,24 @@
 ---
 layout: default
-title: Темы
+title: Метки
 layout: tags
 path: /tags/
 ---
 
-<!-- http://blog.lanyonm.org/articles/2013/11/21/alphabetize-jekyll-page-tags-pure-liquid.html -->
-{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-{% assign tag_words = site_tags | split:',' | sort %}
+<!-- https://superdevresources.com/tag-cloud-jekyll/ -->
 <ul class="list tags-list">
-{% for tag in tag_words %}
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
     <li class="tags-list__item">
-        <button class="tags-button tags-button--{{ tag }}"
-    data-target-tag="{{ tag }}">{{ tag }}</button>
+        <button class="tags-button tags-button--{{ tag[0] }}"
+    data-target-tag="{{ tag[0] }}"
+    style="font-size: {{ tag | last | size | times: 4 | plus: 80 }}%">
+    {% for data_tag in site.data.tags %}
+        {% if data_tag.slug == tag[0] %}
+            {{ data_tag.name }}
+        {% endif %}
+    {% endfor %}
+     ({{ tag | last | size }})</button>
     </li>
 {% endfor %}
 </ul>

@@ -203,13 +203,29 @@
     rgba(255,255,255,0) 1px ) repeat-x right 90%;
         background-size: 3px 1px;
         }
-.post__links,
-.post__index {
-    DT {
+
+.post-tags {
+    @include margin( bottom );
+
+    &__title,
+    &__item {
+        display: inline-block;
+        }
+    &__title {
+        font-weight: bold;
+        }
+    &__item:last-child &__delim {
+        display: none;
+        }
+}
+
+.post-links,
+.post-index {
+    &__title {
         margin-bottom: 5px;
         font-weight: bold;
         }
-    DD {
+    &__item {
         margin-bottom: 5px;
         &:before {
             content: "\2014";
@@ -265,19 +281,13 @@
 .post__index {
     @include margin( bottom );
     }
-.post__tags {
-    @include padding ( top );
-    @include border ( top );
-    .item {
-        display: inline-block;
-        }
-    }
 
 .post__link-back {
     @include mid-margin( bottom );
     text-align: center;
     color: darken($base-border-color, 20);
     }
+
 .post__nav {
     @include margin( top );
     @include padding ( top );
@@ -304,6 +314,7 @@
         @extend %clear;
         }
     }
+
 .table--colors {
     min-width: 780px;
     background: white;
@@ -360,6 +371,7 @@
     display: table;
     clear: both;
     }
+
 .widget--disqus {
     @include margin( top );
     @include padding ( top );

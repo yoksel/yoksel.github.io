@@ -611,15 +611,24 @@ PRE CODE {
   -webkit-background-size: 3px 1px;
   background-size: 3px 1px; }
 
-.post__links DT,
-.post__index DT {
+.post-tags {
+  margin-bottom: 32px; }
+  .post-tags__title, .post-tags__item {
+    display: inline-block; }
+  .post-tags__title {
+    font-weight: bold; }
+  .post-tags__item:last-child .post-tags__delim {
+    display: none; }
+
+.post-links__title,
+.post-index__title {
   margin-bottom: 5px;
   font-weight: bold; }
-.post__links DD,
-.post__index DD {
+.post-links__item,
+.post-index__item {
   margin-bottom: 5px; }
-  .post__links DD:before,
-  .post__index DD:before {
+  .post-links__item:before,
+  .post-index__item:before {
     content: "\2014";
     margin-right: 5px; }
 
@@ -658,12 +667,6 @@ PRE CODE {
 
 .post__index {
   margin-bottom: 32px; }
-
-.post__tags {
-  padding-top: 32px;
-  border-top: 1px solid #DDD; }
-  .post__tags .item {
-    display: inline-block; }
 
 .post__link-back {
   margin-bottom: 16px;
@@ -777,12 +780,13 @@ PRE CODE {
 .tags-list {
   margin-bottom: 16px;
   padding: 1rem;
-  background: #EEE; }
+  background: #EEE;
+  text-align: center; }
 
 .tags-list__item {
   display: inline-block;
-  margin-right: .75em;
-  line-height: 1.75; }
+  margin-right: .5em;
+  line-height: 2; }
 
 .tags-button {
   padding: 0;
@@ -795,6 +799,7 @@ PRE CODE {
   cursor: pointer; }
   .tags-button--current {
     border: 0;
+    outline: 0;
     -webkit-box-shadow: 0 0 0 4px #333;
     box-shadow: 0 0 0 4px #333;
     background: #333;

@@ -1,0 +1,50 @@
+- slug: animation
+  name: анимация
+
+- slug: blend-modes
+  name: режимы наложения
+
+- slug: borders
+  name: рамки
+
+- slug: box-shadow
+  name: тени
+
+- slug: firefox
+  name: Firefox
+
+- slug: gradients
+  name: градиенты
+
+- slug: experiments
+  name: эксперименты
+
+- slug: js
+  name: Js
+
+- slug: layout
+  name: раскладка
+
+- slug: masks
+  name: маски
+
+- slug: pseudo-elements
+  name: псевдоэлементы
+
+- slug: selectors
+  name: селекторы
+
+- slug: svg
+  name: SVG
+
+- slug: text
+  name: текст
+
+- slug: tools
+  name: инструменты
+
+- slug: transform
+  name: трансформации
+
+- slug: unicode
+  name: юникод
