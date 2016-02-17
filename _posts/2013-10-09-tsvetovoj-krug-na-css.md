@@ -5,12 +5,14 @@ categories:
 - Css
 - Filtres
 - Transform
-tags: []
+
+tags: [experiments]
+
 type: post
 
 desc: На css-tricks.com опубликовали интересный способ получить цветовой круг с помощью Css. В уроке код для SASS, я попробовала сделать это простым CSS и используя меньшее количество элементов.
 
-links: 
+links:
 - url: http://docs.webplatform.org/wiki/svg/tutorials/smarter_svg_filters
   name: docs.webplatform.org/wiki/svg/tutorials/smarter_svg_filters
 - url: http://dev.w3.org/fxtf/filters/
@@ -32,5 +34,5 @@ links:
 Размытие в исходном примере сделано с помощью <code>-webkit-filter: blur(1.7em);</code>, следовательно, будет работать только в браузерах на основе Webkit.
 Но можно воспользоваться svg-фильтрами и получить размытие и в других браузерах:
 
-<iframe class="jsbin" style="height: 420px" src="http://jsbin.com/ewIRARe/2/embed?output"></iframe>  
+<iframe class="jsbin" style="height: 420px" src="http://jsbin.com/ewIRARe/2/embed?output"></iframe>
 

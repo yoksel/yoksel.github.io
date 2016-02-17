@@ -2,6 +2,9 @@
 layout: default
 title: Анимируем градиенты ещё раз
 type: post
+
+tags: [animation, gradients, experiments]
+
 image: http://img-fotki.yandex.ru/get/6846/5091629.a0/0_83fcf_1a481db2_orig
 desc: Предыдущее решение мне всё-таки кажется несколько избыточным, а тут пришел в голову ещё один способ, на этот раз — с псевдоэлементами и opacity.
 ---

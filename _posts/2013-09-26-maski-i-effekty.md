@@ -6,7 +6,9 @@ categories:
 - Box-shadow
 - Css
 - Играюсь
-tags: []
+
+tags: [experiments]
+
 status: publish
 type: post
 published: true

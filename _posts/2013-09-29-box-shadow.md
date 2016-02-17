@@ -4,7 +4,9 @@ title: Box-shadow
 categories:
 - Box-shadow
 - Css
-tags: []
+
+tags: [box-shadow, pseudo-elements]
+
 status: publish
 type: post
 published: true

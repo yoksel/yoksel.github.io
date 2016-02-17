@@ -2,10 +2,13 @@
 layout: default
 title: Рисовалка анимированных теней
 type: post
-image: 
+
+tags: [box-shadow, animation, tools, js]
+
+image:
 desc: Редактор позволяет рисовать разноцветные анимированные узоры из клеточек. Можно управлять скоростью анимации, размером поля, количеством клеточек и кадров.
 
-links: 
+links:
 - url: /box-shadow/
   name: Box-shadow
 ---

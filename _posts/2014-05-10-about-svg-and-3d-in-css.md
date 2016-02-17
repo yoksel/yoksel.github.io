@@ -2,6 +2,9 @@
 layout: default
 title: Впечатления недели
 type: post
+
+tags: [svg]
+
 image: "http://img-fotki.yandex.ru/get/5311/5091629.9d/0_82805_e9a10e72_L.png"
 desc: "Презентации и статьи про SVG и 3D-фигуры в CSS"
 ---

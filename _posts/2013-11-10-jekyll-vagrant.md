@@ -3,6 +3,8 @@ layout: default
 title: Jekyll, Vagrant и все-все-все
 type: post
 
+tags: [tools]
+
 desc: Сайт сменил движок. Теперь это Jekyll — генератор статических страниц
 ---
 

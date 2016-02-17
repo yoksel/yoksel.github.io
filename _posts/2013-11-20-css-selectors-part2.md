@@ -4,6 +4,7 @@ title:  Css-селекторы, часть 2
 type: post
 
 desc: Продолжение справочника по селекторам.
+tags: [selectors]
 
 links:
 - url: /specifity/

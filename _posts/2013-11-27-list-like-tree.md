@@ -3,6 +3,8 @@ layout: default
 title:  Древовидный список на CSS
 type: post
 
+tags: [experiments]
+
 image: http://img-fotki.yandex.ru/get/9895/5091629.9a/0_7ec7b_511301f7_M.png
 desc: Как-то мне потребовалось сделать иерархическое представление структуры проекта, для реализации был выбран Css.
 ---

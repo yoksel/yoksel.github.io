@@ -6,7 +6,9 @@ categories:
 - Box-shadow
 - Css
 - Shapes
-tags: []
+
+tags: [borders, box-shadow, pseudo-elements]
+
 status: publish
 type: post
 published: true

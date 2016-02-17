@@ -2,6 +2,9 @@
 layout: default
 title: Режимы наложения и их фоллбеки
 type: post
+
+tags: [blend-modes]
+
 image: http://img-fotki.yandex.ru/get/4805/5091629.a1/0_855c2_8fe321a9_M.jpg
 desc: Не так давно в Firefox 32 включили поддержку mix-blend-mode, a в Chrome 37 — CSS shapes. Обе технологии выглядят очень интересно, так что я решила попробовать их в действии, заодно выяснив как будет выглядеть страница в браузерах, где они не поддерживаются.
 

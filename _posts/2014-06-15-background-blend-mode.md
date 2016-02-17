@@ -2,6 +2,9 @@
 layout: default
 title: Background-blend-mode
 type: post
+
+tags: [blend-modes]
+
 image: http://img-fotki.yandex.ru/get/6728/5091629.a0/0_83425_21180cd2_orig.png
 desc: Режимы смешивания в Firefox 30 или новые приключения CSS-градиентов.
 

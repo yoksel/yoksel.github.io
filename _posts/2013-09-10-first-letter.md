@@ -5,7 +5,9 @@ categories:
 - Css
 - Pseudoclasses
 - Pseudoelements
-tags: []
+
+tags: [text]
+
 status: publish
 type: post
 published: true

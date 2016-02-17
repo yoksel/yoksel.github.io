@@ -6,7 +6,9 @@ categories:
 - Box-shadow
 - Css
 - Shapes
-tags: []
+
+tags: [experiments, box-shadow]
+
 status: publish
 type: post
 published: true

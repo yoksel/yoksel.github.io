@@ -2,6 +2,9 @@
 layout: default
 title: SVG плюс Angular минус Firefox
 type: post
+
+tags: [svg, firefox]
+
 image: https://img-fotki.yandex.ru/get/15538/5091629.a3/0_86805_56cc8e5e_orig
 desc: SVG удивительная технология, не в последнюю очередь благодаря своим оригинальным подводным камням. Парочка свежих проблем была обнаружена при взаимодействии SVG с Angular, причем они возникали только в Firefox.
 

@@ -6,14 +6,16 @@ categories:
 - Boder-radius
 - Css
 - Играюсь
-tags: []
+
+tags: [experiments]
+
 status: publish
 type: post
 published: true
 meta:
   _edit_last: '1'
 ---
-Пробую сочетания анимации, теней и рамок. 
+Пробую сочетания анимации, теней и рамок.
 
 <i>В сафари примеры отображаются некорректно, для просмотра воспользуйтесь другими браузерами</i>.<!--more-->
 

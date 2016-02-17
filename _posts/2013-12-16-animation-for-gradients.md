@@ -3,6 +3,8 @@ layout: default
 title: Анимируем CSS-градиенты
 type: post
 
+tags: [gradients, animation, box-shadow]
+
 image: http://img-fotki.yandex.ru/get/9104/5091629.9a/0_7ec7a_bce9f6bd_M.png
 desc: Как анимировать градиенты если очень нужно.
 

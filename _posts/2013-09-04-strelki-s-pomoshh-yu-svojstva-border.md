@@ -4,7 +4,9 @@ title: Стрелки с помощью свойства border
 categories:
 - Border
 - Css
-tags: []
+
+tags: [borders]
+
 status: publish
 type: post
 published: true

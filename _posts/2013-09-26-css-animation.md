@@ -4,7 +4,9 @@ title: Css Animation
 categories:
 - Animation
 - Css
-tags: []
+
+tags: [animation]
+
 status: publish
 type: post
 published: true

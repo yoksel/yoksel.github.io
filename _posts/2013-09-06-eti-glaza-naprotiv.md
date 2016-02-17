@@ -6,7 +6,9 @@ categories:
 - Boder-radius
 - Css
 - Играюсь
-tags: []
+
+tags: [experiments, animation]
+
 status: publish
 type: post
 published: true

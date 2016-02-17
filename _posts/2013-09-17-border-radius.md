@@ -4,7 +4,9 @@ title: Border-radius
 categories:
 - Boder-radius
 - Css
-tags: []
+
+tags: [borders]
+
 status: publish
 type: post
 published: true

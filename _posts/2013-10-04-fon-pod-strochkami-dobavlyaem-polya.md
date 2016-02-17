@@ -4,12 +4,14 @@ title: 'Фон под строчками: добавляем поля'
 categories:
 - Box-shadow
 - Css
-tags: []
+
+tags: [text, box-shadow]
+
 status: publish
 type: post
 published: true
 
-links: 
+links:
 - url: /box-shadow
   name: Box shadow
 ---

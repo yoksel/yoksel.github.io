@@ -3,6 +3,8 @@ layout: default
 title: Полезное про анимацию и эффекты
 type: post
 
+tags: [animation]
+
 desc: Видео от Lea Verou и пост от Сss-tricks c переводом.
 ---
 

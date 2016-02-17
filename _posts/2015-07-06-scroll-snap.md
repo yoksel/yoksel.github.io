@@ -2,6 +2,9 @@
 layout: default
 title: Умная прокрутка со Scroll Snap Points
 type: post
+
+tags: [firefox]
+
 image: https://img-fotki.yandex.ru/get/3006/5091629.a4/0_8b19d_a6284f4f_orig
 desc: "В Firefox начиная с 39-й версии появились интересные CSS-свойства, которые позволяют управлять поведением прокручиваемого контента."
 
