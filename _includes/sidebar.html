@@ -3,13 +3,15 @@
 	{% include pages-list.html %}
 </div>{% endif %}{% endif %}
 
-{% if page.layout_type != 'mainpage' %}
+{% if page.layout_type != 'mainpage' and page.path != '/tags/' %}
 <div class="aside__widget widget">
 	<h3>Статьи</h3>
 	{% include posts-list.html %}
 </div>{% endif %}
 
-{% if page.type == 'post' or page.layout_type == 'mainpage' %}{% if site.pages %}<div class="aside__widget widget">
+{% if page.type == 'post'
+	or page.layout_type == 'mainpage'
+	or page.path == '/tags/' %}{% if site.pages %}<div class="aside__widget widget">
 	<h3>Страницы</h3>
 	{% include pages-list.html %}
 </div>{% endif %}{% endif %}
