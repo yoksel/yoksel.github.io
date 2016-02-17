@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
 
 	// Prevent long loading because of too many frames
 	//------------------------------------------------
-	
+
 	if($(".p-hide-demo").length > 0){
 
 		var demos = $(".post__text").find(".jsbin[data-src]");
@@ -51,7 +51,7 @@ jQuery(document).ready(function($) {
 			var tag = $(target_elem).prop("tagName")
 			tag = tag.toLowerCase();
 			$(marker_class).attr("data-target-tag", tag);
-			
+
 			var marker_position = position.top;// - $( marker_class ).height()/2;
 			$( marker_class ).css({ "top" : marker_position });
 			if( anchor == begin_id ){
@@ -59,15 +59,15 @@ jQuery(document).ready(function($) {
 				}
 			else {
 				$(marker_class).show();
-				}	
-			
+				}
+
 			var top = target_elem.offset().top - 30;
 			$("body").animate({scrollTop: top}, 100);
 			// event.preventDefault();
 		}
-	    
+
 	}
-	
+
 	$("a[href^='#']").click( function (event) {
 		var target = $(this).attr("href");
 		add_target_marker( target );
@@ -75,8 +75,41 @@ jQuery(document).ready(function($) {
 
 	var current_hash = document.location.hash;
 	if ( current_hash ){
-		add_target_marker( current_hash  );
+		// case 1: Tags page
+		if ( document.location.pathname === "/tags"
+			|| document.location.pathname === "/tags/") {
+
+			show_tags ( current_hash.substr(1) );
 		}
-	
+		// case2: Post page
+		else {
+			add_target_marker( current_hash  );
+		}
+	}
+
+	// Show posts by tag on tags page
+	//------------------------------------------------
+	var postsByTags = $(".posts__list---by-tag .post");
+
+	$(".tags-button").click( function () {
+		var targetTag = this.dataset["targetTag"];
+
+		postsByTags.hide();
+		show_tags ( targetTag, $(this) );
+
+		document.location.hash = targetTag;
+	});
+
+	function show_tags ( targetTag, elem ) {
+		var currentTagClass = 'tags-button--current';
+		var targetClass = "tag-" + targetTag;
+		elem = elem || $(".tags-button--" + targetTag);
+
+		$( "." + targetClass ).show();
+
+		$( "." + currentTagClass ).removeClass( currentTagClass );
+		elem.addClass( currentTagClass );
+	}
+
 
 });
