@@ -6,3 +6,4 @@ src/css/*prefixed.css
 *.psd
 *.sketch
 .jekyll-metadata
+.DS_Store
