@@ -57,17 +57,17 @@ links_tools:
 - url: http://jsbin.com
   name: JsBin
 - url: http://caniuse.com/
-  name: Caniuse.com
+  name: Caniuse
 - url: http://css3clickchart.com/
   name: CSS3 Click Chart
 - url: http://cssfontstack.com/
-  name: CssFontStack.com
+  name: CssFontStack
 - url: http://www.google.com/fonts/
   name: Google.com/fonts
 - url: http://leaverou.github.io/css-colors/
-  name: Css.coloratum.com
+  name: Css.coloratum
 - url: http://icomoon.io/
-  name: Icomoon.io
+  name: Icomoon
 
 links_blogs:
 - url: http://lea.verou.me/
