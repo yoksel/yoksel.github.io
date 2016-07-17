@@ -9,6 +9,9 @@ links:
 - url: http://www.w3.org/TR/SVG/coords.html
   name: Coordinate Systems, Transformations and Units
 ---
+
+https://www.w3.org/TR/CSS2/visudet.html#inline-replaced-width
+
 Управление размерами в SVG - тема сложная и важная, и нужно хорошо понимать как всё работает.
 
 Правильно заданные размеры становятся особенно актуальны, когда вы начинаете использовать маски, градиенты или паттерны, потому что их размеры зависят от системы координат документа.
