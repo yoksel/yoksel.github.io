@@ -17,13 +17,17 @@ layout: shell
 
 		{% include post-links.html %}
 
-		{% include share.html %}
+		{% if site.env == 'prod' %}
 
-		{% include post-edit.html %}
+			{% include share.html %}
 
-		{% include pagination.html %}
+			{% include post-edit.html %}
 
-		{% include disqus.html %}
+			{% include pagination.html %}
+
+			{% include disqus.html %}
+
+		{% endif %}
 	</article>
 </main>
 <aside class="l-aside" role="complementary">
