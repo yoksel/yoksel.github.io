@@ -29,6 +29,8 @@ github:
 
 excerpt_separator: <!--more-->
 
+env: prod
+
 topmenu:
 - name: 'Главная'
   url: '/'
