@@ -3,19 +3,43 @@ layout: default
 title: SVG-градиенты
 type: post
 image:
-desc:
+desc: 'В SVG не работают привычные CSS-фоны, для заливок существуют отдельные конструкции. Для градиентов это элементы linearGradient и radialGradient — линейный и радиальный градиенты соответственно.'
+
+tags: [svg]
+
+post_nav:
+- url: '#stops'
+  name: 'Управление цветами'
+- url: '#linear'
+  name: 'Линейный градиент'
+- url: '#radial'
+  name: 'Радиальный градиент'
+- url: '#gradientUnits'
+  name: 'gradientUnits'
+- url: '#gradientTransform'
+  name: 'gradientTransform'
+- url: '#spreadMethod'
+  name: 'spreadMethod'
+- url: '#xlink:href'
+  name: 'xlink:href'
+- url: '#pitfalls'
+  name: 'Подводные камни'
+- url: '#demos'
+  name: 'Примеры использования'
 
 ---
 
-В SVG нельзя использовать привычные CSS фоны, для заливок существуют отдельные конструкции. Для градиентов это <code>linearGradient</code> и <code>radialGradient</code> — линейный и радиальный градиенты соответственно.<!--more-->
+В SVG не работают привычные CSS-фоны, для заливок здесь существуют отдельные конструкции. Для градиентов это элементы <code>linearGradient</code> и <code>radialGradient</code> — линейный и радиальный градиенты соответственно.<!--more-->
 
-Привычные CSS-градиенты объявляются прямо в CSS-коде, и код самого градиента потом нельзя переиспользовать. SVG-градиенты устроены иначе: перед использованием градиент должен быть описан с помощью соответствующего тега, и после этого его можно переиспользовать сколько угодно раз. И даже больше: градиенты могут наследовать свойства друг друга.
+Спецификация: <a href="https://www.w3.org/TR/SVG/pservers.html#Gradients">w3.org/TR/SVG/pservers.html#Gradients</a>
 
-Градиент, так же как и заливка цветом, задаётся с помощью <code>fill</code> — атрибутом элемента или через CSS.
+CSS-градиенты объявляются прямо в CSS-коде, и код самого градиента потом нельзя переиспользовать. SVG-градиенты устроены иначе: перед использованием градиент должен быть описан с помощью соответствующего тега, и после этого его можно переиспользовать сколько угодно раз. И даже больше: градиенты могут наследовать свойства друг друга (об этом будет рассказано ниже).
+
+Градиент, так же, как и заливка цветом, задаётся с помощью <code>fill</code> — атрибутом элемента или через CSS. Также его можно использовать для обводки, с помощью <code>stroke</code> или через CSS.
 
 Код самого простого градиента выглядит вот так:
 
-<pre><code class="language-markup">&lt;linearGradient id="grad--linear-1">
+<pre><code class="language-markup">&lt;linearGradient id="grad--linear">
     &lt;stop offset="0%" stop-color="gold" />
     &lt;stop offset="100%" stop-color="teal" />
 &lt;/linearGradient></code></pre>
@@ -23,16 +47,18 @@ desc:
 А вот так градиент выглядит в действии:
 
 <svg style="border: 1px solid #DDD">
-  <linearGradient id="grad--linear-1">
+  <linearGradient id="grad--linear">
     <stop offset="0%" stop-color="gold" />
     <stop offset="100%" stop-color="teal" />
   </linearGradient>
 
-  <rect fill="url(#grad--linear-1)"
+  <rect fill="url(#grad--linear)"
         width="100%" height="100%"/>
 </svg>
 
 Обязательный атрибут любого градиента — <code>id</code>, чтобы градиент можно было применить к элементу.
+
+<h3 id="stops">Управление цветами</h3>
 
 Для управлениям цветами градиента служит элемент <code>stop</code>. Атрибуты:
 
@@ -42,6 +68,7 @@ desc:
 <li><code>stop-opacity</code> — прозрачность цвета</li>
 </ul>
 
+Положение цвета задаётся в процентах или числом от 0 до 1 (50% и .5 будут работать одинаково).
 Цвет и положение цвета указывать обязательно.
 
 Интересно, что в отличие от CSS-градиентов, цвета SVG-градиентов можно анимировать (в данном случае, с помощью CSS):
@@ -51,20 +78,22 @@ desc:
 
 Линейный и радиальный градиенты имеют несколько общих свойств, но различаются способами, которыми задаются размер и направление градиента. Рассмотрим поподробнее.
 
-<h3>Линейный градиент</h3>
+<h3 id="linear">Линейный градиент</h3>
 
 Задаётся с помощью тэга <code>linearGradient</code>.
 
-Координаты вектора отрисовки градиента задаются с помощью атрибутов <code>x1</code>, <code>y1</code>, <code>x2</code> и <code>y2</code>.
+Вектор градиента задаётся с помощью атрибутов <code>x1</code>, <code>y1</code>, <code>x2</code> и <code>y2</code>.
 
-<code>x1</code> и <code>y1</code> задают координаты начала линии, <code>x2</code> и <code>y2</code> — координаты конца, похоже на рисование линии с помощью тега <code>line</code>.
+<code>x1</code> и <code>y1</code> задают координаты начала вектора, <code>x2</code> и <code>y2</code> — координаты конца ( похоже на рисование линии с помощью тега <code>line</code>).
 
 <p data-height="500" data-theme-id="4974" data-slug-hash="NAamgv" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/NAamgv/">Gradient Coords: x2 & y2</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Если координаты не заданы, рисуется горизонтальный градиент слева направо.
 
-<h3>Радиальный градиент</h3>
+Кнопки вверху демо переключают свойство <code>gradientUnits</code>, отвечающее за систему координат, подробнее о нём будет рассказано <a href="#gradientUnits">ниже</a>.
+
+<h3 id="radial">Радиальный градиент</h3>
 
 Задаётся с помощью тега <code>radialGradient</code>.
 
@@ -82,33 +111,42 @@ desc:
 
 Если эти атрибуты не заданы, их значения по умолчанию будут равны <code>cx</code> и <code>cy</code> соответственно.
 
-<br>
-<h3>Общие свойства градиентов</h3>
+<h3 id="common-props">Общие свойства градиентов</h3>
 
-<h4>gradientUnits</h4>
+<h4 id="gradientUnits">gradientUnits</h4>
 
-Это очень важное свойство задаёт систему координат для атрибутов, отвечающих за направление градиента (<code>x1</code>, <code>y1</code>, <code>x2</code> и <code>y2</code> для линейных градиентов и <code>cx</code>, <code>cy</code>, <code>r</code>, <code>fx</code> и <code>fy</code> для радиальных).
+Это очень важное свойство задаёт систему координат для атрибутов, отвечающих за направление и размеры градиента (<code>x1</code>, <code>y1</code>, <code>x2</code> и <code>y2</code> для линейных градиентов и <code>cx</code>, <code>cy</code>, <code>r</code>, <code>fx</code> и <code>fy</code> для радиальных).
 
 Возможные значения:
 
 <code>objectBoundingBox</code> — координаты рассчитываются относительно объекта, к которому применяется градиент. Значение по умолчанию.
 <code>userSpaceOnUse</code> — координаты рассчитываются относительно системы координат всего SVG-элемента.
 
-<p data-height="470" data-theme-id="4974" data-slug-hash="BzBzYG" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/BzBzYG/">gradientUnits</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+Помимо того, что при переключении <code>gradientUnits</code> градиент может менять своё положение из-за смены системы координат, это свойство также может существенно влиять на отрисовку градиента для фигур с разными шириной и высотой (например, вытянутый прямоугольник или эллипс).
+
+При значении <code>userSpaceOnUse</code> цвета линейного градиента всегда будут перпендикулярны основному вектору, а радиальный градиент будет иметь форму круга. Но если градиент задан вытянутой фигуре, а значение <code>gradientUnits</code> равно <code>objectBoundingBox</code>, градиент пытается уместиться в фигуру целиком и подвергается искажениям. Особенно это заметно на радиальных градиентах:
+
+<p data-height="470" data-theme-id="4974" data-slug-hash="WxaKdw" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/WxaKdw/">gradientUnits (radialGradient)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-Попереключайте значения в демо и посмотрите как меняется отрисовка градиента: с <code>objectBoundingBox</code> он будет точно вписан в фигуру, а при <code>userSpaceOnUse</code> он будет растянут на весь SVG-элемент, и в фигуре будет видна только его часть.
+У линейных градиентов в этом случае меняется угол расположения цветов градиента относительно его вектора:
 
-<h4>gradientTransform</h4>
+<p data-height="430" data-theme-id="4974" data-slug-hash="BzBzYG" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/BzBzYG/">gradientUnits</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+Так что даже если системы координат фигуры и SVG-элемента совпадают, из-за разных значений <code>gradientUnits</code> градиент может выглядеть по-разному.
+
+
+<h4 id="gradientTransform">gradientTransform</h4>
 
 Атрибут позволяет задать трансформациии градиента. Трансформации <a href="/svg-shapes/">те же</a>, что и для обычных фигур, например, градиент можно повернуть или растянуть.
 
 <p data-height="470" data-theme-id="4974" data-slug-hash="bZAvxg" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/bZAvxg/">gradientTransform</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-<h4>spreadMethod</h4>
+<h4 id="spreadMethod">spreadMethod</h4>
 
-Этот атритбут управляет повторением градиента, если градиент меньше, чем область отрисовки.
+Этот атритбут управляет поведением градиента, если он меньше, чем область отрисовки.
 
 Возможные значения:
 
@@ -119,9 +157,9 @@ desc:
 <p data-height="570" data-theme-id="4974" data-slug-hash="YWANyJ" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/YWANyJ/">SpreadMethods for SVG Gradients</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-<code>spreadMethod</code> не работает в Safari. Если надо чтобы везде работало, линейные повторяющиеся и отраженные градиенты можно имитировать с помощью паттернов, а радиальные всё-таки придётся прописывать руками.
+<code>spreadMethod</code> не работает в Safari. Если надо чтобы везде работало, линейные повторяющиеся и отраженные градиенты можно имитировать с помощью паттернов, а повторение радиальных всё-таки придётся прописывать руками.
 
-<h4>xlink:href</h4>
+<h4 id="xlink-href">xlink:href</h4>
 
 Этот атрибут позволяет градиентам заимствовать друг у друга цвета и свойства. Если в градиенте, содержащем <code>xlink:href</code>, не заданы цвета, они унаследуются из градиента по ссылке. Также из заданного градиента унаследуются все свойства, которые не переопределены в текущем градиенте. При этом радиальные градиенты могут наследовать цвета и свойства линейного, и наоборот.
 
@@ -155,19 +193,40 @@ desc:
 
 Кстати, о трансформациях: для градиентов, как и для всех прочих элементов, по умолчанию трансформации производятся относительно верхнего левого угла документа. Если требуется переопределить центр трансформации, нужно задать <code>transform-origin</code>.
 
-Явно в атрибуте его можно задать только для <code>rotate</code> (например, <code>rotate(180, 100, 100)</code>), для других трансформаций <code>transform-origin</code> будет работать только если он вместе с трансформацией задан в CSS. Но <code>gradientTransform</code> нельзя задать через CSS, следовательно <code>transform-origin</code> так тоже задать не получится. В этом случае можно использовать центрирование через <code>translate</code> (за подсказку спасибо <a href="https://twitter.com/AmeliasBrain/status/753284973210271744">@AmeliasBrain</a>):
+Явно в атрибуте его можно задать только для <code>rotate</code> (например, <code>rotate(180, 100, 100)</code>, два последних числа — это оно), для других трансформаций <code>transform-origin</code> будет работать только если он вместе с трансформацией задан в CSS. Но <code>gradientTransform</code> нельзя задать через CSS, следовательно <code>transform-origin</code> так тоже задать не получится. В этом случае можно использовать центрирование через <code>translate</code> (за подсказку спасибо <a href="https://twitter.com/AmeliasBrain/status/753284973210271744">@AmeliasBrain</a>):
 
 <pre><code class="language-markup">translate(x,y) scale(s) translate(-x,-y).</code></pre>
 
 В случае с радиальным градиентом вместо <code>scale</code> будет удобнее управлять радиусом градиента.
 
-<p data-height="300" data-theme-id="4974" data-slug-hash="VjZGGg" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/VjZGGg/">Animated pattern with SVG gradient</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<h3 id="pitfalls">Подводные камни</h3>
+
+Градиент можно использовать в качестве заливки и обводки, и задавать его можно как атрибутами <code>fill</code> и <code>stroke</code>, так и в CSS. При этом можно сложить градиенты в отдельный файл, и подключать их оттуда, это избавит от необходимости вставлять градиенты в тело документа.
+
+К сожалению, все самые удобные и интересные способы не очень хорошо поддерживаются браузерами. Так, запись вида <code>fill: url(#grad);</code> в CSS подразумевает, что градиент с таким ID нужно искать в текущем документе. В Хроме, Опере и Сафари всё так и происходит, однако Firefox начинает искать градиент относительно расположения файла со стилями, и ожидаемо ничего не находит.
+
+Запись вроде <code>fill: url(svg-with-gradients.svg#gradient);</code> указывает, что градиент нужно брать из внешнего файла, и это было бы суперудобно, но, к сожалению, работает только в Firefox.
+
+Таким образом, самый надёжный способ — это задавать градиент используя атрибуты элемента.
+
+<h3 id="demos">Примеры использования</h3>
 
 SVG-градиенты сами по себе дают интересные возможности оформления, но ещё интереснее то, как они работают в сочетании с масками. Например, используя маски и градиенты можно сделать вот такие мыльные пузыри:
 
 <p data-height="500" data-theme-id="4974" data-slug-hash="EyZgLo" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/EyZgLo/">SVG Bubbles</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-<a href="http://codepen.io/yoksel/full/BzkyBJ">Подробная схема отдельного пузыря</a>.
+<a href="http://codepen.io/yoksel/full/BzkyBJ">Тут есть подробная схема отдельного пузыря.</a>
+
+Также анимируя градиенты можно делать разные интересные штуки. Например, вот такой паттерн (цвета анимируются с помощью CSS):
+
+<p data-height="400" data-theme-id="4974" data-slug-hash="VjZGGg" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/VjZGGg/">Animated pattern with SVG gradient</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+Или переливающийся текст:
+
+<p data-height="300" data-theme-id="4974" data-slug-hash="RRLXKP" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/RRLXKP/">Text with gradientTransform</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+Анимацию цветов можно сделать с помощью CSS, трансформации можно добавить только с помощью JavaScript (я это делаю с помощью библиотеки <a href="https://greensock.com/get-started-js">GSAP</a>).
 
