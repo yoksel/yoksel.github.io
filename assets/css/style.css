@@ -545,10 +545,16 @@ PRE CODE {
   .post__text OL LI:before {
     content: counter(num-list) ". ";
     counter-increment: num-list; }
+  .post__text P + H3,
+  .post__text SCRIPT + H3,
+  .post__text PRE + H3,
+  .post__text IFRAME + H3,
+  .post__text svg + H3,
   .post__text P + H4,
   .post__text SCRIPT + H4,
   .post__text PRE + H4,
-  .post__text IFRAME + H4 {
+  .post__text IFRAME + H4,
+  .post__text svg + H3 {
     margin-top: 32px; }
   .post__text P {
     white-space: pre-line; }
@@ -631,6 +637,15 @@ PRE CODE {
   .post-index__item:before {
     content: "\2014";
     margin-right: 5px; }
+
+.post-links--presentations .post-links__title {
+  margin-bottom: 0; }
+.post-links--presentations .post-links__item {
+  margin-bottom: 10px;
+  font-size: .75em;
+  color: #555; }
+  .post-links--presentations .post-links__item:before {
+    content: none; }
 
 .post__share {
   margin: 32px 0 0 0; }

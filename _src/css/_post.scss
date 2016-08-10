@@ -124,10 +124,16 @@
             counter-increment: num-list;
             }
 
+    P + H3,
+    SCRIPT + H3,
+    PRE + H3,
+    IFRAME + H3,
+    svg + H3,
     P + H4,
     SCRIPT + H4,
     PRE + H4,
-    IFRAME + H4 {
+    IFRAME + H4,
+    svg + H3 {
         @include margin( top );
         }
     P {
@@ -230,6 +236,21 @@
         &:before {
             content: "\2014";
             margin-right: 5px;
+            }
+        }
+}
+
+.post-links--presentations {
+    .post-links__title {
+        margin-bottom: 0;
+        }
+    .post-links__item {
+        margin-bottom: 10px;
+        font-size: .75em;
+        color: #555;
+
+        &:before {
+            content: none;
             }
         }
 }
