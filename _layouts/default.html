@@ -9,11 +9,8 @@ layout: shell
 
 		{% if page.date %}<time datetime="{{ page.date | date: "%Y-%m-%d" }}" class="post__date">{{ page.date | date: "%d/%m/%Y" }}</time>{% endif %}
 
-
-		{% include posts/bubble.svg %}
-
 		{% if page.include %}
-
+			{% include {{ page.include }} %}
 		{% endif %}
 
 		<div class="post__text has-link-icons">
