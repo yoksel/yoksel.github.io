@@ -47,28 +47,27 @@ module.exports = function (grunt) {
     },
 
     /**
-     * https://npmjs.org/package/grunt-autoprefixer
-     */
-
-    /**
      * https://npmjs.org/package/grunt-contrib-sass
      */
     sass: {
       dist: {
         options: {
-          // sourcemap: true,
+          // sourcemap: false,
           style: 'nested',
           banner: '<%= tag.banner %>'
         },
         files: {
           '<%= project.css_src %>/style.css': '<%= project.css_src %>/style.scss',
           '<%= project.css_src %>/nth-child.css': '<%= project.css_src %>/demos/nth-child.scss',
-          '<%= project.css_src %>/css-and-svg-masks.css': '<%= project.css_src %>/demos/css-and-svg-masks.scss'
+          '<%= project.css_src %>/css-and-svg-masks.css': '<%= project.css_src %>/demos/css-and-svg-masks.scss',
+          '<%= project.css_src %>/bubble.css': '<%= project.css_src %>/demos/bubble.scss'
         }
       }
     },
 
-
+    /**
+     * https://npmjs.org/package/grunt-autoprefixer
+     */
     autoprefixer: {
       // dist: {
       //   options: {},

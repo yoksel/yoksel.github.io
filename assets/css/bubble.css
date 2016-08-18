@@ -1,0 +1,71 @@
+/*!
+ * Name: yoksel.github.io
+ * Project: GitPages
+ * Author: yoksel
+ * Version: 0.0.1
+ */
+
+.gray-stripes-bg {
+  padding: 1rem;
+  background-color: #222;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.2)), to(transparent));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 50%, transparent 50%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 50%, transparent 50%);
+  -webkit-background-size: 2em 2em;
+  background-size: 2em 2em;
+  background-position: center center;
+  border: none; }
+
+.bubbles-group {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-height: 200px;
+  padding: 1rem; }
+
+.svg {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.bubbles-group .svg {
+  height: 100%;
+  margin: 0;
+  border: none; }
+
+.bubbles-group.items-1 .svg {
+  width: 100%;
+  max-width: 200px; }
+
+.bubbles-group.items-2 .svg {
+  width: 48%;
+  max-width: 200px; }
+
+.bubbles-group.items-5 .svg {
+  width: 16%;
+  max-width: 200px; }
+
+.svg--defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0; }
+
+.layer-steps-list {
+  counter-reset: layer-steps; }
+  .layer-steps-list LI {
+    counter-increment: layer-steps; }
+    .layer-steps-list LI:not(:last-child) {
+      margin-bottom: 2rem; }
+    .layer-steps-list LI:before {
+      content: none !important; }
+  .layer-steps-list H5:before {
+    content: counter(layer-steps) ". "; }
+
+/*# sourceMappingURL=bubble.css.map */
