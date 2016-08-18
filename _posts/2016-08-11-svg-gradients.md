@@ -5,7 +5,7 @@ type: post
 image: https://img-fotki.yandex.ru/get/60436/5091629.a4/0_90849_6897689d_orig
 desc: 'В SVG не работают привычные CSS-фоны, для заливок здесь есть свои конструкции. Для градиентов это элементы linearGradient и radialGradient — линейный и радиальный градиенты соответственно.'
 
-tags: [svg]
+tags: [svg, gradients]
 
 post_nav:
 - url: '#stops'
