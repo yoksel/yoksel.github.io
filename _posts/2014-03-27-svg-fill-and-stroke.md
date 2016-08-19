@@ -8,6 +8,28 @@ tags: [svg]
 image: http://img-fotki.yandex.ru/get/9825/5091629.9d/0_7fd41_3b1bf3e6_L.png
 desc: В SVG заливка и обводка имеют много разных интересных опций, которые предоставляют возможности гораздо шире того, что есть в CSS. Например, можно нарисовать SVG-паттерн и использовать его не только в заливке, но и в обводке. Заливке и обводке можно указывать разную прозрачность, также можно управлять пунктирной обводкой, на чем можно построить интересные анимированные эффекты.
 
+post_nav:
+- url: '#fill'
+  name: 'fill'
+- url: '#fill-rule'
+  name: 'fill-rule'
+- url: '#fill-opacity'
+  name: 'fill-opacity'
+- url: '#stroke'
+  name: 'stroke'
+- url: '#stroke-width'
+  name: 'stroke-width'
+- url: '#stroke-linecap'
+  name: 'stroke-linecap'
+- url: '#stroke-linejoin'
+  name: 'stroke-linejoin'
+- url: '#stroke-dasharray'
+  name: 'stroke-dasharray'
+- url: '#stroke-dashoffset'
+  name: 'stroke-dashoffset'
+- url: '#stroke-opacity'
+  name: 'stroke-opacity'
+
 links:
 - url: http://www.w3.org/TR/SVG/
   name: w3.org/TR/SVG
@@ -18,13 +40,13 @@ links:
 
 Например, можно нарисовать SVG-паттерн и использовать его не только в заливке, но и в обводке. Заливке и обводке можно указывать разную прозрачность, также можно управлять пунктирной обводкой, на чем можно построить интересные анимированные эффекты.
 
-В качестве заливки и обводки можно задавать <code>none</code>, <a href="/tsveta">цвета</a>, ключевые слова (<code>currentColor</code> и <code>transparent</code>), а также градиенты и паттерны.
+В качестве заливки и обводки можно задавать <code>none</code>, <a href="/tsveta">цвета</a>, ключевые слова (<code>currentColor</code> и <code>transparent</code>), а также <a href="/svg-gradients/">градиенты</a> и паттерны.
 
-<h4>Fill</h4>
+<h3 id="fill">fill</h3>
 
 Заливка элемента.
 
-Возможные значения: <code>none</code>, ключевые слова, цвета, паттерны и градиенты.
+Возможные значения: <code>none</code>, ключевые слова, цвета, паттерны и <a href="/svg-gradients/">градиенты</a>.
 Значение по умолчанию — <code>black</code>.
 
 <svg class="svg" width="200" height="200"><defs><symbol id="s-rect"><rect width="70" height="70"/></symbol><linearGradient id="g-green" x1="0%" y1="0%" x2="0%" y2="90%">  <stop offset="0%" stop-color="yellowgreen" />  <stop offset="90%" stop-color="green" /></linearGradient></defs><use xlink:href="#s-rect" x="20" y="20" fill="hsla(348, 83%, 47%,.3)"/><use xlink:href="#s-rect" x="110" y="20" fill="rgb(255, 215, 0)"/> <use xlink:href="#s-rect" x="20" y="110" fill="url(#g-green)"/><use xlink:href="#s-rect" x="110" y="110" fill="skyblue"/>  </svg>
@@ -57,7 +79,7 @@ links:
 &lt;/svg></code></pre>
 
 
-<h4>Fill-rule</h4>
+<h3 id="fill-rule">fill-rule</h3>
 
 Свойство определяет как будут заливаться сложные фигуры, имеющие пересечения внутри себя. Для простых фигур ни на что не влияет.
 
@@ -89,7 +111,7 @@ links:
     </div>
 </div>
 
-<h4>Fill-opacity</h4>
+<h3 id="fill-opacity">fill-opacity</h3>
 
 Управление прозрачностью заливки. Можно задавать значения от 0.0 до 1.0 или в процентах. Правда, Firefox не любит значения в процентах для градиентов (<a href="http://cdpn.io/nstGK">пруфлинк</a>, смотреть в FF).
 
@@ -108,7 +130,7 @@ links:
 &lt;!-- ... --></code></pre>
 
 
-<h4>Stroke</h4>
+<h3 id="stroke">stroke</h3>
 
 Цвет обводки. Значения по умолчанию нет.
 
@@ -121,7 +143,7 @@ links:
 &lt;/svg></code></pre>
 
 
-<h4>Stroke-width</h4>
+<h3 id="stroke-width">stroke-width</h3>
 
 Толщина обводки, можно задавать в единицах длины или в процентах.
 Значение по умолчанию: 1.
@@ -137,7 +159,7 @@ links:
         stroke-width="10%"/>
 &lt;/svg></code></pre>
 
-<h4>Stroke-linecap</h4>
+<h3 id="stroke-linecap">stroke-linecap</h3>
 
 Свойство определяет как будут выглядеть концы линий.
 Возможные значения: <code>butt</code>, <code>round</code>, <code>square</code>.
@@ -156,7 +178,7 @@ links:
        stroke-linecap="square"/>
   &lt;!-- ... --></code></pre>
 
-<h4>Stroke-linejoin</h4>
+<h3 id="stroke-linejoin">stroke-linejoin</h3>
 
 Определяет как будут выглядеть соединения линий на углах.
 Возможные значения: <code>miter</code>, <code>round</code>, <code>bevel</code>.
@@ -175,7 +197,7 @@ links:
        stroke-linejoin="bevel"/>
   &lt;!-- ... --></code></pre>
 
-<h4>Stroke-dasharray</h4>
+<h3 id="stroke-dasharray">stroke-dasharray</h3>
 
 Управляет видом пунктирной обводки. Можно задавать в единицах длины или в процентах.
 Если задано одно значение, второе значение считается равным первому. Например, <code>stroke-dasharray="1"</code> нарисует линию из отрезков длиной одну единицу разделенных пробелами такой же ширины.
@@ -219,7 +241,7 @@ links:
 <p data-height="268" data-theme-id="4974" data-slug-hash="uGfBE" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/uGfBE/'>Animated stroke</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-<h4>Stroke-dashoffset</h4>
+<h3 id="stroke-dashoffset">stroke-dashoffset</h3>
 
 Свойство позволяет задать смещение пунктирной обводки относительно первоначального положения. Значение задается в единицах длины или в процентах, значения могут быть отрицательными.
 Значение по умолчанию: 0.
@@ -259,7 +281,7 @@ links:
 - <a href="http://jakearchibald.com/2013/animated-line-drawing-svg/">Animated line drawing in SVG</a>
 - <a href="http://tympanus.net/Development/SVGDrawingAnimation/">SVG Drawing Animation</a>
 
-<h4>Stroke-opacity</h4>
+<h3 id="stroke-opacity">stroke-opacity</h3>
 
 Прозрачность обводки. Задаются значения от 0.0 до 1.0.
 
