@@ -30,7 +30,7 @@ links:
 
 Всё началось вот с этого эксперимента:<!--more-->
 
-<p data-height="350" data-theme-id="4974" data-slug-hash="xmshn" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/xmshn/'>SVG gradients for text</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="400" data-theme-id="4974" data-slug-hash="xmshn" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/xmshn/'>SVG gradients for text</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Для надписи подключен гуглошрифт, заливка сделана паттерном с градиентами, при этом надпись не перестала быть текстом — её можно выделить и скопировать!
