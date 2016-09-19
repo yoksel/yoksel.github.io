@@ -4,7 +4,7 @@ layout_type: onecolumn
 ---
 <main class="l-main" role="main">
 	<article class="post">
-		{% if page.type == 'page' and page.layout_type == 'onecolumn' %}
+		{% if page.type == 'page' and page.layout == 'onecolumn' %}
 		<div class="post__link-back"><a href="/pages/">Страницы</a> &bull; <a href="/">Статьи</a></div>
 		{% endif %}
 
@@ -15,13 +15,13 @@ layout_type: onecolumn
 			{{ content }}
 		</div>
 		{% include post-links.html %}
-	
-		{% if page.type == 'page' and page.layout_type == 'onecolumn' %}
+
+		{% if page.type == 'page' and page.layout == 'onecolumn' %}
 		<div class="post__link-back"><a href="/pages/">Страницы</a> &bull; <a href="/">Статьи</a></div>
 		{% endif %}
 
 		{% if page.title %}
-		{% include disqus.html %}	
+		{% include disqus.html %}
 		{% endif %}
 	</article>
 </main>
