@@ -8,6 +8,8 @@ exclude: ['Rakefile','config.rb', 'README.md','gems','node_modules','*.sketch',
 # markdown: rdiscount // kramdown : problem with tables // redcarpet: problem with more
 markdown: kramdown
 
+gems: [jekyll-admin]
+
 # configuration required for some pages
 
 domain: css.yoksel.ru
