@@ -506,6 +506,22 @@ PRE CODE {
   .post__text FIGCAPTION {
     font-style: italic;
     color: #777; }
+  .post__text H3 {
+    margin-bottom: .4em;
+    font-size: 1.5em; }
+  .post__text .figure--text-on-right {
+    margin-bottom: 2rem; }
+    @media (max-width: 900px), (min-width: 1000px) {
+      .post__text .figure--text-on-right {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; } }
+    .post__text .figure--text-on-right IMG {
+      margin-right: 2rem;
+      -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+      align-self: flex-start; }
   .post__text IMG {
     max-width: 100%;
     height: auto; }

@@ -71,6 +71,24 @@
             font-style: italic;
             color: #777;
             }
+        H3 {
+            margin-bottom: .4em;
+            font-size: 1.5em;
+        }
+        .figure--text-on-right {
+
+            @media ( max-width: 900px ), ( min-width: 1000px ){
+                display: flex;
+            }
+
+            margin-bottom: 2rem;
+
+            IMG {
+                margin-right: 2rem;
+                align-self: flex-start;
+            }
+        }
+
     IMG {
         max-width: 100%;
         height: auto;
