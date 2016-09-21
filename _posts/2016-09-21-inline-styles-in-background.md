@@ -28,7 +28,7 @@ SVG можно вставить в CSS прямо как есть, но тако
 <p data-height="320" data-theme-id="4974" data-slug-hash="ammZbr" data-default-tab="css,result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/ammZbr/">(encoded svg)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-И вот теперь если этому <code>svg</code> внутри <code>background</code> задать какие-нибудь стили в атрибуте <code>style</code>, они будут работать! Можно использовать обычные стили для HTML-элементов, то есть рамки (в том числе <code>border-image</code>), тени, и фоны (включая CSS-градиенты) и даже трансформации!
+И вот теперь если этому <code>svg</code> внутри <code>background</code> задать какие-нибудь стили в атрибуте <code>style</code>, они будут работать! Можно использовать обычные стили для HTML-элементов, то есть рамки (в том числе <code>border-image</code>), тени, фоны (включая CSS-градиенты) и даже трансформации!
 
 Например, можно взять такой код:
 
