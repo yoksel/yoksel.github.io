@@ -511,7 +511,7 @@ PRE CODE {
     font-size: 1.5em; }
   .post__text .figure--text-on-right {
     margin-bottom: 2rem; }
-    @media (max-width: 900px), (min-width: 1000px) {
+    @media (min-width: 600px) and (max-width: 900px), (min-width: 1000px) {
       .post__text .figure--text-on-right {
         display: -webkit-box;
         display: -webkit-flex;
@@ -522,6 +522,9 @@ PRE CODE {
       -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
       align-self: flex-start; }
+      @media (max-width: 600px), (min-width: 900px) and (max-width: 1000px) {
+        .post__text .figure--text-on-right IMG {
+          margin-bottom: 1rem; } }
   .post__text IMG {
     max-width: 100%;
     height: auto; }
