@@ -28,6 +28,9 @@
 - slug: masks
   name: маски
 
+- slug: patterns
+  name: паттерны
+
 - slug: pseudo-elements
   name: псевдоэлементы
 
