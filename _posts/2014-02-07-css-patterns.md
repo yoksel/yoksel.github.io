@@ -3,7 +3,7 @@ layout: default
 title: CSS-паттерны
 type: post
 
-tags: [gradients, experiments]
+tags: [gradients, experiments, patterns]
 
 image: http://img-fotki.yandex.ru/get/9833/5091629.9b/0_7ef0c_63d54a5d_L.png
 desc: Возможности управления фонами через CSS в cочетании с градиентами дают совершенно невероятные возможности. Градиентами можно нарисовать почти всё что угодно от простых клеточек, полосочек и кружочков до достаточно сложных узоров. Играться можно до бесконечности.
@@ -206,4 +206,3 @@ desc: Возможности управления фонами через CSS в
 Больше паттернов можно увидеть во вдохновляющей галерее от Lea Verou: <a href="http://lea.verou.me/css3patterns/">lea.verou.me/css3patterns/</a>.
 
 Урок по паттернам от Lea Verou: <a href="http://24ways.org/2011/css3-patterns-explained/">CSS3 Patterns, Explained</a>
-
