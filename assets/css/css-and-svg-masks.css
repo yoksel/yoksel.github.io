@@ -1,10 +1,3 @@
-/*!
- * Name: yoksel.github.io
- * Project: GitPages
- * Author: yoksel
- * Version: 0.0.1
- */
-
 .svg-defs {
   position: absolute;
   width: 0;
@@ -12,16 +5,16 @@
   font-size: 12px; }
 
 .g--clip-path-img {
-  clip-path: url(/css-and-svg-masks/#clipping-star); }
+  -webkit-clip-path: url(/css-and-svg-masks/#clipping-star);
+          clip-path: url(/css-and-svg-masks/#clipping-star); }
 
 #clipping-text {
   font: bold italic 15em/1 Georgia; }
 
 .g--clip-path-text {
-  -webkit-transform: translate(100);
-  -ms-transform: translate(100);
   transform: translate(100);
-  clip-path: url(/css-and-svg-masks/#clipping-text);
+  -webkit-clip-path: url(/css-and-svg-masks/#clipping-text);
+          clip-path: url(/css-and-svg-masks/#clipping-text);
   font: bold italic .8em/1 Georgia;
   stroke: red;
   fill: #006432; }
@@ -30,13 +23,16 @@
   font: bold italic 1.1em/1 Georgia; }
 
 .g--svg-mask-svg image {
-  mask: url(/css-and-svg-masks/#masking); }
+  -webkit-mask: url(/css-and-svg-masks/#masking);
+          mask: url(/css-and-svg-masks/#masking); }
 
 .g--svg-mask-svg-soft image {
-  mask: url(/css-and-svg-masks/#masking-soft); }
+  -webkit-mask: url(/css-and-svg-masks/#masking-soft);
+          mask: url(/css-and-svg-masks/#masking-soft); }
 
 .g--svg-mask-svg-lum rect {
-  mask: url(/css-and-svg-masks/#masking-lum); }
+  -webkit-mask: url(/css-and-svg-masks/#masking-lum);
+          mask: url(/css-and-svg-masks/#masking-lum); }
 
 .g--svg-fill text {
   fill: url(/css-and-svg-masks/#pattern);
@@ -51,5 +47,3 @@
   stroke-width: 4;
   fill: none;
   font: bold italic 10em/1 Georgia; }
-
-/*# sourceMappingURL=css-and-svg-masks.css.map */

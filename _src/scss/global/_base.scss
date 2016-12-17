@@ -1,0 +1,19 @@
+BODY {
+    padding: $base-margin;
+    background: #EEE;
+    font: #{$base-font-size}/#{$base-line-height} #{$base-font-family};
+    color: $base-font-color;
+    @media (max-width: $break-point ) {
+        padding: 30px 0 0;
+        }
+    }
+A {
+    color: $base-link-color;
+    &:visited {
+        color: lighten($base-link-color, 20);
+        }
+    &:hover {
+        text-decoration: none;
+        color: tomato;
+        }
+    }

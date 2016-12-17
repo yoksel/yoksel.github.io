@@ -232,6 +232,39 @@
         background-size: 3px 1px;
         }
 
+.post .ally-list {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+
+  &__item {
+    margin-left: 0;
+    padding: 0;
+
+    &:before {
+      content: none;
+      padding: .2rem .5rem;
+    }
+  }
+  .ally-list__text {
+    display: flex;
+    justify-content: space-between;;
+  }
+
+  &__item--yes .ally-list__text {
+    background: hsl(100, 100%, 85%);
+    color: hsl(100, 100%, 30%);
+  }
+  &__item--bad .ally-list__text {
+    background: hsl(40, 100%, 85%);
+    color: hsl(40, 100%, 30%);
+  }
+  &__item--no .ally-list__text {
+    background: hsl(10, 100%, 85%);
+    color: hsl(10, 100%, 30%);
+  }
+}
+
 .post-tags {
     @include margin( bottom );
 
