@@ -1,10 +1,10 @@
 ---
 layout: shell
 ---
-<main class="l-main p-layout-{{ page.layout }}" role="main">
+<main class="main p-layout-{{ page.layout }}" role="main">
   <article class="post post--single" id="begin">
     {% if page.title %}
-    <h2 class="post__title">{{ page.title }}</h2>
+    <h2 class="post__title post__title--single">{{ page.title }}</h2>
     {% endif %}
 
     {% if page.date %}<time datetime="{{ page.date | date: "%Y-%m-%d" }}" class="post__date">{{ page.date | date: "%d/%m/%Y" }}</time>{% endif %}
@@ -33,6 +33,6 @@ layout: shell
     {% endif %}
   </article>
 </main>
-<aside class="l-aside" role="complementary">
+<aside class="aside" role="complementary">
   {% include sidebar.html %}
 </aside>

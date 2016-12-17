@@ -1,12 +1,16 @@
 .footer__logo {
     display: inline-block;
     margin-bottom: 0;
+    font-size: $base-font-size * 1.7;
+
     A {
         display: inline-block;
         position: relative;
         text-decoration: none;
         color: #333;
+
         @include transition;
+
         &:before {
             content: attr(data-name);
             display: inline-block;

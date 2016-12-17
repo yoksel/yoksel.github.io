@@ -8,6 +8,7 @@ exclude: ['Rakefile',
           'README.md',
           'gems',
           'node_modules',
+          '_src/scss/components',
           '*.sketch',
           'tips.md',
           'Gemfile',
@@ -25,7 +26,7 @@ markdown: kramdown
 domain: css.yoksel.ru
 url: http://css.yoksel.ru/
 title: Про CSS
-title_markup: '<span class="item--about">Про</span> <span class="item--css">CSS</span>'
+title_markup: '<span class="item item--about">Про</span> <span class="item item--css">CSS</span>'
 description: Articles about CSS
 author: yoksel
 email: yoksel@yandex.ru

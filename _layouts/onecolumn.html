@@ -2,26 +2,26 @@
 layout: shell
 layout_type: onecolumn
 ---
-<main class="l-main" role="main">
-	<article class="post">
-		{% if page.type == 'page' and page.layout == 'onecolumn' %}
-		<div class="post__link-back"><a href="/pages/">Страницы</a> &bull; <a href="/">Статьи</a></div>
-		{% endif %}
+<main class="main" role="main">
+  <article class="post">
+    {% if page.type == 'page' and page.layout == 'onecolumn' %}
+    <div class="post__link-back"><a href="/pages/">Страницы</a> &bull; <a href="/">Статьи</a></div>
+    {% endif %}
 
-		{% if page.title %}
-		<h2 class="post__title">{{ page.title }}</h2>
-		{% endif %}
-		<div class="post__text">
-			{{ content }}
-		</div>
-		{% include post-links.html %}
+    {% if page.title %}
+    <h2 class="post__title">{{ page.title }}</h2>
+    {% endif %}
+    <div class="post__text">
+      {{ content }}
+    </div>
+    {% include post-links.html %}
 
-		{% if page.type == 'page' and page.layout == 'onecolumn' %}
-		<div class="post__link-back"><a href="/pages/">Страницы</a> &bull; <a href="/">Статьи</a></div>
-		{% endif %}
+    {% if page.type == 'page' and page.layout == 'onecolumn' %}
+    <div class="post__link-back"><a href="/pages/">Страницы</a> &bull; <a href="/">Статьи</a></div>
+    {% endif %}
 
-		{% if page.title %}
-		{% include disqus.html %}
-		{% endif %}
-	</article>
+    {% if page.title %}
+    {% include disqus.html %}
+    {% endif %}
+  </article>
 </main>

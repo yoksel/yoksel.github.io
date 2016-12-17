@@ -16,32 +16,36 @@
         }
     }
 
-    .warning--before-read {
-        @include mid-margin( bottom );
-        padding: 1em;
-        border-radius: 10px;
-        background:  lightgoldenrodyellow
-        }
-        .warning--before-read P:last-child {
-            margin-bottom: 0;
-            }
-
-    .svg-viewport {
-        border: 3px solid yellowgreen;
+.warning--before-read {
+    @include mid-margin( bottom );
+    padding: 1em;
+    border-radius: 10px;
+    background:  lightgoldenrodyellow
+    }
+    .warning--before-read P:last-child {
+        margin-bottom: 0;
         }
 
-    .post__excerpt {
-        P {
-            white-space: pre-line;
-            &:last-of-type {
-                margin-bottom: 10px;
-                }
-            }
-        .link--readmore {
-            float: left;
-            font-size: 12px;
+.svg-viewport {
+    border: 3px solid yellowgreen;
+    }
+
+.post__excerpt {
+    P {
+        white-space: pre-line;
+        &:last-of-type {
+            margin-bottom: 10px;
             }
         }
+    .link--readmore {
+        float: left;
+        font-size: 12px;
+        }
+    }
+
+.post__title--index {
+    font-size: $base-font-size * 1.7;
+}
 
 .post__date {
     display: block;
@@ -235,25 +239,36 @@
 .post .ally-list {
   display: flex;
   flex-direction: column;
-  width: 20rem;
+  width: 22rem;
 
   &__item {
+    display: flex;
+    justify-content: space-between;;
     margin-left: 0;
     padding: 0;
 
     &:before {
       content: none;
-      padding: .2rem .5rem;
     }
   }
   .ally-list__text {
-    display: flex;
-    justify-content: space-between;;
+    box-sizing: border-box;
+    padding: .2rem .75rem;
+    white-space: nowrap;;
+
+    &:nth-child(1) {
+      flex-grow: 1;
+    }
+    &:nth-child(2) {
+      margin-left: 5px;
+      min-width: 5rem;
+      text-align: center;
+    }
   }
 
   &__item--yes .ally-list__text {
     background: hsl(100, 100%, 85%);
-    color: hsl(100, 100%, 30%);
+    color: hsl(100, 100%, 25%);
   }
   &__item--bad .ally-list__text {
     background: hsl(40, 100%, 85%);
