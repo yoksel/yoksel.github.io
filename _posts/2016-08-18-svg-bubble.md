@@ -24,21 +24,21 @@ custom_css: bubble.css
 Разберём пузырь на слои (от нижнего слоя к верхнему):
 
 <div class="bubbles-group gray-stripes-bg items-5">
-    <svg class="svg" viewBox="0 0 200 200">
+    <svg class="svg" viewBox="0 0 200 200" width="150" height="150">
       <use xlink:href="#dashed-contur"/>
       <use xlink:href="#spot--bottom"/>
     </svg>
-    <svg class="svg" viewBox="0 0 200 200">
+    <svg class="svg" viewBox="0 0 200 200" width="150" height="150">
       <use xlink:href="#light--bottom"/>
     </svg>
-    <svg class="svg" viewBox="0 0 200 200">
+    <svg class="svg" viewBox="0 0 200 200" width="150" height="150">
       <use xlink:href="#light--top"/>
     </svg>
-    <svg class="svg" viewBox="0 0 200 200">
+    <svg class="svg" viewBox="0 0 200 200" width="150" height="150">
       <use xlink:href="#dashed-contur"/>
       <use xlink:href="#spot--top"/>
     </svg>
-    <svg class="svg" viewBox="0 0 200 200">
+    <svg class="svg" viewBox="0 0 200 200" width="150" height="150">
       <use xlink:href="#colors"/>
     </svg>
 </div>
@@ -47,11 +47,11 @@ custom_css: bubble.css
 
 Важно: всё содержимое пузыря находится внутри тега <code>svg</code>:
 
-<pre><code class="language-markup">&lt;svg viewBox="0 0 200 200">
+<pre><code class="language-markup">&lt;svg viewBox="0 0 200 200" width="150" height="150">
     &lt;!-- слои будут тут -->
 &lt;/svg></code></pre>
 
-Также обратите внимание на обязательный атрибут <code>viewBox="0 0 200 200"</code>: он нужен затем, чтобы при изменении размеров изображения внутренняя система координат ресайзилась вместе с ним, и элементы не расползались кто куда, а оставались на своих местах. Особенно это важно для координат, которые не могут быть заданы в процентах.
+Также обратите внимание на обязательный атрибут <code>viewBox="0 0 200 200" width="150" height="150"</code>: он нужен затем, чтобы при изменении размеров изображения внутренняя система координат ресайзилась вместе с ним, и элементы не расползались кто куда, а оставались на своих местах. Особенно это важно для координат, которые не могут быть заданы в процентах.
 
 В примерах тег <code>svg</code> будет опущен, но не забудьте его добавить, если будете использовать примеры кода из статьи.
 
@@ -60,7 +60,7 @@ custom_css: bubble.css
 Начнём с самого главного (и самого верхнего) слоя, он имитирует поверхность пузыря с радужными разводами:
 
 <svg class="svg gray-stripes-bg"
-    viewBox="0 0 200 200">
+    viewBox="0 0 200 200" width="150" height="150">
   <circle r="50%"
     cx="50%" cy="50%"
     fill="url(#gradient--colors)"
@@ -89,7 +89,7 @@ custom_css: bubble.css
         stop-color="yellow"/>
 &lt;/linearGradient></code></pre>
 
-        <svg class="svg gray-stripes-bg" viewBox="0 0 200 200">
+        <svg class="svg gray-stripes-bg" viewBox="0 0 200 200" width="150" height="150">
             <rect width="100%" height="100%"
                 fill="url(#gradient--colors)"
                 ></rect>
@@ -102,7 +102,7 @@ custom_css: bubble.css
 &lt;/circle></code></pre>
 
         <svg class="svg gray-stripes-bg"
-            viewBox="0 0 200 200">
+            viewBox="0 0 200 200" width="150" height="150">
             <circle r="50%"
                 cx="50%" cy="50%"
                 fill="url(#gradient--colors)"
@@ -129,7 +129,7 @@ custom_css: bubble.css
 &lt;/radialGradient></code></pre>
 
         <svg class="svg gray-stripes-bg"
-        viewBox="0 0 200 200">
+        viewBox="0 0 200 200" width="150" height="150">
             <rect width="100%" height="100%"
                 fill="url(#gradient--colors-transparency--no-fx)"
                 ></rect>
@@ -154,7 +154,7 @@ custom_css: bubble.css
         <p>Вот что получилось:</p>
 
         <svg class="svg gray-stripes-bg"
-        viewBox="0 0 200 200">
+        viewBox="0 0 200 200" width="150" height="150">
             <rect width="100%" height="100%"
                 fill="url(#gradient--colors-transparency)"
                 ></rect>
@@ -177,7 +177,7 @@ custom_css: bubble.css
         <p>Результат:</p>
 
         <svg class="svg gray-stripes-bg"
-            viewBox="0 0 200 200">
+            viewBox="0 0 200 200" width="150" height="150">
             <circle r="50%"
                 cx="50%" cy="50%"
                 fill="url(#gradient--colors)"
@@ -237,7 +237,7 @@ custom_css: bubble.css
 В качестве отражений я использовала две фигуры с однотонной заливкой и маской, добавляющей фигурам прозрачность.
 
 <div class="bubbles-group gray-stripes-bg items-2">
-    <svg class="svg" viewBox="0 0 200 200">
+    <svg class="svg" viewBox="0 0 200 200" width="150" height="150">
         <circle r="50%"
                 cx="50%" cy="50%"
                 fill="aqua"
@@ -245,7 +245,7 @@ custom_css: bubble.css
                 ></circle>
     </svg>
 
-    <svg class="svg" viewBox="0 0 200 200">
+    <svg class="svg" viewBox="0 0 200 200" width="150" height="150">
         <circle r="50%"
         cx="50%" cy="50%"
         fill="yellow"
@@ -271,14 +271,14 @@ custom_css: bubble.css
 &lt;/circle></code></pre>
 
         <div class="bubbles-group gray-stripes-bg items-2">
-            <svg class="svg" viewBox="0 0 200 200">
+            <svg class="svg" viewBox="0 0 200 200" width="150" height="150">
                 <circle r="50%"
                         cx="50%" cy="50%"
                         fill="aqua"
                         ></circle>
             </svg>
 
-            <svg class="svg" viewBox="0 0 200 200">
+            <svg class="svg" viewBox="0 0 200 200" width="150" height="150">
                 <circle r="50%"
                 cx="50%" cy="50%"
                 fill="yellow"
@@ -303,7 +303,7 @@ custom_css: bubble.css
           stop-color="black"/>
 &lt;/radialGradient></code></pre>
 
-        <svg class="svg gray-stripes-bg" viewBox="0 0 200 200">
+        <svg class="svg gray-stripes-bg" viewBox="0 0 200 200" width="150" height="150">
             <rect width="100%" height="100%"
                 fill="url(#gradient--bw-light)"
                 ></rect>
@@ -341,7 +341,7 @@ custom_css: bubble.css
         <p>Результат:</p>
 
         <div class="bubbles-group gray-stripes-bg items-2">
-            <svg class="svg" viewBox="0 0 200 200">
+            <svg class="svg" viewBox="0 0 200 200" width="150" height="150">
                 <circle r="50%"
                         cx="50%" cy="50%"
                         fill="aqua"
@@ -349,7 +349,7 @@ custom_css: bubble.css
                         ></circle>
             </svg>
 
-            <svg class="svg" viewBox="0 0 200 200">
+            <svg class="svg" viewBox="0 0 200 200" width="150" height="150">
                 <circle r="50%"
                 cx="50%" cy="50%"
                 fill="yellow"
@@ -403,7 +403,7 @@ custom_css: bubble.css
 Объединим слои. Отражения внутренние, поэтому слои с ними располагаются под разноцветным слоем:
 
 <svg class="svg gray-stripes-bg"
-    viewBox="0 0 200 200">
+    viewBox="0 0 200 200" width="150" height="150">
   <use xlink:href="#light--bottom"/>
   <use xlink:href="#light--top"/>
   <use xlink:href="#colors"/>
@@ -416,12 +416,12 @@ custom_css: bubble.css
 Они сделаны двумя эллипсами с градиентной заливкой:
 
 <div class="bubbles-group gray-stripes-bg items-2">
-    <svg class="svg" viewBox="0 0 200 200">
+    <svg class="svg" viewBox="0 0 200 200" width="150" height="150">
       <use xlink:href="#dashed-contur"/>
       <use xlink:href="#spot--top"/>
     </svg>
 
-    <svg class="svg" viewBox="0 0 200 200">
+    <svg class="svg" viewBox="0 0 200 200" width="150" height="150">
       <use xlink:href="#dashed-contur"/>
       <use xlink:href="#spot--bottom"/>
     </svg>
@@ -447,7 +447,7 @@ custom_css: bubble.css
           stop-opacity="0"/>
 &lt;/radialGradient></code></pre>
 
-        <svg class="svg gray-stripes-bg" viewBox="0 0 200 200">
+        <svg class="svg gray-stripes-bg" viewBox="0 0 200 200" width="150" height="150">
             <rect width="100%" height="100%"
                 fill="url(#gradient--spot)"
                 ></rect>
@@ -469,7 +469,7 @@ custom_css: bubble.css
 &lt;/ellipse></code></pre>
 
         <div class="bubbles-group gray-stripes-bg items-2">
-            <svg class="svg" viewBox="0 0 200 200">
+            <svg class="svg" viewBox="0 0 200 200" width="150" height="150">
               <use xlink:href="#dashed-contur"/>
               <ellipse rx="55" ry="25"
                 cx="55" cy="55"
@@ -477,7 +477,7 @@ custom_css: bubble.css
               </ellipse>
             </svg>
 
-            <svg class="svg" viewBox="0 0 200 200">
+            <svg class="svg" viewBox="0 0 200 200" width="150" height="150">
               <use xlink:href="#dashed-contur"/>
               <ellipse rx="40" ry="20"
                 cx="150" cy="150"
@@ -507,7 +507,7 @@ custom_css: bubble.css
         <p>Результат:</p>
 
         <div class="bubbles-group gray-stripes-bg items-2">
-            <svg class="svg" viewBox="0 0 200 200">
+            <svg class="svg" viewBox="0 0 200 200" width="150" height="150">
               <use xlink:href="#dashed-contur"/>
               <ellipse rx="55" ry="25"
                 cx="55" cy="55"
@@ -516,7 +516,7 @@ custom_css: bubble.css
               </ellipse>
             </svg>
 
-            <svg class="svg" viewBox="0 0 200 200">
+            <svg class="svg" viewBox="0 0 200 200" width="150" height="150">
               <use xlink:href="#dashed-contur"/>
               <ellipse rx="40" ry="20"
                 cx="150" cy="150"
@@ -564,7 +564,7 @@ custom_css: bubble.css
 
 Примерный код (маски и градиенты опущены, полный код есть ниже):
 
-<pre><code class="language-markup">&lt;svg viewBox="0 0 200 200">
+<pre><code class="language-markup">&lt;svg viewBox="0 0 200 200" width="150" height="150">
     &lt;defs>
         &lt;!-- здесь должны быть маски и градиенты -->
     &lt;/defs>
