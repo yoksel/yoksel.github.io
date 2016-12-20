@@ -15,6 +15,7 @@ exclude: ['Rakefile',
           'Gemfile.*',
           'Gruntfile.*',
           'package.json',
+          'yarn.*',
           'temp']
 # markdown: rdiscount // kramdown : problem with tables // redcarpet: problem with more
 markdown: kramdown
