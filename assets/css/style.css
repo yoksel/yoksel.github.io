@@ -114,7 +114,7 @@ H5 {
 H6 {
   font-size: 17.6px; }
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
   H2 {
     font-size: 32px;
     margin-bottom: 9.6px; }
@@ -212,7 +212,7 @@ P:empty {
   position: absolute;
   right: 0;
   top: -77px; }
-  @media (max-width: 800px) {
+  @media (max-width: 750px) {
     .kitten {
       display: none; } }
 
@@ -255,14 +255,18 @@ PRE CODE {
 .page {
   position: relative;
   min-width: 320px;
-  max-width: 1200px;
+  max-width: 850px;
   margin: 112px auto 0;
-  padding: 32px;
+  padding: 32px 24px;
+  box-sizing: border-box;
   background: #FFF;
   box-shadow: 0 5px 10px rgba(100, 100, 100, 0.5); }
-  @media (max-width: 1000px) {
+  @media (min-width: 750px) {
     .page {
-      padding: 32px 19.2px; } }
+      padding: 32px; } }
+  @media (min-width: 1000px) {
+    .page {
+      max-width: 1200px; } }
 
 .header,
 .content {
@@ -778,7 +782,7 @@ PRE CODE {
 
 .widget__item {
   margin-bottom: 8px; }
-  @media (max-width: 800px) {
+  @media (max-width: 750px) {
     .widget__item {
       margin-bottom: 3px; } }
 
