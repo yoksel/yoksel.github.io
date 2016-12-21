@@ -10,6 +10,8 @@ tags: []
 custom_css: ally-for-logo.css
 
 links:
+- url: https://www.w3.org/WAI/tutorials/images/
+  name: "Web Accessibility Tutorials: Images Concepts"
 - url: http://www.freedomscientific.com/Products/Blindness/JAWS
   name: "JAWS"
 - url: http://www.nvaccess.org/
@@ -22,6 +24,8 @@ links:
   name: "Tips for Creating Accessible SVG (By Léonie Watson)"
 - url: https://bitsofco.de/styling-broken-images/
   name: "Styling Broken Images"
+- url: https://yoksel.github.io/ally-for-logo/
+  name: "Тестовая страница с логотипами"
 
 ---
 
