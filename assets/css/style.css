@@ -602,7 +602,10 @@ PRE CODE {
 .post .ally-list {
   display: flex;
   flex-direction: column;
-  width: 22rem; }
+  max-width: 22rem; }
+  @media (max-width: 750px) {
+    .post .ally-list {
+      font-size: 14px; } }
   .post .ally-list__item {
     display: flex;
     justify-content: space-between;

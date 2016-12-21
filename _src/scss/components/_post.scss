@@ -239,7 +239,11 @@
 .post .ally-list {
   display: flex;
   flex-direction: column;
-  width: 22rem;
+  max-width: 22rem;
+
+  @media ( max-width: $break-point-small ) {
+      font-size: 14px;
+  }
 
   &__item {
     display: flex;
