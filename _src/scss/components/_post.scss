@@ -145,6 +145,12 @@
             @include margin( bottom );
             counter-reset: num-list;
             }
+        .list--has-codes LI {
+            @include mid-margin( bottom );
+        }
+        .list--has-codes PRE {
+            @include mid-margin( top );
+        }
         OL LI:before {
             content: counter( num-list )". ";
             counter-increment: num-list;

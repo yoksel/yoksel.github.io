@@ -529,6 +529,10 @@ PRE CODE {
     margin-left: 16px;
     margin-bottom: 32px;
     counter-reset: num-list; }
+  .post__text .list--has-codes LI {
+    margin-bottom: 16px; }
+  .post__text .list--has-codes PRE {
+    margin-top: 16px; }
   .post__text OL LI:before {
     content: counter(num-list) ". ";
     counter-increment: num-list; }
