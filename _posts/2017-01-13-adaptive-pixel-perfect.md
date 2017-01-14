@@ -135,8 +135,8 @@ links:
 Установка в итоге выглядит вот так:
 
 <ol class="list list--has-codes">
-    <li>Клонируйте репозиторий со скриптом в папку с проектом:
-        <pre><code class="language-markup">git clone git@github.com:yoksel/pixel-glass-js.git --depth=1</code></pre>
+    <li>Установите пакет в папку с проектом через npm:
+        <pre><code class="language-markup">npm i pixel-glass --save-dev</code></pre>
     </li>
 
     <li>Положите картинки с макетами в ваш проект в папку <code>img</code> (или в другую папку с картинками внутри проекта).</li>
@@ -166,7 +166,8 @@ links:
     }
   }
 </style>
-&lt;script src="pixel-glass-js/script.js"></script>
+&lt;link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+&lt;script src="../node_modules/pixel-glass/script.js"></script>
 &lt;!-- // Pixel Glass --></code></pre>
 
         Отредактируйте его под свой проект: настройте медиавыражения, поменяйте адреса картинок на рабочие.
@@ -176,3 +177,5 @@ links:
 </ol>
 
 По-моему, получился довольно удобный инструмент, но наверняка можно что-то улучшить. Если у вас есть какие-то идеи на этот счёт, напишите мне о них в комментариях. Также мне будет интересно как вы решаете подобные задачи и какие инструменты для этого используете.
+
+<b>UPD:</b> библиотека переехала на npm, спасибо всем участникам <a href="https://twitter.com/webstandards_ru/status/819884209674317824">обсуждения</a>.
