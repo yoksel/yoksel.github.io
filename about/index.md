@@ -58,5 +58,6 @@ path: /about/
     </dd>
 </dl>
 
+<h5>Проекты</h5>
 
-
+{% include links-list.html list=site.links_projects %}

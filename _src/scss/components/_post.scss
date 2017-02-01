@@ -125,7 +125,7 @@
                 @include border (top);
                 background: #EEE;
                 }
-    UL {
+    UL, DL {
         @include margin( bottom );
         }
         UL UL {

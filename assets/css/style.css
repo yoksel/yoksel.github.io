@@ -514,7 +514,7 @@ PRE CODE {
   .post__text THEAD TH {
     border-top: 1px solid #DDD;
     background: #EEE; }
-  .post__text UL {
+  .post__text UL, .post__text DL {
     margin-bottom: 32px; }
   .post__text UL UL {
     margin-bottom: 0; }

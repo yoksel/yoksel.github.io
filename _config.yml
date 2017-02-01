@@ -58,32 +58,8 @@ links_docs:
   name: W3C
 - url: https://developer.mozilla.org/
   name: developer.mozilla.org
-- url: http://docs.webplatform.org/
-  name: docs.webplatform.org
 - url: http://learn.javascript.ru/
   name: learn.javascript.ru
-
-links_tools:
-- url: https://github.com/
-  name: GitHub
-- url: http://gruntjs.com/
-  name: Grunt
-- url: http://codepen.io/
-  name: Codepen
-- url: http://jsbin.com
-  name: JsBin
-- url: http://caniuse.com/
-  name: Caniuse
-- url: http://css3clickchart.com/
-  name: CSS3 Click Chart
-- url: http://cssfontstack.com/
-  name: CssFontStack
-- url: http://www.google.com/fonts/
-  name: Google.com/fonts
-- url: http://leaverou.github.io/css-colors/
-  name: Css.coloratum
-- url: http://icomoon.io/
-  name: Icomoon
 
 links_blogs:
 - url: http://lea.verou.me/
@@ -104,18 +80,44 @@ links_blogs:
   name: CSS-Live
 - url: http://frontender.info/
   name: Frontender Magazine
-- url: http://frontendbabel.info/
-  name: Frontend Babel
 
 links_usefull:
+- url: http://yoksel.github.io/flex-cheatsheet/
+  name: Flexbox cheatsheet
+- url: https://github.com/yoksel/pixel-glass-js
+  name: Pixel Glass
+- url: http://yoksel.github.io/html-tree/
+  name: HTML Tree
 - url: https://yoksel.github.io/handy-colors/
-  name: Таблица именованных цветов
+  name: Handy colors
 - url: http://yoksel.github.io/unicode-table/
   name: Символы юникода
-- url: https://github.com/miripiruni/frontdesk
-  name: Frontdesk
 - url: http://yoksel.github.io/url-encoder/
   name: URL-encoder для SVG
+
+links_projects:
+- url: http://yoksel.github.io/flex-cheatsheet/
+  name: Flexbox Cheatsheet
+  desc: шпаргалка по флексбоксам, с живыми демками и описаниями из спеки
+- url: https://github.com/yoksel/pixel-glass-js
+  name: Pixel Glass
+  desc: небольшой скрипт для проверки разметки на соответствие макету
+- url: http://yoksel.github.io/html-tree/
+  name: HTML Tree
+  desc: генератор структуры документа с проверкой БЭМ-классов
+- url: https://github.com/yoksel/common-words
+  name: Common Words
+  desc: слова, часто используемые в CSS-классах
+- url: https://yoksel.github.io/handy-colors/
+  name: Handy Colors
+  desc: список именованных цветов с готовыми палитрами
+- url: http://yoksel.github.io/unicode-table/
+  name: Символы юникода
+- url: http://yoksel.github.io/url-encoder/
+  name: URL-encoder для SVG
+- url: https://github.com/yoksel/shadowPainter
+  name: Shadow Painter
+  desc: рисовалка пиксельных анимаций на основе box-shadow
 
 links_profiles:
 - url: https://twitter.com/yoksel
