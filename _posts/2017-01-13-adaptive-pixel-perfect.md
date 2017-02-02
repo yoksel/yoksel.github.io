@@ -7,7 +7,7 @@ desc: "Инструмент для проверки адаптивных стр�
 
 tags: [tools]
 
-custom_js: "pixel-glass-js/script.js"
+custom_js: "pixel-glass/script.js"
 custom_css: "pixel-glass-demo.css"
 body_data: "data-has-sticky-point"
 
