@@ -33,7 +33,7 @@ links:
 - url: http://www.w3.org/TR/SVG/pservers.html#Patterns
   name: Patterns
 - url: http://codepen.io/collection/AyaLRg
-  name: Коллекция демо с SVG-паттернами  
+  name: Коллекция демо с SVG-паттернами
 ---
 
 <code>pattern</code> — это элемент, который можно использовать в качеcтве заливки или обводки. Содержимое паттерна может быть самым разным: фигуры, символы, текст или растровые изображения — в любых сочетаниях.
@@ -217,7 +217,9 @@ links:
 
 Для своих экспериментов я обычно выбираю этот вариант, с ним удобнее работать.
 
-А что если паттерн должен реагировать на изменение размеров элемента? Тогда нужно задать атрибуту <code>patternContentUnits</code> значение <code>objectBoundingBox</code>. То есть внутри паттерна система координат должна строиться относительно элемента, к которому применён паттерн.
+А что если паттерн должен реагировать на изменение размеров элемента?
+
+<b>Вариант 1.</b> Нужно задать атрибуту <code>patternContentUnits</code> значение <code>objectBoundingBox</code>. То есть внутри паттерна система координат должна строиться относительно элемента, к которому применён паттерн.
 
 Пример кода:
 
@@ -231,6 +233,23 @@ links:
 
 <p data-height="500" data-theme-id="4974" data-slug-hash="wogXQK" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="width, height & viewBox + resize shape" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/wogXQK/">width, height & viewBox + resize shape</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+<b>Вариант 2.</b> Он проще и удобнее, потому что содержимое паттерна сохраняет свою систему координат и единицы измерения. При этом способе <code>patternUnits</code> не задаётся, потому что используется значение по умолчанию: <code>objectBoundingBox</code>. Размеры плитки паттерна задаются в процентах или в значениях от 0.0 до 1.0, они будут зависеть от размеров фигуры. Чтобы содержимое паттерна ресайзилось вместе с ним, нужно добавить <code>viewBox</code>, а чтобы оно при этом заполняло всю плитку, хоть и с искажениием пропорций, — <code>preserveAspectRatio="none"</code>:
+
+<pre><code class="language-markup">&lt;pattern id="pattern"
+   width="75%" height="75%"
+   viewBox="0 0 275 175"
+   preserveAspectRatio="none"
+   >
+   ...
+&lt;/pattern></code></pre>
+
+Результат:
+
+<p data-height="500" data-theme-id="4974" data-slug-hash="KaoobK" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="width, height & viewBox + preserveAspectRatio" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/KaoobK/">width, height & viewBox + preserveAspectRatio</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+Таким образом можно с минимальными усилиями сделать резиновый паттерн.
 
 <h3 id="examples">Примеры паттернов</h3>
 
