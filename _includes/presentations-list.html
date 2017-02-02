@@ -1,0 +1,3 @@
+<dl class="post__links post-links post-links--presentations">
+{% for link in include.list %}<dt class="post-links__title"><a href="{{ link.url }}">{{ link.name }}</a></dt><dd class="post-links__item"><a href="{{ link.eventurl }}">{{ link.eventname }}</a>, {{ link.eventdate }}</dd>{% endfor %}
+</dl>

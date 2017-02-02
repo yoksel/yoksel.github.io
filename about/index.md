@@ -34,26 +34,4 @@ path: /about/
 
 <h5>Презентации</h5>
 
-<dl class="post__links post-links post-links--presentations">
-    <dt class="post-links__title">
-        <a href="https://wsd.events/2015/06/20/pres/text-alive/">Оживляем текст</a>
-    </dt>
-    <dd class="post-links__item">
-        <a href="https://wsd.events/2015/06/20/">WSD в Санкт-Петербурге</a>, 20 июня 2015
-    </dd>
-
-    <dt class="post-links__title">
-        <a href="https://wsd.events/2014/12/06/pres/css-blending/">Режимы наложения в CSS</a>
-    </dt>
-    <dd class="post-links__item">
-        <a href="https://wsd.events/2014/12/06/">WSD в Киеве</a>, 6 декабря 2014
-    </dd>
-
-    <dt class="post-links__title">
-        <a href="https://wsd.events/2014/06/28/pres/meet-svg/">
-Позвольте представить: SVG</a>
-    </dt>
-    <dd class="post-links__item">
-        <a href="https://wsd.events/2014/06/28/">WSD в Санкт-Петербурге</a>, 28 июня 2014
-    </dd>
-</dl>
+{% include presentations-list.html list=site.data.presentations %}
