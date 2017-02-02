@@ -1,0 +1,10 @@
+- url: /about/
+  name: О сайте
+- url: /projects/
+  name: Проекты
+- url: /tags/
+  name: Метки
+- url: https://twitter.com/yoksel
+  name: yoksel
+- url: http://css.yoksel.ru/feed.xml
+  name: RSS

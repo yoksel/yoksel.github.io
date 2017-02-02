@@ -19,23 +19,23 @@
 
 <h2 class="visually-hidden">Полезные ссылки</h2>
 
-{% if site.links_docs %}
+{% if site.data.docs %}
 <div class="aside__widget widget">
     <h3>Документация</h3>
-    {% include links-list.html list=site.links_docs %}
+    {% include links-list.html list=site.data.docs %}
   </div>
 {% endif %}
 
-{% if site.links_blogs %}
+{% if site.data.blogs %}
 <div class="aside__widget widget">
     <h3>Блоги</h3>
-    {% include links-list.html list=site.links_blogs %}
+    {% include links-list.html list=site.data.blogs %}
   </div>
 {% endif %}
 
-{% if site.links_usefull %}
+{% if site.data.useful %}
 <div class="aside__widget widget">
     <h3>Удобности</h3>
-    {% include links-list.html list=site.links_usefull %}
+    {% include links-list.html list=site.data.useful %}
   </div>
 {% endif %}
