@@ -1,9 +1,7 @@
 <footer class="footer" role="contentinfo">
     {% include logo.html place='footer' tag='div' %}
 
-    <nav class="nav footer__nav" role="navigation">
-        <a href="/about/" class="item">О сайте</a>
-        <a href="https://twitter.com/yoksel" class="item">yoksel</a>
-        <a href="http://css.yoksel.ru/feed.xml" class="item">RSS</a>
+    <nav class="nav footer__nav" role="navigation">{% for link in site.data.footer-nav %}
+    <a class="item"{% if page.url != link.url %}href="{{ link.url }}"{% endif %}>{{ link.name }}</a>{% endfor %}
     </nav>
 </footer>
