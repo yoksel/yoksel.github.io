@@ -1,0 +1,60 @@
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.project {
+    flex-basis: 30%;
+    min-width: 180px;
+    flex-grow: 1;
+    margin: 0 10px 30px !important;
+
+    &:before {
+        content: none !important;
+    }
+}
+
+.project__link {
+
+    &:before {
+        content: none !important;
+    }
+
+    &:link,
+    &:visited,
+    &:hover {
+        text-decoration: none;
+
+        .project__desc {
+            color: #000;
+        }
+    }
+
+    &:link,
+    &:visited {
+        .project__title {
+            text-decoration: underline;
+        }
+    }
+    &:hover {
+        .project__title {
+            text-decoration: none;
+        }
+    }
+
+}
+
+.project__content {
+    margin-top: 10px;
+}
+
+.project__title {
+    margin-bottom: 5px;
+}
+
+.project__desc {
+    font-size: 14px;
+}

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: О сайте
-description: Something about this site
+description: О сайте и об авторе
 path: /about/
 ---
 
@@ -30,7 +30,7 @@ path: /about/
 
 <h5>Профили на других сайтах:</h5>
 
-{% include links-list.html list=site.links_profiles %}
+{% include links-list.html list=site.data.profiles %}
 
 <h5>Презентации</h5>
 
@@ -57,7 +57,3 @@ path: /about/
         <a href="https://wsd.events/2014/06/28/">WSD в Санкт-Петербурге</a>, 28 июня 2014
     </dd>
 </dl>
-
-<h5>Проекты</h5>
-
-{% include links-list.html list=site.links_projects %}

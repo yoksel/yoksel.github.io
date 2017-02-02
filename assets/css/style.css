@@ -419,6 +419,9 @@ PRE CODE {
   line-height: 38px; }
   .footer__nav .item {
     margin-left: 1em; }
+    .footer__nav .item:not([href]) {
+      font-weight: bold;
+      color: #000; }
 
 .post {
   word-break: break-word; }
@@ -1028,6 +1031,44 @@ A[href*="feed"]:before {
 
 .post CODE A:before {
   content: none !important; }
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -10px;
+  margin-right: -10px; }
+
+.project {
+  flex-basis: 30%;
+  min-width: 180px;
+  flex-grow: 1;
+  margin: 0 10px 30px !important; }
+  .project:before {
+    content: none !important; }
+
+.project__link:before {
+  content: none !important; }
+
+.project__link:link, .project__link:visited, .project__link:hover {
+  text-decoration: none; }
+  .project__link:link .project__desc, .project__link:visited .project__desc, .project__link:hover .project__desc {
+    color: #000; }
+
+.project__link:link .project__title, .project__link:visited .project__title {
+  text-decoration: underline; }
+
+.project__link:hover .project__title {
+  text-decoration: none; }
+
+.project__content {
+  margin-top: 10px; }
+
+.project__title {
+  margin-bottom: 5px; }
+
+.project__desc {
+  font-size: 14px; }
 
 /**
  * okaidia theme for JavaScript, CSS and HTML
