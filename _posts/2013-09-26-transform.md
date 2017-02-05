@@ -35,7 +35,8 @@ post_nav:
 
 Примеры трансформаций:
 
-<iframe class="jsbin" style="height: 470px" src="http://jsbin.com/EcebOKi/48/embed?output"></iframe>
+<p data-height="540" data-theme-id="4974" data-slug-hash="zNazqX" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/zNazqX/">CSS Transforms</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Важно помнить, что функции применяются в той последовательности, в какой записаны, и предыдущие функции могут влиять на следующие.
 То есть строчки
@@ -63,7 +64,8 @@ post_nav:
 Если задано только одно значение, второе принимает значение <code>center</code>.
 Если задано два значения, третье принимает значение 0.
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/EcebOKi/36/embed?output"></iframe>
+<p data-height="362" data-theme-id="4974" data-slug-hash="VPdWym" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms: transform-origin" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/VPdWym/">CSS Transforms: transform-origin</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 </section><section markdown="1" id="transform-style" data-name="transform-style"><h4>Transform-style</h4>
 Определяет поддержку 3D внутри трансформируемого элемента.
@@ -73,12 +75,13 @@ post_nav:
 <code>flat</code> — трансформируемый элемент плоский
 <code>preserve-3d</code> — трансформируемый элемент имеет внутренний объем
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/EcebOKi/37/embed?output"></iframe>
+<p data-height="350" data-theme-id="4974" data-slug-hash="xgzreO" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms: transform-style" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/xgzreO/">CSS Transforms: transform-style</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-Следующие свойства могут перекрывать действие <code>transform-style: preserve-3d;</code> и делать отображение элемента плоским не зависимо от значения <code>transform-style</code>:
+Следующие свойства могут перекрывать действие <code>transform-style: preserve-3d;</code> и делать отображение элемента плоским независимо от значения <code>transform-style</code>:
 
 <code>overflow</code> с любым значением кроме <code>visible</code>
-<code>opacity</code> с любым значением кроме <code>1</code> (блокирует трехмерность, если задан обертке трансформируемого объекта, то есть уровнем выше, чем <code>transform-style: preserve-3d;</code>. На одном уровне они не мешают друг другу).
+<code>opacity</code> с любым значением кроме <code>1</code> <s>(блокирует трехмерность, если задан обертке трансформируемого объекта, то есть уровнем выше, чем <code>transform-style: preserve-3d;</code>. На одном уровне они не мешают друг другу)</s> так было на момент написания статьи, сейчас прозрачность делает трёхмерный элемент плоским.
 <code>filter</code> с любым значением кроме <code>none</code>
 
 </section><section markdown="1" id="perspective" data-name="perspective"><h4>Perspective</h4>
@@ -88,7 +91,8 @@ post_nav:
 
 Возможные значения: <code>none</code> или длина в пикселях.
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/EcebOKi/40/embed?output"></iframe>
+<p data-height="351" data-theme-id="4974" data-slug-hash="YNvxyE" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms: perspective" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/YNvxyE/">CSS Transforms: perspective</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 </section><section markdown="1" id="perspective-origin" data-name="perspective-origin"><h4>Perspective-origin</h4>
 Отвечает за расположение точки, от которой отсчитывается перспектива.
@@ -96,19 +100,18 @@ post_nav:
 
 Возможные значения: расстояния в пикселях или процентах или ключевые слова (<code>left</code>, <code>center</code>, <code>right</code>, <code>top</code>, <code>bottom</code>).
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/EcebOKi/41/embed?output"></iframe>
+<p data-height="350" data-theme-id="4974" data-slug-hash="jyKLGO" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms: perspective-origin" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/jyKLGO/">CSS Transforms: perspective-origin</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 </section><section markdown="1" id="backface-visibility" data-name="backface-visibility"><h4>Backface-visibility</h4>
 Определяет видимость задней стороны объекта.
 
 Возможные значения:
 <code>visible</code> — объект виден всегда, вне зависимости от того, какой стороной повернут (значение по умолчанию).
-<code>hidden</code> — скрывать объект, если он повернут "спиной".
+<code>hidden</code> — скрывать объект, если он повернут «спиной».
 
-Кубик справа показывает действие <code>backface-visibility: hidden</code>:
-
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/ELipoZE/16/embed?output"></iframe>
-
+<p data-height="450" data-theme-id="4974" data-slug-hash="zNadaw" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms: backface-visibility" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/zNadaw/">CSS Transforms: backface-visibility</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </section>
 
 Вдохновляющие эффекты с трансформами: <a href="http://tympanus.net/Development/CreativeLinkEffects/">tympanus.net/Development/CreativeLinkEffects/</a>
