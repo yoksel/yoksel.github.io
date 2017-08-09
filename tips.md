@@ -2,7 +2,7 @@
 
 ## Run dev env with drafts:
 
-`jekyll serve --drafts --config _config.yml,_config-dev.yml`
+`bundle exec jekyll serve --drafts --config _config.yml,_config-dev.yml`
 
 So variable `site.env` can be used in templates.
 
