@@ -4,7 +4,9 @@
   "description": "GitPages",
   "main": "index.html",
   "scripts": {
-    "start": "gulp serve"
+    "serve": "bundle exec jekyll serve",
+    "start": "bundle exec jekyll serve --drafts --config _config.yml,_config-dev.yml",
+    "build": "bundle exec jekyll build"
   },
   "repository": {
     "type": "git",
