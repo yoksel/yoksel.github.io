@@ -7,6 +7,21 @@
         max-width: 100%
         }
 }
+
+.widget--tutor {
+    @include margin ( top );
+    @include padding ( top );
+    @include border ( top );
+    font-size: .9em;
+    color: #333;
+    }
+.emoji--tutor {
+    float: right;
+    font-size: 60px;
+    line-height: 1;
+    margin-left: 10px;
+    }
+
 .widget__item {
     @include small-margin( bottom );
     @media ( max-width: $break-point-small ){

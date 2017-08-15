@@ -23,19 +23,24 @@
 <div class="aside__widget widget">
     <h3>Документация</h3>
     {% include links-list.html list=site.data.docs %}
-  </div>
+</div>
 {% endif %}
 
 {% if site.data.blogs %}
 <div class="aside__widget widget">
     <h3>Блоги</h3>
     {% include links-list.html list=site.data.blogs %}
-  </div>
+</div>
 {% endif %}
 
 {% if site.data.useful %}
 <div class="aside__widget widget">
     <h3>Удобности</h3>
     {% include links-list.html list=site.data.useful %}
-  </div>
+</div>
 {% endif %}
+
+<div class="aside__widget widget widget--tutor">
+    <div class="emoji emoji--tutor">👩‍🏫</div> Если вы&nbsp;хотите выбрать меня в&nbsp;качестве наставника на&nbsp;<a href="https://htmlacademy.ru/intensive/adaptive">продвинутом интенсиве</a> HTML&nbsp;Академии, <a href="mailto:yokayoka@yandex.ru">напишите&nbsp;мне&nbsp;✉️</a>
+</div>
+
