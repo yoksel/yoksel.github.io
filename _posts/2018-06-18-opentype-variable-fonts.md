@@ -266,7 +266,44 @@ font-variant-numeric: slashed-zero; /* = font-feature-settings: "zero" on; */</c
 
 Не уверена, что это правильное использование лигатур, но вариант, безусловно, интересный.
 
-Настраиваемые шрифты — тема богатая, и заниматься ею можно до бесконечности. По моим ощущениям, это только верхушка айсберга.
+<h3>Использование в реальной жизни</h3>
 
-Я только начала погружаться в тему, так что могла допустить ошибки и неточности. Пожалуйста, сообщите мне о них, если найдутся.
+В данный момент не все браузеры поддерживают управление вариативными шрифтами, поэтому помимо настраиваемого шрифта на страницу придётся подключать обычные. Это <a href="https://medium.com/clear-left-thinking/how-to-use-variable-fonts-in-the-real-world-e6d73065a604">предлагается</a> делать следующим образом:
+
+<pre><code class="language-css">@font-face {
+  font-family: 'MyFontVariable';
+  src: url('source-sans-variable.woff2') format('woff2');
+  font-weight: 1 999;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('source-sans-regular.woff2') format('woff2'),
+         url('source-sans-regular.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('source-sans-black.woff2') format('woff2'),
+         url('source-sans-black.woff') format('woff');
+  font-weight: 900;
+}
+</code></pre>
+
+Затем с помощью <code>@supports</code> определяется поддержка настроек браузерами и задаётся нужный шрифт:
+
+<pre><code class="language-css">html {
+  font-family: 'MyFont', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'MyFontVariable', sans-serif;
+  }
+}</code></pre>
+
+Настраиваемые шрифты — тема богатая, и заниматься ею можно до бесконечности. По моим ощущениям, описанные в статье вопросы — только верхушка айсберга.
+
+Я совсем недавно начала погружаться в тему, так что могла допустить ошибки и неточности. Сообщите мне о них, пожалуйста, если найдутся.
 
