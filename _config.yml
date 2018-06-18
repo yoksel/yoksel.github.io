@@ -32,14 +32,8 @@ description: Articles about CSS
 author: yoksel
 email: yoksel@yandex.ru
 
-# feedburner:
-#   id: feedburnerid
-
 github:
     username: github/yoksel
-
-# disqus:
-#     id:
 
 excerpt_separator: <!--more-->
 
