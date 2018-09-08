@@ -392,33 +392,6 @@
     color: darken($base-border-color, 20);
     }
 
-.post__nav {
-    @include margin( top );
-    @include padding ( top );
-    @include border ( top );
-        @media (max-width: $break-point ) {
-            @include tiny-padding ( top );
-            @include tiny-padding ( bottom );
-            .item__text {
-                display: none;
-                }
-                A {
-                    font-size: $base-font-size*3;
-                    line-height: 1;
-                    text-decoration: none;
-                    }
-            }
-    .item--prev {
-        float: left;
-        }
-    .item--next {
-        float: right;
-        }
-    &:after {
-        @extend %clear;
-        }
-    }
-
 .table--colors {
     min-width: 780px;
     background: white;
@@ -477,7 +450,6 @@
     }
 
 .widget--disqus {
-    @include margin( top );
     @include padding ( top );
     @include border ( top );
     }
