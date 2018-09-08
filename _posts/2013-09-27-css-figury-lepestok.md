@@ -44,6 +44,6 @@ published: true
 
 <iframe class="jsbin" style="height: 350px" src="http://jsbin.com/iheGIL/10/embed?output,css"></iframe>
 
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/iKubuKi/3/embed?output,css"></iframe>
+<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/fiwidas/2/embed?output,css"></iframe>
 
 В этом случае нельзя обойтись одним элементом, потому что тень объекта нельзя повернуть.
