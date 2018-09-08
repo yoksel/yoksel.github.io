@@ -33,11 +33,11 @@ links:
 
 Кольца можно сделать с помощью <code>border</code> или <code>box-shadow</code>, причем во втором случае рамка кольца не увеличивает размер фигуры, а колец может быть несколько и они могут быть смещены относительно друг друга:
 
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/uSiWahO/2/embed?output,css"></iframe>
+<iframe class="jsbin" style="height: 400px" src="http://jsbin.com/uSiWahO/2/embed?output,css"></iframe>
 
 Сердечки, с трансформами и без:
 
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/AZuFAkO/1/embed?output,css"></iframe>
+<iframe class="jsbin" style="height: 400px" src="http://jsbin.com/AZuFAkO/1/embed?output,css"></iframe>
 
 Инь-ян, удивительно просто, на самом деле <em>(добавлено 3.03.2013)</em>.
 По-моему, на <a href="http://css-tricks.com/examples/ShapesOfCSS/">css-tricks.com/examples/ShapesOfCSS/</a> предлагается более изящное решение, которое, к тому же, решает проблему просвечивающего контура у фигуры с тенями.
@@ -46,12 +46,12 @@ links:
 
 Стрелочки:
 
-<iframe class="jsbin" style="height: 400px" src="http://jsbin.com/aKUZaB/5/embed?css,output"></iframe>
+<iframe class="jsbin" style="height: 450px" src="http://jsbin.com/aKUZaB/5/embed?css,output"></iframe>
 
 Про стрелки подробнее <a href="/strelki-s-pomoshh-yu-svojstva-border/">читать тут</a>
 
 Цветок:
 
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/iKubuKi/3/embed?output,css"></iframe>
+<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/fiwidas/2/embed?output,css"></iframe>
 
 Про цветы из Css <a href="/css-figury-lepestok/">читать тут</a>
