@@ -19,13 +19,13 @@
   },
   "devDependencies": {
     "autoprefixer": "6.5.3",
-    "browser-sync": "2.18.2",
+    "browser-sync": "^2.24.7",
     "gulp": "3.9.1",
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.2.0",
-    "gulp-sass": "^2.3.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^2.1.2",
     "postcss-csso": "^1.1.2",
-    "gulp-uglify": "^2.0.1",
-    "pump": "^1.0.2"
+    "pump": "^1.0.3"
   }
 }
