@@ -1,0 +1,81 @@
+<!-- Pagination links -->
+<nav class="pagination pagination--main">
+    <!-- Forward -->
+    {% if paginator.previous_page %}
+        <a
+            href="{{ paginator.previous_page_path }}"
+            class="
+                pagination__item
+                pagination__item--main
+                pagination__item--prevnext
+            ">
+            &larr; <span class="pagination__item-text">Вперёд</span>
+        </a>
+    {% else %}
+        <span
+            class="
+                pagination__item
+                pagination__item--main
+                pagination__item--prevnext
+                pagination__item--disabled
+            ">
+            &larr; <span class="pagination__item-text">Вперёд</span>
+        </span>
+    {% endif %}
+
+
+    {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+            <strong
+                class="
+                    pagination__item
+                    pagination__item--main
+                    pagination__item--num
+                ">
+                {{ page }}
+            </strong>
+        {% elsif page == 1 %}
+            <a
+                href="{{ paginator.previous_page_path | relative_url }}"
+                class="
+                    pagination__item
+                    pagination__item--main
+                    pagination__item--num
+                ">
+                {{ page }}
+            </a>
+        {% else %}
+            <a
+                href="{{ site.paginate_path | relative_url | replace: ':num', page }}"
+                class="
+                    pagination__item
+                    pagination__item--main
+                    pagination__item--num
+                ">
+                {{ page }}
+            </a>
+        {% endif %}
+    {% endfor %}
+
+    <!-- Backward -->
+    {% if paginator.next_page %}
+        <a
+            href="{{ paginator.next_page_path }}"
+            class="
+                pagination__item
+                pagination__item--main
+                pagination__item--prevnext
+            ">
+            <span class="pagination__item-text">Назад</span> &rarr;
+        </a>
+    {% else %}
+        <span class="
+                pagination__item
+                pagination__item--main
+                pagination__item--prevnext
+                pagination__item--disabled
+            ">
+            <span class="pagination__item-text">Назад</span> &rarr;
+        </span>
+    {% endif %}
+</nav>

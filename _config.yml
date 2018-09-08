@@ -20,10 +20,12 @@ exclude: ['Rakefile',
 # markdown: rdiscount // kramdown : problem with tables // redcarpet: problem with more
 markdown: kramdown
 
-# gems: [jekyll-admin]
+# pagination
+plugins_dir: [jekyll-paginate]
+gems: [jekyll-paginate]
+paginate: 20
 
-# configuration required for some pages
-
+# configuration of common parts
 domain: css.yoksel.ru
 url: http://css.yoksel.ru/
 title: Про CSS
