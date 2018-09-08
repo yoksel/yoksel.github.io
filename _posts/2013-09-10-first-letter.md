@@ -43,7 +43,7 @@ published: true
 
 <code>:first-letter</code> не срабатывает, если до текста стоит картинка, но работает, если её скрыть c <code>display: none</code>:
 
-<iframe class="jsbin" style="height: 250px" src="http://jsbin.com/afawEqu/3/embed?output"></iframe>
+<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/afawEqu/3/embed?output"></iframe>
 
 Мне понравилось такое оформление <code>:first-letter</code>:
 
