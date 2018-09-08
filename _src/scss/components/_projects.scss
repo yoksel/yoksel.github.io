@@ -10,8 +10,15 @@
     position: relative;
     flex-basis: 30%;
     min-width: 180px;
-    flex-grow: 1;
     margin: 0 10px 30px !important;
+
+    @media (max-width: 643px) {
+        flex-basis: 46%;
+    }
+
+    @media (max-width: 542px) {
+        flex-basis: 100%;
+    }
 
     &:before {
         content: none !important;
