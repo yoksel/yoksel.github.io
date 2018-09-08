@@ -128,13 +128,13 @@ post_nav:
 
 <code>step-end</code>. Если выставить <code>step-start</code>, счетчик будет начинаться с единиц.
 
-<iframe style="height: 250px;" class="jsbin" src="http://jsbin.com/owICoyi/11/embed?output,css"></iframe>
+<iframe style="height: 300px;" class="jsbin" src="http://jsbin.com/owICoyi/11/embed?output,css"></iframe>
 
 <code>steps(число)</code> — позволяет задать количество шагов, за которые будет выполнена анимация, при этом можно задать только последний шаг без необходимости указывать промежуточные.
 
 <code>steps(60)</code>
 
-<iframe style="height: 250px;" class="jsbin" src="http://jsbin.com/owICoyi/8/embed?output,css"></iframe>
+<iframe style="height: 300px;" class="jsbin" src="http://jsbin.com/owICoyi/46/embed?output,css"></iframe>
 
 </section><section markdown="1" id="animation-iteration-count" data-name="animation-iteration-count"><h4>Animation-iteration-count</h4>
 Управляет повторением анимации.
