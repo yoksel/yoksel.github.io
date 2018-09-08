@@ -37,7 +37,7 @@ published: true
 
 Но вернемся к стрелкам. Сочетая <code>border</code> и псевдоэлементы можно получить вот такие варианты:
 
-<iframe class="jsbin" style="height: 400px" src="http://jsbin.com/aKUZaB/5/embed?css,output"></iframe>
+<iframe class="jsbin" style="height: 450px" src="http://jsbin.com/aKUZaB/5/embed?css,output"></iframe>
 
 Большим преимуществом способа является отсутствие изображений, что позволяет в любой момент изменить цвет и размер стрелки.
 
