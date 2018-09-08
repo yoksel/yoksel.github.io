@@ -1,3 +1,8 @@
+- url: http://yoksel.github.io/svg-filters/
+  name: SVG Filters
+  desc: Конструктор SVG-фильтров
+  img: projects/svg-filters.png
+
 - url: http://yoksel.github.io/flex-cheatsheet/
   name: Flexbox Cheatsheet
   desc: Шпаргалка по флексбоксам, с живыми демками и описаниями из спеки
