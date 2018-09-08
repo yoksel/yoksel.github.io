@@ -30,15 +30,15 @@ links:
 
 Если задать два значения<!--more-->, первое будет отвечать за верхний левый и нижний правый углы, а второе — за верхний правый и нижний левый:
 
-<iframe class="jsbin" style="height: 180px" src="http://jsbin.com/eCahIfa/4/embed?output"></iframe>
+<iframe class="jsbin" style="height: 250px" src="http://jsbin.com/eCahIfa/4/embed?output"></iframe>
 
 Значения, заданные через "/", определяют горизонтальные и вертикальные радиусы:
 
-<iframe class="jsbin" style="height: 180px" src="http://jsbin.com/eCahIfa/5/embed?output"></iframe>
+<iframe class="jsbin" style="height: 250px" src="http://jsbin.com/eCahIfa/5/embed?output"></iframe>
 
 Таким образом можно задать разные горизонтальные и вертикальные радиусы как для всей фигуры сразу, так и для отдельных углов:
 
-<iframe class="jsbin" style="height: 180px" src="http://jsbin.com/eCahIfa/6/embed?output"></iframe>
+<iframe class="jsbin" style="height: 250px" src="http://jsbin.com/eCahIfa/6/embed?output"></iframe>
 
 Экспериментируя с радиусами можно сделать, например, яйцо, каплю или лимон:
 
@@ -54,7 +54,7 @@ links:
 
 Или облака:
 
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/eCahIfa/15/embed?output"></iframe>
+<iframe class="jsbin" style="height: 400px" src="http://jsbin.com/eCahIfa/21/embed?output"></iframe>
 
 Или цветок, или ещё какую-нибудь чепуху:
 
