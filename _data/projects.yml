@@ -3,6 +3,11 @@
   desc: Конструктор SVG-фильтров
   img: projects/svg-filters.png
 
+- url: http://yoksel.github.io/wave-maker/
+  name: Wave Maker
+  desc: Конструктор волн с использованием <a href="https://www.w3.org/TR/SVG2/paths.html#PathDataEllipticalArcCommands">SVG Arcs</a>
+  img: projects/wave-maker.png
+
 - url: http://yoksel.github.io/flex-cheatsheet/
   name: Flexbox Cheatsheet
   desc: Шпаргалка по флексбоксам, с живыми демками и описаниями из спеки
