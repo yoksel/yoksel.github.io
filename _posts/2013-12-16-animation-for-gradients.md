@@ -18,11 +18,11 @@ links:
 
 Если быть точным, положение и размер градиента анимируются успешно (как и любого другого фона):
 
-<iframe class="jsbin" style="height: 310px" src="http://jsbin.com/ORiROMu/1/embed?output"></iframe>
+<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/ORiROMu/1/embed?output"></iframe>
 
 Но попытка манипулировать цветами, составляющим градиент, терпит крах:
 
-<iframe class="jsbin" style="height: 310px" src="http://jsbin.com/ORiROMu/2/embed?output"></iframe>
+<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/ORiROMu/2/embed?output"></iframe>
 
 В FF цвета в примере не будут меняться вообще, в Хроме — будут, но резко, без плавного перехода.
 
@@ -31,7 +31,7 @@ links:
 
 В некоторых случаях при необходимости сделать градиент с плавной сменой цветов можно использовать <code>box-shadow</code>, который прекрасно анимируется. Тест:
 
-<iframe class="jsbin" style="height: 310px" src="http://jsbin.com/ORiROMu/4/embed?output"></iframe>
+<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/ORiROMu/4/embed?output"></iframe>
 
 Примерный код:
 
@@ -54,7 +54,7 @@ links:
 
 Сложные градиенты делаются несколькими тенями:
 
-<iframe class="jsbin" style="height: 310px" src="http://jsbin.com/ORiROMu/5/embed?output"></iframe>
+<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/ORiROMu/5/embed?output"></iframe>
 
 Код конечно получается большим и неудобным, но он вполне решает задачу.
 
