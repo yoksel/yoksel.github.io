@@ -34,5 +34,4 @@ links:
 Размытие в исходном примере сделано с помощью <code>-webkit-filter: blur(1.7em);</code>, следовательно, будет работать только в браузерах на основе Webkit.
 Но можно воспользоваться svg-фильтрами и получить размытие и в других браузерах:
 
-<iframe class="jsbin" style="height: 420px" src="http://jsbin.com/ewIRARe/2/embed?output"></iframe>
-
+<iframe class="jsbin" style="height: 420px" src="http://jsbin.com/ewIRARe/6/embed?output"></iframe>
