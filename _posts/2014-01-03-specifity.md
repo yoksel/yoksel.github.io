@@ -48,7 +48,7 @@ links:
 
 Казалось бы, ссылки в тексте должны получить оранжевый фон, а ссылки в списке — зеленый, но нет:
 
-<iframe class="jsbin" style="height: 270px" src="http://jsbin.com/iJeqAru/5/embed?output"></iframe>
+<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/iJeqAru/5/embed?output"></iframe>
 
 Почему так? Потому, что первый селектор содержит ID и перевешивает второй, то есть:
 
@@ -58,7 +58,7 @@ links:
 
 Специфичность селектора рассчитывается по 4-м позициям:
 
-<iframe class="jsbin" style="height: 200px" src="http://jsbin.com/USivILu/1/embed?output"></iframe>
+<iframe class="jsbin" style="height: 220px" src="http://jsbin.com/USivILu/1/embed?output"></iframe>
 
 Для каждого из них подсчитывается количество подходящих элементов в селекторе, и это число помещается в соответствующую позицию.
 
@@ -168,7 +168,7 @@ links:
 
 И код работает так, как ожидается:
 
-<iframe class="jsbin" style="height: 270px" src="http://jsbin.com/iJeqAru/4/embed?output"></iframe>
+<iframe class="jsbin" style="height: 320px" src="http://jsbin.com/iJeqAru/4/embed?output"></iframe>
 
 <i>Если <code>id</code> в вашей разметке уже используется в Js, логичнее будет добавить элементу класс и перевесить стили на него. Если же <code>id</code> участвует только в разметке — лучше заменить его на <code>class</code>.</i>
 
