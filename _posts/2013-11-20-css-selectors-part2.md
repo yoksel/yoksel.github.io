@@ -202,7 +202,7 @@ INPUT:disabled {
   color: #CCC;
   }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/67/embed?output" style="height: 100px" class="jsbin"></li>
+<iframe src="http://jsbin.com/aMakIZI/67/embed?output" style="height: 100px" class="jsbin"></iframe></li>
 
 <li id="checked" data-name="E:checked"><p><code>E:checked</code> — a user interface element E which is checked (for instance a radio-button or checkbox) 	The UI element states pseudo-classes 	3</p>
 
