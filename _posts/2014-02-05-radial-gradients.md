@@ -32,7 +32,7 @@ links:
 По умолчанию центр градиента находится по центру, градиент имеет форму эллипса:
 
 
-<iframe class="jsbin" style="height: 200px" src="http://jsbin.com/OvOwEma/3/embed?output"></iframe>
+<iframe class="jsbin" style="height: 250px" src="http://jsbin.com/OvOwEma/3/embed?output"></iframe>
 
 Помимо цветов градиенту можно задавать форму, положение и размер. Параметры сочетаются и ведут себя сложнее, чем в линейных градиентах.
 
@@ -41,7 +41,7 @@ links:
 Чтобы градиент имел форму круга — это нужно задать явно с помощью ключевого слова <code>circle</code>.
 
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/EHuREfA/13/embed?output"></iframe>
+<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/EHuREfA/13/embed?output"></iframe>
 
 Если форма не задана, но задан размер — одно значение задает радиус круга, если значений два — градиент получает форму эллипса.
 При наличии размеров явное задание формы градиента игнорируется.
@@ -53,7 +53,7 @@ links:
 Ниже можно увидеть как работают разные положения:
 
 
-<iframe class="jsbin" style="height: 450px" src="http://jsbin.com/EHuREfA/18/embed?output"></iframe>
+<iframe class="jsbin" style="height: 500px" src="http://jsbin.com/EHuREfA/18/embed?output"></iframe>
 
 Код первого квадрата:
 
@@ -69,7 +69,7 @@ links:
 Ниже примеры круглых и эллиптических градиентов. Форма фигуры определяется заданными размерами:
 
 
-<iframe class="jsbin" style="height: 320px" src="http://jsbin.com/EHuREfA/23/embed?output"></iframe>
+<iframe class="jsbin" style="height: 400px" src="http://jsbin.com/EHuREfA/23/embed?output"></iframe>
 
 Также можно использовать ключевые слова:
 
