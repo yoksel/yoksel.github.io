@@ -8,6 +8,10 @@
     justify-content: center;
     align-items: center;
 
+    &--posts {
+        flex-direction: row-reverse;
+    }
+
     @media (max-width: $break-point ) {
         @include tiny-padding ( top );
         @include tiny-padding ( bottom );
@@ -17,15 +21,16 @@
 .pagination__item {
     margin: 0 .25em;
 
-    &:hover {
+    &:hover:not(&--disabled) {
         text-decoration: underline;
     }
 
-    &:first-child {
+    &--prev {
         margin-left: 0;
         margin-right: auto;
     }
-    &:last-child {
+
+    &--next {
         margin-right: 0;
         margin-left: auto;
     }
