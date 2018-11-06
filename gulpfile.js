@@ -9,9 +9,17 @@ var csso = require('postcss-csso');
 var server = require('browser-sync');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
+var changed = require('gulp-changed');
+
+var cssSRC = ['_src/scss/*.scss', '_src/scss/demos/*.scss'];
+var cssDEST = 'assets/css';
+
+var jsSRC = '_src/**/*.js';
+var jsDEST = 'assets';
 
 gulp.task('style', function() {
-  gulp.src(['_src/scss/*.scss', '_src/scss/demos/*.scss'])
+  gulp.src(cssSRC)
+    .pipe(changed(cssDEST))
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
@@ -24,18 +32,15 @@ gulp.task('style', function() {
         ]}),
         csso
     ]))
-    .pipe(gulp.dest('assets/css'))
+    .pipe(gulp.dest(cssDEST))
     .pipe(server.reload({stream: true}));
 });
 
-gulp.task('js', function (cb) {
-  pump([
-        gulp.src('_src/**/*.js'),
-        uglify(),
-        gulp.dest('assets')
-    ],
-    cb
-  );
+gulp.task('js', function () {
+    gulp.src(jsSRC)
+        .pipe(changed(jsDEST))
+        .pipe(uglify())
+        .pipe(gulp.dest(jsDEST));
 });
 
 gulp.task('serve', ['style','js'], function() {
