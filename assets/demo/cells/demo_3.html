@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <meta charset=utf-8 />
+    <title>Cells-3</title>
+
+    <script src="../../live-snippets/script.js"></script>
+    <link rel="stylesheet" href="../../live-snippets/styles.css" />
+
+<style id="demo-css">
+.grid-gradient {
+  background:
+    linear-gradient(
+    mediumvioletred, transparent 1px
+    ),
+    linear-gradient(
+    90deg,
+    mediumvioletred, transparent 1px
+    );
+  background-size: 10px 10px;
+  background-position: center center;
+  border: 2px solid mediumvioletred;
+  }
+
+/* Helpers */
+BODY {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  }
+
+DIV {
+  position: relative;
+  width: 45%;
+  height: 15em;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+  }
+</style>
+  </head>
+  <body>
+    <div class="grid-gradient"></div>
+  </body>
+</html>

@@ -189,6 +189,11 @@
             text-align: center;
         }
     }
+    .live-snippet {
+        width: 100%;
+        @include mid-margin( bottom );
+        border: 1px solid $base-border-color;
+    }
     .jsbin {
         width: 100%;
         @include margin( bottom );
