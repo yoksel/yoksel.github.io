@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <meta charset=utf-8 />
+    <title>Демо №2 из статьи «Box-sizing»</title>
+
+    <script src="../../live-snippets/script.js"></script>
+    <link rel="stylesheet" href="../../live-snippets/styles.css" />
+<style id="demo-css">
+DIV {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  border: 20px solid yellowgreen;
+  box-sizing: padding-box;
+  }
+DIV:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150px;
+  height: 150px;
+  background: hsla(10, 100%, 50%, .5);
+  }
+</style>
+    </head>
+    <body>
+      <h3>box-sizing: padding-box;</h3>
+      <div>Vestibulum a tincidunt nunc. Nam placerat lobortis euismod. Etiam vel sodales dolor. Vivamus placerat erat at egestas gravida.</div>
+    </body>
+</html>
