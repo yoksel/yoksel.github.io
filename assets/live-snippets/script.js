@@ -102,13 +102,14 @@ Demo.prototype.addActions = function() {
 Demo.prototype.createSaveLink = function() {
   const encoded = btoa(this.iframeDoc.firstChild.outerHTML);
   const href = 'data:text/html;base64,' + encoded;
+  const pageTitle = document.title || '';
 
   const link = this.addLink(
     href,
     'download',
     'Download result'
   );
-  link.setAttribute('download', '');
+  link.setAttribute('download', pageTitle);
   this.layout.controls.appendChild(link);
 
   return link;
