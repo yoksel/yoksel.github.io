@@ -19,15 +19,15 @@ published: true
 
 Круглая маска:
 
-<iframe class="live-snippet" style="height: 380px" src="../assets/demo/maski-i-effekty/demo_23.html?css"></iframe>
+<iframe class="live-snippet" style="height: 380px" src="../assets/demo/maski-i-effekty/demo_1.html?css"></iframe>
 
 Восьмигранная:
 
-<iframe class="live-snippet" style="height: 380px" src="../assets/demo/maski-i-effekty/demo_21.html?css"></iframe>
+<iframe class="live-snippet" style="height: 380px" src="../assets/demo/maski-i-effekty/demo_2.html?css"></iframe>
 
 Шестигранная:
 
-<iframe class="live-snippet" style="height: 380px" src="../assets/demo/maski-i-effekty/demo_25.html?css"></iframe>
+<iframe class="live-snippet" style="height: 380px" src="../assets/demo/maski-i-effekty/demo_3.html?css"></iframe>
 
 Эти маски не являются масками в прямом смысле этого слова и подходят для использования только на однотонном фоне
 
