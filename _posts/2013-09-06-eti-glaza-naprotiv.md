@@ -15,4 +15,4 @@ published: true
 ---
 Тени, градиенты, скругленные углы.<!--more-->
 
-<iframe class="jsbin" style="height: 400px" src="http://jsbin.com/oSiCuNI/4/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 410px" src="../assets/demo/eti-glaza-naprotiv/demo_1.html?output"></iframe>
