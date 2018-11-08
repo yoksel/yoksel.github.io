@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <meta charset=utf-8 />
+  <title>Демо №3 из статьи «Маски и эффекты»</title>
+
+  <script src="../../live-snippets/script.js"></script>
+  <link rel="stylesheet" href="../../live-snippets/styles.css" />
+  <style id="demo-css">
+BODY {
+  background: black;
+  }
+DIV {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  }
+.wrapper {
+  margin: 1rem auto;
+  padding: 1px;
+  overflow: hidden;
+  border-radius: 50%;
+  }
+.container {
+  background: url(http://img-fotki.yandex.ru/get/4301/yoksel.53/0_3b973_b0fad25e_L.jpg) center;
+  border-radius: 50%;
+  }
+SPAN {
+  left: 50px;
+  }
+SPAN,
+SPAN:before,
+SPAN:after {
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: black;
+  animation: appear 5s infinite;
+  }
+SPAN:before,
+SPAN:after {
+  content: "";
+  }
+  SPAN:before {
+    left: -200px;
+    transform-origin: 200px 0;
+    transform: rotate(-60deg);
+    }
+  SPAN:after {
+    right: -200px;
+    transform-origin: 0px 0px;
+    transform: rotate(60deg);
+    }
+.petals-top {
+  top: -30px;
+  }
+.petals-bottom {
+  bottom: -30px;
+  transform: rotate(180deg);
+  }
+@keyframes appear {
+  50% {
+    height: 1px;
+  }
+}
+</style>
+  </head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <span class="petals-top"></span>
+      <span class="petals-bottom"></span>
+    </div>
+  </div>
+</body>
+</html>
