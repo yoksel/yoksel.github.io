@@ -18,11 +18,11 @@ links:
 
 Если быть точным, положение и размер градиента анимируются успешно (как и любого другого фона):
 
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/ORiROMu/1/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 350px" src="../assets/demo/animation-for-gradients/demo_1.html?css"></iframe>
 
 Но попытка манипулировать цветами, составляющим градиент, терпит крах:
 
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/ORiROMu/2/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 350px" src="../assets/demo/animation-for-gradients/demo_2.html?css"></iframe>
 
 В FF цвета в примере не будут меняться вообще, в Хроме — будут, но резко, без плавного перехода.
 
@@ -31,7 +31,8 @@ links:
 
 В некоторых случаях при необходимости сделать градиент с плавной сменой цветов можно использовать <code>box-shadow</code>, который прекрасно анимируется. Тест:
 
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/ORiROMu/4/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 350px" src="../assets/demo/animation-for-gradients/demo_
+3.html?output"></iframe>
 
 Примерный код:
 
@@ -54,13 +55,14 @@ links:
 
 Сложные градиенты делаются несколькими тенями:
 
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/ORiROMu/5/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 350px" src="../assets/demo/animation-for-gradients/demo_4.html?css"></iframe>
 
 Код конечно получается большим и неудобным, но он вполне решает задачу.
 
 Способ придумался когда мне захотелось сделать демо CSS-анимации, в котором надо было менять цвет неба в зависимости от времени суток:
 
-<iframe style="height: 400px;" class="jsbin" src="http://jsbin.com/eRiMeDE/2/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 400px" src="../assets/demo/animation-for-gradients/demo_5
+.html?output"></iframe>
 
 Тени отлично справились. Я думаю, что способ может быть полезен в некоторых случах и вполне имеет право на сущестование.
 

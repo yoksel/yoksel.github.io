@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №1 из статьи «Анимируем CSS-градиенты»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+DIV {
+  width: 50%;
+  max-width: 500px;
+  height: 200px;
+  background: linear-gradient(crimson, gold, yellowgreen, teal, crimson);
+  background-position: 0 0;
+  border-radius: 30px;
+  border: 10px solid white;
+  animation: background 2s infinite alternate;
+}
+
+@keyframes background {
+  100% {
+    background-position: 0 200px;
+  }
+}
+
+/* Helpers */
+BODY {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EEE;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
