@@ -26,39 +26,43 @@ links:
 
 Возможные значения: числа или проценты.<!--more-->
 
-<iframe class="jsbin" style="height: 250px" src="http://jsbin.com/eCahIfa/2/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 275px" src="../assets/demo/border-radius/demo_1.html?output"></iframe>
 
 Если задать два значения<!--more-->, первое будет отвечать за верхний левый и нижний правый углы, а второе — за верхний правый и нижний левый:
 
-<iframe class="jsbin" style="height: 250px" src="http://jsbin.com/eCahIfa/4/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 230px" src="../assets/demo/border-radius/demo_2.html?output"></iframe>
 
 Значения, заданные через "/", определяют горизонтальные и вертикальные радиусы:
 
-<iframe class="jsbin" style="height: 250px" src="http://jsbin.com/eCahIfa/5/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 230px" src="../assets/demo/border-radius/demo_3.html?output"></iframe>
 
 Таким образом можно задать разные горизонтальные и вертикальные радиусы как для всей фигуры сразу, так и для отдельных углов:
 
-<iframe class="jsbin" style="height: 250px" src="http://jsbin.com/eCahIfa/6/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 230px" src="../assets/demo/border-radius/demo_4.html?output"></iframe>
 
 Экспериментируя с радиусами можно сделать, например, яйцо, каплю или лимон:
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/eCahIfa/14/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 300px" src="../assets/demo/border-radius/demo_5.html?output"></iframe>
 
 Или вот такую штуку:
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/ivifaji/2/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 300px" src="../assets/demo/border-radius/demo_6.html?output"></iframe>
 
 А можно мячик : )
 
-<iframe class="jsbin" style="height: 550px" src="http://jsbin.com/eCahIfa/9/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 475px" src="../assets/demo/border-radius/demo_7.html?output"></iframe>
 
 Или облака:
 
-<iframe class="jsbin" style="height: 400px" src="http://jsbin.com/eCahIfa/21/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 400px" src="../assets/demo/border-radius/demo_8.html?output"></iframe>
 
 Или цветок, или ещё какую-нибудь чепуху:
 
-<div class="clear"><div class="column column-left"><iframe class="jsbin" style="height: 420px" src="http://jsbin.com/eCahIfa/19/embed?output"></iframe></div><div class="column column-right"><iframe class="jsbin" style="height: 420px" src="http://jsbin.com/eCahIfa/18/embed?output"></iframe></div></div>
+<div class="clear"><div class="column column-left">
+    <iframe class="live-snippet" style="height: 420px" src="../assets/demo/border-radius/demo_9.html?output"></iframe>
+</div><div class="column column-right">
+    <iframe class="live-snippet" style="height: 420px" src="../assets/demo/border-radius/demo_10.html?output"></iframe>
+</div></div>
 
 Не думаю, что имеет смысл вот так вот рисовать Css-ом, но примеры показывают, что с помощью фантазии и небольшого количества кода можно сделать много интересного.
 

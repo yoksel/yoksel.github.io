@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №5 из статьи «Border-radius»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+.egg {
+  position: relative;
+  width: 50px;
+  height: 100px;
+  margin: 0 50px 20px 0;
+  padding: 45px 40px;
+  background: tomato;
+  border-radius: 80% / 100% 100% 60% 60%;
+  text-align: center;
+  }
+
+.drop {
+  float: left;
+  width: 120px;
+  height: 120px;
+  margin: 0 50px 20px 0;
+  background: skyblue;
+  border-radius: 0 100% 100% 100%;
+  transform: rotateZ(45deg);
+  }
+
+.lemon {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 0 20px;
+  float: left;
+  background: gold;
+  border-radius: 70% 100% / 30% 100%;
+  transform: rotateZ(100deg);
+  }
+.lemon:before,
+.lemon:after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 7px;
+  top: -6px;
+  background: yellowgreen;
+  border-radius: 0 100%;
+  box-shadow: 0 0 5px rgba(100,100,100,.3);
+}
+.lemon:before {
+  top: 18px;
+  left: -2px;
+}
+.lemon:after {
+  transform: rotateZ(-40deg);
+}
+
+/* Helpers */
+BODY {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+DIV {
+  flex-shrink: 0;
+}
+</style>
+</head>
+<body>
+<div class="egg"></div>
+<div class="drop"></div>
+<div class="lemon"></div>
+</body>
+</html>

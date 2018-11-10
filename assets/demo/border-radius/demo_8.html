@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №8 из статьи «Border-radius»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+HTML, BODY {
+  height: 100%;
+  }
+BODY {
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(royalblue 1%,skyblue);
+  }
+
+@keyframes cloud {
+  0% {
+    left: -100%
+  }
+  100% {
+    left: 100%
+  }
+}
+
+.cloud {
+  position: absolute;
+  left: -100%;
+  top: 5%;
+  width: 180px;
+  height: 120px;
+  margin: 20px;
+  margin: 0 5%;
+  padding: 45px 40px;
+  background: white;
+  border-radius: 50%;
+  opacity: .8;
+  text-align: center;
+  animation: cloud 10s infinite linear;
+  }
+.cloud:before,
+.cloud:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  }
+.cloud:before {
+  width: 60%;
+  height: 70%;
+  left: -20%;
+  top: 10%;
+}
+.cloud:after {
+  width: 80%;
+  height: 70%;
+  right: -20%;
+  top: 10%;
+  }
+.cloud:nth-child(2) {
+  top: 40%;
+  width: 120px;
+  height: 50px;
+  animation-delay: 3s;
+  }
+.cloud:nth-child(3) {
+  top: 25%;
+  width: 150px;
+  height: 70px;
+  animation-delay: 6s;
+  }
+</style>
+</head>
+<body>
+<div class="cloud"></div>
+<div class="cloud"></div>
+<div class="cloud"></div>
+</body>
+</html>

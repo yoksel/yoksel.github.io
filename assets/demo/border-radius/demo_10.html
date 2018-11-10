@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №10 из статьи «Border-radius»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  background: ivory;
+  font-size: 1.2em;
+  font-size: 1em;
+  }
+.use-pseudo {
+  position: relative;
+  }
+  .use-pseudo:before,
+  .use-pseudo:after {
+    content: "";
+    display: block;
+    position: absolute;
+    }
+.cart {
+  position: relative;
+  width: 16em;
+  height: 16em;
+  margin: 3em auto 0;
+  border: 1.3em solid saddlebrown;
+  border-radius: 50%;
+  box-shadow: 0 0 7px rgba(0,0,0,.5);
+  }
+  .cart:after {
+    z-index: -1;
+    width: 16.3em;
+    height: 8.1em;
+    top: 8.1em;
+    left: -.2em;
+    background: saddlebrown;
+    border-radius: 50% / 0% 0% 100% 100%;
+    box-shadow: 0 0 7px rgba(0,0,0,.5);
+    }
+.mushrooms I {
+  z-index: -1;
+  position: absolute;
+  width: 2.3em;
+  height: 5.5em;
+  background: palegoldenrod;
+  border-radius: 30% / 60%;
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+  }
+  .mushrooms I:before {
+    width: 5em;
+    height: 2.5em;
+    top: -2em;
+    left: -1.2em;
+    background: orangered;
+    border-radius: 50%/ 100% 100% 0% 0%;
+    box-shadow: 0 0 7px rgba(0,0,0,.5);
+    }
+.mushrooms I:nth-child(1) {
+  top: 5.7em;
+  left: 3em;
+  transform: rotate(-20deg);
+  }
+.mushrooms I:nth-child(2) {
+  top: 5.7em;
+  left: 10.5em;
+  transform: rotate(20deg);
+  }
+.mushrooms I:nth-child(3) {
+  top: 3.3em;
+  left: 6.6em;
+  }
+.grass {
+  position: absolute;
+  z-index: -2;
+}
+.grass I {
+  display: n;
+  }
+  .grass I,
+  .grass I:before,
+  .grass I:after {
+    position: absolute;
+    top: .5em;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-bottom-color: #d6e06d;
+    border-width: 0 .5em 12em;
+    }
+    .grass I:before {
+      left: -2em;
+      transform: rotate(-10deg);
+      }
+    .grass I:after {
+      left: 1em;
+      transform: rotate(10deg);
+      }
+  .grass I:nth-child(1) {
+    left: 1.5em;
+    top: 0;
+    transform: rotate(-20deg);
+    }
+  .grass I:nth-child(2) {
+    left: 7.7em;
+    top: 0;
+    }
+  .grass I:nth-child(3) {
+    left: 12.3em;
+    top: 0;
+    transform: rotate(20deg);
+    }
+</style>
+</head>
+<body>
+<div class="cart use-pseudo">
+  <div class="mushrooms"><i class="use-pseudo"></i><i class="use-pseudo"></i><i class="use-pseudo"></i></div>
+  <div class="grass"><i class="use-pseudo"></i><i class="use-pseudo"></i><i class="use-pseudo"></i></div>
+</div>
+</body>
+</html>

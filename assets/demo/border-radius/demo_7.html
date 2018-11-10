@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №7 из статьи «Border-radius»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+.ball,
+.shadow{
+  border-radius: 50%;
+  }
+
+@keyframes ball {
+  20% {
+    width: 95px;
+    height: 105px;
+    }
+  50% {
+    top: 30px;
+    width: 95px;
+    height: 100px;
+    animation-timing-function: ease-in;
+    }
+  90% {
+    width: 100px;
+    height: 105px;
+    }
+}
+
+@keyframes shadow {
+  50% {
+    width: 25px;
+    height: 5px;
+    margin-left: 50px;
+    background: whitesmoke;
+    box-shadow: 0 0 15px whitesmoke;
+    animation-timing-function: ease-in;
+    }
+}
+
+/* Helpers */
+BODY {
+  background: white;
+  }
+.yard {
+  position: relative;
+  height: 400px;
+  width: 110px;
+  margin: 0 auto;
+  }
+.ball {
+  position: absolute;
+  z-index: 2;
+  top: 82%;
+  width: 110px;
+  height: 93px;
+  overflow: hidden;
+  background: tomato;
+  animation: ball 1s infinite;
+  }
+.ball:before,
+.ball:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  border: 2px solid ivory;
+  border-radius: 50%;
+  }
+.ball:before {
+  left: 17%;
+  top: 17%;
+  }
+.ball:after {
+  left: 5%;
+  top: 5%;
+  }
+.shadow {
+  position: absolute;
+  top: 98%;
+  width: 70px;
+  height: 10px;
+  margin-left: 15px;
+  background: silver;
+  box-shadow: 0 0 3px gray;
+  animation: shadow 1s infinite;
+}
+</style>
+</head>
+<body>
+  <div class="yard">
+    <div class="ball"></div>
+    <div class="shadow"></div>
+  </div>
+</body>
+</html>

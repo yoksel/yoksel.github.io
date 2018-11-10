@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №1 из статьи «Border-radius»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+.radius-pixels {
+  border-radius: 20px;
+  }
+.radius-percents {
+  border-radius: 50%;
+}
+
+/* Helpers */
+BODY {
+  background: white;
+  }
+DIV {
+  margin: 20px;
+  padding: 25px 40px;
+  background: gold;
+  }
+DIV:before {
+  display: block;
+  content: attr(data-border);
+  text-align: center;
+  font-size: 27px;
+  }
+</style>
+</head>
+<body>
+<div
+  class="radius-pixels"
+  data-border="border-radius: 20px;"
+></div>
+
+<div
+  class="radius-percents"
+  data-border="border-radius: 50%;"
+></div>
+</body>
+</html>

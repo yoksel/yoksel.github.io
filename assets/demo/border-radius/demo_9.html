@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №9 из статьи «Border-radius»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  background: ivory;
+  font-size: 1.2em;
+  color: darkolivegreen;
+  text-shadow: 1px 0 yellowgreen;
+  font-size: 1em;
+  }
+.flower {
+  position: relative;
+  width: 16em;
+  height: 16em;
+  margin: 2em auto;
+  }
+.petals {
+  position: relative;
+  z-index: 2;
+  top: 3em
+  }
+.leaves {
+  position: absolute;
+  left: 8em;
+  bottom: 0;
+  width: .3em;
+  height: 12em;
+  background: greenyellow;
+  }
+.leaf-item,
+.petal-item,
+.leaves:before,
+.leaves:after,
+.petal-item:before,
+.petal-item:after,
+.petals,
+.petals:before,
+.petals:after {
+  display: block;
+  width: 5em;
+  height: 5em;
+  border-radius: 100% 0;
+  }
+.leaves:before,
+.leaves:after {
+  bottom: 0px;
+  background: greenyellow;
+  border-style: solid;
+  }
+  .leaves:before {
+    border-right-color: yellowgreen;
+    border-width: 0 25px 0 0;
+    }
+  .leaves:after {
+    transform: translateX(-94%);
+    border-radius:  0 100%;
+    border: 5px solid yellowgreen;
+    border-width: 0 0 0 25px;
+    }
+.petal-item {
+  position: absolute;
+  margin-left: 8em;
+  }
+  .petal-item:nth-child(1) {
+    margin-left: 8.3em;
+    top: -.5em;
+    }
+.petals:before,
+.petals:after{
+  z-index: 3;
+  background: crimson;
+  }
+.petal-item,
+.petal-item:before,
+.petal-item:after{
+  background: orangered;
+  }
+.petal-item:nth-child(1),
+.petal-item:nth-child(1):before,
+.petal-item:nth-child(1):after {
+  width: 2.5em;
+  height: 2.5em;
+  background: orange;
+  }
+  .petal-item:nth-child(1):after {
+    z-index: 5;
+    left: -.6em;
+    top: 5em;
+    width: .9em;
+    height: .9em;
+    background: greenyellow;
+    border-radius: 50%;
+    }
+.leaves:before,
+.leaves:after,
+.petals:before,
+.petals:after,
+.petal-item:before,
+.petal-item:after {
+  position: absolute;
+  content: "";
+  display: block;
+  }
+.petals:before {
+  top: 1.1em;
+  left: 8.7em;
+  transform: rotate(25deg);
+  }
+.petals:after {
+  top: 1.1em;
+  left: 2.5em;
+  transform: rotate(-115deg);
+  }
+.petal-item:before {
+  left: -5em;
+  transform: rotate(-90deg);
+  }
+.petal-item:nth-child(1):before {
+  left: -3em;
+  }
+.petal-item:after {
+  left: -2.4em;
+  top: -1em;
+  transform: rotate(-45deg);
+  }
+</style>
+</head>
+<body>
+<div class="flower">
+  <div class="petals">
+    <div class="petal-item"></div>
+    <div class="petal-item"></div>
+  </div>
+
+  <div class="leaves">
+    <div class="leaf-item"></div>
+    <div class="leaf-item"></div>
+  </div>
+</div>
+</body>
+</html>
