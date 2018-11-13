@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №1 из статьи «Гипноштуки»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  background: black;
+  overflow: hidden;
+  }
+DIV {
+  position: relative;
+  width: 10em;
+  height: 10em;
+  margin: 1.5em auto;
+  padding: .2em;
+  animation: hypnosis 1s infinite linear;
+  border-radius: 50%;
+  font-size: 1.5em;
+  box-shadow:
+    .2em 0 0 .5em white inset,
+    0 .1em 0 1em black inset,
+    0 0 0 1.5em white inset,
+    0 0 0 2em black inset,
+    .1em 0 0 2.5em white inset,
+    0 0 0 3em black inset,
+    0 .2em 0 3.5em white inset,
+    0 0 0 4em black inset,
+    .1em 0 0 4.5em white inset,
+    0 0 0 5em black inset,
+    0 0 0 5.5em white inset,
+    0 .2em 0 6em black inset
+    ;
+  }
+
+@keyframes hypnosis {
+  100% {
+    box-shadow:
+    0 0 0 0em white inset,
+    .1em 0 0 0em black inset,
+    0 0 0 .5em white inset,
+    0 0 0 1em black inset,
+    0 .1em 0 1.5em white inset,
+    0 0 0 2em black inset,
+    .1em 0 0 2.5em white inset,
+    0 0 0 3em black inset,
+    0 .1em 0 3.5em white inset,
+    0 0 0 4em black inset,
+    .1em 0 0 4.5em white inset,
+    0 0 0 5em black inset
+    ;
+  }
+}
+</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

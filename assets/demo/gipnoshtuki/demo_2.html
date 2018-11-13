@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №2 из статьи «Гипноштуки»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  background: black;
+  overflow: hidden;
+  }
+DIV {
+  position: relative;
+  width: 10em;
+  height: 10em;
+  margin: 1.5em auto;
+  animation: hypnosis 5s infinite linear;
+  border-radius: 50%;
+  font-size: 1.6em;
+  }
+
+SPAN,
+SPAN:before,
+SPAN:after {
+  position: absolute;
+  display: block;
+  left: .5;
+  width: 5em;
+  height: 5em;
+  border-top: .4em solid white;
+  border-radius: 50%;
+  }
+SPAN {
+  top: 2.5em;
+  transform-origin: 5em 2.9em;
+  }
+SPAN:before,
+SPAN:after {
+  content: "";
+  transform-origin: 5em 2.65em;
+  }
+SPAN:before {
+  transform: rotate(120deg);
+  }
+SPAN:after {
+  transform: rotate(240deg);
+  }
+SPAN:nth-child(2){
+  transform: rotate(30deg);
+  }
+SPAN:nth-child(2),
+SPAN:nth-child(2):before,
+SPAN:nth-child(2):after {
+  animation-delay: 1s;
+  }
+SPAN:nth-child(3){
+  transform: rotate(60deg);
+  }
+SPAN:nth-child(3),
+SPAN:nth-child(3):before,
+SPAN:nth-child(3):after {
+  animation-delay: 2.5s;
+  }
+SPAN:nth-child(4){
+  transform: rotate(90deg);
+  animation-delay: 3s;
+  }
+SPAN:nth-child(4),
+SPAN:nth-child(4):before,
+SPAN:nth-child(4):after {
+  animation-delay: 4s;
+  }
+
+@keyframes hypnosis {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style>
+</head>
+<body>
+<div>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</body>
+</html>
