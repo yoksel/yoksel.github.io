@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №1 из статьи «Попытка сделать игру Го на CSS»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+HTML {
+  height: 100%;
+}
+
+BODY {
+  padding: 0;
+  background: repeating-linear-gradient(-45deg,
+    rgba(255,255,255,0.02), rgba(255,255,255,0.02) .5em,
+    rgba(255,255,255,0) .5em, rgba(255,255,255,0) 1em),
+    radial-gradient(hsl(200,100%,70%), hsl(220,100%,20%))
+    ;
+  background-size: cover;
+  font: 20px/1.2 Georgia, serif;
+}
+
+INPUT {
+  display: none;
+}
+
+.board {
+  position: absolute;
+  width: 20em;
+  height: 20em;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid hsl(20, 40%, 20%);
+  background: url(http://img-fotki.yandex.ru/get/9509/5091629.99/0_7d2a0_19c2b714_XL.jpg) 0 center;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3),
+              0 0 1em hsla(20, 40%, 30%, .8) inset,
+              0 0 0 .2em hsla(20, 50%, 30%, .2) inset;
+}
+
+.board-inner {
+  position: absolute;
+  top: .8em;
+  right: .8em;
+  bottom: 1em;
+  left: 1em;
+  border: 2px solid hsla(20, 40%, 30%,.4);
+  background:
+    linear-gradient(hsla(20, 40%, 30%,.3) 2px, transparent 0),
+    linear-gradient(90deg, hsla(20, 40%, 30%,.3) 2px, transparent 0);
+  background-size: 1em 1em;
+  background-position: -1px -1px
+}
+
+.wrapper-labels {
+  position: absolute;
+  z-index: 1;
+  top: .5em;
+  right: .5em;
+  bottom: .5em;
+  left: .5em;
+}
+
+LABEL {
+  display: block;
+  position: relative;
+  float: left;
+  width: 1em;
+  height: 1em;
+  cursor: pointer;
+}
+LABEL:before {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: .095em;
+  right: .095em;
+  bottom: .095em;
+  left: .095em;
+  border-radius: 50%;
+  background: radial-gradient(#333, black .4em);
+  background-position: -.1em  -.1em ;
+  box-shadow: 0 0 3px hsla(50, 60%, 40%,.7) inset,
+              .05em .05em .1em rgba(0,0,0,0.6);
+}
+:checked + LABEL:before {
+  content: '';
+}
+
+
+INPUT:checked:nth-of-type(2n+1) + LABEL:before {
+  background: radial-gradient(white, white .1em, silver .45em);
+  }
+
+
+LABEL:nth-of-type(37):after,
+LABEL:nth-of-type(43):after,
+LABEL:nth-of-type(49):after,
+LABEL:nth-of-type(139):after,
+LABEL:nth-of-type(145):after,
+LABEL:nth-of-type(151):after,
+LABEL:nth-of-type(241):after,
+LABEL:nth-of-type(247):after,
+LABEL:nth-of-type(253):after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: .35em;
+  right: .35em;
+  bottom: .35em;
+  left: .35em;
+  border-radius: 50%;
+  background: hsl(20, 40%, 30%);
+  opacity: .8;
+  border-radius: 50%;
+}
+</style>
+  </head>
+<body>
+ <div class="board">
+   <div class="board-inner">
+     <div class="wrapper-labels">
+       <input type="checkbox" id="i1"/><label for="i1"></label>
+<input type="checkbox" id="i2"/><label for="i2"></label>
+<input type="checkbox" id="i3"/><label for="i3"></label>
+<input type="checkbox" id="i4"/><label for="i4"></label>
+<input type="checkbox" id="i5"/><label for="i5"></label>
+<input type="checkbox" id="i6"/><label for="i6"></label>
+<input type="checkbox" id="i7"/><label for="i7"></label>
+<input type="checkbox" id="i8"/><label for="i8"></label>
+<input type="checkbox" id="i9"/><label for="i9"></label>
+<input type="checkbox" id="i10"/><label for="i10"></label>
+<input type="checkbox" id="i11"/><label for="i11"></label>
+<input type="checkbox" id="i12"/><label for="i12"></label>
+<input type="checkbox" id="i13"/><label for="i13"></label>
+<input type="checkbox" id="i14"/><label for="i14"></label>
+<input type="checkbox" id="i15"/><label for="i15"></label>
+<input type="checkbox" id="i16"/><label for="i16"></label>
+<input type="checkbox" id="i17"/><label for="i17"></label>
+<input type="checkbox" id="i18"/><label for="i18"></label>
+<input type="checkbox" id="i19"/><label for="i19"></label>
+<input type="checkbox" id="i20"/><label for="i20"></label>
+<input type="checkbox" id="i21"/><label for="i21"></label>
+<input type="checkbox" id="i22"/><label for="i22"></label>
+<input type="checkbox" id="i23"/><label for="i23"></label>
+<input type="checkbox" id="i24"/><label for="i24"></label>
+<input type="checkbox" id="i25"/><label for="i25"></label>
+<input type="checkbox" id="i26"/><label for="i26"></label>
+<input type="checkbox" id="i27"/><label for="i27"></label>
+<input type="checkbox" id="i28"/><label for="i28"></label>
+<input type="checkbox" id="i29"/><label for="i29"></label>
+<input type="checkbox" id="i30"/><label for="i30"></label>
+<input type="checkbox" id="i31"/><label for="i31"></label>
+<input type="checkbox" id="i32"/><label for="i32"></label>
+<input type="checkbox" id="i33"/><label for="i33"></label>
+<input type="checkbox" id="i34"/><label for="i34"></label>
+<input type="checkbox" id="i35"/><label for="i35"></label>
+<input type="checkbox" id="i36"/><label for="i36"></label>
+<input type="checkbox" id="i37"/><label for="i37"></label>
+<input type="checkbox" id="i38"/><label for="i38"></label>
+<input type="checkbox" id="i39"/><label for="i39"></label>
+<input type="checkbox" id="i40"/><label for="i40"></label>
+<input type="checkbox" id="i41"/><label for="i41"></label>
+<input type="checkbox" id="i42"/><label for="i42"></label>
+<input type="checkbox" id="i43"/><label for="i43"></label>
+<input type="checkbox" id="i44"/><label for="i44"></label>
+<input type="checkbox" id="i45"/><label for="i45"></label>
+<input type="checkbox" id="i46"/><label for="i46"></label>
+<input type="checkbox" id="i47"/><label for="i47"></label>
+<input type="checkbox" id="i48"/><label for="i48"></label>
+<input type="checkbox" id="i49"/><label for="i49"></label>
+<input type="checkbox" id="i50"/><label for="i50"></label>
+<input type="checkbox" id="i51"/><label for="i51"></label>
+<input type="checkbox" id="i52"/><label for="i52"></label>
+<input type="checkbox" id="i53"/><label for="i53"></label>
+<input type="checkbox" id="i54"/><label for="i54"></label>
+<input type="checkbox" id="i55"/><label for="i55"></label>
+<input type="checkbox" id="i56"/><label for="i56"></label>
+<input type="checkbox" id="i57"/><label for="i57"></label>
+<input type="checkbox" id="i58"/><label for="i58"></label>
+<input type="checkbox" id="i59"/><label for="i59"></label>
+<input type="checkbox" id="i60"/><label for="i60"></label>
+<input type="checkbox" id="i61"/><label for="i61"></label>
+<input type="checkbox" id="i62"/><label for="i62"></label>
+<input type="checkbox" id="i63"/><label for="i63"></label>
+<input type="checkbox" id="i64"/><label for="i64"></label>
+<input type="checkbox" id="i65"/><label for="i65"></label>
+<input type="checkbox" id="i66"/><label for="i66"></label>
+<input type="checkbox" id="i67"/><label for="i67"></label>
+<input type="checkbox" id="i68"/><label for="i68"></label>
+<input type="checkbox" id="i69"/><label for="i69"></label>
+<input type="checkbox" id="i70"/><label for="i70"></label>
+<input type="checkbox" id="i71"/><label for="i71"></label>
+<input type="checkbox" id="i72"/><label for="i72"></label>
+<input type="checkbox" id="i73"/><label for="i73"></label>
+<input type="checkbox" id="i74"/><label for="i74"></label>
+<input type="checkbox" id="i75"/><label for="i75"></label>
+<input type="checkbox" id="i76"/><label for="i76"></label>
+<input type="checkbox" id="i77"/><label for="i77"></label>
+<input type="checkbox" id="i78"/><label for="i78"></label>
+<input type="checkbox" id="i79"/><label for="i79"></label>
+<input type="checkbox" id="i80"/><label for="i80"></label>
+<input type="checkbox" id="i81"/><label for="i81"></label>
+<input type="checkbox" id="i82"/><label for="i82"></label>
+<input type="checkbox" id="i83"/><label for="i83"></label>
+<input type="checkbox" id="i84"/><label for="i84"></label>
+<input type="checkbox" id="i85"/><label for="i85"></label>
+<input type="checkbox" id="i86"/><label for="i86"></label>
+<input type="checkbox" id="i87"/><label for="i87"></label>
+<input type="checkbox" id="i88"/><label for="i88"></label>
+<input type="checkbox" id="i89"/><label for="i89"></label>
+<input type="checkbox" id="i90"/><label for="i90"></label>
+<input type="checkbox" id="i91"/><label for="i91"></label>
+<input type="checkbox" id="i92"/><label for="i92"></label>
+<input type="checkbox" id="i93"/><label for="i93"></label>
+<input type="checkbox" id="i94"/><label for="i94"></label>
+<input type="checkbox" id="i95"/><label for="i95"></label>
+<input type="checkbox" id="i96"/><label for="i96"></label>
+<input type="checkbox" id="i97"/><label for="i97"></label>
+<input type="checkbox" id="i98"/><label for="i98"></label>
+<input type="checkbox" id="i99"/><label for="i99"></label>
+<input type="checkbox" id="i100"/><label for="i100"></label>
+<input type="checkbox" id="i101"/><label for="i101"></label>
+<input type="checkbox" id="i102"/><label for="i102"></label>
+<input type="checkbox" id="i103"/><label for="i103"></label>
+<input type="checkbox" id="i104"/><label for="i104"></label>
+<input type="checkbox" id="i105"/><label for="i105"></label>
+<input type="checkbox" id="i106"/><label for="i106"></label>
+<input type="checkbox" id="i107"/><label for="i107"></label>
+<input type="checkbox" id="i108"/><label for="i108"></label>
+<input type="checkbox" id="i109"/><label for="i109"></label>
+<input type="checkbox" id="i110"/><label for="i110"></label>
+<input type="checkbox" id="i111"/><label for="i111"></label>
+<input type="checkbox" id="i112"/><label for="i112"></label>
+<input type="checkbox" id="i113"/><label for="i113"></label>
+<input type="checkbox" id="i114"/><label for="i114"></label>
+<input type="checkbox" id="i115"/><label for="i115"></label>
+<input type="checkbox" id="i116"/><label for="i116"></label>
+<input type="checkbox" id="i117"/><label for="i117"></label>
+<input type="checkbox" id="i118"/><label for="i118"></label>
+<input type="checkbox" id="i119"/><label for="i119"></label>
+<input type="checkbox" id="i120"/><label for="i120"></label>
+<input type="checkbox" id="i121"/><label for="i121"></label>
+<input type="checkbox" id="i122"/><label for="i122"></label>
+<input type="checkbox" id="i123"/><label for="i123"></label>
+<input type="checkbox" id="i124"/><label for="i124"></label>
+<input type="checkbox" id="i125"/><label for="i125"></label>
+<input type="checkbox" id="i126"/><label for="i126"></label>
+<input type="checkbox" id="i127"/><label for="i127"></label>
+<input type="checkbox" id="i128"/><label for="i128"></label>
+<input type="checkbox" id="i129"/><label for="i129"></label>
+<input type="checkbox" id="i130"/><label for="i130"></label>
+<input type="checkbox" id="i131"/><label for="i131"></label>
+<input type="checkbox" id="i132"/><label for="i132"></label>
+<input type="checkbox" id="i133"/><label for="i133"></label>
+<input type="checkbox" id="i134"/><label for="i134"></label>
+<input type="checkbox" id="i135"/><label for="i135"></label>
+<input type="checkbox" id="i136"/><label for="i136"></label>
+<input type="checkbox" id="i137"/><label for="i137"></label>
+<input type="checkbox" id="i138"/><label for="i138"></label>
+<input type="checkbox" id="i139"/><label for="i139"></label>
+<input type="checkbox" id="i140"/><label for="i140"></label>
+<input type="checkbox" id="i141"/><label for="i141"></label>
+<input type="checkbox" id="i142"/><label for="i142"></label>
+<input type="checkbox" id="i143"/><label for="i143"></label>
+<input type="checkbox" id="i144"/><label for="i144"></label>
+<input type="checkbox" id="i145"/><label for="i145"></label>
+<input type="checkbox" id="i146"/><label for="i146"></label>
+<input type="checkbox" id="i147"/><label for="i147"></label>
+<input type="checkbox" id="i148"/><label for="i148"></label>
+<input type="checkbox" id="i149"/><label for="i149"></label>
+<input type="checkbox" id="i150"/><label for="i150"></label>
+<input type="checkbox" id="i151"/><label for="i151"></label>
+<input type="checkbox" id="i152"/><label for="i152"></label>
+<input type="checkbox" id="i153"/><label for="i153"></label>
+<input type="checkbox" id="i154"/><label for="i154"></label>
+<input type="checkbox" id="i155"/><label for="i155"></label>
+<input type="checkbox" id="i156"/><label for="i156"></label>
+<input type="checkbox" id="i157"/><label for="i157"></label>
+<input type="checkbox" id="i158"/><label for="i158"></label>
+<input type="checkbox" id="i159"/><label for="i159"></label>
+<input type="checkbox" id="i160"/><label for="i160"></label>
+<input type="checkbox" id="i161"/><label for="i161"></label>
+<input type="checkbox" id="i162"/><label for="i162"></label>
+<input type="checkbox" id="i163"/><label for="i163"></label>
+<input type="checkbox" id="i164"/><label for="i164"></label>
+<input type="checkbox" id="i165"/><label for="i165"></label>
+<input type="checkbox" id="i166"/><label for="i166"></label>
+<input type="checkbox" id="i167"/><label for="i167"></label>
+<input type="checkbox" id="i168"/><label for="i168"></label>
+<input type="checkbox" id="i169"/><label for="i169"></label>
+<input type="checkbox" id="i170"/><label for="i170"></label>
+<input type="checkbox" id="i171"/><label for="i171"></label>
+<input type="checkbox" id="i172"/><label for="i172"></label>
+<input type="checkbox" id="i173"/><label for="i173"></label>
+<input type="checkbox" id="i174"/><label for="i174"></label>
+<input type="checkbox" id="i175"/><label for="i175"></label>
+<input type="checkbox" id="i176"/><label for="i176"></label>
+<input type="checkbox" id="i177"/><label for="i177"></label>
+<input type="checkbox" id="i178"/><label for="i178"></label>
+<input type="checkbox" id="i179"/><label for="i179"></label>
+<input type="checkbox" id="i180"/><label for="i180"></label>
+<input type="checkbox" id="i181"/><label for="i181"></label>
+<input type="checkbox" id="i182"/><label for="i182"></label>
+<input type="checkbox" id="i183"/><label for="i183"></label>
+<input type="checkbox" id="i184"/><label for="i184"></label>
+<input type="checkbox" id="i185"/><label for="i185"></label>
+<input type="checkbox" id="i186"/><label for="i186"></label>
+<input type="checkbox" id="i187"/><label for="i187"></label>
+<input type="checkbox" id="i188"/><label for="i188"></label>
+<input type="checkbox" id="i189"/><label for="i189"></label>
+<input type="checkbox" id="i190"/><label for="i190"></label>
+<input type="checkbox" id="i191"/><label for="i191"></label>
+<input type="checkbox" id="i192"/><label for="i192"></label>
+<input type="checkbox" id="i193"/><label for="i193"></label>
+<input type="checkbox" id="i194"/><label for="i194"></label>
+<input type="checkbox" id="i195"/><label for="i195"></label>
+<input type="checkbox" id="i196"/><label for="i196"></label>
+<input type="checkbox" id="i197"/><label for="i197"></label>
+<input type="checkbox" id="i198"/><label for="i198"></label>
+<input type="checkbox" id="i199"/><label for="i199"></label>
+<input type="checkbox" id="i200"/><label for="i200"></label>
+<input type="checkbox" id="i201"/><label for="i201"></label>
+<input type="checkbox" id="i202"/><label for="i202"></label>
+<input type="checkbox" id="i203"/><label for="i203"></label>
+<input type="checkbox" id="i204"/><label for="i204"></label>
+<input type="checkbox" id="i205"/><label for="i205"></label>
+<input type="checkbox" id="i206"/><label for="i206"></label>
+<input type="checkbox" id="i207"/><label for="i207"></label>
+<input type="checkbox" id="i208"/><label for="i208"></label>
+<input type="checkbox" id="i209"/><label for="i209"></label>
+<input type="checkbox" id="i210"/><label for="i210"></label>
+<input type="checkbox" id="i211"/><label for="i211"></label>
+<input type="checkbox" id="i212"/><label for="i212"></label>
+<input type="checkbox" id="i213"/><label for="i213"></label>
+<input type="checkbox" id="i214"/><label for="i214"></label>
+<input type="checkbox" id="i215"/><label for="i215"></label>
+<input type="checkbox" id="i216"/><label for="i216"></label>
+<input type="checkbox" id="i217"/><label for="i217"></label>
+<input type="checkbox" id="i218"/><label for="i218"></label>
+<input type="checkbox" id="i219"/><label for="i219"></label>
+<input type="checkbox" id="i220"/><label for="i220"></label>
+<input type="checkbox" id="i221"/><label for="i221"></label>
+<input type="checkbox" id="i222"/><label for="i222"></label>
+<input type="checkbox" id="i223"/><label for="i223"></label>
+<input type="checkbox" id="i224"/><label for="i224"></label>
+<input type="checkbox" id="i225"/><label for="i225"></label>
+<input type="checkbox" id="i226"/><label for="i226"></label>
+<input type="checkbox" id="i227"/><label for="i227"></label>
+<input type="checkbox" id="i228"/><label for="i228"></label>
+<input type="checkbox" id="i229"/><label for="i229"></label>
+<input type="checkbox" id="i230"/><label for="i230"></label>
+<input type="checkbox" id="i231"/><label for="i231"></label>
+<input type="checkbox" id="i232"/><label for="i232"></label>
+<input type="checkbox" id="i233"/><label for="i233"></label>
+<input type="checkbox" id="i234"/><label for="i234"></label>
+<input type="checkbox" id="i235"/><label for="i235"></label>
+<input type="checkbox" id="i236"/><label for="i236"></label>
+<input type="checkbox" id="i237"/><label for="i237"></label>
+<input type="checkbox" id="i238"/><label for="i238"></label>
+<input type="checkbox" id="i239"/><label for="i239"></label>
+<input type="checkbox" id="i240"/><label for="i240"></label>
+<input type="checkbox" id="i241"/><label for="i241"></label>
+<input type="checkbox" id="i242"/><label for="i242"></label>
+<input type="checkbox" id="i243"/><label for="i243"></label>
+<input type="checkbox" id="i244"/><label for="i244"></label>
+<input type="checkbox" id="i245"/><label for="i245"></label>
+<input type="checkbox" id="i246"/><label for="i246"></label>
+<input type="checkbox" id="i247"/><label for="i247"></label>
+<input type="checkbox" id="i248"/><label for="i248"></label>
+<input type="checkbox" id="i249"/><label for="i249"></label>
+<input type="checkbox" id="i250"/><label for="i250"></label>
+<input type="checkbox" id="i251"/><label for="i251"></label>
+<input type="checkbox" id="i252"/><label for="i252"></label>
+<input type="checkbox" id="i253"/><label for="i253"></label>
+<input type="checkbox" id="i254"/><label for="i254"></label>
+<input type="checkbox" id="i255"/><label for="i255"></label>
+<input type="checkbox" id="i256"/><label for="i256"></label>
+<input type="checkbox" id="i257"/><label for="i257"></label>
+<input type="checkbox" id="i258"/><label for="i258"></label>
+<input type="checkbox" id="i259"/><label for="i259"></label>
+<input type="checkbox" id="i260"/><label for="i260"></label>
+<input type="checkbox" id="i261"/><label for="i261"></label>
+<input type="checkbox" id="i262"/><label for="i262"></label>
+<input type="checkbox" id="i263"/><label for="i263"></label>
+<input type="checkbox" id="i264"/><label for="i264"></label>
+<input type="checkbox" id="i265"/><label for="i265"></label>
+<input type="checkbox" id="i266"/><label for="i266"></label>
+<input type="checkbox" id="i267"/><label for="i267"></label>
+<input type="checkbox" id="i268"/><label for="i268"></label>
+<input type="checkbox" id="i269"/><label for="i269"></label>
+<input type="checkbox" id="i270"/><label for="i270"></label>
+<input type="checkbox" id="i271"/><label for="i271"></label>
+<input type="checkbox" id="i272"/><label for="i272"></label>
+<input type="checkbox" id="i273"/><label for="i273"></label>
+<input type="checkbox" id="i274"/><label for="i274"></label>
+<input type="checkbox" id="i275"/><label for="i275"></label>
+<input type="checkbox" id="i276"/><label for="i276"></label>
+<input type="checkbox" id="i277"/><label for="i277"></label>
+<input type="checkbox" id="i278"/><label for="i278"></label>
+<input type="checkbox" id="i279"/><label for="i279"></label>
+<input type="checkbox" id="i280"/><label for="i280"></label>
+<input type="checkbox" id="i281"/><label for="i281"></label>
+<input type="checkbox" id="i282"/><label for="i282"></label>
+<input type="checkbox" id="i283"/><label for="i283"></label>
+<input type="checkbox" id="i284"/><label for="i284"></label>
+<input type="checkbox" id="i285"/><label for="i285"></label>
+<input type="checkbox" id="i286"/><label for="i286"></label>
+<input type="checkbox" id="i287"/><label for="i287"></label>
+<input type="checkbox" id="i288"/><label for="i288"></label>
+<input type="checkbox" id="i289"/><label for="i289"></label>
+    </div>
+  </div>
+</div>
+</body>
+</html>
