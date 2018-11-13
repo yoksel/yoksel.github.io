@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Цветовой круг на Css
+title: Цветовой круг на CSS
 categories:
 - Css
 - Filtres
@@ -29,9 +29,9 @@ links:
 
 В уроке код для SASS, я попробовала сделать это простым CSS и используя меньшее количество элементов:<!--more-->
 
-<iframe class="jsbin" style="height: 420px" src="http://jsbin.com/ewIRARe/3/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 420px" src="../assets/demo/tsvetovoj-krug-na-css/demo_1.html?output"></iframe>
 
 Размытие в исходном примере сделано с помощью <code>-webkit-filter: blur(1.7em);</code>, следовательно, будет работать только в браузерах на основе Webkit.
 Но можно воспользоваться svg-фильтрами и получить размытие и в других браузерах:
 
-<iframe class="jsbin" style="height: 420px" src="http://jsbin.com/ewIRARe/6/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 420px" src="../assets/demo/tsvetovoj-krug-na-css/demo_2.html?output"></iframe>
