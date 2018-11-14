@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №14 из статьи «Flexbox»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+.flex-container {
+  display: flex;
+  align-items: flex-start;
+  }
+.flex-end {
+  align-items: flex-end;
+  }
+
+/* Decorations
+-------------------- */
+BODY {
+  padding: 20px;
+  background: white;
+  }
+.flex-container {
+  counter-reset: flex-item-counter;
+  height: 180px;
+  padding: 10px;
+  background: gold;
+  border-radius: 10px;
+  }
+.flex-item {
+  margin: 10px;
+  padding: 5px;
+  background: tomato;
+  border-radius: 5px;
+  border: 1px solid #FFF;
+  }
+.flex-item:before {
+  content: counter(flex-item-counter);
+  counter-increment: flex-item-counter;
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  margin: 5px auto;
+  text-align: center;
+  background: ivory;
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+<div class="flex-container">
+  <div class="flex-item">
+    Curabitur ac vestibulum mi
+  </div>
+  <div class="flex-item">
+    In viverra dapibus
+  </div>
+  <div class="flex-item">
+    Fusce tincidunt diam et
+    </div>
+  <div class="flex-item">
+    Nulla in dui vel est
+  </div>
+  <div class="flex-item">
+    at diam in lobortis
+  </div>
+</div>
+<br>
+<div class="flex-container flex-end">
+  <div class="flex-item">
+    Curabitur ac vestibulum mi
+  </div>
+  <div class="flex-item">
+    In viverra dapibus
+  </div>
+  <div class="flex-item">
+    Fusce tincidunt diam et
+    </div>
+  <div class="flex-item">
+    Nulla in dui vel est
+  </div>
+  <div class="flex-item">
+    at diam in lobortis
+  </div>
+</div>
+</body>
+</html>

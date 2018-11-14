@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №8 из статьи «Flexbox»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  }
+.wrap {
+  flex-wrap: wrap;
+  }
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+  }
+
+/* Decorations
+-------------------- */
+BODY {
+  padding: 20px;
+  background: white;
+  }
+B {
+  display: block;
+  margin-bottom: .5em
+  }
+.flex-container {
+  counter-reset: flex-item-counter;
+  padding: 10px;
+  background: gold;
+  border-radius: 10px;
+  }
+.column-reverse {
+  counter-reset: flex-item-counter;
+  }
+.flex-item {
+  position: relative;
+  margin: 10px;
+  padding: 5px;
+  padding-top: 15px;
+  background: tomato;
+  border-radius: 5px;
+  border: 1px solid #FFF;
+  }
+.flex-item:before {
+  position: absolute;
+  content: counter(flex-item-counter);
+  counter-increment: flex-item-counter;
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  left: 0;
+  right: 0;
+  top: -.75em;
+  margin: auto;
+  text-align: center;
+  background: ivory;
+  border-radius: 50%;
+  }
+</style>
+</head>
+<body>
+<b>nowrap</b>
+<div class="flex-container">
+  <div class="flex-item">
+    Curabitur ac vestibulum mi
+  </div>
+  <div class="flex-item">
+    In viverra dapibus
+  </div>
+  <div class="flex-item">
+    Fusce tincidunt diam et
+    </div>
+  <div class="flex-item">
+    Nulla in dui vel est
+  </div>
+  <div class="flex-item">
+    at diam in lobortis
+  </div>
+</div>
+<br>
+<b>wrap</b>
+<div class="flex-container wrap">
+  <div class="flex-item">
+    Curabitur ac vestibulum mi
+  </div>
+  <div class="flex-item">
+    In viverra dapibus
+  </div>
+  <div class="flex-item">
+    Fusce tincidunt diam et
+    </div>
+  <div class="flex-item">
+    Nulla in dui vel est
+  </div>
+  <div class="flex-item">
+    at diam in lobortis
+  </div>
+</div>
+<br>
+<b>wrap-reverse</b>
+<div class="flex-container wrap-reverse">
+  <div class="flex-item">
+    Curabitur ac vestibulum mi
+  </div>
+  <div class="flex-item">
+    In viverra dapibus
+  </div>
+  <div class="flex-item">
+    Fusce tincidunt diam et
+    </div>
+  <div class="flex-item">
+    Nulla in dui vel est
+  </div>
+  <div class="flex-item">
+    at diam in lobortis
+  </div>
+</div>
+</body>
+</html>
