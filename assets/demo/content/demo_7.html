@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №7 из статьи «Свойство content»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding: 20px;
+  background: white;
+  perspective: 500px;
+  font: 25px/1.4 Georgia, serif;
+  text-align: center;
+  }
+A {
+  display: inline-block;
+  position: relative;
+  height: 30px;
+  padding: 0 3px;
+  line-height: 30px;
+  text-decoration: none;
+  color: steelblue;
+  }
+  A:before {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    content: attr(title);
+    background: tomato;
+    color: #FFF;
+    transition: all .3s;
+    }
+  A:hover:before {
+    height: 100%;
+    }
+</style>
+</head>
+<body>
+I'm text. <a href="#" title="I'm link">I'm link</a>
+</body>
+</html>

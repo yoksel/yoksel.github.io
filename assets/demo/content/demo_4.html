@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №4 из статьи «Свойство content»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding-top: 20px;
+  background: white;
+  }
+DIV {
+  padding: 20px;
+  background-color: hsla(80, 100%, 39%,.15);
+  background-image: linear-gradient(rgba(255,255,255,.5) 1px, rgba(255,255,255,0) 1px),
+                    linear-gradient(90deg,rgba(255,255,255,.5) 1px, rgba(255,255,255,0) 1px);
+  background-size: 10px 10px;
+  border-radius: 5px;
+  text-align: center;
+  font: 45px/1 Georgia;
+  color: olivedrab;
+  }
+  DIV:before {
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+    }
+  DIV:before  {
+    content: url(http://img-fotki.yandex.ru/get/5413/5091629.67/0_5ba12_81d03a82_XS.png);
+    margin-right: 12px;
+    }
+</style>
+</head>
+<body>
+<div>Text</div>
+</body>
+</html>

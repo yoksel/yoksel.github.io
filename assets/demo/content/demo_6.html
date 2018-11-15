@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №6 из статьи «Свойство content»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding: 20px;
+  background: white;
+  counter-reset: h2-counter;
+  counter-reset: p-counter;
+  font: 16px/1.4 Georgia, serif;
+  }
+DIV {
+  counter-increment: h2-counter;
+  }
+  H2:before {
+    content: counter(h2-counter) ". ";
+    }
+  P:before {
+    margin-left: 30px;
+    content: counter(p-counter) ". ";
+    counter-increment: p-counter;
+    }
+</style>
+</head>
+<body>
+<div>
+  <h2>Title</h2>
+  <p>Some text</p>
+  <p>Some text</p>
+  <p>Some text</p>
+</div>
+<div>
+  <h2>Title</h2>
+  <p>Some text</p>
+  <p>Some text</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №5 из статьи «Свойство content»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: white;
+  font: 16px/1 Arial Narrow;
+  }
+A {
+  margin-bottom: 10px;
+  color: #333;
+  }
+  :hover {
+    text-decoration: none;
+    }
+  A:before {
+    display: inline-block;
+    margin-right: 7px;
+    vertical-align: -20%;
+    }
+
+  [href*="twitter.com"]:before {
+    content: url(http://img-fotki.yandex.ru/get/6730/5091629.99/0_7d7e1_e179f498_orig.png)
+  }
+
+  [href*="skype.com"]:before {
+    content: url(http://img-fotki.yandex.ru/get/9508/5091629.99/0_7d7df_d244a8e3_orig.png)
+  }
+
+  [href*="mailto"]:before {
+    content: url(http://img-fotki.yandex.ru/get/9118/5091629.99/0_7d7e3_8e722d08_S.png)
+  }
+
+  [href*="facebook"]:before {
+    content: url(http://img-fotki.yandex.ru/get/9510/5091629.99/0_7d7dd_8cfa9be1_orig.png)
+  }
+
+  [href*="instagram.co"]:before {
+    content: url(http://img-fotki.yandex.ru/get/9756/5091629.99/0_7d7e0_950e58a1_orig.png)
+  }
+
+  [href*="youtube.com"]:before {
+    content: url(http://img-fotki.yandex.ru/get/9752/5091629.99/0_7d7e2_70aece19_orig.png)
+  }
+</style>
+</head>
+<body>
+<a href="https://www.facebook.com/">Facebook</a>
+<a href="http://www.youtube.com/">Youtube</a>
+<a href="https://twitter.com/">Twitter</a>
+<a href="http://instagram.com/">Instagram</a>
+<a href="http://www.skype.com/ru/">Skype</a>
+<a href="mailto:#">Mail</a>
+</body>
+</html>

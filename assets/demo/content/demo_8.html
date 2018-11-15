@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №8 из статьи «Свойство content»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding-top: 20px;
+  background: white;
+  font: 25px/1 Georgia, serif;
+  text-align: center;
+  }
+blockquote { quotes: '"' '"' "'" "'"}
+  blockquote:before {
+    content: open-quote;
+    color: tomato;
+    }
+  blockquote:after  {
+    content: close-quote;
+    color: tomato;
+    }
+</style>
+</head>
+<body>
+<blockquote>I'm text.</blockquote>
+</body>
+</html>
