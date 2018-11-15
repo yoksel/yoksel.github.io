@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №2 из статьи «Css Animation»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  background: honeydew;
+  }
+DIV {
+  position: relative;
+  height: 2.4em;
+  margin: 1.5em 1em;
+  padding: .2em;
+  border: 1px solid mediumturquoise;
+  border-radius: 5px;
+  font-size: 1.2em;
+  }
+DIV:before {
+  content: attr(data-content);
+  display: inline-block;
+  position: absolute;
+  left: .2em;
+  width: 5em;
+  height: 2em;
+  padding: .2em;
+  background: mediumturquoise;
+  border-radius: 3px;
+  line-height: 2em;
+  text-shadow: .05em .05em teal;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFF;
+  }
+
+@keyframes timing-fromto {
+  from {
+    background: steelblue;
+    }
+  to {
+    left: 100%;
+    margin-left: -5.6em;
+    }
+}
+@keyframes timing-percents {
+  20% {
+    animation-timing-function: ease-in;
+    }
+  40% {
+    left: 40%;
+    background: yellowgreen;
+    animation-timing-function: ease-out;
+    }
+  60% {
+    left: 60%;
+    background: gold;
+    animation-timing-function: ease-in;
+    }
+  100% {
+    left: 100%;
+    margin-left: -5.6em;
+    background: crimson;
+    }
+}
+
+DIV:nth-child(1):before{
+  animation: timing-fromto 5s infinite alternate;
+  }
+DIV:nth-child(2):before{
+  animation: timing-percents 5s infinite alternate;
+  }
+</style>
+</head>
+<body>
+<div data-content="From to"></div>
+<div data-content="Percents"></div>
+</body>
+</html>

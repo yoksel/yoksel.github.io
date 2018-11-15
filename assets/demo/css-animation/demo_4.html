@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №4 из статьи «Css Animation»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  background: honeydew;
+  }
+DIV {
+  position: relative;
+  height: 2.4em;
+  margin: 1.5em 1em;
+  padding: .2em;
+  border: 1px solid mediumturquoise;
+  border-radius: 5px;
+  font-size: 1.2em;
+  }
+
+DIV:before {
+  content: attr(class);
+  display: inline-block;
+  position: absolute;
+  left: .2em;
+  height: 2em;
+  width: 5em;
+  padding: .2em;
+  background: mediumturquoise;
+  border-radius: 3px;
+  animation: timing 5s infinite;
+  line-height: 2em;
+  text-shadow: .05em .05em teal;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFF;
+  }
+
+@keyframes timing {
+  50%{
+    left: 100%;
+    margin-left: -5.6em;
+  }
+}
+
+.linear:before {
+  animation-timing-function: linear;
+  }
+
+.cubic:before {
+  animation-timing-function: cubic-bezier(.24,1.49,.29,-0.48);
+  }
+</style>
+</head>
+<body>
+<div class="linear"></div>
+<div class="cubic"></div>
+</body>
+</html>

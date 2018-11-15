@@ -50,8 +50,7 @@ post_nav:
 
 Пример Css-анимации:
 
-
-<iframe style="height: 400px;" class="jsbin" src="http://jsbin.com/eRiMeDE/2/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 400px" src="../assets/demo/css-animation/demo_1.html?output"></iframe>
 
 Пример кода анимации:
 <pre><code class="language-css">@keyframes move {
@@ -84,7 +83,7 @@ post_nav:
 Шаги можно задавать через проценты или с помощью ключевых слов <code>from</code> и <code>to</code>.
 При этом в шагах можно менять тип анимации (<code>animation-timing-function</code>):
 
-<iframe style="height: 240px;" class="jsbin" src="http://jsbin.com/owICoyi/22/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 240px" src="../assets/demo/css-animation/demo_2.html?output"></iframe>
 
 </section><section markdown="1" id="animation-name" data-name="animation-name"><h4>Animation-name</h4>
 Используется для задания имени анимации.
@@ -115,26 +114,26 @@ post_nav:
 <code>ease-in-out</code> — более плавное скольжение, чем <code>ease</code>
 
 
-<iframe style="height: 500px;" class="jsbin" src="http://jsbin.com/owICoyi/13/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 500px" src="../assets/demo/css-animation/demo_3.html?output"></iframe>
 
 <code>cubic-bezier(число,число,число,число)</code> позволяет задавать сложный тип анимации. Значения удобно подбирать на <a href="http://cubic-bezier.com/">cubic-bezier.com</a>.
 
 <code>cubic-bezier(.24,1.49,.29,-0.48);</code>
 
-<iframe style="height: 250px;" class="jsbin" src="http://jsbin.com/owICoyi/16/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 250px" src="../assets/demo/css-animation/demo_4.html?output"></iframe>
 
 <strong>Пошаговая анимация</strong>
 <code>step-start</code> и <code>step-end</code> — позволяют задать пошаговую анимацию, обязательно задавать конкретные шаги. При этом с <code>step-start</code> изменения происходят в начале шага, а с <code>step-end</code> — в конце.
 
 <code>step-end</code>. Если выставить <code>step-start</code>, счетчик будет начинаться с единиц.
 
-<iframe style="height: 300px;" class="jsbin" src="http://jsbin.com/owICoyi/11/embed?output,css"></iframe>
+<iframe class="live-snippet" style="height: 300px" src="../assets/demo/css-animation/demo_5.html?output"></iframe>
 
 <code>steps(число)</code> — позволяет задать количество шагов, за которые будет выполнена анимация, при этом можно задать только последний шаг без необходимости указывать промежуточные.
 
 <code>steps(60)</code>
 
-<iframe style="height: 300px;" class="jsbin" src="http://jsbin.com/owICoyi/46/embed?output,css"></iframe>
+<iframe class="live-snippet" style="height: 300px" src="../assets/demo/css-animation/demo_6.html?output"></iframe>
 
 </section><section markdown="1" id="animation-iteration-count" data-name="animation-iteration-count"><h4>Animation-iteration-count</h4>
 Управляет повторением анимации.
@@ -156,7 +155,7 @@ post_nav:
 <code>alternate-reverse</code> — анимация проигрывается с конца до начала, а затем в обратном направлении.
 
 
-<iframe style="height: 420px;" class="jsbin" src="http://jsbin.com/owICoyi/14/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 420px" src="../assets/demo/css-animation/demo_7.html?output"></iframe>
 
 </section><section markdown="1" id="animation-play-state" data-name="animation-play-state"><h4>Animation-play-state</h4>
 Управляет остановкой и проигрыванием анимации.
@@ -167,7 +166,7 @@ post_nav:
 
 Управлять шагом, где будет остановка, не получается, но можно останавливать анимацию по <code>:hover</code>:
 
-<iframe style="height: 150px;" class="jsbin" src="http://jsbin.com/owICoyi/19/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 150px" src="../assets/demo/css-animation/demo_8.html?output"></iframe>
 
 </section><section markdown="1" id="animation-delay" data-name="animation-delay"><h4>Animation-delay</h4>
 С помощью <code>animation-delay</code> можно задавать задержку анимации перед началом воспроизведения.
@@ -177,8 +176,7 @@ post_nav:
 В случае нескольких анимаций время для каждой из них можно задать через запятую.
 Исходное значение — 0s.
 
-
-<iframe style="height: 330px;" class="jsbin" src="http://jsbin.com/owICoyi/17/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 330px" src="../assets/demo/css-animation/demo_9.html?output"></iframe>
 
 </section>
 <section markdown="1" id="animation-fill-mode" data-name="animation-fill-mode"><h4>Animation-fill-mode</h4>
@@ -193,8 +191,7 @@ post_nav:
 
 Чтобы увидеть как <code>backwards</code> и <code>both</code> работают до начала воспроизведения анимации, задана задержка <code>animation-delay: 3s;</code>. Так же для этого имеет смысл открыть пример в новом окне.
 
-
-<iframe style="height: 420px;" class="jsbin" src="http://jsbin.com/owICoyi/18/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 420px" src="../assets/demo/css-animation/demo_10.html?output"></iframe>
 
 Все эти свойства можно записать с помощью короткой записи, например:
 

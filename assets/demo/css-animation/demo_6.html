@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №6 из статьи «Css Animation»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  background: honeydew;
+  font-size: 1.5em;
+}
+
+DIV {
+  position: relative;
+  width: 5em;
+  height: 5em;
+  margin: 1em auto;
+  border: .2em solid mediumturquoise;
+  border-radius: 50%;
+  font-size: 1.2em;
+  }
+DIV:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: .1em;
+  height: 2.1em;
+  left: 2.5em;
+  top: .4em;
+  background: mediumturquoise;
+  animation: timing 60s infinite steps(60);
+  transform-origin: 0 2.1em;
+  }
+
+@keyframes timing {
+  100%{
+   transform: rotate(360deg);
+  }
+}
+</style>
+</head>
+<body>
+<div class="steps"></div>
+</body>
+</html>
