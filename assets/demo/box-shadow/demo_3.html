@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №3 из статьи «Box-shadow»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+DIV {
+  width: 2em;
+  height: 2em;
+  margin-top: 3em;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow:
+    2em 0 0 crimson,
+    4em 0 0 red,
+    6em 0 0 orangered,
+    8em 0 0 orange,
+    10em 0 0 gold,
+    12em 0 0 yellow,
+    14em 0 0 greenyellow,
+    16em 0 0 skyblue,
+    18em 0 0 steelblue,
+    20em 0 0 darkmagenta;
+    animation: boxshadow 3s infinite;
+}
+
+@keyframes boxshadow {
+  50% {
+    box-shadow:
+      16em 0 0 skyblue,
+      12em 0 0 yellow,
+      2em 0 0 crimson,
+      18em 0 0 steelblue,
+      6em 0 0 orangered,
+      10em 0 0 gold,
+      4em 0 0 red,
+      20em 0 0 darkmagenta,
+      8em 0 0 orange,
+      14em 0 0 greenyellow;
+  }
+}
+</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

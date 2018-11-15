@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №8 из статьи «Box-shadow»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY{
+  padding: 50px 0;
+  background: #222D3A;
+}
+.shape {
+  margin: 0 auto;
+  box-shadow: rgb(31, 41, 52) 1px 1px,
+              rgb(31, 41, 52) 2px 2px,
+              rgb(31, 41, 52) 3px 3px,
+              rgb(31, 41, 52) 4px 4px,
+              rgb(31, 41, 52) 5px 5px,
+              rgb(31, 41, 52) 6px 6px,
+              rgb(31, 41, 52) 7px 7px,
+              rgb(31, 41, 52) 8px 8px,
+              rgb(31, 41, 52) 9px 9px,
+              rgb(31, 41, 52) 10px 10px,
+              rgb(31, 41, 52) 11px 11px,
+              rgb(31, 41, 52) 12px 12px,
+              rgb(31, 41, 52) 13px 13px,
+              rgb(31, 41, 52) 14px 14px,
+              rgb(31, 41, 52) 15px 15px,
+              rgb(31, 41, 52) 16px 16px,
+              rgb(31, 41, 52) 17px 17px,
+              rgb(31, 41, 53) 18px 18px,
+              rgb(31, 41, 53) 19px 19px,
+              rgb(31, 41, 53) 20px 20px,
+              rgb(31, 41, 53) 21px 21px,
+              rgb(31, 41, 53) 22px 22px,
+              rgb(31, 42, 53) 23px 23px,
+              rgb(31, 42, 53) 24px 24px,
+              rgb(31, 42, 53) 25px 25px,
+              rgb(31, 42, 53) 26px 26px,
+              rgb(32, 42, 54) 27px 27px,
+              rgb(32, 42, 54) 28px 28px,
+              rgb(32, 42, 54) 29px 29px,
+              rgb(32, 42, 54) 30px 30px,
+              rgb(32, 42, 54) 31px 31px,
+              rgb(32, 42, 54) 32px 32px,
+              rgb(32, 42, 54) 33px 33px,
+              rgb(32, 42, 54) 34px 34px,
+              rgb(32, 42, 54) 35px 35px,
+              rgb(32, 43, 55) 36px 36px,
+              rgb(32, 43, 55) 37px 37px,
+              rgb(32, 43, 55) 38px 38px,
+              rgb(32, 43, 55) 39px 39px,
+              rgb(32, 43, 55) 40px 40px,
+              rgb(32, 43, 55) 41px 41px,
+              rgb(32, 43, 55) 42px 42px,
+              rgb(32, 43, 55) 43px 43px,
+              rgb(32, 43, 55) 44px 44px,
+              rgb(33, 43, 56) 45px 45px,
+              rgb(33, 43, 56) 46px 46px,
+              rgb(33, 43, 56) 47px 47px,
+              rgb(33, 43, 56) 48px 48px,
+              rgb(33, 44, 56) 49px 49px,
+              rgb(33, 44, 56) 50px 50px,
+              rgb(33, 44, 56) 51px 51px,
+              rgb(33, 44, 56) 52px 52px,
+              rgb(33, 44, 56) 53px 53px,
+              rgb(33, 44, 57) 54px 54px,
+              rgb(33, 44, 57) 55px 55px,
+              rgb(33, 44, 57) 56px 56px,
+              rgb(33, 44, 57) 57px 57px,
+              rgb(33, 44, 57) 58px 58px,
+              rgb(33, 44, 57) 59px 59px,
+              rgb(33, 44, 57) 60px 60px,
+              rgb(33, 44, 57) 61px 61px,
+              rgb(34, 45, 58) 62px 62px;
+   background-color: rgb(22, 160, 133);
+   text-shadow: rgb(18, 131, 109) 1px 1px,
+                rgb(18, 131, 109) 2px 2px,
+                rgb(18, 131, 109) 3px 3px,
+                rgb(18, 131, 109) 4px 4px,
+                rgb(18, 131, 109) 5px 5px,
+                rgb(18, 131, 109) 6px 6px,
+                rgb(18, 131, 109) 7px 7px,
+                rgb(18, 131, 109) 8px 8px,
+                rgb(18, 131, 109) 9px 9px,
+                rgb(18, 131, 109) 10px 10px,
+                rgb(18, 131, 109) 11px 11px,
+                rgb(18, 131, 109) 12px 12px,
+                rgb(18, 132, 110) 13px 13px,
+                rgb(18, 134, 111) 14px 14px,
+                rgb(18, 135, 113) 15px 15px,
+                rgb(18, 137, 114) 16px 16px,
+                rgb(19, 139, 115) 17px 17px,
+                rgb(19, 140, 117) 18px 18px,
+                rgb(19, 142, 118) 19px 19px,
+                rgb(19, 143, 119) 20px 20px,
+                rgb(20, 145, 121) 21px 21px,
+                rgb(20, 147, 122) 22px 22px,
+                rgb(20, 148, 123) 23px 23px,
+                rgb(20, 150, 125) 24px 24px,
+                rgb(20, 151, 126) 25px 25px,
+                rgb(21, 153, 127) 26px 26px,
+                rgb(21, 155, 129) 27px 27px,
+                rgb(21, 156, 130) 28px 28px,
+                rgb(21, 158, 131) 29px 29px,
+                rgb(22, 160, 133) 30px 30px;
+  height: 150px;
+  width: 150px;
+  font-size: 75px;
+  line-height: 150px;
+  text-align: center;
+  color: #FFF;
+}
+</style>
+</head>
+<body>
+<div class="shape">&hearts;</div>
+</body>
+</html>

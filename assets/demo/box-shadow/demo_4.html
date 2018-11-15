@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №4 из статьи «Box-shadow»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  background: ivory;
+}
+
+DIV {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: .7em;
+  background: white;
+  border: 1px solid lightgray;
+  text-align: center;
+  line-height: 100px;
+  font-size: 30px;
+  color: #DDD;
+  }
+  DIV:before,
+  DIV:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    height: 20px;
+    }
+DIV:nth-child(1) {
+  box-shadow:  0 15px 5px -12px rgba(0,0,0,.2);
+  }
+DIV:nth-child(2) {
+  box-shadow:  0 0 5px rgba(0,0,0,.2);
+  }
+DIV:nth-child(3) {
+  box-shadow: none;
+  }
+  DIV:nth-child(3):after {
+    bottom: 0;
+    right: 20px;
+    left:  20px;
+    border-radius: 50%;
+    box-shadow:  0 0 5px 7px rgba(0,0,0,.2);
+    }
+DIV:nth-child(4) {
+  box-shadow:  10px 10px 0 rgba(0,0,0,.2);
+  }
+DIV:nth-child(5) {
+  box-shadow:  0 0 0 5px white inset,
+               0 0 10px 6px silver inset;
+  }
+DIV:nth-child(6) {
+  box-shadow:  0 5px 10px hsla(0,100%,50%,.5),
+    -5px 5px 10px hsla(60,100%,50%,.7),
+    5px -5px 10px hsla(120,100%,50%,.5),
+    5px 0 10px hsla(240,100%,50%,.5);
+  }
+DIV:nth-child(7) {
+  box-shadow:  0 -20px 0 -10px hsla(5,100%,60%,.6),
+               20px 0 0 -10px hsla(50,100%,50%,.6),
+               0 20px 0 -10px hsla(100,100%,50%,.6),
+               -20px 0 0 -10px hsla(210,100%,50%,.6);
+  }
+
+
+DIV:nth-child(8):after {
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 0;
+  box-shadow:  -15px -15px 0 -5px hsla(5,100%,60%,.6),
+               15px -15px 0 -5px hsla(50,100%,50%,.6),
+              15px 15px 0 -5px hsla(100,100%,50%,.6),
+              -15px 15px 0 -5px hsla(210,100%,50%,.6);
+  }
+DIV:nth-child(9):after {
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  right: 15px;
+  bottom:15px;
+  left: 15px;
+  margin: auto;
+  background: red;
+  border-radius: 50%;
+  box-shadow:  -50px -50px 0 hsla(5,100%,60%,.6),
+               50px -50px 0 hsla(50,100%,50%,.6),
+              50px 50px 0 hsla(100,100%,50%,.6),
+              -50px 50px 0 hsla(210,100%,50%,.6);
+  }
+DIV:nth-child(10) {
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  border: 0;
+  border-radius: 60% 40%;
+  box-shadow:  -5px -9px 0 9px crimson,
+               2px -10px 0 crimson inset;
+  animation: move-shadow 2s infinite;
+  }
+  @keyframes move-shadow {
+    25%{
+      border-radius: 50% 60%;
+      box-shadow:  3px 2px 0 5px crimson,
+                   3px -2px 0 5px crimson inset;
+      }
+    50%{
+      border-radius: 70% 60%;
+      box-shadow:  8px 3px 0 0px crimson,
+                   -2px 3px 0 10px crimson inset;
+      }
+    75%{
+      border-radius: 45% 60%;
+      box-shadow:  -1px -6px 0 0px crimson,
+                   -3px -5px 0 10px crimson inset;
+      }
+    }
+DIV:nth-child(11):before,
+DIV:nth-child(11):after {
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  background: tomato;
+  border-radius: 50%;
+  }
+  DIV:nth-child(11):before {
+    top: -10px;
+    left: -10px;
+    box-shadow: 22px 0 0 -2px tomato,
+                42px 0 0 -4px tomato,
+                58px 0 0 -6px tomato,
+                0 22px 0 -2px tomato,
+                0 42px 0 -4px tomato,
+                0 58px 0 -6px tomato;
+    }
+  DIV:nth-child(11):after {
+    bottom: -10px;
+    right: -10px;
+    box-shadow: -22px 0 0 -2px tomato,
+                -42px 0 0 -4px tomato,
+                -58px 0 0 -6px tomato,
+                0 -22px 0 -2px tomato,
+                0 -42px 0 -4px tomato,
+                0 -58px 0 -6px tomato;
+    }
+
+DIV:nth-child(12) {
+  box-shadow:  0 0 3px rgba(0,0,0,.1);
+  }
+
+DIV:nth-child(12):before,
+DIV:nth-child(12):after {
+  width: 10px;
+  height: 10px;
+  z-index: 1;
+  background: skyblue;
+  border-radius: 100%;
+  }
+  DIV:nth-child(12):before {
+    top: -5px;
+    left: -5px;
+    box-shadow: 0 1px 0 3px white,
+                3px 0 0 6px skyblue,
+                4px 1px 0 9px white,
+                5px -1px 0 13px skyblue,
+                5px -1px 5px 12px rgba(0,0,0,.3);
+    }
+  DIV:nth-child(12):after {
+    bottom: 0px;
+    right: 0;
+    transform: rotate(-120deg);
+    box-shadow: 0 1px 0 3px white,
+                3px 0 0 6px skyblue,
+                4px 1px 0 9px white,
+                5px -1px 0 13px skyblue,
+                5px -1px 5px 12px rgba(0,0,0,.3);
+    }
+DIV:nth-child(13) {
+  border: 0;
+  box-shadow: 5px -5px 0 0 hsla(0,100%,85%,1),
+              10px -10px 0 0 hsla(0,100%,90%,1),
+              5px -5px 0 0 hsla(0,100%,85%,1) inset,
+              10px -10px 0 0 hsla(0,100%,90%,1) inset;
+  }
+DIV:nth-child(14) {
+  box-shadow: 0 0 0 4px hsla(30,100%,70%,1),
+              0 0 0 8px hsla(60,100%,60%,1),
+              0 0 0 12px hsla(150,50%,75%,1);
+  }
+DIV:nth-child(15) {
+  box-shadow: 0 0 0 9px white inset,
+              0 1px 0 9px hsla(180,40%,70%,1) inset,
+              0 10px 0 9px white inset,
+              0 11px 0 9px hsla(180,40%,70%,1) inset,
+              0 20px 0 9px white inset,
+              0 21px 0 9px hsla(180,40%,70%,1) inset,
+              0 30px 0 9px white inset,
+              0 31px 0 9px hsla(180,40%,70%,1) inset,
+              0 40px 0 9px white inset,
+              0 41px 0 9px hsla(180,40%,70%,1) inset,
+              0 50px 0 9px white inset,
+              0 51px 0 9px hsla(180,40%,70%,1) inset,
+              0 60px 0 9px white inset,
+              0 61px 0 9px hsla(180,40%,70%,1) inset,
+              0 70px 0 9px white inset,
+              0 71px 0 9px hsla(180,40%,70%,1) inset,
+              0 80px 0 9px white inset,
+              0 81px 0 9px hsla(180,40%,70%,1) inset,
+              0 90px 0 9px white inset,
+              0 91px 0 9px hsla(180,40%,70%,1) inset;
+  }
+DIV:nth-child(16) {
+  border: 0;
+  }
+DIV:nth-child(16):before {
+  top: -5px;
+  left: -5px;
+  width: 0;
+  height: 0px;
+  box-shadow: 0 0 0 10px orangered,
+              10px 0 0 10px white,
+              20px 0 0 10px gold,
+              30px 0 0 10px white,
+              40px 0 0 10px yellowgreen,
+              50px 0 0 10px white,
+              60px 0 0 10px skyblue,
+              70px 0 0 10px white,
+              80px 0 0 10px orchid,
+              90px 0 0 10px white,
+              110px 0 0 10px orangered,
+
+              110px 10px 0 10px white,
+              110px 20px 0 10px gold,
+              110px 30px 0 10px white,
+              110px 40px 0 10px yellowgreen,
+              110px 50px 0 10px white,
+              110px 60px 0 10px skyblue,
+              110px 70px 0 10px white,
+              110px 80px 0 10px orchid,
+              110px 90px 0 10px white,
+              110px 110px 0 10px orangered,
+
+              100px 110px 0 10px white,
+              90px 110px 0 10px gold,
+              80px 110px 0 10px white,
+              70px 110px 0 10px yellowgreen,
+              60px 110px 0 10px white,
+              50px 110px 0 10px skyblue,
+              40px 110px 0 10px white,
+              30px 110px 0 10px orchid,
+              20px 110px 0 10px white,
+              0 110px 0 10px orangered,
+
+              0 100px 0 10px white,
+              0 90px 0 10px gold,
+              0 80px 0 10px white,
+              0 70px 0 10px yellowgreen,
+              0 60px 0 10px white,
+              0 50px 0 10px skyblue,
+              0 40px 0 10px white,
+              0 30px 0 10px orchid,
+              0 20px 0 10px white;
+  }
+DIV:nth-child(17) {
+  background: yellow;
+  box-shadow: -5px -5px 0 0 steelblue inset,
+              5px 5px 0 0  skyblue inset,
+              -10px -10px 0 0  darkviolet inset,
+              10px 10px 0 0  steelblue inset,
+              -15px -15px 0 0  darkmagenta inset,
+              15px 15px 0 0  darkviolet inset,
+              -20px -20px 0 0  mediumvioletred inset,
+              20px 20px 0 0  darkmagenta inset,
+              -25px -25px 0 0 crimson inset,
+              25px 25px 0 0 mediumvioletred inset,
+              -30px -30px 0 0 red inset,
+              30px 30px 0 0 crimson inset,
+              -35px -35px 0 0 orangered inset,
+              35px 35px 0 0 red inset,
+              -40px -40px 0 0 orange inset,
+              40px 40px 0 0 orangered inset,
+              -45px -45px 0 0 gold inset,
+              45px 45px 0 0 orange inset;
+  color: transparent;
+  }
+DIV:nth-child(18) {
+  background: transparent;
+  border: 5px solid white;
+  box-shadow:  0 0 5px rgba(0,0,0,.2);
+  text-shadow: 0 0 2px rgba(0,0,0,.4);
+  color: white;
+  }
+DIV:nth-child(18):before {
+    width: 20px;
+    height: 20px;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: hsla(0, 100%, 50%, .5);
+    opacity: .8;
+    box-shadow: 20px 0 0 hsla(20, 100%, 50%, .5),
+                40px 0 0 hsla(40, 100%, 50%, .5),
+                60px 0 0 hsla(60, 100%, 50%, .5),
+                80px 0 0 hsla(80, 100%, 50%, .5),
+
+                0 20px 0 hsla(120, 70%, 50%, .5),
+                20px 20px 0 hsla(160, 100%, 50%, .5),
+                40px 20px 0 hsla(200, 100%, 50%, .5),
+                60px 20px 0 hsla(240, 100%, 60%, .5),
+                80px 20px 0 hsla(280, 100%, 60%, .5),
+
+                0 40px 0 hsla(320, 100%, 50%, .5),
+                20px 40px 0 hsla(0, 100%, 50%, .5),
+                40px 40px 0 hsla(40, 100%, 50%, .5),
+                60px 40px 0 hsla(80, 100%, 50%, .5),
+                80px 40px 0 hsla(120, 100%, 50%, .5),
+
+                0 60px 0 hsla(160, 70%, 50%, .5),
+                20px 60px 0 hsla(200, 100%, 50%, .5),
+                40px 60px 0 hsla(240, 100%, 60%, .5),
+                60px 60px 0 hsla(280, 100%, 60%, .5),
+                80px 60px 0 hsla(320, 100%, 50%, .5),
+
+                0 80px 0 hsla(0, 100%, 50%, .5),
+                20px 80px 0 hsla(40, 100%, 50%, .5),
+                40px 80px 0 hsla(80, 100%, 50%, .5),
+                60px 80px 0 hsla(120, 100%, 50%, .5),
+                80px 80px 0 hsla(160, 100%, 50%, .5);
+    }
+</style>
+</head>
+<body>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div>
+<div>18</div>
+</body>
+</html>

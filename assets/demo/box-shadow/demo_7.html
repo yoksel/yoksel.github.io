@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №7 из статьи «Box-shadow»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  background: #efefef;
+  font-size: 1.7em;
+  text-align: center;
+  }
+DIV {
+  display: inline-block;
+  position: relative;
+  }
+DIV:before,
+DIV:after {
+  content: "";
+  display: block;
+  position: absolute;
+  }
+.bubble {
+  width: 10em;
+  height: 4em;
+  margin: 1em 1em 0;
+  padding: 1em;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 1em;
+  box-shadow: 0 0 .2em 0 rgba(0,0,0,.2);
+  line-height: 2em;
+  text-align: center;
+  }
+  .bubble:before,
+  .bubble:after {
+    width: 2.2em;
+    height: 2em;
+    right: 1em;
+    bottom: -.7em;
+    border-radius: 50%;
+    background: white;
+    }
+  .bubble:before {
+    box-shadow: -1.5em 1.7em 0 -.4em white,
+                -2.7em 3em 0 -.7em white;
+      }
+  .bubble:after {
+    z-index: -1;
+    box-shadow: 0 0 .2em 0 rgba(0,0,0,.2),
+                -1.5em 1.7em .2em -.4em rgba(0,0,0,.2),
+                -2.7em 3em .2em -.7em rgba(0,0,0,.2);
+      }
+</style>
+</head>
+<body>
+<div class="bubble">Hello, I'm text : )</div>
+</body>
+</html>

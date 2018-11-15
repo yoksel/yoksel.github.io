@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №2 из статьи «Box-shadow»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  text-align: center;
+}
+DIV {
+  position: relative;
+  display: inline-block;
+  width: 10em;
+  height: 10em;
+  margin: 1em 2em 0;
+  border: 1px solid #DDD;
+}
+DIV:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: attr(data-content);
+  font-size: 1.7em;
+  text-shadow: 1px 1px 2px hsla(20,100%,50%,.7),
+              -1px -1px 2px hsla(20,100%,50%,.7);
+  color: white;
+}
+.bg-gradient {
+  background: linear-gradient(orangered, gold);
+  animation: bgcolor 3s infinite;
+  border: 3px solid orangered;
+  }
+
+@keyframes bgcolor {
+  50% {
+    background: linear-gradient(purple, yellowgreen);
+    border: 3px solid purple;
+  }
+}
+
+.bg-shadow {
+  background: gold;
+  box-shadow: 0 10em 5em -5em orangered inset;
+  border: 3px solid orangered;
+  animation: shadow 3s infinite;
+}
+
+@keyframes shadow {
+  50% {
+    background: pink;
+    box-shadow: 0 10em 5em -5em purple inset;
+    border: 3px solid purple;
+  }
+}
+</style>
+</head>
+<body>
+<div class="bg-gradient" data-content="Gradient"></div>
+<div class="bg-shadow" data-content="Box-shadow"></div>
+</body>
+</html>

@@ -27,7 +27,7 @@ links:
 
 Этот код даст вот такую тень:
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/evaGaSE/1/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 300px" src="../assets/demo/box-shadow/demo_1.html?output"></iframe>
 
 Первое значение отвечает за отступ слева, второе — сверху. Значения могут быть отрицательными.
 Третье — радиус размытия. Если значение не задано или равно 0 — тень имеет четкие края.
@@ -45,36 +45,36 @@ links:
 
 В отличие от градиентов, тени анимируются, поэтому в некоторых случаях их можно использовать вместо градиентов.
 
-<iframe class="jsbin" style="height: 250px" src="http://jsbin.com/IlOWabA/1/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 250px" src="../assets/demo/box-shadow/demo_2.html?output"></iframe>
 
 При этом если теней несколько, изменение порядка заданных теней при анимации дает интересный эффект:
 
-<iframe class="jsbin" style="height: 150px" src="http://jsbin.com/IfAzAFO/2/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 150px" src="../assets/demo/box-shadow/demo_3.html?output"></iframe>
 
 С тенями можно сделать много интересного, от, собственно, теней, до разнообразных декоративных элементов.
 
 Каждый из примеров ниже сделан с помощью теней на основе одного дива, в некоторых используются псевдоэлементы:
 
-<iframe class="jsbin" style="height: 650px" src="http://jsbin.com/evaGaSE/6/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 650px" src="../assets/demo/box-shadow/demo_4.html?output"></iframe>
 
 Ещё можно сделать радугу:
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/eCahIfa/20/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 300px" src="../assets/demo/box-shadow/demo_5.html?output"></iframe>
 
 
 Или вот, например, пуговицы:
 
-<iframe class="jsbin" style="height: 270px" src="http://jsbin.com/iJUyIXu/1/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 270px" src="../assets/demo/box-shadow/demo_6.html?output"></iframe>
 
 Или пузырь с текстом:
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/OTiNOGO/3/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 300px" src="../assets/demo/box-shadow/demo_7.html?output"></iframe>
 
 Просто удивительное количество возможностей предоставляет такое простое свойство.
 
 Также в последнее время становятся популярными длинные тени (в данном случае это <code>box-shadow</code> + <code>text-shadow</code>):
 
-<iframe class="jsbin" style="height: 400px" src="http://jsbin.com/IGiXESO/1/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 350px" src="../assets/demo/box-shadow/demo_8.html?output"></iframe>
 
 Суть способа состоит в использовании множества теней, при этом ближайшие к фигуре имеют цвет, собственно, тени, а дальние от неё плавно переходят к цвету фона.
 Использовать <code>rgba</code> с прозрачностью здесь не получится, потому что тогда тени будут просвечивать друг под другом.
