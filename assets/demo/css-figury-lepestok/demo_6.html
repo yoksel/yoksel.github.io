@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №6 из статьи «Css-фигуры: лепесток»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+.petals {
+  position: relative;
+  margin-left: 5em;
+  }
+
+.petals:before,
+.petals:after {
+  position: absolute;
+  content: "";
+  display: block;
+  }
+.petals,
+.petals:before,
+.petals:after{
+  width: 3em;
+  height: 7em;
+  background: crimson;
+  border-radius: 50%;
+  }
+.petals:before {
+  transform: rotate(-120deg);
+  transform-origin: 1.5em 7.5em;
+  }
+.petals:after {
+  transform: rotate(120deg);
+  transform-origin: 1.5em 7.5em;
+  }
+.petals:nth-child(2) {
+  position: absolute;
+  top: 0;
+  transform: rotate(180deg);
+  transform-origin: 1.5em 7.5em;
+  }
+.wrapper {
+  margin: 3em 2em;
+  position: relative;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="petals"></div>
+  <div class="petals"></div>
+</div>
+</body>
+</html>
