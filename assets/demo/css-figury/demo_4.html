@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №4 из статьи «Css-фигуры»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+DIV {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 2em auto 0;
+  background: white;
+  border: 5px solid black;
+  border-radius: 50%;
+  box-shadow: 0 295px 0 -200px black inset;
+  }
+DIV:before,
+DIV:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  top: 50px;
+  bottom: 50px;
+  border-radius: 50%;
+  }
+DIV:before {
+  left: 0;
+  background: white;
+  border: 40px solid black;
+}
+DIV:after {
+  right: 0;
+  background: black;
+  border: 40px solid white;
+}
+</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

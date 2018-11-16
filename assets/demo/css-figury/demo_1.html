@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №1 из статьи «Css-фигуры»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+DIV {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: .7em;
+  }
+DIV:before,
+DIV:after {
+  content: "";
+  display: block;
+}
+.square {
+  width: 5em;
+  height: 5em;
+  background: crimson;
+  }
+.round {
+  width: 6em;
+  height: 6em;
+  background: orangered;
+  border-radius: 50%;
+  }
+.oval {
+  width: 7em;
+  height: 4em;
+  background: orange;
+  border-radius: 50%;
+}
+.moon {
+  width: 6em;
+  height: 6em;
+  margin: -2em 1em 1em 0;
+  border-radius: 50%;
+  box-shadow: 1em 1em 0 0 gold;
+}
+.semicircle {
+  width: 8em;
+  height: 4em;
+  background: yellowgreen;
+  border-radius: 16em 16em 0 0;
+}
+.drop {
+  width: 5em;
+  height: 5em;
+  background: skyblue;
+  border-radius: 50% 0 50% 50%;
+  transform: rotate(-45deg);
+}
+.triangle {
+  border: 5em solid transparent;
+  border-width: 0 3em 5em;
+  border-color: steelblue transparent;
+}
+.trapeze {
+  width: 3em;
+  border-style: solid;
+  border-color: darkviolet transparent;
+  border-width: 0 3em 6em;
+  }
+.rhombus {
+   }
+  .rhombus:before,
+  .rhombus:after {
+    border: 0 solid transparent;
+    border-color: crimson transparent;
+    border-width: 4em 2.7em;
+    }
+  .rhombus:before {
+    border-top: 0;
+    }
+  .rhombus:after {
+    border-bottom: 0;
+    }
+.pentahedron {
+    width: 7em;
+    height: 7em;
+    overflow: hidden;
+    }
+.pentahedron:before,
+.pentahedron:after {
+    position: absolute;
+    border-style: solid;
+    border-color: orangered transparent;
+    }
+  .pentahedron:before {
+      border-width: 0 3.5em 3.5em;
+      }
+  .pentahedron:after {
+      top: 3.5em;
+      border-width: 9em 3.5em 0 ;
+      }
+.star,
+.star:before,
+.star:after {
+    border-style: solid;
+    }
+.star {
+    margin-top: 2em;
+    width: 0;
+    border-color: orange transparent;
+    border-width: 3em 3.5em 0;
+    }
+.star:before,
+.star:after {
+    position: absolute;
+    top: -5.4em;
+    border-color: transparent orange;
+    border-width: 5em 2em 3em;
+    }
+  .star:before {
+      left: -1.5em;
+      border-right: 0;
+      transform: rotate(21deg);
+      }
+  .star:after {
+      left: -.5em;
+      border-left: 0;
+      transform: rotate(-21deg);
+      }
+.six-pointed-star,
+.six-pointed-star:before {
+  border-style: solid;
+  border-color: gold transparent;
+  }
+  .six-pointed-star {
+    border-width: 0 3.5em 6em;
+    }
+  .six-pointed-star:before {
+    position: absolute;
+    top: 2em;
+    left: -3.5em;
+    border-width: 6em 3.5em 0;
+    }
+.hexahedron {
+  width: 6em;
+  height: 3em;
+  margin: 3em 1em;
+  background: yellowgreen;
+  }
+  .hexahedron:before,
+  .hexahedron:after {
+      position: absolute;
+      border-style: solid;
+      border-color: yellowgreen transparent;
+      }
+    .hexahedron:before {
+        top: -2em;
+        border-width: 0 3em 2em;
+        }
+    .hexahedron:after {
+        bottom: -2em;
+        border-width: 2em 3em 0 ;
+        }
+.octahedron {
+  width: 6em;
+  height: 2.5em;
+  margin: 3em 1em;
+  background: skyblue;
+  }
+.octahedron:before,
+.octahedron:after {
+  position: absolute;
+  width: 2em;
+  border-style: solid;
+  border-color: skyblue transparent;
+  }
+  .octahedron:before {
+    top: -2em;
+    border-width: 0 2em 2em;
+    }
+  .octahedron:after {
+    bottom: -2em;
+    border-width: 2em 2em 0;
+    }
+.petal {
+  width: 6em;
+  height: 6em;
+  background: steelblue;
+  border-radius: 90% 0;
+  }
+.egg {
+  width: 5em;
+  height: 7em;
+  background: darkviolet;
+  border-radius: 100%/ 150% 150% 65% 65%;
+  }
+.infini,
+.infini:after {
+  width: 2em;
+  height: 2em;
+  border: 1em solid crimson;
+  border-radius: 100% 0 100% 100%;
+  }
+  .infini {
+    margin-right: 4em;
+    transform: rotate(45deg);
+    }
+  .infini:after {
+    position: absolute;
+    top: -4em;
+    left: 2em;
+    border-radius: 100% 100% 100% 0;
+    }
+.flag {
+  margin: 2em;
+  border: 2em solid orangered;
+  border-right-color: transparent;
+  border-left-width: 3em;
+  }
+  .flag:after {
+    position: absolute;
+    left: -4em;
+    top: -2em;
+    height: 6em;
+    border-left: 1em solid orange;
+  }
+.smile {
+  width: 4em;
+  height: 4em;
+  border: .8em solid orange;
+  border-color: transparent transparent orange orange;
+  border-radius: 50%;
+  transform: rotate(-45deg);
+  }
+  .smile:before {
+    position: absolute;
+    left: 1.7em;
+    top: 0em;
+    width: 1em;
+    height: 1em;
+    background: orange;
+    border-radius: 50%;
+    box-shadow: 1.5em 1.5em 0 orange;
+    }
+.crown {
+  width: 3em;
+  margin-top: 1em;
+  border-style: solid;
+  border-color: transparent gold gold;
+  border-width: 1.5em 1.3em 2.5em;
+  }
+  .crown:before,
+  .crown:after {
+    position: absolute;
+    width: 0;
+    margin-top: -1.5em;
+    border-style: solid;
+    border-color: gold transparent;
+    border-width: 0 .8em 1.5em;
+    }
+  .crown:after {
+    right: 0;
+  }
+</style>
+</head>
+<body>
+<div class="square"></div>
+<div class="round"></div>
+<div class="oval"></div>
+<div class="moon"></div>
+<div class="semicircle"></div>
+<div class="drop"></div>
+<div class="triangle"></div>
+<div class="trapeze"></div>
+<div class="rhombus"></div>
+<div class="pentahedron"></div>
+<div class="star"></div>
+<div class="six-pointed-star"></div>
+<div class="hexahedron"></div>
+<div class="octahedron"></div>
+<div class="petal"></div>
+<div class="egg"></div>
+<div class="infini"></div>
+<div class="flag"></div>
+<div class="smile"></div>
+<div class="crown"></div>
+</body>
+</html>

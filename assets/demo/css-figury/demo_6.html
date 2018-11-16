@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №6 из статьи «Css-фигуры»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  background: white;
+  font-size: 14px;
+}
+.petals:before,
+.petals:after,
+.petals-wrapper:after {
+  position: absolute;
+  content: "";
+  display: block;
+  }
+.petals {
+  position: relative;
+  margin: 1.5em 0 0 1.4em
+  }
+.petals,
+.petals:before,
+.petals:after{
+  width: 5em;
+  height: 5em;
+  background:  yellowgreen;
+  box-shadow: .2em .2em  0 .3em firebrick inset,
+              .2em .2em  0 .6em crimson inset,
+              .2em .2em  0 .9em red inset,
+              .3em .3em  0 1.2em orangered inset,
+              .3em .3em  0 1.5em orange inset,
+              .3em .3em  0 1.8em gold inset,
+              .4em .4em  0 2.1em yellowgreen inset,
+              .4em .4em  0 2.4em skyblue inset,
+              .4em .4em  0 2.7em white inset,
+              0 0 .2em rgba(0,0,0,.4);
+  border-radius: 50% 50% 0 50%;
+  }
+.petals:before {
+  transform: rotate(-120deg);
+  transform-origin: 6em 6em;
+  }
+.petals:after {
+  transform: rotate(120deg);
+  transform-origin: 6em 6em;
+  }
+.petals:nth-child(2) {
+  position: absolute;
+  top: 0;
+  transform: rotate(180deg);
+  transform-origin: 6em 6em;
+  }
+.petals-wrapper {
+  position: relative;
+  width: 15em;
+  height: 15em;
+  overflow: hidden;
+  }
+.petals-wrapper:nth-child(1):after {
+  top: 6em;
+  left: 6em;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background: yellow;
+  box-shadow: 0 0 .5em 1em gold inset;
+  }
+.petals-wrapper:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(30deg);
+  transform-origin: 7.5em 7.5em;
+  }
+.petals-wrapper:nth-child(2) .petals {
+  margin: 3.3em 0 0 3.3em;
+  font-size: .8em;
+  }
+.petals-wrapper:nth-child(3) {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  }
+.petals-wrapper:nth-child(3) .petals {
+  margin: 3.3em 0 0 3.3em;
+  font-size: .6em;
+  }
+.flower {
+  position: relative;
+    width: 15em;
+  height: 15em;
+  margin: 2em auto;
+  }
+</style>
+</head>
+<body>
+<div class="flower">
+  <div class="petals-wrapper">
+    <div class="petals"></div>
+    <div class="petals"></div>
+  </div>
+  <div class="petals-wrapper">
+    <div class="petals"></div>
+    <div class="petals"></div>
+  </div>
+  <div class="petals-wrapper">
+    <div class="petals"></div>
+    <div class="petals"></div>
+  </div>
+</div>
+</body>
+</html>

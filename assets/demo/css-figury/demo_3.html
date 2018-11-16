@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №3 из статьи «Css-фигуры»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+.heart {
+  margin: 3em;
+  margin-top: 5em;
+  transform: rotate(25deg);
+  transform-origin: 5em 5em;
+  }
+.heart,
+.heart:before {
+  width: 5em;
+  height: 5em;
+  background: crimson;
+  border-radius: 50% 50% 0 50%;
+  }
+.heart:before {
+  content: "";
+  display: block;
+  transform: rotate(40deg);
+  transform-origin: 5em 5em;
+  }
+
+.heart-2 {
+  position: relative;
+  width: 5em;
+  height: 5em;
+  margin: 3em;
+  background: crimson;
+  border-radius: 50%;
+  box-shadow: 4em 0 0 0 crimson
+  }
+.heart-2:before {
+  position: absolute;
+  content: "";
+  display: block;
+  left: .5em;
+  top: 4em;
+  border: 4em solid crimson;
+  border-bottom: 0;
+  border-color: crimson transparent;
+  }
+
+.wrapper {
+  display: flex;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="heart"></div>
+  <div class="heart-2"></div>
+</div>
+</body>
+</html>
