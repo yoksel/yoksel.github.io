@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №2 из статьи «Контекст наложения»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding: 30px 0 0 0;
+  text-align: center;
+  }
+DIV {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  }
+  .item1 {
+    opacity: .99;
+    background: gold;
+    }
+  .item2 {
+    background: mediumpurple;
+    }
+.inner {
+  position: relative;
+  width: 180px;
+  height: 100px;
+  margin: 20px 0;
+  line-height: 100px;
+  font-size: 5em;
+  color: rgba(255,255,255,.7);
+  }
+  .item1 .inner {
+    z-index: 10;
+    background: hsla(10,100%,50%, .8);
+    }
+  .item2 .inner {
+    left: -100px;
+    background: hsla(200,100%,50%, .8);
+    }
+</style>
+</head>
+<body>
+<div class="item1">
+  <div class="inner">1</div>
+</div>
+
+<div class="item2">
+  <div class="inner">2</div>
+</div>
+</body>
+</html>
