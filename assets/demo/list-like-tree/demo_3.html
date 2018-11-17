@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №3 из статьи «Древовидный список на CSS»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+/* Base
+--------------------------- */
+BODY {
+  background: #FFF;
+  font: 17px/1.2 Gerogia, serif;
+  color: #222;
+  }
+
+H1, H2, H3, H4, H5, H6 {
+  margin: 0;
+  font-weight: normal;
+  }
+
+UL {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Base for lists & headers
+--------------------------- */
+UL {
+  border: 1px solid skyblue;
+  }
+LI {
+  border: 1px solid orange;
+  }
+
+.header + Ul {
+  margin-left: 30px;
+  padding-top: 10px;
+  }
+LI {
+  margin-bottom: .8em;
+  }
+</style>
+</head>
+<body>
+<h1>Project Name</h1>
+<ul>
+  <li>
+    <h2 class="header">Main page</h2>
+    <ul>
+      <li><h3 class="header">About Us</h3></li>
+      <li>
+        <h3 class="header">Portfolio</h3>
+        <ul>
+          <li>Web</li>
+          <li>Illustrations</li>
+        </ul>
+      </li>
+      <li><h3 class="header">Vacancies</h3></li>
+      <li><h3 class="header">Contact us</h3></li>
+    </ul>
+  </li>
+  <li>
+    <h2 class="header">Categories</h2>
+    <ul>
+      <li><h3 class="header">Articles</h3>
+        <ul>
+          <li>Forest</li>
+          <li>River</li>
+        </ul>
+      </li>
+      <li>
+        <h3 class="header">Video</h3>
+        <ul>
+          <li>Cats</li>
+          <li>Dogs</li>
+          <li>Music</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+</body>
+</html>
