@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №9 из статьи «Текстовые эффекты»</title>
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: mediumturquoise;
+  font-family: Georgia;
+  }
+H1 {
+  display: inline-block;
+  position: relative;
+  letter-spacing: .05em;
+  font-size: 50px;
+  cursor: pointer;
+  text-shadow: 1px 1px mediumturquoise,
+               -1px 1px mediumturquoise,
+               -1px -1px mediumturquoise,
+               1px -1px mediumturquoise;
+  color: white;
+  transition: all 1s;
+  }
+  H1:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -15px;
+    bottom: -15px;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(-45deg,
+      rgba(72, 209, 204, 0) 2px,
+      mediumturquoise 3px,
+      rgba(72, 209, 204, 0) 3px ) repeat;
+    background-size: 4px 4px;
+    }
+  H1:after {
+    content: attr(data-name);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: -2;
+    text-shadow: 1px 1px white,
+                 2px 2px white,
+                 3px 3px white,
+                 4px 4px white;
+    color: white;
+    transition: all 1s;
+    }
+  H1:hover {
+    color: lemonchiffon;
+    }
+    H1:hover:before {
+      animation: 5s move_lines infinite linear;
+      }
+    H1:hover:after {
+      color: lemonchiffon;
+      text-shadow: 1px 1px lemonchiffon,
+        2px 2px lemonchiffon,
+        3px 3px lemonchiffon,
+        4px 4px lemonchiffon;
+      }
+
+@keyframes move_lines {
+  100% {
+    background-position: 40px 40px;
+  }
+}
+</style>
+</head>
+<body>
+<h1 data-name="Abcfghijklmnopq">Abcfghijklmnopq</h1>
+</body>
+</html>

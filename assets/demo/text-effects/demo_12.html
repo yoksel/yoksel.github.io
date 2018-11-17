@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №12 из статьи «Текстовые эффекты»</title>
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  font-family: Georgia;
+}
+H1 {
+  font-size: 50px;
+  font-weight: normal;
+  cursor: pointer;
+  overflow: hidden;
+  text-shadow: 0 0 tomato,
+               0 0 yellowgreen,
+               0 0 skyblue;
+  color: transparent;
+  transition: all 1s;
+  }
+  H1:hover {
+    text-shadow: -400px 0 tomato,
+                 400px 0 yellowgreen,
+                 0 0 skyblue;
+    }
+</style>
+</head>
+<body>
+<h1>Abcfghijklmnopq</h1>
+</body>
+</html>
