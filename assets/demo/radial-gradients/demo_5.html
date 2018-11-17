@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №5 из статьи «Радиальные градиенты»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+HTML {
+  height: 100%;
+  }
+BODY {
+  background: white;
+  text-align: center;
+  font: 16px/1.4 'Trebuchet MS', Verdana, sans-serif;
+  }
+H2 {
+  margin-bottom: .5em;
+}
+
+UL {
+  display: inline-block;
+  width: 30em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+LI {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  height: 8em;
+  margin: 2px 0;
+  border-radius: 5px;
+  vertical-align: middle;
+  text-align: center;
+  text-shadow: 0 -1px 3px rgba(0,0,0,.7),
+               0 1px 3px rgba(0,0,0,.7);
+  color: #FFF;
+  }
+LI:before {
+  content: "";
+  display: inline-block;
+  height: 8em;
+  vertical-align: middle;
+}
+
+.closest-side {
+   background: radial-gradient(closest-side,
+    #1BF2DD 20%,
+    #F2EA7E 20%, #F2EA7E 40%,
+    #F2BA52 40%, #F2BA52 60%,
+    #F2994B 60%,  #F2994B 80%,
+    #F23E2E 80%, #F23E2E 100%
+    );
+  }
+.farthest-side {
+   background: radial-gradient(farthest-side at bottom,
+    #1BF2DD 20%,
+    #F2EA7E 20%, #F2EA7E 40%,
+    #F2BA52 40%, #F2BA52 60%,
+    #F2994B 60%,  #F2994B 80%,
+    #F23E2E 80%, #F23E2E 99%,
+    #F2EA7E 100%
+    );
+  }
+.closest-corner {
+   background: radial-gradient(closest-corner,
+    #1BF2DD 20%,
+    #F2EA7E 20%, #F2EA7E 40%,
+    #F2BA52 40%, #F2BA52 60%,
+    #F2994B 60%,  #F2994B 80%,
+    #F23E2E 80%, #F23E2E 99%,
+    #F2EA7E 100%
+    );
+  }
+.farthest-corner {
+   background: radial-gradient(farthest-corner at bottom,
+    #1BF2DD 20%,
+    #F2EA7E 20%, #F2EA7E 40%,
+    #F2BA52 40%, #F2BA52 60%,
+    #F2994B 60%,  #F2994B 80%,
+    #F23E2E 80%, #F23E2E 99%,
+    #F2EA7E 100%
+    );
+  }
+.circle .closest-side {
+   background: radial-gradient(circle closest-side,
+    #1BF2DD 20%,
+    #F2EA7E 20%, #F2EA7E 40%,
+    #F2BA52 40%, #F2BA52 60%,
+    #F2994B 60%,  #F2994B 80%,
+    #F23E2E 80%, #F23E2E 99%,
+    #F2EA7E 100%
+    );
+  }
+.circle .farthest-side {
+   background: radial-gradient(circle farthest-side at bottom,
+    #1BF2DD 20%,
+    #F2EA7E 20%, #F2EA7E 40%,
+    #F2BA52 40%, #F2BA52 60%,
+    #F2994B 60%,  #F2994B 80%,
+    #F23E2E 80%, #F23E2E 99%,
+    #F2EA7E 100%
+    );
+  }
+.circle .closest-corner {
+   background: radial-gradient(circle closest-corner at bottom,
+    #1BF2DD 20%,
+    #F2EA7E 20%, #F2EA7E 40%,
+    #F2BA52 40%, #F2BA52 60%,
+    #F2994B 60%,  #F2994B 80%,
+    #F23E2E 80%, #F23E2E 99%,
+    #F2EA7E 100%
+    );
+  }
+.circle .farthest-corner {
+   background: radial-gradient(circle farthest-corner at bottom,
+    #1BF2DD 20%,
+    #F2EA7E 20%, #F2EA7E 40%,
+    #F2BA52 40%, #F2BA52 60%,
+    #F2994B 60%,  #F2994B 80%,
+    #F23E2E 80%, #F23E2E 99%,
+    #F2EA7E 100%
+    );
+  }
+</style>
+</head>
+<body>
+<h2>Ellipse</h2>
+<ul class="ellipse">
+  <li class="closest-side">closest-side</li>
+  <li class="farthest-side">farthest-side</li>
+  <li class="closest-corner">closest-corner</li>
+  <li class="farthest-corner">farthest-corner</li>
+</ul>
+
+<h2>Circle</h2>
+<ul class="circle">
+  <li class="closest-side">closest-side</li>
+  <li class="farthest-side">farthest-side</li>
+  <li class="closest-corner">closest-corner</li>
+  <li class="farthest-corner">farthest-corner</li>
+</ul>
+</body>
+</html>

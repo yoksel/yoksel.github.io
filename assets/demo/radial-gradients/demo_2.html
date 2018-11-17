@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №2 из статьи «Радиальные градиенты»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+HTML {
+  height: 100%;
+  }
+BODY {
+  background: white;
+  text-align: center;
+  font: 16px/1.4 'Trebuchet MS', Verdana, sans-serif;
+  }
+
+UL {
+  padding: 0;
+  list-style: none;
+  }
+LI {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 8em;
+  margin: 2px 0;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  vertical-align: middle;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0,0,0,.9);
+  color: #FFF;
+  }
+LI:before {
+  content: "";
+  display: inline-block;
+  height: 8em;
+  vertical-align: middle;
+  }
+
+.ellipse {
+   background: radial-gradient(skyblue 50%, steelblue 70%);
+  }
+.circle {
+   background: radial-gradient(circle, skyblue 50%, steelblue 70%);
+  }
+</style>
+</head>
+<body>
+<ul>
+  <li class="ellipse">radial-gradient(skyblue 50%, steelblue 70%)</li>
+  <li class="circle">radial-gradient(circle, skyblue 50%, steelblue 70%)</li>
+</ul>
+</body>
+</html>

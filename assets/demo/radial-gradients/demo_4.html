@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №4 из статьи «Радиальные градиенты»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+HTML {
+  height: 100%;
+  }
+BODY {
+  background: white;
+  text-align: center;
+  font: 16px/1.4 'Trebuchet MS', Verdana, sans-serif;
+  }
+H2 {
+  margin-bottom: .5em;
+}
+
+UL {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+LI {
+  width: 47%;
+  height: 8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3px;
+  padding: .5em;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-shadow: 0 0 5px rgba(0,0,0,.9);
+  color: #FFF;
+  }
+
+.ellipse {
+   background: radial-gradient(7em 1.2em, turquoise 93%, lightseagreen 100%);
+  }
+.ellipse2 {
+   background: radial-gradient(1em 6em at bottom, turquoise 93%, lightseagreen 100%);
+  }
+.circle {
+   background: radial-gradient(3em, lightseagreen 93%, turquoise 100%);
+  }
+.circle2 {
+   background: radial-gradient(7em at right, lightseagreen 97%, turquoise 100%);
+  }
+</style>
+</head>
+<body>
+<ul>
+  <li class="ellipse">radial-gradient(7em 1.2em, ...);</li>
+  <li class="ellipse2">radial-gradient(1em 6em at bottom, ...);</li>
+  <li class="circle">radial-gradient(3em, ...);</li>
+  <li class="circle2">background: radial-gradient(7em at right, ...);</li>
+</ul>
+</body>
+</html>

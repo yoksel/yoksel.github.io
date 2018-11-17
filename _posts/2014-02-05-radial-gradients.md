@@ -31,8 +31,7 @@ links:
 
 По умолчанию центр градиента находится по центру, градиент имеет форму эллипса:
 
-
-<iframe class="jsbin" style="height: 250px" src="http://jsbin.com/OvOwEma/3/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 250px" src="../assets/demo/radial-gradients/demo_1.html?output"></iframe>
 
 Помимо цветов градиенту можно задавать форму, положение и размер. Параметры сочетаются и ведут себя сложнее, чем в линейных градиентах.
 
@@ -40,8 +39,7 @@ links:
 
 Чтобы градиент имел форму круга — это нужно задать явно с помощью ключевого слова <code>circle</code>.
 
-
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/EHuREfA/13/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 350px" src="../assets/demo/radial-gradients/demo_2.html?output"></iframe>
 
 Если форма не задана, но задан размер — одно значение задает радиус круга, если значений два — градиент получает форму эллипса.
 При наличии размеров явное задание формы градиента игнорируется.
@@ -52,8 +50,7 @@ links:
 
 Ниже можно увидеть как работают разные положения:
 
-
-<iframe class="jsbin" style="height: 500px" src="http://jsbin.com/EHuREfA/18/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 500px" src="../assets/demo/radial-gradients/demo_3.html?output"></iframe>
 
 Код первого квадрата:
 
@@ -68,8 +65,7 @@ links:
 
 Ниже примеры круглых и эллиптических градиентов. Форма фигуры определяется заданными размерами:
 
-
-<iframe class="jsbin" style="height: 400px" src="http://jsbin.com/EHuREfA/23/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 350px" src="../assets/demo/radial-gradients/demo_4.html?output"></iframe>
 
 Также можно использовать ключевые слова:
 
@@ -81,9 +77,9 @@ links:
 
 Некоторым градиентам добавлено положение <code>at bottom</code>, чтобы было лучше видно действие кода:
 
-<iframe class="jsbin" style="height: 700px" src="http://jsbin.com/EHuREfA/22/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 700px" src="../assets/demo/radial-gradients/demo_5.html?output"></iframe>
 
-<code>radial-gradient</code> также можно сделать повторяющимся: <code>repeating-radial-gradient</code>.
+Радиальный градиент также может быть повторяющимся — это <code>repeating-radial-gradient</code>.
 
 Примерный код:
 
@@ -91,8 +87,7 @@ links:
     darkkhaki, darkkhaki .5em,
     transparent .5em, transparent 1.5em);</code></pre>
 
-
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/OvOwEma/10/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 320px" src="../assets/demo/radial-gradients/demo_6.html?output"></iframe>
 
 Как и в случае с линейным градиентом, повторяющийся градиент не очень аккуратно отрисовывается.
 

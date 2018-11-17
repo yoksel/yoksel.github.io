@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №3 из статьи «Радиальные градиенты»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+HTML {
+  height: 100%;
+  }
+BODY {
+  background: white;
+  text-align: center;
+  font: 16px/1 'Trebuchet MS', Verdana, sans-serif;
+  }
+
+UL {
+  width: 24.8em;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  }
+LI {
+  width: 8em;
+  height: 8em;
+  display: flex;
+  margin: 1px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  text-shadow: 0 0 5px rgba(0,0,0,.9);
+  color: #FFF;
+  }
+.top {
+  background: radial-gradient(at top, purple, crimson, orangered, gold);
+  }
+.right {
+  background: radial-gradient(at right, purple, crimson, orangered, gold);
+  }
+.bottom {
+  background: radial-gradient(at bottom, purple, crimson, orangered, gold);
+  }
+.left {
+  background: radial-gradient(at left, purple, crimson, orangered, gold);
+  }
+.center {
+  background: radial-gradient(at center, purple, crimson, orangered, gold);
+  }
+.top-left {
+  background: radial-gradient(at top left, purple, crimson, orangered, gold);
+  }
+.top-right {
+  background: radial-gradient(at top right, purple, crimson, orangered, gold);
+  }
+.bottom-left {
+  background: radial-gradient(at bottom left, purple, crimson, orangered, gold);
+  }
+.bottom-right {
+  background: radial-gradient(at bottom right, purple, crimson, orangered, gold);
+  }
+</style>
+</head>
+<body>
+<ul>
+  <li class="top-left">at top left</li>
+  <li class="top">at top</li>
+  <li class="top-right">at top right</li>
+  <li class="left">at left</li>
+  <li class="center">at center</li>
+  <li class="right">at right</li>
+  <li class="bottom-left">at bottom left</li>
+  <li class="bottom">at bottom</li>
+  <li class="bottom-right">at bottom right</li>
+</ul>
+</body>
+</html>
