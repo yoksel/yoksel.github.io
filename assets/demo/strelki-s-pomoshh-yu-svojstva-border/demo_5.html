@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №5 из статьи «Стрелки с помощью свойства border»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+SPAN {
+  display: inline-block;
+  width: 160px;
+  margin: 20px 0;
+  border-top: 1px solid silver;
+  }
+SPAN {
+  position: relative;
+  }
+  SPAN:before,
+  SPAN:after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    border: 25px solid transparent;
+    border-color: orangered;
+    }
+    SPAN:after {
+    margin-left: 30px;
+    border-color: gold;
+    }
+  SPAN:nth-child(4n+2):before {
+    border-color: yellowgreen;
+    }
+  SPAN:nth-child(4n+2):after {
+    border-color: orange;
+    }
+SPAN:nth-child(4n+3):before {
+  border-color: mediumturquoise;
+  }
+SPAN:nth-child(4n+3):after {
+  border-color: crimson;
+  }
+SPAN:nth-child(4n+4):before {
+  border-color: gold;
+  }
+SPAN:nth-child(4n+4):after {
+  border-color: steelblue;
+  }
+SPAN:before,
+SPAN:after {
+  border-bottom-color: transparent !important;
+  }
+
+/* Helpers */
+BODY {
+  overflow: hidden;
+  background: white;
+  }
+</style>
+</head>
+<body>
+
+<div class="flags">
+<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+</body>
+</html>

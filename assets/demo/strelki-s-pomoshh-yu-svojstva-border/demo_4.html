@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №4 из статьи «Стрелки с помощью свойства border»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+DIV {
+  width: 0;
+  height: 0;
+  border: 25px solid transparent;
+  }
+.arrow-top {
+  border-color: orangered orangered transparent transparent;
+  }
+.arrow-right {
+  border-color: transparent gold gold transparent;
+  }
+.arrow-bottom {
+  border-color: transparent transparent yellowgreen yellowgreen;
+  }
+.arrow-left {
+ border-color: steelblue transparent transparent steelblue;
+  }
+
+/* Helpers */
+BODY {
+  background: white;
+  }
+DIV {
+  display: inline-block;
+  margin: 30px 10px;
+  }
+</style>
+</head>
+<body>
+<div class="arrow-top"></div>
+<div class="arrow-right"></div>
+<div class="arrow-bottom"></div>
+<div class="arrow-left"></div>
+</body>
+</html>

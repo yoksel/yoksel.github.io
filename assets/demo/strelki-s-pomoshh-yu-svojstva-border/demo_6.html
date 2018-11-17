@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №6 из статьи «Стрелки с помощью свойства border»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+.arrow {
+  position: relative;
+  margin: 50px auto;
+  }
+  .arrow:before,
+  .arrow:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 40px solid transparent;
+    border-right: 0;
+    }
+.arrow:nth-child(1) {
+  width: 200px;
+  height: 30px;
+  background: orangered;
+  }
+  .arrow:nth-child(1):after {
+    top: -25px;
+    right: -30px;
+    border-left-color: orangered;
+    }
+.arrow:nth-child(2) {
+  width: 200px;
+  height: 10px;
+  background: gold;
+  }
+  .arrow:nth-child(2):after {
+    top: -7px;
+    right: -25px;
+    border-left-color: gold;
+    border-width: 12px 0 12px 60px;
+    }
+.arrow:nth-child(3) {
+  width: 60px;
+  height: 60px;
+  border: 15px solid yellowgreen;
+  border-right-color: transparent;
+  border-radius: 50%;
+  }
+  .arrow:nth-child(3):after {
+    top: -16px;
+    left: 34px;
+    border-bottom-color: yellowgreen;
+    border-top: 0;
+    border-right: 0;
+    }
+.arrow:nth-child(4) {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: steelblue;
+  }
+  .arrow:nth-child(4):before {
+    top: -7px;
+    left: -19px;
+    border: 15px solid transparent;
+    border-right-color: steelblue;
+    border-left: 0;
+    }
+  .arrow:nth-child(4):after {
+      top: -7px;
+      right: -19px;
+      border: 15px solid transparent;
+      border-left-color: steelblue;
+      border-right: 0;
+      }
+
+/* Helpers */
+BODY {
+  background: white;
+  }
+DIV {
+  margin: 30px 10px;
+  }
+</style>
+</head>
+<body>
+<div class="arrow"></div>
+<div class="arrow"></div>
+<div class="arrow"></div>
+<div class="arrow"></div>
+</body>
+</html>
