@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №8 из статьи «CSS-градиенты: линейные градиенты»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+HTML {
+  height: 100%;
+  }
+BODY {
+  background: white;
+  font: 10px/1.4 'Trebuchet MS', Verdana, sans-serif;
+  }
+
+UL {
+  list-style: none;
+  padding: 0;
+  }
+LI {
+  height: 12em;
+  margin: 1em;
+  border-radius: 10px;
+  }
+
+.grad-1 {
+  background: repeating-linear-gradient(
+    green, green .5em,
+    transparent .5em, transparent 1em);
+  background-color: yellowgreen;
+  }
+.grad-2 {
+  background: repeating-linear-gradient( 90deg,
+    green, green .5em,
+    transparent .5em, transparent 1em);
+  background-color: yellowgreen;
+  }
+</style>
+</head>
+<body>
+<ul>
+  <li class="grad-1"></li>
+  <li class="grad-2"></li>
+</ul>
+</body>
+</html>

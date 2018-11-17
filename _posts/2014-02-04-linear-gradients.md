@@ -32,7 +32,7 @@ CSS-градиенты позволяют сделать фон из двух и
 
 <pre><code class="language-css">background: linear-gradient(orangered, gold);</code></pre>
 
-<iframe class="jsbin" style="height: 200px" src="http://jsbin.com/EHuREfA/1/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 200px" src="../assets/demo/linear-gradients/demo_1.html?output"></iframe>
 
 Цветов может быть любое количество больше двух.
 Также можно управлять направлением градиента и границами (точками остановки) цветов.
@@ -51,7 +51,7 @@ CSS-градиенты позволяют сделать фон из двух и
 
 Ниже можно увидеть как работают разные направления в растяжке от сиреневого до желтого:
 
-<iframe class="jsbin" style="height: 500px" src="http://jsbin.com/EHuREfA/2/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 500px" src="../assets/demo/linear-gradients/demo_2.html?output"></iframe>
 
 Вот код самого первого квадрата, для примера:
 
@@ -59,33 +59,32 @@ CSS-градиенты позволяют сделать фон из двух и
    background: linear-gradient(to top left, purple, crimson, orangered, gold);
   }</code></pre>
 
-Следует помнить, что <code>to top right</code> не то же самое, что <code>45deg</code>.
+Следует помнить, что <code>to top right</code> не то же самое, что <code>45deg</code>. Цвета градиента располагаются перпендикулярно линии направления градиента. При <code>to top right</code> линия идет из нижнего левого в верхний правый угол, при <code>45deg</code> — располагается строго под этим углом независимо от размеров фигуры.
 
-Цвета градиента располагаются перпендикулярно линии направления градиента.
-При <code>to top right</code> линия идет из нижнего левого в верхний правый угол, при <code>45deg</code> — располагается строго под этим углом независимо от размеров фигуры.
+Разница хорошо видна на прямоугольных фигурах:
 
-Разница в поведении хорошо видна на прямоугольных фигурах:
-
-<iframe class="jsbin" style="height: 400px" src="http://jsbin.com/EHuREfA/4/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 350px" src="../assets/demo/linear-gradients/demo_3.html?output"></iframe>
 
 Также можно задавать точки остановки для цветов градиента, значения задаются в единицах или в процентах и могут быть больше 100% и меньше 0%.
 
 Примеры задания значений в <code>%</code>, в <code>em</code> и значения, выходящие за границы элемента:
 
-<iframe class="jsbin" style="height: 400px" src="http://jsbin.com/EHuREfA/6/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 400px" src="../assets/demo/linear-gradients/demo_4.html?output"></iframe>
 
 Чем ближе находятся точки остановки соседних цветов, тем четче будет граница между ними. Таким образом можно легко делать полосатые фоны:
 
-<iframe class="jsbin" style="height: 500px" src="http://jsbin.com/EHuREfA/7/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 450px" src="../assets/demo/linear-gradients/demo_5.html?output"></iframe>
 
 Так можно сделать, например, фон под боковую колонку, растянутый на всю высоту родительского элемента:
 
-<iframe class="jsbin" style="height: 500px" src="http://jsbin.com/EHuREfA/9/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 500px" src="../assets/demo/linear-gradients/demo_6.html?output"></iframe>
 
 Полоски на фоне сайдбара — ещё один градиент, состоящий из чередования полной прозрачности и белого цвета с прозрачностью 30%.
 Градиенты с полупрозрачными цветами удобны тем, что их можно наложить поверх фона любого цвета.
 
-Градиент в примере задан сложным длинным кодом, потому что полоски должны располагаться только над фоном для сайдбара. Если не пытаться сделать всё фоном для одного блока, можно было бы решить задачу с помощью псевдоэлемента. При отсутствии ограничений код может быть гораздо короче:
+Градиент в примере задан сложным длинным кодом, потому что полоски должны располагаться только над фоном для сайдбара. Если не пытаться сделать всё фоном для одного блока, можно было бы решить задачу с помощью псевдоэлемента.
+
+При отсутствии ограничений код может быть гораздо короче:
 
 <pre><code class="language-css">.light {
    background: peachpuff linear-gradient(90deg,
@@ -99,7 +98,7 @@ CSS-градиенты позволяют сделать фон из двух и
     ) center center / 100% 1em;
   }</code></pre>
 
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/EHuREfA/10/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 350px" src="../assets/demo/linear-gradients/demo_7.html?output"></iframe>
 
 В первой строчке задаем фоновый цвет элемента, тип и направление (цвет и направление можно опустить), во второй — определяем цвета градиента и границу между ними, в третьей — задаем положение и размер получившегося изображения. Самая важная часть — размер. По умолчанию фон повторяется, поэтому получившийся паттерн заполнит собой фон элемента.
 Очень легко и понятно : )
@@ -124,7 +123,7 @@ CSS-градиенты позволяют сделать фон из двух и
     transparent .5em, transparent 1em
     );</code></pre>
 
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/yacuqeb/1/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 350px" src="../assets/demo/linear-gradients/demo_8.html?output"></iframe>
 
 К сожалению, повторяющиеся градиенты ведут себя как попало и подойдут только для узоров, которым не важна точность. Если нужна аккуратность, используйте <code>linear-gradient</code> в сочетании с <code>background-size</code> и <code>background-repeat</code>.
 
