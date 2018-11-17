@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №2 из статьи «Border-image»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  background: white;
+  text-align: center;
+  font-size: 10px;
+  }
+
+IMG {
+  margin: 2em 2em 0;
+  }
+
+.plate {
+  border: 45px solid transparent;
+  border-image-source: url(http://img-fotki.yandex.ru/get/9754/5091629.9a/0_7eb4a_a1904500_L.png);
+  border-image-repeat: round;
+  border-image-slice: 70 fill;
+  border-radius: 50%
+  }
+.plate-2 {
+  border: 55px solid transparent;
+  border-image-source: url(http://img-fotki.yandex.ru/get/9113/5091629.9a/0_7eb4b_694caad7_L.png);
+  border-image-repeat: round;
+  border-image-slice: 80 fill;
+  border-radius: 50%
+  }
+</style>
+</head>
+<body>
+<img
+  class="plate"
+  src="http://img-fotki.yandex.ru/get/3102/yoksel.31/0_1d0a3_1b360496_S.jpg"
+  alt=""
+>
+
+<img
+  class="plate-2"
+  src="http://img-fotki.yandex.ru/get/3102/yoksel.31/0_1d0a3_1b360496_S.jpg"
+  alt=""
+>
+</body>
+</html>

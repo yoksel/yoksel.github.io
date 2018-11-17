@@ -21,7 +21,7 @@ desc: Border-image — свойство, которое задает фонов�
 
 Пример:
 
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/EyUWUqon/5/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 360px" src="../assets/demo/border-image/demo_1.html?output"></iframe>
 
 Используемые изображения:
 
@@ -29,7 +29,7 @@ desc: Border-image — свойство, которое задает фонов�
 
 Можно использовать не только квадратные картинки, но и овальные:
 
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/aKIdUQu/1/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 350px" src="../assets/demo/border-image/demo_2.html?output"></iframe>
 
 Картинки из примера:
 
@@ -43,15 +43,13 @@ desc: Border-image — свойство, которое задает фонов�
 
 Поизменяйте размер браузера, чтобы увидеть как рамка адаптируется вместе с элементом:
 
+<iframe class="live-snippet" style="height: 450px" src="../assets/demo/border-image/demo_3.html?output"></iframe>
 
-<iframe class="jsbin" style="height: 420px" src="http://jsbin.com/IqeXiMEj/1/embed?output"></iframe>
-
-Или откройте  <b><a href="http://jsbin.com/IqeXiMEj/1">этот пример</a></b> в отдельном окне.
+Или откройте  <b><a href="../assets/demo/border-image/IqeXiMEj_1.html?output">этот пример</a></b> в отдельном окне.
 
 В качестве рамки могут использоваться достаточно сложные изображения:
 
-
-<iframe class="jsbin" style="height: 570px" src="http://jsbin.com/EwexIfUS/1/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 570px" src="../assets/demo/border-image/demo_4.html?output"></iframe>
 
 Картинка:
 
@@ -64,8 +62,7 @@ border-image: url("http://img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786
 
 Результат:
 
-
-<iframe class="jsbin" style="height: 570px" src="http://jsbin.com/EyUWUqon/8/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 570px" src="../assets/demo/border-image/demo_5.html?output"></iframe>
 
 Для  <code>border</code> обязательно нужно задать толщину и стиль рамки.
 Цвет — опционально, но рамку именно такого цвета увидят пользователи, браузеры которых не поддерживают <code>border-image</code>.
@@ -87,7 +84,7 @@ border-image: url("http://img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786
 
 Теоретически, можно задавать и градиенты, но они работают в Хроме/Сафари и не работают в FF. С их помощью можно было бы делать резиновые тени неправильной формы, <a href="http://jsbin.com/aGECIwe/2/edit">вот такие, например (смотреть в Хроме)</a>.
 С градиентами можно делать и более странные варианты, причем узоры сами заботятся о своей пропорциональности.
-Примеры ниже на момент написания записи работают только в Хроме и Сафари.
+Примеры ниже на момент написания статьи работают только в Хроме и Сафари.
 <a href="http://jsbin.com/edOHEwOQ/5">Пример 1</a>
 <a href="http://jsbin.com/edOHEwOQ/4">Пример 2</a>
 <a href="http://jsbin.com/edOHEwOQ/6">Пример 3</a>
@@ -101,8 +98,7 @@ border-image: url("http://img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786
 <pre><code class="language-css">border: 80px solid transparent;
 border-image: url("http://img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786d4_XL.png");</code></pre>
 
-
-<iframe class="jsbin" style="height: 400px" src="http://jsbin.com/EyUWUqon/14/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 400px" src="../assets/demo/border-image/demo_6.html?output"></iframe>
 
 </section><section markdown="1" id="border-image-slice" data-name="border-image-slice"><h4>Border-image-slice</h4>
 
@@ -124,8 +120,7 @@ border-image: url("http://img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786
 border-image: url("http://img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786d4_L.png");
 border-image-slice: 100;</code></pre>
 
-
-<iframe class="jsbin" style="height: 450px" src="http://jsbin.com/EyUWUqon/18/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 450px" src="../assets/demo/border-image/demo_7.html?output"></iframe>
 
 </section><section markdown="1" id="border-image-repeat" data-name="border-image-repeat"><h4>Border-image-repeat</h4>
 
@@ -145,7 +140,7 @@ border-image-repeat: repeat;</code></pre>
 
 Слева <code>repeat</code>, справа <code>round</code>.
 
-<iframe class="jsbin" style="height: 370px" src="http://jsbin.com/EyUWUqon/19/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 370px" src="../assets/demo/border-image/demo_8.html?output"></iframe>
 
 Если рамка сложная и стороны плохо стыкуются между собой, <code>stretch</code> сработает корректнее, <a href="http://jsbin.com/EyUWUqon/25/">вот пример</a>.
 
@@ -170,7 +165,7 @@ border-image-width: 160px;</code></pre>
 
 Справа рамка с <code>border-image-width</code>. На примере слева видно, как картинка обрезалась внутренними краями рамки. Правая рамка засчет увеличенной ширины заползла под контент.
 
-<iframe class="jsbin" style="height: 370px" src="http://jsbin.com/EyUWUqon/22/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 370px" src="../assets/demo/border-image/demo_9.html?output"></iframe>
 
 </section><section markdown="1" id="border-image-outset" data-name="border-image-outset"><h4>Border-image-outset</h4>
 
@@ -188,21 +183,20 @@ border-image-outset: 60px 10px 50px 120px;</code></pre>
 
 Справа пример с <code>border-image-outset</code>. Это свойство не влияет на размеры элемента, а рамка может перекрывать соседние элементы:
 
-<iframe class="jsbin" style="height: 370px" src="http://jsbin.com/EyUWUqon/23/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 370px" src="../assets/demo/border-image/demo_10.html?output"></iframe>
 </section>
 
-<code>Border-image</code> — довольно сложное, но очень интересное свойство. Мне очень нравится идея использовать его вместо традиционного способа сделать графическую рамку для резиновых элементов.
+<code>border-image</code> — довольно сложное, но очень интересное свойство. Мне очень нравится идея использовать его вместо традиционного способа сделать графическую рамку для резиновых элементов.
 Примеры в посте несколько диковаты, но я уверена, что свойство можно применять более изящно, а от его возможностей просто захватывает дух : )
 
 Например, <a href="http://pepelsbey.net/">Вадим Макеев</a> предложил с помощью <code>border-image</code> делать тень сложной формы для блока, размеры которого могут быть заранее неизвестны.
 
 Приготовьте <a href="http://img-fotki.yandex.ru/get/9555/5091629.9a/0_7ec51_1cf902d3_L.png">подходящую картинку</a> и посмотрите как <code>border-image</code> легко справится с задачей с помощью всего лишь пары строчек кода:
 
-
-<iframe class="jsbin" style="height: 550px" src="http://jsbin.com/UGahucOq/3/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 500px" src="../assets/demo/border-image/demo_11.html?output"></iframe>
 
 Можно менять размеры блока и добавлять в него сколько угодно текста — тень будет растянется вслед за ним.
 
 Прекрасная простота. Будет здорово, когда это свойство можно будет полноценно использовать без оглядки на старые браузеры.
 
-<i>Изображения рамок нагуглены по запросу "рамки". Картинка с джедаями — <a href="http://fotki.yandex.ru/users/yoksel/view/118947?page=2">фотожаба</a></i>
+<i>Изображения рамок нагуглены по запросу "рамки". Картинка с джедаями — <a href="http://img-fotki.yandex.ru/get/3102/yoksel.31/0_1d0a3_1b360496_XL.jpg">фотожаба</a>.</i>

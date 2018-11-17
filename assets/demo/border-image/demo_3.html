@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №3 из статьи «Border-image»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  background: white;
+  font-size: 10px;
+  }
+
+.rama {
+  display: block;
+  margin: 5em;
+  padding-top: 20%;
+  border: 65px solid orange;
+  border-image-source: url(http://img-fotki.yandex.ru/get/9165/5091629.99/0_7eb45_d2e10a7a_M.jpg);
+  border-image-slice: 40;
+  border-image-repeat: round;
+  }
+</style>
+</head>
+<body>
+<div class="rama"></div>
+</body>
+</html>
