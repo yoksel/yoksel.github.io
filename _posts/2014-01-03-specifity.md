@@ -48,7 +48,7 @@ links:
 
 Казалось бы, ссылки в тексте должны получить оранжевый фон, а ссылки в списке — зеленый, но нет:
 
-<iframe class="jsbin" style="height: 300px" src="http://jsbin.com/iJeqAru/5/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 300px" src="../assets/demo/specifity/demo_1.html?output"></iframe>
 
 Почему так? Потому, что первый селектор содержит ID и перевешивает второй, то есть:
 
@@ -58,13 +58,13 @@ links:
 
 Специфичность селектора рассчитывается по 4-м позициям:
 
-<iframe class="jsbin" style="height: 220px" src="http://jsbin.com/USivILu/1/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 220px" src="../assets/demo/specifity/demo_2.html?output"></iframe>
 
 Для каждого из них подсчитывается количество подходящих элементов в селекторе, и это число помещается в соответствующую позицию.
 
 <b>Пример:</b>
 
-<iframe class="jsbin" style="height: 450px" src="http://jsbin.com/USivILu/2/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 500px" src="../assets/demo/specifity/demo_3.html?output"></iframe>
 
 <b>Вес селекторов</b> (по убыванию):
 
@@ -73,13 +73,13 @@ links:
 <span class="wrapper--selector"><code>.class</code></span> <code class="specifity">0,0,<b>1</b>,0</code>
 <span class="wrapper--selector"><code>[attr=value]</code></span> <code class="specifity">0,0,<b>1</b>,0</code>
 <span class="wrapper--selector"><code>LI</code></span> <code class="specifity">0,0,0,<b>1</b></code>
-<span class="wrapper--selector"><code>*</code></span> <code class="specifity">0,0,0,0</code>
+<span class="wrapper--selector"><code>\*</code></span> <code class="specifity">0,0,0,0</code>
 
 У стилей, заданных в атрибуте <code>style</code>, на первой позиции будет единица — <code class="specifity"><b>1</b>,0,0,0</code>. Это самая высокая специфичность, которая перевешивает свойства, заданные другими способами.
 
 Переопределить стили, заданные в <code>style</code>, можно дописав <code>!important</code> к значению свойства в таблице стилей.
 
-Обратный вариант — универсальный селектор <code>*</code>. Он не имеет веса: <code class="specifity">0,0,0,0</code>.
+Обратный вариант — универсальный селектор <code>\*</code>. Он не имеет веса: <code class="specifity">0,0,0,0</code>.
 
 <b>Примеры:</b>
 
@@ -168,7 +168,7 @@ links:
 
 И код работает так, как ожидается:
 
-<iframe class="jsbin" style="height: 320px" src="http://jsbin.com/iJeqAru/4/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 300px" src="../assets/demo/specifity/demo_4.html?output"></iframe>
 
 <i>Если <code>id</code> в вашей разметке уже используется в Js, логичнее будет добавить элементу класс и перевесить стили на него. Если же <code>id</code> участвует только в разметке — лучше заменить его на <code>class</code>.</i>
 
