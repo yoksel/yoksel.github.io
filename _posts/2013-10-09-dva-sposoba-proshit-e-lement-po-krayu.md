@@ -18,7 +18,7 @@ desc: Есть два способа сделать эффект, как буд�
 <pre><code class="language-css">outline: 1px dashed salmon;
 outline-offset: -15px;</code></pre>
 
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/IlecUP/3/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 350px" src="../assets/demo/dva-sposoba-proshit-e-lement-po-krayu/demo_1.html?output"></iframe>
 
 <strong>Плюс:</strong>
 - не требует дополнительных элементов.
@@ -51,11 +51,10 @@ outline-offset: -15px;</code></pre>
 
 Результат:
 
-<iframe class="jsbin" style="height: 350px" src="http://jsbin.com/IlecUP/2/embed?output"></iframe>
+<iframe class="live-snippet" style="height: 350px" src="../assets/demo/dva-sposoba-proshit-e-lement-po-krayu/demo_2.html?output"></iframe>
 
 <strong>Плюс:</strong>
 - может иметь скругленные углы.
 
 <strong>Минус:</strong>
 - требует дополнительную разметку и больше кода
-
