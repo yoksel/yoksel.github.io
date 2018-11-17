@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №5 из статьи «Цвета в Css»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding-top: 30px;
+  text-align: center;
+  }
+DIV {
+  display: inline-block;
+  width: 10em;
+  height: 10em;
+  margin: .2em;
+  border-radius: 50%;
+  vertical-align: middle;
+  line-height: 10.5em;
+  text-shadow: 2px 0 rgba(0%, 0%, 0%,.4);
+  color: #FFF;
+  }
+DIV:nth-child(1) {
+  background: hsl( 0, 70%, 62% );
+  }
+DIV:nth-child(2) {
+  background: hsl( 40, 90%, 58% );
+  }
+DIV:nth-child(3) {
+  background: hsl( 60, 80%, 40% );
+  }
+DIV:nth-child(4) {
+  background: hsl( 180, 40%, 50% );
+  }
+</style>
+</head>
+<body>
+<div>hsl( 0, 70%, 62% )</div>
+<div>hsl( 40, 90%, 58% )</div>
+<div>hsl( 60, 80%, 40% )</div>
+<div>hsl( 180, 40%, 50% )</div>
+</body>
+</html>

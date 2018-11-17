@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №7 из статьи «Цвета в Css»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding-top: 30px;
+  background: white;
+  text-align: center;
+  }
+DIV {
+  position: relative;
+  width: 20em;
+  height: 18em;
+  margin: 0 auto;
+  }
+.item {
+  display: inline-block;
+  width: 12em;
+  height: 12em;
+  margin: .2em;
+  border-radius: 50%;
+  vertical-align: middle;
+  line-height: 12em;
+  text-shadow: 1px 1px rgba(0%, 0%, 0%,.4);
+  transform: rotate(45deg);
+  border: 5px solid currentColor;
+  }
+.item:nth-child(1) {
+  margin: 0 -3em -3em 0;
+  background: hsla( 0, 90%, 65%, .7 );
+  color: tomato;
+  }
+.item:nth-child(2) {
+  margin: 0 0 -3em -3em;
+  background: hsla( 60, 90%, 58%, .7 );
+  color: orange;
+  }
+.item:nth-child(3) {
+  margin: -3em -3em 0 0;
+  background: hsla( 85, 90%, 50%, .7 );
+  color: yellowgreen;
+  }
+.item:nth-child(4) {
+  margin: -3em 0 0 -3em;
+  background: hsla( 180, 60%, 50%, .5 );
+  color: skyblue;
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</div>
+</body>
+</html>
