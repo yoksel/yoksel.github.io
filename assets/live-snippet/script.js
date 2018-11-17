@@ -100,7 +100,8 @@ Demo.prototype.addActions = function() {
 // ------------------------------
 
 Demo.prototype.createSaveLink = function() {
-  const encoded = btoa(this.iframeDoc.firstChild.outerHTML);
+  const source = this.iframeDoc.firstChild.outerHTML;
+  const encoded = htmlToUrl(source);
   const href = 'data:text/html;base64,' + encoded;
   const pageTitle = document.title || '';
 
@@ -110,6 +111,7 @@ Demo.prototype.createSaveLink = function() {
     'Download result'
   );
   link.setAttribute('download', pageTitle);
+  link.setAttribute('title', pageTitle);
   this.layout.controls.appendChild(link);
 
   return link;
@@ -118,8 +120,8 @@ Demo.prototype.createSaveLink = function() {
 // ------------------------------
 
 Demo.prototype.updateSaveLink = function() {
-  const pageCode = cleanHTML(this.iframeDoc.firstChild.outerHTML);
-  const encoded = btoa(pageCode);
+  const source = this.iframeDoc.firstChild.outerHTML;
+  const encoded = htmlToUrl(source);
   const href = 'data:text/html;base64,' + encoded;
   this.saveLink.href = href;
 }
@@ -258,6 +260,14 @@ function cleanHTML(html) {
     .trim();
 
   return cleanedHTML;
+}
+
+function htmlToUrl(source) {
+  const cleanCode = cleanHTML(source);
+  const preparedCode = unescape(encodeURIComponent(cleanCode));
+  const encoded = btoa(preparedCode);
+
+  return encoded;
 }
 
 // ------------------------------
