@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №12 из статьи «Css-селекторы, часть 2»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding-top: 10px;
+  }
+P, SECTION, DIV {
+  padding: 7px;
+  box-sizing: border-box;
+  border: 2px solid #CCC;
+  border-radius: 10px;
+  }
+  SECTION {
+    width: 50%;
+    margin: 2.5% auto;
+    color: #CCC;
+    }
+    SECTION:before {
+      content: "Section";
+    }
+P, DIV {
+  margin: 2.5% 2%;
+  }
+P:only-of-type {
+  border-color: crimson;
+  }
+</style>
+</head>
+<body>
+<section>
+  <p>P</p>
+  <p>P</p>
+</section>
+<section>
+  <p>P</p>
+  <div>Div</div>
+</section>
+</body>
+</html>

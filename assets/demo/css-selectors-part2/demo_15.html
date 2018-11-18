@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №15 из статьи «Css-селекторы, часть 2»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font: 16px/1.4 Arial, sans-serif;
+  }
+INPUT {
+  margin: 0 20px;
+  outline: 5px solid #DDD;
+  }
+INPUT:checked {
+  outline-color: yellowgreen;
+  }
+</style>
+</head>
+<body>
+<input type="checkbox" value="text">
+<input type="checkbox" value="text" checked>
+</body>
+</html>

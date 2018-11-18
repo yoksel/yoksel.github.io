@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №5 из статьи «Css-селекторы, часть 2»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding-top: 10px;
+  text-align: center;
+  }
+P {
+  display: inline-block;
+  width: 40%;
+  margin: 2%;
+  padding: 7px;
+  box-sizing: border-box;
+  border: 2px solid #CCC;
+  border-radius: 10px;
+  }
+P:nth-last-child(1) {
+  border-color: crimson;
+  }
+P:nth-last-child(4) {
+  border-color: orange;
+  }
+P:nth-last-child(5) {
+  border-color: gold;
+  }
+</style>
+</head>
+<body>
+<section>
+  <p>1</p>
+  <p>2</p>
+  <p>3</p>
+  <p>4</p>
+  <p>5</p>
+  <p>6</p>
+</section>
+</body>
+</html>
