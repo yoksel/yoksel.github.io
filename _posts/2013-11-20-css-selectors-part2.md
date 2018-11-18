@@ -45,6 +45,8 @@ post_nav:
   name: 'E:target'
 - url: '#enabled'
   name: 'E:enabled, E:disabled'
+- url: '#checked'
+  name: 'E:checked'
 - url: '#not'
   name: 'E:not(s)'
 - url: '#next'
