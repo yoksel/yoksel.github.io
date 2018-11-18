@@ -40,6 +40,7 @@ Demo.prototype.addIframe = function() {
   const column = this.createColumn('iframe');
   const iframe = document.createElement('iframe');
   iframe.classList.add('iframe');
+  iframe.src = 'about:blank';
 
   column.appendChild(iframe);
   this.layout.columns.appendChild(column);
@@ -57,6 +58,7 @@ Demo.prototype.addIframe = function() {
 
       that.iframeDoc = iframeDoc;
       that.fillIframe();
+      that.addHash();
       that.addActions();
      }, 500);
   }
@@ -72,6 +74,13 @@ Demo.prototype.fillIframe = function() {
   this.iframeDoc.head.appendChild(iframeStyles);
 
   this.iframeDoc.body.innerHTML = cleanHTML(this.elems.html.content);
+}
+
+// ------------------------------
+
+Demo.prototype.addHash = function() {
+    const hash = document.location.hash;
+    this.iframeDoc.location.hash = hash;
 }
 
 // ------------------------------
