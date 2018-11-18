@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №5 из статьи «Css-селекторы»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding-top: 20px;
+  background: #FFF;
+  }
+
+SECTION, H3, P  {
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 2px solid #CCC;
+  border-radius: 10px;
+  }
+  SECTION {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    SECTION:before {
+      content: "SECTION";
+      color: #CCC;
+      }
+  H3:before {
+    content: "H3";
+    display: block;
+    background: #FFF;
+    font-weight: normal;
+    color: #CCC;
+    }
+  P:before {
+    content: "P";
+    display: block;
+    font-weight: normal;
+    color: #CCC;
+    }
+  P:first-child {
+    border-color: orange;
+    background: gold;
+    }
+    P:first-child:before {
+      color: orange;
+      }
+</style>
+</head>
+<body>
+<section>
+  <p></p>
+  <p></p>
+</section>
+
+<section>
+  <h3></h3>
+  <p></p>
+  <p></p>
+</section>
+</body>
+</html>

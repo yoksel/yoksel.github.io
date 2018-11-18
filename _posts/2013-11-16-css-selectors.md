@@ -98,7 +98,8 @@ post_nav:
 
 <p>выберет только абзацы, у которых есть атрибут <b>data-content</b>:</p>
 
-<iframe src="http://jsbin.com/aMakIZI/39/embed?output" style="height: 270px" class="jsbin"></iframe></li>
+<iframe class="live-snippet" style="height: 280px" src="../assets/demo/css-selectors/demo_1.html?output"></iframe>
+</li>
 
 <li id="has-attr-val" data-name="E[foo='bar']"><p><code>E[foo="bar"]</code> — элементы, у которых атрибут имеет заданное значение.</p>
 
@@ -106,7 +107,8 @@ post_nav:
   border: 2px solid orange;
 }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/40/embed?output" style="height: 270px" class="jsbin"></iframe></li>
+<iframe class="live-snippet" style="height: 280px" src="../assets/demo/css-selectors/demo_2.html?output"></iframe>
+</li>
 
 <li id="has-attr-val-wtsp" data-name="E[foo~='bar']"><p><code>E[foo~="bar"]</code> — элемент, который имеет атрибут со списком значений, разделенных пробелом, одно из которых равно заданному.</p>
 
@@ -114,7 +116,8 @@ post_nav:
   border: 2px solid yellowgreen;
 }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/41/embed?output" style="height: 270px" class="jsbin"></iframe></li>
+<iframe class="live-snippet" style="height: 280px" src="../assets/demo/css-selectors/demo_3.html?output"></iframe>
+</li>
 
 <li id="has-attr-val-hpsp" data-name="E[foo|='bar']"><p><code>E[foo|="bar"]</code> — элемент, который имеет атрибут со списком значений, разделенных дефисом, который начинается с заданного.</p>
 
@@ -122,7 +125,8 @@ post_nav:
   border: 2px solid steelblue;
 }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/42/embed?output" style="height: 270px" class="jsbin"></iframe></li>
+<iframe class="live-snippet" style="height: 280px" src="../assets/demo/css-selectors/demo_4.html?output"></iframe>
+</li>
 
 <li id="first-child" data-name="E:first-child"><p><code>E:first-child</code> — псевдокласс, обращающийся к первому элементу из нескольких внутри родителя.</p>
 
@@ -130,11 +134,12 @@ post_nav:
   background: gold;
 }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/45/embed?output" style="height: 480px" class="jsbin"></iframe>
+<iframe class="live-snippet" style="height: 480px" src="../assets/demo/css-selectors/demo_5.html?output"></iframe>
 
 <p>Селектор выбирает первый элемент только если он соответствует заданному тегу или классу и только если он является самым первым потомком родителя.</p>
 
-<p>Для выбора первого элемента из списка дочерних элементов определенного типа существует другой селектор — <code>:first-of-type</code>, добавленный в CSS3.</p></li>
+<p>Для выбора первого элемента из списка дочерних элементов определенного типа существует другой селектор — <code>:first-of-type</code>, добавленный в CSS3.</p>
+</li>
 
 <li id="lang" data-name="E:lang(fr)"><p><code>E:lang(fr)</code> — выбирает элементы на заданном языке. Язык элемента может быть получен из HTTP-заголовков, отдаваемых сервером, из <code>meta</code>-тега, заданного в <code>head</code>, либо если у элемента задан атрибут <code>lang</code></p>
 
@@ -144,12 +149,13 @@ post_nav:
   background: crimson;
 }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/71/embed?output" style="height: 270px" class="jsbin"></iframe></li>
+<iframe class="live-snippet" style="height: 280px" src="../assets/demo/css-selectors/demo_6.html?output"></iframe></li>
 
 <li id="before" data-name="E::before"><p><code>E::before</code> — генерируемый контент перед заданным элементом.</p></li>
 <li id="after" data-name="E::after"><p><code>E::after</code> — генерируемый контент после элемента.</p>
 
-<iframe src="http://jsbin.com/aMakIZI/11/embed?output" style="height: 150px" class="jsbin"></iframe></li>
+<iframe class="live-snippet" style="height: 150px" src="../assets/demo/css-selectors/demo_7.html?output"></iframe>
+</li>
 
 <li id="child" data-name="E > F"><p><code>E > F</code> — выбирает элемент, только если он является прямым потомком родителя (ни во что больше не вложен).</p>
 
@@ -158,16 +164,19 @@ post_nav:
   color: #FFF;
 }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/44/embed?output" style="height: 320px" class="jsbin"></iframe></li>
+<iframe class="live-snippet" style="height: 320px" src="../assets/demo/css-selectors/demo_8.html?output"></iframe>
+</li>
 
-<li id="next" data-name="E + F"><p><code>E + F</code> — выбирает второй заданный элемент, который следует непосредственно после первого заданного.</p>
+<li id="next" data-name="E + F"><p><code>E + F</code> — выбирает второй заданный элемент, который следует непосредственно после первого.</p>
 
 <pre class="language-css"><code class="language-css">P + H3 {
   background: darkturquoise;
   color: lightseagreen;
 }</code></pre>
 
-<iframe src="http://jsbin.com/aMakIZI/38/embed?output" style="height: 300px" class="jsbin"></iframe></li>
+
+<iframe class="live-snippet" style="height: 300px" src="../assets/demo/css-selectors/demo_9.html?output"></iframe>
+</li>
 </ul>
 <b>Продолжение:</b> <a href="/css-selectors-part2/">Css-селекторы, часть 2</a>.
 

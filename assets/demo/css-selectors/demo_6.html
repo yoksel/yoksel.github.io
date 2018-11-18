@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta http-equiv="content-language" content="en">
+<title>Демо №6 из статьи «Css-селекторы»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding-top: 20px;
+  }
+
+P {
+  padding: 5px;
+  border-radius: 5px;
+  }
+P:lang(ru) {
+  background: crimson;
+  }
+P:lang(fr) {
+  background: orangered;
+  }
+P:lang(de) {
+  background: orange;
+  }
+P:lang(en) {
+  background: gold;
+  }
+</style>
+</head>
+<body>
+<p lang="ru">Доброе утро!</p>
+<p lang="fr">Bonjour!</p>
+<p lang="de">Guten Morgen!</p>
+<p>Good morning!</p>
+</body>
+</html>
