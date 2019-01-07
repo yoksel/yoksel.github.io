@@ -1,7 +1,5 @@
 - url: /about/
   name: О сайте
-- url: /projects/
-  name: Проекты
 - url: /tags/
   name: Метки
 - url: https://twitter.com/yoksel
