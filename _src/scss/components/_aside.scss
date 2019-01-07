@@ -36,6 +36,15 @@
     color: #CCC;
     }
 
+.widget__dash {
+    display: none;
+}
+.widget__desc {
+    display: block;
+    font-size: .75em;
+    color: #555;
+}
+
 .img--about {
     float: right;
     max-width: 200px !important;
