@@ -16,13 +16,14 @@ exclude: ['Rakefile',
           'Gruntfile.*',
           'package.json',
           'yarn.*',
-          'temp']
+          'temp',
+          'vendor']
 # markdown: rdiscount // kramdown : problem with tables // redcarpet: problem with more
 markdown: kramdown
 
 # pagination
 plugins_dir: [jekyll-paginate]
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 paginate: 20
 
 # configuration of common parts

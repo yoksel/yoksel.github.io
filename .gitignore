@@ -9,3 +9,5 @@ src/css/*prefixed.css
 *.map
 .jekyll-metadata
 .DS_Store
+.bundle/
+vendor/
