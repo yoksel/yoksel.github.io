@@ -20,13 +20,12 @@
   "devDependencies": {
     "autoprefixer": "6.5.3",
     "browser-sync": "^2.26.7",
-    "gulp": "3.9.1",
+    "gulp": "^4.0.0",
     "gulp-changed": "^3.2.0",
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.2.0",
-    "gulp-sass": "^4.0.1",
+    "gulp-sass": "^4.0.2",
     "gulp-uglify": "^2.1.2",
-    "postcss-csso": "^1.1.2",
-    "pump": "^1.0.3"
+    "postcss-csso": "^1.1.2"
   }
 }
