@@ -1,3 +1,18 @@
+- url: https://yoksel.github.io/grid-cheatsheet/
+  name: Grid Cheatsheet
+  desc: Шпаргалка по&nbsp;гридам
+  img: projects/grid-cheatsheet.png
+
+- url: http://yoksel.github.io/flex-cheatsheet/
+  name: Flexbox Cheatsheet
+  desc: Шпаргалка по&nbsp;флексбоксам
+  img: projects/flex-cheatsheet.png
+
+- url: https://yoksel.github.io/tema/
+  name: Tema
+  desc: Генератор цветовых тем из CSS/SCSS/Less-переменных
+  img: projects/tema.png
+
 - url: http://yoksel.github.io/svg-filters/
   name: SVG Filters
   desc: Конструктор SVG-фильтров
@@ -32,10 +47,17 @@
   desc: Список именованных цветов с&nbsp;готовыми палитрами
   img: projects/handy-colors.png
 
-- url: http://yoksel.github.io/flex-cheatsheet/
-  name: Flexbox Cheatsheet
-  desc: Шпаргалка по&nbsp;флексбоксам, с&nbsp;живыми демками и&nbsp;описаниями из&nbsp;спеки
-  img: projects/flex-cheatsheet.png
+- url: https://yoksel.github.io/emoji-brush/
+  name: Emoji brush
+  desc: Кисточка с эмоджи
+  img: projects/emoji-brush.png
+
+- url: https://yoksel.github.io/snowflake/
+  name: Snowflake
+  desc: Генератор снежинок
+  img: projects/snowflake.png
+
+
 
 - url: http://yoksel.github.io/unicode-table/
   name: Таблица символов юникода
