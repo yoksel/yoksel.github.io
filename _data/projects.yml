@@ -47,6 +47,11 @@
   desc: Список именованных цветов с&nbsp;готовыми палитрами
   img: projects/handy-colors.png
 
+- url: https://yoksel.github.io/relative-clip-path/
+  name: Relative Clip Path
+  desc: Конвертер абсолютных координат пути в относительные
+  img: projects/relative-clip-path.png
+
 - url: https://yoksel.github.io/emoji-brush/
   name: Emoji brush
   desc: Кисточка с эмоджи
