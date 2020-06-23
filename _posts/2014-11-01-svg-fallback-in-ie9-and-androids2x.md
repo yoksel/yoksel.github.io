@@ -65,7 +65,7 @@ CSS:
 
 Если поддерживается — и фон, и SVG. Если вы смотрите страницу в современном браузере, демо покажет вам именно этот вариант:
 
-<p data-height="268" data-theme-id="4974" data-slug-hash="sbzEp" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/sbzEp/'>Test support of SVG fallback</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="350" data-theme-id="4974" data-slug-hash="sbzEp" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/sbzEp/'>Test support of SVG fallback</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 <i>На самом деле, в браузерах без поддержки SVG также будет виден текст "SVG", но в реальной жизни это вряд ли будет проблемой, если только вы не кладете текст в иконки.</i>
@@ -117,7 +117,7 @@ background-position: -1000vh 0; /* IE9 */</code></pre>
 
 Демо:
 
-<p data-height="268" data-theme-id="4974" data-slug-hash="tKzeB" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/tKzeB/'>Test support of SVG fallback</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="350" data-theme-id="4974" data-slug-hash="tKzeB" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/tKzeB/'>Test support of SVG fallback</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Ссылка для тестирования: <a href="http://codepen.io/yoksel/full/tKzeB">codepen.io/yoksel/full/tKzeB</a>

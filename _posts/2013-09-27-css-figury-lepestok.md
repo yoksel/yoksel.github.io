@@ -44,6 +44,6 @@ published: true
 
 <iframe class="live-snippet" style="height: 350px" src="../assets/demo/css-figury-lepestok/demo_7.html?output"></iframe>
 
-<iframe class="live-snippet" style="height: 330px" src="../assets/demo/css-figury-lepestok/demo_8.html?output"></iframe>
+<iframe class="live-snippet" style="height: 370px" src="../assets/demo/css-figury-lepestok/demo_8.html?output"></iframe>
 
 В этом случае нельзя обойтись одним элементом, потому что тень объекта нельзя повернуть.

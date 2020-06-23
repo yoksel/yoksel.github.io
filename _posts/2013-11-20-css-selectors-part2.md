@@ -216,7 +216,7 @@ INPUT:disabled {
   color: #CCC;
   }</code></pre>
 
-<iframe class="live-snippet" style="height: 170px" src="../assets/demo/css-selectors-part2/demo_14.html?output"></iframe>
+<iframe class="live-snippet" style="height: 200px" src="../assets/demo/css-selectors-part2/demo_14.html?output"></iframe>
 </li>
 
 <li id="checked" data-name="E:checked"><p><code>E:checked</code> — выбранная радиокнопка или чекбокс</p>
@@ -228,7 +228,7 @@ INPUT:checked {
   outline-color: yellowgreen;
   }</code></pre>
 
-<iframe class="live-snippet" style="height: 170px" src="../assets/demo/css-selectors-part2/demo_15.html?output"></iframe>
+<iframe class="live-snippet" style="height: 200px" src="../assets/demo/css-selectors-part2/demo_15.html?output"></iframe>
 </li>
 
 <li id="not" data-name="E:not(s)"><p><code>E:not(s)</code> — элементы, которые не отвечают условию, заданному в скобках</p>

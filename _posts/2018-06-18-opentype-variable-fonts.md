@@ -256,12 +256,12 @@ font-variant-numeric: slashed-zero; /* = font-feature-settings: "zero" on; */</c
 
 <code>font-feature-settings</code> может использоваться для получения более или менее радикального варианта шрифта:
 
-<p data-height="288" data-theme-id="4974" data-slug-hash="oyoEzw" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="Slovic with variations & features" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/oyoEzw/">Slovic with variations & features</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="350" data-theme-id="4974" data-slug-hash="oyoEzw" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="Slovic with variations & features" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/oyoEzw/">Slovic with variations & features</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 Ещё интереснее распорядился фичами автор шрифта <a href="http://home.dootype.com/dt-jakob-variable-concept">dT Jakob Variable Concept</a>: он сделал не только вариативный шрифт, но и слоёный, и стиль для каждого из слоёв включается с помощью лигатур:
 
-<p data-height="324" data-theme-id="4974" data-slug-hash="dKZdRV" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="dKZdRV" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/dKZdRV/">dKZdRV</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="350" data-theme-id="4974" data-slug-hash="dKZdRV" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="dKZdRV" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/dKZdRV/">dKZdRV</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 Не уверена, что это правильное использование лигатур, но вариант, безусловно, интересный.

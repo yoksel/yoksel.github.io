@@ -49,7 +49,7 @@ links:
 
 При этом если теней несколько, изменение порядка заданных теней при анимации дает интересный эффект:
 
-<iframe class="live-snippet" style="height: 150px" src="../assets/demo/box-shadow/demo_3.html?output"></iframe>
+<iframe class="live-snippet" style="height: 200px" src="../assets/demo/box-shadow/demo_3.html?output"></iframe>
 
 С тенями можно сделать много интересного, от, собственно, теней, до разнообразных декоративных элементов.
 

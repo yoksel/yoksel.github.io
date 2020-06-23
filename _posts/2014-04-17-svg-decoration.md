@@ -30,7 +30,7 @@ published: true
 Какие стили оформления можно использовать для иконочных шрифтов?
 Можно задать цвет, добавить тени и анимацию:
 
-<p data-height="200" data-theme-id="4974" data-slug-hash="LnJEK" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/LnJEK/'>LnJEK</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="250" data-theme-id="4974" data-slug-hash="LnJEK" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/LnJEK/'>LnJEK</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Не так уж и много, по сравнению с возможностями, предоставляемыми SVG.
@@ -41,7 +41,7 @@ published: true
 
 Вот пример иконок с паттернами в качестве фона:
 
-<p data-height="480" data-theme-id="4974" data-slug-hash="mfdIE" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/mfdIE/'>SVG icons with patterns</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="mfdIE" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/mfdIE/'>SVG icons with patterns</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Пример немного диковат, но он хорошо показывает, что фоном может быть любая картинка. Паттерны заданы в коде страницы и подключены с помощью CSS.
@@ -74,7 +74,7 @@ published: true
 
 Также можно делать интересные эффекты на основе обводки:
 
-<p data-height="550" data-theme-id="4974" data-slug-hash="cmslA" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/cmslA/'>SVG Icons with outlines</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="600" data-theme-id="4974" data-slug-hash="cmslA" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/cmslA/'>SVG Icons with outlines</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Обводки могут быть пунктирными, для них можно использовать градиент или паттерн.
@@ -135,7 +135,7 @@ published: true
 
 Следующий пример демонстрирует иконки с SVG-фильтрами:
 
-<p data-height="470" data-theme-id="4974" data-slug-hash="kszeJ" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/kszeJ/'>SVG Icons with filters</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="kszeJ" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/kszeJ/'>SVG Icons with filters</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Размытие, тень, повторяющийся контур и внутренняя тень (её не очень хорошо видно).
@@ -148,7 +148,7 @@ published: true
 
 В примере ниже SVG-изображение разделено на несколько путей, что дает возможность обращаться к ним поотдельности. Здесь это используется чтобы задать элементам разные цвета и задержки анимации. При этом в дальнейшем фигура (в данном случае это группа путей) может быть использована целиком — таким образом можно получить не только монохромные иконки, но и разноцветные. Правда, при вставке такого объекта через <code>use</code> в нем перестанет работать анимация, но раскраска сохранится.
 
-<p data-height="311" data-theme-id="4974" data-slug-hash="DixKv" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/DixKv/'>Path, nth-child and stroke-dasharray</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="400" data-theme-id="4974" data-slug-hash="DixKv" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/DixKv/'>Path, nth-child and stroke-dasharray</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 В качестве заливки (или обводки) SVG-элементов удобно использовать <code>сurrentColor</code>. Это ключевое слово, обозначающее текущий цвет текста, и если задать его в качестве заливки (обводки) — элемент будет краситься вместе с окружающим текстом.
@@ -169,7 +169,7 @@ published: true
 
 Пример:
 
-<p data-height="450" data-theme-id="4974" data-slug-hash="xiLen" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/xiLen/'>SVG and currentColor</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="500" data-theme-id="4974" data-slug-hash="xiLen" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/xiLen/'>SVG and currentColor</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Интересно, что в SVG можно использовать далеко не все CSS-свойства, относительно полный список <a href="http://www.w3.org/TR/SVG11/styling.html#SVGStylingProperties">можно найти вот тут</a>.

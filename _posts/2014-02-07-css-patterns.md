@@ -42,7 +42,7 @@ desc: Возможности управления фонами через CSS в
 
 С помощью разноцветных полосок можно делать небольшие декоративные элементы:
 
-<p data-height="250" data-theme-id="0" data-slug-hash="zfcjm" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/zfcjm'>zfcjm</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="300" data-theme-id="0" data-slug-hash="zfcjm" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/zfcjm'>zfcjm</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Если нужен полосатый фон посложнее, имеет смысл обратить внимание на принцип цикады:
@@ -141,7 +141,7 @@ desc: Возможности управления фонами через CSS в
 
 В последней строчке задан градиент прямоугольной формы. Благодаря направлению и значениям остановок в процентах можно сколько угодно менять его размеры — изменится угол наклона линий, но сам паттерн от этого не пострадает:
 
-<p data-height="330" data-theme-id="0" data-slug-hash="qlCjz" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/qlCjz'>Diagonal stripes</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="350" data-theme-id="0" data-slug-hash="qlCjz" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/qlCjz'>Diagonal stripes</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 В некоторых случаях края линий становятся зубчатыми, причем их отрисовка зависит от браузера: Chrome справляется лучше, в Firefox видны ступеньки.

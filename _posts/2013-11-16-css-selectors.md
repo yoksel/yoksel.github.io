@@ -154,7 +154,7 @@ post_nav:
 <li id="before" data-name="E::before"><p><code>E::before</code> — генерируемый контент перед заданным элементом.</p></li>
 <li id="after" data-name="E::after"><p><code>E::after</code> — генерируемый контент после элемента.</p>
 
-<iframe class="live-snippet" style="height: 150px" src="../assets/demo/css-selectors/demo_7.html?output"></iframe>
+<iframe class="live-snippet" style="height: 200px" src="../assets/demo/css-selectors/demo_7.html?output"></iframe>
 </li>
 
 <li id="child" data-name="E > F"><p><code>E > F</code> — выбирает элемент, только если он является прямым потомком родителя (ни во что больше не вложен).</p>

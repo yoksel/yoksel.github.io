@@ -40,7 +40,7 @@ links:
 
 Пример:
 
-<p data-height="272" data-theme-id="4974" data-slug-hash="gftIl" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/gftIl/'>gftIl</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="350" data-theme-id="4974" data-slug-hash="gftIl" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/gftIl/'>gftIl</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 <i>Наведите курсор на картинку, чтобы увидеть исходное изображение.</i>
@@ -80,7 +80,7 @@ background-blend-mode: hard-light;
 
 Результат:
 
-<p data-height="560" data-theme-id="4974" data-slug-hash="kGAsK" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/kGAsK/'>kGAsK</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="620" data-theme-id="4974" data-slug-hash="kGAsK" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/kGAsK/'>kGAsK</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Вы можете поиграться с режимами здесь или посмотреть их списком на одной странице <a href="http://codepen.io/yoksel/full/Kirkd/">вот тут</a>.
@@ -93,14 +93,14 @@ background-blend-mode: hard-light, multiply, normal;
 
 Фоны могут содержать не только изображения, но и градиенты, что позволяет делать разные интересные эффекты:
 
-<p data-height="425" data-theme-id="4974" data-slug-hash="mJohl" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/mJohl/'>mJohl</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="mJohl" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/mJohl/'>mJohl</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Как можно использовать <code>background-blend-mode</code>?
 
 Предположим, есть сайт в определенной цветовой гамме, и в дизайне нужно разместить несколько картинок:
 
-<p data-height="300" data-theme-id="4974" data-slug-hash="AyLEs" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/AyLEs/'>background-blend-mode for usage in design</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="650" data-theme-id="4974" data-slug-hash="AyLEs" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/AyLEs/'>background-blend-mode for usage in design</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Так картинки не очень вписываются в цветовую схему. Раньше чтобы тонировать изображения под цвет сайта, потребовалось бы открыть графический редактор и проделать эту операцию с каждой картинкой, но сейчас это можно сделать одной строчкой:
@@ -109,7 +109,7 @@ background-blend-mode: hard-light, multiply, normal;
 
 Результат:
 
-<p data-height="600" data-theme-id="4974" data-slug-hash="yCHuJ" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/yCHuJ/'>background-blend-mode for usage in design</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="650" data-theme-id="4974" data-slug-hash="yCHuJ" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/yCHuJ/'>background-blend-mode for usage in design</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Способ имеет свои преимущества:
@@ -119,24 +119,24 @@ background-blend-mode: hard-light, multiply, normal;
 
 А если потом изменится цветовая схема сайта — не нужно будет заново перекрашивать картинки под новую схему — всё произойдет само собой:
 
-<p data-height="300" data-theme-id="4974" data-slug-hash="BuHLE" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/BuHLE/'>background-blend-mode for usage in design</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="650" data-theme-id="4974" data-slug-hash="BuHLE" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/BuHLE/'>background-blend-mode for usage in design</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Правда, мне не удалось сделать плавную смену режимов наложения. Насколько я понимаю, они не анимируются. Но это можно обойти используя псевдоэлементы: через <code>:before</code> создается дублирующий слой с той же картинкой, и ему по наведению меняется прозрачность — это можно сделать плавно (пример справа):
 
-<p data-height="330" data-theme-id="4974" data-slug-hash="FCLHx" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/FCLHx/'>FCLHx</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="400" data-theme-id="4974" data-slug-hash="FCLHx" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/FCLHx/'>FCLHx</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Ещё один способ покрасить картинку в дизайне — подложить полосатый градиент:
 
-<p data-height="350" data-theme-id="4974" data-slug-hash="ngjFd" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/ngjFd/'>background-blend-mode for usage in design</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="650" data-theme-id="4974" data-slug-hash="ngjFd" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/ngjFd/'>background-blend-mode for usage in design</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Приятный бонус <code>background-blend-mode</code> — плавная деградация: если браузер не поддерживает режимы наложения, посетитель увидит обычную картинку. Может быть, она будет не очень вписана в цветовую схему, но это лучше чем ничего.
 
 Интересно, что в некоторых режимах результат различается в зависимости от того, наложена ли картинка на цвет или цвет поверх картинки (слева картинка поверх цвета, справа наоборот):
 
-<p data-height="450" data-theme-id="4974" data-slug-hash="rLygi" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/rLygi/'>Is it matter color on top or image on top?</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="rLygi" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/rLygi/'>Is it matter color on top or image on top?</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Наложение цвета на картинку позволяет получить более интересные результаты, похожие на цветовые фильтры, но этот вариант хуже с точки зрения деградации, потому что если режимы не сработают, на странице отобразится верхний слой — то есть заливка цветом.

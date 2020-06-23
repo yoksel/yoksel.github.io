@@ -25,7 +25,7 @@ links:
 
 SVG можно вставить в CSS прямо как есть, но такой код не будет работать в IE. Однако если его <a href="http://yoksel.github.io/url-encoder/ru">заэскейпить</a>, код будет работать во всех браузерах включая IE9.
 
-<p data-height="320" data-theme-id="4974" data-slug-hash="ammZbr" data-default-tab="css,result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/ammZbr/">(encoded svg)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="4974" data-slug-hash="ammZbr" data-default-tab="css,result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/ammZbr/">(encoded svg)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 И вот теперь если этому <code>svg</code> внутри <code>background</code> задать какие-нибудь стили в атрибуте <code>style</code>, они будут работать! Можно использовать обычные стили для HTML-элементов, то есть рамки (в том числе <code>border-image</code>), тени, фоны (включая CSS-градиенты) и даже трансформации!
@@ -44,7 +44,7 @@ SVG можно вставить в CSS прямо как есть, но тако
 
 заэскейпить его и использовать как фон, при это все инлайновые стили сохранятся:
 
-<p data-height="350" data-theme-id="4974" data-slug-hash="BLQjoW" data-default-tab="css,result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/BLQjoW/">(encoded svg with inline styles)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="4974" data-slug-hash="BLQjoW" data-default-tab="css,result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/BLQjoW/">(encoded svg with inline styles)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Жёлтый кружочек — это <code>circle</code> внутри <code>svg</code>, всё остальное — инлайновые стили: градиент, тень и трансформации.
@@ -62,7 +62,7 @@ SVG можно вставить в CSS прямо как есть, но тако
 
 И всё равно всё будет работать:
 
-<p data-height="318" data-theme-id="4974" data-slug-hash="WGoKAv" data-default-tab="css,result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/WGoKAv/">(encoded svg with inline styles)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="4974" data-slug-hash="WGoKAv" data-default-tab="css,result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/WGoKAv/">(encoded svg with inline styles)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Интересно, что такие стили работают во всех современных браузерах, но у каждого свои представления о том, как это должно выглядеть в итоге:
@@ -114,7 +114,7 @@ SVG можно вставить в CSS прямо как есть, но тако
 Например, если делать паттерны с помощью градиентов, иногда хочется просто взять и повернуть плитку фона, например, на 45 градусов, чтобы получилась чешуя:
 
 <figure>
-    <p data-height="300" data-theme-id="4974" data-slug-hash="gwrKzJ" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/gwrKzJ/">[Chrome, Opera] SVG  + CSS gradient + Box Shadow</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+    <p data-height="350" data-theme-id="4974" data-slug-hash="gwrKzJ" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/gwrKzJ/">[Chrome, Opera] SVG  + CSS gradient + Box Shadow</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
     <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
     <figcaption>(Нормально отображается только в Chrome и Opera)</figcaption>
@@ -123,7 +123,7 @@ SVG можно вставить в CSS прямо как есть, но тако
 Ещё один вариант чешуи:
 
 <figure>
-    <p data-height="300" data-theme-id="4974" data-slug-hash="amkjXg" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/amkjXg/">SVG  + CSS gradient</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+    <p data-height="350" data-theme-id="4974" data-slug-hash="amkjXg" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/amkjXg/">SVG  + CSS gradient</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
     <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
     <figcaption>(Chrome, Opera)</figcaption>
@@ -159,7 +159,7 @@ SVG можно вставить в CSS прямо как есть, но тако
 Используя <code>border-image</code> c градиентами можно делать совсем уж замысловатые штуки:
 
 <figure>
-    <p data-height="300" data-theme-id="0" data-slug-hash="amkLvw" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/amkLvw/">Border-image inside background-image</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+    <p data-height="350" data-theme-id="0" data-slug-hash="amkLvw" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/amkLvw/">Border-image inside background-image</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
     <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
     <figcaption>(Chrome, Opera, Firefox, Safari)</figcaption>

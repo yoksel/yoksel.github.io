@@ -166,7 +166,7 @@ post_nav:
 
 Управлять шагом, где будет остановка, не получается, но можно останавливать анимацию по <code>:hover</code>:
 
-<iframe class="live-snippet" style="height: 150px" src="../assets/demo/css-animation/demo_8.html?output"></iframe>
+<iframe class="live-snippet" style="height: 200px" src="../assets/demo/css-animation/demo_8.html?output"></iframe>
 
 </section><section markdown="1" id="animation-delay" data-name="animation-delay"><h4>Animation-delay</h4>
 С помощью <code>animation-delay</code> можно задавать задержку анимации перед началом воспроизведения.

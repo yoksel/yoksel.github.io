@@ -74,7 +74,7 @@ links:
 
 Результат:
 
-<p data-height="320" data-theme-id="4974" data-slug-hash="WoNQpZ" data-default-tab="html,result" data-user="yoksel" data-embed-version="2" data-pen-title="WoNQpZ" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/WoNQpZ/">WoNQpZ</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="380" data-theme-id="4974" data-slug-hash="WoNQpZ" data-default-tab="html,result" data-user="yoksel" data-embed-version="2" data-pen-title="WoNQpZ" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/WoNQpZ/">WoNQpZ</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 <i>В основном примерах будут показываться паттерны в качестве заливки, но их так же можно использовать <a href="http://codepen.io/yoksel/pen/ZBeNLQ">в обводках</a>, тогда паттерн нужно задавать в свойстве <code>stroke</code>.</i>
@@ -83,7 +83,7 @@ links:
 
 Это самый простой вариант паттерна, он подойдёт если нужно, например, сделать просто заливку картинкой:
 
-<p data-height="320" data-theme-id="4974" data-slug-hash="ObJOLM" data-default-tab="html,result" data-user="yoksel" data-embed-version="2" data-pen-title="ObJOLM" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/ObJOLM/">ObJOLM</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="380" data-theme-id="4974" data-slug-hash="ObJOLM" data-default-tab="html,result" data-user="yoksel" data-embed-version="2" data-pen-title="ObJOLM" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/ObJOLM/">ObJOLM</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Для более сложных случаев нужно как следует разобраться с остальными свойствами паттерна.
@@ -99,7 +99,7 @@ links:
 
 По умолчанию <code>patternUnits</code> использует значение <code>objectBoundingBox</code>.
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="ORKNMy" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternUnits and pattern sizes" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/ORKNMy/">patternUnits and pattern sizes</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="ORKNMy" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternUnits and pattern sizes" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/ORKNMy/">patternUnits and pattern sizes</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 <h3 id="pattern-content-units">patternContentUnits</h3>
@@ -113,7 +113,7 @@ links:
 
 По умолчанию <code>patternContentUnits</code> использует значение <code>userSpaceOnUse</code>.
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="zoxYjy" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternContentUnits and pattern content" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/zoxYjy/">patternContentUnits and pattern content</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="zoxYjy" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternContentUnits and pattern content" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/zoxYjy/">patternContentUnits and pattern content</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 <h3 id="pattern-transform">patternTransform</h3>
@@ -132,7 +132,7 @@ links:
 
 Это должно работать, но не работает, как можно увидеть в демо ниже (потаскайте ползунок):
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="bBdMJK" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternTransform (and bug with transform-origin)" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/bBdMJK/">patternTransform (and bug with transform-origin)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="bBdMJK" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternTransform (and bug with transform-origin)" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/bBdMJK/">patternTransform (and bug with transform-origin)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 <a href="http://codepen.io/yoksel/full/mOJaOE">Эксперименты показали</a>, что координаты центра трансформации в этом случае, как и при <code>patternUnits="userSpaceOnUse"</code>, могут быть заданы в единицах текущей системы координат. Это будет работать, хотя и не должно.
@@ -143,24 +143,24 @@ links:
 
 Атрибуты позволяют задать положение плитки паттерна относительно верхнего левого угла:
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="NbxxZX" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternUnits and pattern coordinates (x & y)" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/NbxxZX/">patternUnits and pattern coordinates (x & y)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="NbxxZX" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternUnits and pattern coordinates (x & y)" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/NbxxZX/">patternUnits and pattern coordinates (x & y)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 <h3 id="width-height">width, height</h3>
 
 Атрибуты определяют размер плитки паттерна, причём без <code>viewBox</code> атрибуты не влияют на размеры содержимого, всё, что не поместилось, просто обрежется:
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="pNgEGV" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternUnits and pattern coordinates (width & height, no viewBox)" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/pNgEGV/">patternUnits and pattern coordinates (width & height, no viewBox)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="pNgEGV" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternUnits and pattern coordinates (width & height, no viewBox)" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/pNgEGV/">patternUnits and pattern coordinates (width & height, no viewBox)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Если <code>viewBox</code> задан, содержимое будет подгоняться под размер плитки паттерна, но с сохранением пропорций, заданных <code>viewBox</code>. Если пропорции плитки и содержимого не совпадут, вокруг содержимого останется пустое пространство:
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="ObMmRO" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternUnits and pattern coordinates (width & height, has viewBox)" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/ObMmRO/">patternUnits and pattern coordinates (width & height, has viewBox)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="ObMmRO" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternUnits and pattern coordinates (width & height, has viewBox)" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/ObMmRO/">patternUnits and pattern coordinates (width & height, has viewBox)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Если содержимое должно заполнять плитку целиком, пусть и с искажениями, нужно указать, что сохранять пропорции не требуется, для этого нужно добавить <code>preserveAspectRatio="none"</code>:
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="NbxopY" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternUnits and pattern coordinates (width & height, has viewBox + preserveAspectRatio='none')" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/NbxopY/">patternUnits and pattern coordinates (width & height, has viewBox + preserveAspectRatio="none")</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="NbxopY" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternUnits and pattern coordinates (width & height, has viewBox + preserveAspectRatio='none')" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/NbxopY/">patternUnits and pattern coordinates (width & height, has viewBox + preserveAspectRatio="none")</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Напомню, что по умолчанию ширина и высота паттерна равны нулю, поэтому размеры обязательно нужно указывать явным образом, иначе паттерн не отобразится.
@@ -185,7 +185,7 @@ links:
 
 Из паттерна по ссылке унаследуются все свойства и содержимое, которые не переопределены в текущем паттерне. В примере ниже правый паттерн наследует из левого содержимое и трансформацию:
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="BQKBgP" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternTransform and xlink:href" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/BQKBgP/">patternTransform and xlink:href</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="BQKBgP" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternTransform and xlink:href" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/BQKBgP/">patternTransform and xlink:href</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 <h3 id="snippets">Примеры кода</h3>
@@ -207,12 +207,12 @@ links:
 
 Результат:
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="yVVWoM" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternUnits and pattern coordinates (width & height, has viewBox)" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/yVVWoM/">patternUnits and pattern coordinates (width & height, has viewBox)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="yVVWoM" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternUnits and pattern coordinates (width & height, has viewBox)" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/yVVWoM/">patternUnits and pattern coordinates (width & height, has viewBox)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Изменяем размеры паттерна, он послушно масштабируется. При этом размеры фигуры на паттерн не влияют:
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="YpNvjB" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="width, height & viewBox + resize shape" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/YpNvjB/">width, height & viewBox + resize shape</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="YpNvjB" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="width, height & viewBox + resize shape" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/YpNvjB/">width, height & viewBox + resize shape</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Для своих экспериментов я обычно выбираю этот вариант, с ним удобнее работать.
@@ -231,7 +231,7 @@ links:
 
 Напомню, что при <code>patternContentUnits="objectBoundingBox"</code> размеры и координаты <i>внутри</i> паттерна можно задавать только в числах от 0.0 до 1.0, проценты работать не будут. Так как все размеры содержимого задаются относительно размеров фигуры, тянуться они так же будут вместе с ней, без сохранения пропорций. Это видно на демо:
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="wogXQK" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="width, height & viewBox + resize shape" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/wogXQK/">width, height & viewBox + resize shape</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="wogXQK" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="width, height & viewBox + resize shape" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/wogXQK/">width, height & viewBox + resize shape</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 <b>Вариант 2.</b> Он проще и удобнее, потому что содержимое паттерна сохраняет свою систему координат и единицы измерения. При этом способе <code>patternUnits</code> не задаётся, потому что используется значение по умолчанию: <code>objectBoundingBox</code>. Размеры плитки паттерна задаются в процентах или в значениях от 0.0 до 1.0, они будут зависеть от размеров фигуры. Чтобы содержимое паттерна ресайзилось вместе с ним, нужно добавить <code>viewBox</code>, а чтобы оно при этом заполняло всю плитку, хоть и с искажениием пропорций, — <code>preserveAspectRatio="none"</code>:
@@ -246,7 +246,7 @@ links:
 
 Результат:
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="KaoobK" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="width, height & viewBox + preserveAspectRatio" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/KaoobK/">width, height & viewBox + preserveAspectRatio</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="KaoobK" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="width, height & viewBox + preserveAspectRatio" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/KaoobK/">width, height & viewBox + preserveAspectRatio</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Таким образом можно с минимальными усилиями сделать резиновый паттерн.
@@ -265,7 +265,7 @@ links:
 
 Паттерн с текстовым содержимым:
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="WopeZb" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="WopeZb" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/WopeZb/">WopeZb</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="WopeZb" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="WopeZb" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/WopeZb/">WopeZb</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Как видите, с помощью паттернов можно залить текст текстом : )
