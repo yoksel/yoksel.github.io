@@ -1,0 +1,136 @@
+@import "../../scss/globals.scss";
+
+.post {
+  word-break: break-word;
+
+  SECTION H4 {
+    margin: 2rem 0 1rem;
+  }
+
+  IMG {
+    margin: 1rem 0;
+    border: 1px solid #DDD;
+  }
+
+  IFRAME {
+    width: 100%;
+    margin: .5rem 0;
+    border: 0;
+  }
+
+  TABLE {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .table--w-auto {
+    width: auto;
+  }
+
+  TH,
+  TD {
+    border-bottom: 1px solid #DDD;
+    padding: 7px;
+    text-align: left;
+  }
+
+  TH {
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  THEAD TH {
+    border-top: 1px solid #DDD;
+    background: #EEE;
+  }
+
+  .gatsby-highlight,
+  PRE[class*="language-"] {
+    max-width: 100%;
+    overflow: auto;
+    font-size: 14px;
+  }
+
+  FIGURE {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  FIGCAPTION {
+    font-style: italic;
+    color: #777;
+  }
+
+  .figure--text-on-right {
+    @media ( min-width: 600px ) {
+      display: flex;
+    }
+
+    margin-bottom: 2rem;
+
+    IMG {
+      margin-right: 2rem;
+      align-self: flex-start;
+    }
+  }
+
+  BLOCKQUOTE {
+    margin-left: 0;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-left: 5px solid #DDD;
+    font-style: italic;
+  }
+
+  OL,
+  UL {
+    padding: 0;
+    list-style: none;
+
+    LI {
+      margin-bottom: .75rem;
+    }
+  }
+
+  UL LI {
+    @include item-with-dash;
+  }
+
+  OL {
+    counter-reset: num-list;
+  }
+
+  OL LI::before {
+    content: counter(num-list) ". ";
+    counter-increment: num-list;
+  }
+
+  UL UL LI,
+  OL OL LI {
+    margin-top: .75rem;
+  }
+
+  HR {
+    height: 0;
+    margin: 1.5em 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #DDD;
+  }
+}
+
+.post__title {
+  font-size: 2.5rem;
+  margin-bottom: .4em;
+}
+
+.post__date {
+  display: block;
+  margin-bottom: 2rem;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #DDD;
+  font-size: .9em;
+}

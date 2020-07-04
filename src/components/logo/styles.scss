@@ -1,0 +1,156 @@
+
+@import "../../scss/globals";
+
+$logo-size-koeff: .2;
+
+$logo-circ-size-koeff: .1;
+$logo-circ-size-diff: $logo-size * $logo-circ-size-koeff;
+$logo-circ-decor-size: $logo-size + $logo-circ-size-diff*2;
+
+$step: 360 / 9;
+$koeff: 1.4;
+
+@function getColors( $transp: .3 ) {
+  $out: null;
+  $max: 9;
+
+  @for $i from 1 through $max {
+    $color: hsla($step*($i - 1), 100%, 50%, $transp);
+
+    @if ( $i == 1) {
+      $out: $color;
+    }
+
+    @else {
+      $out: append($out, $color, comma);
+    }
+  }
+
+  @return $out;
+}
+
+$colors: getColors();
+
+@mixin shadow ( $offset ) {
+  box-shadow:
+    -#{$offset} -#{$offset} 0 nth($colors, 1),
+    -#{$offset*$koeff} 0 0 nth($colors, 2),
+    -#{$offset} $offset 0 nth($colors, 3),
+    0 $offset*$koeff 0 nth($colors, 4),
+    $offset $offset 0 nth($colors, 5),
+    $offset*$koeff 0 0 nth($colors, 6),
+    $offset -#{$offset} 0 nth($colors, 7),
+    0 -#{$offset*$koeff} 0 nth($colors, 8);
+}
+
+.header-logo {
+  position: absolute;
+  width: $logo-size;
+  height: $logo-size;
+  margin: 0 auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 56px;
+  line-height: 1.2;
+  font-family: $logo-font-family;
+  text-shadow: 0 0 5px darken($logo-bgcolor, 20);
+  color: #FFF;
+
+  &__item--about {
+    font-size: .7em;
+  }
+
+  &__item--css {
+    font-size: 1.2em;
+  }
+}
+
+.header-logo__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: $logo-size;
+  height: $logo-size;
+  background: $logo-bgcolor;
+  border-radius: 50%;
+  box-shadow: 0 0 0 transparent inset,
+    0 0 0 10px white,
+    0 -3px 10px 9px $base-shadow-color;
+}
+
+.header-logo__content--link {
+  color: inherit;
+  text-decoration: none;
+
+  @include logo-transition;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: $logo-circ-decor-size;
+    height: $logo-circ-decor-size;
+    top: -$logo-circ-size-diff;
+    left: -$logo-circ-size-diff;
+    border-radius: 50%;
+    transition: inherit;
+  }
+
+  &:hover {
+    background: #444;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5) inset,
+      0 0 0 10px white,
+      0 -3px 10px 9px $base-shadow-color;
+    text-shadow: 0 2px 5px darken(#333, 40);
+    color: #DDD;
+  }
+
+  &:hover::after {
+    @include shadow($logo-circ-size-diff * .65);
+
+    animation: rotate 2s linear infinite;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.footer-logo {
+  margin-right: 2rem;
+  font-size: $base-font-size * 1.7;
+  font-family: $logo-font-family;
+}
+
+.footer-logo__content--link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #333;
+
+  @include logo-transition;
+
+  &::before {
+    content: attr(data-name);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: $logo-bgcolor;
+    transition: inherit;
+  }
+
+  &:hover {
+    text-shadow: 0 2px 2px #CCC;
+
+    &::before {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+HTML {
+  display: flex;
+  height: 100%;
+  font-size: 16px;
+}
+
+BODY {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font: 14px/1.4 Arial, sans-serif;
+  color: #222;
+}
+
+A {
+  color: inherit;
+}
+A:hover {
+  text-decoration: none;
+}
+
+.textarea,
+.iframe {
+  width: 100%;
+  flex-grow: 1;
+  box-sizing: border-box;
+  border: none;
+}
+
+.controls {
+  width: 100%;
+  flex-basis: 2.5em;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,.25);
+  background: #EEE;
+}
+
+.control {
+  position: relative;
+  min-height: 1.5rem;
+  margin-left: 10px;
+  padding: 0 1rem;
+  background: #EEE;
+  border: 2px solid rgba(0,0,0,.25);
+  border-radius: .5em;
+  outline: none;
+  font: inherit;
+  line-height: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: rgba(0,0,0,.6);
+}
+
+.control:focus::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 0 3px rgba(0,0,0,.2);
+  pointer-events: none;
+}
+
+.control--pressed {
+  background-color: yellowgreen;
+  background-origin: border-box;
+  background-image: linear-gradient(transparent, greenyellow);
+  color: rgba(0,0,0,.9);
+}
+
+.link {
+  margin-right: 10px;
+}
+
+.link--direct {
+  margin-left: auto;
+}
+
+@media (max-width: 400px) {
+  .link SPAN {
+    display: none;
+  }
+}
+
+.columns {
+  flex-grow: 1;
+  display: flex;
+}
+
+.column {
+  flex-basis: 33%;
+  flex-grow: 1;
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,.25);
+}
+
+.column--collapsed {
+  display: none;
+}
+
+.textarea {
+  padding: 10px;
+  font: inherit;
+  color: inherit;
+}
+
+.textarea:focus {
+  outline: 2px solid yellowgreen;
+}

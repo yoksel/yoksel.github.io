@@ -1,3 +1,0 @@
-<ul class="list widget__list">{% for link in include.list %}
-	<li class="item widget__item{% if link.status == 'dead' %} widget__item--dead{% endif %}"><a href="{{ link.url }}">{{ link.name }}</a>{% if link.desc %} <span class="widget__dash">&mdash;</span> <span class="widget__desc">{{ link.desc }}</span>{% endif%}</li>{% endfor %}
-</ul>

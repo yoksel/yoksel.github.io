@@ -1,0 +1,22 @@
+[
+  {
+    "url": "/about/",
+    "name": "О сайте"
+  },
+  {
+    "url": "/tags/",
+    "name": "Метки"
+  },
+  {
+    "url": "https://twitter.com/yoksel",
+    "name": "twitter.com/yoksel"
+  },
+  {
+    "url": "https://github.com/yoksel",
+    "name": "github.com/yoksel"
+  },
+  {
+    "url": "http://css.yoksel.ru/feed.xml",
+    "name": "RSS"
+  }
+]

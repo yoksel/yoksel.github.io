@@ -1,0 +1,15 @@
+.post-tags {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+
+  &__title,
+  &__item {
+    display: inline-block;
+    margin: 0;
+  }
+
+  &__title {
+    margin-right: .5rem;
+    font-weight: bold;
+  }
+}

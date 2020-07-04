@@ -1,0 +1,73 @@
+.gray-stripes-bg {
+  padding: 1rem;
+  background-color: #222;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .2) 50%, rgba(0, 0, 0, 0) 50%);
+  background-size: 2em 2em;
+  background-position: center center;
+  border: none
+}
+
+.bubbles-group {
+  display: inline-flex;
+  justify-content: space-between;
+  max-height: 200px;
+  padding: 1rem
+}
+
+.svg {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin-top: 1rem;
+  margin-bottom: 1rem
+}
+
+.bubbles-group .svg {
+  height: 100%;
+  margin: 0;
+  border: none
+}
+
+.bubbles-group.items-1 .svg {
+  width: 100%;
+  max-width: 200px
+}
+
+.bubbles-group.items-2 .svg {
+  width: 48%;
+  max-width: 200px
+}
+
+.bubbles-group.items-5 .svg {
+  width: 16%;
+  max-width: 200px
+}
+
+.svg--defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0
+}
+
+.layer-steps-list {
+  list-style: none;
+  padding: 0;
+  counter-reset: layer-steps
+}
+
+.layer-steps-list LI {
+  counter-increment: layer-steps
+}
+
+.layer-steps-list LI:not(:last-child) {
+  margin-bottom: 2rem
+}
+
+.layer-steps-list LI:before {
+  content: none !important
+}
+
+.layer-steps-list H5:before {
+  content: counter(layer-steps) ". "
+}

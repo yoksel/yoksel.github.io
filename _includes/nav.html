@@ -1,9 +1,0 @@
-<nav class="nav {{ include.place }}__nav" role="navigation">
-	{% for item in site.topmenu %}
-		{% if item.url == page.path %}
-			<span class="item item--current">{{ item.name }}</span>
-		{% else %}
-			<a href="{{ item.url }}" class="item">{{ item.name }}</a>	
-		{% endif%}
-	{% endfor%}
-</nav>

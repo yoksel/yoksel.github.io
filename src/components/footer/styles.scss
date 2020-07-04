@@ -1,0 +1,34 @@
+@import "../../scss/globals";
+
+.page-footer {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #DDD;
+
+  .page-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: .5rem 0;
+}
+
+.page-footer__nav-item {
+  white-space: nowrap;
+  margin-right: 1em;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:not([href]) {
+    font-weight: bold;
+    color: #000;
+  }
+}

@@ -1,0 +1,41 @@
+.posts-by-tags {
+  @media ( max-width: 1000px ) {
+    margin-bottom: 1rem;
+  }
+}
+
+.tags-list {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #EEE;
+  text-align: center;
+}
+
+.tags-list__item {
+  display: inline-block;
+  margin-right: .5em;
+  line-height: 2;
+}
+
+.tags-button {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px dashed;
+  font: inherit;
+  line-height: 1;
+  color: #333;
+  cursor: pointer;
+
+  &--current {
+    border: 0;
+    outline: 0;
+    box-shadow: 0 0 0 4px #333;
+    background: #333;
+    color: #FFF;
+  }
+}
+
+.posts__list---by-tag .post {
+  margin-bottom: .5rem;
+}

@@ -1,0 +1,160 @@
+:root {
+  --gap: 2.5rem;
+}
+
+HTML {
+  scroll-behavior: smooth;
+}
+
+BODY {
+  display: flex;
+  margin: 0;
+  padding: 32px;
+  padding-bottom: 0;
+  background: #EEE;
+  justify-content: center;
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: #000;
+
+  & > * {
+    flex-grow: 1;
+  }
+
+  @media ( max-width: 1000px ) {
+    padding: 32px 0 0;
+  }
+}
+
+H1,
+H2,
+H3,
+H4,
+H5 {
+  margin-bottom: .5em;
+  font-weight: normal;
+  font-family: Georgia, serif;
+  line-height: 1.2;
+}
+
+H1 {
+  font-size: 3rem;
+}
+
+H2 {
+  font-size: 2.5rem;
+}
+
+H3 {
+  font-size: 2rem;
+}
+
+H4 {
+  font-size: 1.6rem;
+}
+
+H5 {
+  font-size: 1.3rem;
+}
+
+H1:first-child,
+H2:first-child,
+H3:first-child,
+H4:first-child,
+H5:first-child {
+  margin-top: 0;
+}
+
+A {
+  color: steelblue;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+IMG {
+  max-width: 100%;
+}
+
+.img-about {
+  float: right;
+  max-width: 150px;
+  height: auto;
+  margin: 0 0 1rem 1rem;
+  border-radius: 10px;
+}
+
+/* Codes
+-------------------------------- */
+
+PRE,
+CODE {
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+:not(PRE) > CODE {
+  display: inline-block;
+  /* stylelint-disable declaration-no-important */
+  padding: 0 3px !important;
+  background: palegoldenrod !important;
+  text-shadow: 1px 1px white !important;
+  font-family: Consolas, Monaco, Lucida Console, monospace;
+  line-height: 1.6;
+  color: darkred !important;
+  /* stylelint-enable declaration-no-important */
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  A {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+PRE CODE {
+  display: block;
+  background: transparent;
+  color: inherit;
+}
+
+/* Tiny helpers
+-------------------------------- */
+
+.specifity {
+  background: #DDD;
+  color: #222;
+}
+
+.faded-text {
+  font-style: italic;
+  color: #AAA;
+}
+
+.hidden {
+  display: none;
+}
+
+.columns {
+  display: flex;
+
+  @media ( max-width: 700px ) {
+    .post & {
+      flex-direction: column;
+    }
+  }
+
+  .svg {
+    display: block;
+    margin: .5rem 0 1rem;
+  }
+}
+
+.column {
+  flex-grow: 1;
+
+  & + & {
+    margin-left: 1rem;
+  }
+}

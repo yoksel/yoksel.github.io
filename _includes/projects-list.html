@@ -1,3 +1,0 @@
-<ul class="projects">{% for link in site.data.projects %}
-    <li class="project"><img class="project__img" src="/assets/img/{{ link.img }}"><div class="project__content"><h6 class="project__title"><a class="project__link" href="{{ link.url }}">{{ link.name }}</a></h6>{% if link.desc %}<div class="project__desc">{{ link.desc }}</div>{% endif%}</div></li>{% endfor %}
-</ul>

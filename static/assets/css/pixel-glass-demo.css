@@ -1,0 +1,99 @@
+/*
+palegoldenrod
+rosybrown
+darkseagreen
+cadetblue
+ */
+HTML,
+.sticky-point {
+  background-color: palegoldenrod;
+  background-image:
+    linear-gradient(to right,rgba(238,232,170,.3) 40%,transparent 40%),linear-gradient(to right,rgba(188,143,143,.3) 50%,transparent 50%),linear-gradient(to right,rgba(143,188,143,.5) 10%,transparent 10%),linear-gradient(to right,rgba(95,158,160,.5) 20%,transparent 20%);
+  background-repeat: repeat;
+  background-position: 50% 0;
+  background-size:
+    9em 100%,
+    3em 100%,
+    13em 100%,
+    5em 100%;
+}
+
+.sticky-container {
+  position: absolute;
+}
+
+.sticky-container--filled {
+  position: static;
+}
+
+.sticky-container--filled:after {
+  content: 'Нажмите «On», чтобы увидеть как это работает.';
+  display: block;
+  min-height: 1rem;
+  overflow: hidden;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.sticky-point {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 3px 7px 3px hsla(0,0%,0%,.3);
+  border-radius: 10px;
+}
+
+.sticky-container--filled .sticky-point {
+  min-height: 65px;
+  margin-top: 1rem;
+}
+
+.sticky-container--collapse {
+  animation: collapse-container 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation-fill-mode: forwards;
+}
+
+.sticky-container--collapse .sticky-point {
+  animation: collapse-point 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation-fill-mode: forwards;
+}
+
+.sticky-container--collapse:after {
+  animation: collapse-text .75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation-fill-mode: forwards;
+}
+
+.sticky-point .controls-panel {
+  position: static;
+  margin: 1rem auto;
+  transform: none;
+}
+
+@keyframes collapse-container {
+  100% {
+    position: absolute;
+  }
+}
+@keyframes collapse-point {
+  50% {
+    min-height: 10px;
+  }
+  100% {
+    min-height: 0;
+    margin-top: 0;
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+}
+
+@keyframes collapse-text {
+  50% {
+    min-height: 10px;
+  }
+  100% {
+    min-height: 0;
+    margin-top: 0;
+    opacity: 0;
+    font-size: 0;
+  }
+}

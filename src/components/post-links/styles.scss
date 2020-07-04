@@ -1,0 +1,19 @@
+.post-links {
+  margin: 2rem 0;
+
+  &__title {
+    margin-bottom: .75rem;
+    font-weight: bold;
+  }
+
+  &__item {
+    margin-bottom: .75rem;
+    margin-left: 0;
+
+    &::before {
+      content: "\2014";
+      margin-right: .5rem;
+      color: #AAA;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&text=ПроCSS");
+
+$base-font-size: 16px;
+$base-line-height: 1.5;
+$base-shadow-color: rgba(100, 100, 100, .5);
+
+$logo-bgcolor: crimson;
+$logo-font-family: Lobster, Georgia, cursive;
+$logo-size: $base-font-size * 14;
+$half-logo-size: $logo-size / 2;
+
+@mixin logo-transition {
+  transition: all .5s;
+}
+
+@mixin item-with-dash {
+  margin-left: 25px;
+
+  &::before {
+    content: "\2014";
+    position: absolute;
+    margin-left: -20px;
+    color: #AAA;
+  }
+}
