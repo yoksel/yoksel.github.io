@@ -50,6 +50,8 @@ export default function Aside ({ path, isMain, articleType }) {
 
   return (
     <aside className="page-aside">
+      <h2 className="visually-hidden">Сайдбар</h2>
+
       {widgetsOrder}
 
       <Widget

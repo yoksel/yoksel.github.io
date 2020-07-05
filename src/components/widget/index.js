@@ -18,7 +18,7 @@ export default function Widget ({ title, items, path, listMod }) {
 
   return (
     <div className="widget">
-      <h4 className="widget__title">{title}</h4>
+      <h3 className="widget__title">{title}</h3>
 
       <ul className={listClassName}>
         {items.map(({
