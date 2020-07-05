@@ -8,28 +8,6 @@ tags: [svg]
 image: http://img-fotki.yandex.ru/get/9825/5091629.9d/0_7fd41_3b1bf3e6_L.png
 desc: В SVG заливка и обводка имеют много разных интересных опций, которые предоставляют возможности гораздо шире того, что есть в CSS. Например, можно нарисовать SVG-паттерн и использовать его не только в заливке, но и в обводке. Заливке и обводке можно указывать разную прозрачность, также можно управлять пунктирной обводкой, на чем можно построить интересные анимированные эффекты.
 
-post_nav:
-- url: '#fill'
-  name: 'fill'
-- url: '#fill-rule'
-  name: 'fill-rule'
-- url: '#fill-opacity'
-  name: 'fill-opacity'
-- url: '#stroke'
-  name: 'stroke'
-- url: '#stroke-width'
-  name: 'stroke-width'
-- url: '#stroke-linecap'
-  name: 'stroke-linecap'
-- url: '#stroke-linejoin'
-  name: 'stroke-linejoin'
-- url: '#stroke-dasharray'
-  name: 'stroke-dasharray'
-- url: '#stroke-dashoffset'
-  name: 'stroke-dashoffset'
-- url: '#stroke-opacity'
-  name: 'stroke-opacity'
-
 links:
 - url: http://www.w3.org/TR/SVG/
   name: w3.org/TR/SVG

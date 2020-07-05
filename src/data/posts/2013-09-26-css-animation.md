@@ -10,26 +10,6 @@ links:
   name: Свойства Animation одной таблицей
 - url: /3d-and-gradients/
   name: СSS-градиенты и 3D
-
-post_nav:
-- url: '#keyframes'
-  name: '@keyframes'
-- url: '#animation-name'
-  name: animation-name
-- url: '#animation-duration'
-  name: animation-duration
-- url: '#animation-timing-function'
-  name: animation-timing-function
-- url: '#animation-iteration-count'
-  name: animation-iteration-count
-- url: '#animation-direction'
-  name: animation-direction
-- url: '#animation-play-state'
-  name: animation-play-state
-- url: '#animation-delay'
-  name: animation-delay
-- url: '#animation-fill-mode'
-  name: animation-fill-mode
 ---
 <section markdown="1">Свойство <code>animation</code> позволяет анимировать элементы страницы.
 

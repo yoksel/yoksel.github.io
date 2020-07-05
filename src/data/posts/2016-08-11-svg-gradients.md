@@ -5,26 +5,6 @@ image: https://img-fotki.yandex.ru/get/60436/5091629.a4/0_90849_6897689d_orig
 desc: 'В SVG не работают привычные CSS-фоны, для заливок здесь есть свои конструкции. Для градиентов это элементы linearGradient и radialGradient — линейный и радиальный градиенты соответственно.'
 
 tags: [svg, gradients]
-
-post_nav:
-- url: '#stops'
-  name: 'Управление цветами'
-- url: '#linear'
-  name: 'Линейный градиент'
-- url: '#radial'
-  name: 'Радиальный градиент'
-- url: '#gradientUnits'
-  name: 'gradientUnits'
-- url: '#gradientTransform'
-  name: 'gradientTransform'
-- url: '#spreadMethod'
-  name: 'spreadMethod'
-- url: '#xlink:href'
-  name: 'xlink:href'
-- url: '#pitfalls'
-  name: 'Подводные камни'
-- url: '#demos'
-  name: 'Примеры использования'
 ---
 
 В SVG не работают привычные CSS-фоны, для заливок здесь есть свои конструкции: для градиентов это элементы <code>linearGradient</code> и <code>radialGradient</code> — линейный и радиальный градиенты соответственно.<!--more-->
