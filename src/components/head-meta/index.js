@@ -11,7 +11,10 @@ export default function HeadMeta (props) {
   const desc = pageData.desc || siteData.description;
 
   return (
-    <Helmet>
+    <Helmet
+      htmlAttributes={{
+        lang: 'ru'
+      }}>
       <meta charSet="utf-8" />
       <title>{`${pageData.title} • ${siteData.title}`}</title>
       <link rel="canonical" href={siteData.siteUrl} />
