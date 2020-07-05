@@ -4,7 +4,7 @@ title: SVG-фигуры и трансформации
 tags: [svg]
 
 image: http://img-fotki.yandex.ru/get/9489/5091629.9d/0_7fc09_5cfb837c_M.png
-desc: Писать SVG довольно просто. Используются фигуры&#58; rect, polygon, circle, ellipse, а также line, polyline и path.
+desc: 'Писать SVG довольно просто. Используются фигуры: rect, polygon, circle, ellipse, а также line, polyline и path.'
 
 customContent: '../assets/img/svg/css-svg-masks.svg'
 

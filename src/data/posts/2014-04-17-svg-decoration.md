@@ -13,7 +13,7 @@ links:
 - url: "http://www.w3.org/TR/SVG11/filters.html"
   name: Filter Effects
 - url: "/svg-fill-and-stroke"
-  name: "SVG&#58; заливка и обводка"
+  name: "SVG: заливка и обводка"
 - url: "/svg-icons"
   name: "SVG-иконки"
 ---
