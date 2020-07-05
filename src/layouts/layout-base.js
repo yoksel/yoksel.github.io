@@ -27,7 +27,8 @@ export default function LayoutBase (props) {
         site {
           siteMetadata {
             title
-            url
+            siteUrl
+            description
           }
         }
       }

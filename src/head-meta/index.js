@@ -8,12 +8,14 @@ export default function HeadMeta (props) {
     pageData
   } = props;
 
+  const desc = pageData.desc || siteData.description;
+
   return (
     <Helmet>
       <meta charSet="utf-8" />
       <title>{`${pageData.title} • ${siteData.title}`}</title>
-      <link rel="canonical" href={siteData.url} />
-      {pageData.desc && <meta name="description" content={pageData.desc} />}
+      <link rel="canonical" href={siteData.siteUrl} />
+      <meta name="description" content={desc} />
       <meta name='yandex-verification' content='50720d52dcb3b0b9' />
 
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -28,12 +30,13 @@ export default function HeadMeta (props) {
       <meta property="og:site_name" content={siteData.title} />
       <meta property="og:title" content={pageData.title} />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={`${siteData.url}${pageData.slug}`} />
+      <meta property="og:url" content={`${siteData.siteUrl}/${pageData.slug}`} />
       {pageData.image && <meta property="og:image" content={pageData.image} />}
-      {pageData.desc && <meta property="og:description" content={pageData.desc} />}
+      <meta property="og:description" content={desc} />
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content="@yoksel" />
+      {pageData.image && <meta name="twitter:image" content={pageData.image} />}
 
       {pageData.customStyles}
       {pageData.customScripts}

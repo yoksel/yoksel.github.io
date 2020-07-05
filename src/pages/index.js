@@ -7,7 +7,6 @@ import PostsList from '../components/posts-list';
 export default function Home ({ data }) {
   const metaData = {
     title: 'Главная страница',
-    desc: 'Статьи про CSS и SVG',
     slug: ''
   };
 

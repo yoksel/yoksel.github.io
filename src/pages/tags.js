@@ -9,10 +9,14 @@ export default class Tags extends React.Component {
     super(props);
 
     this._props = props;
-    const urlHash = document.location.hash
+    this.state = { currentTag: null };
+  }
+
+  componentDidMount () {
+    const currentTag = document && document.location.hash
       ? document.location.hash.substring(1)
       : '';
-    this.state = { currentTag: urlHash || null };
+    this.setState({ currentTag });
   }
 
   render () {
@@ -80,8 +84,8 @@ export default class Tags extends React.Component {
 export const query = graphql`
   query MyTagsQuery {
     allMarkdownRemark(
-      sort: { fields: fields___date, order: DESC }
-      filter: { fields: { type: { eq: "post" } } }
+      sort: {order: DESC, fields: fields___date},
+      filter: {fields: {type: {eq: "post"}}}
     ) {
       group(field: frontmatter___tags) {
         tag: fieldValue
