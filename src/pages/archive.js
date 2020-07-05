@@ -5,8 +5,19 @@ import { graphql } from 'gatsby';
 import PostsList from '../components/posts-list';
 
 export default function Archive ({ data, path }) {
+  const title = 'Архив';
+
+  const metaData = {
+    title,
+    slug: 'archive'
+  };
+
   return (
-    <LayoutBase title="Архив" path={path}>
+    <LayoutBase
+      title={title}
+      path={path}
+      metaData={metaData}
+    >
       <div className="posts">
         <PostsList items={data.allMarkdownRemark.edges} type="cards" />
       </div>

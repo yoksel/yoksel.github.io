@@ -3,10 +3,20 @@ import LayoutBase from '../layouts/layout-base';
 import { Link } from 'gatsby';
 
 export default function Page404 () {
+  const title = 'Страница не найдена';
+
+  const metaData = {
+    title,
+    slug: '404'
+  };
   return (
-    <LayoutBase title="404" isSingle={true}>
+    <LayoutBase
+      title={title}
+      isSingle={true}
+      metaData={metaData}
+    >
       <p>
-        Ничего не найдено, попробуйте вернуться на <Link to="/">главную</Link>
+        Попробуйте вернуться на <Link to="/">главную</Link>
       </p>
     </LayoutBase>
   );
