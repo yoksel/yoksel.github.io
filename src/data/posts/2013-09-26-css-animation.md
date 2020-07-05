@@ -56,7 +56,7 @@ links:
 <code>infinite</code> — бесконечное повторение
 <code>linear</code> — тип движения
 
-</section><section id="keyframes" data-name="@keyframes"><h4>@keyframes</h4>
+</section><section id="keyframes" data-name="@keyframes"><h2>@keyframes</h2>
 Сама анимация задается внутри блока <code>@keyframes</code>.
 После <code>@keyframes</code> задается имя анимации, а потом внутри фигурных скобок — её шаги.
 
@@ -65,7 +65,7 @@ links:
 
 <iframe class="live-snippet" style="height: 240px" src="../assets/demo/css-animation/demo_2.html?output"></iframe>
 
-</section><section id="animation-name" data-name="animation-name"><h4>Animation-name</h4>
+</section><section id="animation-name" data-name="animation-name"><h2>Animation-name</h2>
 Используется для задания имени анимации.
 
 Возможные значения: одно или несколько имен анимации.
@@ -74,14 +74,14 @@ links:
 <code>animation-name: move;</code> — одна анимация.
 <code>animation-name: move, sun-color;</code> — две анимации, имена задаются через запятую.
 
-</section><section id="animation-duration" data-name="animation-duration"><h4>Animation-duration</h4>
+</section><section id="animation-duration" data-name="animation-duration"><h2>Animation-duration</h2>
 Длительностью анимации управляет свойство <code>animation-duration</code>.
 
 Возможные значения: время в секундах (s) или миллисекундах (ms).
 В случае нескольких анимаций время для каждой из них можно задать через запятую.
 Исходное значение — 0s.
 
-</section><section id="animation-timing-function" data-name="animation-timing-function"><h4>Animation-timing-function</h4>
+</section><section id="animation-timing-function" data-name="animation-timing-function"><h2>Animation-timing-function</h2>
 Свойство определяет тип анимации.
 
 Возможные значения:
@@ -115,7 +115,7 @@ links:
 
 <iframe class="live-snippet" style="height: 300px" src="../assets/demo/css-animation/demo_6.html?output"></iframe>
 
-</section><section id="animation-iteration-count" data-name="animation-iteration-count"><h4>Animation-iteration-count</h4>
+</section><section id="animation-iteration-count" data-name="animation-iteration-count"><h2>Animation-iteration-count</h2>
 Управляет повторением анимации.
 Значение по умолчанию: 1 (анимация проигрывается один раз).
 
@@ -124,7 +124,7 @@ links:
 число — сколько раз проиграть анимацию.
 <code>infinite</code> — бесконечное повторение.
 
-</section><section id="animation-direction" data-name="animation-direction"><h4>Animation-direction</h4>
+</section><section id="animation-direction" data-name="animation-direction"><h2>Animation-direction</h2>
 Отвечает за направление анимации.
 
 Возможные значения:
@@ -137,7 +137,7 @@ links:
 
 <iframe class="live-snippet" style="height: 420px" src="../assets/demo/css-animation/demo_7.html?output"></iframe>
 
-</section><section id="animation-play-state" data-name="animation-play-state"><h4>Animation-play-state</h4>
+</section><section id="animation-play-state" data-name="animation-play-state"><h2>Animation-play-state</h2>
 Управляет остановкой и проигрыванием анимации.
 
 Возможные значения:
@@ -148,7 +148,7 @@ links:
 
 <iframe class="live-snippet" style="height: 200px" src="../assets/demo/css-animation/demo_8.html?output"></iframe>
 
-</section><section id="animation-delay" data-name="animation-delay"><h4>Animation-delay</h4>
+</section><section id="animation-delay" data-name="animation-delay"><h2>Animation-delay</h2>
 С помощью <code>animation-delay</code> можно задавать задержку анимации перед началом воспроизведения.
 
 Возможные значения: время в секундах (s) или миллисекундах (ms).
@@ -159,7 +159,7 @@ links:
 <iframe class="live-snippet" style="height: 330px" src="../assets/demo/css-animation/demo_9.html?output"></iframe>
 
 </section>
-<section id="animation-fill-mode" data-name="animation-fill-mode"><h4>Animation-fill-mode</h4>
+<section id="animation-fill-mode" data-name="animation-fill-mode"><h2>Animation-fill-mode</h2>
 Свойство определяет будет ли анимация воздействовать на элемент вне времени воспроизведения анимации.
 
 Возможные значения:

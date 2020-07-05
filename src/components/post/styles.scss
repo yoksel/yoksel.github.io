@@ -3,7 +3,23 @@
 .post {
   word-break: break-word;
 
-  SECTION H4 {
+  H2 {
+    font-size: 2.1rem;
+  }
+
+  H3 {
+    font-size: 1.75rem;
+  }
+
+  H4 {
+    font-size: 1.4rem;
+  }
+
+  H5 {
+    font-size: 1.15rem;
+  }
+
+  SECTION H2 {
     margin: 2rem 0 1rem;
   }
 
@@ -146,11 +162,12 @@
   margin: 1rem 0;
   padding: 1em;
   border-radius: 10px;
-  background:  lightgoldenrodyellow;
+  background: lightgoldenrodyellow;
 
   P:last-child {
     margin-bottom: 0;
   }
+
   P:first-child {
     margin-top: 0;
   }

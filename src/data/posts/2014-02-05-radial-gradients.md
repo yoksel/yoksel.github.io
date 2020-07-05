@@ -23,7 +23,7 @@ links:
 
 Спецификация: <a href="http://www.w3.org/TR/css3-images/#radial-gradients">w3.org/TR/css3-images/#radial-gradients</a>.<!--more-->
 
-<h4 id="radial-gradient">radial-gradient</h4>
+<h2 id="radial-gradient">radial-gradient</h2>
 
 Для самого простого градиента достаточно задать только цвета:
 
@@ -37,7 +37,7 @@ background: radial-gradient(gold, orangered);
 
 Помимо цветов градиенту можно задавать форму, положение и размер. Параметры сочетаются и ведут себя сложнее, чем в линейных градиентах.
 
-<h4 id="shape">Форма градиента</h4>
+<h2 id="shape">Форма градиента</h2>
 
 Форма (конечная фигура градиента) может быть кругом и эллипсом. По умолчанию — эллипс, градиент стремится занять всё свободное пространство элемента, вытягиваясь, если это необходимо.
 
@@ -48,7 +48,7 @@ background: radial-gradient(gold, orangered);
 Если форма не задана, но задан размер — одно значение задает радиус круга, если значений два — градиент получает форму эллипса.
 При наличии размеров явное задание формы градиента игнорируется.
 
-<h4 id="center">Центр градиента</h4>
+<h2 id="center">Центр градиента</h2>
 
 Для задания центра градиента используются те же ключевые слова, что и для линейного градиента, но с приставкой <code>at</code>: <code>at top</code>, <code>at right</code>, <code>at bottom</code>, <code>at left</code> и <code>at center</code> — значение по умолчанию.
 
@@ -66,7 +66,7 @@ background: radial-gradient(at top left, purple, crimson, orangered, gold);
 
 Также можно задавать точное положение градиента, например <code>at 20% 50%</code> или <code>at 10px 150px</code>.
 
-<h4 id="size">Размер градиента</h4>
+<h2 id="size">Размер градиента</h2>
 
 Можно задать размеры конечной фигуры градиента. Для эллиптических градиентов значения можно указывать в процентах, для круглых — нет.
 
@@ -92,7 +92,7 @@ background: radial-gradient(at top left, purple, crimson, orangered, gold);
 
 <iframe class="live-snippet" style="height: 700px" src="../assets/demo/radial-gradients/demo_5.html?output"></iframe>
 
-<h4 id="repeating-radial-gradient">repeating-radial-gradient</h4>
+<h2 id="repeating-radial-gradient">repeating-radial-gradient</h2>
 
 Радиальный градиент также может быть повторяющимся. Примерный код:
 

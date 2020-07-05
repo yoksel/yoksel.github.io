@@ -80,7 +80,7 @@ border-image: url("http://img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786
 
 Рассмотрим отдельные свойства <code>border-image</code>.
 
-<section id="border-image-source" data-name="border-image-source"><h4>Border-image-source</h4>
+<section id="border-image-source" data-name="border-image-source"><h2>Border-image-source</h2>
 
 Возможные значения:  <code>none</code> или <code>&lt;image></code>.
 
@@ -105,7 +105,7 @@ border-image: url("http://img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786
 
 <iframe class="live-snippet" style="height: 400px" src="../assets/demo/border-image/demo_6.html?output"></iframe>
 
-</section><section id="border-image-slice" data-name="border-image-slice"><h4>Border-image-slice</h4>
+</section><section id="border-image-slice" data-name="border-image-slice"><h2>Border-image-slice</h2>
 
 Важное свойство, которое определяет размер куска изображения, которое заполнит углы рамки.
 Остальные части будут использованы для заполнения пространства между углами по алгоритму, заданному в <code>border-image-repeat</code>.
@@ -130,7 +130,7 @@ border-image-slice: 100;
 
 <iframe class="live-snippet" style="height: 450px" src="../assets/demo/border-image/demo_7.html?output"></iframe>
 
-</section><section id="border-image-repeat" data-name="border-image-repeat"><h4>Border-image-repeat</h4>
+</section><section id="border-image-repeat" data-name="border-image-repeat"><h2>Border-image-repeat</h2>
 
 Свойство определяет как будут заполняться промежутки между углами.
 
@@ -156,7 +156,7 @@ border-image-repeat: repeat;
 
 <iframe class="live-snippet" style="height: 470px" src="../assets/demo/border-image/demo_8_1.html?output"></iframe>
 
-</section><section id="border-image-width" data-name="border-image-width"><h4>Border-image-width</h4>
+</section><section id="border-image-width" data-name="border-image-width"><h2>Border-image-width</h2>
 
 <code>border-image-width</code>
 
@@ -182,7 +182,7 @@ border-image-width: 160px;
 
 <iframe class="live-snippet" style="height: 370px" src="../assets/demo/border-image/demo_9.html?output"></iframe>
 
-</section><section id="border-image-outset" data-name="border-image-outset"><h4>Border-image-outset</h4>
+</section><section id="border-image-outset" data-name="border-image-outset"><h2>Border-image-outset</h2>
 
 Интересное свойство, позволяющие отодвинуть рамку за пределы элемента. Отрицательные значения не поддерживаются.
 

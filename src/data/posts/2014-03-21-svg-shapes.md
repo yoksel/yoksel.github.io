@@ -42,7 +42,7 @@ links:
 
 Ниже можно увидеть примеры простых SVG-фигур и трансформации, которые к ним можно применить.
 
-<h4 id="rect">Rect</h4>
+<h2 id="rect">Rect</h2>
 
 <svg class="svg" width="230" height="140"><rect x="5" y="5" width="220" height="130" fill="skyblue" stroke="steelblue" stroke-width="5" /></svg>
 
@@ -81,7 +81,7 @@ links:
 </svg>
 ```
 
-<h4 id="polygon">Polygon</h4>
+<h2 id="polygon">Polygon</h2>
 
 <svg class="svg" width="230" height="140"><polygon points="5,135 115,5 225,135" fill="violet" stroke="purple" stroke-width="5" /></svg>
 
@@ -108,7 +108,7 @@ links:
 
 <code>polygon</code> замыкается сам по себе, последнюю точку можно не указывать.
 
-<h4 id="circle">Circle</h4>
+<h2 id="circle">Circle</h2>
 
 <svg class="svg" width="140" height="140"><circle r="65" cx="70" cy="70" fill="orangered" stroke="crimson" stroke-width="5" /></svg>
 
@@ -154,7 +154,7 @@ links:
 
 Также можно рисовать простыми линиями.
 
-<h4 id="line">Line</h4>
+<h2 id="line">Line</h2>
 
 <svg class="svg" width="230" height="140"><line x1="220" y1="10" x2="10" y2="130" stroke="violet" stroke-width="5" /></svg>
 
@@ -169,7 +169,7 @@ links:
 
 <code>x1</code>, <code>y1</code>, <code>x2</code>, <code>y2</code> — координаты начала и конца линии.
 
-<h4>Polyline</h4>
+<h2>Polyline</h2>
 
 <svg class="svg" width="260" height="140"><polyline points="5,135 30,5 55,135 80,5, 105,135 130,5, 155,135 180,5, 205,135 230,5, 255,135" stroke="orangered" fill="none" stroke-width="5" /></svg>
 
@@ -186,7 +186,7 @@ links:
 
 Для более сложных линий и фигур существует тег <code>path</code>, но эту тему стоит рассмотреть отдельно.
 
-<h4 id="transform">Transform</h4>
+<h2 id="transform">Transform</h2>
 
 SVG-фигуры можно видоизменять с помощью свойства <code>transform</code>.
 
@@ -206,7 +206,7 @@ SVG-фигуры можно видоизменять с помощью свой�
 
 Можно задавать несколько трансформаций через запятую или через пробел.
 
-<h5>translate(tx [ty])</h5>
+<h3>translate(tx [ty])</h3>
 
 Если второй параметр не задан, он равен 0.
 
@@ -224,7 +224,7 @@ SVG-фигуры можно видоизменять с помощью свой�
 </div>
 
 
-<h5>scale(<i>sx [sy]</i>)</h5>
+<h3>scale(<i>sx [sy]</i>)</h3>
 
 Если второй параметр не задан, он равен первому.
 
@@ -241,7 +241,7 @@ SVG-фигуры можно видоизменять с помощью свой�
 </div>
 </div>
 
-<h5>rotate(rotate-angle [cx cy])</h5>
+<h3>rotate(rotate-angle [cx cy])</h3>
 
 Если координаты центра поворота не заданы, они равны <code>0 0</code> — это левый верхний угол SVG-изображения.
 
@@ -258,7 +258,7 @@ SVG-фигуры можно видоизменять с помощью свой�
 </div>
 </div>
 
-<h5>skewX(<i>skew-angle</i>), skewY(<i>skew-angle</i>)</h5>
+<h3>skewX(<i>skew-angle</i>), skewY(<i>skew-angle</i>)</h3>
 
 <div class="columns">
 <div class="column column-left">
@@ -274,7 +274,7 @@ SVG-фигуры можно видоизменять с помощью свой�
 </div>
 </div>
 
-<h5>matrix(a b c d e f)</h5>
+<h3>matrix(a b c d e f)</h3>
 
 <div class="columns">
 <div class="column column-left">

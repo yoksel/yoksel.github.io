@@ -73,7 +73,7 @@ polygon {
 
 Для более сложных случаев нужно как следует разобраться с остальными свойствами паттерна.
 
-<h3 id="pattern-units">patternUnits</h3>
+<h2 id="pattern-units">patternUnits</h2>
 
 Этот атрибут задаёт систему координат для внешних размеров паттерна, то есть влияет на атрибуты <code>x</code>, <code>y</code>, <code>width</code> и <code>height</code>.
 
@@ -88,7 +88,7 @@ polygon {
 <p data-height="550" data-theme-id="4974" data-slug-hash="ORKNMy" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternUnits and pattern sizes" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/ORKNMy/">patternUnits and pattern sizes</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-<h3 id="pattern-content-units">patternContentUnits</h3>
+<h2 id="pattern-content-units">patternContentUnits</h2>
 
 <code>patternContentUnits</code> определяет систему координат для содержимого паттерна. <strong>Важно:</strong> если паттерну задан <code>viewBox</code>, этот атрибут работать не будет.
 
@@ -103,7 +103,7 @@ polygon {
 <p data-height="550" data-theme-id="4974" data-slug-hash="zoxYjy" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternContentUnits and pattern content" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/zoxYjy/">patternContentUnits and pattern content</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-<h3 id="pattern-transform">patternTransform</h3>
+<h2 id="pattern-transform">patternTransform</h2>
 
 Атрибут позволяет добавить трансформацию паттерну.
 
@@ -130,14 +130,14 @@ patternTransform="rotate(45, .5, .5)"
 
 Учитывая такое странное поведение, я бы рекомендовала не  использовать <code>patternTransform</code> вместе с  <code>patternUnits="objectBoundingBox"</code>.
 
-<h3 id="x-y">x, y</h3>
+<h2 id="x-y">x, y</h2>
 
 Атрибуты позволяют задать положение плитки паттерна относительно верхнего левого угла:
 
 <p data-height="550" data-theme-id="4974" data-slug-hash="NbxxZX" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternUnits and pattern coordinates (x & y)" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/NbxxZX/">patternUnits and pattern coordinates (x & y)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-<h3 id="width-height">width, height</h3>
+<h2 id="width-height">width, height</h2>
 
 Атрибуты определяют размер плитки паттерна, причём без <code>viewBox</code> атрибуты не влияют на размеры содержимого, всё, что не поместилось, просто обрежется:
 
@@ -156,7 +156,7 @@ patternTransform="rotate(45, .5, .5)"
 
 Напомню, что по умолчанию ширина и высота паттерна равны нулю, поэтому размеры обязательно нужно указывать явным образом, иначе паттерн не отобразится.
 
-<h3>viewBox, preserveAspectRatio</h3>
+<h2>viewBox, preserveAspectRatio</h2>
 
 Если вы с ними не знакомы, в этом разделе будет немного вводной информации.
 
@@ -170,7 +170,7 @@ patternTransform="rotate(45, .5, .5)"
 
 При наличии <code>viewBox</code> при ресайзе элемент стремится поместиться в заданную область целиком с сохранением пропорций. Если сохранять пропорции не нужно, задаётся атрибут <code>preserveAspectRatio</code> со значением <code>none</code>.
 
-<h3 id="xlink-href">xlink:href</h3>
+<h2 id="xlink-href">xlink:href</h2>
 
 Как и некоторые другие SVG-элементы, паттерны могут наследовать свойства друг друга. Ссылка на паттерн, содержимое и свойства которого нужно унаследовать, задаётся в атрибуте <code>xlink:href</code>.
 
@@ -179,7 +179,7 @@ patternTransform="rotate(45, .5, .5)"
 <p data-height="550" data-theme-id="4974" data-slug-hash="BQKBgP" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="patternTransform and xlink:href" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/BQKBgP/">patternTransform and xlink:href</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-<h3 id="snippets">Примеры кода</h3>
+<h2 id="snippets">Примеры кода</h2>
 
 Весь этот набор атрибутов не только позволяет гибко управлять паттерном, но и немного взрывает мозг при попытке их использовать.
 
@@ -248,7 +248,7 @@ patternTransform="rotate(45, .5, .5)"
 
 Таким образом можно с минимальными усилиями сделать резиновый паттерн.
 
-<h3 id="examples">Примеры паттернов</h3>
+<h2 id="examples">Примеры паттернов</h2>
 
 Паттерн с растровой картинкой:
 
@@ -269,7 +269,7 @@ patternTransform="rotate(45, .5, .5)"
 
 Все мои демо с паттернами собраны в <a href="http://codepen.io/collection/AyaLRg/">этой коллекции</a>.
 
-<h3 id="animation">Анимация</h3>
+<h2 id="animation">Анимация</h2>
 
 Содержимое паттернов можно анимировать с помощью CSS и Js. Анимации, сделанные с помощью Javascript, будут работать везде (<a href="http://codepen.io/yoksel/pen/qdbPwd">демо</a>), у CSS-анимаций могут быть проблемы с поддержкой браузерами.
 
@@ -278,7 +278,7 @@ CSS-анимация заливки и обводки работает почт�
 
 Примеры можно посмотреть в той же <a href="http://codepen.io/collection/AyaLRg/">коллекции</a>, многие демки содержат анимации.
 
-<h3 id="usage">Варианты использования</h3>
+<h2 id="usage">Варианты использования</h2>
 
 В паттерны можно завернуть практически всё что угодно. Их можно использовать не только для потворяющегося фона из обычных картинок, но и для более интересных и сложных штук. Внутри паттернов можно использовать конструкции из градиентов и символов, анимации могут находиться не только внутри паттерна, но и в используемых в нём компонентах, например, в градиентной заливке. Паттерны могут применяться к любым элементам внутри SVG, включая текст:
 

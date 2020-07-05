@@ -32,7 +32,7 @@ Cпецификация: <a href="http://www.w3.org/TR/css-snappoints-1/">Scroll
 
 Обычно проблема решается с помощью Js, но теперь есть решение на CSS.
 
-<div class="warning--before-read"><b>Внимание:</b> на момент написания статьи все следующие демо работают только в <b>Firefox 39+</b>.</div>
+<div class="post__warning"><b>Внимание:</b> на момент написания статьи все следующие демо работают только в <b>Firefox 39+</b>.</div>
 
 Посмотрите на это демо в последнем Firefox:
 
@@ -86,7 +86,7 @@ CSS:
 Посмотрим на свойства, которые позволяют это сделать:
 
 
-<section id="scroll-snap-type" data-name="scroll-snap-type"><h4>scroll-snap-type</h4>
+<section id="scroll-snap-type" data-name="scroll-snap-type"><h2>scroll-snap-type</h2>
 
 Определяет насколько точно проматываемый контент должен выравниваться относительно родительского элемента.
 Задаётся контейнеру с прокруткой.
@@ -102,7 +102,7 @@ CSS:
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </section>
 
-<section id="scroll-snap-points-x" data-name="scroll-snap-points-x"><h4>scroll-snap-points-x, scroll-snap-points-y</h4>
+<section id="scroll-snap-points-x" data-name="scroll-snap-points-x"><h2>scroll-snap-points-x, scroll-snap-points-y</h2>
 
 Определяет шаг скролла, задаётся контейнеру с прокруткой.
 
@@ -118,7 +118,7 @@ CSS:
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </section>
 
-<section id="scroll-snap-destination" data-name="scroll-snap-destination"><h4>scroll-snap-destination</h4>
+<section id="scroll-snap-destination" data-name="scroll-snap-destination"><h2>scroll-snap-destination</h2>
 
 Определяет точку "прилипания" внутри контейнера с прокруткой. Первое значение задаёт координату по X, второе — по Y.
 Можно задавать в процентах.
@@ -132,7 +132,7 @@ CSS:
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </section>
 
-<section id="scroll-snap-coordinate" data-name="scroll-snap-coordinate"><h4>scroll-snap-coordinate</h4>
+<section id="scroll-snap-coordinate" data-name="scroll-snap-coordinate"><h2>scroll-snap-coordinate</h2>
 
 Определяет для прокручиваемых элементов координаты точки "прилипания".
 
@@ -151,7 +151,7 @@ CSS:
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </section>
 
-<section><h4>Поддержка браузерами</h4>
+<section><h2>Поддержка браузерами</h2>
 
 К сожалению, умная прокрутка в данный момент <a href="http://caniuse.com/#search=snap">поддерживается далеко не везде</a>: полная поддержка есть только в Firefox 39+, также она частично поддерживается с префиксом <code>-ms-</code> в IE10+, а в Safari поддержка появится начиная со следующей версии.
 

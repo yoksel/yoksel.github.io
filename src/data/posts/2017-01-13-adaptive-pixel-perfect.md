@@ -191,7 +191,7 @@ npm i pixel-glass --save-dev
 
 <b>UPD:</b> библиотека переехала на npm, спасибо всем участникам <a href="https://twitter.com/webstandards_ru/status/819884209674317824">обсуждения</a>.
 
-<h3>FAQ</h3>
+<h2>FAQ</h2>
 
 <ul>
 <li>

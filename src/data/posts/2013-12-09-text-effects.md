@@ -17,7 +17,7 @@ desc: CSS-эффекты на основе text-shadow.
 
 Проведите курсором над текстом примеров, чтобы увидеть эффекты при наведении.
 
-<h4 id="convex">Выпуклый текст</h4>
+<h2 id="convex">Выпуклый текст</h2>
 
 
 ```css
@@ -39,7 +39,7 @@ H1:hover {
 
 <iframe class="live-snippet" style="height: 200px" src="../assets/demo/text-effects/demo_1.html?output"></iframe>
 
-<h4 id="inner-shadow">Вдавленный текст</h4>
+<h2 id="inner-shadow">Вдавленный текст</h2>
 
 ```css
 H1 {
@@ -60,7 +60,7 @@ H1:hover {
 
 <iframe class="live-snippet" style="height: 200px" src="../assets/demo/text-effects/demo_2.html?output"></iframe>
 
-<h4 id="blur">Размытие</h4>
+<h2 id="blur">Размытие</h2>
 
 ```css
 H1 {
@@ -81,7 +81,7 @@ H1:hover {
 
 <iframe class="live-snippet" style="height: 200px" src="../assets/demo/text-effects/demo_4.html?output"></iframe>
 
-<h4 id="contour">Контуры</h4>
+<h2 id="contour">Контуры</h2>
 
 ```css
 H1 {
@@ -133,7 +133,7 @@ H1:hover {
 
 Для создания контура вокруг текста можно воспользоваться <a href="https://gist.github.com/yoksel/9467758">SCSS-функцией</a>.
 
-<h4 id="long-shadows">Длинные тени</h4>
+<h2 id="long-shadows">Длинные тени</h2>
 
 ```css
 H1 {
@@ -168,7 +168,7 @@ H1:hover {
 
 <iframe class="live-snippet" style="height: 200px" src="../assets/demo/text-effects/demo_8.html?output"></iframe>
 
-<h4 id="striped-shadow">Полосатая тень</h4>
+<h2 id="striped-shadow">Полосатая тень</h2>
 
 ```css
 H1 {
@@ -244,7 +244,7 @@ H1:hover:after {
 
 <i>Идея не моя, найдено тут: <a href="http://codepen.io/lbebber/pen/BzoHi">codepen.io/lbebber/pen/BzoHi</a></i>
 
-<h4 id="live-underline">Живое подчеркивание</h4>
+<h2 id="live-underline">Живое подчеркивание</h2>
 
 ```css
 H1 {
@@ -278,7 +278,7 @@ H1:hover:after {
 
 <iframe class="live-snippet" style="height: 200px" src="../assets/demo/text-effects/demo_10.html?output"></iframe>
 
-<h4 id="underline">Подводка</h4>
+<h2 id="underline">Подводка</h2>
 
 ```css
 H1 {
@@ -299,7 +299,7 @@ H1:hover {
 
 <iframe class="live-snippet" style="height: 200px" src="../assets/demo/text-effects/demo_11.html?output"></iframe>
 
-<h4 id="sliding-text">Разъезжающийся текст</h4>
+<h2 id="sliding-text">Разъезжающийся текст</h2>
 
 ```css
 H1 {

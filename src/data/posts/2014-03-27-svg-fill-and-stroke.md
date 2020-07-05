@@ -18,7 +18,7 @@ links:
 
 В качестве заливки и обводки можно задавать <code>none</code>, <a href="/tsveta">цвета</a>, ключевые слова (<code>currentColor</code> и <code>transparent</code>), а также <a href="/svg-gradients/">градиенты</a> и паттерны.
 
-<h3 id="fill">fill</h3>
+<h2 id="fill">fill</h2>
 
 Заливка элемента.
 
@@ -58,7 +58,7 @@ links:
 ```
 
 
-<h3 id="fill-rule">fill-rule</h3>
+<h2 id="fill-rule">fill-rule</h2>
 
 Свойство определяет как будут заливаться сложные фигуры, имеющие пересечения внутри себя. Для простых фигур ни на что не влияет.
 
@@ -90,7 +90,7 @@ links:
 </div>
 </div>
 
-<h3 id="fill-opacity">fill-opacity</h3>
+<h2 id="fill-opacity">fill-opacity</h2>
 
 Управление прозрачностью заливки. Можно задавать значения от 0.0 до 1.0 или в процентах. Правда, Firefox не любит значения в процентах для градиентов (<a href="http://cdpn.io/nstGK">пруфлинк</a>, смотреть в FF).
 
@@ -110,7 +110,7 @@ links:
 <!-- ... -->
 ```
 
-<h3 id="stroke">stroke</h3>
+<h2 id="stroke">stroke</h2>
 
 Цвет обводки. Значения по умолчанию нет.
 
@@ -125,7 +125,7 @@ links:
 ```
 
 
-<h3 id="stroke-width">stroke-width</h3>
+<h2 id="stroke-width">stroke-width</h2>
 
 Толщина обводки, можно задавать в единицах длины или в процентах.
 Значение по умолчанию: 1.
@@ -143,7 +143,7 @@ links:
 </svg>
 ```
 
-<h3 id="stroke-linecap">stroke-linecap</h3>
+<h2 id="stroke-linecap">stroke-linecap</h2>
 
 Свойство определяет как будут выглядеть концы линий.
 Возможные значения: <code>butt</code>, <code>round</code>, <code>square</code>.
@@ -164,7 +164,7 @@ links:
 <!-- ... -->
 ```
 
-<h3 id="stroke-linejoin">stroke-linejoin</h3>
+<h2 id="stroke-linejoin">stroke-linejoin</h2>
 
 Определяет как будут выглядеть соединения линий на углах.
 Возможные значения: <code>miter</code>, <code>round</code>, <code>bevel</code>.
@@ -185,7 +185,7 @@ links:
 <!-- ... -->
 ```
 
-<h3 id="stroke-dasharray">stroke-dasharray</h3>
+<h2 id="stroke-dasharray">stroke-dasharray</h2>
 
 Управляет видом пунктирной обводки. Можно задавать в единицах длины или в процентах.
 Если задано одно значение, второе значение считается равным первому. Например, <code>stroke-dasharray="1"</code> нарисует линию из отрезков длиной одну единицу разделенных пробелами такой же ширины.
@@ -231,7 +231,7 @@ links:
 <p data-height="400" data-theme-id="4974" data-slug-hash="uGfBE" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/uGfBE/'>Animated stroke</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-<h3 id="stroke-dashoffset">stroke-dashoffset</h3>
+<h2 id="stroke-dashoffset">stroke-dashoffset</h2>
 
 Свойство позволяет задать смещение пунктирной обводки относительно первоначального положения. Значение задается в единицах длины или в процентах, значения могут быть отрицательными.
 Значение по умолчанию: 0.
@@ -273,7 +273,7 @@ links:
 - <a href="http://jakearchibald.com/2013/animated-line-drawing-svg/">Animated line drawing in SVG</a>
 - <a href="http://tympanus.net/Development/SVGDrawingAnimation/">SVG Drawing Animation</a>
 
-<h3 id="stroke-opacity">stroke-opacity</h3>
+<h2 id="stroke-opacity">stroke-opacity</h2>
 
 Прозрачность обводки. Задаются значения от 0.0 до 1.0.
 

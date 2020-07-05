@@ -57,7 +57,7 @@ links:
 Все маски вы можете найти на <a href="http://codepen.io/yoksel/full/fsdbu/">демо-странице</a>, я же расскажу только про самые хорошо поддерживаемые — конечно же, все они на SVG.
 Все примеры в посте — живые демо, не скриншоты.
 
-<h4>SVG clip-path для SVG элементов</h4>
+<h2>SVG clip-path для SVG элементов</h2>
 
 <a href="http://www.w3.org/TR/SVG11/masking.html#EstablishingANewClippingPath">Спецификация</a>
 
@@ -108,7 +108,7 @@ links:
 }
 ```
 
-<h4>SVG mask для SVG элементов</h4>
+<h2>SVG mask для SVG элементов</h2>
 
 <a href="http://www.w3.org/TR/SVG11/masking.html#Masking">Спецификация</a>
 
@@ -165,7 +165,7 @@ SVG <code>mask</code> (в отличие от <code>clipPath</code>) позво�
 }
 ```
 
-<h4>SVG fill</h4>
+<h2>SVG fill</h2>
 
 <a href="http://www.w3.org/TR/SVG/painting.html#FillProperties">Спецификация</a>
 

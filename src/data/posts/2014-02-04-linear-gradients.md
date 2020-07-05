@@ -24,7 +24,7 @@ CSS-градиенты позволяют сделать фон из двух и
 
 Градиенты могут быть использованы везде, где используются картинки: в фонах, в качестве буллетов списков, они могут быть заданы в <code>content</code> или <code>border-image</code>.
 
-<h4 id="linear-gradient">linear-gradient</h4>
+<h2 id="linear-gradient">linear-gradient</h2>
 
 Линейные градиенты достаточно просты в использовании. Для самого элементарного градиента достаточно задать начальный и конечный цвета:
 
@@ -37,7 +37,7 @@ background: linear-gradient(orangered, gold);
 Цветов может быть любое количество больше двух.
 Также можно управлять направлением градиента и границами (точками остановки) цветов.
 
-<h4 id="angle">Угол или направление градиента</h4>
+<h2 id="angle">Угол или направление градиента</h2>
 
 Направление можно задавать градусами или ключевыми словами.
 
@@ -69,7 +69,7 @@ background: linear-gradient(orangered, gold);
 
 <iframe class="live-snippet" style="height: 350px" src="../assets/demo/linear-gradients/demo_3.html?output"></iframe>
 
-<h4 id="stop-color">Управление положением цветов</h4>
+<h2 id="stop-color">Управление положением цветов</h2>
 
 Значения точек остановки для цветов градиента задаются в единицах или в процентах и могут быть больше 100% и меньше 0%.
 
@@ -122,7 +122,7 @@ background: linear-gradient(orangered, gold);
 
 Чтобы узнать rgb-нотацию конкретного цвета, можно воспользоваться <b><a href="http://leaverou.github.io/css-colors/">leaverou.github.io/css-colors</a></b>, инструментом от <a href="http://lea.verou.me/">Lea Verou</a>.
 
-<h4 id="repeating-linear-gradient">repeating-linear-gradient</h4>
+<h2 id="repeating-linear-gradient">repeating-linear-gradient</h2>
 
 Помимо обычного <code>linear-gradient</code> можно сделать <code>repeating-linear-gradient</code> — повторяющийся градиент
 
@@ -141,7 +141,7 @@ background: repeating-linear-gradient(
 
 <b>Upd. от 3.07.20:</b> в данный момент повторяющиеся градиенты корректно отрисоваются в большинстве браузеров, и ими можно свободно пользоваться.
 
-<h4 id="pitfalls">Ограничения</h4>
+<h2 id="pitfalls">Ограничения</h2>
 
 Градиенты имеют такое же ограничение, что и <code>box-shadow</code>: им нельзя задавать отдельно цвета или направление. Это приводит к дублированию кода и острой потребности воспользоваться препроцессорами в случае создания сложных градиентов.
 

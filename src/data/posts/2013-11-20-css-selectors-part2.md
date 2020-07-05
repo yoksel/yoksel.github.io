@@ -13,7 +13,7 @@ links:
 
 Начало тут: <a href="/css-selectors">Css-селекторы</a>.<!--more-->
 
-<h4>Селекторы из CSS3</h4>
+<b>Селекторы из CSS3:</b>
 
 <ul>
 <li id="attr-begin" data-name="E[foo^='bar']"><p><code>E[foo^="bar"]</code> — элемент с заданным атрибутом, значение которого начинается с заданной строки.</p>
