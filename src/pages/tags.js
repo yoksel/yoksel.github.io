@@ -23,9 +23,20 @@ export default class Tags extends React.Component {
     const tagsMinCount = Math.min(...tagsCounts);
     const tagsMaxCount = Math.max(...tagsCounts);
     const step = Math.floor((tagsMaxCount - tagsMinCount) / 4);
+    const title = 'Метки';
+
+    const metaData = {
+      title,
+      slug: 'tags',
+      image: '//yoksel.github.io/assets/img/previews/tags.png'
+    };
 
     return (
-      <LayoutBase title="Метки" path={path}>
+      <LayoutBase
+        title={title}
+        path={path}
+        metaData={metaData}
+      >
         <ul className="tags-list">
           {group.map(({ tag, totalCount }) => {
             const tagIncrease = Math.round(totalCount / step) * 20;

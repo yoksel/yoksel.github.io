@@ -1,8 +1,9 @@
 ---
 title: О сайте
-description: О сайте и об авторе
 
-isService: true
+desc: О сайте и об авторе
+image: //yoksel.github.io/assets/img/me.jpeg
+
 ---
 
 Здесь публикуются статьи по CSS.

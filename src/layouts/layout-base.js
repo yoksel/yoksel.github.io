@@ -7,6 +7,7 @@ import Footer from '../components/footer';
 import '../scss/styles.scss';
 import './styles.scss';
 import Aside from '../components/aside';
+import HeadMeta from '../head-meta';
 
 export default function LayoutBase (props) {
   const {
@@ -16,7 +17,8 @@ export default function LayoutBase (props) {
     path,
     title: pageTitle,
     layout,
-    articleType
+    articleType,
+    metaData
   } = props;
   // Brrrrrr
   const data = useStaticQuery(
@@ -25,6 +27,7 @@ export default function LayoutBase (props) {
         site {
           siteMetadata {
             title
+            url
           }
         }
       }
@@ -57,6 +60,11 @@ export default function LayoutBase (props) {
 
   return (
     <div className={wrapperClassName}>
+      <HeadMeta
+        siteData={siteData}
+        pageData={metaData}
+      />
+
       <Header title={siteTitle} isMain={isMain} />
 
       <div className={className}>
@@ -81,5 +89,6 @@ LayoutBase.propTypes = {
   path: PropTypes.string,
   title: PropTypes.string,
   articleType: PropTypes.string,
-  layout: PropTypes.string
+  layout: PropTypes.string,
+  metaData: PropTypes.object
 };

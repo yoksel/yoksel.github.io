@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { DiscussionEmbed } from 'disqus-react';
+import { DiscussionEmbed, CommentCount } from 'disqus-react';
 
 import './styles.scss';
 import PostLinks from '../post-links';
 import PostTags from '../post-tags';
 import PostPrevNext from '../post-prevnext';
+import { Link } from 'gatsby';
 
 export default function Post ({
   slug,
@@ -14,6 +15,7 @@ export default function Post ({
   content,
   tags,
   links,
+  articleType,
   previous,
   next
 }) {
@@ -27,16 +29,22 @@ export default function Post ({
   // Post navigation through items with id
   const postNavItems = getPostNavItems(elementsWithContent || elemsWithDataAttr);
 
-  const disqusConfig = {
+  const disqusConfig = ({ slug, title }) => ({
     shortname: process.env.GATSBY_DISQUS_NAME,
     config: { identifier: slug, title }
-  };
+  });
 
   return (
     <article className="post">
-      <h1 className="post__title">{title}</h1>
+      <header className="post__header">
+        <h1 className="post__title">{title}</h1>
 
-      <time className="post__date faded-text">{date}</time>
+        <time className="post__date faded-text">{date}</time>
+
+        {articleType === 'post' && <Link to={slug + '#disqus_thread'}>
+          <CommentCount {...disqusConfig({ slug, title })} />
+        </Link>}
+      </header>
 
       <PostLinks title="Содержание:" items={postNavItems} />
 
@@ -51,7 +59,7 @@ export default function Post ({
 
       <PostPrevNext previous={previous} next={next} />
 
-      <DiscussionEmbed {...disqusConfig} />
+      <DiscussionEmbed {...disqusConfig({ slug, title })}/>
     </article>
   );
 }
@@ -86,6 +94,7 @@ Post.propTypes = {
   content: PropTypes.string,
   tags: PropTypes.array,
   links: PropTypes.array,
+  articleType: PropTypes.string,
   previous: PropTypes.object,
   next: PropTypes.object
 };

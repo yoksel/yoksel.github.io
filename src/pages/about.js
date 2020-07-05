@@ -8,11 +8,22 @@ import presentationsData from '../data/meta/presentations.json';
 import Widget from '../components/widget';
 
 export default function About ({ data, path }) {
-  const { html, frontmatter } = data.markdownRemark;
-  console.log('frontmatter.title', frontmatter.title);
+  const { html, frontmatter, fields } = data.markdownRemark;
+  const { title, desc, image } = frontmatter;
+  const { slug } = fields;
+
+  const metaData = {
+    title,
+    desc,
+    slug,
+    image
+  };
 
   return (
-    <LayoutBase title={frontmatter.title} path={path}>
+    <LayoutBase
+      title={frontmatter.title}
+      path={path}
+      metaData={metaData}>
       <div
         className="post__content"
         dangerouslySetInnerHTML={{ __html: html }}
@@ -35,10 +46,16 @@ export default function About ({ data, path }) {
 
 export const query = graphql`
   query AboutQuery {
-    markdownRemark(fields: { slug: { eq: "service-pages/about" } }) {
+    markdownRemark(fields: { slug: { eq: "about" } }) {
       html
+      fields {
+        url
+        slug
+      }
       frontmatter {
         title
+        desc
+        image
         links {
           desc
           name

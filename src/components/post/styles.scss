@@ -122,15 +122,21 @@
   }
 }
 
+.post__header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #DDD;
+}
+
 .post__title {
+  width: 100%;
   font-size: 2.5rem;
   margin-bottom: .4em;
 }
 
 .post__date {
-  display: block;
-  margin-bottom: 2rem;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #DDD;
   font-size: .9em;
 }

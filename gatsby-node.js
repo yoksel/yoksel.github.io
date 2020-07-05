@@ -17,10 +17,6 @@ exports.onCreateNode = async ({ node, getNode, actions }) => {
       return;
     }
 
-    console.log('\n\nnode.frontmatter.include', node.frontmatter.include);
-
-    // TODO!!!
-    //customContent: '../assets/img/svg/css-svg-masks.svg'
     fs.readFile(node.frontmatter.include, 'utf8', (err, data) => {
       if (err) reject(err);
 
@@ -47,7 +43,7 @@ exports.onCreateNode = async ({ node, getNode, actions }) => {
     slug = filePath;
     type = 'page';
   } else if (filePath.startsWith('service-pages/')) {
-    slug = filePath;
+    slug = filePath.replace('service-pages/', '');
     type = 'service-page';
   } else {
     throw new Error('Unknow folder with markdown files');
