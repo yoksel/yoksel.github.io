@@ -29,6 +29,7 @@ export default function LayoutBase (props) {
             title
             siteUrl
             description
+            counter
           }
         }
       }
@@ -38,7 +39,7 @@ export default function LayoutBase (props) {
   const layout = layoutInitial || 'default';
 
   const siteData = data.site.siteMetadata;
-  const { title: siteTitle } = siteData;
+  const { title: siteTitle, counter } = siteData;
 
   const wrapperClassNameBase = 'page';
   let wrapperClassName = wrapperClassNameBase;
@@ -81,6 +82,11 @@ export default function LayoutBase (props) {
       </div>
 
       <Footer path={path}/>
+
+      <div
+        className="counter"
+        dangerouslySetInnerHTML={{ __html: counter }}
+      />
     </div>
   );
 }
