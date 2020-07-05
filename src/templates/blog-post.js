@@ -14,11 +14,11 @@ export default function BlogPost ({ data, pageContext, location }) {
   const { pathname } = location;
 
   const customStyles = customCSS ? (
-    <link rel="stylesheet" href={`../assets/css/${customCSS}`} />
+    <link rel="stylesheet" href={`/assets/css/${customCSS}`} />
   ) : null;
 
   const customScripts = customJs ? (
-    <script src={`../assets/js/${customJs}`}></script>
+    <script src={`/assets/js/${customJs}`}></script>
   ) : null;
 
   const customContent = includeContent ? (
