@@ -7,7 +7,7 @@ import Footer from '../components/footer';
 import '../scss/styles.scss';
 import './styles.scss';
 import Aside from '../components/aside';
-import HeadMeta from '../head-meta';
+import HeadMeta from '../components/head-meta';
 
 export default function LayoutBase (props) {
   const {
