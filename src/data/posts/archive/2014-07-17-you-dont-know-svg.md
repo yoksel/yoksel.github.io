@@ -1,5 +1,4 @@
 ---
-layout: default
 title: You Don't Know SVG
 type: post
 

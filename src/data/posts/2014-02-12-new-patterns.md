@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Свежие CSS-паттерны
 type: post
 

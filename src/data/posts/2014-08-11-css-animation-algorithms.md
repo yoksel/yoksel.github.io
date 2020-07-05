@@ -1,5 +1,4 @@
 ---
-layout: default
 title: CSS-анимации для ротации изображений
 type: post
 

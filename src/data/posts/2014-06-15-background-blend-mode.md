@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Background-blend-mode
 type: post
 

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Умная прокрутка со Scroll Snap Points
 type: post
 

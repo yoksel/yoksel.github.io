@@ -1,5 +1,4 @@
 ---
-layout: default
 title: JsBin или Codepen?
 type: post
 

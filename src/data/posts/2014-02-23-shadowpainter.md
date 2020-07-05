@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Рисовалка анимированных теней
 type: post
 

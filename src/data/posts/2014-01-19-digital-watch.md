@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Электронные часы. Css + Js.
 type: post
 

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Полезное про анимацию и эффекты
 type: post
 

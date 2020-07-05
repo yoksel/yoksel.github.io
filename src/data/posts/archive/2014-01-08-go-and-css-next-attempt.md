@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "Игра Го на CSS: ещё одна попытка"
 type: post
 

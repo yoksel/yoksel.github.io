@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Впечатления недели
 type: post
 

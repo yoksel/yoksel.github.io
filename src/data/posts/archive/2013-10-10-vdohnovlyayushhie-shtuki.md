@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Вдохновляющие штуки
 type: post
 

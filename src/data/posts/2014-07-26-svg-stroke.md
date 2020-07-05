@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Странности обводки в SVG
 type: post
 

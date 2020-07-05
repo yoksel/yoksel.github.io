@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Весёлая консолька
 type: post
 

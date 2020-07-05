@@ -1,5 +1,4 @@
 ---
-layout: default
 title: 'SVG: полезные ссылки'
 type: page
 ---

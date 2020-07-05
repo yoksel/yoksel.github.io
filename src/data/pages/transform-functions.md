@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Функции Transform
 type: page
 

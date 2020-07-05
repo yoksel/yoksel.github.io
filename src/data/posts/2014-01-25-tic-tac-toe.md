@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Крестики-нолики на CSS
 type: post
 

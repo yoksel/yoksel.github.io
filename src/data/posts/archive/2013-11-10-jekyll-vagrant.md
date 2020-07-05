@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Jekyll, Vagrant и все-все-все
 type: post
 

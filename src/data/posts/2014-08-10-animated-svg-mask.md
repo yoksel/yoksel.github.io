@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Анимированные SVG-маски
 type: post
 

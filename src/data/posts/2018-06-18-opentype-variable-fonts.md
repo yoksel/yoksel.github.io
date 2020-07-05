@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Вариативные шрифты
 type: post
 image: '//css.yoksel.ru/assets/img/previews/variable-fonts.png'

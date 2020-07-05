@@ -1,5 +1,4 @@
 ---
-layout: default
 title:  Радиальные градиенты
 type: post
 

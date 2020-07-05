@@ -1,5 +1,4 @@
 ---
-layout: default
 title: SVG плюс Angular минус Firefox
 type: post
 

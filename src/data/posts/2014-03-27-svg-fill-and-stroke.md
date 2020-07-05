@@ -1,5 +1,4 @@
 ---
-layout: default
 title: 'SVG: заливка и обводка'
 type: post
 

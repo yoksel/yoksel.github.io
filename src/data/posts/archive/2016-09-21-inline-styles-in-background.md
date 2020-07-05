@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Инлайновые стили в background-image
 type: post
 image: https://img-fotki.yandex.ru/get/41743/5091629.a4/0_90dda_849784af_orig

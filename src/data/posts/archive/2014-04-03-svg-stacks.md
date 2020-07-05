@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "SVG-стеки"
 type: post
 

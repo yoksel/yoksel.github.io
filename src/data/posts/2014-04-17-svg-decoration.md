@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Возможности оформления SVG
 type: post
 

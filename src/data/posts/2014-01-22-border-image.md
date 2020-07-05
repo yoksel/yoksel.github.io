@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Border-image
 type: post
 

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Эти глаза напротив
 
 tags: [experiments, animation]

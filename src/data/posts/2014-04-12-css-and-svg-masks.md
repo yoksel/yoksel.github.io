@@ -1,5 +1,4 @@
 ---
-layout: default
 title: CSS и SVG маски
 type: post
 

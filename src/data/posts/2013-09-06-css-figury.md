@@ -1,5 +1,4 @@
 ---
-layout: default
 title: CSS-фигуры
 
 tags: [borders, box-shadow, pseudo-elements, shapes]

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Контекст наложения
 type: post
 

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: SVG-фигуры и трансформации
 type: post
 

@@ -1,5 +1,4 @@
 ---
-layout: default
 title:  Древовидный список на CSS
 type: post
 

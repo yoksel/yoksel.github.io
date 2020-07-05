@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Режимы наложения и их фоллбеки
 type: post
 

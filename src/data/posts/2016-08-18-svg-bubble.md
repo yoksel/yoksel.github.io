@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Мыльные пузыри на SVG
 type: post
 image: https://img-fotki.yandex.ru/get/59115/5091629.a4/0_90850_bd3003bc_orig

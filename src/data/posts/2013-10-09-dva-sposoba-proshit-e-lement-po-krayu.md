@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Два способа "прошить" элемент по краю
 
 tags: [borders, pseudo-elements]

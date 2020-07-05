@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Разный синтаксис Flexbox
 type: page
 

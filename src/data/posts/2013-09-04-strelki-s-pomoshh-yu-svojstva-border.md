@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Стрелки с помощью свойства border
 
 tags: [borders, shapes]

@@ -16,7 +16,7 @@ export default function LayoutBase (props) {
     children,
     path,
     title: pageTitle,
-    layout,
+    layout: layoutInitial,
     articleType,
     metaData
   } = props;
@@ -33,6 +33,8 @@ export default function LayoutBase (props) {
       }
     `
   );
+
+  const layout = layoutInitial || 'default';
 
   const siteData = data.site.siteMetadata;
   const { title: siteTitle } = siteData;
