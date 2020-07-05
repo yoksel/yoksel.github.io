@@ -21,9 +21,9 @@ export default function BlogPost ({ data, pageContext, location }) {
     <script src={`/assets/js/${customJs}`}></script>
   ) : null;
 
-  const customContent = includeContent ? (
+  const includedContent = includeContent ? (
     <div
-      className="post__custom-content"
+      className="included-content"
       dangerouslySetInnerHTML={{ __html: includeContent }}
     />
   ) : null;
@@ -45,7 +45,7 @@ export default function BlogPost ({ data, pageContext, location }) {
       articleType={type}
       metaData={metaData}
     >
-      {customContent}
+      {includedContent}
 
       <Post
         title={title}
