@@ -41,7 +41,9 @@ export default function Post ({
 
         <time className="post__date faded-text">{date}</time>
 
-        {articleType === 'post' && <Link to={slug + '#disqus_thread'}>
+        {articleType === 'post' && <Link
+          className="post__link-to-comments"
+          to={`/${slug}#disqus_thread`}>
           <CommentCount {...disqusConfig({ slug, title })} />
         </Link>}
       </header>
