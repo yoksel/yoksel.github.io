@@ -10,6 +10,8 @@ import './styles.scss';
 export default function Footer ({ path }) {
   return (
     <footer className="page-footer">
+      <h2 className="visually-hidden">Нижняя навигация</h2>
+
       <div className="page-container">
         <Logo parent="footer"/>
 
