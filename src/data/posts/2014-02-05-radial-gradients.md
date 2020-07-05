@@ -1,6 +1,5 @@
 ---
 title:  Радиальные градиенты
-type: post
 
 tags: [gradients]
 

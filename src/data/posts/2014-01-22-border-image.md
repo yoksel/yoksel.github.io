@@ -1,6 +1,5 @@
 ---
 title: Border-image
-type: post
 
 tags: [borders]
 

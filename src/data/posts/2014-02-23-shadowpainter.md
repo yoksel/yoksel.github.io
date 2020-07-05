@@ -1,6 +1,5 @@
 ---
 title: Рисовалка анимированных теней
-type: post
 
 tags: [box-shadow, animation, tools, js]
 

@@ -1,6 +1,5 @@
 ---
 title: Инлайновые стили в background-image
-type: post
 image: https://img-fotki.yandex.ru/get/41743/5091629.a4/0_90dda_849784af_orig
 desc: 'Игралась с кодами, обнаружила удивительное: оказывается, внутри CSS-свойства background можно использовать другие CSS-свойства, например, box-shadow, outline, transform и даже ещё один background!'
 

@@ -1,6 +1,5 @@
 ---
 title: Режимы наложения и их фоллбеки
-type: post
 
 tags: [blend-modes]
 

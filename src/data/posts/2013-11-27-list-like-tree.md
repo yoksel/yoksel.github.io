@@ -1,6 +1,5 @@
 ---
 title:  Древовидный список на CSS
-type: post
 
 tags: [experiments]
 

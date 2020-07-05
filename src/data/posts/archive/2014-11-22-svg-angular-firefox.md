@@ -1,6 +1,5 @@
 ---
 title: SVG плюс Angular минус Firefox
-type: post
 
 tags: [svg, firefox]
 

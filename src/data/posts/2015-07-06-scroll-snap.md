@@ -1,12 +1,10 @@
 ---
 title: Умная прокрутка со Scroll Snap Points
-type: post
 
 tags: [firefox]
 
 image: https://img-fotki.yandex.ru/get/3006/5091629.a4/0_8b19d_a6284f4f_orig
 desc: "В Firefox начиная с 39-й версии появились интересные CSS-свойства, которые позволяют управлять поведением прокручиваемого контента."
-
 
 links:
 - url: http://www.w3.org/TR/css-snappoints-1/
@@ -15,7 +13,6 @@ links:
   name: caniuse.com/#search=snap
 - url: https://blog.gospodarets.com/css-scroll-snap
   name: Native CSS Scroll Snap Points
-
 ---
 
 В Firefox начиная с 39-й версии появились интересные CSS-свойства, которые позволяют управлять поведением прокручиваемого контента.<!--more-->
@@ -154,7 +151,7 @@ CSS:
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </section>
 
-<section markdown="1"><h4>Поддержка браузерами</h4>
+<section><h4>Поддержка браузерами</h4>
 
 К сожалению, умная прокрутка в данный момент <a href="http://caniuse.com/#search=snap">поддерживается далеко не везде</a>: полная поддержка есть только в Firefox 39+, также она частично поддерживается с префиксом <code>-ms-</code> в IE10+, а в Safari поддержка появится начиная со следующей версии.
 

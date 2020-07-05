@@ -1,6 +1,5 @@
 ---
 title: "Игра Го на CSS: ещё одна попытка"
-type: post
 
 tags: [experiments]
 

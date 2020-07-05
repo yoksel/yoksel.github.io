@@ -1,6 +1,5 @@
 ---
 title: Странности обводки в SVG
-type: post
 
 tags: [svg]
 

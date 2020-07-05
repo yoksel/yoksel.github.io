@@ -1,6 +1,5 @@
 ---
 title: 'SVG: заливка и обводка'
-type: post
 
 tags: [svg]
 

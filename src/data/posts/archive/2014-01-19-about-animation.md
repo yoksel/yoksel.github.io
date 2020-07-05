@@ -1,6 +1,5 @@
 ---
 title: Полезное про анимацию и эффекты
-type: post
 
 tags: [animation]
 

@@ -1,6 +1,5 @@
 ---
 title: Крестики-нолики на CSS
-type: post
 
 tags: [experiments]
 

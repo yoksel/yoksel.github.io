@@ -1,6 +1,5 @@
 ---
 title: Анимируем градиенты ещё раз
-type: post
 
 tags: [animation, gradients, experiments]
 

@@ -1,6 +1,5 @@
 ---
 title: Весёлая консолька
-type: post
 
 tags: [js, tools]
 

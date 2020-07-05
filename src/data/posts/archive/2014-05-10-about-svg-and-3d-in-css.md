@@ -1,6 +1,5 @@
 ---
 title: Впечатления недели
-type: post
 
 tags: [svg, 3D]
 

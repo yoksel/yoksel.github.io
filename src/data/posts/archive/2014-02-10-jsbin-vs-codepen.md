@@ -1,6 +1,5 @@
 ---
 title: JsBin или Codepen?
-type: post
 
 tags: [tools]
 

@@ -1,6 +1,5 @@
 ---
 title: 'Responsive Web Design: Clever Tips and Techniques'
-type: post
 
 tags: []
 

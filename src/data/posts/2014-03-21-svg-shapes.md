@@ -1,6 +1,5 @@
 ---
 title: SVG-фигуры и трансформации
-type: post
 
 tags: [svg]
 

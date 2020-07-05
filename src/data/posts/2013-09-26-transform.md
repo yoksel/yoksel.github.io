@@ -9,7 +9,7 @@ links:
   desc: интересный пример 3D-трансформации по наведению
 
 ---
-<section markdown="1">Css <code>transform</code> позволяет трансформировать элементы, в том числе в трехмерном пространстве.<!--more-->
+<section>Css <code>transform</code> позволяет трансформировать элементы, в том числе в трехмерном пространстве.<!--more-->
 
 Спецификация: <a href="http://www.w3.org/TR/css3-transforms/">www.w3.org/TR/css3-transforms/</a>.
 

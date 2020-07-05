@@ -92,7 +92,6 @@ export const query = graphql`
           id
           frontmatter {
             title
-            type
             tags
           }
           fields {

@@ -1,6 +1,5 @@
 ---
 title: CSS и SVG маски
-type: post
 
 tags: [svg, masks]
 
@@ -23,7 +22,6 @@ links:
   name: Techniques for Creating Textured Text
 - url: http://lea.verou.me/2012/05/text-masking-the-standards-way/
   name: Text masking — The standards way
-
 ---
 
 Разбираясь с возможностями оформления SVG, заинтересовалась темой масок.

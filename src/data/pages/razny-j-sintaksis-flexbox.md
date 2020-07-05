@@ -1,12 +1,12 @@
 ---
 title: Разный синтаксис Flexbox
-type: page
 
 links_title: К статье
 links:
 - url: /flexbox
   name: Flexbox
 ---
+
 <table>
   <thead>
     <tr>

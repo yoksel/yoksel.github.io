@@ -1,6 +1,5 @@
 ---
 title: Jekyll, Vagrant и все-все-все
-type: post
 
 tags: [tools]
 

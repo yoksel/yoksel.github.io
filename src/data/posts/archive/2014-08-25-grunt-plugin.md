@@ -1,6 +1,5 @@
 ---
 title: Зачем я написала плагин для Grunt
-type: post
 
 tags: [svg, js]
 

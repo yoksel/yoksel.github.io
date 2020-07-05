@@ -1,6 +1,5 @@
 ---
 title: Трюк на CSS для поддержки SVG в старых браузерах
-type: post
 
 tags: [svg]
 

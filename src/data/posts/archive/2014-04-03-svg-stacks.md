@@ -1,6 +1,5 @@
 ---
 title: "SVG-стеки"
-type: post
 
 tags: [svg]
 
@@ -13,7 +12,6 @@ links:
   name: "SVG-Stacker"
 - url: http://www.broken-links.com/2012/08/14/better-svg-sprites-with-fragment-identifiers/
   name: Better SVG Sprites With Fragment Identifiers
-published: true
 ---
 
 Стеки — это ещё один способ организации SVG. Как спрайт, только лучше — как если бы мы могли использовать <code>use</code> в CSS.

@@ -8,8 +8,8 @@ links:
   name: Css-селекторы
 - url: /css-selectors-part2/
   name: Css-селекторы, часть 2
-
 ---
+
 <p>Таблица отсюда: <a href="http://www.w3.org/TR/css3-selectors/#selectors">w3.org/TR/css3-selectors/#selectors</a></p>
 
 <p><i>В крайней правой колонке я добавила информацию о поддержке селектора разными версиями IE.</i></p>

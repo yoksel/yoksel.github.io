@@ -1,6 +1,5 @@
 ---
 title: Анимированные SVG-маски
-type: post
 
 tags: [svg, animation, patterns]
 

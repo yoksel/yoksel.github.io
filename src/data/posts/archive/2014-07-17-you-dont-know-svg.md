@@ -1,6 +1,5 @@
 ---
 title: You Don't Know SVG
-type: post
 
 tags: [svg]
 

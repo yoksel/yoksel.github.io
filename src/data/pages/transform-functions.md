@@ -1,6 +1,5 @@
 ---
 title: Функции Transform
-type: page
 
 links_title: К статьям
 links:

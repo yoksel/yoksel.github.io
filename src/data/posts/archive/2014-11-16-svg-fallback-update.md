@@ -1,6 +1,5 @@
 ---
 title: Обновление плагина svg_fallback
-type: post
 
 tags: [svg]
 

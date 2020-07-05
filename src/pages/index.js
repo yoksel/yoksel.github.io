@@ -40,7 +40,6 @@ export const query = graphql`
           excerpt(pruneLength: 150)
           frontmatter {
             title
-            type
             desc
             image
             tags

@@ -1,7 +1,6 @@
 ---
 layout: onecolumn
 title: Свойства Animation одной таблицей
-type: page
 
 links_title: К статьям
 links:
@@ -10,6 +9,7 @@ links:
 - url: /3d-cube
   name: 3D cube
 ---
+
 <table class="proptable">
   <thead>
     <tr>
