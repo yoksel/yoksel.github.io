@@ -68,6 +68,6 @@
   content: none !important
 }
 
-.layer-steps-list H5:before {
+.layer-steps-list H4:before {
   content: counter(layer-steps) ". "
 }
