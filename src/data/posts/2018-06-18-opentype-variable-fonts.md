@@ -54,7 +54,7 @@ links:
 
 Настройками шрифта можно управлять с помощью CSS.
 
-<h2>Высокоуровневые и низкоуровневые CSS-свойства</h2>
+<h2 id="properties-levels">Высокоуровневые и низкоуровневые CSS-свойства</h2>
 
 Низкоуровневые — это <code>font-variation-settings</code> и <code>font-feature-settings</code>. Их значения состоят из списка пар имён и значений, перечисленных через запятую.
 
@@ -97,7 +97,7 @@ font-variant-numeric: slashed-zero; /* = font-feature-settings: "zero" on; */
 * <a href="https://www.fontfabric.com/slovic/">Slovic</a>
 * <a href="https://github.com/twardoch/varfonts-ofl/tree/master/VotoSerifGX-OFL">VotoSerif</a>
 
-<h2>font-variation-settings</h2>
+<h2 id="variation-settings">font-variation-settings</h2>
 
 <a href="https://www.w3.org/TR/css-fonts-4/#font-variation-settings-def">Спецификация</a>
 
@@ -235,7 +235,7 @@ font-variation-settings: "BLDA" 913.8, "BLDB" 162.8, "SKLB" 1000;
 
 Значения вариаций можно <a href="https://codepen.io/yoksel/full/jKaaPq/">анимировать</a>.
 
-<h2>font-feature-settings</h2>
+<h2 id="feature-settings">font-feature-settings</h2>
 
 <a href="https://www.w3.org/TR/css-fonts-3/#propdef-font-feature-settings">Спецификация</a>
 
@@ -294,7 +294,7 @@ font-feature-settings: "smcp" off, "onum" off;
 
 Не уверена, что это правильное использование лигатур, но вариант, безусловно, интересный.
 
-<h2>Использование в реальной жизни</h2>
+<h2 id="usage">Использование в реальной жизни</h2>
 
 В данный момент не все браузеры поддерживают управление вариативными шрифтами, поэтому помимо настраиваемого шрифта на страницу придётся подключать обычные. Это <a href="https://medium.com/clear-left-thinking/how-to-use-variable-fonts-in-the-real-world-e6d73065a604">предлагается</a> делать следующим образом:
 
