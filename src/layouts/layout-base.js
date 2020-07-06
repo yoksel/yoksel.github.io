@@ -34,8 +34,6 @@ export default function LayoutBase (props) {
     `
   );
 
-  console.log(pageData);
-
   const layout = pageData.layout || 'default';
 
   const siteData = data.site.siteMetadata;
