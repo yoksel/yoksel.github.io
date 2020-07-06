@@ -147,6 +147,16 @@
   }
 }
 
+/* stylelint-disable declaration-no-important, no-descending-specificity */
+.post__share LI {
+  margin: 0 .75rem 0 0 !important;
+
+  &::before {
+    content: none !important;
+  }
+}
+/* stylelint-enable declaration-no-important, no-descending-specificity */
+
 .post__header {
   display: flex;
   justify-content: space-between;
