@@ -23,7 +23,7 @@ export default function PostsList ({
     listClassName += ` ${listClassNameBase}--${mod}`;
   }
 
-  if (type) {
+  if (type && type !== 'list') {
     listClassName += ` ${listClassNameBase}--${type}`;
   }
 
@@ -59,9 +59,9 @@ export default function PostsList ({
         if (type === 'cards') {
           itemContent = (
             <Fragment>
-              <div className="post-item__title">
+              <h3 className="post-item__title">
                 <Link to={url}>{frontmatter.title}</Link>
-              </div>
+              </h3>
 
               <div className="post-item__text">{desc}</div>
 

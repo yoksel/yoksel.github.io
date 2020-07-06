@@ -16,6 +16,8 @@ export default function Home ({ data }) {
       pageData={pageData}
     >
       <div className="posts">
+        <h2 className="visually-hidden">Статьи</h2>
+
         <PostsList items={data.allMarkdownRemark.edges} type="cards" />
 
         <p>
