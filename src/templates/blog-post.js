@@ -31,14 +31,14 @@ export default function BlogPost ({ data, pageContext, location }) {
     ...pageContext,
     customStyles,
     customScripts,
-    content
+    content,
+    articleType: type
   };
 
   return (
     <LayoutBase
       isSingle={true}
       path={pathname}
-      articleType={type}
       pageData={pageData}
     >
       {includedContent}

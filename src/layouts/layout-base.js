@@ -16,7 +16,6 @@ export default function LayoutBase (props) {
     isSingle,
     children,
     path,
-    articleType,
     pageData
   } = props;
   // Brrrrrr
@@ -52,7 +51,11 @@ export default function LayoutBase (props) {
   }
 
   const aside = layout !== 'onecolumn'
-    ? <Aside path={path} isMain={isMain} articleType={articleType}/>
+    ? <Aside
+        path={path}
+        isMain={isMain}
+        articleType={pageData.articleType}
+      />
     : '';
 
   const className = `
@@ -100,6 +103,5 @@ LayoutBase.propTypes = {
   isSingle: PropTypes.bool,
   children: PropTypes.node,
   path: PropTypes.string,
-  articleType: PropTypes.string,
   pageData: PropTypes.object
 };
