@@ -55,14 +55,14 @@
     <!--  -->
     <mask id="masking-lum" maskUnits="objectBoundingBox"
       x="0" y="0">
-      <image xlink:href="http://img-fotki.yandex.ru/get/5607/5091629.6b/0_612e6_b9039c0d_M.jpg" width="200" height="300" />
+      <image xlink:href="//img-fotki.yandex.ru/get/5607/5091629.6b/0_612e6_b9039c0d_M.jpg" width="200" height="300" />
     </mask>
     <!-- Patterns -->
     <pattern id="pattern"
               patternUnits="userSpaceOnUse"
               width="199" height="300"
               viewbox="0 0 199 300">
-      <image xlink:href="http://img-fotki.yandex.ru/get/5607/5091629.6b/0_612e6_b9039c0d_M.jpg" width="199" height="300" />
+      <image xlink:href="//img-fotki.yandex.ru/get/5607/5091629.6b/0_612e6_b9039c0d_M.jpg" width="199" height="300" />
     </pattern>
     <!--  -->
     <pattern id="pattern-text" patternUnits="userSpaceOnUse" width="450" height="95">
