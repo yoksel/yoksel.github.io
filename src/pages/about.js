@@ -8,22 +8,18 @@ import presentationsData from '../data/meta/presentations.json';
 import Widget from '../components/widget';
 
 export default function About ({ data, path }) {
-  const { html, frontmatter, fields } = data.markdownRemark;
+  const { html: content, frontmatter, fields } = data.markdownRemark;
 
   const pageData = {
     ...frontmatter,
-    ...fields
+    ...fields,
+    content
   };
 
   return (
     <LayoutBase
       path={path}
       pageData={pageData}>
-      <div
-        className="post__content"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
-
       <Widget
         title="Презентации"
         items={presentationsData}
