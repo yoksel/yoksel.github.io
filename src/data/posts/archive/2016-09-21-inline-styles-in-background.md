@@ -1,5 +1,6 @@
 ---
 title: Инлайновые стили в background-image
+
 image: https://img-fotki.yandex.ru/get/41743/5091629.a4/0_90dda_849784af_orig
 desc: 'Игралась с кодами, обнаружила удивительное: оказывается, внутри CSS-свойства background можно использовать другие CSS-свойства, например, box-shadow, outline, transform и даже ещё один background!'
 
@@ -14,7 +15,6 @@ links:
    url: http://yoksel.github.io/url-encoder/ru
  - name: Background tricks with SVG, Box shadows and CSS Gradients
    url: http://codepen.io/collection/DyJRrY/2/
-
 ---
 
 Игралась с кодами, обнаружила удивительное: оказывается, внутри CSS-свойства <code>background</code> можно использовать другие CSS-свойства, например, <code>box-shadow</code>, <code>outline</code>, <code>transform</code> и даже ещё один <code>background</code>.<!--more-->
@@ -32,13 +32,13 @@ SVG можно вставить в CSS прямо как есть, но тако
 
 ```markup
 <svg xmlns='http://www.w3.org/2000/svg'
-    viewBox='0 0 100 100' width='50' height='50'
-    style='transform: rotate(45deg) scale(.8,.8);
-        transform-origin: 50% 50%;
-        border-radius: 1rem;
-        background: linear-gradient(darkviolet, turquoise);
-        box-shadow: 0 0 7px 3px white inset;'>
-        <circle r='30%' cx='50%' cy='50%' fill='gold'/>
+  viewBox='0 0 100 100' width='50' height='50'
+  style='transform: rotate(45deg) scale(.8,.8);
+    transform-origin: 50% 50%;
+    border-radius: 1rem;
+    background: linear-gradient(darkviolet, turquoise);
+    box-shadow: 0 0 7px 3px white inset;'>
+    <circle r='30%' cx='50%' cy='50%' fill='gold'/>
 </svg>
 ```
 
@@ -53,13 +53,13 @@ SVG можно вставить в CSS прямо как есть, но тако
 
 ```markup
 <svg xmlns='http://www.w3.org/2000/svg'
-    viewBox='0 0 100 100' width='50' height='50'
-    style='transform: rotate(45deg) scale(.8,.8);
-        transform-origin: 50% 50%;
-        border-radius: 1rem;
-        background: linear-gradient(darkviolet, turquoise);
-        box-shadow: 0 0 7px 3px white inset;'
-        ><!-- тут ничего нет --></svg>
+  viewBox='0 0 100 100' width='50' height='50'
+  style='transform: rotate(45deg) scale(.8,.8);
+    transform-origin: 50% 50%;
+    border-radius: 1rem;
+    background: linear-gradient(darkviolet, turquoise);
+    box-shadow: 0 0 7px 3px white inset;'
+    ><!-- тут ничего нет --></svg>
 ```
 
 И всё равно всё будет работать:
@@ -67,15 +67,17 @@ SVG можно вставить в CSS прямо как есть, но тако
 <p data-height="400" data-theme-id="4974" data-slug-hash="WGoKAv" data-default-tab="css,result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/WGoKAv/">(encoded svg with inline styles)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
+<h2>Кроссбраузерность</h2>
+
 Интересно, что такие стили работают во всех современных браузерах, но у каждого свои представления о том, как это должно выглядеть в итоге:
 
 <figure class="figure figure--text-on-right">
 <img src="../assets/img/articles/inline-styles-in-bg/chrome.png" alt="Chrome">
 
 <figcaption>
-    <h3>Chrome</h3>
-    <p>Тени, трансформации и градиенты работают, градиент поворачивается вместе с фигурой. Пустые места в углах плитки фона заполняются градиентом.</p>
-    <p><code>transform-origin</code> по умолчанию находится в точке <code>0, 0</code>.</p>
+  <h3>Chrome</h3>
+  <p>Тени, трансформации и градиенты работают, градиент поворачивается вместе с фигурой. Пустые места в углах плитки фона заполняются градиентом.</p>
+  <p><code>transform-origin</code> по умолчанию находится в точке <code>0, 0</code>.</p>
 </figcaption>
 </figure>
 
