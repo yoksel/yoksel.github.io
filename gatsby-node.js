@@ -1,6 +1,6 @@
-const path = require("path")
-const fs = require("fs")
-const { createFilePath } = require("gatsby-source-filesystem")
+const path = require('path');
+const fs = require('fs');
+const { createFilePath } = require('gatsby-source-filesystem');
 
 // https://www.gatsbyjs.org/tutorial/part-seven/
 
@@ -32,16 +32,17 @@ exports.onCreateNode = async ({ node, getNode, actions }) => {
   let slug = '';
   let type = 'none';
   let isArchived = false;
-  const includeContent = await filePromise
+  const includeContent = await filePromise;
+  const regexp = new RegExp('(\\d{4}-\\d{2}-\\d{2})-(.*)');
+  const urlParts = filePath.match(regexp);
+  date = urlParts ? new Date(urlParts[1]) : null;
+  slug = urlParts ? urlParts[2] : 'no-slug';
 
   if (filePath.startsWith('posts/')) {
-    const urlParts = filePath.match(/(\d{4}-\d{2}-\d{2})-(.*)/);
-    date = urlParts ? new Date(urlParts[1]) : null;
-    slug = urlParts ? urlParts[2] : '(no title)';
     type = 'post';
   } else if (filePath.startsWith('pages/')) {
-    slug = filePath;
     type = 'page';
+    slug = `pages/${slug}`;
   } else if (filePath.startsWith('service-pages/')) {
     slug = filePath.replace('service-pages/', '');
     type = 'service-page';
@@ -90,6 +91,8 @@ exports.onCreateNode = async ({ node, getNode, actions }) => {
   });
 };
 
+// order: ASC need for correct direction
+// of post navigation
 const allActualPostsQuery = `
 query allActualPostsQuery {
   allMarkdownRemark(
@@ -133,8 +136,10 @@ query allActualPostsQuery {
     }
   }
 }
-`
+`;
 
+// order: ASC need for correct direction
+// of post navigation
 const allArchivedPostsQuery = `
 query allArchivedPostsQuery {
   allMarkdownRemark(
@@ -180,6 +185,8 @@ query allArchivedPostsQuery {
 }
 `;
 
+// order: ASC need for correct direction
+// of post navigation
 const allActualPagesQuery = `
 query allActualPagesQuery {
   allMarkdownRemark(
