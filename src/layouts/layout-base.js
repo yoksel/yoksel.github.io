@@ -8,6 +8,7 @@ import '../scss/styles.scss';
 import './styles.scss';
 import Aside from '../components/aside';
 import HeadMeta from '../components/head-meta';
+import Post from '../components/post';
 
 export default function LayoutBase (props) {
   const {
@@ -15,10 +16,8 @@ export default function LayoutBase (props) {
     isSingle,
     children,
     path,
-    title: pageTitle,
-    layout: layoutInitial,
     articleType,
-    metaData
+    pageData
   } = props;
   // Brrrrrr
   const data = useStaticQuery(
@@ -36,16 +35,15 @@ export default function LayoutBase (props) {
     `
   );
 
-  const layout = layoutInitial || 'default';
+  console.log(pageData);
+
+  const layout = pageData.layout || 'default';
 
   const siteData = data.site.siteMetadata;
   const { title: siteTitle, counter } = siteData;
 
   const wrapperClassNameBase = 'page';
   let wrapperClassName = wrapperClassNameBase;
-  const pageTitleElement = pageTitle && !isMain
-    ? <h1>{pageTitle}</h1>
-    : null;
 
   if (isMain) {
     wrapperClassName += ` ${wrapperClassName}--main-page`;
@@ -62,20 +60,26 @@ export default function LayoutBase (props) {
     page-main-wrapper
     page-main-wrapper--${layout}`;
 
+  const content = isMain
+    ? children
+    : (
+        <Post {...pageData}>
+          {children}
+        </Post>
+    );
+
   return (
     <div className={wrapperClassName}>
       <HeadMeta
         siteData={siteData}
-        pageData={metaData}
+        pageData={pageData}
       />
 
       <Header title={siteTitle} isMain={isMain} />
 
       <div className={className}>
         <main className="page-main">
-          {pageTitleElement}
-
-          {children}
+          {content}
         </main>
 
         {aside}
@@ -96,8 +100,6 @@ LayoutBase.propTypes = {
   isSingle: PropTypes.bool,
   children: PropTypes.node,
   path: PropTypes.string,
-  title: PropTypes.string,
   articleType: PropTypes.string,
-  layout: PropTypes.string,
-  metaData: PropTypes.object
+  pageData: PropTypes.object
 };

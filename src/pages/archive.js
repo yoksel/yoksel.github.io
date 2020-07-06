@@ -7,16 +7,17 @@ import PostsList from '../components/posts-list';
 export default function Archive ({ data, path }) {
   const title = 'Архив';
 
-  const metaData = {
+  const pageData = {
     title,
-    slug: 'archive'
+    slug: 'archive',
+    hideComments: true
   };
 
   return (
     <LayoutBase
       title={title}
       path={path}
-      metaData={metaData}
+      pageData={pageData}
     >
       <div className="posts">
         <PostsList items={data.allMarkdownRemark.edges} type="cards" />

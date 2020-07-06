@@ -105,13 +105,23 @@
   UL {
     padding: 0;
     list-style: none;
-
-    LI {
-      margin-bottom: .75rem;
-    }
   }
 
-  UL LI {
+  LI,
+  DD {
+    margin-bottom: .75rem;
+  }
+
+  UL UL LI,
+  OL OL LI {
+    margin-top: .75rem;
+  }
+
+  DL:not(.no-bullets) DD {
+    @include item-with-dash;
+  }
+
+  UL:not(.no-bullets) LI {
     @include item-with-dash;
   }
 
@@ -122,11 +132,6 @@
   OL LI::before {
     content: counter(num-list) ". ";
     counter-increment: num-list;
-  }
-
-  UL UL LI,
-  OL OL LI {
-    margin-top: .75rem;
   }
 
   HR {

@@ -9,7 +9,9 @@ export default class Tags extends React.Component {
     super(props);
 
     this._props = props;
+    this._data = this._props.data;
     this.state = { currentTag: null };
+    this._tagsByName = getTagsByName();
   }
 
   componentDidMount () {
@@ -19,57 +21,68 @@ export default class Tags extends React.Component {
     this.setState({ currentTag });
   }
 
-  render () {
-    const { data, path } = this._props;
-    const { group, edges } = data.allMarkdownRemark;
-    const tagsByName = getTagsByName();
+  _getTagCloud () {
+    const { group } = this._data.allMarkdownRemark;
     const tagsCounts = group.map(({ totalCount }) => totalCount);
     const tagsMinCount = Math.min(...tagsCounts);
     const tagsMaxCount = Math.max(...tagsCounts);
     const step = Math.floor((tagsMaxCount - tagsMinCount) / 4);
-    const title = 'Метки';
 
-    const metaData = {
-      title,
+    return group.map(({ tag, totalCount }) => {
+      const tagIncrease = Math.round(totalCount / step) * 20;
+      const tagFontSize = 100 + tagIncrease;
+      let buttonClassName = 'tags-button';
+
+      if (tag === this.state.currentTag) {
+        buttonClassName += ' tags-button--current';
+      }
+
+      return (
+        <li className="tags-list__item" key={tag}>
+          <button
+            className={buttonClassName}
+            data-target-tag={tag}
+            title={`Статей по тегу: ${totalCount}`}
+            onClick={() => {
+              const currentTag =
+                tag === this.state.currentTag ? null : tag;
+              this.setState({ currentTag });
+              document.location.hash = tag;
+            }}
+            style={{ fontSize: `${tagFontSize}%` }}
+          >
+            {this._tagsByName[tag] || tag}
+          </button>
+        </li>
+      );
+    });
+  }
+
+  render () {
+    const { path } = this._props;
+    const { edges } = this._data.allMarkdownRemark;
+
+    const pageData = {
+      title: 'Метки',
       slug: 'tags',
-      image: '//yoksel.github.io/assets/img/previews/tags.png'
+      image: '//yoksel.github.io/assets/img/previews/tags.png',
+      hideComments: true
     };
+
+    const listTitle = this.state.currentTag
+      ? `Статьи по тегу «${this._tagsByName[this.state.currentTag] || this.state.currentTag }»`
+      : 'Все статьи';
 
     return (
       <LayoutBase
-        title={title}
         path={path}
-        metaData={metaData}
+        pageData={pageData}
       >
-        <ul className="tags-list">
-          {group.map(({ tag, totalCount }) => {
-            const tagIncrease = Math.round(totalCount / step) * 20;
-            const tagFontSize = 100 + tagIncrease;
-            let buttonClassName = 'tags-button';
-
-            if (tag === this.state.currentTag) {
-              buttonClassName += ' tags-button--current';
-            }
-
-            return (
-              <li className="tags-list__item" key={tag}>
-                <button
-                  className={buttonClassName}
-                  data-target-tag={tag}
-                  onClick={() => {
-                    const currentTag =
-                      tag === this.state.currentTag ? null : tag;
-                    this.setState({ currentTag });
-                    document.location.hash = tag;
-                  }}
-                  style={{ fontSize: `${tagFontSize}%` }}
-                >
-                  {tagsByName[tag] || tag}
-                </button>
-              </li>
-            );
-          })}
+        <ul className="tags-list no-bullets">
+          {this._getTagCloud()}
         </ul>
+
+        <h2 className="visually-hidden">{listTitle}</h2>
 
         <PostsList
           items={edges}

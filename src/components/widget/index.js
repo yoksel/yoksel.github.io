@@ -5,22 +5,16 @@ import { nanoid } from 'nanoid';
 
 import './styles.scss';
 
-export default function Widget ({ title, items, path, listMod }) {
+export default function Widget ({ title, items, path }) {
   if (items.length === 0) {
     return;
-  }
-
-  let listClassName = 'widget__list';
-
-  if (listMod) {
-    listClassName += ` ${listClassName}--${listMod}`;
   }
 
   return (
     <div className="widget">
       <h3 className="widget__title">{title}</h3>
 
-      <ul className={listClassName}>
+      <ul className='widget__list'>
         {items.map(({
           id, title, name,
           url, desc,

@@ -26,10 +26,6 @@
   &--current {
     font-weight: bold;
   }
-
-  .widget__list--dashes & {
-    @include item-with-dash;
-  }
 }
 
 .widget__desc {

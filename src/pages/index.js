@@ -5,7 +5,7 @@ import { graphql, Link } from 'gatsby';
 import PostsList from '../components/posts-list';
 
 export default function Home ({ data }) {
-  const metaData = {
+  const pageData = {
     title: 'Главная страница',
     slug: ''
   };
@@ -13,8 +13,7 @@ export default function Home ({ data }) {
   return (
     <LayoutBase
       isMain={true}
-      title="Статьи"
-      metaData={metaData}
+      pageData={pageData}
     >
       <div className="posts">
         <PostsList items={data.allMarkdownRemark.edges} type="cards" />

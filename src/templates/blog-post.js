@@ -3,14 +3,12 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import LayoutBase from '../layouts/layout-base';
 
-import Post from '../components/post';
-
 // Component used for creating new pages
 
 export default function BlogPost ({ data, pageContext, location }) {
-  const { html, frontmatter } = data.markdownRemark;
-  const { title, desc, image, layout, customCSS, customJs, tags, links } = frontmatter;
-  const { slug, date, type, includeContent, previous, next } = pageContext;
+  const { html: content, frontmatter } = data.markdownRemark;
+  const { customCSS, customJs } = frontmatter;
+  const { type, includeContent } = pageContext;
   const { pathname } = location;
 
   const customStyles = customCSS ? (
@@ -28,36 +26,22 @@ export default function BlogPost ({ data, pageContext, location }) {
     />
   ) : null;
 
-  const metaData = {
-    title,
-    desc,
-    slug,
-    image,
+  const pageData = {
+    ...frontmatter,
+    ...pageContext,
     customStyles,
-    customScripts
+    customScripts,
+    content
   };
 
   return (
     <LayoutBase
       isSingle={true}
       path={pathname}
-      layout={layout}
       articleType={type}
-      metaData={metaData}
+      pageData={pageData}
     >
       {includedContent}
-
-      <Post
-        title={title}
-        date={date}
-        content={html}
-        tags={tags}
-        links={links}
-        articleType={type}
-        previous={previous}
-        next={next}
-        slug={slug}
-      />
     </LayoutBase>
   );
 }

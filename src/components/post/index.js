@@ -9,6 +9,7 @@ import PostPrevNext from '../post-prevnext';
 import { Link } from 'gatsby';
 
 export default function Post ({
+  children,
   slug,
   title,
   date,
@@ -17,12 +18,13 @@ export default function Post ({
   links,
   articleType,
   previous,
-  next
+  next,
+  hideComments
 }) {
-  const elementsWithContent = content.match(
+  const elementsWithContent = content && content.match(
     /<[^>]{1,20} id="([^>]{1,200})">([^>]{1,})<\/[^>]{1,20}>/g
   );
-  const elemsWithDataAttr = content.match(
+  const elemsWithDataAttr = content && content.match(
     /<[^>]{1,20} id="[^>]{1,200}" data-name="[^>]{1,200}">/g
   );
 
@@ -39,7 +41,7 @@ export default function Post ({
       <header className="post__header">
         <h1 className="post__title">{title}</h1>
 
-        <time className="post__date faded-text">{date}</time>
+        {date && <time className="post__date faded-text">{date}</time>}
 
         {articleType === 'post' && <Link
           className="post__link-to-comments"
@@ -50,10 +52,16 @@ export default function Post ({
 
       <PostLinks title="Содержание:" items={postNavItems} />
 
-      <div
+      {content && <div
         className="post__content"
         dangerouslySetInnerHTML={{ __html: content }}
-      />
+      />}
+
+      {children && <div
+        className="post__content">
+          {children}
+        </div>
+      }
 
       <PostLinks title="Ссылки по теме:" items={links} />
 
@@ -61,7 +69,7 @@ export default function Post ({
 
       <PostPrevNext previous={previous} next={next} />
 
-      <DiscussionEmbed {...disqusConfig({ slug, title })}/>
+      {!hideComments && <DiscussionEmbed {...disqusConfig({ slug, title })}/>}
     </article>
   );
 }
@@ -74,6 +82,7 @@ function getPostNavItems (elementsWithId) {
     '<[^>]{1,20} id="([^>]{1,200})">([^>]{1,200})</[^>]{1,20}>';
   const regexpDataName = '<[^>]{1,20} id="([^>]{1,200})" data-name="([^>]{1,200})">';
 
+  // fix later
   return elementsWithId.map(item => {
     let regexp = new RegExp(regexpNoName);
 
@@ -91,6 +100,7 @@ function getPostNavItems (elementsWithId) {
 
 Post.propTypes = {
   slug: PropTypes.string,
+  children: PropTypes.node,
   title: PropTypes.string,
   date: PropTypes.string,
   content: PropTypes.string,
@@ -98,5 +108,6 @@ Post.propTypes = {
   links: PropTypes.array,
   articleType: PropTypes.string,
   previous: PropTypes.object,
-  next: PropTypes.object
+  next: PropTypes.object,
+  hideComments: PropTypes.bool
 };
