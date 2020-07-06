@@ -22,6 +22,7 @@
 
   &--previous {
     margin-left: 0;
+    margin-right: auto;
     padding-right: .5rem;
 
     .post-prevnext__arrow {
@@ -31,6 +32,7 @@
 
   &--next {
     margin-right: 0;
+    margin-left: auto;
     padding-left: .5rem;
     text-align: right;
 
