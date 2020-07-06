@@ -36,6 +36,8 @@ export default function Post ({
     config: { identifier: slug, title }
   });
 
+  const share = '<script src="https://yastatic.net/share2/share.js" async="async"></script><div class="ya-share2" data-services="vkontakte,facebook,twitter,telegram"></div>';
+
   return (
     <article className="post">
       <header className="post__header">
@@ -66,6 +68,10 @@ export default function Post ({
       <PostLinks title="Ссылки по теме:" items={links} />
 
       <PostTags items={tags} />
+
+      <div className="post__share"
+        dangerouslySetInnerHTML={{ __html: share }}
+      />
 
       <PostPrevNext previous={previous} next={next} />
 
