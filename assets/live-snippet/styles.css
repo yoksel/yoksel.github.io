@@ -83,6 +83,12 @@ A:hover {
   margin-left: auto;
 }
 
+@media (max-width: 400px) {
+  .link SPAN {
+    display: none;
+  }
+}
+
 .columns {
   flex-grow: 1;
   display: flex;

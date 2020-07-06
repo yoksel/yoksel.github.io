@@ -1,7 +1,7 @@
-const Demo = function() {
+const Demo = function () {
   const cssElem = document.querySelector('#demo-css');
   const htmlElem = document.body;
-  this.textareasKeysList = ['html','css'];
+  this.textareasKeysList = ['html', 'css'];
   this.params = getUrlParams();
 
   this.elems = {
@@ -17,12 +17,11 @@ const Demo = function() {
 
   cssElem.innerHTML = '';
   htmlElem.innerHTML = '';
-}
+};
 
 // ------------------------------
 
-Demo.prototype.init = function() {
-  const that = this;
+Demo.prototype.init = function () {
   this.layout = this.addLayout();
 
   // Textarea for editing content
@@ -35,7 +34,7 @@ Demo.prototype.init = function() {
 
 // ------------------------------
 
-Demo.prototype.addIframe = function() {
+Demo.prototype.addIframe = function () {
   const that = this;
   const column = this.createColumn('iframe');
   const iframe = document.createElement('iframe');
@@ -47,11 +46,13 @@ Demo.prototype.addIframe = function() {
 
   waitForIframe();
 
-  function waitForIframe() {
-    setTimeout(function() {
+  function waitForIframe () {
+    let iframeDoc;
+
+    setTimeout(function () {
       iframeDoc = iframe.contentWindow.document;
 
-      if(iframeDoc.readyState !== 'complete') {
+      if (iframeDoc.readyState !== 'complete') {
         waitForIframe();
         return;
       }
@@ -60,55 +61,52 @@ Demo.prototype.addIframe = function() {
       that.fillIframe();
       that.addHash();
       that.addActions();
-     }, 500);
+    }, 500);
   }
-}
+};
 
 // ------------------------------
 
-Demo.prototype.fillIframe = function() {
-  const prefixFreeLink = '<script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>';
-
+Demo.prototype.fillIframe = function () {
   const iframeStyles = document.createElement('style');
   iframeStyles.innerHTML = this.elems.css.content;
   this.iframeDoc.head.appendChild(iframeStyles);
 
   this.iframeDoc.body.innerHTML = cleanHTML(this.elems.html.content);
-}
+};
 
 // ------------------------------
 
-Demo.prototype.addHash = function() {
-    const hash = document.location.hash;
-    this.iframeDoc.location.hash = hash;
-}
+Demo.prototype.addHash = function () {
+  const hash = document.location.hash;
+  this.iframeDoc.location.hash = hash;
+};
 
 // ------------------------------
 
-Demo.prototype.addActions = function() {
+Demo.prototype.addActions = function () {
   const that = this;
   const stylesElem = this.iframeDoc.querySelector('style');
 
   this.saveLink = this.createSaveLink();
 
   // Events
-  this.saveLink.addEventListener('click', function() {
+  this.saveLink.addEventListener('click', function () {
     that.updateSaveLink();
   });
 
-  this.textareas.html.addEventListener('input', function() {
+  this.textareas.html.addEventListener('input', function () {
     that.iframeDoc.body.innerHTML = cleanHTML(this.value);
   });
 
-  this.textareas.css.addEventListener('input', function() {
+  this.textareas.css.addEventListener('input', function () {
     stylesElem.innerHTML = cleanCSS(this.value);
   });
-}
-
+};
 
 // ------------------------------
 
-Demo.prototype.createSaveLink = function() {
+Demo.prototype.createSaveLink = function () {
   const source = this.iframeDoc.firstChild.outerHTML;
   const encoded = htmlToUrl(source);
   const href = 'data:text/html;base64,' + encoded;
@@ -117,27 +115,27 @@ Demo.prototype.createSaveLink = function() {
   const link = this.addLink(
     href,
     'download',
-    'Download result'
+    'Download <span>result</span>'
   );
   link.setAttribute('download', pageTitle);
   link.setAttribute('title', pageTitle);
   this.layout.controls.appendChild(link);
 
   return link;
-}
+};
 
 // ------------------------------
 
-Demo.prototype.updateSaveLink = function() {
+Demo.prototype.updateSaveLink = function () {
   const source = this.iframeDoc.firstChild.outerHTML;
   const encoded = htmlToUrl(source);
   const href = 'data:text/html;base64,' + encoded;
   this.saveLink.href = href;
-}
+};
 
 // ------------------------------
 
-Demo.prototype.addLayout = function() {
+Demo.prototype.addLayout = function () {
   const controls = document.createElement('div');
   controls.classList.add('controls');
   document.body.appendChild(controls);
@@ -154,15 +152,15 @@ Demo.prototype.addLayout = function() {
 
 // ------------------------------
 
-Demo.prototype.addButtons = function() {
+Demo.prototype.addButtons = function () {
   const that = this;
 
-  this.textareasKeysList.forEach(function(key) {
+  this.textareasKeysList.forEach(function (key) {
     const button = document.createElement('button');
     button.classList.add('control');
     button.classList.add('control--' + key);
 
-    if(that.params[key]) {
+    if (that.params[key]) {
       button.classList.add('control--pressed');
     }
 
@@ -170,23 +168,23 @@ Demo.prototype.addButtons = function() {
     that.layout.controls.appendChild(button);
     const column = document.querySelector('.column--' + key);
 
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
       column.classList.toggle('column--collapsed');
       this.classList.toggle('control--pressed');
-    })
+    });
   });
 
   const link = this.addLink(
     document.location.pathname,
     'direct',
-    'Link to demo'
+    'Link <span>to demo</span>'
   );
   that.layout.controls.appendChild(link);
-}
+};
 
 // ------------------------------
 
-Demo.prototype.addLink = function(url, key, text) {
+Demo.prototype.addLink = function (url, key, text) {
   const link = document.createElement('a');
   link.classList.add('link');
   link.classList.add('link--' + key);
@@ -194,14 +192,14 @@ Demo.prototype.addLink = function(url, key, text) {
   link.innerHTML = text;
 
   return link;
-}
+};
 
 // ------------------------------
 
-Demo.prototype.addTextareas = function() {
+Demo.prototype.addTextareas = function () {
   const that = this;
 
-  const textareas = this.textareasKeysList.reduce(function(prev, key) {
+  const textareas = this.textareasKeysList.reduce(function (prev, key) {
     const column = that.createColumn(key);
 
     const textarea = document.createElement('textarea');
@@ -215,7 +213,7 @@ Demo.prototype.addTextareas = function() {
     prev[key] = textarea;
 
     return prev;
-  },{});
+  }, {});
 
   return textareas;
 };
@@ -227,19 +225,19 @@ Demo.prototype.createColumn = function (key) {
   column.classList.add('column');
   column.classList.add('column--' + key);
 
-  if(key !== 'iframe' && !this.params[key]) {
+  if (key !== 'iframe' && !this.params[key]) {
     column.classList.add('column--collapsed');
   }
 
   return column;
-}
+};
 
 // ------------------------------
 
-function getUrlParams() {
-  let urlParamsStr = document.location.search;
+function getUrlParams () {
+  const urlParamsStr = document.location.search;
 
-  if(!urlParamsStr) {
+  if (!urlParamsStr) {
     // Without params show all tabs
     return {
       html: true,
@@ -250,7 +248,7 @@ function getUrlParams() {
   const urlParams = urlParamsStr
     .substr(1)
     .split('&')
-    .reduce(function(prev, item) {
+    .reduce(function (prev, item) {
       prev[item] = true;
       return prev;
     }, {});
@@ -258,20 +256,20 @@ function getUrlParams() {
   return urlParams;
 }
 
-function cleanCSS(css) {
+function cleanCSS (css) {
   return css.trim();
 }
 
-function cleanHTML(html) {
+function cleanHTML (html) {
   const cleanedHTML = html
     .replace(/<script id="__bs_script__">[\S\s]*<\/script>/gm, '')
-    .replace(/<link href="chrome-extension[\S\s]*rel="stylesheet">/gm,'')
+    .replace(/<link href="chrome-extension[\S\s]*rel="stylesheet">/gm, '')
     .trim();
 
   return cleanedHTML;
 }
 
-function htmlToUrl(source) {
+function htmlToUrl (source) {
   const cleanCode = cleanHTML(source);
   const preparedCode = unescape(encodeURIComponent(cleanCode));
   const encoded = btoa(preparedCode);
@@ -281,7 +279,7 @@ function htmlToUrl(source) {
 
 // ------------------------------
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const demo = new Demo();
   demo.init();
 });

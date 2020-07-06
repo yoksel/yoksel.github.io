@@ -1,4 +1,0 @@
-<ul class="list widget__list">
-    {% for post in site.posts %}{% if post.url == page.url %}
-		<li class="item widget__item widget__item--current">{{ post.title }}</li>{% else %}<li class="item widget__item"><a href="{{ post.url }}">{{ post.title }}</a></li>	
-	{% endif %}{% endfor %}</ul>

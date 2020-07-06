@@ -1,0 +1,645 @@
+<!DOCTYPE html><html lang="ru"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.b0db2b80c055aaf8cd9c.css">@import url(https://fonts.googleapis.com/css2?family=Lobster&text=ПроCSS);code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#f8f8f2}.token.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.page-header{position:relative;height:80px;text-align:center}.header-logo{position:absolute;width:224px;height:224px;margin:0 auto;bottom:0;left:0;right:0;font-size:56px;line-height:1.2;font-family:Lobster,Georgia,cursive;text-shadow:0 0 5px #7f0c23;color:#fff}.header-logo__item--about{font-size:.7em}.header-logo__item--css{font-size:1.2em}.header-logo__content{display:flex;align-items:center;justify-content:center;position:relative;width:224px;height:224px;background:#dc143c;border-radius:50%;box-shadow:inset 0 0 0 transparent,0 0 0 10px #fff,0 -3px 10px 9px hsla(0,0%,39.2%,.5)}.header-logo__content--link{color:inherit;text-decoration:none;transition:all .5s}.header-logo__content--link:after{content:"";display:block;position:absolute;width:268.8px;height:268.8px;top:-22.4px;left:-22.4px;border-radius:50%;transition:inherit}.header-logo__content--link:hover{background:#444;box-shadow:inset 0 5px 10px rgba(0,0,0,.5),0 0 0 10px #fff,0 -3px 10px 9px hsla(0,0%,39.2%,.5);text-shadow:0 2px 5px #000;color:#ddd}.header-logo__content--link:hover:after{box-shadow:-14.56px -14.56px 0 rgba(255,0,0,.3),-20.384px 0 0 rgba(255,170,0,.3),-14.56px 14.56px 0 rgba(170,255,0,.3),0 20.384px 0 rgba(0,255,0,.3),14.56px 14.56px 0 rgba(0,255,170,.3),20.384px 0 0 rgba(0,170,255,.3),14.56px -14.56px 0 rgba(0,0,255,.3),0 -20.384px 0 rgba(170,0,255,.3);animation:rotate 2s linear infinite}@keyframes rotate{to{transform:rotate(1turn)}}.footer-logo{margin-right:2rem;font-size:27.2px;font-family:Lobster,Georgia,cursive}.footer-logo__content--link{display:inline-block;position:relative;text-decoration:none;color:#333;transition:all .5s}.footer-logo__content--link:before{content:attr(data-name);display:inline-block;position:absolute;left:0;width:0;overflow:hidden;white-space:nowrap;color:#dc143c;transition:inherit}.footer-logo__content--link:hover{text-shadow:0 2px 2px #ccc}.footer-logo__content--link:hover:before{width:100%}.page-footer{margin-top:2rem;padding-top:2rem;border-top:1px solid #ddd}.page-footer .page-container{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center}.page-footer__nav{display:flex;flex-wrap:wrap;margin:.5rem 0}.page-footer__nav-item{white-space:nowrap;margin-right:1em}.page-footer__nav-item:last-child{margin-right:0}.page-footer__nav-item:not([href]){font-weight:700;color:#000}:root{--gap:2.5rem}HTML{scroll-behavior:smooth}BODY{display:flex;margin:0;padding:32px 32px 0;background:#eee;justify-content:center;font-family:Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;font-size:16px;line-height:1.5;color:#000}BODY>*{flex-grow:1}@media (max-width:1000px){BODY{padding:32px 0 0}}H1,H2,H3,H4,H5{margin:1em 0 .5em;font-weight:400;font-family:Georgia,serif;line-height:1.2}H1{font-size:3rem}H2{font-size:2.5rem}H3{font-size:2rem}H4{font-size:1.6rem}H5{font-size:1.3rem}H1:first-child,H2:first-child,H3:first-child,H4:first-child,H5:first-child{margin-top:0}A{color:#4682b4}A:hover{text-decoration:none}IMG{max-width:100%}.img-about{float:right;max-width:150px;height:auto;margin:0 0 1rem 1rem;border-radius:10px}CODE,PRE{border-radius:4px;font-size:14px}:not(PRE)>CODE{display:inline-block;padding:0 3px!important;background:#eee8aa!important;text-shadow:1px 1px #fff!important;font-family:Consolas,Monaco,Lucida Console,monospace;line-height:1.6;color:#8b0000!important}:not(PRE)>CODE A{color:inherit;text-decoration:none}PRE CODE{display:block;background:transparent;color:inherit}.specifity{background:#ddd;color:#222}.faded-text{font-style:italic;color:#aaa}.tiny-text{font-size:.9em}.hidden{display:none}.columns{display:flex}@media (max-width:700px){.post .columns{flex-direction:column}}.columns .svg{display:block;margin:.5rem 0 1rem}.column{flex-grow:1}.column+.column{margin-left:1rem}.vlm{vertical-align:middle}.visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;border:0;padding:0;-webkit-clip-path:inset(100%);clip-path:inset(100%);clip:rect(0 0 0 0);overflow:hidden}@media (max-width:1000px){.posts-by-tags{margin-bottom:1rem}}.post .tags-list{margin-top:0;margin-bottom:2rem;padding:1.5rem;background:#eee;text-align:center}.post .tags-list__item{display:inline-block;margin:0 .5em;line-height:2}.tags-button{padding:0;background:transparent;border:0;border-bottom:1px dashed;font:inherit;line-height:1;color:#333;cursor:pointer}.tags-button--current{border:0;outline:0;box-shadow:0 0 0 4px #333;background:#333;color:#fff}.posts__list---by-tag .post{margin-bottom:.5rem}.page{display:grid;gap:2rem;width:100%;min-width:320px;max-width:1200px;margin:112px auto 0;padding:2rem;box-sizing:border-box;background:#fff;box-shadow:0 5px 10px hsla(0,0%,39.2%,.5)}.page-main-wrapper{display:grid;gap:var(--gap);grid-template-columns:minmax(0,3fr) minmax(270px,1fr)}.page-main-wrapper--onecolumn{grid-template-columns:1fr}@media (max-width:1000px){.page-main-wrapper{grid-template-columns:minmax(250px,1fr)}}.widget{margin-bottom:2rem}.widget__title{margin-bottom:.5em;font-size:2rem}.widget__list{margin:0;padding:0;list-style:none}@media (min-width:550px) and (max-width:1000px){.widget__list{-webkit-columns:2;column-count:2;-webkit-column-gap:1rem;column-gap:1rem}}.widget__item{margin-bottom:.75rem}.widget__item--current{font-weight:700}.widget__desc{font-size:.75em;color:#555}.post{word-break:break-word}.post H2{font-size:2.1rem}.post H3{font-size:1.75rem}.post H4{font-size:1.4rem}.post H5{font-size:1.15rem}.post SECTION H2{margin:2rem 0 1rem}.post IMG{margin:1rem 0;border:1px solid #ddd}.post IFRAME{width:100%;margin:.5rem 0;border:0}.post TABLE{width:100%;border-collapse:collapse;border-spacing:0}.post .table--w-auto{width:auto}.post TD,.post TH{border-bottom:1px solid #ddd;padding:7px;text-align:left}.post TH{white-space:nowrap;font-weight:700;font-size:1.2em}.post THEAD TH{border-top:1px solid #ddd;background:#eee}.post .gatsby-highlight,.post PRE[class*=language-]{max-width:100%;overflow:auto;font-size:14px}.post FIGURE{margin-left:0;margin-right:0}.post FIGCAPTION{font-style:italic;color:#777}.post .figure--text-on-right{margin-bottom:2rem}@media (min-width:600px){.post .figure--text-on-right{display:flex}}.post .figure--text-on-right IMG{margin-right:2rem;align-self:flex-start}.post BLOCKQUOTE{margin-left:0;padding-left:1rem;padding-top:.5rem;padding-bottom:.5rem;border-left:5px solid #ddd;font-style:italic}.post OL,.post UL{padding:0;list-style:none}.post DD,.post LI{margin-bottom:.75rem}.post OL OL LI,.post UL UL LI{margin-top:.75rem}.post DL:not(.no-bullets) DD{margin-left:25px}.post DL:not(.no-bullets) DD:before{content:"\2014";position:absolute;margin-left:-20px;color:#aaa}.post UL:not(.no-bullets) LI{margin-left:25px}.post UL:not(.no-bullets) LI:before{content:"\2014";position:absolute;margin-left:-20px;color:#aaa}.post OL{counter-reset:num-list}.post OL LI:before{content:counter(num-list) ". ";counter-increment:num-list}.post HR{height:0;margin:1.5em 0;background:transparent;border:0;border-bottom:1px solid #ddd}.post .widget{margin-top:2rem}.post__header{display:flex;justify-content:space-between;flex-wrap:wrap;margin-bottom:2rem;padding-bottom:5px;border-bottom:1px solid #ddd}.post__title{width:100%;font-size:2.5rem;margin-bottom:.4em}.post__date,.post__link-to-comments{font-size:.9em}.post__warning{margin:1rem 0;padding:1em;border-radius:10px;background:#fafad2}.post__warning P:last-child{margin-bottom:0}.post__warning P:first-child{margin-top:0}.post-links{margin:2rem 0}.post-links__title{margin-bottom:.75rem;font-weight:700}.post-tags{margin-bottom:1rem;margin-top:2rem}.post-tags__item,.post-tags__title{display:inline-block;margin:0}.post-tags__title{margin-right:.5rem;font-weight:700}.post-prevnext{margin:2rem 0;padding:2rem 0;border:1px solid #ddd;border-width:1px 0;display:flex;justify-content:space-between;align-items:center}.post-prevnext--posts{flex-direction:row-reverse}@media (max-width:1000px){.post-prevnext{padding:1rem 0}}.post-prevnext__item{margin:0 .5em;text-decoration:none}.post-prevnext__item--previous{margin-left:0;margin-right:auto;padding-right:.5rem}.post-prevnext__item--previous .post-prevnext__arrow{padding-right:.25em}.post-prevnext__item--next{margin-right:0;margin-left:auto;padding-left:.5rem;text-align:right}.post-prevnext__item--next .post-prevnext__arrow{padding-left:.25em}@media (max-width:1000px){.post-prevnext__item{font-size:32px;line-height:1;text-decoration:none}.post-prevnext__item:hover{text-decoration:underline}}.post-prevnext__text{text-decoration:underline}.post-prevnext__item:hover .post-prevnext__text{text-decoration:none}@media (max-width:1000px){.post-prevnext__text{display:none}}.posts-list{margin:0;padding:0;list-style:none}.posts-list--cards .post-item{margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid #ddd}.post-item__title{margin-bottom:1rem;font-size:1.7rem;line-height:1.2;font-family:Georgia,serif}.posts-list__archive-mark{margin-left:.5rem}.post-item__footer{display:flex;justify-content:space-between;margin-top:.5rem;font-size:12px}</style><meta name="generator" content="Gatsby 2.23.3"/><title data-react-helmet="true">Мыльные пузыри на SVG • Про CSS</title><link data-react-helmet="true" rel="canonical" href="https://css.yoksel.ru"/><link data-react-helmet="true" rel="shortcut icon" href="/favicon.ico"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><link data-react-helmet="true" rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/><link data-react-helmet="true" rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"/><link data-react-helmet="true" rel="manifest" href="/manifest.json"/><link data-react-helmet="true" rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/><link data-react-helmet="true" rel="stylesheet" href="/assets/css/bubble.css"/><meta data-react-helmet="true" charSet="utf-8"/><meta data-react-helmet="true" name="description" content="Пузыри у меня получились почти случайно, когда я экспериментировала с SVG-градиентами."/><meta data-react-helmet="true" name="yandex-verification" content="50720d52dcb3b0b9"/><meta data-react-helmet="true" name="theme-color" content="#ffffff"/><meta data-react-helmet="true" property="og:site_name" content="Про CSS"/><meta data-react-helmet="true" property="og:title" content="Мыльные пузыри на SVG"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="og:url" content="https://css.yoksel.ru/svg-bubble"/><meta data-react-helmet="true" property="og:image" content="https://img-fotki.yandex.ru/get/59115/5091629.a4/0_90850_bd3003bc_orig"/><meta data-react-helmet="true" property="og:description" content="Пузыри у меня получились почти случайно, когда я экспериментировала с SVG-градиентами."/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="@yoksel"/><meta data-react-helmet="true" name="twitter:image" content="https://img-fotki.yandex.ru/get/59115/5091629.a4/0_90850_bd3003bc_orig"/><link rel="alternate" type="application/rss+xml" title="Про CSS" href="/feed.xml"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-a06b6345a4624d64a2fb.js"/><link as="script" rel="preload" href="/commons-ec50f7e5a87930e7d85c.js"/><link as="script" rel="preload" href="/app-44086c157848e2a9fbf6.js"/><link as="script" rel="preload" href="/framework-20335242239071f73386.js"/><link as="script" rel="preload" href="/styles-9b6f388623a2ec93d35f.js"/><link as="script" rel="preload" href="/webpack-runtime-1f23e394a0c92e808509.js"/><link as="fetch" rel="preload" href="/page-data/svg-bubble/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page page--single-page"><header class="page-header"><div class="page-header__title"><div class="header-logo"><a class="header-logo__content header-logo__content--link" data-name="Про CSS" href="/"><span class="header-logo__item header-logo__item--about">Про</span> <span class="header-logo__item header-logo__item--css">CSS</span></a></div></div></header><div class="
+    page-container
+    page-main-wrapper
+    page-main-wrapper--default"><main class="page-main"><article class="post"><header class="post__header"><h1 class="post__title">Мыльные пузыри на SVG</h1><time class="post__date faded-text">18/08/2016</time><a class="post__link-to-comments" href="/svg-bubble#disqus_thread"><span class="disqus-comment-count" data-disqus-identifier="svg-bubble"></span></a></header><dl class="post-links"><dt class="post-links__title">Содержание:</dt><dd class="post-links__item"><a href="#colored-layer">Разноцветный слой</a></dd><dd class="post-links__item"><a href="#reflections">Отражения</a></dd><dd class="post-links__item"><a href="#flares">Блики</a></dd><dd class="post-links__item"><a href="#final">Финальная сборка</a></dd></dl><div class="post__content"><p>Честно говоря, пузыри у меня получились почти случайно, когда мне потребовалось как следует изучить градиенты и я экспериментировала с их возможностями. И я сама до сих пор не очень понимаю, как так получилось, используя только SVG — векторный формат, — сделать такой невесомый мыльный пузырь. <!--more--></p>
+<iframe height="500"
+      style="width: 100%"
+      title="no title"
+      src="http://codepen.io/yoksel/embed/EyZgLo/?&default-tab=result"
+    ></iframe>
+<p>На самом деле, если разобраться, тут нет ничего сложного, а вся магия заключается в использовании масок в сочетании с градиентами.</p>
+<p><i>Подробно про устройство SVG-масок можно почитать <a href="/svg-masks/">здесь</a>, а про градиенты — <a href="/svg-gradients/">вот здесь</a>.</i></p>
+<p>Разберём пузырь на слои (от нижнего слоя к верхнему):</p>
+<div class="bubbles-group gray-stripes-bg items-5">
+<svg class="svg" viewBox="0 0 200 200" width="150" height="150">
+  <use xlink:href="#dashed-contur"/>
+  <use xlink:href="#spot--bottom"/>
+</svg>
+<svg class="svg" viewBox="0 0 200 200" width="150" height="150">
+  <use xlink:href="#light--bottom"/>
+</svg>
+<svg class="svg" viewBox="0 0 200 200" width="150" height="150">
+  <use xlink:href="#light--top"/>
+</svg>
+<svg class="svg" viewBox="0 0 200 200" width="150" height="150">
+  <use xlink:href="#dashed-contur"/>
+  <use xlink:href="#spot--top"/>
+</svg>
+<svg class="svg" viewBox="0 0 200 200" width="150" height="150">
+  <use xlink:href="#colors"/>
+</svg>
+</div>
+<p>Пузырь состоит из пяти слоёв, каждый из которых является фигурой c градиентом, некоторые из них — ещё и с масками (внутри которых тоже градиенты).</p>
+<p>Важно: всё содержимое пузыря находится внутри тега <code>svg</code>:</p>
+<div class="gatsby-highlight" data-language="markup"><pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0 0 200 200<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>150<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>150<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token comment">&lt;!-- слои будут тут --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span></code></pre></div>
+<p>Также обратите внимание на обязательный атрибут <code>viewBox</code>: он нужен затем, чтобы при изменении размеров изображения внутренняя система координат ресайзилась вместе с ним, и элементы не расползались кто куда, а оставались на своих местах. Особенно это важно для координат, которые не могут быть заданы в процентах.</p>
+<p>В примерах тег <code>svg</code> будет опущен, но не забудьте его добавить, если будете использовать примеры кода из статьи.</p>
+<h2 id="colored-layer">Разноцветный слой</h2>
+<p>Начнём с самого главного (и самого верхнего) слоя, он имитирует поверхность пузыря с радужными разводами:</p>
+<svg class="svg gray-stripes-bg" viewBox="0 0 200 200" width="150" height="150">
+  <circle r="50%" cx="50%" cy="50%"
+  fill="url(#gradient--colors)"
+  mask="url(#mask--colors-transparency)"></circle>
+</svg>
+<p>По сути, к фигуре применены два градиента, один из них внутри маски. Эта конструкция позволяет получить фигуру с линейным градиентом и с радиальной прозрачностью одновременно.</p>
+<h3>Как сделать:</h3>
+<ol class="layer-steps-list">
+<li>
+<h4>Создаём фигуру с разноцветным градиентом</h4>
+<p>
+  Пишем градиент:
+</p>
+<div class="gatsby-highlight" data-language="markup"><pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>linearGradient</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>gradient--colors<span class="token punctuation">"</span></span>
+  <span class="token attr-name">x1</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">y1</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span>
+  <span class="token attr-name">x2</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span> <span class="token attr-name">y2</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>dodgerblue<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>fuchsia<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>yellow<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>linearGradient</span><span class="token punctuation">></span></span></code></pre></div>
+<svg class="svg gray-stripes-bg" viewBox="0 0 200 200" width="150" height="150">
+  <rect width="100%" height="100%"
+    fill="url(#gradient--colors)"
+    ></rect>
+</svg>
+<p>Применяем его к фигуре:</p>
+<div class="gatsby-highlight" data-language="markup"><pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span>
+  <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#gradient--colors)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- градиентная заливка --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">></span></span></code></pre></div>
+<p><svg class="svg gray-stripes-bg"
+  viewBox="0 0 200 200" width="150" height="150">
+<circle r="50%"
+    cx="50%" cy="50%"
+    fill="url(#gradient--colors)"
+    ></circle>
+</svg></p>
+<p>Получается разноцветная основа, которой не хватает лёгкости и прозрачности.</p>
+</li>
+<li>
+<h4>Добавляем прозрачность</h4>
+<p>Для этого воспользуемся радиальным градиентом с черными и белыми оттенками разной степени прозрачности (значения подбирались опытным путём):</p>
+<div class="gatsby-highlight" data-language="markup"><pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>radialGradient</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>gradient--colors-transparency<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>30%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>black<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-opacity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>.2<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>97%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>white<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-opacity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>.4<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>black<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>radialGradient</span><span class="token punctuation">></span></span></code></pre></div>
+<p><svg class="svg gray-stripes-bg"
+viewBox="0 0 200 200" width="150" height="150">
+<rect width="100%" height="100%"
+    fill="url(#gradient--colors-transparency--no-fx)"
+    ></rect>
+</svg></p>
+<p>Чтобы прозрачность выглядела более естественно, нужно немного сместить центр градиента, для этого воспользуемся атрибутами <code>fx</code> и <code>fy</code>:</p>
+<div class="gatsby-highlight" data-language="markup"><pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>radialGradient</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>gradient--colors-transparency<span class="token punctuation">"</span></span>
+  <span class="token attr-name">fx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>25%<span class="token punctuation">"</span></span> <span class="token attr-name">fy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>25%<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- смещение центра градиента --></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>black<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>30%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>black<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-opacity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>.2<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>97%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>white<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-opacity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>.4<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>black<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>radialGradient</span><span class="token punctuation">></span></span></code></pre></div>
+<p>Вот что получилось:</p>
+<p><svg class="svg gray-stripes-bg"
+viewBox="0 0 200 200" width="150" height="150">
+<rect width="100%" height="100%"
+    fill="url(#gradient--colors-transparency)"
+    ></rect>
+</svg></p>
+<p>Теперь делаем маску. В <code>mask</code> кладётся прямоугольник, в качестве заливки используется свежесозданный градиент:</p>
+<div class="gatsby-highlight" data-language="markup"><pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mask</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mask--colors-transparency<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#gradient--colors-transparency)<span class="token punctuation">"</span></span>
+    <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mask</span><span class="token punctuation">></span></span></code></pre></div>
+<p>Затем добавляем маску к фигуре с разноцветной заливкой:</p>
+<div class="gatsby-highlight" data-language="markup"><pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span>
+  <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#gradient--colors)<span class="token punctuation">"</span></span>
+  <span class="token attr-name">mask</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#mask--colors-transparency)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- маска --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">></span></span></code></pre></div>
+<p>Результат:</p>
+<p><svg class="svg gray-stripes-bg"
+  viewBox="0 0 200 200" width="150" height="150">
+<circle r="50%"
+    cx="50%" cy="50%"
+    fill="url(#gradient--colors)"
+    mask="url(#mask--colors-transparency)"
+    ></circle>
+</svg></p>
+</li>
+</ol>
+<p>Весь код разноцветного слоя:</p>
+<div class="gatsby-highlight" data-language="markup"><pre class="language-markup"><code class="language-markup"><span class="token comment">&lt;!-- Разноцветный градиент --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>linearGradient</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>gradient--colors<span class="token punctuation">"</span></span>
+  <span class="token attr-name">x1</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">y1</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span>
+  <span class="token attr-name">x2</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span> <span class="token attr-name">y2</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>dodgerblue<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>fuchsia<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>yellow<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>linearGradient</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Градиент прозрачности разноцветного слоя --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>radialGradient</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>gradient--colors-transparency<span class="token punctuation">"</span></span>
+  <span class="token attr-name">fx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>25%<span class="token punctuation">"</span></span> <span class="token attr-name">fy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>25%<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>black<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>30%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>black<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-opacity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>.2<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>97%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>white<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-opacity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>.4<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>black<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>radialGradient</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Маска прозрачности разноцветного слоя --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mask</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mask--colors-transparency<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#gradient--colors-transparency)<span class="token punctuation">"</span></span>
+    <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mask</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Фигура с маской и разноцветным градиентом --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span>
+  <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#gradient--colors)<span class="token punctuation">"</span></span>
+  <span class="token attr-name">mask</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#mask--colors-transparency)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">></span></span></code></pre></div>
+<p>Получилась полупрозрачная радужная поверхность, пока ещё не очень похожая на мыльный пузырь.</p>
+<p>Погуглив картинки по запросу <a href="https://www.google.ru/search?q=soap+bubbles+vector&newwindow=1&biw=1246&bih=617&tbm=isch&tbo=u&source=univ&sa=X&ved=0ahUKEwjG27zPq8HOAhXjB5oKHWNvA_MQsAQIGg#newwindow=1&tbm=isch&q=soap+bubble&imgrc=R2pNfXjZcboCdM%3A">soap bubble</a>, я подумала, что пузырю можно добавить внутренние отражения вверху и внизу.</p>
+<h2 id="reflections">Отражения</h2>
+<p>В качестве отражений я использовала две фигуры с однотонной заливкой и маской, добавляющей фигурам прозрачность.</p>
+<div class="bubbles-group gray-stripes-bg items-2">
+<svg class="svg" viewBox="0 0 200 200" width="150" height="150">
+<circle r="50%"
+    cx="50%" cy="50%"
+    fill="aqua"
+    mask="url(#mask--light-bottom)"
+    ></circle>
+</svg>
+<svg class="svg" viewBox="0 0 200 200" width="150" height="150">
+  <circle r="50%"
+  cx="50%" cy="50%"
+  fill="yellow"
+  mask="url(#mask--light-top)"
+  ></circle>
+</svg>
+</div>
+<p>Прозрачность сделана маской, хотя, теоретически, можно было бы обойтись одними градиентами. Но мне хотелось, чтобы отражения были одинаковыми, а кроме того, использование в маске только белого и чёрного цветов позволяет получить более управляемые градиенты.</p>
+<h3>Как сделать:</h3>
+<ol class="layer-steps-list">
+<li>
+<h4>Создаём фигуры с однотонной заливкой</h4>
+<div class="gatsby-highlight" data-language="markup"><pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span>
+  <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>aqua<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- голубая заливка --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span>
+  <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>yellow<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- желтая заливка --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">></span></span></code></pre></div>
+<div class="bubbles-group gray-stripes-bg items-2">
+<svg class="svg" viewBox="0 0 200 200" width="150" height="150">
+  <circle r="50%"
+     cx="50%" cy="50%"
+     fill="aqua"
+     ></circle>
+</svg>
+<svg class="svg" viewBox="0 0 200 200" width="150" height="150">
+  <circle r="50%"
+  cx="50%" cy="50%"
+  fill="yellow"
+  ></circle>
+</svg>
+</div>
+</li>
+<li>
+<h4>Добавляем прозрачность с помощью масок</h4>
+<p>В этом градиенте так же используются белый и чёрный разной степени прозрачности, а центральный цвет сдвинут вверх с помощью атрибута <code>fy</code>:</p>
+<div class="gatsby-highlight" data-language="markup"><pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>radialGradient</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>gradient--bw-light<span class="token punctuation">"</span></span>
+  <span class="token attr-name">fy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>10%<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>60%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>black<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-opacity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>90%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>white<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-opacity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>.25<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>black<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>radialGradient</span><span class="token punctuation">></span></span></code></pre></div>
+<svg class="svg gray-stripes-bg" viewBox="0 0 200 200" width="150" height="150">
+  <rect width="100%" height="100%"
+    fill="url(#gradient--bw-light)"
+    ></rect>
+</svg>
+<p>Используя этот градиент, создадим две маски: для верхнего отражения и для нижнего. В маске для верхнего отражения используется тот же градиент, но прямоугольник с градиентом перевёрнут кверх ногами.</p>
+<div class="gatsby-highlight" data-language="markup"><pre class="language-markup"><code class="language-markup"><span class="token comment">&lt;!-- Маска для нижнего отражения --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mask</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mask--light-bottom<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#gradient--bw-light)<span class="token punctuation">"</span></span>
+    <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mask</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Маска для верхнего отражения --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mask</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mask--light-top<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#gradient--bw-light)<span class="token punctuation">"</span></span>
+    <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">transform</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>rotate(180, 100, 100)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mask</span><span class="token punctuation">></span></span></code></pre></div>
+<p>Добавляем маски к фигурам с заливкой:</p>
+<div class="gatsby-highlight" data-language="markup"><pre class="language-markup"><code class="language-markup"><span class="token comment">&lt;!-- Нижнее отражение --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span>
+  <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>aqua<span class="token punctuation">"</span></span>
+  <span class="token attr-name">mask</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#mask--light-bottom)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- маска --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Верхнее отражение --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span>
+  <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>yellow<span class="token punctuation">"</span></span>
+  <span class="token attr-name">mask</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#mask--light-top)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- маска --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">></span></span></code></pre></div>
+<p>Результат:</p>
+<div class="bubbles-group gray-stripes-bg items-2">
+<svg class="svg" viewBox="0 0 200 200" width="150" height="150">
+  <circle r="50%"
+     cx="50%" cy="50%"
+     fill="aqua"
+     mask="url(#mask--light-bottom)"
+     ></circle>
+</svg>
+<svg class="svg" viewBox="0 0 200 200" width="150" height="150">
+  <circle r="50%"
+  cx="50%" cy="50%"
+  fill="yellow"
+  mask="url(#mask--light-top)"
+  ></circle>
+</svg>
+</div>
+</li>
+</ol>
+<p>Весь код слоя с отражениями:</p>
+<div class="gatsby-highlight" data-language="markup"><pre class="language-markup"><code class="language-markup"><span class="token comment">&lt;!-- Градиент для прозрачности --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>radialGradient</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>gradient--bw-light<span class="token punctuation">"</span></span> <span class="token attr-name">fy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>10%<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>60%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>black<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-opacity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>90%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>white<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-opacity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>.25<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>black<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>radialGradient</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Маска для нижнего отражения --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mask</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mask--light-bottom<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#gradient--bw-light)<span class="token punctuation">"</span></span>
+    <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mask</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Маска для верхнего отражения --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mask</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mask--light-top<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#gradient--bw-light)<span class="token punctuation">"</span></span>
+    <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">transform</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>rotate(180, 100, 100)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rect</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mask</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Нижнее отражение --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span>
+  <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>aqua<span class="token punctuation">"</span></span>
+  <span class="token attr-name">mask</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#mask--light-bottom)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Верхнее отражение --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span>
+  <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>yellow<span class="token punctuation">"</span></span>
+  <span class="token attr-name">mask</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#mask--light-top)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">></span></span></code></pre></div>
+<p>Объединим слои. Отражения внутренние, поэтому слои с ними располагаются под разноцветным слоем:</p>
+<p><svg class="svg gray-stripes-bg"
+  viewBox="0 0 200 200" width="150" height="150">
+<use xlink:href="#light--bottom"/>
+<use xlink:href="#light--top"/>
+<use xlink:href="#colors"/>
+</svg></p>
+<p>Пузырь стал более многоцветным, но сейчас его поверхность выглядит матовой. Чтобы сделать её блестящей, нужно добавить блики.</p>
+<h2 id="flares">Блики</h2>
+<p>Они сделаны двумя эллипсами с градиентной заливкой:</p>
+<div class="bubbles-group gray-stripes-bg items-2">
+<svg class="svg" viewBox="0 0 200 200" width="150" height="150">
+  <use xlink:href="#dashed-contur"/>
+  <use xlink:href="#spot--top"/>
+</svg>
+<svg class="svg" viewBox="0 0 200 200" width="150" height="150">
+  <use xlink:href="#dashed-contur"/>
+  <use xlink:href="#spot--bottom"/>
+</svg>
+</div>
+<p><i>Контурная обводка показывает границы пузыря.</i></p>
+<h3>Как сделать:</h3>
+<ol class="layer-steps-list">
+<li>
+<h4>Создаём градиент</h4>
+<p>Он состоит из оттенков белого разной степени прозрачности, центральный цвет сдвинут к верхнему краю:</p>
+<div class="gatsby-highlight" data-language="markup"><pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>radialGradient</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>gradient--spot<span class="token punctuation">"</span></span>
+  <span class="token attr-name">fy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>20%<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>10%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>white<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-opacity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>.7<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>70%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>white<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-opacity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>radialGradient</span><span class="token punctuation">></span></span></code></pre></div>
+<svg class="svg gray-stripes-bg" viewBox="0 0 200 200" width="150" height="150">
+<rect width="100%" height="100%"
+  fill="url(#gradient--spot)"
+  ></rect>
+</svg>
+</li>
+<li>
+<h4>Рисуем эллипсы</h4>
+<p>Один располагаем вверху слева, другой — внизу справа, добавляем градиентную заливку:</p>
+<div class="gatsby-highlight" data-language="markup"><pre class="language-markup"><code class="language-markup"><span class="token comment">&lt;!-- Верхний блик --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ellipse</span> <span class="token attr-name">rx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>65<span class="token punctuation">"</span></span> <span class="token attr-name">ry</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>25<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span>
+   <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#gradient--spot)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ellipse</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Нижний блик --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ellipse</span> <span class="token attr-name">rx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>40<span class="token punctuation">"</span></span> <span class="token attr-name">ry</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>20<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>150<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>150<span class="token punctuation">"</span></span>
+   <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#gradient--spot)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ellipse</span><span class="token punctuation">></span></span></code></pre></div>
+<div class="bubbles-group gray-stripes-bg items-2">
+<svg class="svg" viewBox="0 0 200 200" width="150" height="150">
+  <use xlink:href="#dashed-contur"/>
+  <ellipse rx="55" ry="25"
+  cx="55" cy="55"
+  fill="url(#gradient--spot)">
+  </ellipse>
+</svg>
+<svg class="svg" viewBox="0 0 200 200" width="150" height="150">
+  <use xlink:href="#dashed-contur"/>
+  <ellipse rx="40" ry="20"
+  cx="150" cy="150"
+  fill="url(#gradient--spot)">
+  </ellipse>
+</svg>
+</div>
+<p>Так как радиальный градиент применили к эллипсам, он сплющился, чтобы уместиться в фигуре целиком.</p>
+</li>
+<li>
+<h4>Добавляем трансформации</h4>
+<p>Чтобы блики визуально находились на поверхности пузыря, их надо немного повернуть:</p>
+<div class="gatsby-highlight" data-language="markup"><pre class="language-markup"><code class="language-markup"><span class="token comment">&lt;!-- Верхний блик --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ellipse</span> <span class="token attr-name">rx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span> <span class="token attr-name">ry</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>25<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span>
+   <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#gradient--spot)<span class="token punctuation">"</span></span>
+   <span class="token attr-name">transform</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>rotate(-45, 55, 55)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- трансформация --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ellipse</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Нижний блик --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ellipse</span> <span class="token attr-name">rx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>40<span class="token punctuation">"</span></span> <span class="token attr-name">ry</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>20<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>150<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>150<span class="token punctuation">"</span></span>
+   <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#gradient--spot)<span class="token punctuation">"</span></span>
+   <span class="token attr-name">transform</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>rotate(-225, 150, 150)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- трансформация --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ellipse</span><span class="token punctuation">></span></span></code></pre></div>
+<p>Результат:</p>
+<div class="bubbles-group gray-stripes-bg items-2">
+<svg class="svg" viewBox="0 0 200 200" width="150" height="150">
+  <use xlink:href="#dashed-contur"/>
+  <ellipse rx="55" ry="25"
+  cx="55" cy="55"
+  fill="url(#gradient--spot)"
+  transform="rotate(-45, 55, 55)">
+  </ellipse>
+</svg>
+<svg class="svg" viewBox="0 0 200 200" width="150" height="150">
+  <use xlink:href="#dashed-contur"/>
+  <ellipse rx="40" ry="20"
+  cx="150" cy="150"
+  fill="url(#gradient--spot)"
+  transform="rotate(-225, 150, 150)">
+  </ellipse>
+</svg>
+</div>
+</li>
+</ol>
+<p>Весь код слоя с бликами:</p>
+<div class="gatsby-highlight" data-language="markup"><pre class="language-markup"><code class="language-markup"><span class="token comment">&lt;!-- Градиент блика --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>radialGradient</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>gradient--spot<span class="token punctuation">"</span></span> <span class="token attr-name">fy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>20%<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>10%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>white<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-opacity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>.7<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stop</span> <span class="token attr-name">offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>70%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>white<span class="token punctuation">"</span></span>
+    <span class="token attr-name">stop-opacity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>radialGradient</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Верхний блик --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ellipse</span> <span class="token attr-name">rx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span> <span class="token attr-name">ry</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>25<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span>
+   <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#gradient--spot)<span class="token punctuation">"</span></span>
+   <span class="token attr-name">transform</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>rotate(-45, 55, 55)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ellipse</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Нижний блик --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ellipse</span> <span class="token attr-name">rx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>40<span class="token punctuation">"</span></span> <span class="token attr-name">ry</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>20<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>150<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>150<span class="token punctuation">"</span></span>
+   <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#gradient--spot)<span class="token punctuation">"</span></span>
+   <span class="token attr-name">transform</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>rotate(-225, 150, 150)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ellipse</span><span class="token punctuation">></span></span></code></pre></div>
+<h2 id="final">Финальная сборка</h2>
+<p>Теперь можно собрать весь код в финальную версию. В примерах я объединяла в группы разные компоненты одного слоя, но если теперь просто свалить весь код в одну кучу, во-первых, получится неверная последовательность слоёв, а во-вторых, таким кодом будет просто неудобно пользоваться.</p>
+<p>При этом код содержит два типа элементов, и можно удобно сгруппировать элементы по типу. Первый тип — это простые фигуры (в нашем случае — круги и эллипсы), именно они являются видимыми слоями, из которых в итоге получается пузырь. Второй тип — это элементы, которые не отображаются на странице, но влияют на внешний вид отображаемых фигур: это маски и градиенты.</p>
+<p>Неотображаемые элементы будет удобно положить в <code>defs</code> — это такой элемент, специально предназначенный для хранения переиспользуемых штук. Ни сам элемент, ни его содержимое не отображаются на странице.</p>
+<p>Отображаемые элементы следует расположить после <code>defs</code>. При этом нужно обратить внимание на порядок слоёв и помнить, что чем ниже слой в коде, тем ближе он к зрителю, то есть самым первым к коде должен быть нижний блик, а самым верхним — слой с разноцветным градиентом.</p>
+<p>Примерный код (маски и градиенты опущены, полный код есть ниже):</p>
+<div class="gatsby-highlight" data-language="markup"><pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0 0 200 200<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>150<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>150<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>defs</span><span class="token punctuation">></span></span>
+    <span class="token comment">&lt;!-- здесь должны быть маски и градиенты --></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>defs</span><span class="token punctuation">></span></span>
+
+  <span class="token comment">&lt;!-- Нижний блик --></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ellipse</span> <span class="token attr-name">rx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>40<span class="token punctuation">"</span></span> <span class="token attr-name">ry</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>20<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>150<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>150<span class="token punctuation">"</span></span>
+    <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#gradient--spot)<span class="token punctuation">"</span></span>
+    <span class="token attr-name">transform</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>rotate(-225, 150, 150)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ellipse</span><span class="token punctuation">></span></span>
+
+  <span class="token comment">&lt;!-- Нижнее отражение --></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>aqua<span class="token punctuation">"</span></span>
+    <span class="token attr-name">mask</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#mask--light-bottom)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">></span></span>
+
+  <span class="token comment">&lt;!-- Верхнее отражение --></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>yellow<span class="token punctuation">"</span></span>
+    <span class="token attr-name">mask</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#mask--light-top)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">></span></span>
+
+  <span class="token comment">&lt;!-- Верхний блик --></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ellipse</span> <span class="token attr-name">rx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span> <span class="token attr-name">ry</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>25<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span>
+    <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#gradient--spot)<span class="token punctuation">"</span></span>
+    <span class="token attr-name">transform</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>rotate(-45, 55, 55)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ellipse</span><span class="token punctuation">></span></span>
+
+  <span class="token comment">&lt;!-- Фигура с маской и разноцветным градиентом --></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span>
+    <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#gradient--colors)<span class="token punctuation">"</span></span>
+    <span class="token attr-name">mask</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#mask--colors-transparency)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span></code></pre></div>
+<p>И весь пузырь целиком:</p>
+<iframe height="400"
+      style="width: 100%"
+      title="no title"
+      src="http://codepen.io/yoksel/embed/grEWZw/?&default-tab=html,result"
+    ></iframe>
+<p>Обратите внимание, что белые блики выглядят цветными. Так как нижний блик как бы отражается от внутренней поверхности пузыря, и относительно зрителя расположен на самой дальней его стенке, в слоях он находится глубже всех, в самом низу (и первым в коде).</p>
+<p>Верхний же блик предполагается на внешней стенке пузыря, ближайшей к зрителю, но чтобы и его тоже немного привести в соответствие по цветам, он был размещён не самым верхним слоем, а под слоем с радужными разводами.</p>
+<h2>Заключение</h2>
+<p>Используя сочетание масок и градиентов можно сделать векторный мыльный пузырь. Преимущество вектора перед растром состоит в том, что его можно сколько угодно растягивать и сжимать без потери качества, а кроме того, цвета такого пузыря можно анимировать.</p>
+<p>Я думаю, что это не самое точное изображение мыльного пузыря, но фотореализм и не был моей целью — мне хотелось узнать насколько сложными могут быть градиенты и какую пользу можно извлечь из сочетания градиентов и масок. Результаты впечатляют, и я уверена, что используя вышеописанные способы, разработчики с богатой фантазией могут сделать много интересного.</p>
+<p>Также, если у вас на примете есть интересные демо с использованием SVG-градиентов, поделитесь ссылками в комментариях.</p></div><div class="post__content"><div class="included-content"><svg class="svg svg--defs">
+    <!-- Bubble transparency -->
+    <radialGradient id="gradient--colors-transparency"
+                    fx="25%"
+                    fy="25%">
+        <stop offset="0%"
+              stop-color="black"/>
+        <stop offset="30%"
+              stop-color="black"
+              stop-opacity=".2"/>
+        <stop offset="97%"
+              stop-color="white"
+              stop-opacity=".4"/>
+        <stop offset="100%"
+              stop-color="black"/>
+    </radialGradient>
+
+    <radialGradient id="gradient--colors-transparency--no-fx">
+        <stop offset="0%"
+              stop-color="black"/>
+        <stop offset="30%"
+              stop-color="black"
+              stop-opacity=".2"/>
+        <stop offset="97%"
+              stop-color="white"
+              stop-opacity=".4"/>
+        <stop offset="100%"
+              stop-color="black"/>
+    </radialGradient>
+
+    <mask id="mask--colors-transparency"
+          maskContentUnits="objectBoundingBox">
+        <rect fill="url(#gradient--colors-transparency)"
+          width="1" height="1"></rect>
+    </mask>
+
+    <linearGradient id="gradient--colors"
+          x1="0" y1="100%"
+          x2="100%" y2="0">
+        <stop offset="0%" stop-color="dodgerblue"/>
+        <stop offset="50%" stop-color="fuchsia"/>
+        <stop offset="100%" stop-color="yellow"/>
+    </linearGradient>
+
+    <!-- Light spot -->
+    <radialGradient id="gradient--spot"
+                    fy="20%">
+        <stop offset="10%"
+              stop-color="white"
+              stop-opacity=".7"/>
+        <stop offset="70%"
+              stop-color="white"
+              stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Top & bottom light -->
+    <radialGradient id="gradient--bw-light"
+                    fy="10%">
+        <stop offset="60%"
+              stop-color="black"
+              stop-opacity="0"/>
+        <stop offset="90%"
+              stop-color="white"
+              stop-opacity=".25"/>
+        <stop offset="100%"
+              stop-color="black"/>
+    </radialGradient>
+
+    <mask id="mask--light-top" maskContentUnits="objectBoundingBox">
+        <rect fill="url(#gradient--bw-light)"
+              width="1" height="1"
+              transform="rotate(180, .5, .5)"></rect>
+    </mask>
+
+    <mask id="mask--light-bottom" maskContentUnits="objectBoundingBox">
+        <rect fill="url(#gradient--bw-light)"
+          width="1" height="1"></rect>
+    </mask>
+
+
+    <!-- Symbols -->
+    <symbol id="colors"
+            viewBox="0 0 200 200">
+        <circle r="50%"
+                cx="50%" cy="50%"
+                fill="url(#gradient--colors)"
+                mask="url(#mask--colors-transparency)"
+                ></circle>
+    </symbol>
+
+    <symbol id="light--bottom"
+            viewBox="0 0 200 200">
+        <circle r="50%"
+                cx="50%" cy="50%"
+                fill="aqua"
+                mask="url(#mask--light-bottom)"
+                ></circle>
+    </symbol>
+
+    <symbol id="light--top"
+            viewBox="0 0 200 200">
+        <circle r="50%"
+                cx="50%" cy="50%"
+                fill="yellow"
+                mask="url(#mask--light-top)"
+                ></circle>
+    </symbol>
+
+    <symbol id="spot--top"
+            viewBox="0 0 200 200">
+        <ellipse rx="55" ry="25"
+               cx="55" cy="55"
+               fill="url(#gradient--spot)"
+               transform="rotate(-45, 55, 55)"
+               ></ellipse>
+    </symbol>
+
+    <symbol id="spot--bottom"
+            viewBox="0 0 200 200">
+        <ellipse rx="40" ry="20"
+               cx="150" cy="150"
+               fill="url(#gradient--spot)"
+               transform="rotate(-225, 150, 150)"
+               ></ellipse>
+    </symbol>
+
+    <symbol id="dashed-contur"
+            viewBox="0 0 200 200">
+        <circle r="50%"
+              cx="50%" cy="50%"
+              fill="none"
+              stroke="#999"
+              stroke-dasharray="10"
+              ></circle>
+    </symbol>
+</svg></div></div><dl class="post-tags no-bullets"><dt class="post-tags__title">Метки:</dt><dd class="post-tags__item"><a href="/tags/#svg">SVG</a><span class="post-tags__delim">, </span></dd><dd class="post-tags__item"><a href="/tags/#gradients">градиенты</a><span class="post-tags__delim">, </span></dd><dd class="post-tags__item"><a href="/tags/#masks">маски</a></dd></dl><div class="post__share"><script src="https://yastatic.net/share2/share.js" async="async"></script><div class="ya-share2" data-services="vkontakte,facebook,twitter,telegram"></div></div><div class="post-prevnext"><a href="/svg-gradients" class="post-prevnext__item post-prevnext__item--previous"><span class="post-prevnext__arrow">←</span><span class="post-prevnext__text">SVG-градиенты</span></a><a href="/svg-patterns" class="post-prevnext__item post-prevnext__item--next"><span class="post-prevnext__text">SVG-паттерны</span><span class="post-prevnext__arrow">→</span></a></div><div shortname="css-yoksel" config="[object Object]" id="disqus_thread"></div></article></main><aside class="page-aside"><h2 class="visually-hidden">Сайдбар</h2><div class="widget"><h3 class="widget__title">Статьи</h3><ul class="widget__list"><li class="widget__item"><a class="widget__link" href="/opentype-variable-fonts">Вариативные шрифты</a></li><li class="widget__item"><a class="widget__link" href="/svg-sizes">Размеры в SVG</a></li><li class="widget__item"><a class="widget__link" href="/adaptive-pixel-perfect">Адаптивный Pixel Perfect</a></li><li class="widget__item"><a class="widget__link" href="/a11y-for-logotypes">Логотип не отвечает или временно недоступен</a></li><li class="widget__item"><a class="widget__link" href="/svg-patterns">SVG-паттерны</a></li><li class="widget__item widget__item--current">Мыльные пузыри на SVG</li><li class="widget__item"><a class="widget__link" href="/svg-gradients">SVG-градиенты</a></li><li class="widget__item"><a class="widget__link" href="/funny-little-console">Весёлая консолька</a></li><li class="widget__item"><a class="widget__link" href="/svg-masks">SVG-маски</a></li><li class="widget__item"><a class="widget__link" href="/scroll-snap">Умная прокрутка со Scroll Snap Points</a></li><li class="widget__item"><a class="widget__link" href="/css-animation-algorithms">CSS-анимации для ротации изображений</a></li><li class="widget__item"><a class="widget__link" href="/animated-svg-mask">Анимированные SVG-маски</a></li><li class="widget__item"><a class="widget__link" href="/svg-stroke">Странности обводки в SVG</a></li><li class="widget__item"><a class="widget__link" href="/svg-preloaders">SVG-прелоадеры</a></li><li class="widget__item"><a class="widget__link" href="/animated-gradients-2">Анимируем градиенты ещё раз</a></li><li class="widget__item"><a class="widget__link" href="/background-blend-mode">Background-blend-mode</a></li><li class="widget__item"><a class="widget__link" href="/svg-decoration">Возможности оформления SVG</a></li><li class="widget__item"><a class="widget__link" href="/css-and-svg-masks">CSS и SVG маски</a></li><li class="widget__item"><a class="widget__link" href="/nth-child">Nth-child и nth-of-type</a></li><li class="widget__item"><a class="widget__link" href="/svg-icons">SVG-иконки</a></li><li class="widget__item"><a class="widget__link" href="/svg-fill-and-stroke">SVG: заливка и обводка</a></li><li class="widget__item"><a class="widget__link" href="/svg-path">SVG-path</a></li><li class="widget__item"><a class="widget__link" href="/svg-groups-use">SVG: группировка и переиспользование элементов</a></li><li class="widget__item"><a class="widget__link" href="/svg-shapes">SVG-фигуры и трансформации</a></li><li class="widget__item"><a class="widget__link" href="/svg">SVG</a></li><li class="widget__item"><a class="widget__link" href="/3d-and-gradients">СSS-градиенты и 3D</a></li><li class="widget__item"><a class="widget__link" href="/shadowpainter">Рисовалка анимированных теней</a></li><li class="widget__item"><a class="widget__link" href="/new-patterns">Свежие CSS-паттерны</a></li><li class="widget__item"><a class="widget__link" href="/css-patterns">CSS-паттерны</a></li><li class="widget__item"><a class="widget__link" href="/radial-gradients">Радиальные градиенты</a></li><li class="widget__item"><a class="widget__link" href="/linear-gradients">Линейные градиенты</a></li><li class="widget__item"><a class="widget__link" href="/tic-tac-toe">Крестики-нолики на CSS</a></li><li class="widget__item"><a class="widget__link" href="/border-image">Border-image</a></li><li class="widget__item"><a class="widget__link" href="/digital-watch">Электронные часы. Css + Js.</a></li><li class="widget__item"><a class="widget__link" href="/specifity">Сколько весят селекторы?</a></li><li class="widget__item"><a class="widget__link" href="/unicode">Символы юникода</a></li><li class="widget__item"><a class="widget__link" href="/content">Свойство content</a></li><li class="widget__item"><a class="widget__link" href="/animation-for-gradients">Анимируем CSS-градиенты</a></li><li class="widget__item"><a class="widget__link" href="/text-effects">Текстовые эффекты</a></li><li class="widget__item"><a class="widget__link" href="/list-like-tree">Древовидный список на CSS</a></li><li class="widget__item"><a class="widget__link" href="/css-selectors-part2">Css-селекторы, часть 2</a></li><li class="widget__item"><a class="widget__link" href="/css-selectors">Css-селекторы</a></li><li class="widget__item"><a class="widget__link" href="/kontekst-nalozheniya">Контекст наложения</a></li><li class="widget__item"><a class="widget__link" href="/dva-sposoba-proshit-e-lement-po-krayu">Два способа &quot;прошить&quot; элемент по краю</a></li><li class="widget__item"><a class="widget__link" href="/box-sizing">Box-sizing</a></li><li class="widget__item"><a class="widget__link" href="/tsveta">Цвета в Css</a></li><li class="widget__item"><a class="widget__link" href="/fon-pod-strochkami-dobavlyaem-polya">Фон под строчками: добавляем поля</a></li><li class="widget__item"><a class="widget__link" href="/box-shadow">Box-shadow</a></li><li class="widget__item"><a class="widget__link" href="/css-figury-lepestok">Css-фигуры: лепесток</a></li><li class="widget__item"><a class="widget__link" href="/transform">Transform</a></li><li class="widget__item"><a class="widget__link" href="/css-animation">Css Animation</a></li><li class="widget__item"><a class="widget__link" href="/3d-cube">3D-куб</a></li><li class="widget__item"><a class="widget__link" href="/border-radius">Border-radius</a></li><li class="widget__item"><a class="widget__link" href="/first-letter">First letter</a></li><li class="widget__item"><a class="widget__link" href="/eti-glaza-naprotiv">Эти глаза напротив</a></li><li class="widget__item"><a class="widget__link" href="/css-figury">CSS-фигуры</a></li><li class="widget__item"><a class="widget__link" href="/strelki-s-pomoshh-yu-svojstva-border">Стрелки с помощью свойства border</a></li><li class="widget__item"><a class="widget__link" href="/flexbox">Flexbox</a></li></ul></div><div class="widget"><h3 class="widget__title">Страницы</h3><ul class="widget__list"><li class="widget__item"><a class="widget__link" href="/pages/svg-links">SVG: полезные ссылки</a></li><li class="widget__item"><a class="widget__link" href="/pages/css-selectors">CSS-селекторы одной таблицей</a></li><li class="widget__item"><a class="widget__link" href="/pages/tablitsa-imenovanny-h-tsvetov">Таблица именованных цветов</a></li><li class="widget__item"><a class="widget__link" href="/pages/transform-functions">Функции Transform</a></li><li class="widget__item"><a class="widget__link" href="/pages/svojstva-transform">Свойства Transform</a></li><li class="widget__item"><a class="widget__link" href="/pages/svojstva-animation">Свойства Animation одной таблицей</a></li><li class="widget__item"><a class="widget__link" href="/pages/razny-j-sintaksis-flexbox">Разный синтаксис Flexbox</a></li><li class="widget__item"><a class="widget__link" href="/pages/svojstva-flexbox">Свойства Flexbox одной таблицей</a></li></ul></div><div class="widget"><h3 class="widget__title">Проекты</h3><ul class="widget__list"><li class="widget__item"><a class="widget__link" href="https://yoksel.github.io/grid-cheatsheet/">Grid Cheatsheet</a><div class="widget__desc">Шпаргалка по&nbsp;гридам</div></li><li class="widget__item"><a class="widget__link" href="http://yoksel.github.io/flex-cheatsheet/">Flexbox Cheatsheet</a><div class="widget__desc">Шпаргалка по&nbsp;флексбоксам</div></li><li class="widget__item"><a class="widget__link" href="https://yoksel.github.io/tema/">Tema</a><div class="widget__desc">Генератор цветовых тем из CSS/SCSS/Less-переменных</div></li><li class="widget__item"><a class="widget__link" href="http://yoksel.github.io/svg-filters/">SVG Filters</a><div class="widget__desc">Конструктор SVG-фильтров</div></li><li class="widget__item"><a class="widget__link" href="http://yoksel.github.io/svg-gradient-map/">SVG Gradient Map Filter</a><div class="widget__desc">Конструктор фильтров c&nbsp;Gradient&nbsp;Map</div></li><li class="widget__item"><a class="widget__link" href="http://yoksel.github.io/url-encoder/">URL-encoder для SVG</a></li><li class="widget__item"><a class="widget__link" href="https://github.com/yoksel/common-words">Common Words</a><div class="widget__desc">Слова, часто используемые в&nbsp;<nobr>CSS-классах</nobr></div></li><li class="widget__item"><a class="widget__link" href="http://yoksel.github.io/html-tree/">HTML Tree</a><div class="widget__desc">Генератор структуры документа с&nbsp;проверкой <nobr>БЭМ-классов</nobr></div></li><li class="widget__item"><a class="widget__link" href="https://github.com/yoksel/pixel-glass-js">Pixel Glass</a><div class="widget__desc">Небольшой скрипт для проверки разметки на&nbsp;соответствие макету</div></li><li class="widget__item"><a class="widget__link" href="https://yoksel.github.io/handy-colors/">Handy Colors</a><div class="widget__desc">Список именованных цветов с&nbsp;готовыми палитрами</div></li><li class="widget__item"><a class="widget__link" href="https://yoksel.github.io/relative-clip-path/">Relative Clip Path</a><div class="widget__desc">Конвертер абсолютных координат пути в относительные</div></li><li class="widget__item"><a class="widget__link" href="https://yoksel.github.io/emoji-brush/">Emoji brush</a><div class="widget__desc">Кисточка с эмоджи</div></li><li class="widget__item"><a class="widget__link" href="https://yoksel.github.io/snowflake/">Snowflake</a><div class="widget__desc">Генератор снежинок</div></li><li class="widget__item"><a class="widget__link" href="http://yoksel.github.io/unicode-table/">Таблица символов юникода</a></li><li class="widget__item"><a class="widget__link" href="http://yoksel.github.io/wave-maker/">Wave Maker</a><div class="widget__desc">Конструктор волн с&nbsp;использованием <a href="https://www.w3.org/TR/SVG2/paths.html#PathDataEllipticalArcCommands">SVG Arcs</a></div></li><li class="widget__item"><a class="widget__link" href="http://yoksel.github.io/shadowPainter/">Shadow Painter</a><div class="widget__desc">Рисовалка пиксельных анимаций на&nbsp;основе <nobr>box-shadow</nobr></div></li></ul></div></aside></div><footer class="page-footer"><h2 class="visually-hidden">Нижняя навигация</h2><div class="page-container"><div class="footer-logo"><a class="footer-logo__content footer-logo__content--link" data-name="Про CSS" href="/"><span class="footer-logo__item footer-logo__item--about">Про</span> <span class="footer-logo__item footer-logo__item--css">CSS</span></a></div><nav class="page-footer__nav"><a class="page-footer__nav-item" href="/about/">О сайте</a><a class="page-footer__nav-item" href="/tags/">Метки</a><a href="https://twitter.com/yoksel" class="page-footer__nav-item">twitter.com/yoksel</a><a href="https://github.com/yoksel" class="page-footer__nav-item">github.com/yoksel</a><a href="http://css.yoksel.ru/feed.xml" class="page-footer__nav-item">RSS</a></nav></div></footer><div class="counter"><!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter22204352 = new Ya.Metrika({id:22204352, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/22204352" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter --></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/svg-bubble";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-44086c157848e2a9fbf6.js"],"component---src-pages-404-js":["/component---src-pages-404-js-31a2263cbdddf537c5e4.js"],"component---src-pages-about-js":["/component---src-pages-about-js-c2b4b4adffa18b69dee2.js"],"component---src-pages-archive-js":["/component---src-pages-archive-js-e8b1b2057d2b7ef25709.js"],"component---src-pages-index-js":["/component---src-pages-index-js-db272521f453b7d1888e.js"],"component---src-pages-tags-js":["/component---src-pages-tags-js-d5f3baaa3bfa4af26412.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-a06b6345a4624d64a2fb.js"]};/*]]>*/</script><script src="/webpack-runtime-1f23e394a0c92e808509.js" async=""></script><script src="/styles-9b6f388623a2ec93d35f.js" async=""></script><script src="/framework-20335242239071f73386.js" async=""></script><script src="/app-44086c157848e2a9fbf6.js" async=""></script><script src="/commons-ec50f7e5a87930e7d85c.js" async=""></script><script src="/component---src-templates-blog-post-js-a06b6345a4624d64a2fb.js" async=""></script></body></html>

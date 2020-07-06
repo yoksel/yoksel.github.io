@@ -1,9 +1,0 @@
-{% assign post = page %}
-{% if post.tags.size > 0 %}
-    <dl class="post__tags post-tags">
-    <dt class="post-tags__title">Метки:</dt>
-    {% for post_tag in post.tags %}{% for data_tag in site.data.tags %}{% if data_tag.slug == post_tag %}
-      <dd class="post-tags__item"><a href="/tags/#{{ data_tag.slug }}">{{ data_tag.name }}</a><span class="post-tags__delim">,</span>
-      </dd>{% endif %}{% endfor %}{% endfor %}
-    </dl>
-{% endif %}

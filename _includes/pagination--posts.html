@@ -1,6 +1,0 @@
-{% if page.type == 'post' %}<nav class="pagination pagination--posts">{% for post in site.posts %}{% if post.url == page.url %}{% if next_post %}
-					<a href="{{ next_post.url }}" class="pagination__item pagination__item--prevnext pagination__item--next pagination__item--posts" title="{{ post.title }}"><span class="pagination__item-text"> {{ next_post.title }}</span> &rarr;</a>
-			  	{% endif %}{% assign next = forloop.index  %}{% for post in site.posts limit:1 offset: next %}
-					<a href="{{ post.url }}" class="pagination__item pagination__item--prevnext pagination__item--prev pagination__item--posts" title="{{ post.title }}">&larr; <span class="pagination__item-text">{{ post.title }}</span></a>
-		  		{% endfor %}{% else %}{% assign next_post = post %}{% endif %}{% endfor %}
-	</nav>{% endif %}

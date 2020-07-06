@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №8 из статьи «Border-image»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  background: white;
+  text-align: center;
+  font-size: 10px;
+  font-family: Trebuchet MS, Arial, serif;
+  }
+
+P {
+  margin: 2rem 0;
+  font-size: 2em;
+}
+
+.border-image {
+  margin-top: 1em;
+  border: 80px solid transparent;
+  border-image: url("http://img-fotki.yandex.ru/get/9765/5091629.9a/0_7ebf2_6fb7f166_L.png") 130;
+  }
+
+.round {
+  border-image-repeat: round;
+  /* border-image-repeat: repeat; */
+  }
+  .round:before {
+    content: 'stretch';
+    display: block;
+  }
+</style>
+</head>
+<body>
+<p>Слева <b>stretch</b>, справа - <b>round</b></p>
+
+<img src="http://img-fotki.yandex.ru/get/3207/yoksel.2c/0_19d5f_6ca676dd_S.jpg" alt="" class="border-image">
+
+<img src="http://img-fotki.yandex.ru/get/3207/yoksel.2c/0_19d5f_6ca676dd_S.jpg" alt="" class="border-image round">
+</body>
+</html>
