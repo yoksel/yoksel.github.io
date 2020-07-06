@@ -13,7 +13,7 @@ export default function PostTags ({ items }) {
   const tagsByName = getTagsByName();
 
   return (
-    <dl className="post-tags">
+    <dl className="post-tags no-bullets">
       <dt className="post-tags__title">Метки:</dt>
 
       {items.map((name, index) => {
