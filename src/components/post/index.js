@@ -120,5 +120,6 @@ Post.propTypes = {
   articleType: PropTypes.string,
   previous: PropTypes.object,
   next: PropTypes.object,
-  hideComments: PropTypes.bool
+  hideComments: PropTypes.bool,
+  hideSharing: PropTypes.bool
 };
