@@ -25,6 +25,10 @@ export default function PostsList ({
 
   if (type && type !== 'list') {
     listClassName += ` ${listClassNameBase}--${type}`;
+
+    if (type === 'cards') {
+      listClassName += ' no-bullets';
+    }
   }
 
   return (
