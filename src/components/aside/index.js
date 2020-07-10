@@ -68,6 +68,11 @@ export default function Aside ({ path, isMain, articleType }) {
           {articlesWidget}
           {projectsWidget}
         </Fragment>
+      : path === '/tags/'
+        ? <Fragment>
+          {pagesWidget}
+          {projectsWidget}
+        </Fragment>
       : <Fragment>
           {articlesWidget}
           {pagesWidget}
