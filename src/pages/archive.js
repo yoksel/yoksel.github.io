@@ -10,7 +10,8 @@ export default function Archive ({ data, path }) {
   const pageData = {
     title,
     slug: 'archive',
-    hideComments: true
+    hideComments: true,
+    hideSharing: true
   };
 
   return (

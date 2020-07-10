@@ -19,7 +19,8 @@ export default function Post ({
   articleType,
   previous,
   next,
-  hideComments
+  hideComments,
+  hideSharing
 }) {
   const elementsWithContent = content && content.match(
     /<[^>]{1,20} id="([^>]{1,200})">([^>]{1,})<\/[^>]{1,20}>/g
@@ -36,7 +37,7 @@ export default function Post ({
     config: { identifier: slug, title }
   });
 
-  const share = '<script src="https://yastatic.net/share2/share.js" async="async"></script><div class="ya-share2" data-services="vkontakte,facebook,twitter,telegram"></div>';
+  const share = !hideSharing && '<script src="https://yastatic.net/share2/share.js" async="async"></script><div class="ya-share2" data-services="vkontakte,facebook,twitter,telegram"></div>';
 
   return (
     <article className="post">
