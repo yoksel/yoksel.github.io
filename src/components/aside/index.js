@@ -35,30 +35,45 @@ export default function Aside ({ path, isMain, articleType }) {
   const markdownNodes = data.allMarkdownRemark.edges;
   const posts = markdownNodes.filter(item => item.node.fields.type === 'post');
   const pages = markdownNodes.filter(item => item.node.fields.type === 'page');
+  const articlesWidget = !isMain
+    ? <Widget
+      title="Статьи"
+      items={postNodesToList(posts)}
+      path={path} />
+    : '';
+  const pagesWidget = <Widget
+    title="Страницы"
+    items={postNodesToList(pages)}
+    path={path} />;
+  const projectsWidget = <Widget
+    title="Проекты"
+    items={projectsData}
+    path={path}
+  />;
 
   const widgetsOrder = articleType === 'page'
       ? <Fragment>
-          <Widget title="Страницы" items={postNodesToList(pages)} path={path} />
-
-          {!isMain && <Widget title="Статьи" items={postNodesToList(posts)} path={path} />}
-      </Fragment>
+          {pagesWidget}
+          {articlesWidget}
+          {projectsWidget}
+        </Fragment>
+      : path === '/about/'
+      ? <Fragment>
+          {projectsWidget}
+          {articlesWidget}
+          {pagesWidget}
+        </Fragment>
       : <Fragment>
-          {!isMain && <Widget title="Статьи" items={postNodesToList(posts)} path={path} />}
-
-          <Widget title="Страницы" items={postNodesToList(pages)} path={path} />
-      </Fragment>;
+          {articlesWidget}
+          {pagesWidget}
+          {projectsWidget}
+        </Fragment>;
 
   return (
     <aside className="page-aside">
       <h2 className="visually-hidden">Сайдбар</h2>
 
       {widgetsOrder}
-
-      <Widget
-        title="Проекты"
-        items={projectsData}
-        path={path}
-      />
     </aside>
   );
 }
