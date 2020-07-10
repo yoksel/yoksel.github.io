@@ -76,7 +76,11 @@ export default function Post ({
 
       <PostPrevNext previous={previous} next={next} />
 
-      {!hideComments && <DiscussionEmbed {...disqusConfig({ slug, title })}/>}
+      {!hideComments &&
+        <div className="post__comments">
+          <DiscussionEmbed {...disqusConfig({ slug, title })} />
+        </div>
+      }
     </article>
   );
 }

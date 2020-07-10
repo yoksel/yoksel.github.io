@@ -148,6 +148,10 @@
 }
 
 /* stylelint-disable declaration-no-important, no-descending-specificity */
+.post__share {
+  margin-top: 1.5rem;
+}
+
 .post__share LI {
   margin: 0 .75rem 0 0 !important;
 
@@ -190,4 +194,8 @@
   P:first-child {
     margin-top: 0;
   }
+}
+
+.post__comments {
+  margin-top: 2rem;
 }
