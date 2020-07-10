@@ -37,7 +37,11 @@ export default function Post ({
     config: { identifier: slug, title }
   });
 
-  const share = !hideSharing && '<script src="https://yastatic.net/share2/share.js" async="async"></script><div class="ya-share2" data-services="vkontakte,facebook,twitter,telegram"></div>';
+  const shareStr = '<script src="https://yastatic.net/share2/share.js" async="async"></script><div class="ya-share2" data-services="vkontakte,facebook,twitter,telegram"></div>';
+
+  const share = !hideSharing && <div className="post__share"
+    dangerouslySetInnerHTML={{ __html: shareStr }}
+  />;
 
   return (
     <article className="post">
@@ -70,9 +74,7 @@ export default function Post ({
 
       <PostTags items={tags} />
 
-      <div className="post__share"
-        dangerouslySetInnerHTML={{ __html: share }}
-      />
+      {share}
 
       <PostPrevNext previous={previous} next={next} />
 
