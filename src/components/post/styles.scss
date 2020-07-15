@@ -155,7 +155,8 @@
 .post__share LI {
   margin: 0 .75rem 0 0 !important;
 
-  &::before {
+  &::before,
+  & A::before {
     content: none !important;
   }
 }
