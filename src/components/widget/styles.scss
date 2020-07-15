@@ -2,6 +2,10 @@
 
 .widget {
   margin-bottom: 2rem;
+
+  A::before {
+    content: none;
+  }
 }
 
 .widget__title {
