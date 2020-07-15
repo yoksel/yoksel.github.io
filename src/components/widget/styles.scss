@@ -2,10 +2,6 @@
 
 .widget {
   margin-bottom: 2rem;
-
-  A::before {
-    content: none;
-  }
 }
 
 .widget__title {
@@ -35,4 +31,12 @@
 .widget__desc {
   font-size: .75em;
   color: #555;
+
+  A::before {
+    content: none;
+  }
+}
+
+.page-aside .widget A::before {
+  content: none;
 }
