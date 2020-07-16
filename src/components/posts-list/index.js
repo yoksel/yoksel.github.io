@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
 import './styles.scss';
+import { dateToAttr } from '../../helpers';
 
 export default function PostsList ({
   items,
@@ -37,6 +38,7 @@ export default function PostsList ({
         const { excerpt, frontmatter, fields, id } = node;
         let { title, desc, tags } = frontmatter;
         const { date, url, isArchived } = fields;
+        const dateAttr = dateToAttr(date);
         desc = desc || excerpt;
         tags = tags || [];
 
@@ -72,7 +74,7 @@ export default function PostsList ({
               <div className="post-item__footer">
                 <Link to={url}>Читать дальше →</Link>
 
-                <div className="post-item__date faded-text">{date}</div>
+                <time className="post-item__date faded-text" dateTime={dateAttr}>{date}</time>
               </div>
             </Fragment>
           );

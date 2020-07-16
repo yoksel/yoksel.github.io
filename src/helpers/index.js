@@ -1,4 +1,5 @@
 export { getTagsByName } from './get-tags-by-name';
+export { dateToAttr } from './date-to-attr';
 
 export const postNodesToList = nodes => {
   return nodes.map(({ node }) => {

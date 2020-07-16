@@ -7,6 +7,7 @@ import PostLinks from '../post-links';
 import PostTags from '../post-tags';
 import PostPrevNext from '../post-prevnext';
 import { Link } from 'gatsby';
+import { dateToAttr } from '../../helpers';
 
 export default function Post ({
   children,
@@ -28,6 +29,7 @@ export default function Post ({
   const elemsWithDataAttr = content && content.match(
     /<[^>]{1,20} id="[^>]{1,200}" data-name="[^>]{1,200}">/g
   );
+  const dateAttr = dateToAttr(date);
 
   // Post navigation through items with id
   const postNavItems = getPostNavItems(elementsWithContent || elemsWithDataAttr);
@@ -48,7 +50,7 @@ export default function Post ({
       <header className="post__header">
         <h1 className="post__title">{title}</h1>
 
-        {date && <time className="post__date faded-text">{date}</time>}
+        {date && <time className="post__date faded-text" dateTime={dateAttr}>{date}</time>}
 
         {articleType === 'post' && <Link
           className="post__link-to-comments"
