@@ -37,13 +37,13 @@
   {
     "url": "https://github.com/yoksel/common-words",
     "name": "Common Words",
-    "desc": "Слова, часто используемые в&nbsp;<nobr>CSS-классах</nobr>",
+    "desc": "Слова, часто используемые в&nbsp;CSS-классах",
     "img": "projects/common-words.png"
   },
   {
     "url": "http://yoksel.github.io/html-tree/",
     "name": "HTML Tree",
-    "desc": "Генератор структуры документа с&nbsp;проверкой <nobr>БЭМ-классов</nobr>",
+    "desc": "Генератор структуры документа с&nbsp;проверкой БЭМ-классов",
     "img": "projects/html-tree.png"
   },
   {
@@ -90,7 +90,7 @@
   {
     "url": "http://yoksel.github.io/shadowPainter/",
     "name": "Shadow Painter",
-    "desc": "Рисовалка пиксельных анимаций на&nbsp;основе <nobr>box-shadow</nobr>",
+    "desc": "Рисовалка пиксельных анимаций на&nbsp;основе box-shadow",
     "img": "projects/shadow-painter.png"
   }
 ]
