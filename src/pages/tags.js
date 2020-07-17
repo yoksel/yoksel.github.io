@@ -66,7 +66,8 @@ export default class Tags extends React.Component {
       title: 'Метки',
       slug: 'tags',
       image: '//yoksel.github.io/assets/img/previews/tags.png',
-      hideComments: true
+      hideComments: true,
+      hideSharing: true
     };
 
     const listTitle = this.state.currentTag

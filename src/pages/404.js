@@ -8,7 +8,8 @@ export default function Page404 () {
   const pageData = {
     title,
     slug: '404',
-    hideComments: true
+    hideComments: true,
+    hideSharing: true
   };
 
   return (
