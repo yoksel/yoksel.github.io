@@ -20,9 +20,9 @@ SVG удивительная технология, не в последнюю о
 
 Демо (смотреть в Firefox):
 
-<iframe class="frame--border" src="http://css.yoksel.ru/assets/demo/svg-in-firefox/svg-no-base.html" style="width: 100%; height: 370px">
+<iframe class="frame--border" src="../assets/demo/svg-in-firefox/svg-no-base.html" style="width: 100%; height: 370px">
 </iframe>
-<a href="http://css.yoksel.ru/assets/demo/svg-in-firefox/svg-no-base.html">Ссылка на демо</a>
+<a href="../assets/demo/svg-in-firefox/svg-no-base.html">Ссылка на демо</a>
 
 <i>Оба кружка находятся внутри одного SVG, по нажатию на кнопку он полностью копируется. Голубой кружок слева — просто фигура, чтобы видеть, что в SVG вообще что-то есть. Красный кружок справа — символ, вставленный через <code>use</code>. Символ объявлен выше внутри того же SVG.</i>
 
@@ -30,9 +30,9 @@ SVG удивительная технология, не в последнюю о
 
 Проверьте в Firefox:
 
-<iframe class="frame--border" src="http://css.yoksel.ru/assets/demo/svg-in-firefox/svg-has-base.html" style="width: 100%; height: 370px"></iframe>
+<iframe class="frame--border" src="../assets/demo/svg-in-firefox/svg-has-base.html" style="width: 100%; height: 370px"></iframe>
 
-<a href="http://css.yoksel.ru/assets/demo/svg-in-firefox/svg-has-base.html">Ссылка на демо</a>
+<a href="../assets/demo/svg-in-firefox/svg-has-base.html">Ссылка на демо</a>
 
 <h2>Проблема № 2.</h2>
 
