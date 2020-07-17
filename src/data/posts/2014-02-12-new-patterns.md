@@ -1,7 +1,7 @@
 ---
 title: Свежие CSS-паттерны
 
-tags: [gradients, experiments, patterns]
+tags: [gradients, experiments, patterns, draw-on-css]
 
 image: http://img-fotki.yandex.ru/get/9322/5091629.9b/0_7efbf_83aa6b97_L.png
 desc: 'Неожиданно увлеклась темой CSS-паттернов и сделала несколько новых. Меня интересовало: можно ли сделать плавные волны и спирали, получится ли имитировать узор из цветной бумаги и как сделать почтовую марку не используя изображения.'

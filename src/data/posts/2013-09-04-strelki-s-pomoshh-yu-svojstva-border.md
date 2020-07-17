@@ -1,7 +1,7 @@
 ---
 title: Стрелки с помощью свойства border
 
-tags: [borders, shapes]
+tags: [borders, draw-on-css]
 
 desc: С помощью border можно легко делать стрелочки разного размера и в разных направлениях.
 ---

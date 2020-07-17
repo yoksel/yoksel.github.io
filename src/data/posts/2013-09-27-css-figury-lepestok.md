@@ -1,7 +1,7 @@
 ---
 title: 'Css-фигуры: лепесток'
 
-tags: [experiments, box-shadow, shapes]
+tags: [experiments, box-shadow, draw-on-css]
 
 desc: 'Из одного div с помощью border-radius легко можно сделать лепесток.'
 ---

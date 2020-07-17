@@ -1,7 +1,7 @@
 ---
 title: Box-shadow
 
-tags: [box-shadow, pseudo-elements, shapes]
+tags: [box-shadow, pseudo-elements, draw-on-css]
 
 links:
 - url: /cells/

@@ -1,7 +1,7 @@
 ---
 title: Border-radius
 
-tags: [borders]
+tags: [borders, draw-on-css]
 
 desc: Border-radius — это свойство для скругления углов.
 

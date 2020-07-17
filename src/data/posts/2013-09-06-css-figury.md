@@ -1,7 +1,7 @@
 ---
 title: CSS-фигуры
 
-tags: [borders, box-shadow, pseudo-elements, shapes]
+tags: [borders, box-shadow, pseudo-elements, draw-on-css]
 
 desc: Фигуры с помощью CSS — тема богатая и интересная. Помимо базовых фигур, используя тени и псевдоэлементы можно сделать много всякого другого, причем некоторые фигуры можно сделать двумя и более способами.
 

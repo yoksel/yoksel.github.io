@@ -1,7 +1,7 @@
 ---
 title: Два способа "прошить" элемент по краю
 
-tags: [borders, pseudo-elements]
+tags: [borders, pseudo-elements, draw-on-css]
 
 desc: Есть два способа сделать эффект, как будто элемент прострочили на швейной машинке —  используя псевдоэлементы и с помощью outline.
 ---

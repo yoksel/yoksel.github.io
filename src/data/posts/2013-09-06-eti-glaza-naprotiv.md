@@ -1,7 +1,7 @@
 ---
 title: Эти глаза напротив
 
-tags: [experiments, animation]
+tags: [experiments, animation, draw-on-css]
 
 desc: Рисование на CSS с использованием градиентов и border-radius
 ---
