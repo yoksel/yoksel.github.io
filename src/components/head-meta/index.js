@@ -41,6 +41,9 @@ export default function HeadMeta (props) {
       <meta name="twitter:creator" content="@yoksel" />
       {pageData.image && <meta name="twitter:image" content={pageData.image} />}
 
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lobster&text=ПроCSS&display=swap" as="font"/>
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&text=ПроCSS&display=swap" rel="stylesheet"/>
+
       {pageData.customStyles}
       {pageData.customScripts}
     </Helmet>
