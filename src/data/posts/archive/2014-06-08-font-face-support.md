@@ -3,7 +3,7 @@ title: Поддержка @font-face
 
 tags: [fonts]
 
-image: http://img-fotki.yandex.ru/get/9488/5091629.9d/0_82d8a_f3c1d233_orig.png
+image: //img-fotki.yandex.ru/get/9488/5091629.9d/0_82d8a_f3c1d233_orig.png
 desc: Известно, что кастомные шрифты могут работать неожиданным образом. Если они не поддерживаются браузером или устройством, вместо символов может появиться всё что угодно. В идеале — не будет ничего, но могут быть и другие варианты, вплоть до цветных иконок непредсказуемого содержания.
 ---
 
@@ -15,10 +15,10 @@ desc: Известно, что кастомные шрифты могут раб
 
 <figure style="display: inline-block;">
     <figcaption>Chrome</figcaption>
-    <a href="http://img-fotki.yandex.ru/get/9542/5091629.9e/0_83050_af90c20f_orig"><img src="http://img-fotki.yandex.ru/get/9542/5091629.9e/0_83050_af90c20f_L.png" alt="entypo.com" title="entypo.com"/></a>
+    <a href="//img-fotki.yandex.ru/get/9542/5091629.9e/0_83050_af90c20f_orig"><img src="//img-fotki.yandex.ru/get/9542/5091629.9e/0_83050_af90c20f_L.png" alt="entypo.com" title="entypo.com"/></a>
 </figure>  <figure style="display: inline-block;">
     <figcaption>Opera Mini</figcaption>
-    <a href="http://img-fotki.yandex.ru/get/9307/5091629.9e/0_8304f_e631f284_orig"><img src="http://img-fotki.yandex.ru/get/9307/5091629.9e/0_8304f_e631f284_L.png" alt="entypo.com in Opera Mini" title="entypo.com in Opera Mini"/></a>
+    <a href="//img-fotki.yandex.ru/get/9307/5091629.9e/0_8304f_e631f284_orig"><img src="//img-fotki.yandex.ru/get/9307/5091629.9e/0_8304f_e631f284_L.png" alt="entypo.com in Opera Mini" title="entypo.com in Opera Mini"/></a>
 </figure>
 
 
@@ -26,7 +26,7 @@ desc: Известно, что кастомные шрифты могут раб
 
 Короткий ответ:
 
-<img src="http://img-fotki.yandex.ru/get/9488/5091629.9d/0_82d8a_f3c1d233_orig.png" width="500" height="376" border="0" title="@font-face support" alt="@font-face support"/>
+<img src="//img-fotki.yandex.ru/get/9488/5091629.9d/0_82d8a_f3c1d233_orig.png" width="500" height="376" border="0" title="@font-face support" alt="@font-face support"/>
 
 Картинка взята из этой презентации: <a href="https://docs.google.com/presentation/d/1n4NyG4uPRjAA8zn_pSQ_Ket0RhcWC6QlZ6LMjKeECo0/edit#slide=id.g178014302_047">@font-face for icons? Compatibility research</a>
 

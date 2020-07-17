@@ -3,7 +3,7 @@ title: Border-image
 
 tags: [borders]
 
-image: http://img-fotki.yandex.ru/get/9264/5091629.9a/0_7ec6d_c2452b04_L.png
+image: //img-fotki.yandex.ru/get/9264/5091629.9a/0_7ec6d_c2452b04_L.png
 desc: Border-image — свойство, которое задает фоновое изображение для рамки элемента. Оно позволяет легко делать невероятные штуки, для которых раньше требовалось от 3-х до 8-ми картинок и манипуляции с разметкой.
 ---
 
@@ -24,7 +24,7 @@ desc: Border-image — свойство, которое задает фонов�
 
 Используемые изображения:
 
-<a href="http://img-fotki.yandex.ru/get/9165/5091629.99/0_7eb45_d2e10a7a_L.jpg"><img src="http://img-fotki.yandex.ru/get/9165/5091629.99/0_7eb45_d2e10a7a_S.jpg" alt=""></a>  <a href="http://img-fotki.yandex.ru/get/9165/5091629.99/0_7eb47_d1bead75_XL.png"><img src="http://img-fotki.yandex.ru/get/9165/5091629.99/0_7eb47_d1bead75_S.png" alt=""></a>  <a href="http://img-fotki.yandex.ru/get/9250/981986.83/0_8f42c_b01bb34_XL.png"><img src="http://img-fotki.yandex.ru/get/9250/981986.83/0_8f42c_b01bb34_S.png" alt=""></a>
+<a href="//img-fotki.yandex.ru/get/9165/5091629.99/0_7eb45_d2e10a7a_L.jpg"><img src="//img-fotki.yandex.ru/get/9165/5091629.99/0_7eb45_d2e10a7a_S.jpg" alt=""></a>  <a href="//img-fotki.yandex.ru/get/9165/5091629.99/0_7eb47_d1bead75_XL.png"><img src="//img-fotki.yandex.ru/get/9165/5091629.99/0_7eb47_d1bead75_S.png" alt=""></a>  <a href="//img-fotki.yandex.ru/get/9250/981986.83/0_8f42c_b01bb34_XL.png"><img src="//img-fotki.yandex.ru/get/9250/981986.83/0_8f42c_b01bb34_S.png" alt=""></a>
 
 Можно использовать не только квадратные картинки, но и овальные:
 
@@ -32,7 +32,7 @@ desc: Border-image — свойство, которое задает фонов�
 
 Картинки из примера:
 
-<a href="http://img-fotki.yandex.ru/get/9754/5091629.9a/0_7eb4a_a1904500_L.png"><img src="http://img-fotki.yandex.ru/get/9754/5091629.9a/0_7eb4a_a1904500_S.png" alt=""></a> <a href="http://img-fotki.yandex.ru/get/9113/5091629.9a/0_7eb4b_694caad7_L.png"><img src="http://img-fotki.yandex.ru/get/9113/5091629.9a/0_7eb4b_694caad7_S.png" alt=""></a>
+<a href="//img-fotki.yandex.ru/get/9754/5091629.9a/0_7eb4a_a1904500_L.png"><img src="//img-fotki.yandex.ru/get/9754/5091629.9a/0_7eb4a_a1904500_S.png" alt=""></a> <a href="//img-fotki.yandex.ru/get/9113/5091629.9a/0_7eb4b_694caad7_L.png"><img src="//img-fotki.yandex.ru/get/9113/5091629.9a/0_7eb4b_694caad7_S.png" alt=""></a>
 
 При этом <code>border-radius</code> не влияет на <code>border-image</code>, так что круглые картинки для рамки — единственный способ сделать округлую рамку.
 
@@ -52,14 +52,14 @@ desc: Border-image — свойство, которое задает фонов�
 
 Картинка:
 
-<a href="http://img-fotki.yandex.ru/get/9165/5091629.99/0_7eb49_5c917238_XL.png"><img src="http://img-fotki.yandex.ru/get/9165/5091629.99/0_7eb49_5c917238_S.png" alt=""></a>
+<a href="//img-fotki.yandex.ru/get/9165/5091629.99/0_7eb49_5c917238_XL.png"><img src="//img-fotki.yandex.ru/get/9165/5091629.99/0_7eb49_5c917238_S.png" alt=""></a>
 
 Самый короткий способ задать изображение для рамки выглядит вот так:
 
 
 ```css
 border: 60px solid transparent;
-border-image: url("http://img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786d4_XL.png") 25% round;
+border-image: url("//img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786d4_XL.png") 25% round;
 ```
 
 Результат:
@@ -74,7 +74,7 @@ border-image: url("http://img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786
 
 Заданная картинка режется вот по такой схеме:
 
-<img src="http://img-fotki.yandex.ru/get/9264/5091629.9a/0_7ec39_cf694bde_orig" alt="">
+<img src="//img-fotki.yandex.ru/get/9264/5091629.9a/0_7ec39_cf694bde_orig" alt="">
 
 Желтым выделены угловые части, размер которых задается свойством <code>border-image-slice</code>, зеленым — заполняющие.
 
@@ -101,7 +101,7 @@ border-image: url("http://img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786
 
 ```css
 border: 80px solid transparent;
-border-image: url("http://img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786d4_XL.png");
+border-image: url("//img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786d4_XL.png");
 ```
 
 <iframe class="live-snippet" style="height: 400px" src="../assets/demo/border-image/demo_6.html?output"></iframe>
@@ -125,7 +125,7 @@ border-image: url("http://img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786
 
 ```css
 border: 80px solid transparent;
-border-image: url("http://img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786d4_L.png");
+border-image: url("//img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786d4_L.png");
 border-image-slice: 100;
 ```
 
@@ -144,7 +144,7 @@ border-image-slice: 100;
 Можно задать два значения сразу, первое будет отвечать за поведение картинки в верхней и нижней рамке, второе — за левую и правую.
 
 ```css
-border-image: url("http://img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786d4_L.png");
+border-image: url("//img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786d4_L.png");
 border-image-slice: 100;
 border-image-repeat: repeat;
 ```
@@ -173,7 +173,7 @@ border-image-repeat: repeat;
 
 ```css
 border: 60px solid transparent;
-border-image: url("http://img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786d4_L.png");
+border-image: url("//img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786d4_L.png");
 border-image-slice: 80;
 border-image-repeat: round;
 border-image-width: 160px;
@@ -194,7 +194,7 @@ border-image-width: 160px;
 
 ```css
 border: 60px solid transparent;
-border-image: url("http://img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786d4_L.png");
+border-image: url("//img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786d4_L.png");
 border-image-slice: 120;
 border-image-repeat: round;
 border-image-outset: 60px 10px 50px 120px;
@@ -210,7 +210,7 @@ border-image-outset: 60px 10px 50px 120px;
 
 Например, <a href="http://pepelsbey.net/">Вадим Макеев</a> предложил с помощью <code>border-image</code> делать тень сложной формы для блока, размеры которого могут быть заранее неизвестны.
 
-Приготовьте <a href="http://img-fotki.yandex.ru/get/9555/5091629.9a/0_7ec51_1cf902d3_L.png">подходящую картинку</a> и посмотрите как <code>border-image</code> легко справится с задачей с помощью всего лишь пары строчек кода:
+Приготовьте <a href="//img-fotki.yandex.ru/get/9555/5091629.9a/0_7ec51_1cf902d3_L.png">подходящую картинку</a> и посмотрите как <code>border-image</code> легко справится с задачей с помощью всего лишь пары строчек кода:
 
 <iframe class="live-snippet" style="height: 500px" src="../assets/demo/border-image/demo_11.html?output"></iframe>
 
@@ -218,4 +218,4 @@ border-image-outset: 60px 10px 50px 120px;
 
 Прекрасная простота. Будет здорово, когда это свойство можно будет полноценно использовать без оглядки на старые браузеры.
 
-<i>Изображения рамок нагуглены по запросу "рамки". Картинка с джедаями — <a href="http://img-fotki.yandex.ru/get/3102/yoksel.31/0_1d0a3_1b360496_XL.jpg">фотожаба</a>.</i>
+<i>Изображения рамок нагуглены по запросу "рамки". Картинка с джедаями — <a href="//img-fotki.yandex.ru/get/3102/yoksel.31/0_1d0a3_1b360496_XL.jpg">фотожаба</a>.</i>

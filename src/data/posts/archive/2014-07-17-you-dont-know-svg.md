@@ -3,7 +3,7 @@ title: You Don't Know SVG
 
 tags: [svg]
 
-image: http://img-fotki.yandex.ru/get/6804/5091629.a1/0_84469_18e9c39d_orig
+image: //img-fotki.yandex.ru/get/6804/5091629.a1/0_84469_18e9c39d_orig
 desc: Вдохновляющая презентация от Дмитрия Барановского
 ---
 

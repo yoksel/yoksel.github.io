@@ -3,7 +3,7 @@ title: Зачем я написала плагин для Grunt
 
 tags: [svg, js]
 
-image: http://img-fotki.yandex.ru/get/6820/5091629.a1/0_84c51_1bb64b9_orig
+image: //img-fotki.yandex.ru/get/6820/5091629.a1/0_84c51_1bb64b9_orig
 desc: "Исходные данные: три десятка бесцветных SVG-изображений (их цвета задаются потом через CSS) и задача сделать из них PNG+CSS фолбек для старых браузеров."
 
 links:

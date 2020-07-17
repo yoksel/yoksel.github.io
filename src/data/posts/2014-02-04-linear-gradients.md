@@ -3,7 +3,7 @@ title: "Линейные градиенты"
 
 tags: [gradients, draw-on-css]
 
-image: http://img-fotki.yandex.ru/get/9760/5091629.9b/0_7ee9b_73c4e981_XL.png
+image: //img-fotki.yandex.ru/get/9760/5091629.9b/0_7ee9b_73c4e981_XL.png
 desc: 'CSS-градиенты позволяют сделать фон из двух и более цветов, плавно переходящих из одного в другой. Они могут быть использованы везде, где используются картинки: в фонах, в качестве буллетов списков, они могут быть заданы в content или border-image.'
 
 links:
@@ -115,7 +115,7 @@ background: linear-gradient(orangered, gold);
 
 Также важно знать, что ключевое слово <code>transparent</code> означает прозрачный черный, а не прозрачный белый, поэтому при его использовании в Firefox можно получить вот такую неприятность:
 
-<a href="http://jsbin.com/OvOwEma/2/edit"><img src="http://img-fotki.yandex.ru/get/9749/5091629.9b/0_7ee9a_ced3963c_XL.png" alt="Gradient dirt"></a>
+<a href="http://jsbin.com/OvOwEma/2/edit"><img src="//img-fotki.yandex.ru/get/9749/5091629.9b/0_7ee9a_ced3963c_XL.png" alt="Gradient dirt"></a>
 Действующий пример (смотреть в Firefox): <a href="http://jsbin.com/OvOwEma/2/edit">jsbin.com/OvOwEma/2/edit</a>.
 
 Чтобы этого избежать, используйте полностью прозрачные цвета нужного оттенка, например, белый: <code>rgba(255, 255, 255, 0)</code> или черный <code>rgba(0, 0, 0, 0)</code>. Про разные способы задавать цвета можно почитать <a href="/tsveta">здесь</a>.

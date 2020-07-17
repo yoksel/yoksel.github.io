@@ -13,7 +13,7 @@ tags: [fonts]
 
 Клонируем себе проект, открываем папочку со шрифтами и видим там слонов:
 
-<img src="http://img-fotki.yandex.ru/get/9358/5091629.98/0_7b9a4_f69346d4_L.png" alt="Font Elefants" />
+<img src="//img-fotki.yandex.ru/get/9358/5091629.98/0_7b9a4_f69346d4_L.png" alt="Font Elefants" />
 
 Это шрифт PT Sans, который можно скачать бесплатно, например, прямо с сайта производителя: <a href="http://www.paratype.ru/public/">paratype.ru/public/</a>. Там же предлагается вместо скачивания шрифта подключить его через <a href="http://www.google.com/fonts">google.com/fonts</a>.
 

@@ -3,7 +3,7 @@ title: Крестики-нолики на CSS
 
 tags: [experiments]
 
-image: http://img-fotki.yandex.ru/get/9104/5091629.9a/0_7ec6c_5867b098_orig
+image: //img-fotki.yandex.ru/get/9104/5091629.9a/0_7ec6c_5867b098_orig
 desc: Довольно странный вариант игры, мне хотелось понять как ещё можно сымитировать игровую логику.
 
 links:

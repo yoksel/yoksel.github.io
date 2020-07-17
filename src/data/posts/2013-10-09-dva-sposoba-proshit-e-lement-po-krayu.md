@@ -24,7 +24,7 @@ outline-offset: -15px;
 
 Кроме того, свойство своеобразно ведет себя в Firefox: <code>outline</code> реагирует на размеры и положение тени.
 
-<img src="http://img-fotki.yandex.ru/get/9090/5091629.98/0_7ba5b_a045ee5f_orig.png">
+<img src="//img-fotki.yandex.ru/get/9090/5091629.98/0_7ba5b_a045ee5f_orig.png">
 
 <h2>Псевдо-элементы</h2>
 

@@ -3,7 +3,7 @@ title: Режимы наложения и их фоллбеки
 
 tags: [blend-modes]
 
-image: http://img-fotki.yandex.ru/get/4805/5091629.a1/0_855c2_8fe321a9_M.jpg
+image: //img-fotki.yandex.ru/get/4805/5091629.a1/0_855c2_8fe321a9_M.jpg
 desc: Не так давно в Firefox 32 включили поддержку mix-blend-mode, a в Chrome 37 — CSS shapes. Обе технологии выглядят очень интересно, так что я решила попробовать их в действии, заодно выяснив как будет выглядеть страница в браузерах, где они не поддерживаются.
 
 links:
@@ -73,15 +73,15 @@ links:
 
 В Safari и Chrome/Opera с флагами демо выглядит вот так:
 
-<img src="http://img-fotki.yandex.ru/get/4805/5091629.a1/0_855c2_8fe321a9_M.jpg"/>
+<img src="//img-fotki.yandex.ru/get/4805/5091629.a1/0_855c2_8fe321a9_M.jpg"/>
 
  Чтобы увидеть неработающие формы, достаточно открыть демо в Firefox:
 
-<img src="http://img-fotki.yandex.ru/get/6836/5091629.a1/0_855c4_79b5ff4_M.jpg"/>
+<img src="//img-fotki.yandex.ru/get/6836/5091629.a1/0_855c4_79b5ff4_M.jpg"/>
 
  а неработающие режимы смешивания — Internet Explorer:
 
-<img src="http://img-fotki.yandex.ru/get/4803/5091629.a1/0_855c3_f9ded859_M.jpg"/>
+<img src="//img-fotki.yandex.ru/get/4803/5091629.a1/0_855c3_f9ded859_M.jpg"/>
 
 Если нужно, чтобы формы работали везде, можно воспользоваться полифилом: <a href="https://github.com/adobe-webplatform/css-shapes-polyfill">css-shapes-polyfill</a>, но следует иметь в виду, что это может создать дополнительную нагрузку для браузера. При этом в браузерах без поддержки CSS-форм ничего особо не ломается — картинки просто обтекаются текстом не по кривой, а по прямоугольному контуру.
 
@@ -115,7 +115,7 @@ Firefox можно оставить как есть, но с IE надо что-
 
 В браузерах с поддержкой режимов наложения ничего не изменилось, а в IE появился белый фон:
 
-<img src="http://img-fotki.yandex.ru/get/4800/5091629.a1/0_855cb_3998ac74_M.jpg"/>
+<img src="//img-fotki.yandex.ru/get/4800/5091629.a1/0_855cb_3998ac74_M.jpg"/>
 
 В продвинутых браузерах фона под текстом не будет, потому что при режиме смешивания <code>multiply</code> белый цвет исчезает.
 
@@ -129,7 +129,7 @@ Firefox можно оставить как есть, но с IE надо что-
 <svg class="svg-defs">
   <filter id="multiply" x="0" y="0">
     <!-- задаем картинку фона для фильтра -->
-    <feImage id="bgimage" result="bgimage" x="0" y="0" width="300" height="206" xlink:href="http://img-fotki.yandex.ru/get/6846/5091629.a1/0_8558d_406830d_M"></feImage>
+    <feImage id="bgimage" result="bgimage" x="0" y="0" width="300" height="206" xlink:href="//img-fotki.yandex.ru/get/6846/5091629.a1/0_8558d_406830d_M"></feImage>
     <!-- задаем повторение фона -->
     <feTile in="bgimage"></feTile>
     <!-- накладываем картинку, к которой применен фильтр,
@@ -155,7 +155,7 @@ Firefox можно оставить как есть, но с IE надо что-
 
 ```markup
 <svg class="pic pic--dragon" viewBox="0 0 300 161">
-  <image xlink:href="http://img-fotki.yandex.ru/get/6840/5091629.a1/0_855a9_b872dbe5_M" width="100%" height="100%"
+  <image xlink:href="//img-fotki.yandex.ru/get/6840/5091629.a1/0_855a9_b872dbe5_M" width="100%" height="100%"
     filter="url(#multiply)"/>
 </svg>
 ```
@@ -185,13 +185,13 @@ SVG-фильтры для SVG элементов работают во всех 
 
 Если исходное изображение имеет белые поля, можно попробовать использовать SVG-маску. Для этого делается копия картинки, где белые поля сделаны прозрачными или залиты черным, а часть картинки, которая должна быть показана — полностью белая. Картинка для рыцаря выглядит вот так:
 
-<img src="http://img-fotki.yandex.ru/get/4509/5091629.a2/0_85a64_94d6d625_M">
+<img src="//img-fotki.yandex.ru/get/4509/5091629.a2/0_85a64_94d6d625_M">
 
 Код маски:
 
 ```markup
 <mask id="mask">
-  <image xlink:href="http://img-fotki.yandex.ru/get/4509/5091629.a2/0_85a64_94d6d625_M" width="203" height="300"/>
+  <image xlink:href="//img-fotki.yandex.ru/get/4509/5091629.a2/0_85a64_94d6d625_M" width="203" height="300"/>
 </mask>
 ```
 

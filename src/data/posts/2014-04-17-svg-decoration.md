@@ -3,7 +3,7 @@ title: Возможности оформления SVG
 
 tags: [svg]
 
-image: "http://img-fotki.yandex.ru/get/9093/5091629.9d/0_814d9_aa20df1f_L.jpg"
+image: "//img-fotki.yandex.ru/get/9093/5091629.9d/0_814d9_aa20df1f_L.jpg"
 desc: "Внешний вид SVG-элементам можно задавать как с помощью CSS, так и с помощью SVG-фильтров, градиентов и паттернов — их можно прописывать элементам прямо в коде либо задавать также через CSS. Стили и скрипты можно задавать внутри SVG-файла, но если мы хотим, чтобы одно и то же изображение в разных условиях выглядело по-разному — стили внутри файла не годятся — нужно, чтобы векторное содержимое было доступно для внешних стилей"
 links:
 - url: "http://tympanus.net/codrops/2013/11/27/svg-icons-ftw/"
@@ -50,7 +50,7 @@ links:
 <pattern id="wood" width="400" height="400"
   patternUnits="userSpaceOnUse">
   <!-- Внутрь вставляется картинка для фона -->
-  <image xlink:href="http://img-fotki.yandex.ru/get/6447/5091629.86/0_74298_17a84446_L.jpg"
+  <image xlink:href="//img-fotki.yandex.ru/get/6447/5091629.86/0_74298_17a84446_L.jpg"
   width="400" height="400">
 </pattern>
 ```

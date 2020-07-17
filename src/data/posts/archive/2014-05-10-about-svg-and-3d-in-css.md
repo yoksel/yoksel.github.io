@@ -3,14 +3,14 @@ title: Впечатления недели
 
 tags: [svg, 3D]
 
-image: "http://img-fotki.yandex.ru/get/5311/5091629.9d/0_82805_e9a10e72_L.png"
+image: "//img-fotki.yandex.ru/get/5311/5091629.9d/0_82805_e9a10e72_L.png"
 desc: "Презентации и статьи про SVG и 3D-фигуры в CSS"
 ---
 
 Пока нет времени на полноценные статьи, просто поделюсь интересными ссылками.
 <!--more-->
 
-<a href="https://docs.google.com/presentation/d/1CNQLbqC0krocy_fZrM5fZ-YmQ2JgEADRh3qR6RbOOGk/present#slide=id.p" class="no-favicon"><img src="http://img-fotki.yandex.ru/get/5311/5091629.9d/0_82805_e9a10e72_L.png" alt="Leaving Pixels Behind — Todd Parker"></a>
+<a href="https://docs.google.com/presentation/d/1CNQLbqC0krocy_fZrM5fZ-YmQ2JgEADRh3qR6RbOOGk/present#slide=id.p" class="no-favicon"><img src="//img-fotki.yandex.ru/get/5311/5091629.9d/0_82805_e9a10e72_L.png" alt="Leaving Pixels Behind — Todd Parker"></a>
 
 <a href="https://docs.google.com/presentation/d/1CNQLbqC0krocy_fZrM5fZ-YmQ2JgEADRh3qR6RbOOGk/present#slide=id.p">Leaving Pixels Behind — Todd Parker</a> — очень крутая презентация про SVG с наглядными иллюстрациями и кучей подробностей.
 
