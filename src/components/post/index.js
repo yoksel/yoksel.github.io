@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { DiscussionEmbed, CommentCount } from 'disqus-react';
+import { CommentCount } from 'disqus-react';
 
 import './styles.scss';
 import PostLinks from '../post-links';
@@ -8,6 +8,8 @@ import PostTags from '../post-tags';
 import PostPrevNext from '../post-prevnext';
 import { Link } from 'gatsby';
 import { dateToAttr } from '../../helpers';
+import { getPostNavItems } from './get-post-nav-items';
+import { MarkerHandler } from './marker-handler';
 
 export default function Post ({
   children,
@@ -45,8 +47,27 @@ export default function Post ({
     dangerouslySetInnerHTML={{ __html: shareStr }}
   />;
 
+  const disqusCommentsStr = `<div class="widget widget--disqus" id="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'css-yoksel';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Включите JavaScript <a href="http://disqus.com/?ref_noscript">чтобы увидеть комментарии.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Система комментирования от <span class="logo-disqus">Disqus</span></a>
+  </div>`;
+
+  useEffect(() => {
+    const markerHandler = new MarkerHandler();
+    markerHandler.addEvents();
+  });
+
   return (
-    <article className="post">
+    <article className="post" id="begin">
       <header className="post__header">
         <h1 className="post__title">{title}</h1>
 
@@ -81,36 +102,15 @@ export default function Post ({
       <PostPrevNext previous={previous} next={next} />
 
       {!hideComments &&
-        <div className="post__comments">
-          <DiscussionEmbed {...disqusConfig({ slug, title })} />
+        <div
+          className="post__comments"
+          dangerouslySetInnerHTML={{ __html: disqusCommentsStr }}>
         </div>
       }
+
+      <a href="#begin" className="post__marker post__marker--hidden"></a>
     </article>
   );
-}
-
-function getPostNavItems (elementsWithId) {
-  if (!elementsWithId) {
-    return [];
-  }
-  const regexpNoName =
-    '<[^>]{1,20} id="([^>]{1,200})">([^>]{1,200})</[^>]{1,20}>';
-  const regexpDataName = '<[^>]{1,20} id="([^>]{1,200})" data-name="([^>]{1,200})">';
-
-  // fix later
-  return elementsWithId.map(item => {
-    let regexp = new RegExp(regexpNoName);
-
-    if (item.includes('data-name')) {
-      regexp = new RegExp(regexpDataName);
-    }
-
-    const [, id, name] = item.match(regexp);
-    return {
-      id,
-      name
-    };
-  });
 }
 
 Post.propTypes = {

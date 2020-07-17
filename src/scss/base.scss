@@ -67,7 +67,7 @@ H5:first-child {
 }
 
 A {
-  color: steelblue;
+  color: $base-link-color;
 
   &:hover {
     text-decoration: none;
@@ -84,6 +84,11 @@ IMG {
   height: auto;
   margin: 0 0 1.5rem 1.5rem;
   border-radius: 10px;
+}
+
+[hidden] {
+  /* stylelint-disable-next-line declaration-no-important */
+  display: none !important;
 }
 
 /* Codes
