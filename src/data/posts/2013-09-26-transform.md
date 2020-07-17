@@ -3,6 +3,8 @@ title: Transform
 
 tags: [transform]
 
+desc: CSS-свойство позволяет трансформировать элементы, в том числе в трехмерном пространстве.
+
 links:
 - url: https://tympanus.net/Development/CreativeLinkEffects/#cl-effect-2
   name: tympanus.net/Development/CreativeLinkEffects

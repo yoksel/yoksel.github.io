@@ -3,6 +3,8 @@ title: Border-radius
 
 tags: [borders]
 
+desc: Border-radius — это свойство для скругления углов.
+
 links:
 - url: /css-figury/
   name: Css-фигуры
