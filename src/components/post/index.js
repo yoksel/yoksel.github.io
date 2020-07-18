@@ -58,7 +58,7 @@ export default function Post ({
         })();
     </script>
     <noscript>Включите JavaScript <a href="http://disqus.com/?ref_noscript">чтобы увидеть комментарии.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">Система комментирования от <span class="logo-disqus">Disqus</span></a>
+    <a class="dsq-brlink">Комменты пытаются загрузиться. Если не у них не получилось, попробуйте обновить страницу.</a>
   </div>`;
 
   useEffect(() => {
