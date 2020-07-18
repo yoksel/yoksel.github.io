@@ -52,32 +52,32 @@ export default function Aside ({ path, isMain, articleType }) {
   />;
 
   const widgetsOrder = articleType === 'page'
+    ? <Fragment>
+        {pagesWidget}
+        {articlesWidget}
+        {projectsWidget}
+      </Fragment>
+    : path === '/about/' || !path
+    ? <Fragment>
+        {projectsWidget}
+        {articlesWidget}
+        {pagesWidget}
+      </Fragment>
+    : path === '/pages/'
       ? <Fragment>
-          {pagesWidget}
-          {articlesWidget}
-          {projectsWidget}
-        </Fragment>
-      : path === '/about/'
+        {articlesWidget}
+        {projectsWidget}
+      </Fragment>
+    : path === '/tags/'
       ? <Fragment>
-          {projectsWidget}
-          {articlesWidget}
-          {pagesWidget}
-        </Fragment>
-      : path === '/pages/'
-        ? <Fragment>
-          {articlesWidget}
-          {projectsWidget}
-        </Fragment>
-      : path === '/tags/'
-        ? <Fragment>
-          {pagesWidget}
-          {projectsWidget}
-        </Fragment>
-      : <Fragment>
-          {articlesWidget}
-          {pagesWidget}
-          {projectsWidget}
-        </Fragment>;
+        {pagesWidget}
+        {projectsWidget}
+      </Fragment>
+    : <Fragment>
+        {articlesWidget}
+        {pagesWidget}
+        {projectsWidget}
+      </Fragment>;
 
   return (
     <aside className="page-aside">
