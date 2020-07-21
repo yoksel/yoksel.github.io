@@ -34,8 +34,6 @@
       }
     };
 
-    console.log(targets);
-
     // States switcher params
     var paramsStates = {
       elemTag: 'button',
