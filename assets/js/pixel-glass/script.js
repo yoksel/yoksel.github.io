@@ -330,6 +330,10 @@ function pixelGlass () {
       var target = targets[key];
       var current = currents[key];
 
+      if (!target.elem) {
+        continue;
+      }
+
       if (target.attr === 'data') {
         target.elem.dataset[key] = current;
       }
