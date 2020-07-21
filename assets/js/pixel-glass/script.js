@@ -395,6 +395,10 @@ function runDemo () {
       setTimeout(searchControlsPanel, 500);
     } else {
       stickyContainer = doc.querySelector('.sticky-container');
+      if (!stickyContainer) {
+        return;
+      }
+
       stickyContainer.classList.add('sticky-container--filled');
 
       controlsPanel.addEventListener('click', takeOutPanel);
