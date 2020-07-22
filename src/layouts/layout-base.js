@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import Header from '../components/header';
 import Footer from '../components/footer';
-
-import '../scss/styles.scss';
-import './styles.scss';
 import Aside from '../components/aside';
 import HeadMeta from '../components/head-meta';
 import Post from '../components/post';
+
+import '../scss/styles.scss';
+import './styles.scss';
 
 export default function LayoutBase (props) {
   const {
