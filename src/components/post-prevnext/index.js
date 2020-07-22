@@ -24,6 +24,7 @@ export default function PostPrevNext (params) {
         href={link.fields.url}
         key={key}
         className={`post-prevnext__item post-prevnext__item--${key}`}
+        title={link.frontmatter.title}
       >
         {key === 'previous' && <span className="post-prevnext__arrow">←</span>}
         <span className="post-prevnext__text">{link.frontmatter.title}</span>
