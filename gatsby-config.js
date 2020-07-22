@@ -22,6 +22,7 @@ module.exports = {
     'gatsby-transformer-yaml',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-no-sourcemaps',
+    'gatsby-plugin-preact',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

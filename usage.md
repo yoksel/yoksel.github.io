@@ -50,3 +50,5 @@ include: ./static/assets/img/svg/bubble.svg
 ## Engine
 
 Build on [Gatsby](https://www.gatsbyjs.org/) with React & GraphQL
+
+Loading React scripts is disabled by plugin [read more](https://henrique.codes/speed-up-gatsby-site/). Comments & tags are handled using external script from static/assets/js
