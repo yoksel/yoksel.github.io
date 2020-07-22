@@ -10,7 +10,14 @@ image: //yoksel.github.io/assets/img/me.jpeg
 
 <h2>Об авторе</h2>
 
-<img src="/assets/img/me.jpeg" class="img-about"/>
+<img
+  src="/assets/img/me-460x460.min.jpg"
+  class="img-about"
+  alt="Юля Бухвалова"
+  width="150"
+  height="150"
+  loading="lazy"
+/>
 
 Меня зовут Юля Бухвалова. Я работаю верстальщиком в LiveJournal, люблю экспериментировать с кодом, иногда выступаю с докладами на конференциях.
 
