@@ -23,16 +23,11 @@ export default class Tags extends React.Component {
     return group.map(({ tag, totalCount }) => {
       const tagIncrease = Math.round(totalCount / step) * 20;
       const tagFontSize = 100 + tagIncrease;
-      let buttonClassName = 'tags-button';
-
-      if (tag === this.state.currentTag) {
-        buttonClassName += ' tags-button--current';
-      }
 
       return (
         <li className="tags-list__item" key={tag}>
           <button
-            className={buttonClassName}
+            className="tags-button"
             data-target-tag={tag}
             title={`Статей по тегу: ${totalCount}`}
             style={{ fontSize: `${tagFontSize}%` }}
@@ -69,7 +64,6 @@ export default class Tags extends React.Component {
 
         <PostsList
           items={edges}
-          currentTag={this.state.currentTag}
           mod="by-tag"
         />
       </LayoutBase>
