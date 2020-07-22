@@ -108,6 +108,7 @@ module.exports = {
           }
         ]
       }
-    }
+    },
+    'gatsby-plugin-no-javascript' // must be last
   ]
 };

@@ -25,6 +25,15 @@ export default function Footer ({ path }) {
               );
             }
 
+            if (url.includes('http')) {
+              return (
+                <a
+                  href={url}
+                  key={nanoid()}
+                  className="page-footer__nav-item">{name}</a>
+              );
+            }
+
             return (
               <Link
                 to={url}
