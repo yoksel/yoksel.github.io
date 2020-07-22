@@ -48,6 +48,8 @@ export default function HeadMeta (props) {
       <meta name="twitter:creator" content="@yoksel" />
       {pageData.image && <meta name="twitter:image" content={pageData.image} />}
 
+      <meta name="google-site-verification" content="F-TG-dOz9FIzxUZCGD9MBMwsTukpyzq9LXIX6ZsJl_k" />
+
       <link href="https://fonts.googleapis.com/css2?family=Lobster&text=ПроCSS&display=swap" rel="stylesheet"/>
 
       {pageData.customStyles}
