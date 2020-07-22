@@ -10,15 +10,7 @@ export default class Tags extends React.Component {
 
     this._props = props;
     this._data = this._props.data;
-    this.state = { currentTag: null };
     this._tagsByName = getTagsByName();
-  }
-
-  componentDidMount () {
-    const currentTag = document && document.location.hash
-      ? document.location.hash.substring(1)
-      : '';
-    this.setState({ currentTag });
   }
 
   _getTagCloud () {
@@ -43,12 +35,6 @@ export default class Tags extends React.Component {
             className={buttonClassName}
             data-target-tag={tag}
             title={`Статей по тегу: ${totalCount}`}
-            onClick={() => {
-              const currentTag =
-                tag === this.state.currentTag ? null : tag;
-              this.setState({ currentTag });
-              document.location.hash = tag;
-            }}
             style={{ fontSize: `${tagFontSize}%` }}
           >
             {this._tagsByName[tag] || tag}
@@ -70,10 +56,6 @@ export default class Tags extends React.Component {
       hideSharing: true
     };
 
-    const listTitle = this.state.currentTag
-      ? `Статьи по тегу «${this._tagsByName[this.state.currentTag] || this.state.currentTag }»`
-      : 'Все статьи';
-
     return (
       <LayoutBase
         path={path}
@@ -83,7 +65,7 @@ export default class Tags extends React.Component {
           {this._getTagCloud()}
         </ul>
 
-        <h2 className="visually-hidden">{listTitle}</h2>
+        <h2 className="posts-list-title visually-hidden">Все статьи</h2>
 
         <PostsList
           items={edges}

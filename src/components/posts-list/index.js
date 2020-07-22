@@ -7,7 +7,6 @@ import { dateToAttr } from '../../helpers';
 
 export default function PostsList ({
   items,
-  currentTag = null,
   mod = '',
   type = 'list'
 }) {
@@ -44,8 +43,10 @@ export default function PostsList ({
 
         let className = itemClassNameBase;
 
-        if (checkIsHidden(tags, currentTag)) {
-          className += ' hidden';
+        if (mod === 'by-tag') {
+          tags.forEach(tag => {
+            className += ` tag-${tag}`;
+          });
         }
 
         const isArchivedMark = isArchived ? (
@@ -90,21 +91,8 @@ export default function PostsList ({
   );
 }
 
-function checkIsHidden (tags, currentTag) {
-  if (!currentTag) {
-    return false;
-  }
-
-  const hasCurrentTag = tags.findIndex(tag => {
-    return tag === currentTag;
-  });
-
-  return hasCurrentTag < 0;
-}
-
 PostsList.propTypes = {
   items: PropTypes.array,
-  currentTag: PropTypes.string,
   mod: PropTypes.string,
   type: PropTypes.string
 };

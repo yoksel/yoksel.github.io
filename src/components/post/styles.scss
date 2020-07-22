@@ -265,3 +265,28 @@
 .post__marker--hidden {
   opacity: 0;
 }
+
+.post__load-comments {
+  display: block;
+  width: 100%;
+  padding: .5rem;
+  background: none;
+  border: 1px solid;
+  text-align: center;
+  font: inherit;
+  color: $base-link-color;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .75;
+  }
+}
+
+.no-js .post__load-comments {
+  display: none;
+}
+
+.dsq-brlink {
+  width: 100%;
+  text-align: center;
+}

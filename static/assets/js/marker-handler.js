@@ -10,13 +10,18 @@ export class MarkerHandler {
     }, new Map());
 
     this._postElement = document.querySelector('.post');
+
+    if (!this._postElement) {
+      return;
+    }
+
     this._marker = this._postElement.querySelector('.post__marker');
     this._markerHiddenClass = 'post__marker--hidden';
     this._id = null;
   }
 
   addEvents () {
-    if (this._elementsWithID.length === 0) {
+    if (this._elementsWithID.length === 0 || !this._postElement) {
       return;
     }
     const urlHash = document.location.hash;
