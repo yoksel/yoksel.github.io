@@ -10,39 +10,53 @@ import './styles.scss';
 export default function Footer ({ path }) {
   return (
     <footer className="page-footer">
-      <h2 className="visually-hidden">Нижняя навигация</h2>
+      <nav className="page-footer__nav">
+        <h2 className="visually-hidden">Нижняя навигация</h2>
 
-      <div className="page-container">
-        <Logo parent="footer"/>
+        <div className="page-container page-footer__container">
+          <Logo parent="footer"/>
 
-        <nav className="page-footer__nav">
-          {footerNavData.map(({ name, url }) => {
-            if (path === url) {
+          <ul className="page-footer__nav-list">
+            {footerNavData.map(({ name, url }) => {
+              if (path === url) {
+                return (
+                  <li
+                    className="page-footer__nav-item"
+                    key={nanoid()}
+                  >
+                    <span
+                      className="page-footer__nav-text">{name}</span>
+                  </li>
+                );
+              }
+
+              if (url.includes('http')) {
+                return (
+                  <li
+                    className="page-footer__nav-item"
+                    key={nanoid()}
+                  >
+                    <a
+                      href={url}
+                      className="page-footer__nav-text">{name}</a>
+                  </li>
+                );
+              }
+
               return (
-                <span
+                <li
+                  className="page-footer__nav-item"
                   key={nanoid()}
-                  className="page-footer__nav-item">{name}</span>
+                >
+                  <Link
+                    to={url}
+                    className="page-footer__nav-text">{name}</Link>
+                </li>
               );
-            }
-
-            if (url.includes('http')) {
-              return (
-                <a
-                  href={url}
-                  key={nanoid()}
-                  className="page-footer__nav-item">{name}</a>
-              );
-            }
-
-            return (
-              <Link
-                to={url}
-                key={nanoid()}
-                className="page-footer__nav-item">{name}</Link>
-            );
-          })}
-        </nav>
-      </div>
+            })}
+          </ul>
+        </div>
+      </nav>
     </footer>
   );
 }

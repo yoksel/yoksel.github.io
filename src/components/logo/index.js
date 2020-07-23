@@ -20,11 +20,11 @@ export default function Logo ({ isMain, parent }) {
 
   if (isMain) {
     return (
-      <div className={containerClassName}>
+      <span className={containerClassName}>
         <span className={notLinkClassName}>
           {logoContent}
         </span>
-      </div>
+      </span>
     );
   }
 
