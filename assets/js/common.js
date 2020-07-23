@@ -27,6 +27,7 @@ function initTagsList () {
     currentTagButton = document.querySelector(`button[data-target-tag="${currentTag}"]`);
     currentTagButton.classList.add(currentTagClass);
     postsListTitle.innerHTML = `Статьи по тегу «${currentTagButton.innerHTML}»`;
+    filterPostsByTags();
   } else {
     postsListTitle.innerHTML = 'Все статьи';
   }
@@ -57,6 +58,10 @@ function initTagsList () {
       postsListTitle.innerHTML = `Статьи по тегу «${currentTagButton.innerHTML}»`;
     }
 
+    filterPostsByTags();
+  });
+
+  function filterPostsByTags () {
     posts.forEach(post => {
       if (currentTag) {
         if (post.classList.contains(`tag-${currentTag}`)) {
@@ -68,7 +73,7 @@ function initTagsList () {
         post.classList.remove('hidden');
       }
     });
-  });
+  }
 }
 
 // Comments
