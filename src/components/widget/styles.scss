@@ -33,7 +33,8 @@
   color: #555;
 
   A::before {
-    content: none;
+    /* stylelint-disable-next-line declaration-no-important */
+    content: none !important;
   }
 }
 
