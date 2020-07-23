@@ -74,7 +74,12 @@ export default function Post ({
         </div>
       }
 
-      <a href="#begin" className="post__marker post__marker--hidden"></a>
+      <a
+        href="#begin"
+        className="post__marker post__marker--hidden"
+        title="Наверх">
+        <span className="visually-hidden">Наверх</span>
+      </a>
     </article>
   );
 }
