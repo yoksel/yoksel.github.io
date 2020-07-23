@@ -49,12 +49,14 @@
     "gatsby-transformer-yaml": "^2.4.6",
     "gh-pages": "^3.1.0",
     "nanoid": "3.1.10",
+    "p-limit": "^3.0.2",
     "preact": "10.4.6",
     "prop-types": "^15.7.2",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "stylelint": "^13.0.0",
-    "stylelint-config-standard": "^19.0.0"
+    "stylelint-config-standard": "^19.0.0",
+    "tiny-glob": "^0.2.6"
   },
   "repository": {
     "type": "git",

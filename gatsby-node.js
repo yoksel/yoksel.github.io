@@ -1,5 +1,8 @@
 const path = require('path');
 const fs = require('fs');
+const { promises: fsPromises } = require('fs');
+const glob = require('tiny-glob');
+const pLimit = require('p-limit');
 const { createFilePath } = require('gatsby-source-filesystem');
 
 // https://www.gatsbyjs.org/tutorial/part-seven/
@@ -277,4 +280,57 @@ const express = require('express')
 
 exports.onCreateDevServer = ({ app }) => {
   app.use(express.static('public'));
+};
+
+// Source: https://github.com/jmsv/gatsby-plugin-prettier-build/blob/master/gatsby-node.js
+// was modified
+exports.onPostBuild = async (_, opts = {}) => {
+  const fileTypesToFormat = ['html'];
+  const verbose = true;
+
+  const [files] = await Promise.all([
+    glob(`public/**/*.{${fileTypesToFormat.join(',')}}`)
+  ]);
+
+  const limit = pLimit(opts.concurrency || 20);
+  let filesPrettified = 0;
+
+  return Promise.all(
+    files.map((filePath) =>
+      limit(() =>
+        prettifyFile(filePath, {}).then((done) => {
+          if (done) {
+            filesPrettified += 1;
+          }
+        })
+      )
+    )
+  ).then(() => {
+    if (verbose) {
+      console.log(
+        `✨ finished prettifying ${filesPrettified} Gatsby build file${
+        filesPrettified ? 's' : ''
+        }`
+      );
+    }
+  });
+};
+
+const prettifyFile = async (filePath, prettierOpts) => {
+  // Don't attempt format if not a file
+  if (!(await fsPromises.lstat(filePath)).isFile()) return false;
+
+  const fileBuffer = await fsPromises.readFile(filePath);
+
+  // Clean up gatsby tails from final code
+  const formatted = fileBuffer
+    .toString()
+    .replace(/ data-react-helmet="true"/g, '')
+    .replace(/ id="___gatsby"/g, '')
+    .replace(/style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"/g, '')
+    .replace(/<div id="gatsby-announcer"[^</]{0,}<\/div>/g, '');
+
+  await fsPromises.writeFile(filePath, formatted);
+
+  return true;
 };
