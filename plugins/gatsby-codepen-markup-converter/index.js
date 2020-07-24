@@ -27,7 +27,9 @@ module.exports = ({ markdownAST }) => {
     const penUrl = urlMatch[1];
     // Iframe needs url with /embed/
     // Url with /pen/ breaks demo & force random scroll on page
-    const embedUrl = penUrl.replace('/pen', '/embed');
+    const embedUrl = penUrl
+      .replace('/pen', '/embed')
+      .replace('http:', 'https:');
     const tab = dataTabMatch ? dataTabMatch[1] : 'result'
     const height = dataHeightMatch ? dataHeightMatch[1] : 300
     const title = dataTitleMatch ? dataTitleMatch[1] : 'no title'
