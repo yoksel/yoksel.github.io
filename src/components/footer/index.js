@@ -18,7 +18,7 @@ export default function Footer ({ slug }) {
 
           <ul className="page-footer__nav-list">
             {footerNavData.map(({ name, url }) => {
-              if (url.includes(slug)) {
+              if (slug && url.includes(slug)) {
                 return (
                   <li
                     className="page-footer__nav-item"
