@@ -4,9 +4,15 @@ const visit = require('unist-util-visit');
 
 module.exports = ({ markdownAST }) => {
   const markerOfEmbededPen = 'data-slug-hash';
+  const markerIgnoreCodepen = 'data-ignore-codepen';
 
   visit(markdownAST, 'html', node => {
     if (!node.value.includes(markerOfEmbededPen) || !node.value.trim()) {
+      return;
+    }
+
+    // Ignore codepen for tests
+    if (node.value.includes(markerIgnoreCodepen)) {
       return;
     }
 
