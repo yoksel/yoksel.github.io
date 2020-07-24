@@ -36,7 +36,6 @@ export const query = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 150)
           frontmatter {
             title
             desc
