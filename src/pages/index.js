@@ -32,7 +32,13 @@ export const query = graphql`
   query MyQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: fileAbsolutePath }
-      filter: { fields: { type: { eq: "post" }, isArchived: { ne: true } } }
+      filter: {
+        fields: {
+          type: { eq: "post" },
+          isArchived: { ne: true },
+          isDraft: { ne: true }
+        }
+      }
     ) {
       edges {
         node {

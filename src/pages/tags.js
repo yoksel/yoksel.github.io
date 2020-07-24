@@ -75,7 +75,10 @@ export const query = graphql`
   query MyTagsQuery {
     allMarkdownRemark(
       sort: {order: DESC, fields: fields___date},
-      filter: {fields: {type: {eq: "post"}}}
+      filter: {fields: {
+      type: {eq: "post"},
+      isDraft: {ne: true}
+    }}
     ) {
       group(field: frontmatter___tags) {
         tag: fieldValue

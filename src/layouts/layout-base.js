@@ -89,10 +89,10 @@ export default function LayoutBase (props) {
 
       <Footer slug={pageData.slug} />
 
-      <div
+      {pageData.disableCounter !== true && <div
         className="counter"
         dangerouslySetInnerHTML={{ __html: counter }}
-      />
+      />}
     </div>
   );
 }

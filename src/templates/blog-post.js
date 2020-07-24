@@ -2,13 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import LayoutBase from '../layouts/layout-base';
+import Drafts from '../components/drafts';
 
 // Component used for creating new pages
 
 export default function BlogPost ({ data, pageContext, location }) {
   const { html: content, frontmatter } = data.markdownRemark;
   const { customCSS, customJs } = frontmatter;
-  const { type, includeContent } = pageContext;
+  const { type, includeContent, slug } = pageContext;
   const { pathname } = location;
 
   const customStyles = customCSS ? (
@@ -19,14 +20,14 @@ export default function BlogPost ({ data, pageContext, location }) {
     <script src={`/assets/js/${customJs}`}></script>
   ) : null;
 
-  const includedContent = includeContent ? (
+  let includedContent = includeContent ? (
     <div
       className="included-content"
       dangerouslySetInnerHTML={{ __html: includeContent }}
     />
   ) : null;
 
-  const pageData = {
+  let pageData = {
     ...frontmatter,
     ...pageContext,
     customStyles,
@@ -34,6 +35,20 @@ export default function BlogPost ({ data, pageContext, location }) {
     content,
     articleType: type
   };
+
+  if (type === 'service-page') {
+    pageData = {
+      ...pageData,
+      hideComments: true,
+      hideSharing: true,
+      disableCounter: true
+    };
+  }
+
+  // Drafts page is generated & filled autimatically
+  if (slug === 'drafts') {
+    includedContent = <Drafts/>;
+  }
 
   return (
     <LayoutBase

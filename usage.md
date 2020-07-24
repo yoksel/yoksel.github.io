@@ -35,6 +35,8 @@ Static assets added to `static/assets/`, for example, images, svg libraries or d
 
 Live demos added to `static/assets/demo/` to folders named after articles
 
+Drafts page is generated & filled autimatically to prevent leaking to build
+
 ### Including content to post/page
 
 ```

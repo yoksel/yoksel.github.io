@@ -81,6 +81,27 @@ query allArchivedPostsQuery {
 }
 `;
 
+const allDraftsPostsQuery = `
+query allDraftsPostsQuery {
+  allMarkdownRemark(
+    sort: {${sort}},
+    filter: {fields: {
+      type: {eq: "post"},
+      isDraft: {eq: true}
+    }}
+  ) {
+    edges {
+      node {
+        fields {
+          ${nodeFields}
+        }
+      }
+      ${prevnext}
+    }
+  }
+}
+`;
+
 const allActualPagesQuery = `
 query allActualPagesQuery {
   allMarkdownRemark(
@@ -102,8 +123,38 @@ query allActualPagesQuery {
 }
 `;
 
+const allServicePagesQuery = `
+query allServicePagesQuery {
+  allMarkdownRemark(filter: {frontmatter: {createPage: {eq: true}}}) {
+    edges {
+      node {
+        fields {
+          ${nodeFields}
+        }
+      }
+    }
+  }
+}
+`;
+const allServicePagesDevQuery = `
+query allServicePagesDevQuery {
+  allMarkdownRemark(filter: {frontmatter: {createPageOnDev: {eq: true}}}) {
+    edges {
+      node {
+        fields {
+          ${nodeFields}
+        }
+      }
+    }
+  }
+}
+`;
+
 module.exports = {
   allActualPostsQuery,
   allArchivedPostsQuery,
-  allActualPagesQuery
+  allDraftsPostsQuery,
+  allActualPagesQuery,
+  allServicePagesQuery,
+  allServicePagesDevQuery
 };

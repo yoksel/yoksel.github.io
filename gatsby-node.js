@@ -7,7 +7,10 @@ const { createFilePath } = require('gatsby-source-filesystem');
 const {
   allActualPostsQuery,
   allArchivedPostsQuery,
-  allActualPagesQuery
+  allDraftsPostsQuery,
+  allActualPagesQuery,
+  allServicePagesQuery,
+  allServicePagesDevQuery
 } = require('./queries');
 
 // https://www.gatsbyjs.org/tutorial/part-seven/
@@ -40,6 +43,7 @@ exports.onCreateNode = async ({ node, getNode, actions }) => {
   let slug = '';
   let type = 'none';
   let isArchived = false;
+  let isDraft = false;
   const includeContent = await filePromise;
   const regexp = new RegExp('(\\d{4}-\\d{2}-\\d{2})-(.*)');
   const urlParts = filePath.match(regexp);
@@ -60,6 +64,9 @@ exports.onCreateNode = async ({ node, getNode, actions }) => {
 
   if (filePath.includes('archive/')) {
     isArchived = true;
+  }
+  if (filePath.includes('drafts/')) {
+    isDraft = true;
   }
 
   createNodeField({
@@ -97,22 +104,36 @@ exports.onCreateNode = async ({ node, getNode, actions }) => {
     name: 'isArchived',
     value: isArchived
   });
+
+  createNodeField({
+    node,
+    name: 'isDraft',
+    value: isDraft
+  });
 };
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  // 3 requests instead of one
+  // 3+ requests instead of one
   // need to get proper prev & next links
-  const results = await Promise.all([
+  const promises = [
     graphql(allActualPostsQuery),
     graphql(allArchivedPostsQuery),
-    graphql(allActualPagesQuery)
-  ]);
+    graphql(allActualPagesQuery),
+    graphql(allServicePagesQuery)
+  ];
+
+  // Save drafts from leaking to build
+  if (process.env.NODE_ENV === 'development') {
+    promises.push(graphql(allServicePagesDevQuery));
+    promises.push(graphql(allDraftsPostsQuery));
+  }
+  const results = await Promise.all(promises);
 
   results.forEach(result => {
     result.data.allMarkdownRemark.edges.forEach(params => {
-      const { node, previous, next } = params
-      const { slug, date, url, type, includeContent, isArchived } = node.fields
+      const { node, previous, next } = params;
+      const { slug, date, url, type, includeContent, isArchived } = node.fields;
 
       createPage({
         path: node.fields.slug,
@@ -134,13 +155,11 @@ exports.createPages = async ({ graphql, actions }) => {
       });
     });
   });
-
-  // })
 };
 
 // https://github.com/gatsbyjs/gatsby/issues/17761#issuecomment-533816520
 // Fix hosting static html (demos)
-const express = require('express')
+const express = require('express');
 
 exports.onCreateDevServer = ({ app }) => {
   app.use(express.static('public'));
