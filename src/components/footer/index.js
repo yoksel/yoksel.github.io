@@ -7,7 +7,7 @@ import footerNavData from '../../data/meta/footer-nav.json';
 
 import './styles.scss';
 
-export default function Footer ({ path }) {
+export default function Footer ({ slug }) {
   return (
     <footer className="page-footer">
       <nav className="page-footer__nav">
@@ -18,7 +18,7 @@ export default function Footer ({ path }) {
 
           <ul className="page-footer__nav-list">
             {footerNavData.map(({ name, url }) => {
-              if (path === url) {
+              if (url.includes(slug)) {
                 return (
                   <li
                     className="page-footer__nav-item"
@@ -62,5 +62,5 @@ export default function Footer ({ path }) {
 }
 
 Footer.propTypes = {
-  path: PropTypes.string
+  slug: PropTypes.string
 };

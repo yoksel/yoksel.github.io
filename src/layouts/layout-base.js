@@ -51,6 +51,7 @@ export default function LayoutBase (props) {
   const aside = layout !== 'onecolumn'
     ? <Aside
         path={path}
+        slug={pageData.slug}
         isMain={isMain}
         articleType={pageData.articleType}
       />
@@ -86,7 +87,7 @@ export default function LayoutBase (props) {
         {aside}
       </div>
 
-      <Footer path={path}/>
+      <Footer slug={pageData.slug} />
 
       <div
         className="counter"

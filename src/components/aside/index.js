@@ -6,13 +6,16 @@ import { postNodesToList } from '../../helpers';
 
 import projectsData from '../../data/meta/projects.json';
 
-export default function Aside ({ path, isMain, articleType }) {
+export default function Aside ({ slug, path, isMain, articleType }) {
   const data = useStaticQuery(
     graphql`
       query {
         allMarkdownRemark(
           sort: { order: DESC, fields: fileAbsolutePath }
-          filter: { fields: { isArchived: { ne: true } } }
+          filter: { fields: {
+            isArchived: { ne: true },
+            isDraft: { ne: true }
+          } }
         ) {
           edges {
             node {
@@ -57,18 +60,18 @@ export default function Aside ({ path, isMain, articleType }) {
         {articlesWidget}
         {projectsWidget}
       </Fragment>
-    : path === '/about/' || !path
+    : slug === 'about' || !path
     ? <Fragment>
         {projectsWidget}
         {articlesWidget}
         {pagesWidget}
       </Fragment>
-    : path === '/pages/'
+      : slug === 'pages'
       ? <Fragment>
         {articlesWidget}
         {projectsWidget}
       </Fragment>
-    : path === '/tags/'
+      : slug === 'tags'
       ? <Fragment>
         {pagesWidget}
         {projectsWidget}
@@ -90,6 +93,7 @@ export default function Aside ({ path, isMain, articleType }) {
 
 Aside.propTypes = {
   path: PropTypes.string,
+  slug: PropTypes.string,
   isMain: PropTypes.bool,
   articleType: PropTypes.string
 };
