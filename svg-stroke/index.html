@@ -8,7 +8,7 @@
 <iframe height="400"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/rKpFk/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/rKpFk/?&default-tab=result"
     ></iframe>
 <p>Круг с диаметром 60px, квадрат — 60х60px.</p>
 <p>С помощью CSS добавим фигурам рамку:</p>
@@ -20,7 +20,7 @@
 <iframe height="400"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/omKIc/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/omKIc/?&default-tab=result"
     ></iframe>
 <p>Очевидно, что рамка отрисовывается от внешнего края фигуры в обоих направлениях: и внутрь, и наружу.</p>
 <!-- Ширина фигуры с рамкой теперь равна 90px: 60px изначальной ширины + толщина рамки разделенная на 2 (потому что половина рамки рисуется внутрь) * 2 (рамка добавляется с двух сторон). То есть 60 + 30 / 2 * 2. -->
@@ -29,14 +29,14 @@
 <iframe height="400"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/AkaKc/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/AkaKc/?&default-tab=result"
     ></iframe>
 <p>У квадрата с рамкой всё в порядке, а вот с кружком происходит нечто странное: если толщина обводки больше чем в два-три раза превышает ширину фигуры, между кружком и рамкой образуются белые поля, а толщина рамки уменьшается.</p>
 <p>Чем больше разница между значениями, тем больше белые поля и тем тоньше рамка (радиус 10, толщина обводки — 200):</p>
 <iframe height="400"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/FLrqa/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/FLrqa/?&default-tab=result"
     ></iframe>
 <p>Совсем не то, что хотелось бы получить.</p>
 <p>Ещё более интересный результат получается, если добавить свойство <code>stroke-dasharray</code>.</p>
@@ -49,7 +49,7 @@
 <iframe height="400"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/vDpqg/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/vDpqg/?&default-tab=result"
     ></iframe>
 <p>Выглядит так, как будто рамка доходит до середины фигуры и продолжает отрисовываться оттуда.</p>
 <p>Всё это как бы намекает нам, что толщина рамки не должна быть больше двухкратного значения ширины или диаметра фигуры, хотя можно поступить и наоборот: задавать очень большие значения и получать интересные варианты лучей.</p>
@@ -71,7 +71,7 @@
 <iframe height="400"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/mpvhb/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/mpvhb/?&default-tab=result"
     ></iframe>
 <p>Я хочу анимировать маску, чтобы она пропорционально растягивалась и сужалась относительно центра картинки. Первым делом в голову, конечно, приходит <code>transform</code>. Код анимации:</p>
 <div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@keyframes</span> scale</span> <span class="token punctuation">{</span>
@@ -87,7 +87,7 @@
 <iframe height="400"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/dKrft/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/dKrft/?&default-tab=result"
     ></iframe>
 <p>Так как центр трансформаций в SVG находится в левом верхнем углу области отрисовки, фигура движется совсем не так, как хотелось бы. Задаем центр трансформаций, который нужен нам:</p>
 <div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token property">transform-origin</span><span class="token punctuation">:</span> 100px 100px<span class="token punctuation">;</span></code></pre></div>
@@ -107,7 +107,7 @@
 <iframe height="400"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/fKqAI/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/fKqAI/?&default-tab=result"
     ></iframe>
 <p>В Chrome анимация будет работать как задумано: маска увеличивается от центра и затем уменьшается в обратном направлении. В Firefox она не будет работать вообще: Firefox не анимирует трансформации внутри масок.</p>
 <p>Способ с трансформацией не работает. Какие ещё варианты есть? Вот как раз в этом случае можно попробовать анимировать толщину обводки.</p>
@@ -117,7 +117,7 @@
 <iframe height="400"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/ouLIh/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/ouLIh/?&default-tab=result"
     ></iframe>
 <p>Для фигур внутри <code>clipPath</code> можно было бы попробовать анимировать <code>transform</code>, но они тоже не анимируются в Firefox. Таким образом, в нашем распоряжении остаются только маски и манипуляции с обводками. Конец лирического отступления.</p>
 <p>Используя обводки, пробую повторить поведение маски, пропорционально увеличивающейся относительно центра. Для этих целей я беру маску с маленьким кружком внутри:</p>
@@ -154,7 +154,7 @@
 <iframe height="400"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/oebyE/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/oebyE/?&default-tab=result"
     ></iframe>
 <p>В отличие от способа с <code>transform</code>, обводка замечательно анимируется в Firefox, и это можно было бы использовать, если бы не ограничение на толщину обводки, описанное выше.</p>
 <p>Таким образом, с одной стороны, задавать толстую рамку для маленького элемента кажется странной идеей, с другой — это можно было бы использовать в практических целях, так что жаль, что <code>stroke-width</code> отрисовывается не так как хотелось бы.</p>
@@ -164,7 +164,7 @@
 <iframe height="420"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/LBIfx/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/LBIfx/?&default-tab=result"
     ></iframe>
 <p>Способ странный, но это работает.</p>
 <p>Правда, обе анимации не будут работать в IE, потому что он вообще не поддерживает анимации в SVG.</p>

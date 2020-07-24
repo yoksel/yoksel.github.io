@@ -30,7 +30,7 @@
 <iframe height="380"
       style="width: 100%"
       title="WoNQpZ"
-      src="http://codepen.io/yoksel/embed/WoNQpZ/?&default-tab=html,result"
+      src="https://codepen.io/yoksel/embed/WoNQpZ/?&default-tab=html,result"
     ></iframe>
 <p><i>В основном примерах будут показываться паттерны в качестве заливки, но их так же можно использовать <a href="http://codepen.io/yoksel/pen/ZBeNLQ">в обводках</a>, тогда паттерн нужно задавать в свойстве <code>stroke</code>.</i></p>
 <p>Мы видим, что круг с координатами центра <code>50% 50%</code> находится посередине SVG-изображения, а не посередине фигуры с паттерном, также очевидно, что радиус <code>30%</code> рассчитывается относительно всего изображения, а не относительно фигуры, которой задана заливка. Такое поведение не всегда будет желаемым, и его можно менять с помощью атрибутов, которые будут описаны ниже.</p>
@@ -38,7 +38,7 @@
 <iframe height="380"
       style="width: 100%"
       title="ObJOLM"
-      src="http://codepen.io/yoksel/embed/ObJOLM/?&default-tab=html,result"
+      src="https://codepen.io/yoksel/embed/ObJOLM/?&default-tab=html,result"
     ></iframe>
 <p>Для более сложных случаев нужно как следует разобраться с остальными свойствами паттерна.</p>
 <h2 id="pattern-units">patternUnits</h2>
@@ -50,7 +50,7 @@
 <iframe height="550"
       style="width: 100%"
       title="patternUnits and pattern sizes"
-      src="http://codepen.io/yoksel/embed/ORKNMy/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/ORKNMy/?&default-tab=result"
     ></iframe>
 <h2 id="pattern-content-units">patternContentUnits</h2>
 <p><code>patternContentUnits</code> определяет систему координат для содержимого паттерна. <strong>Важно:</strong> если паттерну задан <code>viewBox</code>, этот атрибут работать не будет.</p>
@@ -61,7 +61,7 @@
 <iframe height="550"
       style="width: 100%"
       title="patternContentUnits and pattern content"
-      src="http://codepen.io/yoksel/embed/zoxYjy/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/zoxYjy/?&default-tab=result"
     ></iframe>
 <h2 id="pattern-transform">patternTransform</h2>
 <p>Атрибут позволяет добавить трансформацию паттерну.</p>
@@ -74,7 +74,7 @@
 <iframe height="550"
       style="width: 100%"
       title="patternTransform (and bug with transform-origin)"
-      src="http://codepen.io/yoksel/embed/bBdMJK/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/bBdMJK/?&default-tab=result"
     ></iframe>
 <p><a href="http://codepen.io/yoksel/full/mOJaOE">Эксперименты показали</a>, что координаты центра трансформации в этом случае, как и при <code>patternUnits="userSpaceOnUse"</code>, могут быть заданы в единицах текущей системы координат. Это будет работать, хотя и не должно.</p>
 <p>Учитывая такое странное поведение, я бы рекомендовала не  использовать <code>patternTransform</code> вместе с  <code>patternUnits="objectBoundingBox"</code>.</p>
@@ -83,26 +83,26 @@
 <iframe height="550"
       style="width: 100%"
       title="patternUnits and pattern coordinates (x & y)"
-      src="http://codepen.io/yoksel/embed/NbxxZX/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/NbxxZX/?&default-tab=result"
     ></iframe>
 <h2 id="width-height">width, height</h2>
 <p>Атрибуты определяют размер плитки паттерна, причём без <code>viewBox</code> атрибуты не влияют на размеры содержимого, всё, что не поместилось, просто обрежется:</p>
 <iframe height="550"
       style="width: 100%"
       title="patternUnits and pattern coordinates (width & height, no viewBox)"
-      src="http://codepen.io/yoksel/embed/pNgEGV/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/pNgEGV/?&default-tab=result"
     ></iframe>
 <p>Если <code>viewBox</code> задан, содержимое будет подгоняться под размер плитки паттерна, но с сохранением пропорций, заданных <code>viewBox</code>. Если пропорции плитки и содержимого не совпадут, вокруг содержимого останется пустое пространство:</p>
 <iframe height="550"
       style="width: 100%"
       title="patternUnits and pattern coordinates (width & height, has viewBox)"
-      src="http://codepen.io/yoksel/embed/ObMmRO/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/ObMmRO/?&default-tab=result"
     ></iframe>
 <p>Если содержимое должно заполнять плитку целиком, пусть и с искажениями, нужно указать, что сохранять пропорции не требуется, для этого нужно добавить <code>preserveAspectRatio="none"</code>:</p>
 <iframe height="550"
       style="width: 100%"
       title="patternUnits and pattern coordinates (width & height, has viewBox + preserveAspectRatio="
-      src="http://codepen.io/yoksel/embed/NbxopY/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/NbxopY/?&default-tab=result"
     ></iframe>
 <p>Напомню, что по умолчанию ширина и высота паттерна равны нулю, поэтому размеры обязательно нужно указывать явным образом, иначе паттерн не отобразится.</p>
 <h2>viewBox, preserveAspectRatio</h2>
@@ -119,7 +119,7 @@
 <iframe height="550"
       style="width: 100%"
       title="patternTransform and xlink:href"
-      src="http://codepen.io/yoksel/embed/BQKBgP/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/BQKBgP/?&default-tab=result"
     ></iframe>
 <h2 id="snippets">Примеры кода</h2>
 <p>Весь этот набор атрибутов не только позволяет гибко управлять паттерном, но и немного взрывает мозг при попытке их использовать.</p>
@@ -136,13 +136,13 @@
 <iframe height="550"
       style="width: 100%"
       title="patternUnits and pattern coordinates (width & height, has viewBox)"
-      src="http://codepen.io/yoksel/embed/yVVWoM/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/yVVWoM/?&default-tab=result"
     ></iframe>
 <p>Изменяем размеры паттерна, он послушно масштабируется. При этом размеры фигуры на паттерн не влияют:</p>
 <iframe height="550"
       style="width: 100%"
       title="width, height & viewBox + resize shape"
-      src="http://codepen.io/yoksel/embed/YpNvjB/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/YpNvjB/?&default-tab=result"
     ></iframe>
 <p>Для своих экспериментов я обычно выбираю этот вариант, с ним удобнее работать.</p>
 <p>А что если паттерн должен реагировать на изменение размеров элемента?</p>
@@ -157,7 +157,7 @@
 <iframe height="550"
       style="width: 100%"
       title="width, height & viewBox + resize shape"
-      src="http://codepen.io/yoksel/embed/wogXQK/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/wogXQK/?&default-tab=result"
     ></iframe>
 <p><b>Вариант 2.</b> Он проще и удобнее, потому что содержимое паттерна сохраняет свою систему координат и единицы измерения. При этом способе <code>patternUnits</code> не задаётся, потому что используется значение по умолчанию: <code>objectBoundingBox</code>. Размеры плитки паттерна задаются в процентах или в значениях от 0.0 до 1.0, они будут зависеть от размеров фигуры. Чтобы содержимое паттерна ресайзилось вместе с ним, нужно добавить <code>viewBox</code>, а чтобы оно при этом заполняло всю плитку, хоть и с искажениием пропорций, — <code>preserveAspectRatio="none"</code>:</p>
 <div class="gatsby-highlight" data-language="markup"><pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>pattern</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>pattern<span class="token punctuation">"</span></span>
@@ -171,7 +171,7 @@
 <iframe height="550"
       style="width: 100%"
       title="width, height & viewBox + preserveAspectRatio"
-      src="http://codepen.io/yoksel/embed/KaoobK/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/KaoobK/?&default-tab=result"
     ></iframe>
 <p>Таким образом можно с минимальными усилиями сделать резиновый паттерн.</p>
 <h2 id="examples">Примеры паттернов</h2>
@@ -179,19 +179,19 @@
 <iframe height="300"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/eGAxK/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/eGAxK/?&default-tab=result"
     ></iframe>
 <p>Паттерн с векторным содержимым:</p>
 <iframe height="300"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/nkqdJ/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/nkqdJ/?&default-tab=result"
     ></iframe>
 <p>Паттерн с текстовым содержимым:</p>
 <iframe height="550"
       style="width: 100%"
       title="WopeZb"
-      src="http://codepen.io/yoksel/embed/WopeZb/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/WopeZb/?&default-tab=result"
     ></iframe>
 <p>Как видите, с помощью паттернов можно залить текст текстом : )</p>
 <p>Все мои демо с паттернами собраны в <a href="http://codepen.io/collection/AyaLRg/">этой коллекции</a>.</p>
@@ -205,7 +205,7 @@ CSS-анимация заливки и обводки работает почт�
 <iframe height="350"
       style="width: 100%"
       title="Animated SVG pattern with GSAP"
-      src="http://codepen.io/yoksel/embed/MKeVMB/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/MKeVMB/?&default-tab=result"
     ></iframe>
 <p>При этом сам паттерн, как мы видели в одном из предыдущих демо, тоже может содержать текст.</p>
 <p>Элемент с паттерном может <a href="http://codepen.io/yoksel/pen/WbvwpR">обрезаться маской</a>, либо сам <a href="http://codepen.io/yoksel/pen/hpqbC">находиться внутри маски</a>. Конструкции можно делать совершенно безумные.</p>

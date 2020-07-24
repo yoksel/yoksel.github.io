@@ -8,14 +8,14 @@
 <iframe height="470"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/fjcvA/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/fjcvA/?&default-tab=result"
     ></iframe>
 <p>Они могут быть использованы на любом фоне. Элементы в них могут менять не только прозрачность, но и цвет, обводку или положение в пространстве. Можно придумать огромное количество разных вариантов оформления и анимации.</p>
 <p>Более того, использование символов позволяет как угодно менять элементы прелоадеров (сами прелоадеры, к слову, вовсе не обязательно должны быть круглыми):</p>
 <iframe height="470"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/GcgrD/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/GcgrD/?&default-tab=result"
     ></iframe>
 <p>Вместо кружочков можно вставить любые фигуры: рыбок, цветочки, снежинки, котиков... Вид прелоадера можно менять по сезону, под настроение или вовсе случайным образом.</p>
 <p>Как сделать простой прелоадер?</p>
@@ -67,7 +67,7 @@
 <iframe height="280"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/ozKmy/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/ozKmy/?&default-tab=result"
     ></iframe>
 <p>Всё верно, кружочки имеют заливку по умолчанию (черным цветом) и им не задано положение в пространстве, поэтому они скопились в левом верхнем углу области, размеры которой заданы <code>viewBox</code>.</p>
 <p>Серые границы отображаемой области добавила для понятности, на самом деле границ <code>viewBox</code> не видно. Кстати, границы удобно делать с помощью такой фигуры:</p>
@@ -97,7 +97,7 @@ $<span class="token property">angle</span><span class="token punctuation">:</spa
 <iframe height="268"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/rAwgq/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/rAwgq/?&default-tab=result"
     ></iframe>
 <p>Будущий прелоадер получил заданные размеры, кружки стали оранжевыми, но всё ещё находятся в левом верхнем углу. Нужна трансформация.</p>
 <p>Первым делом нужно задать центр трансформации, потому что в SVG он по умолчанию находится в левом верхнем углу родительского элемента. Если к родителю не применялись трансформации, центр вращения окажется в левом верхнем углу отображаемой области.</p>
@@ -124,7 +124,7 @@ $<span class="token property">angle</span><span class="token punctuation">:</spa
 <iframe height="268"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/KBtme/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/KBtme/?&default-tab=result"
     ></iframe>
 <p>Все кружки послушно расположились по кругу.</p>
 <p>Теперь анимируем. Создаем ключевые кадры:</p>
@@ -153,7 +153,7 @@ $<span class="token property">angle</span><span class="token punctuation">:</spa
 <iframe height="268"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/Jgixz/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/Jgixz/?&default-tab=result"
     ></iframe>
 <p>Но что если мы хотим анимировать не только прозрачность заливки, но и цвет символов?</p>
 <p>Добавляем ключевые кадры с изменением цвета:</p>
@@ -176,7 +176,7 @@ $<span class="token property">angle</span><span class="token punctuation">:</spa
 <iframe height="268"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/nFqzd/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/nFqzd/?&default-tab=result"
     ></iframe>
 <p>На этом можно было бы и остановиться, но что если символы будут помимо цвета и прозрачности менять свое положение в пространстве?</p>
 <p>Пишем ключевые кадры с простой анимацией:</p>
@@ -191,7 +191,7 @@ $<span class="token property">angle</span><span class="token punctuation">:</spa
 <iframe height="268"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/JDHzK/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/JDHzK/?&default-tab=result"
     ></iframe>
 <p>Таки да: трансформации не склеиваются, поэтому где-то на середине символ возвращается в первоначальное положение, уменьшается там вдвое (потому что <code>transform: scale(.5)</code>), а потом летит себе дальше. Так происходит потому, что трансформация, задающая положение каждого отдельного символа, перезаписывавется трансформацией, заданной в анимации.</p>
 <p>Как сохранить положение символа на плоскости и при этом иметь возможность дополнительно его масштабировать?</p>
@@ -210,7 +210,7 @@ $<span class="token property">angle</span><span class="token punctuation">:</spa
 <iframe height="268"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/nbird/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/nbird/?&default-tab=result"
     ></iframe>
 <p>А теперь пробуем добавить анимацию с трансформацией. На этот раз не группе, а символам:</p>
 <div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">.u-circle</span> <span class="token punctuation">{</span>
@@ -220,7 +220,7 @@ $<span class="token property">angle</span><span class="token punctuation">:</spa
 <iframe height="268"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/hDyqc/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/hDyqc/?&default-tab=result"
     ></iframe>
 <p>Получилось, кружочки никуда не улетают, но теперь им не хватает задержки анимации. Для этого нам опять понадобятся цикл и <code>:nth-child</code>, но цикл будет идти по группам (а не по символам), потому что символы находятся каждый в своей группе:</p>
 <div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">.g-circle</span> <span class="token punctuation">{</span>
@@ -234,19 +234,19 @@ $<span class="token property">angle</span><span class="token punctuation">:</spa
 <iframe height="268"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/Fqwpm/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/Fqwpm/?&default-tab=result"
     ></iframe>
 <p>Таким образом усложнив разметку можно получить более сложные и интересные варианты анимированных трнасформаций. К символам можно добавлять две и больше трансформации без опасений что что-то поломается:</p>
 <iframe height="268"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/lGLni/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/lGLni/?&default-tab=result"
     ></iframe>
 <p>Заменить кружочки на что-то другое можно просто поменяв символ:</p>
 <iframe height="268"
       style="width: 100%"
       title="no title"
-      src="http://codepen.io/yoksel/embed/bEIuo/?&default-tab=result"
+      src="https://codepen.io/yoksel/embed/bEIuo/?&default-tab=result"
     ></iframe>
 <p>Получился некий конструктор, в котором можно легко менять вид и анимации прелоадера, а сам прелоадер может быть сколь угодно разным, и вовсе не обязательно в форме кольца.</p>
 <p>Было бы волшебно, если бы вся эта красота просто везде работала, но всё не так просто. IE9-11 вообще не поддерживают CSS-анимации и CSS-трансформации, задаваемые SVG-элементам, то есть в них кружочки так и останутся лежать стопкой в левом верхнем углу, как в <a href="http://codepen.io/yoksel/pen/rAwgq">этом примере</a>. Ещё предполагаю, что могут быть проблемы с производительностью на слабых устройствах.</p>
