@@ -46,6 +46,12 @@ A[href*="github"] {
   }
 }
 
+A[href*="pepelsbey"] {
+  &::before {
+    background-image: url("/assets/img/svg/icons/pepelsbey.svg");
+  }
+}
+
 A[href*="twitter"] {
   &::before {
     background-image: url("/assets/img/svg/icons/twitter.svg");
@@ -86,12 +92,6 @@ A[href*="jsbin"] {
 A[href*="youtube"] {
   &::before {
     background-image: url("/assets/img/svg/icons/youtube.svg");
-  }
-}
-
-A[href*="pepelsbey"] {
-  &::before {
-    background-image: url("/assets/img/svg/icons/pepelsbey.svg");
   }
 }
 
