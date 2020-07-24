@@ -4,6 +4,11 @@ const { promises: fsPromises } = require('fs');
 const glob = require('tiny-glob');
 const pLimit = require('p-limit');
 const { createFilePath } = require('gatsby-source-filesystem');
+const {
+  allActualPostsQuery,
+  allArchivedPostsQuery,
+  allActualPagesQuery
+} = require('./queries');
 
 // https://www.gatsbyjs.org/tutorial/part-seven/
 
@@ -93,147 +98,6 @@ exports.onCreateNode = async ({ node, getNode, actions }) => {
     value: isArchived
   });
 };
-
-// order: ASC need for correct direction
-// of post navigation
-const allActualPostsQuery = `
-query allActualPostsQuery {
-  allMarkdownRemark(
-    sort: {order: ASC, fields: fileAbsolutePath},
-    filter: {fields: {
-      type: {eq: "post"},
-      isArchived: {ne: true}
-    }}
-  ) {
-    edges {
-      node {
-        fields {
-          slug
-          date(formatString: "DD/MM/YYYY")
-          url
-          type
-          includeContent
-          isArchived
-        }
-      }
-      next {
-        frontmatter {
-          title
-        }
-        fields {
-          url
-          type
-          isArchived
-        }
-      }
-      previous {
-        frontmatter {
-          title
-        }
-        fields {
-          url
-          type
-          isArchived
-        }
-      }
-    }
-  }
-}
-`;
-
-// order: ASC need for correct direction
-// of post navigation
-const allArchivedPostsQuery = `
-query allArchivedPostsQuery {
-  allMarkdownRemark(
-    sort: {order: ASC, fields: fileAbsolutePath},
-    filter: {fields: {
-      type: {eq: "post"},
-      isArchived: {eq: true}
-    }}
-  ) {
-    edges {
-      node {
-        fields {
-          slug
-          date(formatString: "DD/MM/YYYY")
-          url
-          type
-          includeContent
-          isArchived
-        }
-      }
-      next {
-        frontmatter {
-          title
-        }
-        fields {
-          url
-          type
-          isArchived
-        }
-      }
-      previous {
-        frontmatter {
-          title
-        }
-        fields {
-          url
-          type
-          isArchived
-        }
-      }
-    }
-  }
-}
-`;
-
-// order: ASC need for correct direction
-// of post navigation
-const allActualPagesQuery = `
-query allActualPagesQuery {
-  allMarkdownRemark(
-    sort: {order: ASC, fields: fileAbsolutePath},
-    filter: {fields: {
-      type: {eq: "page"},
-      isArchived: {ne: true}
-    }}
-  ) {
-    edges {
-      node {
-        fields {
-          slug
-          date(formatString: "DD/MM/YYYY")
-          url
-          type
-          includeContent
-          isArchived
-        }
-      }
-      next {
-        frontmatter {
-          title
-        }
-        fields {
-          url
-          type
-          isArchived
-        }
-      }
-      previous {
-        frontmatter {
-          title
-        }
-        fields {
-          url
-          type
-          isArchived
-        }
-      }
-    }
-  }
-}
-`;
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
