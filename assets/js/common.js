@@ -96,8 +96,16 @@ if (commentsContainer && loadCommentsButton) {
 }
 
 function initDisqus () {
+  const {origin, pathname} = document.location;
+  var dsqConfig = document.createElement('script');
+  dsqConfig.insertAdjacentHTML('afterbegin',
+  `var disqus_config = function () {
+    this.page.url = '`${origin + pathname}`';
+    this.page.identifier = 'a unique identifier for each page where Disqus is present';
+    this.page.title = 'a unique title for each page where Disqus is present';
+  };
+  `);
   var dsq = document.createElement('script');
-  dsq.type = 'text/javascript';
   dsq.async = true;
   dsq.src = '//' + disqusShortname + '.disqus.com/embed.js';
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
