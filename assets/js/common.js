@@ -88,17 +88,11 @@ const disqusCommentsStr = `<div class="widget widget--disqus" id="comments">
 </div>`;
 
 if (commentsContainer && loadCommentsButton) {
-  // Try Load disqus almost immediately to fix error in new post
-  setTimeout(() => {
+  loadCommentsButton.addEventListener('click', () => {
+
     commentsContainer.innerHTML = disqusCommentsStr;
     initDisqus();
-  }, 1000);
-
-  // loadCommentsButton.addEventListener('click', () => {
-
-  //   commentsContainer.innerHTML = disqusCommentsStr;
-  //   initDisqus();
-  // });
+  });
 }
 
 function initDisqus () {
@@ -107,7 +101,7 @@ function initDisqus () {
   dsqConfig.innerHTML = (
     `var disqus_config = function () {
         this.page.url = '${origin + pathname}';
-        this.page.title = '';
+        this.page.title = '${commentsContainer.dataset.title}';
     };`
   );
   (document.getElementsByTagName('head')[0]).appendChild(dsqConfig);
