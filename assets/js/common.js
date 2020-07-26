@@ -102,6 +102,16 @@ if (commentsContainer && loadCommentsButton) {
 }
 
 function initDisqus () {
+  var dsqConfig = document.createElement('script');
+  const { origin, pathname } = document.location;
+  dsqConfig.innerHTML = (
+    `var disqus_config = function () {
+        this.page.url = '${origin + pathname}';
+        this.page.title = '';
+    };`
+  );
+  (document.getElementsByTagName('head')[0]).appendChild(dsqConfig);
+
   var dsq = document.createElement('script');
   dsq.async = true;
   dsq.src = '//' + disqusShortname + '.disqus.com/embed.js';
