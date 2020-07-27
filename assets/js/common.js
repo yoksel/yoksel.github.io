@@ -79,7 +79,7 @@ function initTagsList () {
 // Comments
 const commentsContainer = document.querySelector('.post__comments');
 const loadCommentsButton = document.querySelector('.post__load-comments');
-var disqusShortname = 'css-yoksel';
+const disqusShortname = 'css-yoksel';
 
 const disqusCommentsStr = `<div class="widget widget--disqus" id="comments">
   <div id="disqus_thread"></div>
@@ -96,17 +96,17 @@ if (commentsContainer && loadCommentsButton) {
 }
 
 function initDisqus () {
-  var dsqConfig = document.createElement('script');
+  const dsqConfig = document.createElement('script');
   const { origin, pathname } = document.location;
   dsqConfig.innerHTML = (
-    `var disqus_config = function () {
+    `const disqus_config = function () {
         this.page.url = '${origin + pathname}';
         this.page.title = '${commentsContainer.dataset.title}';
     };`
   );
   (document.getElementsByTagName('head')[0]).appendChild(dsqConfig);
 
-  var dsq = document.createElement('script');
+  const dsq = document.createElement('script');
   dsq.async = true;
   dsq.src = '//' + disqusShortname + '.disqus.com/embed.js';
   (document.getElementsByTagName('head')[0]).appendChild(dsq);
