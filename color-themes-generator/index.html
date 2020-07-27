@@ -120,14 +120,15 @@
 <span class="token property">--color-lighter</span><span class="token punctuation">:</span> <span class="token function">hsl</span><span class="token punctuation">(</span>...<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token property">--color-lightest</span><span class="token punctuation">:</span> <span class="token function">hsl</span><span class="token punctuation">(</span>...<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
 <p>Чуть светлее — <code class="language-text">light</code>, ещё светлее — <code class="language-text">lighter</code>, самый светлый — <code class="language-text">lightest</code>. С тёмными аналогично. Итого семь оттенков для каждого цвета: один базовый и по три шага в каждую сторону.</p>
-<p>Чтобы автоматизировать процесс получения такой палитры, я сделала <a href="https://yoksel.github.io/tema/">Tema</a>. В поле ввода вставляются любые переменные с цветами в любом формате, включая именованные, и инструмент отдаёт готовую палитру:</p>
+<p>Чтобы автоматизировать процесс получения палитры, я сделала <a href="https://yoksel.github.io/tema/">Tema</a>. В поле ввода вставляются любые переменные с цветами в любом формате, включая именованные, и инструмент отдаёт расширенный набор цветовых переменных:</p>
 <p><img
   src="/assets/img/articles/color-themes-generator/tema-io.png"
   alt="Tema, поля ввода и&nbsp;вывода"
   loading="lazy"
   width="700"
 /></p>
-<p>Можно настроить шаг изменения яркости, количество шагов, и выбрать формат цветов в готовой палитре:</p>
+<p>Получается удобная упорядоченная палитра, по которой можно легко «ходить» меняя имя переменной в коде или в веб-инспекторе, и пробовать не только основные цвета, но и дополнительные оттенки без необходимости редактировать руками значение цвета.</p>
+<p>Можно настроить шаг изменения яркости, количество шагов и выбрать формат цветов в готовой палитре:</p>
 <p><img
   src="/assets/img/articles/color-themes-generator/tema-options.png"
   alt="Tema, настройки"
@@ -186,7 +187,7 @@
 
   <span class="token property">--border</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--color-3-light<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre></div>
-<p>Например, в красной теме третий цвет (<code class="language-text">--color-3</code>), используемый для рамки, оказался чуть темнее, чем хотелось бы, поэтому внутри темы я задала для <code class="language-text">--border</code> более светлый оттенок (<code class="language-text">--color-3-light</code>).</p>
+<p>Например, в предыдущем демо в красной теме третий цвет (<code class="language-text">--color-3</code>), используемый для рамки, оказался чуть темнее, чем хотелось бы, поэтому внутри темы я задала для <code class="language-text">--border</code> более светлый оттенок (<code class="language-text">--color-3-light</code>).</p>
 <p>Именно этот подход позволил мне не только сохранить и поддерживать дополнительную тему, но и добавить 4 новых. Я обычно использую эту:</p>
 <p><img
   src="/assets/img/articles/color-themes-generator/flex-sunny-theme.png"
@@ -198,7 +199,7 @@
 <p>Генератор цветовых тем решает довольно узкую задачу, и вполне возможно, что он вам никогда и не потребуется, но если вы, как и я, не рисуете отдельный дизайн для своих карманных проектов, инструмент может упростить разработку и расширить возможности оформления.</p>
 <p>При создании тем с помощью генератора нужно иметь в виду пару нюансов:</p>
 <ol>
-<li>Количество цветов в наборах должно совпадать. Например, если где-то используется <code class="language-text">var(--color-1-lightest)</code>, самый светлый оттенок самого светлого цвета, он должен быть во всех наборах цветов. Но при генерации палитры рассчитанное значение яркости может выйти за границы разумного, и тогда этих цветов в наборе не будет: <img
+<li>Количество цветов в наборах должно совпадать. Например, если в одной из цветовых тем используется <code class="language-text">var(--color-1-lightest)</code>, самый светлый оттенок самого светлого цвета, он должен быть во всех наборах цветов. Но при генерации палитры рассчитанное значение яркости может выйти за границы разумного, и тогда этих цветов в наборе не будет: <img
 src="/assets/img/articles/color-themes-generator/tema-broken-colors.png"
 alt="Tema, битые цвета"
 loading="lazy"
