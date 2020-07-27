@@ -69,7 +69,7 @@ export default function Post ({
       {/* Comments are loaded using external script, see assets/js */}
       {!hideComments &&
         <div
-        className="post__comments">
+        className="post__comments" data-title={title}>
           <button type="button" className="post__load-comments">Показать комментарии</button>
         </div>
       }
