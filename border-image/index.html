@@ -58,9 +58,9 @@
 <p>Важное свойство, которое определяет размер куска изображения, которое заполнит углы рамки.
 Остальные части будут использованы для заполнения пространства между углами по алгоритму, заданному в <code>border-image-repeat</code>.</p>
 <p>Возможные значения:</p>
-<p><code>&#x3C;проценты></code> — рассчитываются относительно размера изображения. Горизонтальные относительно ширины, вертикальные — относительно высоты.
-<code>&#x3C;числа></code> — пиксели (для растрового изображения) или координаты (для векторного). Единицы измерения не указываются.
-<code>fill</code> — ключевое слово, дополняющее предыдущие значения. Если оно задано, изображение не обрезается внутренним краем рамки, а заполняет также область внутри рамки.
+<p><code>&#x3C;проценты></code> — рассчитываются относительно размера изображения. Горизонтальные относительно ширины, вертикальные — относительно высоты.</p>
+<p><code>&#x3C;числа></code> — пиксели (для растрового изображения) или координаты (для векторного). Единицы измерения не указываются.</p>
+<p><code>fill</code> — ключевое слово, дополняющее предыдущие значения. Если оно задано, изображение не обрезается внутренним краем рамки, а заполняет также область внутри рамки.
 Очень полезно для округлых рамок.</p>
 <p>Чтобы определить значения для каждой стороны, несколько значений можно задать через пробел.</p>
 <p>Сумма значений противоположных сторон должна быть меньше размера картинки, иначе будет нечем заполнять пространство между углами.</p>
@@ -70,11 +70,11 @@
 <iframe class="live-snippet" style="height: 450px" src="../assets/demo/border-image/demo_7.html?output"></iframe>
 </section><section id="border-image-repeat" data-name="border-image-repeat"><h2>Border-image-repeat</h2>
 <p>Свойство определяет как будут заполняться промежутки между углами.</p>
-<p>Возможные значения:
-<code>stretch</code> — растягивает заполняющий участок картинки. Значение по умолчанию;
-<code>repeat</code> — повторяет заполняющий участок, при этом видны места стыков с угловой картинкой;
-<code>round</code> — заполняет промежуток между углами. Может быть заметен стык в середине стороны. Самое аккуратное действие.
-<code>space</code> — действует похоже на <code>repeat</code>. Разницы не обнаружила.</p>
+<p>Возможные значения:</p>
+<p><code>stretch</code> — растягивает заполняющий участок картинки. Значение по умолчанию;</p>
+<p><code>repeat</code> — повторяет заполняющий участок, при этом видны места стыков с угловой картинкой;</p>
+<p><code>round</code> — заполняет промежуток между углами. Может быть заметен стык в середине стороны. Самое аккуратное действие.</p>
+<p><code>space</code> — действует похоже на <code>repeat</code>. Разницы не обнаружила.</p>
 <p>Можно задать два значения сразу, первое будет отвечать за поведение картинки в верхней и нижней рамке, второе — за левую и правую.</p>
 <div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token property">border-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>"//img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786d4_L.png"<span class="token punctuation">)</span></span><span class="token punctuation">;</span>
 <span class="token property">border-image-slice</span><span class="token punctuation">:</span> 100<span class="token punctuation">;</span>
@@ -87,11 +87,11 @@
 <p><code>border-image-width</code></p>
 <p>Свойство управляет шириной видимой части рамки, масштабирует её.
 Если это значение больше ширины <code>border-width</code>, картинка рамки заползет под содержимое, даже если не заданно свойство <code>fill</code>.</p>
-<p>Возможные значения:
-<code>&#x3C;длина></code> — значения в px или em;
-<code>&#x3C;%></code> — значения в процентах относительно размера изображения;
-<code>&#x3C;числа></code> — числовое значение, на которое умножается <code>border-width</code>
-<code>auto</code> — ключевое слово. Если оно задано, значение равно соответственному <code>border-image-slice</code>. Если подходящего размера нет, используется значение <code>border-width</code>, при этом картинка заполняет весь угол рамки, заползая под контент. Немного странно работает.</p>
+<p>Возможные значения:</p>
+<p><code>&#x3C;длина></code> — значения в px или em;</p>
+<p><code>&#x3C;%></code> — значения в процентах относительно размера изображения;</p>
+<p><code>&#x3C;числа></code> — числовое значение, на которое умножается <code>border-width</code></p>
+<p><code>auto</code> — ключевое слово. Если оно задано, значение равно соответственному <code>border-image-slice</code>. Если подходящего размера нет, используется значение <code>border-width</code>, при этом картинка заполняет весь угол рамки, заползая под контент. Немного странно работает.</p>
 <div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token property">border</span><span class="token punctuation">:</span> 60px solid transparent<span class="token punctuation">;</span>
 <span class="token property">border-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>"//img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786d4_L.png"<span class="token punctuation">)</span></span><span class="token punctuation">;</span>
 <span class="token property">border-image-slice</span><span class="token punctuation">:</span> 80<span class="token punctuation">;</span>
@@ -101,9 +101,9 @@
 <iframe class="live-snippet" style="height: 370px" src="../assets/demo/border-image/demo_9.html?output"></iframe>
 </section><section id="border-image-outset" data-name="border-image-outset"><h2>Border-image-outset</h2>
 <p>Интересное свойство, позволяющие отодвинуть рамку за пределы элемента. Отрицательные значения не поддерживаются.</p>
-<p>Возможные значения:
-<code>&#x3C;длина></code> — значения в px или em;
-<code>&#x3C;числа></code> — числовое значение, на которое умножается <code>border-width</code>.</p>
+<p>Возможные значения:</p>
+<p><code>&#x3C;длина></code> — значения в px или em;</p>
+<p><code>&#x3C;числа></code> — числовое значение, на которое умножается <code>border-width</code>.</p>
 <div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token property">border</span><span class="token punctuation">:</span> 60px solid transparent<span class="token punctuation">;</span>
 <span class="token property">border-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>"//img-fotki.yandex.ru/get/6730/5091629.9a/0_7eb4e_e27786d4_L.png"<span class="token punctuation">)</span></span><span class="token punctuation">;</span>
 <span class="token property">border-image-slice</span><span class="token punctuation">:</span> 120<span class="token punctuation">;</span>
