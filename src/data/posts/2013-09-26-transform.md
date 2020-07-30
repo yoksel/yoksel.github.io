@@ -66,6 +66,7 @@ transform: rotateY(45deg) rotateY(45deg);
 Возможные значения:
 
 <code>flat</code> — трансформируемый элемент плоский
+
 <code>preserve-3d</code> — трансформируемый элемент имеет внутренний объем
 
 <p data-height="450" data-theme-id="4974" data-slug-hash="xgzreO" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms: transform-style" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/xgzreO/">CSS Transforms: transform-style</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
@@ -74,7 +75,9 @@ transform: rotateY(45deg) rotateY(45deg);
 Следующие свойства могут перекрывать действие <code>transform-style: preserve-3d;</code> и делать отображение элемента плоским независимо от значения <code>transform-style</code>:
 
 <code>overflow</code> с любым значением кроме <code>visible</code>
+
 <code>opacity</code> с любым значением кроме <code>1</code> <s>(блокирует трехмерность, если задан обертке трансформируемого объекта, то есть уровнем выше, чем <code>transform-style: preserve-3d;</code>. На одном уровне они не мешают друг другу)</s> так было на момент написания статьи, сейчас прозрачность делает трёхмерный элемент плоским.
+
 <code>filter</code> с любым значением кроме <code>none</code>
 
 </section><section id="perspective" data-name="perspective"><h2>Perspective</h2>
@@ -100,7 +103,9 @@ transform: rotateY(45deg) rotateY(45deg);
 Определяет видимость задней стороны объекта.
 
 Возможные значения:
+
 <code>visible</code> — объект виден всегда, вне зависимости от того, какой стороной повернут (значение по умолчанию).
+
 <code>hidden</code> — скрывать объект, если он повернут «спиной».
 
 <p data-height="450" data-theme-id="4974" data-slug-hash="zNadaw" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms: backface-visibility" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/zNadaw/">CSS Transforms: backface-visibility</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>

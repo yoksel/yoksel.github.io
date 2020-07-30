@@ -52,8 +52,11 @@ links:
 ```
 
 <code>move</code> — имя анимации
+
 <code>15s</code> — длительность
+
 <code>infinite</code> — бесконечное повторение
+
 <code>linear</code> — тип движения
 
 </section><section id="keyframes" data-name="@keyframes"><h2>@keyframes</h2>
@@ -72,6 +75,7 @@ links:
 Значение по умолчанию: нет.
 
 <code>animation-name: move;</code> — одна анимация.
+
 <code>animation-name: move, sun-color;</code> — две анимации, имена задаются через запятую.
 
 </section><section id="animation-duration" data-name="animation-duration"><h2>Animation-duration</h2>
@@ -87,12 +91,16 @@ links:
 Возможные значения:
 
 <strong>Плавная анимация</strong>
-<code>ease</code> — скольжение (значение по умолчанию)
-<code>linear</code> — ровное движение
-<code>ease-in</code> — ускорение к концу
-<code>ease-out</code> — ускорение в начале
-<code>ease-in-out</code> — более плавное скольжение, чем <code>ease</code>
 
+<code>ease</code> — скольжение (значение по умолчанию)
+
+<code>linear</code> — ровное движение
+
+<code>ease-in</code> — ускорение к концу
+
+<code>ease-out</code> — ускорение в начале
+
+<code>ease-in-out</code> — более плавное скольжение, чем <code>ease</code>
 
 <iframe class="live-snippet" style="height: 500px" src="../assets/demo/css-animation/demo_3.html?output"></iframe>
 
@@ -103,7 +111,12 @@ links:
 <iframe class="live-snippet" style="height: 250px" src="../assets/demo/css-animation/demo_4.html?output"></iframe>
 
 <strong>Пошаговая анимация</strong>
-<code>step-start</code> и <code>step-end</code> — позволяют задать пошаговую анимацию, обязательно задавать конкретные шаги. При этом с <code>step-start</code> изменения происходят в начале шага, а с <code>step-end</code> — в конце.
+
+<code>step-start</code> и <code>step-end</code> — позволяют задать пошаговую анимацию, обязательно задавать конкретные шаги. При этом с
+
+<code>step-start</code> изменения происходят в начале шага, а с
+
+<code>step-end</code> — в конце.
 
 <code>step-end</code>. Если выставить <code>step-start</code>, счетчик будет начинаться с единиц.
 
@@ -130,10 +143,12 @@ links:
 Возможные значения:
 
 <code>normal</code> — анимация проигрывается в обычном направлении, с начала и до конца.
-<code>reverse</code> — анимация проигрывается в обратном направлении, то есть с конца.
-<code>alternate</code> — анимация проигрывается с начала и до конца, а затем в обратном направлении.
-<code>alternate-reverse</code> — анимация проигрывается с конца до начала, а затем в обратном направлении.
 
+<code>reverse</code> — анимация проигрывается в обратном направлении, то есть с конца.
+
+<code>alternate</code> — анимация проигрывается с начала и до конца, а затем в обратном направлении.
+
+<code>alternate-reverse</code> — анимация проигрывается с конца до начала, а затем в обратном направлении.
 
 <iframe class="live-snippet" style="height: 420px" src="../assets/demo/css-animation/demo_7.html?output"></iframe>
 
@@ -141,7 +156,9 @@ links:
 Управляет остановкой и проигрыванием анимации.
 
 Возможные значения:
+
 <code>running</code> — анимация проигрывается (значение по умолчанию).
+
 <code>paused</code> — анимация застывает на первом шаге.
 
 Управлять шагом, где будет остановка, не получается, но можно останавливать анимацию по <code>:hover</code>:
@@ -165,8 +182,11 @@ links:
 Возможные значения:
 
 <code>none</code> — анимация воздействует на элемент только во время воспроизведения, по окончании элемент возвращается в исходное состояние.
+
 <code>forwards</code> — анимация воздействует на элемент по окончании воспроизведения.
+
 <code>backwards</code> — анимация воздействует на элемент до начала воспроизведения.
+
 <code>both</code> — анимация воздействует на элемент и до начала, и после окончания воспроизведения.
 
 Чтобы увидеть как <code>backwards</code> и <code>both</code> работают до начала воспроизведения анимации, задана задержка <code>animation-delay: 3s;</code>. Так же для этого имеет смысл открыть пример в новом окне.
