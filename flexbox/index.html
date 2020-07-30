@@ -28,26 +28,26 @@
 </section><section id="flex-direction" data-name="flex-direction"><h2>Flex-direction</h2>
 <p>Направление раскладки блоков управляется свойством <code>flex-direction</code>.</p>
 <p>Возможные значения:</p>
-<p><code>row</code> — строка (значение по умолчанию);
-<code>row-reverse</code> — строка с элементами в обратном порядке;
-<code>column</code> — колонка;
-<code>column-reverse</code> — колонка с элементами в обратном порядке.</p>
-<p><code>row</code> и <code>row-reverse</code></p>
+<p><code>row</code> — строка (значение по умолчанию);</p>
+<p><code>row-reverse</code> — строка с элементами в обратном порядке;</p>
+<p><code>column</code> — колонка;</p>
+<p><code>column-reverse</code> — колонка с элементами в обратном порядке.</p>
+<p><code>row</code> и <code>row-reverse</code>:</p>
 <iframe class="live-snippet" style="height: 400px" src="../assets/demo/flexbox/demo_6.html?output"></iframe>
-<p><code>column</code> и <code>column-reverse</code></p>
+<p><code>column</code> и <code>column-reverse</code>:</p>
 <iframe class="live-snippet" style="height: 380px" src="../assets/demo/flexbox/demo_7.html?output"></iframe>
 </section><section id="flex-wrap" data-name="flex-wrap"><h2>Flex-wrap</h2>
 В одной строке может быть много блоков. Переносятся они или нет определяет свойство <code>flex-wrap</code>.
 <p>Возможные значения:</p>
-<p><code>nowrap</code> — блоки не переносятся (значение по умолчанию);
-<code>wrap</code> — блоки переносятся;
-<code>wrap-reverse</code> — блоки переносятся и располагаются в обратном порядке.</p>
+<p><code>nowrap</code> — блоки не переносятся (значение по умолчанию);</p>
+<p><code>wrap</code> — блоки переносятся;</p>
+<p><code>wrap-reverse</code> — блоки переносятся и располагаются в обратном порядке.</p>
 <iframe class="live-snippet" style="height: 630px" src="../assets/demo/flexbox/demo_8.html?output"></iframe>
 <p>Для короткой записи свойств <code>flex-direction</code> и <code>flex-wrap</code> существует свойство: <code>flex-flow</code>.</p>
 <p>Возможные значения: можно задавать оба свойства или только какое-то одно. Например:</p>
-<p><code>flex-flow: column;</code>
-<code>flex-flow: wrap-reverse;</code>
-<code>flex-flow: column-reverse wrap;</code></p>
+<p><code>flex-flow: column;</code></p>
+<p><code>flex-flow: wrap-reverse;</code></p>
+<p><code>flex-flow: column-reverse wrap;</code></p>
 <p>Демо для <code>row-reverse wrap-reverse</code>:</p>
 <iframe class="live-snippet" style="height: 300px" src="../assets/demo/flexbox/demo_9.html?output"></iframe>
 </section><section id="order" data-name="order"><h2>Order</h2>
@@ -60,56 +60,56 @@
 <p><code>justify-content</code> и <code>align-items</code> применяются к родительскому контейнеру, <code>align-self</code> — к дочерним.</p>
 <p><code>justify-content</code> отвечает за выравнивание по главной оси.</p>
 <p>Возможные значения <code>justify-content</code>:</p>
-<p><code>flex-start</code> — элементы выравниваются от начала главной оси (значение по умолчанию);
-<code>flex-end</code> — элементы выравниваются от конца главной оси;
-<code>center</code> — элементы выравниваются по центру главной оси;
-<code>space-between</code> — элементы выравниваются по главной оси, распределяя свободное место между собой;
-<code>space-around</code> — элементы выравниваются по главной оси, распределяя свободное место вокруг себя.</p>
-<p><code>flex-start</code> и <code>flex-end</code></p>
+<p><code>flex-start</code> — элементы выравниваются от начала главной оси (значение по умолчанию);</p>
+<p><code>flex-end</code> — элементы выравниваются от конца главной оси;</p>
+<p><code>center</code> — элементы выравниваются по центру главной оси;</p>
+<p><code>space-between</code> — элементы выравниваются по главной оси, распределяя свободное место между собой;</p>
+<p><code>space-around</code> — элементы выравниваются по главной оси, распределяя свободное место вокруг себя.</p>
+<p><code>flex-start</code> и <code>flex-end</code>:</p>
 <iframe class="live-snippet" style="height: 450px" src="../assets/demo/flexbox/demo_11.html?output"></iframe>
-<p><code>center</code></p>
+<p><code>center</code>:</p>
 <iframe class="live-snippet" style="height: 270px" src="../assets/demo/flexbox/demo_12.html?output"></iframe>
-<p><code>space-between</code>, <code>space-around</code></p>
+<p><code>space-between</code>, <code>space-around</code>:</p>
 <iframe class="live-snippet" style="height: 450px" src="../assets/demo/flexbox/demo_13.html?output"></iframe>
 </section><section id="align-items" data-name="align-items"><h2>Align-items</h2>
 <code>align-items</code> отвечает за выравнивание по перпендикулярной оси.
 <p>Возможные значения <code>align-items</code>:</p>
-<p><code>flex-start</code> — элементы выравниваются от начала перпендикулярной оси;
-<code>flex-end</code> — элементы выравниваются от конца перпендикулярной оси;
-<code>center</code> — элементы выравниваются по центру;
-<code>baseline</code> — элементы выравниваются по базовой линии;
-<code>stretch</code> — элементы растягиваются, занимая все пространство по перпендикулярной оси (значение по умолчанию).</p>
-<p><code>flex-start</code>, <code>flex-end</code></p>
+<p><code>flex-start</code> — элементы выравниваются от начала перпендикулярной оси;</p>
+<p><code>flex-end</code> — элементы выравниваются от конца перпендикулярной оси;</p>
+<p><code>center</code> — элементы выравниваются по центру;</p>
+<p><code>baseline</code> — элементы выравниваются по базовой линии;</p>
+<p><code>stretch</code> — элементы растягиваются, занимая все пространство по перпендикулярной оси (значение по умолчанию).</p>
+<p><code>flex-start</code>, <code>flex-end</code>:</p>
 <iframe class="live-snippet" style="height: 530px" src="../assets/demo/flexbox/demo_14.html?output"></iframe>
-<p><code>center</code></p>
+<p><code>center</code>:</p>
 <iframe class="live-snippet" style="height: 320px" src="../assets/demo/flexbox/demo_15.html?output"></iframe>
-<p><code>baseline</code>, <code>stretch</code></p>
+<p><code>baseline</code>, <code>stretch</code>:</p>
 <iframe class="live-snippet" style="height: 530px" src="../assets/demo/flexbox/demo_16.html?output"></iframe>
 </section><section id="align-self" data-name="align-self"><h2>Align-self</h2>
-<code>align-self</code> также отвечает за выравнивание по перпендикулярной оси, но задается отдельным flex-элементам.
+<p><code>align-self</code> также отвечает за выравнивание по перпендикулярной оси, но задается отдельным flex-элементам.</p>
 <p>Возможные значения <code>align-self</code>:</p>
-<p><code>auto</code> — значение по умолчанию. Означает, что элемент использует <code>align-items</code> родительского элемента;
-<code>flex-start</code> — элемент выравнивается от начала перпендикулярной оси;
-<code>flex-end</code> — элемент выравнивается от конца перпендикулярной оси;
-<code>center</code> — элемент выравнивается по центру;
-<code>baseline</code> — элемент выравнивается по базовой линии;
-<code>stretch</code> — элемент растягивается, занимая все пространство по высоте.</p>
-<p><code>flex-start</code></p>
+<p><code>auto</code> — значение по умолчанию. Означает, что элемент использует <code>align-items</code> родительского элемента;</p>
+<p><code>flex-start</code> — элемент выравнивается от начала перпендикулярной оси;</p>
+<p><code>flex-end</code> — элемент выравнивается от конца перпендикулярной оси;</p>
+<p><code>center</code> — элемент выравнивается по центру;</p>
+<p><code>baseline</code> — элемент выравнивается по базовой линии;</p>
+<p><code>stretch</code> — элемент растягивается, занимая все пространство по высоте.</p>
+<p><code>flex-start</code>:</p>
 <iframe class="live-snippet" style="height: 330px" src="../assets/demo/flexbox/demo_17.html?output"></iframe>
 </section><section id="align-content" data-name="align-content"><h2>Align-content</h2>
 Для управления выравниванием внутри многострочного flex-контейнера есть свойство <code>align-content</code>.
 <p>Возможные значения:</p>
-<p><code>flex-start</code> — элементы выравниваются от начала главной оси;
-<code>flex-end</code> — элементы выравниваются от конца главной оси;
-<code>center</code> — элементы выравниваются по центру главной оси;
-<code>space-between</code> — элементы выравниваются по главной оси, распределяя свободное место между собой;
-<code>space-around</code> — элементы выравниваются по главной оси, распределяя свободное место вокруг себя;
-<code>stretch</code> — элементы растягиваются, заполняя всю высоту (значение по умолчанию).</p>
-<p><code>flex-start</code>, <code>flex-end</code></p>
+<p><code>flex-start</code> — элементы выравниваются от начала главной оси;</p>
+<p><code>flex-end</code> — элементы выравниваются от конца главной оси;</p>
+<p><code>center</code> — элементы выравниваются по центру главной оси;</p>
+<p><code>space-between</code> — элементы выравниваются по главной оси, распределяя свободное место между собой;</p>
+<p><code>space-around</code> — элементы выравниваются по главной оси, распределяя свободное место вокруг себя;</p>
+<p><code>stretch</code> — элементы растягиваются, заполняя всю высоту (значение по умолчанию).</p>
+<p><code>flex-start</code>, <code>flex-end</code>:</p>
 <iframe class="live-snippet" style="height: 560px" src="../assets/demo/flexbox/demo_18.html?output"></iframe>
-<p><code>center</code>, <code>stretch</code></p>
+<p><code>center</code>, <code>stretch</code>:</p>
 <iframe class="live-snippet" style="height: 570px" src="../assets/demo/flexbox/demo_19.html?output"></iframe>
-<p><code>space-between</code>, <code>space-around</code></p>
+<p><code>space-between</code>, <code>space-around</code>:</p>
 <iframe class="live-snippet" style="height: 570px" src="../assets/demo/flexbox/demo_20.html?output"></iframe>
 </section>
 <p><strong>Ps:</strong> Некоторые штуки мне так и не удалось увидеть в действии, например, строчку <code>flex-flow: column wrap</code> или полную запись того же <code>flex-direction: column; flex-wrap: wrap;</code>.</p>
