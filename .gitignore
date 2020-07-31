@@ -2,6 +2,3 @@ static/
 page-data/
 webpack*.json
 chunk*.json
-*.css
-*.js
-
