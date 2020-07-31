@@ -1,7 +1,7 @@
 ---
 title: Transform
 
-tags: [transform]
+tags: [3D, transform]
 
 desc: CSS-свойство позволяет трансформировать элементы, в том числе в трехмерном пространстве.
 

@@ -1,7 +1,7 @@
 ---
 title: СSS-градиенты и 3D
 
-tags: [gradients, animation, experiments, draw-on-css]
+tags: [3D, gradients, animation, experiments, draw-on-css]
 
 image: //img-fotki.yandex.ru/get/9820/5091629.9d/0_7f421_4432b25b_L.png
 desc: Сочетание CSS-анимации, трансформаций и градиентов может дать совершенно удивительные результаты. Не уверена, что подобное можно использовать в реальных проектах, но выглядит довольно эффектно.
