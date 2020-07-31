@@ -6,9 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby clean && gatsby build",
-    "cleanbuild": "rm public/*.js & rm public/*.css & rm public/chunk*.json & rm public/webpack*.json && rm -rf public/static && rm -rf public/page-data",
     "develop": "gatsby develop",
-    "deploy": "npm run build && npm run cleanbuild && gh-pages -d public -b master",
+    "deploy": "npm run build && gh-pages -d public -b master --dotfiles true",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
