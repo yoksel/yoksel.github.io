@@ -17,22 +17,31 @@ export default function Widget ({ title, items, path }) {
       <ul className='widget__list'>
         {items.map(({
           id, title, name,
-          url, desc,
+          url, desc, stars,
           eventUrl, eventName, eventDate
 }) => {
-          title = title || name;
+          title = <span className="widget__link-text">
+            {title || name}
+          </span>;
           id = id || nanoid();
           let itemClassName = 'widget__item';
+          const starsElement = stars
+            ? <span
+              className="widget__stars">
+                <span className="visually-hidden">Звёзд на гитхабе:</span>
+                {stars}</span>
+            : null;
+
           let link = (
             <Link className="widget__link" to={url}>
-              {title}
+              {title}{starsElement}
             </Link>
           );
 
           if (url.includes('http')) {
             link = (
               <a className="widget__link" href={url}>
-                {title}
+                {title}{starsElement}
               </a>
             );
           }

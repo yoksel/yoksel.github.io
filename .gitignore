@@ -17,3 +17,6 @@ public
 
 # local helpers
 todo.md
+
+# Environment variables
+.env
