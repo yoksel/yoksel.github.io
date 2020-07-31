@@ -27,7 +27,7 @@ export default function Widget ({ title, items, path }) {
           let itemClassName = 'widget__item';
           const starsElement = stars
             ? <span
-              className="widget__stars">
+              className="widget__stars" title="Звёзд на гитхабе">
                 <span className="visually-hidden">Звёзд на гитхабе:</span>
                 {stars}</span>
             : null;
