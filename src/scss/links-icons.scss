@@ -14,7 +14,8 @@ A[href*="medium"],
 A[href*="typekit"],
 A[href*="developers.google"],
 A[href*="lea.verou"],
-A[href*="wsd.events"] {
+A[href*="wsd.events"],
+A[href*="unsplash"] {
   &::before {
     content: "";
     display: inline-block;
@@ -128,5 +129,12 @@ A[href*="lea.verou"] {
 A[href*="wsd.events"] {
   &::before {
     background-image: url("/assets/img/svg/icons/wsd.svg");
+  }
+}
+
+A[href*="unsplash"] {
+  &::before {
+    margin-right: .25em;
+    background-image: url("/assets/img/svg/icons/unsplash.svg");
   }
 }
