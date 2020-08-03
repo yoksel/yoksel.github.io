@@ -40,18 +40,30 @@ export default function Aside ({ slug, path, isMain, articleType }) {
   const pages = markdownNodes.filter(item => item.node.fields.type === 'page');
   const articlesWidget = !isMain
     ? <Widget
+      id="articles"
       title="Статьи"
       items={postNodesToList(posts)}
       path={path} />
     : '';
   const pagesWidget = <Widget
+    id="pages"
     title="Страницы"
     items={postNodesToList(pages)}
     path={path} />;
   const projectsWidget = <Widget
+    id="projects"
     title="Проекты"
     items={projectsData}
     path={path}
+  />;
+  const photosWidget = <Widget
+    id="photos"
+    title="Фотографии"
+    path={path}
+    items={[]}
+    isTemplate={true}
+    hideTitle={true}
+    footerContent="<a href='https://unsplash.com/@yoksel/'>unsplash.com/@yoksel</a>"
   />;
 
   const widgetsOrder = articleType === 'page'
@@ -63,6 +75,7 @@ export default function Aside ({ slug, path, isMain, articleType }) {
     : slug === 'about' || !path
     ? <Fragment>
         {projectsWidget}
+        {slug === 'about' && photosWidget}
         {articlesWidget}
         {pagesWidget}
       </Fragment>

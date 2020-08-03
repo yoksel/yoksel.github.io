@@ -56,7 +56,8 @@
     "react-helmet": "^6.1.0",
     "stylelint": "^13.0.0",
     "stylelint-config-standard": "^19.0.0",
-    "tiny-glob": "^0.2.6"
+    "tiny-glob": "^0.2.6",
+    "unsplash-js": "^6.0.0"
   },
   "repository": {
     "type": "git",

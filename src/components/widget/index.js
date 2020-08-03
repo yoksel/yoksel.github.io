@@ -5,14 +5,41 @@ import { nanoid } from 'nanoid';
 
 import './styles.scss';
 
-export default function Widget ({ title, items, path }) {
-  if (items.length === 0) {
+export default function Widget ({
+  id,
+  title,
+  items,
+  path,
+  isTemplate,
+  hideTitle,
+  footerContent
+}) {
+  if ((!items || items.length) === 0 && !isTemplate) {
     return;
   }
 
+  let widgetClass = `widget widget--${id}`;
+
+  if (isTemplate) {
+    widgetClass += ' hidden';
+  }
+
+  let titleClass = 'widget__title';
+
+  if (hideTitle) {
+    titleClass += ' visually-hidden';
+  }
+
+  const footerElement = footerContent
+    ? <footer
+      className="widget__footer"
+      dangerouslySetInnerHTML={{ __html: footerContent }}
+    />
+    : null;
+
   return (
-    <div className="widget">
-      <h3 className="widget__title">{title}</h3>
+    <div className={widgetClass}>
+      <h3 className={titleClass}>{title}</h3>
 
       <ul className='widget__list'>
         {items.map(({
@@ -74,13 +101,18 @@ export default function Widget ({ title, items, path }) {
           );
         })}
       </ul>
+
+      {footerElement}
     </div>
   );
 }
 
 Widget.propTypes = {
+  id: PropTypes.string,
   title: PropTypes.string,
   items: PropTypes.array,
   path: PropTypes.string,
-  listMod: PropTypes.string
+  isTemplate: PropTypes.bool,
+  hideTitle: PropTypes.bool,
+  footerContent: PropTypes.string
 };
