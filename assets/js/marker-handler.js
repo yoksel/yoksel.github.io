@@ -1,3 +1,8 @@
+export const initMarker = () => {
+  const markerHandler = new MarkerHandler();
+  markerHandler.addEvents();
+};
+
 export class MarkerHandler {
   constructor () {
     const elementsWithIDList = Array.from(
