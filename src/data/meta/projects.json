@@ -25,14 +25,14 @@
     "name": "SVG Filters",
     "desc": "Конструктор SVG-фильтров",
     "img": "projects/svg-filters.png",
-    "stars": 172
+    "stars": 173
   },
   {
     "url": "http://yoksel.github.io/svg-gradient-map/",
     "name": "SVG Gradient Map Filter",
     "desc": "Конструктор фильтров c&nbsp;Gradient&nbsp;Map",
     "img": "projects/svg-gradient-map.png",
-    "stars": 118
+    "stars": 119
   },
   {
     "url": "http://yoksel.github.io/url-encoder/",
