@@ -4,4 +4,4 @@ title: Черновики
 createPageOnDev: true
 ---
 
-Hello world
+Положите сюда что-нибудь приятное для глаз
