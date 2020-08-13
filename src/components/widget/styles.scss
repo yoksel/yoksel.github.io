@@ -46,7 +46,8 @@
   vertical-align: middle;
   text-decoration: underline;
 
-  .widget__link:hover & {
+  .widget__link:hover &,
+  .widget__item--current & {
     text-decoration: none;
   }
 }
