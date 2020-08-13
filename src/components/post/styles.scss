@@ -51,6 +51,20 @@
     border: 1px solid #DDD;
   }
 
+  .float {
+    margin-top: .25rem;
+
+    &--left {
+      float: left;
+      margin-right: 1.5rem;
+    }
+    &--right {
+      float: right;
+      margin-left: 1.5rem;
+    }
+  }
+
+
   IFRAME {
     width: 100%;
     margin: .5rem 0;
