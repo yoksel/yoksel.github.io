@@ -15,7 +15,10 @@ A[href*="typekit"],
 A[href*="developers.google"],
 A[href*="lea.verou"],
 A[href*="wsd.events"],
-A[href*="unsplash"] {
+A[href*="unsplash"],
+A[href*="wikipedia"],
+A[href*="webkit"],
+A[href*="sitepoint"] {
   &::before {
     content: "";
     display: inline-block;
@@ -136,5 +139,23 @@ A[href*="unsplash"] {
   &::before {
     margin-right: .25em;
     background-image: url("/assets/img/svg/icons/unsplash.svg");
+  }
+}
+
+A[href*="wikipedia"] {
+  &::before {
+    background-image: url("/assets/img/svg/icons/wiki.svg");
+  }
+}
+
+A[href*="webkit"] {
+  &::before {
+    background-image: url("/assets/img/svg/icons/webkit.svg");
+  }
+}
+
+A[href*="sitepoint"] {
+  &::before {
+    background-image: url("/assets/img/svg/icons/sitepoint.svg");
   }
 }
