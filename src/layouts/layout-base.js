@@ -87,7 +87,7 @@ export default function LayoutBase (props) {
         {aside}
       </div>
 
-      <Footer slug={pageData.slug} />
+      <Footer slug={pageData.slug} isMain={isMain} />
 
       {pageData.disableCounter !== true && <div
         className="counter"

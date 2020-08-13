@@ -7,14 +7,14 @@ import footerNavData from '../../data/meta/footer-nav.json';
 
 import './styles.scss';
 
-export default function Footer ({ slug }) {
+export default function Footer ({ slug, isMain }) {
   return (
     <footer className="page-footer">
       <nav className="page-footer__nav">
         <h2 className="visually-hidden">Нижняя навигация</h2>
 
         <div className="page-container page-footer__container">
-          <Logo parent="footer"/>
+          <Logo parent="footer" isMain={isMain}/>
 
           <ul className="page-footer__nav-list">
             {footerNavData.map(({ name, url }) => {
@@ -62,5 +62,6 @@ export default function Footer ({ slug }) {
 }
 
 Footer.propTypes = {
-  slug: PropTypes.string
+  slug: PropTypes.string,
+  isMain: PropTypes.bool
 };
