@@ -11,21 +11,21 @@
     "name": "Flexbox Cheatsheet",
     "desc": "Шпаргалка по&nbsp;флексбоксам",
     "img": "projects/flex-cheatsheet.png",
-    "stars": 783
+    "stars": 785
   },
   {
     "url": "https://yoksel.github.io/tema/",
     "name": "Tema",
     "desc": "Генератор цветовых тем из CSS/SCSS/Less-переменных",
     "img": "projects/tema.png",
-    "stars": 23
+    "stars": 24
   },
   {
     "url": "http://yoksel.github.io/svg-filters/",
     "name": "SVG Filters",
     "desc": "Конструктор SVG-фильтров",
     "img": "projects/svg-filters.png",
-    "stars": 173
+    "stars": 174
   },
   {
     "url": "http://yoksel.github.io/svg-gradient-map/",
@@ -38,14 +38,14 @@
     "url": "http://yoksel.github.io/url-encoder/",
     "name": "URL-encoder для SVG",
     "img": "projects/url-encoder.png",
-    "stars": 481
+    "stars": 487
   },
   {
     "url": "https://github.com/yoksel/common-words",
     "name": "Common Words",
     "desc": "Слова, часто используемые в&nbsp;CSS-классах",
     "img": "projects/common-words.png",
-    "stars": 1381
+    "stars": 1386
   },
   {
     "url": "http://yoksel.github.io/html-tree/",
@@ -59,7 +59,7 @@
     "name": "Pixel Glass",
     "desc": "Небольшой скрипт для проверки разметки на&nbsp;соответствие макету",
     "img": "projects/pixel-glass.png",
-    "stars": 123
+    "stars": 124
   },
   {
     "url": "https://yoksel.github.io/handy-colors/",
@@ -73,7 +73,7 @@
     "name": "Relative Clip Path",
     "desc": "Конвертер абсолютных координат пути в относительные",
     "img": "projects/relative-clip-path.png",
-    "stars": 50
+    "stars": 51
   },
   {
     "url": "https://yoksel.github.io/emoji-brush/",
@@ -87,7 +87,7 @@
     "name": "Snowflake",
     "desc": "Генератор снежинок",
     "img": "projects/snowflake.png",
-    "stars": 31
+    "stars": 32
   },
   {
     "url": "http://yoksel.github.io/unicode-table/",
