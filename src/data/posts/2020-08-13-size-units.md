@@ -1,6 +1,8 @@
 ---
 title: Единицы размеров в CSS
 
+image: //css.yoksel.ru/assets/img/articles/size-units/preview.png
+
 tags: [fonts, units, text]
 
 desc: 'Абсолютные и относительные единицы измерения в CSS: от пикселей до единиц вьюпорта'
