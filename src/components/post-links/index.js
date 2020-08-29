@@ -13,7 +13,7 @@ export default function PostLinks ({ title, items }) {
     <dl className="post-links">
       <dt className="post-links__title">{title}</dt>
 
-      {items.map(({ id, name, url, desc }) => {
+      {items.map(({ id, name, level, url, desc }) => {
         const link = url || `#${id}`;
         const nameText = name || url;
         const descElement = desc ? (
@@ -22,8 +22,13 @@ export default function PostLinks ({ title, items }) {
           ''
         );
 
+        let className = 'post-links__item';
+        if (level) {
+          className += ` ${className}--level-${level}`;
+        }
+
         return (
-          <dd className="post-links__item" key={nanoid()}>
+          <dd className={className} key={nanoid()}>
             <a href={link}>{nameText}</a>
             {descElement}
           </dd>
