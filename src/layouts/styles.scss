@@ -40,9 +40,3 @@
   }
 }
 
-.page-main,
-.page-aside {
-  // https://web.dev/content-visibility/
-  content-visibility: auto;
-  contain-intrinsic-size: 1000px;
-}
