@@ -45,7 +45,7 @@ export default function BlogPost ({ data, pageContext, location }) {
     };
   }
 
-  // Drafts page is generated & filled autimatically
+  // Drafts page is generated & filled automatically
   if (slug === 'drafts') {
     includedContent = <Drafts/>;
   }
