@@ -18,7 +18,8 @@ A[href*="wsd.events"],
 A[href*="unsplash"],
 A[href*="wikipedia"],
 A[href*="webkit"],
-A[href*="sitepoint"] {
+A[href*="sitepoint"],
+.win-logo {
   &::before {
     content: "";
     display: inline-block;
@@ -157,5 +158,15 @@ A[href*="webkit"] {
 A[href*="sitepoint"] {
   &::before {
     background-image: url("/assets/img/svg/icons/sitepoint.svg");
+  }
+}
+
+.win-logo {
+  &::before {
+    width: 1.2em;
+    height: 1.2em;
+    margin-top: -.2em;
+    margin-right: 0;
+    background-image: url("/assets/img/svg/icons/win.svg");
   }
 }
