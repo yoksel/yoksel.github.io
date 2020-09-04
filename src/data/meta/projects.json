@@ -11,7 +11,7 @@
     "name": "Flexbox Cheatsheet",
     "desc": "Шпаргалка по&nbsp;флексбоксам",
     "img": "projects/flex-cheatsheet.png",
-    "stars": 790
+    "stars": 792
   },
   {
     "url": "https://yoksel.github.io/tema/",
@@ -38,14 +38,14 @@
     "url": "http://yoksel.github.io/url-encoder/",
     "name": "URL-encoder для SVG",
     "img": "projects/url-encoder.png",
-    "stars": 496
+    "stars": 500
   },
   {
     "url": "https://github.com/yoksel/common-words",
     "name": "Common Words",
     "desc": "Слова, часто используемые в&nbsp;CSS-классах",
     "img": "projects/common-words.png",
-    "stars": 1400
+    "stars": 1403
   },
   {
     "url": "http://yoksel.github.io/html-tree/",
@@ -59,7 +59,7 @@
     "name": "Pixel Glass",
     "desc": "Небольшой скрипт для проверки разметки на&nbsp;соответствие макету",
     "img": "projects/pixel-glass.png",
-    "stars": 126
+    "stars": 127
   },
   {
     "url": "https://yoksel.github.io/handy-colors/",
