@@ -11,7 +11,7 @@
     "name": "Flexbox Cheatsheet",
     "desc": "Шпаргалка по&nbsp;флексбоксам",
     "img": "projects/flex-cheatsheet.png",
-    "stars": 792
+    "stars": 793
   },
   {
     "url": "https://yoksel.github.io/tema/",
@@ -25,7 +25,7 @@
     "name": "SVG Filters",
     "desc": "Конструктор SVG-фильтров",
     "img": "projects/svg-filters.png",
-    "stars": 178
+    "stars": 179
   },
   {
     "url": "http://yoksel.github.io/svg-gradient-map/",
@@ -38,21 +38,21 @@
     "url": "http://yoksel.github.io/url-encoder/",
     "name": "URL-encoder для SVG",
     "img": "projects/url-encoder.png",
-    "stars": 500
+    "stars": 505
   },
   {
     "url": "https://github.com/yoksel/common-words",
     "name": "Common Words",
     "desc": "Слова, часто используемые в&nbsp;CSS-классах",
     "img": "projects/common-words.png",
-    "stars": 1403
+    "stars": 1410
   },
   {
     "url": "http://yoksel.github.io/html-tree/",
     "name": "HTML Tree",
     "desc": "Генератор структуры документа с&nbsp;проверкой БЭМ-классов",
     "img": "projects/html-tree.png",
-    "stars": 113
+    "stars": 114
   },
   {
     "url": "https://github.com/yoksel/pixel-glass-js",
