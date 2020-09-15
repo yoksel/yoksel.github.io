@@ -191,3 +191,94 @@ PRE CODE {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.resizable {
+  position: relative;
+  overflow: hidden;
+  resize: both;
+  outline: 1px solid #DDD;
+  margin: 1rem 0;
+
+  &--x {
+    resize: horizontal;
+  }
+
+  &--y {
+    resize: vertical;
+  }
+
+  IFRAME {
+    display: block;
+    margin: 0;
+    // height: 100%;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: drop-shadow(0 0 3px black);
+    background: linear-gradient(
+      to right bottom,
+      transparent 50%,
+      gold 0, gold 60%,
+      transparent 0%, transparent 70%,
+      yellowgreen 0, yellowgreen 80%,
+      transparent 0%, transparent 90%,
+      orangered 0
+    );
+  }
+}
+
+.hire-me {
+  position: relative;
+  display: block;
+  margin-bottom: 2rem;
+  padding: .75rem .5rem;
+  border-radius: 4px;
+  background: linear-gradient(45deg,
+     dodgerblue, turquoise, mediumpurple
+  );
+  clip-path: polygon(97% 0%, 100% 50%, 97% 100%,
+  3% 87%, 0% 50%, 3% 13%);
+  text-align: center;
+  line-height: 1;
+
+  &__text {
+    position: relative;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-bottom: 100%;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg,
+      purple 1%,crimson, gold, turquoise, dodgerblue 73%
+    );
+    opacity: 0;
+    transition: all .5s;
+  }
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:link,
+  &:visited,
+  &:hover {
+    color: #FFF;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    transform: translateY(-50%) rotate(-60deg);
+  }
+}

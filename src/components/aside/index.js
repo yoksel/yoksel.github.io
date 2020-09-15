@@ -65,6 +65,8 @@ export default function Aside ({ slug, path, isMain, articleType }) {
     hideTitle={true}
     footerContent="<a href='https://unsplash.com/@yoksel/'>unsplash.com/@yoksel</a>"
   />;
+  const hireMe = <a className="hire-me" href="https://hh.ru/resume/727a4146ff07b993730039ed1f534f7a333743"><span className="hire-me__text">
+    Ищу новую интересную работу</span></a>;
 
   const widgetsOrder = articleType === 'page'
     ? <Fragment>
@@ -98,6 +100,8 @@ export default function Aside ({ slug, path, isMain, articleType }) {
   return (
     <aside className="page-aside">
       <h2 className="visually-hidden">Сайдбар</h2>
+
+      {hireMe}
 
       {widgetsOrder}
     </aside>
