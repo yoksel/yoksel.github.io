@@ -1,5 +1,5 @@
 ---
-title: Электронные часы. Css + Js.
+title: Электронные часы на CSS и JS.
 
 tags: [js, experiments]
 
