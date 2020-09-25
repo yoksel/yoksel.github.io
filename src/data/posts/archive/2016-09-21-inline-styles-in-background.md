@@ -12,7 +12,7 @@ links:
  - name: 'Optimizing SVGs in data URIs'
    url: https://codepen.io/tigt/post/optimizing-svgs-in-data-uris
  - name: URL-encoder для SVG
-   url: http://yoksel.github.io/url-encoder/ru
+   url: https://yoksel.github.io/url-encoder/ru
  - name: Background tricks with SVG, Box shadows and CSS Gradients
    url: http://codepen.io/collection/DyJRrY/2/
 ---
@@ -21,7 +21,7 @@ links:
 
 Очевидно, что мы не можем просто взять и засунуть одно CSS-свойство в другое: тени и трансформации должны применяться к элементу. В качестве фона мы можем использовать цвета, градиенты и картинки, но не только: ещё в качестве фона можно использовать SVG, причём не только в виде ссылки на внешний файл, — также код SVG-элемента можно вставить непосредственно в CSS, это делается вот такой конструкцией: <code>background-image: url("data:image/svg+xml,...");</code>.
 
-SVG можно вставить в CSS прямо как есть, но такой код не будет работать в IE. Однако если его <a href="http://yoksel.github.io/url-encoder/ru">заэскейпить</a>, код будет работать во всех браузерах включая IE9.
+SVG можно вставить в CSS прямо как есть, но такой код не будет работать в IE. Однако если его <a href="https://yoksel.github.io/url-encoder/ru">заэскейпить</a>, код будет работать во всех браузерах включая IE9.
 
 <p data-height="400" data-theme-id="4974" data-slug-hash="ammZbr" data-default-tab="css,result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/ammZbr/">(encoded svg)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
