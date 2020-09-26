@@ -4,14 +4,14 @@
     "name": "Grid Cheatsheet",
     "desc": "Шпаргалка по&nbsp;гридам",
     "img": "projects/grid-cheatsheet.png",
-    "stars": 56
+    "stars": 60
   },
   {
-    "url": "http://yoksel.github.io/flex-cheatsheet/",
+    "url": "https://yoksel.github.io/flex-cheatsheet/",
     "name": "Flexbox Cheatsheet",
     "desc": "Шпаргалка по&nbsp;флексбоксам",
     "img": "projects/flex-cheatsheet.png",
-    "stars": 793
+    "stars": 802
   },
   {
     "url": "https://yoksel.github.io/tema/",
@@ -21,34 +21,34 @@
     "stars": 25
   },
   {
-    "url": "http://yoksel.github.io/svg-filters/",
+    "url": "https://yoksel.github.io/svg-filters/",
     "name": "SVG Filters",
     "desc": "Конструктор SVG-фильтров",
     "img": "projects/svg-filters.png",
-    "stars": 179
+    "stars": 181
   },
   {
-    "url": "http://yoksel.github.io/svg-gradient-map/",
+    "url": "https://yoksel.github.io/svg-gradient-map/",
     "name": "SVG Gradient Map Filter",
     "desc": "Конструктор фильтров c&nbsp;Gradient&nbsp;Map",
     "img": "projects/svg-gradient-map.png",
-    "stars": 120
+    "stars": 121
   },
   {
-    "url": "http://yoksel.github.io/url-encoder/",
+    "url": "https://yoksel.github.io/url-encoder/",
     "name": "URL-encoder для SVG",
     "img": "projects/url-encoder.png",
-    "stars": 505
+    "stars": 518
   },
   {
     "url": "https://github.com/yoksel/common-words",
     "name": "Common Words",
     "desc": "Слова, часто используемые в&nbsp;CSS-классах",
     "img": "projects/common-words.png",
-    "stars": 1410
+    "stars": 1424
   },
   {
-    "url": "http://yoksel.github.io/html-tree/",
+    "url": "https://yoksel.github.io/html-tree/",
     "name": "HTML Tree",
     "desc": "Генератор структуры документа с&nbsp;проверкой БЭМ-классов",
     "img": "projects/html-tree.png",
@@ -59,7 +59,7 @@
     "name": "Pixel Glass",
     "desc": "Небольшой скрипт для проверки разметки на&nbsp;соответствие макету",
     "img": "projects/pixel-glass.png",
-    "stars": 127
+    "stars": 128
   },
   {
     "url": "https://yoksel.github.io/handy-colors/",
@@ -80,7 +80,7 @@
     "name": "Emoji Brush",
     "desc": "Кисточка с эмоджи",
     "img": "projects/emoji-brush.png",
-    "stars": 26
+    "stars": 27
   },
   {
     "url": "https://yoksel.github.io/snowflake/",
@@ -90,20 +90,20 @@
     "stars": 32
   },
   {
-    "url": "http://yoksel.github.io/unicode-table/",
+    "url": "https://yoksel.github.io/unicode-table/",
     "name": "Таблица символов юникода",
     "img": "projects/unicode-table.png",
     "stars": 10
   },
   {
-    "url": "http://yoksel.github.io/wave-maker/",
+    "url": "https://yoksel.github.io/wave-maker/",
     "name": "Wave Maker",
     "desc": "Конструктор волн с&nbsp;использованием <a href=\"https://www.w3.org/TR/SVG2/paths.html#PathDataEllipticalArcCommands\">SVG Arcs</a>",
     "img": "projects/wave-maker.png",
     "stars": 18
   },
   {
-    "url": "http://yoksel.github.io/shadowPainter/",
+    "url": "https://yoksel.github.io/shadowPainter/",
     "name": "Shadow Painter",
     "desc": "Рисовалка пиксельных анимаций на&nbsp;основе box-shadow",
     "img": "projects/shadow-painter.png",
