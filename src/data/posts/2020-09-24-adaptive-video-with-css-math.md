@@ -3,7 +3,7 @@ title: Адаптивное видео с помощью встроенных м
 
 image: //css.yoksel.ru/assets/img/articles/adaptive-video-with-css-math/preview.jpg
 
-tags: []
+tags: [css-math]
 
 desc: Как можно при ресайзе подогнать видео по высоте без дополнительных обёрток и JS?
 

@@ -24,6 +24,10 @@
     "name": "Firefox"
   },
   {
+    "slug": "css-math",
+    "name": "математика в CSS"
+  },
+  {
     "slug": "fonts",
     "name": "шрифты"
   },
