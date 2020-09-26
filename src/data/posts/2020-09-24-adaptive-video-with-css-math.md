@@ -26,8 +26,10 @@ links:
   name: 'attr()'
 - url: https://css-tricks.com/when-sass-and-new-css-features-collide/
   name: 'When Sass and New CSS Features Collide'
-- url: ./size-units/#relative-units
+- url: /size-units/#relative-units
   name: Единицы размеров в CSS
+- url: /css-math
+  name: Математические функции в CSS
 ---
 
 Когда я в твиттере спросила для чего могут быть нужны в CSS [типизированные значения атрибутов](https://www.w3.org/TR/css-values-3/#attr-notation), Вадим Макеев [предположил](https://twitter.com/pepelsbey/status/1304036385599508480), что это было бы очень удобно для адаптивных картинок.
