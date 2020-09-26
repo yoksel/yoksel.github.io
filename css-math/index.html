@@ -305,7 +305,7 @@ BODY</span> <span class="token punctuation">{</span>
 </ul>
 <h3 id="restrictions">Светлое будущее?</h3>
 <p>В <a href="https://www.w3.org/TR/css-values-4/#calc-notation">спецификации</a> есть интересный момент: утверждается, что внутри <code class="language-text">calc()</code> в качестве значений можно использовать содержимое атрибутов, да и в принципе можно использовать атрибуты как <a href="https://www.w3.org/TR/css-values-4/#attr-notation">значения CSS-свойств</a>.</p>
-<p>От обычного использования <code class="language-text">attr()</code> в качестве <a href="./content">содержимого псевдоэелемента</a> это отличается указанием типа содержимого:</p>
+<p>От обычного использования <code class="language-text">attr()</code> в качестве <a href="/content">содержимого псевдоэелемента</a> это отличается указанием типа содержимого:</p>
 <div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token comment">/* HTML
 &lt;div data-color="#FC9">...&lt;/div>
 */</span>
@@ -329,7 +329,7 @@ BODY</span> <span class="token punctuation">{</span>
   <span class="token property">height</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
   <span class="token property">background</span><span class="token punctuation">:</span> gold<span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre></div>
-<p>Но <a href="https://twitter.com/yoksel/status/1304025539120902145">в твиттере</a> мне быстро накидали примеров, когда это было бы действительно удобно. Например, получая размеры из атрибутов было бы удобно делать адаптивные картинки и фреймы. У меня получилось сделать <a href="./adaptive-video-with-css-math">адаптивное видео</a>, используя кастомные свойства, но для этого приходится дублировать размеры в инлайновых стилях. Если бы можно было считывать значения из атрибутов, без дублирования можно было бы обойтись.</p>
+<p>Но <a href="https://twitter.com/yoksel/status/1304025539120902145">в твиттере</a> мне быстро накидали примеров, когда это было бы действительно удобно. Например, получая размеры из атрибутов было бы удобно делать адаптивные картинки и фреймы. У меня получилось сделать <a href="/adaptive-video-with-css-math">адаптивное видео</a>, используя кастомные свойства, но для этого приходится дублировать размеры в инлайновых стилях. Если бы можно было считывать значения из атрибутов, без дублирования можно было бы обойтись.</p>
 <p>На момент написания статьи это не поддерживается <a href="https://caniuse.com/mdn-css_types_attr_type-or-unit">ни одним браузером</a>, но есть некоторая надежда, что однажды это заработает, потому что подобное использование атрибутов описано в спецификации свойства, которое помогло бы управлять соотношением сторон: <a href="https://drafts.csswg.org/css-sizing-4/#ratios">aspect-ratio</a>. Там есть такой пример:</p>
 <div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token comment">/* HTML
 &lt;iframe
