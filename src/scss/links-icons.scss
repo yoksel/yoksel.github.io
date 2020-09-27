@@ -16,6 +16,7 @@ A[href*="typekit"],
 A[href*="developers.google"],
 A[href*="lea.verou"],
 A[href*="wsd.events"],
+A[href*="web-standards"],
 A[href*="unsplash"],
 A[href*="wikipedia"],
 A[href*="webkit"],
@@ -23,6 +24,9 @@ A[href*="sitepoint"],
 A[href*="sass-lang"],
 A[href*="lesscss"],
 A[href*="smashingmagazine"],
+A[href*="stackoverflow"],
+A[href*="habr.com"],
+A[href*="apple.com"],
 .win-logo {
   &::before {
     content: "";
@@ -135,6 +139,7 @@ A[href*="lea.verou"] {
   }
 }
 
+A[href*="web-standards"],
 A[href*="wsd.events"] {
   &::before {
     background-image: url("/assets/img/svg/icons/wsd.svg");
@@ -181,6 +186,25 @@ A[href*="lesscss"] {
 A[href*="smashingmagazine"] {
   &::before {
     background-image: url("/assets/img/svg/icons/smashingmag.svg");
+  }
+}
+
+A[href*="stackoverflow"] {
+  &::before {
+    background-image: url("/assets/img/svg/icons/stackoverflow.svg");
+  }
+}
+
+A[href*="habr.com"] {
+  &::before {
+    background-image: url("/assets/img/svg/icons/habr.svg");
+  }
+}
+
+A[href*="apple.com"] {
+  &::before {
+    background-image: url("/assets/img/svg/icons/apple.svg");
+    vertical-align: baseline;
   }
 }
 
