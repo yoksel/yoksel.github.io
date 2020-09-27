@@ -38,7 +38,7 @@ links:
 
 Для решения этой задачи существуют [разные способы](https://css-tricks.com/fluid-width-video/): дополнительная обёртка с паддингом или варианты с JS, но простого изящного решения на чистом CSS до сих пор нет. В черновиках W3C для этих целей есть свойство [aspect-ratio](https://drafts.csswg.org/css-sizing-4/#ratios), подробнее про него можно почитать в статье [Designing An Aspect Ratio Unit For CSS](https://www.smashingmagazine.com/2019/03/aspect-ratio-unit-css/), но на данный момент оно [не поддерживается](https://caniuse.com/mdn-css_properties_aspect-ratio) ни одним браузером ([демо для потестить](https://codepen.io/yoksel/pen/WNwPEoV)).
 
-Пока копалась в [математических функциях](https://www.w3.org/TR/css-values-4/#calc-notation), пришло в голову, что `aspect-ratio` можно попробовать воспроизвести с помощью этих функций и кастомных свойств. Крис Койер [предлагал](https://css-tricks.com/fluid-width-video/) использовать кастомные свойства и `calc()` для вычисления паддинга в способе с обёрткой:
+Пока копалась в [математических функциях](/css-math), пришло в голову, что `aspect-ratio` можно попробовать воспроизвести с помощью этих функций и кастомных свойств. Крис Койер [предлагал](https://css-tricks.com/fluid-width-video/) использовать кастомные свойства и `calc()` для вычисления паддинга в способе с обёрткой:
 
 ```html
 <div class="videoWrapper" style="--aspect-ratio: 3 / 4;">
