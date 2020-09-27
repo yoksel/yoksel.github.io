@@ -20,6 +20,9 @@ A[href*="unsplash"],
 A[href*="wikipedia"],
 A[href*="webkit"],
 A[href*="sitepoint"],
+A[href*="sass-lang"],
+A[href*="lesscss"],
+A[href*="smashingmagazine"],
 .win-logo {
   &::before {
     content: "";
@@ -160,6 +163,24 @@ A[href*="webkit"] {
 A[href*="sitepoint"] {
   &::before {
     background-image: url("/assets/img/svg/icons/sitepoint.svg");
+  }
+}
+
+A[href*="sass-lang"] {
+  &::before {
+    background-image: url("/assets/img/svg/icons/sass.svg");
+  }
+}
+
+A[href*="lesscss"] {
+  &::before {
+    background-image: url("/assets/img/svg/icons/less.svg");
+  }
+}
+
+A[href*="smashingmagazine"] {
+  &::before {
+    background-image: url("/assets/img/svg/icons/smashingmag.svg");
   }
 }
 
