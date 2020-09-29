@@ -21,7 +21,7 @@ Cпецификация: <a href="http://www.w3.org/TR/css-snappoints-1/">Scroll
 
 Возьмем для примера такую галерею:
 
-<p data-height="550" data-theme-id="4974" data-slug-hash="zGWGzo" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/zGWGzo/'>Scroll Snap Points</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="zGWGzo" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/zGWGzo/'>Scroll Snap Points</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Попробуйте скроллить картинки, и вы увидите, что прокрутка никак не учитывает содержимое прокручиваемой области. Прокрутка может остановиться где угодно, откусив полкартинки и не заморачиваясь выравниванием.
@@ -36,7 +36,7 @@ Cпецификация: <a href="http://www.w3.org/TR/css-snappoints-1/">Scroll
 
 Посмотрите на это демо в последнем Firefox:
 
-<p data-height="550" data-theme-id="4974" data-slug-hash="RPMPOv" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/RPMPOv/'>Scroll Snap Points</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="RPMPOv" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/RPMPOv/'>Scroll Snap Points</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Попробуйте скроллить и увидите, что в этом примере картинки всегда аккуратно заполняют собой область просмотра. Как это сделано?
@@ -95,10 +95,10 @@ CSS:
 <code>mandatory</code> — точное "прилипание": при прокрутке элементы выравниваются точно по родителю.
 <code>proximity</code> — приблизительное "прилипание": в зависимости от скорости проматывания элементы могут показываться по частям или выравниваться по родителю.
 
-<p data-height="550" data-theme-id="4974" data-slug-hash="RPMWeP" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/RPMWeP/'>Scroll Snap Points</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="RPMWeP" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/RPMWeP/'>Scroll Snap Points</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-<p data-height="550" data-theme-id="4974" data-slug-hash="qdoOQw" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/qdoOQw/'>Scroll Snap Points</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="qdoOQw" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/qdoOQw/'>Scroll Snap Points</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </section>
 
@@ -109,12 +109,12 @@ CSS:
 <code>none</code> — шаг не задан, содержимое прокручивается рывками. Значение по умолчанию.
 <code>repeat(&lt;length>)</code> — определяет размер шага при прокрутке, значение может быть задано в процентах. <code>scroll-snap-points-x: repeat(100%);</code> означает, что длина шага равна ширине контейнера.
 
-<p data-height="550" data-theme-id="4974" data-slug-hash="XbEXro" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/XbEXro/'>Scroll Snap Points</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="XbEXro" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/XbEXro/'>Scroll Snap Points</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 <code>scroll-snap-points-x: repeat(50%);</code> в сочетании с <code>scroll-snap-type: mandatory;</code> ведет себя похоже на <code>scroll-snap-type: proximity;</code>: прокрутка получается нестрогой и при этом с управляемым размером шага.
 
-<p data-height="550" data-theme-id="4974" data-slug-hash="Qbmywa" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/Qbmywa/'>Scroll Snap Points</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="Qbmywa" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/Qbmywa/'>Scroll Snap Points</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </section>
 
@@ -128,7 +128,7 @@ CSS:
 
 Обычно контент "прилипает" к левому краю, но при <code>scroll-snap-destination: 100% 0;</code> он будет прилипать к правому. Я увеличила ширину контейнера, чтобы было лучше видно.
 
-<p data-height="550" data-theme-id="4974" data-slug-hash="mJxVer" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/mJxVer/'>Scroll Snap Points</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="mJxVer" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/mJxVer/'>Scroll Snap Points</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </section>
 
@@ -142,12 +142,12 @@ CSS:
 
 Удобная штука, если прокручиваемый контейнер больше содержащихся в нём элементов: благодаря сочетанию <code>scroll-snap-coordinate: 50% 0;</code> для дочерних элементов и <code>scroll-snap-destination: 50% 0;</code> для родителя прокручиваемые элементы всегда будут выравниваться точно по центру области прокрутки:
 
-<p data-height="550" data-theme-id="4974" data-slug-hash="LVdGZE" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/LVdGZE/'>Scroll Snap Points</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="LVdGZE" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/LVdGZE/'>Scroll Snap Points</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 При этом "прилипание" прекрасно работает для элементов разной ширины:
 
-<p data-height="550" data-theme-id="4974" data-slug-hash="oXqbWb" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/oXqbWb/'>Scroll Snap Points</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="oXqbWb" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/oXqbWb/'>Scroll Snap Points</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </section>
 

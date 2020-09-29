@@ -222,13 +222,13 @@ links:
 
 Используя обводку и простые фигуры можно получить удивительные вещи:
 
-<p data-height="400" data-theme-id="4974" data-slug-hash="bwDzx" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/bwDzx/'>SVG-patterns</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="400" data-theme-id="4974" data-slug-hash="bwDzx" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/bwDzx/'>SVG-patterns</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 <br>
 
 Также <code>stroke-dasharray</code> интересно сочетается с анимацией:
 
-<p data-height="400" data-theme-id="4974" data-slug-hash="uGfBE" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/uGfBE/'>Animated stroke</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="400" data-theme-id="4974" data-slug-hash="uGfBE" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/uGfBE/'>Animated stroke</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 <h2 id="stroke-dashoffset">stroke-dashoffset</h2>
@@ -260,9 +260,9 @@ links:
 
 Сочетая <code>stroke-dashoffset</code> и <code>stroke-dasharray</code> можно получить интересные эффекты.
 
-<i>Для полноценного просмотра воспользуйтесь браузерами на Webkit. <a href="http://codepen.io/yoksel/full/CgrFz/">Ссылка на полную версию</a>.</i>
+<i>Для полноценного просмотра воспользуйтесь браузерами на Webkit. <a href="https://codepen.io/yoksel/full/CgrFz/">Ссылка на полную версию</a>.</i>
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="CgrFz" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/CgrFz/'>dasharray + dashoffset = magic</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="500" data-theme-id="4974" data-slug-hash="CgrFz" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/CgrFz/'>dasharray + dashoffset = magic</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 <i>Для перезапуска нажмите Rerun.</i>

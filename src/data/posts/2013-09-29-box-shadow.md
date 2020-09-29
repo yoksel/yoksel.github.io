@@ -77,6 +77,6 @@ box-shadow: 15px 15px 5px -5px rgba(0,0,0,.2);
 
 * <a href="http://sandbox.juan-i.com/longshadows/">sandbox.juan-i.com/longshadows/</a>
 * <a href="http://www.longshadowgenerator.com/">longshadowgenerator.com/</a>
-* <a href="http://codepen.io/awesomephant/pen/mAxHz/">codepen.io/awesomephant/pen/mAxHz</a>
+* <a href="https://codepen.io/awesomephant/pen/mAxHz/">codepen.io/awesomephant/pen/mAxHz</a>
 
 Минус способа состоит в том, что тени можно наложить только поверх однородного фона, но при разумном использовании они выглядят очень эффектно.

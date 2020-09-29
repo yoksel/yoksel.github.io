@@ -54,10 +54,10 @@ links:
 
 Для начала я открыла новый Хром и сделала такое:
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="KCibG" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/KCibG/'>KCibG</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="500" data-theme-id="4974" data-slug-hash="KCibG" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/KCibG/'>KCibG</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-<a href="http://codepen.io/yoksel/full/KCibG/">Посмотреть в полный рост</a>.
+<a href="https://codepen.io/yoksel/full/KCibG/">Посмотреть в полный рост</a>.
 
 В демо используются <code>mix-blend-mode</code> и <code>shape-outside</code>. Режим наложения <code>mix-blend-mode: multiply;</code> задан всему контейнеру с текстом и картинками, а <code>shape-outside</code> для каждой картинки свой.
 
@@ -111,7 +111,7 @@ Firefox можно оставить как есть, но с IE надо что-
 }
 ```
 
-Результат: <a href="http://codepen.io/yoksel/full/AJKEh/">codepen.io/yoksel/full/AJKEh/</a>
+Результат: <a href="https://codepen.io/yoksel/full/AJKEh/">codepen.io/yoksel/full/AJKEh/</a>
 
 В браузерах с поддержкой режимов наложения ничего не изменилось, а в IE появился белый фон:
 
@@ -166,7 +166,7 @@ Firefox можно оставить как есть, но с IE надо что-
 
 Результат:
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="wavqm" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/wavqm/'>Blend and shapes</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="500" data-theme-id="4974" data-slug-hash="wavqm" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/wavqm/'>Blend and shapes</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 SVG-фильтры для SVG элементов работают во всех современных браузерах, в IE начиная  с <nobr>10-й</nobr> версии. Фильтры были бы отличным решением, если бы не некоторые нюансы:
@@ -178,7 +178,7 @@ SVG-фильтры для SVG элементов работают во всех 
 
 Пример для проблем №3 и №4 (порастягивайте окно браузера):
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="gocDK" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/gocDK/'>Resizing image with SVG-filter</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="500" data-theme-id="4974" data-slug-hash="gocDK" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/gocDK/'>Resizing image with SVG-filter</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 На фонах с четким рисунком несовпадение и "размыливание" фона будет очень заметно.
@@ -197,7 +197,7 @@ SVG-фильтры для SVG элементов работают во всех 
 
 Результат применения:
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="AblID" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/AblID/'>Resizing image with SVG-filter</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="500" data-theme-id="4974" data-slug-hash="AblID" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/AblID/'>Resizing image with SVG-filter</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Приклееный фон остался только под рыцарем, пространство вокруг фигуры полностью прозрачное, и под ним виден фон страницы. Допускаю, что для некоторых фонов способ с маской вполне подойдет.

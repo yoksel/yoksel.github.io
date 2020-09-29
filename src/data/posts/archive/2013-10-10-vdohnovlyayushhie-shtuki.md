@@ -3,7 +3,7 @@ title: Вдохновляющие штуки
 
 desc: Пара интересных демо с Codepen.io.
 ---
-Пара интересных демо с <a href="http://codepen.io">Codepen.io</a>.<!--more-->
+Пара интересных демо с <a href="https://codepen.io">Codepen.io</a>.<!--more-->
 
 <p class="codepen" data-height="500" data-theme-id="4974" data-default-tab="result" data-user="Xpressive_Team" data-slug-hash="ejuJA" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sphere">
   <span>See the Pen <a href="https://codepen.io/Xpressive_Team/pen/ejuJA">

@@ -12,7 +12,7 @@ customCSS: bubble.css
 
 Честно говоря, пузыри у меня получились почти случайно, когда мне потребовалось как следует изучить градиенты и я экспериментировала с их возможностями. И я сама до сих пор не очень понимаю, как так получилось, используя только SVG — векторный формат, — сделать такой невесомый мыльный пузырь. <!--more-->
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="EyZgLo" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/EyZgLo/">SVG Bubbles</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="500" data-theme-id="4974" data-slug-hash="EyZgLo" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/EyZgLo/">SVG Bubbles</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 На самом деле, если разобраться, тут нет ничего сложного, а вся магия заключается в использовании масок в сочетании с градиентами.
@@ -640,7 +640,7 @@ viewBox="0 0 200 200" width="150" height="150">
 
 И весь пузырь целиком:
 
-<p data-height="400" data-theme-id="4974" data-slug-hash="grEWZw" data-default-tab="html,result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/grEWZw/">grEWZw</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="4974" data-slug-hash="grEWZw" data-default-tab="html,result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/grEWZw/">grEWZw</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Обратите внимание, что белые блики выглядят цветными. Так как нижний блик как бы отражается от внутренней поверхности пузыря, и относительно зрителя расположен на самой дальней его стенке, в слоях он находится глубже всех, в самом низу (и первым в коде).

@@ -16,7 +16,7 @@ desc: "Презентации и статьи про SVG и 3D-фигуры в C
 
 <a href="https://www.sitepoint.com/tips-accessible-svg/">Tips for Creating Accessible SVG</a> — советы по созданию доступного SVG
 
-Доклад <a href="http://codepen.io/thebabydino/">Аны Тюдор</a> про принципы создания 3D-фигур с помощью CSS, замечательно сделанная презентация с кучей живых демо:
+Доклад <a href="https://codepen.io/thebabydino/">Аны Тюдор</a> про принципы создания 3D-фигур с помощью CSS, замечательно сделанная презентация с кучей живых демо:
 
 <iframe width="853" height="480" src="//www.youtube.com/embed/ZxdeuAP027Y?list=PLZriQCloF6GDEOUPK7tlaWAtJhPW21ZDF" frameborder="0" allowfullscreen></iframe>
 

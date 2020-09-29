@@ -11,7 +11,7 @@ desc: Предыдущее решение мне всё-таки кажется 
 
 Демо:
 
-<p data-height="450" data-theme-id="4974" data-slug-hash="rEzbe" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/rEzbe/'>Animated gradient with pseudo elements</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="450" data-theme-id="4974" data-slug-hash="rEzbe" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/rEzbe/'>Animated gradient with pseudo elements</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Принцип работы:
@@ -26,7 +26,7 @@ desc: Предыдущее решение мне всё-таки кажется 
 
 Для примера я сделала кнопки:
 
-<p data-height="268" data-theme-id="4974" data-slug-hash="JoraL" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/JoraL/'>Blurry buttons with softly animated gradients</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="4974" data-slug-hash="JoraL" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/JoraL/'>Blurry buttons with softly animated gradients</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Конечно, лучше бы градиенты просто анимировались, но отстутствие такой возможности стимулирует поиски новых способов обойти ограничения.

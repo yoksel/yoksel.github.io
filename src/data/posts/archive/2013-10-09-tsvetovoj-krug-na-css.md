@@ -14,7 +14,7 @@ links:
   name: css-tricks.com/svg-filters-on-text/
 - url: http://www.html5rocks.com/en/tutorials/filters/understanding-css/
   name: html5rocks.com/en/tutorials/filters/understanding-css/
-- url: http://codepen.io/indigane/pen/lbLjs
+- url: https://codepen.io/indigane/pen/lbLjs
   name: codepen.io/indigane/pen/lbLjs
 ---
 

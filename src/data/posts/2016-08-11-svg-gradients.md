@@ -55,7 +55,7 @@ CSS-градиенты объявляются прямо в CSS-коде, и к�
 
 Градиент можно использовать и как заливку и как обводку для фигур и для текста:
 
-<p data-height="400" data-theme-id="4974" data-slug-hash="NAZgqo" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/NAZgqo/">NAZgqo</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="4974" data-slug-hash="NAZgqo" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/NAZgqo/">NAZgqo</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 <h2 id="stops">Управление цветами</h2>
@@ -79,7 +79,7 @@ CSS-градиенты объявляются прямо в CSS-коде, и к�
 
 Интересно, что в отличие от CSS-градиентов, цвета SVG-градиентов можно анимировать (в данном случае, с помощью CSS):
 
-<p data-height="350" data-theme-id="4974" data-slug-hash="bpXVpz" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/bpXVpz/">Animated SVG-gradient</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="350" data-theme-id="4974" data-slug-hash="bpXVpz" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/bpXVpz/">Animated SVG-gradient</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Линейный и радиальный градиенты имеют несколько общих свойств, но различаются способами, которыми задаются размер и направление градиента. Рассмотрим их поподробнее.
@@ -92,7 +92,7 @@ CSS-градиенты объявляются прямо в CSS-коде, и к�
 
 <code>x1</code> и <code>y1</code> задают координаты начала вектора, <code>x2</code> и <code>y2</code> — координаты конца (похоже на рисование линии с помощью тега <code>line</code>).
 
-<p data-height="550" data-theme-id="4974" data-slug-hash="NAamgv" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/NAamgv/">Gradient Coords: x2 & y2</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="NAamgv" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/NAamgv/">Gradient Coords: x2 & y2</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Если координаты не заданы, рисуется горизонтальный градиент слева направо.
@@ -105,14 +105,14 @@ CSS-градиенты объявляются прямо в CSS-коде, и к�
 
 Параметры градиента задаются с помощью тех же атрибутов, что определяют свойства круга (элемента <code>circle</code>): центр фигуры задаётся атрибутами <code>cx</code> и <code>cy</code>, а радиус — атрибутом <code>r</code>:
 
-<p data-height="550" data-theme-id="4974" data-slug-hash="KryqQz" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/KryqQz/">Gradient Coords: r</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="KryqQz" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/KryqQz/">Gradient Coords: r</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Если какой-то из этих атрибутов не задан, ему присвоится значение по умолчанию, равное <code>50%</code>.
 
 Помимо этого, у радиального градиента есть пара специфических свойств: <code>fx</code> и <code>fy</code>. Они позволяют сдвинуть только центр градиента, не затрагивая расположение конечных цветов:
 
-<p data-height="550" data-theme-id="4974" data-slug-hash="kXxwqo" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/kXxwqo/">Gradient Coords: fx & fy</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="kXxwqo" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/kXxwqo/">Gradient Coords: fx & fy</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Если эти атрибуты не заданы, их значения по умолчанию будут равны <code>cx</code> и <code>cy</code> соответственно.
@@ -132,12 +132,12 @@ CSS-градиенты объявляются прямо в CSS-коде, и к�
 
 При значении <code>userSpaceOnUse</code> цвета линейного градиента всегда будут перпендикулярны основному вектору, а радиальный градиент будет иметь форму круга. Но если градиент задан вытянутой фигуре, а значение <code>gradientUnits</code> равно <code>objectBoundingBox</code>, градиент пытается уместиться в фигуру целиком и подвергается искажениям. Особенно это заметно на радиальных градиентах:
 
-<p data-height="550" data-theme-id="4974" data-slug-hash="WxaKdw" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/WxaKdw/">gradientUnits (radialGradient)</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="WxaKdw" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/WxaKdw/">gradientUnits (radialGradient)</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 У линейных градиентов в этом случае меняется угол расположения цветов градиента относительно его вектора:
 
-<p data-height="430" data-theme-id="4974" data-slug-hash="BzBzYG" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/BzBzYG/">gradientUnits</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="430" data-theme-id="4974" data-slug-hash="BzBzYG" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/BzBzYG/">gradientUnits</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Так что даже если системы координат фигуры и SVG-элемента совпадают, из-за разных значений <code>gradientUnits</code> градиент может выглядеть по-разному.
@@ -147,7 +147,7 @@ CSS-градиенты объявляются прямо в CSS-коде, и к�
 
 Атрибут позволяет задать трансформациии градиента:
 
-<p data-height="550" data-theme-id="4974" data-slug-hash="bZAvxg" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/bZAvxg/">gradientTransform</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="bZAvxg" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/bZAvxg/">gradientTransform</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Трансформации <a href="/svg-shapes/">те же</a>, что и для обычных фигур, например, градиент можно повернуть или растянуть, но в трансформациях градиентов есть некоторые подводные камни.
@@ -170,7 +170,7 @@ translate(x,y) scale(s) translate(-x,-y)
 <code>reflect</code> — градиент отражается.
 <code>repeat</code> — градиент повторяется.
 
-<p data-height="620" data-theme-id="4974" data-slug-hash="YWANyJ" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/YWANyJ/">SpreadMethods for SVG Gradients</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="620" data-theme-id="4974" data-slug-hash="YWANyJ" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/YWANyJ/">SpreadMethods for SVG Gradients</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 <code>spreadMethod</code> не работает в Safari. Если надо чтобы везде работало, линейные повторяющиеся и отражённые градиенты можно имитировать с помощью паттернов, а повторение радиальных всё-таки придётся прописывать руками.
@@ -204,7 +204,7 @@ translate(x,y) scale(s) translate(-x,-y)
 
 Код в действии, радиальный градиент справа унаследовал цвета линейного градиента слева:
 
-<p data-height="550" data-theme-id="4974" data-slug-hash="jAaazW" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/jAaazW/">Gradient properties inheritance</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="jAaazW" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/jAaazW/">Gradient properties inheritance</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 В этом демо к градиенту слева применяется трансформация, и она также наследуется градиентом справа.
@@ -223,19 +223,19 @@ translate(x,y) scale(s) translate(-x,-y)
 
 SVG-градиенты сами по себе дают интересные возможности оформления, но ещё интереснее то, как они работают в сочетании с масками. Например, используя маски и градиенты можно сделать вот такие мыльные пузыри:
 
-<p data-height="550" data-theme-id="4974" data-slug-hash="EyZgLo" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/EyZgLo/">SVG Bubbles</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="4974" data-slug-hash="EyZgLo" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/EyZgLo/">SVG Bubbles</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-<a href="http://codepen.io/yoksel/full/BzkyBJ">Тут есть подробная схема отдельного пузыря.</a>
+<a href="https://codepen.io/yoksel/full/BzkyBJ">Тут есть подробная схема отдельного пузыря.</a>
 
 Также анимируя градиенты можно делать разные интересные штуки. Например, вот такой паттерн (цвета анимируются с помощью CSS):
 
-<p data-height="500" data-theme-id="4974" data-slug-hash="VjZGGg" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/VjZGGg/">Animated pattern with SVG gradient</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="500" data-theme-id="4974" data-slug-hash="VjZGGg" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/VjZGGg/">Animated pattern with SVG gradient</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Или переливающийся текст:
 
-<p data-height="350" data-theme-id="4974" data-slug-hash="RRLXKP" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/RRLXKP/">Text with gradientTransform</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="350" data-theme-id="4974" data-slug-hash="RRLXKP" data-default-tab="result" data-user="yoksel" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/RRLXKP/">Text with gradientTransform</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Анимацию цветов можно сделать с помощью CSS, трансформации можно добавить только с помощью JavaScript (я это делаю с помощью библиотеки <a href="https://greensock.com/get-started-js">GSAP</a>).

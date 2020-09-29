@@ -110,10 +110,10 @@ background: repeating-radial-gradient(circle,
 
 Сочетая несколько фонов с разными параметрами можно получить удивительные вещи:
 
-<p data-height="350" data-theme-id="0" data-slug-hash="lxrhg" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/lxrhg'>Rounds</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="350" data-theme-id="0" data-slug-hash="lxrhg" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/lxrhg'>Rounds</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-<p data-height="350" data-theme-id="0" data-slug-hash="ijxKy" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/ijxKy'>Circles</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="350" data-theme-id="0" data-slug-hash="ijxKy" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/ijxKy'>Circles</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Если при создании узоров использовать относительные единицы (<code>em</code>, <code>%</code>), а не абсоюлютные (<code>px</code>), размер получившихся паттернов потом можно будет легко регулировать изменяя только размер шрифта.

@@ -68,7 +68,7 @@ CSS:
 
 Если поддерживается — и фон, и SVG. Если вы смотрите страницу в современном браузере, демо покажет вам именно этот вариант:
 
-<p data-height="350" data-theme-id="4974" data-slug-hash="sbzEp" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/sbzEp/'>Test support of SVG fallback</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="350" data-theme-id="4974" data-slug-hash="sbzEp" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/sbzEp/'>Test support of SVG fallback</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 <i>На самом деле, в браузерах без поддержки SVG также будет виден текст "SVG", но в реальной жизни это вряд ли будет проблемой, если только вы не кладете текст в иконки.</i>
@@ -94,7 +94,7 @@ background: none, none;
 
 Хороший вариант, но браузеры Android 2.x понимают множественные фоны и не понимают SVG, поэтому в них при таком способе на странице не будет ни того, ни другого.
 
-Ссылка для тестирования: <a href="http://codepen.io/yoksel/full/FirKg">http://codepen.io/yoksel/full/FirKg</a>.
+Ссылка для тестирования: <a href="https://codepen.io/yoksel/full/FirKg">https://codepen.io/yoksel/full/FirKg</a>.
 
 Следующая идея убирать фон с помощью <a href="http://pauginer.com/post/36614680636/invisible-gradient-technique">невидимого градиента</a>.
 
@@ -107,7 +107,7 @@ background: linear-gradient(transparent, transparent);
 
 Способ работает везде, где нужно, кроме IE9 — он не понимает градиенты, поэтому в нем будут отображаться и SVG, и фон.
 
-Ссылка для тестирования: <a href="http://codepen.io/yoksel/full/fxCzH">http://codepen.io/yoksel/full/fxCzH</a>.
+Ссылка для тестирования: <a href="https://codepen.io/yoksel/full/fxCzH">https://codepen.io/yoksel/full/fxCzH</a>.
 
 Нужно какое-то решение, которое уберет фон в IE9 и ничего не поломает в остальных.
 
@@ -134,10 +134,10 @@ background-position: -1000vh 0;
 
 Демо:
 
-<p data-height="350" data-theme-id="4974" data-slug-hash="tKzeB" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/tKzeB/'>Test support of SVG fallback</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="350" data-theme-id="4974" data-slug-hash="tKzeB" data-default-tab="result" data-user="yoksel" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/tKzeB/'>Test support of SVG fallback</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-Ссылка для тестирования: <a href="http://codepen.io/yoksel/full/tKzeB">codepen.io/yoksel/full/tKzeB</a>
+Ссылка для тестирования: <a href="https://codepen.io/yoksel/full/tKzeB">codepen.io/yoksel/full/tKzeB</a>
 
 Возможно, я что-то упустила, но на данный момент мои тесты показывают, что этот способ работает.
 
@@ -149,6 +149,6 @@ background-position: -1000vh 0;
 
 Для проверки в Android 2.3 я использовала <a href="http://www.browserstack.com/screenshots">browserstack.com/screenshots</a>, выбрав там Samsung Galaxy S2. Буду признательна, если кто-то потестит на реальном девайсе и сообщит о результатах.
 
-Вообще если у вас есть возможность потестить <a href="http://codepen.io/yoksel/full/tKzeB">демо</a> на устройствах, где может быть проблема с инлайновым SVG, — проверьте, пожалуйста, и сообщите как оно там — этот способ на данный момент нуждается в основательном тестировании.
+Вообще если у вас есть возможность потестить <a href="https://codepen.io/yoksel/full/tKzeB">демо</a> на устройствах, где может быть проблема с инлайновым SVG, — проверьте, пожалуйста, и сообщите как оно там — этот способ на данный момент нуждается в основательном тестировании.
 
 Хочется надеяться, что постепенно старые устройства канут в лету, и нам больше не надо будет изобретать такие странные решения на стыке магии и CSS.

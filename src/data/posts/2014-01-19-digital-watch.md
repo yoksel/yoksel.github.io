@@ -12,7 +12,7 @@ desc: С познавательно-развлекательной целью с
 Показывают текущее время, меняют цвет, умеют подгоняться под размер окна браузера.
 <!--more-->
 
-<p data-height="370" data-theme-id="4974" data-slug-hash="oAchH" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/oAchH/'>oAchH</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="370" data-theme-id="4974" data-slug-hash="oAchH" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/oAchH/'>oAchH</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Цифры сделаны из cписков, каждая цифра — <code>ul</code>. Линии — <code>li</code>.

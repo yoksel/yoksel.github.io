@@ -22,7 +22,7 @@ links:
 
 Примеры трансформаций:
 
-<p data-height="560" data-theme-id="4974" data-slug-hash="zNazqX" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/zNazqX/">CSS Transforms</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="560" data-theme-id="4974" data-slug-hash="zNazqX" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/zNazqX/">CSS Transforms</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Важно помнить, что функции применяются в той последовательности, в какой записаны, и предыдущие функции могут влиять на следующие.
@@ -57,7 +57,7 @@ transform: rotateY(45deg) rotateY(45deg);
 Если задано только одно значение, второе принимает значение <code>center</code>.
 Если задано два значения, третье принимает значение 0.
 
-<p data-height="450" data-theme-id="4974" data-slug-hash="VPdWym" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms: transform-origin" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/VPdWym/">CSS Transforms: transform-origin</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="450" data-theme-id="4974" data-slug-hash="VPdWym" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms: transform-origin" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/VPdWym/">CSS Transforms: transform-origin</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 </section><section id="transform-style" data-name="transform-style"><h2>Transform-style</h2>
@@ -69,7 +69,7 @@ transform: rotateY(45deg) rotateY(45deg);
 
 <code>preserve-3d</code> — трансформируемый элемент имеет внутренний объем
 
-<p data-height="450" data-theme-id="4974" data-slug-hash="xgzreO" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms: transform-style" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/xgzreO/">CSS Transforms: transform-style</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="450" data-theme-id="4974" data-slug-hash="xgzreO" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms: transform-style" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/xgzreO/">CSS Transforms: transform-style</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Следующие свойства могут перекрывать действие <code>transform-style: preserve-3d;</code> и делать отображение элемента плоским независимо от значения <code>transform-style</code>:
@@ -87,7 +87,7 @@ transform: rotateY(45deg) rotateY(45deg);
 
 Возможные значения: <code>none</code> или длина в пикселях.
 
-<p data-height="400" data-theme-id="4974" data-slug-hash="YNvxyE" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms: perspective" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/YNvxyE/">CSS Transforms: perspective</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="4974" data-slug-hash="YNvxyE" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms: perspective" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/YNvxyE/">CSS Transforms: perspective</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 </section><section id="perspective-origin" data-name="perspective-origin"><h2>Perspective-origin</h2>
@@ -96,7 +96,7 @@ transform: rotateY(45deg) rotateY(45deg);
 
 Возможные значения: расстояния в пикселях или процентах или ключевые слова (<code>left</code>, <code>center</code>, <code>right</code>, <code>top</code>, <code>bottom</code>).
 
-<p data-height="450" data-theme-id="4974" data-slug-hash="jyKLGO" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms: perspective-origin" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/jyKLGO/">CSS Transforms: perspective-origin</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="450" data-theme-id="4974" data-slug-hash="jyKLGO" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms: perspective-origin" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/jyKLGO/">CSS Transforms: perspective-origin</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 </section><section id="backface-visibility" data-name="backface-visibility"><h2>Backface-visibility</h2>
@@ -108,6 +108,6 @@ transform: rotateY(45deg) rotateY(45deg);
 
 <code>hidden</code> — скрывать объект, если он повернут «спиной».
 
-<p data-height="450" data-theme-id="4974" data-slug-hash="zNadaw" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms: backface-visibility" class="codepen">See the Pen <a href="http://codepen.io/yoksel/pen/zNadaw/">CSS Transforms: backface-visibility</a> by yoksel (<a href="http://codepen.io/yoksel">@yoksel</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="450" data-theme-id="4974" data-slug-hash="zNadaw" data-default-tab="result" data-user="yoksel" data-embed-version="2" data-pen-title="CSS Transforms: backface-visibility" class="codepen">See the Pen <a href="https://codepen.io/yoksel/pen/zNadaw/">CSS Transforms: backface-visibility</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </section>

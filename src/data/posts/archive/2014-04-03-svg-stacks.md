@@ -67,7 +67,7 @@ links:
 
 А что если попробовать разные способы вставки, например <code>embed</code>, <code>img</code> или <code>background-image</code>?
 
-Я сделала демо c разными способами, чтобы это проверить: <a href="http://codepen.io/yoksel/full/KDpqu/">http://codepen.io/yoksel/full/KDpqu/</a>.
+Я сделала демо c разными способами, чтобы это проверить: <a href="https://codepen.io/yoksel/full/KDpqu/">https://codepen.io/yoksel/full/KDpqu/</a>.
 
 И вот тут обнаруживается интересное:
 

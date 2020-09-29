@@ -15,14 +15,14 @@ desc: В поисках что бы ещё такого сделать чтоб�
 
 Вот такие прелоадеры у меня получились:
 
-<p data-height="470" data-theme-id="4974" data-slug-hash="fjcvA" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/fjcvA/'>Thinking about SVG-preloaders</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="470" data-theme-id="4974" data-slug-hash="fjcvA" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/fjcvA/'>Thinking about SVG-preloaders</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Они могут быть использованы на любом фоне. Элементы в них могут менять не только прозрачность, но и цвет, обводку или положение в пространстве. Можно придумать огромное количество разных вариантов оформления и анимации.
 
 Более того, использование символов позволяет как угодно менять элементы прелоадеров (сами прелоадеры, к слову, вовсе не обязательно должны быть круглыми):
 
-<p data-height="470" data-theme-id="4974" data-slug-hash="GcgrD" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/GcgrD/'>Changing items of SVG-preloaders, .v2</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="470" data-theme-id="4974" data-slug-hash="GcgrD" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/GcgrD/'>Changing items of SVG-preloaders, .v2</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Вместо кружочков можно вставить любые фигуры: рыбок, цветочки, снежинки, котиков... Вид прелоадера можно менять по сезону, под настроение или вовсе случайным образом.
@@ -102,7 +102,7 @@ viewBox="0 0 120 120"
 
 Результат кода на странице выглядит вот так:
 
-<p data-height="280" data-theme-id="4974" data-slug-hash="ozKmy" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/ozKmy/'>ozKmy</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="280" data-theme-id="4974" data-slug-hash="ozKmy" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/ozKmy/'>ozKmy</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Всё верно, кружочки имеют заливку по умолчанию (черным цветом) и им не задано положение в пространстве, поэтому они скопились в левом верхнем углу области, размеры которой заданы <code>viewBox</code>.
@@ -153,7 +153,7 @@ $angle: 360/$max; /* угол поворота каждого кружка от�
 
 Результат:
 
-<p data-height="268" data-theme-id="4974" data-slug-hash="rAwgq" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/rAwgq/'>rAwgq</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="4974" data-slug-hash="rAwgq" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/rAwgq/'>rAwgq</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Будущий прелоадер получил заданные размеры, кружки стали оранжевыми, но всё ещё находятся в левом верхнем углу. Нужна трансформация.
@@ -197,7 +197,7 @@ scale(.85) /* немного уменьшаем*/
 
 Результат трансформаций:
 
-<p data-height="268" data-theme-id="4974" data-slug-hash="KBtme" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/KBtme/'>KBtme</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="4974" data-slug-hash="KBtme" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/KBtme/'>KBtme</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Все кружки послушно расположились по кругу.
@@ -241,7 +241,7 @@ scale(.85) /* немного уменьшаем*/
 
 Результат:
 
-<p data-height="268" data-theme-id="4974" data-slug-hash="Jgixz" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/Jgixz/'>Jgixz</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="4974" data-slug-hash="Jgixz" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/Jgixz/'>Jgixz</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Но что если мы хотим анимировать не только прозрачность заливки, но и цвет символов?
@@ -274,7 +274,7 @@ scale(.85) /* немного уменьшаем*/
 }
 ```
 
-<p data-height="268" data-theme-id="4974" data-slug-hash="nFqzd" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/nFqzd/'>nFqzd</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="4974" data-slug-hash="nFqzd" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/nFqzd/'>nFqzd</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 На этом можно было бы и остановиться, но что если символы будут помимо цвета и прозрачности менять свое положение в пространстве?
@@ -297,7 +297,7 @@ animation-name: colors, opacity, transform;
 
 И на выходе получаем нечто интересное:
 
-<p data-height="268" data-theme-id="4974" data-slug-hash="JDHzK" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/JDHzK/'>JDHzK</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="4974" data-slug-hash="JDHzK" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/JDHzK/'>JDHzK</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Таки да: трансформации не склеиваются, поэтому где-то на середине символ возвращается в первоначальное положение, уменьшается там вдвое (потому что <code>transform: scale(.5)</code>), а потом летит себе дальше. Так происходит потому, что трансформация, задающая положение каждого отдельного символа, перезаписывавется трансформацией, заданной в анимации.
@@ -325,7 +325,7 @@ animation-name: colors, opacity, transform;
 
 Всё работает:
 
-<p data-height="268" data-theme-id="4974" data-slug-hash="nbird" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/nbird/'>nbird</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="4974" data-slug-hash="nbird" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/nbird/'>nbird</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 А теперь пробуем добавить анимацию с трансформацией. На этот раз не группе, а символам:
@@ -337,7 +337,7 @@ animation-name: colors, opacity, transform;
 }
 ```
 
-<p data-height="268" data-theme-id="4974" data-slug-hash="hDyqc" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/hDyqc/'>hDyqc</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="4974" data-slug-hash="hDyqc" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/hDyqc/'>hDyqc</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Получилось, кружочки никуда не улетают, но теперь им не хватает задержки анимации. Для этого нам опять понадобятся цикл и <code>:nth-child</code>, но цикл будет идти по группам (а не по символам), потому что символы находятся каждый в своей группе:
@@ -354,21 +354,21 @@ animation-name: colors, opacity, transform;
 
 Результат:
 
-<p data-height="268" data-theme-id="4974" data-slug-hash="Fqwpm" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/Fqwpm/'>Fqwpm</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="4974" data-slug-hash="Fqwpm" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/Fqwpm/'>Fqwpm</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Таким образом усложнив разметку можно получить более сложные и интересные варианты анимированных трнасформаций. К символам можно добавлять две и больше трансформации без опасений что что-то поломается:
 
-<p data-height="268" data-theme-id="4974" data-slug-hash="lGLni" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/lGLni/'>lGLni</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="4974" data-slug-hash="lGLni" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/lGLni/'>lGLni</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Заменить кружочки на что-то другое можно просто поменяв символ:
 
-<p data-height="268" data-theme-id="4974" data-slug-hash="bEIuo" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/bEIuo/'>bEIuo</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="4974" data-slug-hash="bEIuo" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/bEIuo/'>bEIuo</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Получился некий конструктор, в котором можно легко менять вид и анимации прелоадера, а сам прелоадер может быть сколь угодно разным, и вовсе не обязательно в форме кольца.
 
-Было бы волшебно, если бы вся эта красота просто везде работала, но всё не так просто. IE9-11 вообще не поддерживают CSS-анимации и CSS-трансформации, задаваемые SVG-элементам, то есть в них кружочки так и останутся лежать стопкой в левом верхнем углу, как в <a href="http://codepen.io/yoksel/pen/rAwgq">этом примере</a>. Ещё предполагаю, что могут быть проблемы с производительностью на слабых устройствах.
+Было бы волшебно, если бы вся эта красота просто везде работала, но всё не так просто. IE9-11 вообще не поддерживают CSS-анимации и CSS-трансформации, задаваемые SVG-элементам, то есть в них кружочки так и останутся лежать стопкой в левом верхнем углу, как в <a href="https://codepen.io/yoksel/pen/rAwgq">этом примере</a>. Ещё предполагаю, что могут быть проблемы с производительностью на слабых устройствах.
 
 Мне понравились результаты экспериментов, хотя если бы трансформы можно было складывать — код был бы изящней. Также хотелось бы более равномерной поддержки браузерами. Для широкого использования такие прелоадеры, по-моему, пока не готовы, но наверняка их можно использовать на промо-сайтах, как небольшое эффектное дополнение.

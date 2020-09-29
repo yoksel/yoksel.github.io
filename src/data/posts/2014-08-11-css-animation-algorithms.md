@@ -15,7 +15,7 @@ links:
 
 В процессе экспериментов с <a href="/animated-svg-mask/">анимированными SVG-масками</a>, мне пришлось как следует разобраться с алгоритмами CSS-анимаций. <!--more-->
 
-Например, в <a href="http://codepen.io/yoksel/pen/eIxmr">этом демо</a> используется две анимации: одна для маски, вторая — для смены изображений. Сейчас речь пойдет о второй (и её вариантах).
+Например, в <a href="https://codepen.io/yoksel/pen/eIxmr">этом демо</a> используется две анимации: одна для маски, вторая — для смены изображений. Сейчас речь пойдет о второй (и её вариантах).
 
 Такая анимация нужна, чтобы последовательно показывать и скрывать картинки, в то время, когда эффект их появления обеспечивается другой анимацией.
 
@@ -29,7 +29,7 @@ links:
 
 Вот как это должно работать:
 
-<p data-height="400" data-theme-id="4974" data-slug-hash="kDpsG" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/kDpsG/'>kDpsG</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="400" data-theme-id="4974" data-slug-hash="kDpsG" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/kDpsG/'>kDpsG</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Делаем разметку галереи:
@@ -144,17 +144,17 @@ $step-perc: percentage(1/$max);
 
 Вот что получается в итоге:
 
-<p data-height="400" data-theme-id="4974" data-slug-hash="hzlnj" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/hzlnj/'>hzlnj</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="400" data-theme-id="4974" data-slug-hash="hzlnj" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/hzlnj/'>hzlnj</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Можно отредактировать заготовку, сделав простую ротацию:
 
-<p data-height="400" data-theme-id="4974" data-slug-hash="kpoiq" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/kpoiq/'>kpoiq</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="400" data-theme-id="4974" data-slug-hash="kpoiq" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/kpoiq/'>kpoiq</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 А можно добавить спецэффектов с помощью анимированных SVG-масок, например:
 
-<p data-height="400" data-theme-id="4974" data-slug-hash="kJwCb" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/kJwCb/'>kJwCb</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="400" data-theme-id="4974" data-slug-hash="kJwCb" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/kJwCb/'>kJwCb</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Для этого демо структура галереи была перенесена в SVG.
@@ -165,7 +165,7 @@ $step-perc: percentage(1/$max);
 
 Как это должно работать:
 
-<p data-height="400" data-theme-id="4974" data-slug-hash="KrqHC" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/KrqHC/'>KrqHC</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="400" data-theme-id="4974" data-slug-hash="KrqHC" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/KrqHC/'>KrqHC</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Анимация делается по тем же принципам, что и предыдущая, но имеет свои особенности.
@@ -246,12 +246,12 @@ $half-step-perc: percentage(1/$max);
 
 Визуально результат практически не отличается от предыдущего варианта:
 
-<p data-height="400" data-theme-id="4974" data-slug-hash="rJogH" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/rJogH/'>rJogH</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="400" data-theme-id="4974" data-slug-hash="rJogH" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/rJogH/'>rJogH</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Но если к элементам галереи применить SVG-маски, получается интересное:
 
-<p data-height="400" data-theme-id="4974" data-slug-hash="zcmki" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/zcmki/'>Simple animated mask in SVG (rhomb)</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="400" data-theme-id="4974" data-slug-hash="zcmki" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/zcmki/'>Simple animated mask in SVG (rhomb)</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Синхронизация слоёных анимаций не самая простая задача, но результат того стоит.

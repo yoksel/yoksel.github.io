@@ -20,6 +20,6 @@ links:
 
 Собственно, игра:
 
-<p data-height="600" data-theme-id="0" data-slug-hash="prBFv" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/yoksel/pen/prBFv'>Game "Go"</a> by yoksel (<a href='http://codepen.io/yoksel'>@yoksel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="600" data-theme-id="0" data-slug-hash="prBFv" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/yoksel/pen/prBFv'>Game "Go"</a> by yoksel (<a href='https://codepen.io/yoksel'>@yoksel</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 

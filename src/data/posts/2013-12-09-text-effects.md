@@ -242,7 +242,7 @@ H1:hover:after {
 
 <iframe class="live-snippet" style="height: 200px" src="../assets/demo/text-effects/demo_9.html?output"></iframe>
 
-<i>Идея не моя, найдено тут: <a href="http://codepen.io/lbebber/pen/BzoHi">codepen.io/lbebber/pen/BzoHi</a></i>
+<i>Идея не моя, найдено тут: <a href="https://codepen.io/lbebber/pen/BzoHi">codepen.io/lbebber/pen/BzoHi</a></i>
 
 <h2 id="live-underline">Живое подчеркивание</h2>
 
