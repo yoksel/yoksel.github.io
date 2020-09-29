@@ -27,6 +27,11 @@ A[href*="smashingmagazine"],
 A[href*="stackoverflow"],
 A[href*="habr.com"],
 A[href*="apple.com"],
+A[href*="caniuse"],
+.post__content A[href^="/"],
+.post__content A[href*="yoksel.github"],
+.post-links A[href^="/"],
+.post-links A[href*="yoksel.github"],
 .win-logo {
   &::before {
     content: "";
@@ -207,6 +212,25 @@ A[href*="apple.com"] {
     vertical-align: baseline;
   }
 }
+
+A[href*="caniuse"] {
+  &::before {
+    background-image: url("/assets/img/svg/icons/caniuse.svg");
+  }
+}
+
+.post__content A[href^="/"],
+.post__content A[href*="yoksel.github"],
+.post-links A[href^="/"],
+.post-links A[href*="yoksel.github"] {
+  &::before {
+    width: .95em;
+    height: .95em;
+    background-image: url("/assets/img/svg/icons/css-yoksel.svg");
+  }
+}
+
+
 
 .win-logo {
   &::before {
