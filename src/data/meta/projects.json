@@ -38,7 +38,7 @@
     "url": "https://yoksel.github.io/url-encoder/",
     "name": "URL-encoder для SVG",
     "img": "projects/url-encoder.png",
-    "stars": 518
+    "stars": 519
   },
   {
     "url": "https://github.com/yoksel/common-words",
@@ -59,7 +59,7 @@
     "name": "Pixel Glass",
     "desc": "Небольшой скрипт для проверки разметки на&nbsp;соответствие макету",
     "img": "projects/pixel-glass.png",
-    "stars": 128
+    "stars": 129
   },
   {
     "url": "https://yoksel.github.io/handy-colors/",
@@ -80,7 +80,7 @@
     "name": "Emoji Brush",
     "desc": "Кисточка с эмоджи",
     "img": "projects/emoji-brush.png",
-    "stars": 27
+    "stars": 28
   },
   {
     "url": "https://yoksel.github.io/snowflake/",
