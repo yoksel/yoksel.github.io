@@ -7,12 +7,12 @@ $logo-circ-size-koeff: .1;
 $logo-circ-size-diff: $logo-size * $logo-circ-size-koeff;
 $logo-circ-decor-size: $logo-size + $logo-circ-size-diff*2;
 
-$step: 360 / 9;
+$max: 9;
+$step: 360 / $max;
 $koeff: 1.4;
 
 @function getColors( $transp: .3 ) {
   $out: null;
-  $max: 9;
 
   @for $i from 1 through $max {
     $color: hsla($step*($i - 1), 100%, 50%, $transp);
