@@ -4,14 +4,14 @@
     "name": "Grid Cheatsheet",
     "desc": "Шпаргалка по&nbsp;гридам",
     "img": "projects/grid-cheatsheet.png",
-    "stars": 60
+    "stars": 61
   },
   {
     "url": "https://yoksel.github.io/flex-cheatsheet/",
     "name": "Flexbox Cheatsheet",
     "desc": "Шпаргалка по&nbsp;флексбоксам",
     "img": "projects/flex-cheatsheet.png",
-    "stars": 801
+    "stars": 803
   },
   {
     "url": "https://yoksel.github.io/tema/",
@@ -38,21 +38,21 @@
     "url": "https://yoksel.github.io/url-encoder/",
     "name": "URL-encoder для SVG",
     "img": "projects/url-encoder.png",
-    "stars": 519
+    "stars": 525
   },
   {
     "url": "https://github.com/yoksel/common-words",
     "name": "Common Words",
     "desc": "Слова, часто используемые в&nbsp;CSS-классах",
     "img": "projects/common-words.png",
-    "stars": 1424
+    "stars": 1430
   },
   {
     "url": "https://yoksel.github.io/html-tree/",
     "name": "HTML Tree",
     "desc": "Генератор структуры документа с&nbsp;проверкой БЭМ-классов",
     "img": "projects/html-tree.png",
-    "stars": 114
+    "stars": 115
   },
   {
     "url": "https://github.com/yoksel/pixel-glass-js",
@@ -73,7 +73,7 @@
     "name": "Relative Clip Path",
     "desc": "Конвертер абсолютных координат пути в относительные",
     "img": "projects/relative-clip-path.png",
-    "stars": 55
+    "stars": 56
   },
   {
     "url": "https://yoksel.github.io/emoji-brush/",
