@@ -46,6 +46,10 @@ A[href*="caniuse"],
   }
 }
 
+.posts-list--by-tag A::before {
+  content: none !important;
+}
+
 A[href*="codepen"] {
   &::before {
     background-image: url("/assets/img/svg/icons/codepen.svg");
