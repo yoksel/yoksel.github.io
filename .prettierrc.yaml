@@ -1,0 +1,15 @@
+# http://json.schemastore.org/prettierrc
+
+singleQuote: true
+printWidth: 100
+tabWidth: 2
+arrowParens: "always"
+bracketSameLine: false
+bracketSpacing: true
+semi: true
+jsxSingleQuote: false
+trailingComma: "all"
+singleAttributePerLine: true
+htmlWhitespaceSensitivity: "css"
+parser: "typescript"
+useTabs: false
