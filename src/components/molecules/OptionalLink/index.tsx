@@ -1,4 +1,4 @@
-import Link from '../Link';
+import Link from '../../atoms/Link';
 
 interface OptionalLinkProps extends React.PropsWithChildren {
   slug: string;

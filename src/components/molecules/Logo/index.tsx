@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import Link from '../Link';
+import Link from '../../atoms/Link';
 
 import styles from './styles.module.scss';
 
