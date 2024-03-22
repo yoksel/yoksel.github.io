@@ -1,0 +1,18 @@
+[
+  {
+    "url": "/about/",
+    "name": "О сайте"
+  },
+  {
+    "url": "/tags/",
+    "name": "Метки"
+  },
+  {
+    "url": "https://twitter.com/yoksel",
+    "name": "Twitter"
+  },
+  {
+    "url": "https://github.com/yoksel",
+    "name": "Github"
+  }
+]
