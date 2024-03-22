@@ -8,6 +8,8 @@
 
 # testing
 /coverage
+.coverage/
+.jest/
 
 # next.js
 /.next/
@@ -18,7 +20,7 @@
 
 # misc
 .DS_Store
-*.pem
+.yarn
 
 # debug
 npm-debug.log*
@@ -27,9 +29,6 @@ yarn-error.log*
 
 # local env files
 .env*.local
-
-# vercel
-.vercel
 
 # typescript
 *.tsbuildinfo

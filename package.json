@@ -2,8 +2,9 @@
   "name": "yoksel.github.io",
   "private": true,
   "description": "Blog",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
+  "packageManager": "yarn@4.1.0",
   "scripts": {
     "build-old": "gatsby clean && node src/add-stars.js && gatsby build",
     "develop": "gatsby develop",
@@ -11,7 +12,7 @@
     "start-old": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "test": "jest",
     "lint-old": "npm run js:lint && npm run css:lint",
     "lint:fix": "npm run js:fix && npm run css:fix",
     "js:lint": "eslint src",
@@ -29,10 +30,17 @@
   },
   "dependencies": {
     "next": "14.1.4",
-    "prismjs": "^1.20.0",
     "react": "^18",
     "react-dom": "^18"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yoksel/yoksel.github.io"
+  },
+  "bugs": {
+    "url": "https://github.com/yoksel/yoksel.github.io/issues"
+  },
+  "homepage": "https://yoksel.github.io",
   "devDependencies": {
     "@chromatic-com/storybook": "^1.2.25",
     "@storybook/addon-essentials": "^8.0.4",
@@ -43,11 +51,13 @@
     "@storybook/nextjs": "^8.0.4",
     "@storybook/react": "^8.0.4",
     "@storybook/test": "^8.0.4",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.2",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "classnames": "^2.5.1",
-    "dotenv": "8.2.0",
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
     "eslint-config-standard": "^14.1.0",
@@ -59,26 +69,13 @@
     "eslint-plugin-storybook": "^0.8.0",
     "gh-pages": "^3.1.0",
     "gray-matter": "^4.0.3",
-    "nanoid": "3.1.10",
-    "node-fetch": "^2.6.0",
-    "p-limit": "^3.0.2",
-    "preact": "10.4.6",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "prettier": "^3.2.5",
-    "react-dom": "^18",
     "sass": "^1.72.0",
     "storybook": "^8.0.4",
-    "stylelint": "^13.0.0",
-    "stylelint-config-standard": "^19.0.0",
-    "tiny-glob": "^0.2.6",
-    "typescript": "^5",
-    "unsplash-js": "^6.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yoksel/yoksel.github.io"
-  },
-  "bugs": {
-    "url": "https://github.com/yoksel/yoksel.github.io/issues"
-  },
-  "homepage": "https://yoksel.github.io"
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  }
 }
