@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Logo from '../Logo';
 import footerNavData from '../../../../data/meta/footer-nav.json';
 import OptionalLink from '../OptionalLink';
-import VisuallyHiddenText from '../../VisuallyHiddenText';
+import VisuallyHiddenText from '../../atoms/VisuallyHiddenText';
 
 import styles from './styles.module.scss';
 
