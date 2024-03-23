@@ -44,6 +44,8 @@ const jestConfig = {
     '!src/pages/**',
   ],
 
+  coveragePathIgnorePatterns: ['stories.tsx'],
+
   /**
    * This will be used to configure minimum threshold enforcement for coverage results.
    * Thresholds can be specified as global, as a glob, and as a directory or file path.
