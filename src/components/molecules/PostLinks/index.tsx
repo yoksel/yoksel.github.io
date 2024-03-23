@@ -1,9 +1,10 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import classNames from 'classnames';
+import FadedText from '../../atoms/FadedText';
+import Link from '../../atoms/Link';
 
 import styles from './styles.module.scss';
-import FadedText from '../../atoms/FadedText';
 
 type HrefOrId = { id: string } | { href: string };
 
@@ -46,7 +47,7 @@ const PostLinks = ({ title, items }: PostLinksProps) => {
             )}
             key={uuidv4()}
           >
-            <a href={url}>{text || url}</a>
+            <Link href={url}>{text || url}</Link>
             {desc && <FadedText> — {desc}</FadedText>}
           </dd>
         );
