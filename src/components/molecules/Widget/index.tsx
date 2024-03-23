@@ -62,7 +62,7 @@ const Event = ({ event }: { event?: Event }) => {
   );
 };
 
-interface WidgetItem {
+export interface WidgetItem {
   text: string;
   href: string;
   desc?: string;
@@ -81,7 +81,7 @@ interface WidgetProps {
 }
 
 const Widget = ({ id, title, items, slug, isTemplate, hideTitle, footerContent }: WidgetProps) => {
-  if ((!items || items.length) === 0 && !isTemplate) {
+  if (!items?.length && !isTemplate) {
     return;
   }
 
