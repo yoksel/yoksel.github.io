@@ -1,7 +1,7 @@
 import Link from '../../atoms/Link';
 
 interface OptionalLinkProps extends React.PropsWithChildren {
-  slug: string;
+  slug?: string;
   href: string;
   className?: string;
 }

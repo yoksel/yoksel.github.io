@@ -74,7 +74,7 @@ interface WidgetProps {
   id: string;
   title: string;
   items?: WidgetItem[];
-  slug: string;
+  slug?: string;
   isTemplate?: boolean;
   hideTitle?: boolean;
   footerContent?: string;
