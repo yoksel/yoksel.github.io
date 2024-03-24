@@ -5,9 +5,9 @@ import Widget, { WidgetItem } from '../Widget';
 import VisuallyHiddenText from '../../atoms/VisuallyHiddenText';
 
 interface AsideProps {
-  slug: string;
+  slug?: string;
   isMain: boolean;
-  articleType: string;
+  articleType?: string;
   posts?: WidgetItem[];
   pages?: WidgetItem[];
 }
