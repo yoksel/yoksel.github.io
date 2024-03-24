@@ -3,7 +3,7 @@
     "href": "https://wsd.events/2019/12/07/pres/non-square-web/",
     "text": "Неквадратный веб",
     "event": {
-      "url": "https://wsd.events/2019/12/07/",
+      "href": "https://wsd.events/2019/12/07/",
       "name": "WSD в Минске",
       "date": "7 декабря 2019"
     }
@@ -12,7 +12,7 @@
     "href": "https://wsd.events/2019/04/13/pres/ascii-emoji/",
     "text": "Шрифты в вебе: от ASCII до эмоджи и немного дальше",
     "event": {
-      "url": "https://wsd.events/2019/04/13/",
+      "href": "https://wsd.events/2019/04/13/",
       "name": "WSD в Москве",
       "date": "13 апреля 2019"
     }
@@ -21,7 +21,7 @@
     "href": "https://yoksel.github.io/svg-filters-02-2018/",
     "text": "SVG-фильтры",
     "event": {
-      "url": "https://events.yandex.ru/events/meetings/yalovefrontend/",
+      "href": "https://events.yandex.ru/events/meetings/yalovefrontend/",
       "name": "Я ❤ Frontend 2019",
       "date": "9 февраля 2019"
     }
@@ -30,7 +30,7 @@
     "href": "https://wsd.events/2015/06/20/pres/text-alive",
     "text": "Оживляем текст",
     "event": {
-      "url": "https://wsd.events/2015/06/20",
+      "href": "https://wsd.events/2015/06/20",
       "name": "WSD в Санкт-Петербурге",
       "date": "20 июня 2015"
     }
@@ -39,7 +39,7 @@
     "href": "https://wsd.events/2014/12/06/pres/css-blending",
     "text": "Режимы наложения в CSS",
     "event": {
-      "url": "https://wsd.events/2014/12/06",
+      "href": "https://wsd.events/2014/12/06",
       "name": "WSD в Киеве",
       "date": "6 декабря 2014"
     }
@@ -48,7 +48,7 @@
     "href": "https://wsd.events/2014/06/28/pres/meet-svg",
     "text": "Позвольте представить: SVG",
     "event": {
-      "url": "https://wsd.events/2014/06/28",
+      "href": "https://wsd.events/2014/06/28",
       "name": "WSD в Санкт-Петербурге",
       "date": "28 июня 2014"
     }
