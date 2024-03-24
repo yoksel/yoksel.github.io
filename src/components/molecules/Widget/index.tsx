@@ -73,7 +73,7 @@ export interface WidgetItem {
 interface WidgetProps {
   id: string;
   title: string;
-  items: WidgetItem[];
+  items?: WidgetItem[];
   slug: string;
   isTemplate?: boolean;
   hideTitle?: boolean;
@@ -82,7 +82,7 @@ interface WidgetProps {
 
 const Widget = ({ id, title, items, slug, isTemplate, hideTitle, footerContent }: WidgetProps) => {
   if (!items?.length && !isTemplate) {
-    return;
+    return null;
   }
 
   return (
@@ -90,7 +90,7 @@ const Widget = ({ id, title, items, slug, isTemplate, hideTitle, footerContent }
       <WidgetTitle hideTitle={hideTitle}>{title}</WidgetTitle>
 
       <ul className={styles['widget__list']}>
-        {items.map(({ text, href, desc, stars, event }) => {
+        {items?.map(({ text, href, desc, stars, event }) => {
           return (
             <li
               className={classNames(
