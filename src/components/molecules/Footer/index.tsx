@@ -8,7 +8,7 @@ import VisuallyHiddenText from '../../atoms/VisuallyHiddenText';
 import styles from './styles.module.scss';
 
 interface FooterProps {
-  slug: string;
+  slug?: string;
   isMain: boolean;
 }
 
