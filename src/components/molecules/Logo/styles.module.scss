@@ -1,12 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&text=ПроCSS&display=swap');
-@import "../../../scss/globals";
-
-$logo-size-koeff: .2;
-
-$logo-circ-size-koeff: .1;
-$logo-circ-size-diff: $logo-size * $logo-circ-size-koeff;
-$logo-circ-decor-size: $logo-size + $logo-circ-size-diff*2;
 
 $max: 9;
 $step: 360 / $max;
@@ -45,17 +38,22 @@ $colors: getColors();
 }
 
 .header-logo {
+  --logo-size-koeff: .2;
+  --logo-circ-size-koeff: .1;
+  --logo-circ-size-diff: calc(var(--logo-size) * var(--logo-circ-size-koeff));
+  --logo-circ-decor-size: calc(var(--logo-size) + var(--logo-circ-size-diff) * 2);
+
   position: absolute;
-  width: $logo-size;
-  height: $logo-size;
+  width: var(--logo-size);
+  height: var(--logo-size);
   margin: 0 auto;
   bottom: 0;
   left: 0;
   right: 0;
   font-size: 56px;
   line-height: 1.2;
-  font-family: $logo-font-family;
-  text-shadow: 0 0 5px darken($logo-bgcolor, 20);
+  font-family: var(--logo-font-family);
+  text-shadow: 0 0 5px #7f0c23;
   color: #FFF;
 
   &__item--about {
@@ -72,29 +70,29 @@ $colors: getColors();
   align-items: center;
   justify-content: center;
   position: relative;
-  width: $logo-size;
-  height: $logo-size;
-  background: $logo-bgcolor;
+  width: var(--logo-size);
+  height: var(--logo-size);
+  background: var(--logo-bgcolor);
   border-radius: 50%;
   box-shadow: 0 0 0 transparent inset,
     0 0 0 10px white,
-    0 -3px 10px 9px $base-shadow-color;
+    0 -3px 10px 9px var(--base-shadow-color);
 }
 
 .header-logo__content--link {
   color: inherit;
   text-decoration: none;
 
-  @include logo-transition;
+  transition: var(--logo-transition);
 
   &::after {
     content: "";
     display: block;
     position: absolute;
-    width: $logo-circ-decor-size;
-    height: $logo-circ-decor-size;
-    top: -$logo-circ-size-diff;
-    left: -$logo-circ-size-diff;
+    width: var(--logo-circ-decor-size);
+    height: var(--logo-circ-decor-size);
+    top: calc(var(--logo-circ-size-diff) * -1);
+    left: calc(var(--logo-circ-size-diff) * -1);
     border-radius: 50%;
     transition: inherit;
   }
@@ -103,13 +101,13 @@ $colors: getColors();
     background: #444;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .5) inset,
       0 0 0 10px white,
-      0 -3px 10px 9px $base-shadow-color;
-    text-shadow: 0 2px 5px darken(#333, 40);
+      0 -3px 10px 9px var(--base-shadow-color);
+    text-shadow: 0 2px 5px #000;
     color: #DDD;
   }
 
   &:hover::after {
-    @include shadow($logo-circ-size-diff * .65);
+    @include shadow(calc(var(--logo-circ-size-diff) * .65));
 
     animation: rotate 2s linear infinite;
   }
@@ -123,8 +121,8 @@ $colors: getColors();
 
 .footer-logo {
   margin-right: 2rem;
-  font-size: $base-font-size * 1.7;
-  font-family: $logo-font-family;
+  font-size: calc(var(--base-font-size) * 1.7);
+  font-family: var(--logo-font-family);
 }
 
 .footer-logo__content--link {
@@ -133,7 +131,7 @@ $colors: getColors();
   text-decoration: none;
   color: #333;
 
-  @include logo-transition;
+  transition: var(--logo-transition);
 
   &::before {
     content: attr(data-name);
@@ -143,7 +141,7 @@ $colors: getColors();
     width: 0;
     overflow: hidden;
     white-space: nowrap;
-    color: $logo-bgcolor;
+    color: var(--logo-bgcolor);
     transition: inherit;
   }
 

@@ -1,15 +1,17 @@
-$base-font-size: 16px;
-$base-line-height: 1.5;
-$base-link-color: steelblue;
-$base-shadow-color: rgba(100, 100, 100, .5);
+:root {
+  --gap: 2.5rem;
 
-$logo-bgcolor: crimson;
-$logo-font-family: Lobster, Georgia, cursive;
-$logo-size: $base-font-size * 14;
-$half-logo-size: $logo-size / 2;
+  --base-font-size: 16px;
+  --base-line-height: 1.5;
+  --base-link-color: steelblue;
+  --base-shadow-color: rgba(100, 100, 100, .5);
 
-@mixin logo-transition {
-  transition: all .5s;
+  --logo-bgcolor: crimson;
+  --logo-font-family: Lobster, Georgia, cursive;
+  --logo-size: calc(var(--base-font-size) * 14);
+  --half-logo-size: calc(var(--logo-size) / 2);
+
+  --logo-transition: transition: all .5s;
 }
 
 @mixin item-with-dash {

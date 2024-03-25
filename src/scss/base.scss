@@ -1,7 +1,3 @@
-:root {
-  --gap: 2.5rem;
-}
-
 HTML {
   scroll-behavior: smooth;
 }
@@ -14,8 +10,8 @@ BODY {
   background: #EEE;
   justify-content: center;
   font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
   color: #000;
 
   // https://web.dev/content-visibility/
@@ -71,7 +67,7 @@ H5:first-child {
 }
 
 A {
-  color: $base-link-color;
+  color: var(--base-link-color);
 
   &:hover {
     text-decoration: none;
@@ -93,10 +89,6 @@ IMG {
 [hidden] {
   /* stylelint-disable-next-line declaration-no-important */
   display: none !important;
-}
-
-.counter {
-  position: absolute;
 }
 
 /* Codes

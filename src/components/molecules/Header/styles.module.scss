@@ -1,7 +1,5 @@
-@import "../../../scss/globals";
-
 .page-header {
   position: relative;
-  height: $half-logo-size - $base-font-size * 2;
+  height: calc(var(--half-logo-size) - calc(var(--base-font-size) * 2));
   text-align: center;
 }
