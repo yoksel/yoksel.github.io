@@ -34,14 +34,14 @@ $colors: getColors();
 
 @mixin shadow ( $offset ) {
   box-shadow:
-    -#{$offset} -#{$offset} 0 nth($colors, 1),
-    -#{$offset*$koeff} 0 0 nth($colors, 2),
-    -#{$offset} $offset 0 nth($colors, 3),
-    0 $offset*$koeff 0 nth($colors, 4),
+    calc($offset * -1) calc($offset * -1) 0 nth($colors, 1),
+    calc($offset * $koeff * -1) 0 0 nth($colors, 2),
+    calc($offset * -1) $offset 0 nth($colors, 3),
+    0 calc($offset * $koeff) 0 nth($colors, 4),
     $offset $offset 0 nth($colors, 5),
-    $offset*$koeff 0 0 nth($colors, 6),
-    $offset -#{$offset} 0 nth($colors, 7),
-    0 -#{$offset*$koeff} 0 nth($colors, 8);
+    calc($offset * $koeff) 0 0 nth($colors, 6),
+    $offset calc($offset * -1) 0 nth($colors, 7),
+    0 calc($offset * $koeff * -1) 0 nth($colors, 8);
 }
 
 .header-logo {
