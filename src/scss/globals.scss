@@ -11,7 +11,7 @@
   --logo-size: calc(var(--base-font-size) * 14);
   --half-logo-size: calc(var(--logo-size) / 2);
 
-  --logo-transition: transition: all .5s;
+  --logo-transition: all .5s;
 }
 
 @mixin item-with-dash {
