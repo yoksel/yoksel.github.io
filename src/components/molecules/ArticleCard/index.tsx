@@ -1,3 +1,4 @@
+import ContentAsHtml from '../../atoms/ContentAsHtml';
 import FadedText from '../../atoms/FadedText';
 import Link from '../../atoms/Link';
 import { WidgetItem } from '../Widget';
@@ -22,9 +23,10 @@ const ArticleCard = ({ post }: ArticleCardProps) => {
       </h3>
 
       {excerpt && (
-        <p
+        <ContentAsHtml
+          element="p"
           className={styles['articleCard__text']}
-          dangerouslySetInnerHTML={{ __html: excerpt }}
+          content={excerpt}
         />
       )}
 
