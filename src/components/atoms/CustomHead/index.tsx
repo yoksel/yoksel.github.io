@@ -2,14 +2,25 @@ import Head from 'next/head';
 import siteData from '../../../../data/config';
 import { ArticleData } from '../../../types';
 
+const getUrl = (siteUrl: string, articleUrl?: string) => {
+  return new URL(articleUrl || '', siteUrl).toString();
+};
+
+const getTitle = (siteTitle: string, articleTitle?: string) => {
+  if (!articleTitle) {
+    return siteTitle;
+  }
+  return `${articleTitle} • ${siteTitle}`;
+};
+
 interface CustomHeadProps {
-  article: ArticleData;
+  article?: ArticleData;
 }
 
 const CustomHead = ({ article }: CustomHeadProps) => {
-  const absolutePageUrl = `${siteData?.siteUrl}/${article?.slug}`.replace('//', '/');
+  const absolutePageUrl = getUrl(siteData?.siteUrl, article?.slug);
   const description = article?.description || siteData?.description;
-  let title = `${article?.title} • ${siteData?.title}`;
+  let title = getTitle(siteData?.title, article?.title);
 
   return (
     <Head>
