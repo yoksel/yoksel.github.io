@@ -1,0 +1,45 @@
+import FadedText from '../../atoms/FadedText';
+import Link from '../../atoms/Link';
+import { WidgetItem } from '../Widget';
+
+import styles from './styles.module.scss';
+
+export interface ArticleWithDate extends WidgetItem {
+  date: string;
+}
+
+interface ArticleCardProps {
+  post: ArticleWithDate;
+}
+
+const ArticleCard = ({ post }: ArticleCardProps) => {
+  let { text, href, excerpt, date } = post;
+
+  return (
+    <div className={styles['articleCard']}>
+      <h3 className={styles['articleCard__title']}>
+        <Link href={href}>{text}</Link>
+      </h3>
+
+      {excerpt && (
+        <p
+          className={styles['articleCard__text']}
+          dangerouslySetInnerHTML={{ __html: excerpt }}
+        />
+      )}
+
+      <div className={styles['articleCard__footer']}>
+        <Link href={href}>Читать дальше →</Link>
+
+        <time
+          className="articleCard__date faded-text"
+          dateTime={date}
+        >
+          <FadedText>{date}</FadedText>
+        </time>
+      </div>
+    </div>
+  );
+};
+
+export default ArticleCard;
