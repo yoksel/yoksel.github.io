@@ -3763,6 +3763,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/prismjs@npm:^1":
+  version: 1.26.3
+  resolution: "@types/prismjs@npm:1.26.3"
+  checksum: 10c0/3e8a64bcf0ab5f9a47ec2590938c5a8a20ac849b4949a95ed96e73e64cb890fc56e9c9b724286914717458267b28405f965709e1b9f80db5d68817a7ce5a18a9
+  languageName: node
+  linkType: hard
+
 "@types/prop-types@npm:*":
   version: 15.7.11
   resolution: "@types/prop-types@npm:15.7.11"
@@ -11794,6 +11801,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prismjs@npm:^1.29.0":
+  version: 1.29.0
+  resolution: "prismjs@npm:1.29.0"
+  checksum: 10c0/d906c4c4d01b446db549b4f57f72d5d7e6ccaca04ecc670fb85cea4d4b1acc1283e945a9cbc3d81819084a699b382f970e02f9d1378e14af9808d366d9ed7ec6
+  languageName: node
+  linkType: hard
+
 "proc-log@npm:^3.0.0":
   version: 3.0.0
   resolution: "proc-log@npm:3.0.0"
@@ -14783,6 +14797,7 @@ __metadata:
     "@testing-library/react": "npm:^14.2.2"
     "@types/jest": "npm:^29.5.12"
     "@types/node": "npm:^20"
+    "@types/prismjs": "npm:^1"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
     "@types/uuid": "npm:^9"
@@ -14802,6 +14817,7 @@ __metadata:
     jest-environment-jsdom: "npm:^29.7.0"
     next: "npm:14.1.4"
     prettier: "npm:^3.2.5"
+    prismjs: "npm:^1.29.0"
     react: "npm:^18"
     react-dom: "npm:^18"
     sass: "npm:^1.72.0"
