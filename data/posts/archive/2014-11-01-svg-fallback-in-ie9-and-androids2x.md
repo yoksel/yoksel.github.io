@@ -7,16 +7,16 @@ image: https://img-fotki.yandex.ru/get/6734/5091629.a3/0_86377_63bd7b1e_orig
 desc: "Есть решение для замены инлайнового SVG на фоновые картинки в браузерах, где инлайновый SVG не поддерживается. Оно построено на допущении, что на странице есть нужный нам класс .ie8, по которому SVG-элементам включаются фоновые изображения. Мне стало интересно: можно ли обеспечить поддержку способа во всех старых браузерах, используя только CSS?"
 
 links:
-- url: http://pauginer.com/post/36614680636/invisible-gradient-technique
-  name: "The invisible gradient technique: Cross-browser support for SVG (with image fallback) using CSS"
-- url: /svg-in-ie8
-  name: Грабли на чистом SVG
-- url: https://www.npmjs.org/package/svg_fallback
-  name: svg_fallback (plugin)
-- url: /grunt-plugin
-  name: Зачем я написала плагин для Grunt
-- url: http://blogs.telerik.com/kendoui/posts/12-02-17/using_svg_on_android_2_x_and_kendo_ui_dataviz
-  name: Using SVG on Android 2.x
+- href: http://pauginer.com/post/36614680636/invisible-gradient-technique
+  text: "The invisible gradient technique: Cross-browser support for SVG (with image fallback) using CSS"
+- href: /svg-in-ie8
+  text: Грабли на чистом SVG
+- href: https://www.npmjs.org/package/svg_fallback
+  text: svg_fallback (plugin)
+- href: /grunt-plugin
+  text: Зачем я написала плагин для Grunt
+- href: http://blogs.telerik.com/kendoui/posts/12-02-17/using_svg_on_android_2_x_and_kendo_ui_dataviz
+  text: Using SVG on Android 2.x
 
 ---
 Как-то у меня возник интересный вопрос. Есть <a href="https://www.npmjs.org/package/svg_fallback">решение</a> для замены инлайнового SVG на фоновые картинки в браузерах, где инлайновый SVG не поддерживается. Оно построено на допущении, что на странице есть нужный нам класс <code>.ie8</code>, по которому SVG-элементам включаются фоновые изображения.

@@ -4,10 +4,10 @@ title: Свойства Animation одной таблицей
 
 links_title: К статьям
 links:
-- url: /css-animation
-  name: Css Animation
-- url: /3d-cube
-  name: 3D cube
+- href: /css-animation
+  text: Css Animation
+- href: /3d-cube
+  text: 3D cube
 ---
 
 <table class="proptable">

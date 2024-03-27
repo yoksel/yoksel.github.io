@@ -6,8 +6,8 @@ tags: [3D, transform]
 desc: CSS-свойство позволяет трансформировать элементы, в том числе в трехмерном пространстве.
 
 links:
-- url: https://tympanus.net/Development/CreativeLinkEffects/#cl-effect-2
-  name: tympanus.net/Development/CreativeLinkEffects
+- href: https://tympanus.net/Development/CreativeLinkEffects/#cl-effect-2
+  text: tympanus.net/Development/CreativeLinkEffects
   desc: интересный пример 3D-трансформации по наведению
 
 ---

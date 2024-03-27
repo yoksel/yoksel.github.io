@@ -7,14 +7,14 @@ image: //img-fotki.yandex.ru/get/6733/5091629.a1/0_84885_3d02703a_orig
 desc: В прошлой статье я рассматривала странности SVG-обводки, а также возможность сделать анимированные маски. Так как трансформации в масках не анимируются в Firefox (31-я версия на момент написания статьи), я продолжила эксперименты с обводками.
 
 links:
-- url: /css-animation/
-  name: Css Animation
-- url: /css-and-svg-masks/
-  name: CSS и SVG маски
-- url: /svg-stroke/
-  name: Странности обводки в SVG
-- url: /pages/svg-links/
-  name: 'SVG: полезные ссылки'
+- href: /css-animation/
+  text: Css Animation
+- href: /css-and-svg-masks/
+  text: CSS и SVG маски
+- href: /svg-stroke/
+  text: Странности обводки в SVG
+- href: /pages/svg-links/
+  text: 'SVG: полезные ссылки'
 ---
 
 В <a href="/svg-stroke">прошлой статье</a> я рассматривала странности SVG-обводки, а также возможность сделать анимированные маски.

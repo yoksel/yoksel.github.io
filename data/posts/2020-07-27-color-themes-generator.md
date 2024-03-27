@@ -8,18 +8,18 @@ tags: [tools]
 desc: Инструмент расширяет палитры из CSS/SCSS/Less-переменных и может быть полезен для карманных проектов без фиксированного дизайна. Я немного расскажу про историю появления и покажу как его можно использовать.
 
 links:
-- url: https://www.w3.org/TR/css-variables/
-  name: CSS Custom Properties for Cascading Variables
-- url: https://yoksel.github.io/tema/
-  name: Tema
-- url: /tsveta
-  name: Цвета в CSS
-- url: https://yoksel.github.io/handy-colors/
-  name: Handy colors
+- href: https://www.w3.org/TR/css-variables/
+  text: CSS Custom Properties for Cascading Variables
+- href: https://yoksel.github.io/tema/
+  text: Tema
+- href: /tsveta
+  text: Цвета в CSS
+- href: https://yoksel.github.io/handy-colors/
+  text: Handy colors
   desc: именованные цвета с палитрами
 ---
 
-В конце марта я выпустила инструмент для генерации цветовых тем из CSS/SCSS/Less-переменных — [Tema](https://yoksel.github.io/tema/). Он может быть полезен для карманных проектов без фиксированного дизайна, когда цвета подбираются прямо в&nbsp;процессе разработки. Я немного расскажу про историю появления и&nbsp;покажу как его можно использовать.
+В конце марта я выпустила инструмент для генерации цветовых тем из CSS/SCSS/Less-переменных — [Tema](https://yoksel.github.io/tema/). Он может быть полезен для карманных проектов без фиксированного дизайна, когда цвета подбираются прямо в&nbsp;процессе разработки. Я немного расскажу про историю появления и&nbsp;покажу как его можно использовать.<!-more-->
 
 Идея генератора возникла когда я начала делать другой свой проект — [Grid Сheatsheet](https://yoksel.github.io/grid-cheatsheet/). У меня уже был очень похожий справочник, [Flex Сheatsheet](https://yoksel.github.io/flex-cheatsheet/), и&nbsp;изначально я собиралась просто поменять данные и&nbsp;легко и&nbsp;непринуждённо получить шпаргалку по гридам, но всё оказалось сложнее: у гридов немного другая структура спецификации, которая не ложилась в&nbsp;существующую структуру справочника, да и&nbsp;JavaScript я теперь знаю немного получше, поэтому движок для справочников в&nbsp;итоге пришлось переписать полностью. Но вернёмся к&nbsp;цветовым темам и&nbsp;посмотрим с чего всё началось.
 

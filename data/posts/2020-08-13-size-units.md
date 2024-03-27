@@ -8,50 +8,50 @@ tags: [fonts, units, text]
 desc: 'Абсолютные и относительные единицы измерения в CSS: от пикселей до единиц вьюпорта'
 
 links:
-- url: https://www.w3.org/TR/css-values-4/#lengths
-  name: 'Distance Units: the <length> type'
-- url: https://developer.mozilla.org/en-US/docs/Web/CSS/length
-  name: 'CSS <length>'
-- url: https://en.wikipedia.org/wiki/Point_(typography)
-  name: 'Point (typography)'
-- url: https://lists.w3.org/Archives/Public/www-style/1998Dec/0030.html
-  name: 'platform-specific font size issues'
+- href: https://www.w3.org/TR/css-values-4/#lengths
+  text: 'Distance Units: the <length> type'
+- href: https://developer.mozilla.org/en-US/docs/Web/CSS/length
+  text: 'CSS <length>'
+- href: https://en.wikipedia.org/wiki/Point_(typography)
+  text: 'Point (typography)'
+- href: https://lists.w3.org/Archives/Public/www-style/1998Dec/0030.html
+  text: 'platform-specific font size issues'
   desc: Mailing lists, 15 Dec 1998
-- url: https://lists.w3.org/Archives/Public/www-style/2010Jan/0058.html
-  name: Making pt a non-physical unit
+- href: https://lists.w3.org/Archives/Public/www-style/2010Jan/0058.html
+  text: Making pt a non-physical unit
   desc: Mailing lists, 6 Jan 2010
-- url: https://lists.w3.org/Archives/Public/www-style/2010Jun/0461.html
-  name: '[CSS21] Issue 149 - px vs. pt'
+- href: https://lists.w3.org/Archives/Public/www-style/2010Jun/0461.html
+  text: '[CSS21] Issue 149 - px vs. pt'
   desc: Mailing lists, 16 Jun 2010
-- url: https://www.w3.org/Style/Examples/007/units.ru.html
-  name: 'em, px, pt, cm, in…'
-- url: https://meyerweb.com/eric/thoughts/2018/06/28/what-is-the-css-ch-unit/
-  name: 'What is the CSS ‘ch’ Unit?'
-- url: https://css-tricks.com/the-lengths-of-css/
-  name: The Lengths of CSS
-- url: https://hacks.mozilla.org/2013/09/css-length-explained/
-  name: CSS Length Explained
-- url: https://www.webdesignerdepot.com/2010/02/the-myth-of-dpi/
-  name: The Myth of DPI
-- url: https://webkit.org/blog/57/css-units/
-  name: CSS Units
-- url: https://snook.ca/archives/html_and_css/font-size-with-rem
-  name: Font sizing with rem
-- url: https://css-live.ru/articles/novye-i-starye-edinicy-izmereniya-kratkij-obzor.html
-  name: 'Новые и старые единицы измерения (краткий обзор)'
-- url: https://www.sitepoint.com/css-viewport-units-quick-start/
-  name: 'CSS Viewport Units: A Quick Start'
-- url: https://css-tricks.com/snippets/css/fluid-typography/
-  name: 'Fluid Typography'
-- url: https://css-tricks.com/fun-viewport-units/
-  name: 'Fun with Viewport Units'
-- url: https://css-tricks.com/simple-little-use-case-vmin/
-  name: 'Simple Little Use Case for `vmin`'
+- href: https://www.w3.org/Style/Examples/007/units.ru.html
+  text: 'em, px, pt, cm, in…'
+- href: https://meyerweb.com/eric/thoughts/2018/06/28/what-is-the-css-ch-unit/
+  text: 'What is the CSS ‘ch’ Unit?'
+- href: https://css-tricks.com/the-lengths-of-css/
+  text: The Lengths of CSS
+- href: https://hacks.mozilla.org/2013/09/css-length-explained/
+  text: CSS Length Explained
+- href: https://www.webdesignerdepot.com/2010/02/the-myth-of-dpi/
+  text: The Myth of DPI
+- href: https://webkit.org/blog/57/css-units/
+  text: CSS Units
+- href: https://snook.ca/archives/html_and_css/font-size-with-rem
+  text: Font sizing with rem
+- href: https://css-live.ru/articles/novye-i-starye-edinicy-izmereniya-kratkij-obzor.html
+  text: 'Новые и старые единицы измерения (краткий обзор)'
+- href: https://www.sitepoint.com/css-viewport-units-quick-start/
+  text: 'CSS Viewport Units: A Quick Start'
+- href: https://css-tricks.com/snippets/css/fluid-typography/
+  text: 'Fluid Typography'
+- href: https://css-tricks.com/fun-viewport-units/
+  text: 'Fun with Viewport Units'
+- href: https://css-tricks.com/simple-little-use-case-vmin/
+  text: 'Simple Little Use Case for `vmin`'
 ---
 
 В CSS существует множество единиц измерения. Обычно мы используем единицы размеров, но также есть единицы для углов — например, `deg` и `turn`, единицы времени — `s` и `ms`, единицы плотности экрана — например, `dpi` и `dppx` и другие.
 
-Здесь будут рассматриваться только единицы размеров, которыми мы пользуемся чаще всего. Подробное описание можно найти в спецификации W3C [Distance Units: the &lt;length> type](https://www.w3.org/TR/css-values-4/#lengths).
+Здесь будут рассматриваться только единицы размеров, которыми мы пользуемся чаще всего. Подробное описание можно найти в спецификации W3C [Distance Units: the &lt;length> type](https://www.w3.org/TR/css-values-4/#lengths).<!-more-->
 
 Общим для всех единиц длины будет то, что для значения `0`, единицы можно не указывать: `height: 0px` и `height: 0` будут работать одинаково, так что единицы измерения можно отбросить. Это позволяет немного быстрее писать код и считывать значения свойств.
 

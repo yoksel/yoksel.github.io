@@ -3,8 +3,8 @@ title: Разный синтаксис Flexbox
 
 links_title: К статье
 links:
-- url: /flexbox
-  name: Flexbox
+- href: /flexbox
+  text: Flexbox
 ---
 
 <table>

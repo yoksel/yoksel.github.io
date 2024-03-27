@@ -7,10 +7,10 @@ image: //img-fotki.yandex.ru/get/9104/5091629.9a/0_7ec7a_bce9f6bd_M.png
 desc: Как анимировать градиенты если очень нужно.
 
 links:
-- url: /box-shadow/
-  name: Box-shadow
-- url: /css-animation/
-  name: Css Animation
+- href: /box-shadow/
+  text: Box-shadow
+- href: /css-animation/
+  text: Css Animation
 ---
 
 Как известно, градиенты не любят анимироваться.<!--more-->

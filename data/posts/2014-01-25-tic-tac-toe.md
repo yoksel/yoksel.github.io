@@ -7,8 +7,8 @@ image: //img-fotki.yandex.ru/get/9104/5091629.9a/0_7ec6c_5867b098_orig
 desc: Довольно странный вариант игры, мне хотелось понять как ещё можно сымитировать игровую логику.
 
 links:
-- url: /go-and-css-next-attempt
-  name: Игра Го на CSS∶ ещё одна попытка
+- href: /go-and-css-next-attempt
+  text: Игра Го на CSS∶ ещё одна попытка
 ---
 
 Довольно странный вариант игры. <!--more-->

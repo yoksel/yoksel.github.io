@@ -8,40 +8,40 @@ tags: [a11y]
 desc: Как скринридеры видят сайты и что они могут там не найти, если страница свёрстана плохо
 
 links:
-- url: https://www.nvaccess.org/
-  name: NVDA
-- url: https://www.freedomscientific.com/products/software/jaws/
-  name: JAWS
-- url: https://support.microsoft.com/ru-ru/help/22798/windows-10-complete-guide-to-narrator
-  name: Полное руководство по использованию экранного диктора (Narrator)
-- url: https://help.apple.com/voiceover/info/guide/10.12/?lang=ru#/
-  name: 'Универсальный доступ Apple: краткое руководство по VoiceOver'
-- url: https://developer.paciellogroup.com/blog/2016/06/using-the-html-lang-attribute/
-  name: Using the HTML lang attribute
-- url: https://yoksel.github.io/a11y-demo/
-  name: A11y демо
-- url: https://allyjs.io/tutorials/hiding-elements.html#how-to-hide-elements-visually
-  name: How to hide elements visually
-- url: https://validator.w3.org/nu/
-  name: W3C HTML Validator
-- url: https://yoksel.github.io/html-tree/
-  name: Генератор HTML-дерева
-- url: https://weblind.ru/
-  name: Веблайнд
+- href: https://www.nvaccess.org/
+  text: NVDA
+- href: https://www.freedomscientific.com/products/software/jaws/
+  text: JAWS
+- href: https://support.microsoft.com/ru-ru/help/22798/windows-10-complete-guide-to-narrator
+  text: Полное руководство по использованию экранного диктора (Narrator)
+- href: https://help.apple.com/voiceover/info/guide/10.12/?lang=ru#/
+  text: 'Универсальный доступ Apple: краткое руководство по VoiceOver'
+- href: https://developer.paciellogroup.com/blog/2016/06/using-the-html-lang-attribute/
+  text: Using the HTML lang attribute
+- href: https://yoksel.github.io/a11y-demo/
+  text: A11y демо
+- href: https://allyjs.io/tutorials/hiding-elements.html#how-to-hide-elements-visually
+  text: How to hide elements visually
+- href: https://validator.w3.org/nu/
+  text: W3C HTML Validator
+- href: https://yoksel.github.io/html-tree/
+  text: Генератор HTML-дерева
+- href: https://weblind.ru/
+  text: Веблайнд
   desc: Рекомендации по разработке сайтов для людей с нарушениями зрения
-- url: https://web-standards.ru/articles/tags/a11y/
-  name: Статьи про доступность в блоге Веб-стандартов
-- url: https://habr.com/ru/company/yandex/blog/515460/
-  name: Технические предпочтения пользователей с нарушениями зрения в 2020 году. Исследование Яндекса
-- url: https://medium.com/web-standards/pragmatic-a11y-rules-b16dd2f77685
-  name: Полезные правила доступности, которые останутся в памяти
-- url: https://yoksel.github.io/bad-practices/forms-markup/
-  name: 'HTML & CSS: как не надо. Верстка форм'
+- href: https://web-standards.ru/articles/tags/a11y/
+  text: Статьи про доступность в блоге Веб-стандартов
+- href: https://habr.com/ru/company/yandex/blog/515460/
+  text: Технические предпочтения пользователей с нарушениями зрения в 2020 году. Исследование Яндекса
+- href: https://medium.com/web-standards/pragmatic-a11y-rules-b16dd2f77685
+  text: Полезные правила доступности, которые останутся в памяти
+- href: https://yoksel.github.io/bad-practices/forms-markup/
+  text: 'HTML & CSS: как не надо. Верстка форм'
 ---
 
 Когда мы говорим про доступность, мне часто не хватает визуальной составляющей. «Недоступно для скринридера» — как это выглядит?
 
-Когда есть возможность запустить программу экранного доступа и увидеть всё своими глазами, это достаточно освежающий опыт, после которого начинаешь гораздо аккуратнее выбирать теги. Мне хотелось бы, чтобы это попробовал каждый, кто имеет дело с вёрсткой, но я подозреваю, что, хотя многие слышали о доступности и скринридерах, запускать читалку пробовали далеко не все — потому что надо не только найти где включается скринридер, но и разобраться в непривычном и достаточно неинтуитивном интерфейсе.
+Когда есть возможность запустить программу экранного доступа и увидеть всё своими глазами, это достаточно освежающий опыт, после которого начинаешь гораздо аккуратнее выбирать теги. Мне хотелось бы, чтобы это попробовал каждый, кто имеет дело с вёрсткой, но я подозреваю, что, хотя многие слышали о доступности и скринридерах, запускать читалку пробовали далеко не все — потому что надо не только найти где включается скринридер, но и разобраться в непривычном и достаточно неинтуитивном интерфейсе.<!-more-->
 
 Я не так часто запускаю скринридер, и каждый раз приходится вспоминать команды и привыкать заново. Вообще попытка разобраться в настройках скринридера даже для зрячего требует усилий, а как с ними разбирается слабовидящий пользователь — страшно представить (а после этого человек заходит в интернет и попадает на сайты, где его никто не ждёт).
 

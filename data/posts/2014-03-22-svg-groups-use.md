@@ -7,10 +7,10 @@ image: //img-fotki.yandex.ru/get/9761/5091629.9d/0_7fc0d_2a6180fb_M.png
 desc: 'SVG-фигуры можно группировать, чтобы удобно структурировать файл. Для этих целей существует несколько тегов: g, defs и symbol. Элементы, группы элементов и символы можно использовать повторно.'
 
 links:
-- url: http://www.w3.org/TR/SVG/struct.html
-  name: Document Structure
-- url: http://sarasoueidan.com/blog/structuring-grouping-referencing-in-svg/
-  name: 'Structuring, Grouping, and Referencing in SVG – The <g>, <use>, <defs> and <symbol> Elements'
+- href: http://www.w3.org/TR/SVG/struct.html
+  text: Document Structure
+- href: http://sarasoueidan.com/blog/structuring-grouping-referencing-in-svg/
+  text: 'Structuring, Grouping, and Referencing in SVG – The <g>, <use>, <defs> and <symbol> Elements'
 ---
 
 SVG-фигуры можно группировать, чтобы удобно структурировать файл. Для этих целей существует несколько тегов: <nobr><code>g</code></nobr>, <code>defs</code> и <code>symbol</code>. Элементы, группы элементов и символы можно использовать повторно. <!--more-->

@@ -7,12 +7,12 @@ image: https://img-fotki.yandex.ru/get/3006/5091629.a4/0_8b19d_a6284f4f_orig
 desc: "В Firefox начиная с 39-й версии появились интересные CSS-свойства, которые позволяют управлять поведением прокручиваемого контента."
 
 links:
-- url: http://www.w3.org/TR/css-snappoints-1/
-  name: CSS Scroll Snap Points
-- url: http://caniuse.com/#search=snap
-  name: caniuse.com/#search=snap
-- url: https://blog.gospodarets.com/css-scroll-snap
-  name: Native CSS Scroll Snap Points
+- href: http://www.w3.org/TR/css-snappoints-1/
+  text: CSS Scroll Snap Points
+- href: http://caniuse.com/#search=snap
+  text: caniuse.com/#search=snap
+- href: https://blog.gospodarets.com/css-scroll-snap
+  text: Native CSS Scroll Snap Points
 ---
 
 В Firefox начиная с 39-й версии появились интересные CSS-свойства, которые позволяют управлять поведением прокручиваемого контента.<!--more-->

@@ -7,14 +7,14 @@ image: //img-fotki.yandex.ru/get/6820/5091629.a1/0_84c51_1bb64b9_orig
 desc: "Исходные данные: три десятка бесцветных SVG-изображений (их цвета задаются потом через CSS) и задача сделать из них PNG+CSS фолбек для старых браузеров."
 
 links:
-- url: https://www.npmjs.org/package/svg_fallback
-  name: svg_fallback
-- url: https://www.npmjs.org/~yoksel
-  name: npmjs.org/~yoksel
-- url: http://gruntjs.com/
-  name: gruntjs.com
-- url: /svg-in-ie8
-  name: Грабли на чистом SVG
+- href: https://www.npmjs.org/package/svg_fallback
+  text: svg_fallback
+- href: https://www.npmjs.org/~yoksel
+  text: npmjs.org/~yoksel
+- href: http://gruntjs.com/
+  text: gruntjs.com
+- href: /svg-in-ie8
+  text: Грабли на чистом SVG
 ---
 
 В один прекрасный день перед нами (мной и моими коллегами) встала задача обработать большое количество SVG-иконок.

@@ -6,8 +6,8 @@ tags: [text, box-shadow]
 desc: 'Проблема: если задать фон строчным элементам, получается вот так...'
 
 links:
-- url: /box-shadow
-  name: Box shadow
+- href: /box-shadow
+  text: Box shadow
 ---
 
 Проблема: если задать фон строчным элементам, получается вот так<!--more-->:

@@ -12,16 +12,16 @@ customCSS: css-and-svg-masks.css
 include: ./static/assets/img/svg/css-and-svg-masks.svg
 
 links:
-- url: http://www.html5rocks.com/en/tutorials/masking/adobe/
-  name: CSS Masking
-- url: http://thenittygritty.co/css-masking
-  name: CSS Masks – How To Use Masking In CSS Now
-- url: https://developer.apple.com/library/safari/documentation/InternetWeb/Conceptual/SafariVisualEffectsProgGuide/Masks/Masks.html
-  name: Using Masks
-- url: http://tympanus.net/codrops/2013/12/02/techniques-for-creating-textured-text/
-  name: Techniques for Creating Textured Text
-- url: http://lea.verou.me/2012/05/text-masking-the-standards-way/
-  name: Text masking — The standards way
+- href: http://www.html5rocks.com/en/tutorials/masking/adobe/
+  text: CSS Masking
+- href: http://thenittygritty.co/css-masking
+  text: CSS Masks – How To Use Masking In CSS Now
+- href: https://developer.apple.com/library/safari/documentation/InternetWeb/Conceptual/SafariVisualEffectsProgGuide/Masks/Masks.html
+  text: Using Masks
+- href: http://tympanus.net/codrops/2013/12/02/techniques-for-creating-textured-text/
+  text: Techniques for Creating Textured Text
+- href: http://lea.verou.me/2012/05/text-masking-the-standards-way/
+  text: Text masking — The standards way
 ---
 
 Разбираясь с возможностями оформления SVG, заинтересовалась темой масок.

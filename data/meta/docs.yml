@@ -1,8 +1,8 @@
-- url: http://www.w3.org/
-  name: W3C
+- href: http://www.w3.org/
+  text: W3C
 
-- url: https://developer.mozilla.org/
-  name: developer.mozilla.org
+- href: https://developer.mozilla.org/
+  text: developer.mozilla.org
 
-- url: http://learn.javascript.ru/
-  name: learn.javascript.ru
+- href: http://learn.javascript.ru/
+  text: learn.javascript.ru

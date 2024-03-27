@@ -1,26 +1,26 @@
-- url: http://lea.verou.me/
-  name: Lea Verou
+- href: http://lea.verou.me/
+  text: Lea Verou
 
-- url: http://nicolasgallagher.com/
-  name: Nicolas Gallagher
+- href: http://nicolasgallagher.com/
+  text: Nicolas Gallagher
 
-- url: http://csswizardry.com/
-  name: Csswizardry.com
+- href: http://csswizardry.com/
+  text: Csswizardry.com
 
-- url: http://sarasoueidan.com/
-  name: Sara Soueidan
+- href: http://sarasoueidan.com/
+  text: Sara Soueidan
 
-- url: http://css-tricks.com
-  name: Сss-tricks.com
+- href: http://css-tricks.com
+  text: Сss-tricks.com
 
-- url: http://tympanus.net/codrops/
-  name: Сodrops
+- href: http://tympanus.net/codrops/
+  text: Сodrops
 
-- url: http://css-weekly.com/archives/
-  name: CSS Weekly
+- href: http://css-weekly.com/archives/
+  text: CSS Weekly
 
-- url: http://css-live.ru/
-  name: CSS-Live
+- href: http://css-live.ru/
+  text: CSS-Live
 
-- url: http://frontender.info/
-  name: Frontender Magazine
+- href: http://frontender.info/
+  text: Frontender Magazine

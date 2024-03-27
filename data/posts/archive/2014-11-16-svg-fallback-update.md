@@ -7,12 +7,12 @@ image: https://img-fotki.yandex.ru/get/15589/5091629.a3/0_86697_b717911b_orig
 desc: "В прошлом посте всем было немного непонятно: почему бы не определять браузер существующими способами и зачем отказываться от JS-библиотек? У меня была причина искать способ сделать SVG-фолбек без внешних зависимостей: нужно было решение для плагина."
 
 links:
-- url: /svg-in-ie8
-  name: Грабли на чистом SVG
-- url: https://www.npmjs.org/package/svg_fallback
-  name: svg_fallback (Grunt plugin)
-- url: /grunt-plugin
-  name: Зачем я написала плагин для Grunt
+- href: /svg-in-ie8
+  text: Грабли на чистом SVG
+- href: https://www.npmjs.org/package/svg_fallback
+  text: svg_fallback (Grunt plugin)
+- href: /grunt-plugin
+  text: Зачем я написала плагин для Grunt
 ---
 
 В прошлом <a href="/svg-fallback-in-ie9-and-androids2x/">посте</a> всем было немного непонятно: почему бы не определять браузер существующими способами и зачем отказываться от JS-библиотек? Вопросы вполне закономерные, но у меня была причина искать способ сделать SVG-фолбек без внешних зависимостей: нужно было решение для grunt-плагина.<!--more-->

@@ -11,10 +11,10 @@ customCSS: "pixel-glass-demo.css"
 body_data: "data-has-sticky-point"
 
 links:
-- url: https://github.com/yoksel/pixel-glass-js
-  name: 'Репозиторий проекта'
-- url: https://yoksel.github.io/pixel-glass-js/
-  name: 'Демо страница с макетами'
+- href: https://github.com/yoksel/pixel-glass-js
+  text: 'Репозиторий проекта'
+- href: https://yoksel.github.io/pixel-glass-js/
+  text: 'Демо страница с макетами'
 ---
 
 Начну издалека. Не так давно я присоединилась к <a href="https://htmlacademy.ru">HTML Академии</a> в качестве наставника. Помимо того, что наставничество помогает упорядочить свои знания, оно удивительным образом стимулирует разработку разных полезных штук, потому что в процессе появляются интересные задачи, решение которых можно удобно автоматизировать.<!--more-->

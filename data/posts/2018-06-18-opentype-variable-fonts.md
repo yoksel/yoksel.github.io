@@ -6,38 +6,38 @@ desc: 'Вариативные шрифты — это новая страниц�
 tags: ['fonts']
 
 links:
-- url: https://blog.typekit.com/2016/09/14/variable-fonts-a-new-kind-of-font-for-flexible-design/
-  name: Variable fonts, a new kind of font for flexible design (анонс от Adobe)
-- url: https://opensource.googleblog.com/2016/09/introducing-opentype-font-variations.html
-  name: Introducing OpenType Font Variations (анонс от Google)
-- url: https://medium.com/variable-fonts/https-medium-com-tiro-introducing-opentype-variable-fonts-12ba6cd2369
-  name: Introducing OpenType Variable Fonts
-- url: https://developers.google.com/web/fundamentals/design-and-ux/typography/variable-fonts/
-  name: Introduction to variable fonts on the web
-- url: https://medium.com/clear-left-thinking/how-to-use-variable-fonts-in-the-real-world-e6d73065a604
-  name: How to use variable fonts in the real world
-- url: https://www.zeichenschatz.net/typografie/how-to-start-with-variable-fonts-on-the-web.html
-  name: How to start with variable fonts on the web
-- url: https://www.w3.org/TR/css-fonts-4/#font-variation-settings-def
-  name: font-variation-settings
-- url: https://docs.microsoft.com/ru-ru/typography/opentype/spec/otvaroverview
-  name: OpenType Font Variations Overview
-- url: https://docs.microsoft.com/ru-ru/typography/opentype/spec/dvaraxisreg#registered-axis-tags
-  name: Registered axis tags
-- url: https://www.w3.org/TR/css-fonts-3/#propdef-font-feature-settings
-  name: font-feature-settings
-- url: https://docs.microsoft.com/ru-ru/typography/opentype/spec/featuretags
-  name: Feature tags
-- url: https://docs.microsoft.com/ru-ru/typography/opentype/spec/featurelist
-  name: Features listed alphabetically
-- url: https://docs.microsoft.com/ru-ru/typography/opentype/spec/features_ae
-  name: Feature descriptions and implementations
-- url: https://www.typotheque.com/articles/opentype_features_in_css
-  name: OpenType features in CSS
-- url: https://fontdrop.info/
-  name: fontdrop.info
-- url: https://wakamaifondue.com/
-  name: wakamaifondue.com
+- href: https://blog.typekit.com/2016/09/14/variable-fonts-a-new-kind-of-font-for-flexible-design/
+  text: Variable fonts, a new kind of font for flexible design (анонс от Adobe)
+- href: https://opensource.googleblog.com/2016/09/introducing-opentype-font-variations.html
+  text: Introducing OpenType Font Variations (анонс от Google)
+- href: https://medium.com/variable-fonts/https-medium-com-tiro-introducing-opentype-variable-fonts-12ba6cd2369
+  text: Introducing OpenType Variable Fonts
+- href: https://developers.google.com/web/fundamentals/design-and-ux/typography/variable-fonts/
+  text: Introduction to variable fonts on the web
+- href: https://medium.com/clear-left-thinking/how-to-use-variable-fonts-in-the-real-world-e6d73065a604
+  text: How to use variable fonts in the real world
+- href: https://www.zeichenschatz.net/typografie/how-to-start-with-variable-fonts-on-the-web.html
+  text: How to start with variable fonts on the web
+- href: https://www.w3.org/TR/css-fonts-4/#font-variation-settings-def
+  text: font-variation-settings
+- href: https://docs.microsoft.com/ru-ru/typography/opentype/spec/otvaroverview
+  text: OpenType Font Variations Overview
+- href: https://docs.microsoft.com/ru-ru/typography/opentype/spec/dvaraxisreg#registered-axis-tags
+  text: Registered axis tags
+- href: https://www.w3.org/TR/css-fonts-3/#propdef-font-feature-settings
+  text: font-feature-settings
+- href: https://docs.microsoft.com/ru-ru/typography/opentype/spec/featuretags
+  text: Feature tags
+- href: https://docs.microsoft.com/ru-ru/typography/opentype/spec/featurelist
+  text: Features listed alphabetically
+- href: https://docs.microsoft.com/ru-ru/typography/opentype/spec/features_ae
+  text: Feature descriptions and implementations
+- href: https://www.typotheque.com/articles/opentype_features_in_css
+  text: OpenType features in CSS
+- href: https://fontdrop.info/
+  text: fontdrop.info
+- href: https://wakamaifondue.com/
+  text: wakamaifondue.com
 ---
 
 Вариативные (или настраиваемые) шрифты — это, без преувеличения, новая страница в веб-типографике. Настраиваемые шрифты стали возможны благодаря совместным усилиям компаний Microsoft, Apple, Adobe и Google. Концепция была впервые представлена в сентябре 2016 года, вместе с релизом <a href="https://docs.microsoft.com/ru-ru/typography/opentype/spec/">OpenType 1.8</a>.<!--more--> На самом деле, работы в этом направлении велись ещё в 90-х, но только широкое использование шрифтов в вебе дало этой идее вторую жизнь и бурное развитие.

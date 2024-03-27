@@ -9,22 +9,22 @@ tags: [a11y]
 customCSS: ally-for-logo.css
 
 links:
-- url: https://www.w3.org/WAI/tutorials/images/
-  name: "Web Accessibility Tutorials: Images Concepts"
-- url: http://www.freedomscientific.com/Products/Blindness/JAWS
-  name: "JAWS"
-- url: http://www.nvaccess.org/
-  name: "NVDA"
-- url: https://developers.google.com/search/docs/guides/intro-structured-data
-  name: "Руководство по микроразметке от Google"
-- url: https://webmaster.yandex.ru/tools/microtest/
-  name: "Валидатор микроразметки от Яндекса"
-- url: https://www.sitepoint.com/tips-accessible-svg/
-  name: "Tips for Creating Accessible SVG (By Léonie Watson)"
-- url: https://bitsofco.de/styling-broken-images/
-  name: "Styling Broken Images"
-- url: https://yoksel.github.io/ally-for-logo/
-  name: "Тестовая страница с логотипами"
+- href: https://www.w3.org/WAI/tutorials/images/
+  text: "Web Accessibility Tutorials: Images Concepts"
+- href: http://www.freedomscientific.com/Products/Blindness/JAWS
+  text: "JAWS"
+- href: http://www.nvaccess.org/
+  text: "NVDA"
+- href: https://developers.google.com/search/docs/guides/intro-structured-data
+  text: "Руководство по микроразметке от Google"
+- href: https://webmaster.yandex.ru/tools/microtest/
+  text: "Валидатор микроразметки от Яндекса"
+- href: https://www.sitepoint.com/tips-accessible-svg/
+  text: "Tips for Creating Accessible SVG (By Léonie Watson)"
+- href: https://bitsofco.de/styling-broken-images/
+  text: "Styling Broken Images"
+- href: https://yoksel.github.io/ally-for-logo/
+  text: "Тестовая страница с логотипами"
 ---
 
 Заинтересовалась вопросом: как лучше всего верстать логотипы на сайте? Как правильно и почему? Картинкой или фоном? Как логотип будет выглядеть при печати? Как обеспечить доступность для скринридеров и как сделать подсказки для поисковиков? <!--more-->

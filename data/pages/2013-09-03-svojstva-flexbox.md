@@ -4,8 +4,8 @@ title: Свойства Flexbox одной таблицей
 
 links_title: К статье
 links:
-- url: /flexbox
-  name: Flexbox
+- href: /flexbox
+  text: Flexbox
 ---
 
 Таблица свойств с сайта <a href="http://www.w3.org/TR/css3-flexbox/">w3.org/TR/css3-flexbox/</a>

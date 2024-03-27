@@ -4,10 +4,10 @@ title: Box-shadow
 tags: [box-shadow, pseudo-elements, draw-on-css]
 
 links:
-- url: /cells/
-  name: Клеточки на CSS
-- url: /shadowpainter/
-  name: Рисовалка анимированных теней
+- href: /cells/
+  text: Клеточки на CSS
+- href: /shadowpainter/
+  text: Рисовалка анимированных теней
 ---
 Свойство <code>box-shadow</code> позволяет добавить элементам одну или несколько теней.<!--more-->
 

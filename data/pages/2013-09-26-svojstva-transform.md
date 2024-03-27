@@ -4,10 +4,10 @@ title: Свойства Transform
 
 links_title: К статьям
 links:
-- url: /transform
-  name: Transform
-- url: /3d-cube
-  name: 3D cube
+- href: /transform
+  text: Transform
+- href: /3d-cube
+  text: 3D cube
 ---
 
 <table class="proptable">

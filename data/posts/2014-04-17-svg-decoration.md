@@ -6,16 +6,16 @@ tags: [svg]
 image: "//img-fotki.yandex.ru/get/9093/5091629.9d/0_814d9_aa20df1f_L.jpg"
 desc: "Внешний вид SVG-элементам можно задавать как с помощью CSS, так и с помощью SVG-фильтров, градиентов и паттернов — их можно прописывать элементам прямо в коде либо задавать также через CSS. Стили и скрипты можно задавать внутри SVG-файла, но если мы хотим, чтобы одно и то же изображение в разных условиях выглядело по-разному — стили внутри файла не годятся — нужно, чтобы векторное содержимое было доступно для внешних стилей"
 links:
-- url: "http://tympanus.net/codrops/2013/11/27/svg-icons-ftw/"
-  name: SVG icons FTW
-- url: "http://docs.webplatform.org/wiki/svg/tutorials/smarter_svg_filters"
-  name: SVG filters
-- url: "http://www.w3.org/TR/SVG11/filters.html"
-  name: Filter Effects
-- url: "/svg-fill-and-stroke"
-  name: "SVG: заливка и обводка"
-- url: "/svg-icons"
-  name: "SVG-иконки"
+- href: "http://tympanus.net/codrops/2013/11/27/svg-icons-ftw/"
+  text: SVG icons FTW
+- href: "http://docs.webplatform.org/wiki/svg/tutorials/smarter_svg_filters"
+  text: SVG filters
+- href: "http://www.w3.org/TR/SVG11/filters.html"
+  text: Filter Effects
+- href: "/svg-fill-and-stroke"
+  text: "SVG: заливка и обводка"
+- href: "/svg-icons"
+  text: "SVG-иконки"
 ---
 
 Внешний вид SVG-элементам можно задавать как с помощью CSS, так и с помощью SVG-фильтров, градиентов и паттернов — их можно прописывать элементам прямо в коде либо задавать также через CSS.

@@ -7,25 +7,25 @@ tags: [tools]
 desc: На днях сайт обновил движок. Последний раз это случалось в 2013-м, и тогда сайт переехал с Wordpress на Jekyll, сейчас — с Jekyll на Gatsby. Мои вопросы про Gatsby вызвали довольно оживленную дискуссию в твиттере, поэтому я решила отдельно рассказать про смену движка и опыт с Gatsby.
 
 links:
-- url: https://www.gatsbyjs.org/
-  name: Gatsby
-- url: https://jekyllrb.com/
-  name: Jekyll
-- url: https://graphql.org/
-  name: GraphQL
-- url: https://reactjs.org/
-  name: React
-- url: https://www.11ty.dev/
-  name: Eleventy
-- url: https://www.staticgen.com/
-  name: StaticGen
-- url: https://iainbean.com/posts/2020/your-blog-doesnt-need-a-javascript-framework/
-  name: Your blog doesn’t need a JavaScript framework
+- href: https://www.gatsbyjs.org/
+  text: Gatsby
+- href: https://jekyllrb.com/
+  text: Jekyll
+- href: https://graphql.org/
+  text: GraphQL
+- href: https://reactjs.org/
+  text: React
+- href: https://www.11ty.dev/
+  text: Eleventy
+- href: https://www.staticgen.com/
+  text: StaticGen
+- href: https://iainbean.com/posts/2020/your-blog-doesnt-need-a-javascript-framework/
+  text: Your blog doesn’t need a JavaScript framework
 ---
 
 На днях сайт обновил движок. Последний раз это случалось в [2013-м](/jekyll-vagrant) — тогда сайт переехал с Wordpress на [Jekyll](https://jekyllrb.com/), сейчас — с Jekyll на [Gatsby](https://www.gatsbyjs.org/).
 
-Мои вопросы про Gatsby вызвали довольно оживленную дискуссию в твиттере ([1](https://twitter.com/yoksel/status/1285960534261739526), [2](https://twitter.com/pepelsbey/status/1286232509915725824)), поэтому я решила отдельно рассказать про смену движка и опыт с Gatsby.
+Мои вопросы про Gatsby вызвали довольно оживленную дискуссию в твиттере ([1](https://twitter.com/yoksel/status/1285960534261739526), [2](https://twitter.com/pepelsbey/status/1286232509915725824)), поэтому я решила отдельно рассказать про смену движка и опыт с Gatsby.<!-more-->
 
 Поначалу Jekyll был довольно удобным, но со временем стал тесноват. Во-первых, сборка страниц и стилей мееедлееенная, во-вторых, он на Ruby, и если какие-то пакеты устаревали и сайт превращался в тыкву, приходилось срочно вспоминать/гуглить команды для обновления Ruby-пакетов. Когда сборка сайта запускается нечасто, и он на непривычной экосистеме, обновление может занять значительное время, а это не совсем то, чем хотелось бы заниматься, если изначально зашел просто поправить пару абзацев.
 

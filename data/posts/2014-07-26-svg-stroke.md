@@ -7,14 +7,14 @@ image: //img-fotki.yandex.ru/get/6741/5091629.a1/0_84606_4e6f483e_orig
 desc: Веселые приключения SVG-свойства stroke-width, а также несколько странный способ сделать кроссбраузерную анимацию масок.
 
 links:
-- url: http://www.w3.org/TR/SVG/masking.html
-  name: Clipping, Masking and Compositing
-- url: http://www.w3.org/TR/SVG/painting.html#StrokeProperties
-  name: Stroke Properties
-- url: /css-and-svg-masks/
-  name: CSS и SVG маски
-- url: /svg-shapes/
-  name: SVG-фигуры и трансформации
+- href: http://www.w3.org/TR/SVG/masking.html
+  text: Clipping, Masking and Compositing
+- href: http://www.w3.org/TR/SVG/painting.html#StrokeProperties
+  text: Stroke Properties
+- href: /css-and-svg-masks/
+  text: CSS и SVG маски
+- href: /svg-shapes/
+  text: SVG-фигуры и трансформации
 ---
 
 Экспериментируя с SVG можно обнаружить много странных моментов. Получить странное при манипуляциях с масштабированием ещё как-то ожидаемо, но внезапно сюрпризы преподнесло свойство <code>stroke-width</code>.

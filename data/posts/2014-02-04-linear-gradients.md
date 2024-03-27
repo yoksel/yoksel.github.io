@@ -7,14 +7,14 @@ image: //img-fotki.yandex.ru/get/9760/5091629.9b/0_7ee9b_73c4e981_XL.png
 desc: 'CSS-градиенты позволяют сделать фон из двух и более цветов, плавно переходящих из одного в другой. Они могут быть использованы везде, где используются картинки: в фонах, в качестве буллетов списков, они могут быть заданы в content или border-image.'
 
 links:
-- url: http://www.colorzilla.com/gradient-editor/
-  name: Ultimate CSS Gradient Generator
-- url: http://www.webdirections.org/resources/lea-verou-mastering-css3-gradients/
-  name: Презентация про градиенты от Lea Verou
-- url: http://leaverou.github.io/css-colors/
-  name: leaverou.github.io/css-colors
-- url: /tsveta
-  name: Цвета в Css
+- href: http://www.colorzilla.com/gradient-editor/
+  text: Ultimate CSS Gradient Generator
+- href: http://www.webdirections.org/resources/lea-verou-mastering-css3-gradients/
+  text: Презентация про градиенты от Lea Verou
+- href: http://leaverou.github.io/css-colors/
+  text: leaverou.github.io/css-colors
+- href: /tsveta
+  text: Цвета в Css
 ---
 
 CSS-градиенты позволяют сделать фон из двух и более цветов, плавно переходящих из одного в другой.

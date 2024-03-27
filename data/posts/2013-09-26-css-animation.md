@@ -6,10 +6,10 @@ tags: [animation]
 desc: Анимация позволяет оживлять элементы страницы. Можно управлять длительностью анимации, повторением, направлением, типом движения и шагами. Анимировать можно любые элементы, в том числе псевдо-элементы.
 
 links:
-- url: /pages/svojstva-animation
-  name: Свойства Animation одной таблицей
-- url: /3d-and-gradients/
-  name: СSS-градиенты и 3D
+- href: /pages/svojstva-animation
+  text: Свойства Animation одной таблицей
+- href: /3d-and-gradients/
+  text: СSS-градиенты и 3D
 ---
 
 <section>Свойство <code>animation</code> позволяет анимировать элементы страницы.

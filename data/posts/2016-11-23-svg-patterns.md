@@ -7,10 +7,10 @@ desc: 'pattern — это элемент, который можно исполь
 tags: [svg, patterns]
 
 links:
-- url: http://www.w3.org/TR/SVG/pservers.html#Patterns
-  name: Patterns
-- url: https://codepen.io/collection/AyaLRg
-  name: Коллекция демо с SVG-паттернами
+- href: http://www.w3.org/TR/SVG/pservers.html#Patterns
+  text: Patterns
+- href: https://codepen.io/collection/AyaLRg
+  text: Коллекция демо с SVG-паттернами
 ---
 
 <code>pattern</code> — это элемент, который можно использовать в качеcтве заливки или обводки. Содержимое паттерна может быть самым разным: фигуры, символы, текст или растровые изображения — в любых сочетаниях.

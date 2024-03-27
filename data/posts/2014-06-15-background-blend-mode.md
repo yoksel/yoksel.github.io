@@ -7,24 +7,24 @@ image: //img-fotki.yandex.ru/get/6728/5091629.a0/0_83425_21180cd2_orig.png
 desc: Режимы смешивания в Firefox 30 или новые приключения CSS-градиентов.
 
 links:
-- url: http://www.w3.org/TR/2014/CR-compositing-1-20140220/#background-blend-mode
-  name: The background-blend-mode property
-- url: http://blogs.adobe.com/webplatform/2014/06/12/background-blending-now-available-in-firefox-30/
-  name: Background blending now available in Firefox 30
-- url: http://bennettfeely.com/gradients/
-  name: Gradients gallery
-- url: http://dev.opera.com/articles/getting-to-know-css-blend-modes/
-  name: Getting to know CSS Blend Modes
-- url: /css-patterns/
-  name: CSS-паттерны
-- url: /new-patterns/
-  name: Свежие CSS-паттерны
-- url: /3d-and-gradients/
-  name: СSS-градиенты и 3D
-- url: http://prgssr.ru/development/sekrety-rezhimov-nalozheniya.html
-  name: Секреты режимов наложения
-- url: http://una.im/vintage-washout/
-  name: CSS Image Effects
+- href: http://www.w3.org/TR/2014/CR-compositing-1-20140220/#background-blend-mode
+  text: The background-blend-mode property
+- href: http://blogs.adobe.com/webplatform/2014/06/12/background-blending-now-available-in-firefox-30/
+  text: Background blending now available in Firefox 30
+- href: http://bennettfeely.com/gradients/
+  text: Gradients gallery
+- href: http://dev.opera.com/articles/getting-to-know-css-blend-modes/
+  text: Getting to know CSS Blend Modes
+- href: /css-patterns/
+  text: CSS-паттерны
+- href: /new-patterns/
+  text: Свежие CSS-паттерны
+- href: /3d-and-gradients/
+  text: СSS-градиенты и 3D
+- href: http://prgssr.ru/development/sekrety-rezhimov-nalozheniya.html
+  text: Секреты режимов наложения
+- href: http://una.im/vintage-washout/
+  text: CSS Image Effects
 ---
 
 На этой неделе в <a href="https://developer.mozilla.org/en-US/Firefox/Releases/30">Firefox 30</a> было включено по умолчанию свойство <code>background-blend-mode</code>. Таким образом, Firefox стал третьим браузером, поддерживающим это свойство (два других — Opera и Chrome). Safari будет поддерживать это свойство в следующей версии, про планы IE мне ничего найти не удалось.

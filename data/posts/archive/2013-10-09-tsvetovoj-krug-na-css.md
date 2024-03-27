@@ -6,16 +6,16 @@ tags: [experiments]
 desc: На css-tricks.com опубликовали интересный способ получить цветовой круг с помощью Css. В уроке код для SASS, я попробовала сделать это простым CSS и используя меньшее количество элементов.
 
 links:
-- url: http://docs.webplatform.org/wiki/svg/tutorials/smarter_svg_filters
-  name: docs.webplatform.org/wiki/svg/tutorials/smarter_svg_filters
-- url: http://dev.w3.org/fxtf/filters/
-  name: http://dev.w3.org/fxtf/filters/
-- url: http://css-tricks.com/svg-filters-on-text/
-  name: css-tricks.com/svg-filters-on-text/
-- url: http://www.html5rocks.com/en/tutorials/filters/understanding-css/
-  name: html5rocks.com/en/tutorials/filters/understanding-css/
-- url: https://codepen.io/indigane/pen/lbLjs
-  name: codepen.io/indigane/pen/lbLjs
+- href: http://docs.webplatform.org/wiki/svg/tutorials/smarter_svg_filters
+  text: docs.webplatform.org/wiki/svg/tutorials/smarter_svg_filters
+- href: http://dev.w3.org/fxtf/filters/
+  text: http://dev.w3.org/fxtf/filters/
+- href: http://css-tricks.com/svg-filters-on-text/
+  text: css-tricks.com/svg-filters-on-text/
+- href: http://www.html5rocks.com/en/tutorials/filters/understanding-css/
+  text: html5rocks.com/en/tutorials/filters/understanding-css/
+- href: https://codepen.io/indigane/pen/lbLjs
+  text: codepen.io/indigane/pen/lbLjs
 ---
 
 На  <a href="http://css-tricks.com/">css-tricks.com</a> опубликовали интересный способ получить цветовой круг с помощью Css: <a href="http://css-tricks.com/conical-gradients-css/">css-tricks.com/conical-gradients-css</a>.

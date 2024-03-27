@@ -1,17 +1,17 @@
-- url: https://yoksel.github.io/flex-cheatsheet/
-  name: Flexbox cheatsheet
+- href: https://yoksel.github.io/flex-cheatsheet/
+  text: Flexbox cheatsheet
 
-- url: https://github.com/yoksel/pixel-glass-js
-  name: Pixel Glass
+- href: https://github.com/yoksel/pixel-glass-js
+  text: Pixel Glass
 
-- url: https://yoksel.github.io/html-tree/
-  name: HTML Tree
+- href: https://yoksel.github.io/html-tree/
+  text: HTML Tree
 
-- url: https://yoksel.github.io/handy-colors/
-  name: Handy colors
+- href: https://yoksel.github.io/handy-colors/
+  text: Handy colors
 
-- url: https://yoksel.github.io/unicode-table/
-  name: Символы юникода
+- href: https://yoksel.github.io/unicode-table/
+  text: Символы юникода
 
-- url: https://yoksel.github.io/url-encoder/
-  name: URL-encoder для SVG
+- href: https://yoksel.github.io/url-encoder/
+  text: URL-encoder для SVG

@@ -5,10 +5,10 @@ desc: Продолжение справочника по селекторам.
 tags: [selectors]
 
 links:
-- url: /specifity/
-  name: Сколько весят селекторы?
-- url: /pages/css-selectors
-  name: CSS-селекторы одной таблицей
+- href: /specifity/
+  text: Сколько весят селекторы?
+- href: /pages/css-selectors
+  text: CSS-селекторы одной таблицей
 ---
 
 Начало тут: <a href="/css-selectors">Css-селекторы</a>.<!--more-->

@@ -9,18 +9,18 @@ desc: 'Писать SVG довольно просто. Используются 
 customContent: '../assets/img/svg/css-svg-masks.svg'
 
 links:
-- url: http://www.w3.org/TR/SVG/shapes.html
-  name: Basic Shapes
-- url: http://www.w3.org/TR/SVG/coords.html#TransformAttribute
-  name: The ‘transform’ attribute
-- url: http://caniuse.com/#search=svg
-  name: Browsers support for SVG
-- url: http://www.adobe.com/ru/products/illustrator.html
-  name: Adobe Illustrator
-- url: http://www.bohemiancoding.com/sketch/
-  name: Sketch
-- url: http://www.inkscape.org/en/
-  name: Inkscape
+- href: http://www.w3.org/TR/SVG/shapes.html
+  text: Basic Shapes
+- href: http://www.w3.org/TR/SVG/coords.html#TransformAttribute
+  text: The ‘transform’ attribute
+- href: http://caniuse.com/#search=svg
+  text: Browsers support for SVG
+- href: http://www.adobe.com/ru/products/illustrator.html
+  text: Adobe Illustrator
+- href: http://www.bohemiancoding.com/sketch/
+  text: Sketch
+- href: http://www.inkscape.org/en/
+  text: Inkscape
 ---
 
 <a href="/svg">&larr; Начало про SVG</a>

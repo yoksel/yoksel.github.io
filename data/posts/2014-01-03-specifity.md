@@ -9,14 +9,14 @@ image: //img-fotki.yandex.ru/get/9797/5091629.9a/0_7ec6f_cda36757_M.png
 desc: Все CSS-селекторы имеют свой вес, который определяет как взаимодействуют одинаковые свойства, заданные в разных местах кода одному и тому же элементу.
 
 links:
-- url: http://css-tricks.com/specifics-on-css-specificity/
-  name: Specifics on CSS Specificity
-- url: http://coding.smashingmagazine.com/2007/07/27/css-specificity-things-you-should-know/
-  name: 'CSS Specificity: Things You Should Know'
-- url: http://cssspecificity.com/
-  name: Специфичность в комиксах
-- url: http://www.stuffandnonsense.co.uk/archives/css_specificity_wars.html
-  name: Специфичность на примере "Звёздных войн"
+- href: http://css-tricks.com/specifics-on-css-specificity/
+  text: Specifics on CSS Specificity
+- href: http://coding.smashingmagazine.com/2007/07/27/css-specificity-things-you-should-know/
+  text: 'CSS Specificity: Things You Should Know'
+- href: http://cssspecificity.com/
+  text: Специфичность в комиксах
+- href: http://www.stuffandnonsense.co.uk/archives/css_specificity_wars.html
+  text: Специфичность на примере "Звёздных войн"
 ---
 
 Все CSS-селекторы имеют свой вес, который определяет как взаимодействуют одинаковые свойства, заданные в разных местах кода одному и тому же элементу.<!--more-->

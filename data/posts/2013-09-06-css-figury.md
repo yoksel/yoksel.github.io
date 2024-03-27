@@ -6,16 +6,16 @@ tags: [borders, box-shadow, pseudo-elements, draw-on-css]
 desc: Фигуры с помощью CSS — тема богатая и интересная. Помимо базовых фигур, используя тени и псевдоэлементы можно сделать много всякого другого, причем некоторые фигуры можно сделать двумя и более способами.
 
 links:
-- url: http://css-tricks.com/examples/ShapesOfCSS/
-  name: The Shapes of CSS
-- url: http://nicolasgallagher.com/pure-css-gui-icons/demo/
+- href: http://css-tricks.com/examples/ShapesOfCSS/
+  text: The Shapes of CSS
+- href: http://nicolasgallagher.com/pure-css-gui-icons/demo/
   desc: целое семейство иконок, сделанных на чистом Css
-- url: /box-shadow
-  name: Box shadow
-- url: /transform
-  name: Transform
-- url: /border-radius
-  name: Border radius
+- href: /box-shadow
+  text: Box shadow
+- href: /transform
+  text: Transform
+- href: /border-radius
+  text: Border radius
 ---
 
 Фигуры с помощью CSS — тема богатая и интересная. Помимо базовых фигур, используя тени и псевдоэлементы можно сделать много всякого другого, причем некоторые фигуры можно сделать двумя и более способами.

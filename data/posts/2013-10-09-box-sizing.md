@@ -6,8 +6,8 @@ tags: [layout]
 desc: Свойство box-sizing позволяет указать как ведут себя размеры блока при наличии рамок и полей.
 
 links:
-- url: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-  name: '* { Box-sizing: Border-box } FTW'
+- href: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+  text: '* { Box-sizing: Border-box } FTW'
 ---
 
 Свойство <code>box-sizing</code> позволяет указать как ведут себя размеры блока при наличии рамок и полей.

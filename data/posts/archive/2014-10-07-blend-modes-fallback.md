@@ -7,26 +7,26 @@ image: //img-fotki.yandex.ru/get/4805/5091629.a1/0_855c2_8fe321a9_M.jpg
 desc: Не так давно в Firefox 32 включили поддержку mix-blend-mode, a в Chrome 37 — CSS shapes. Обе технологии выглядят очень интересно, так что я решила попробовать их в действии, заодно выяснив как будет выглядеть страница в браузерах, где они не поддерживаются.
 
 links:
-- url: http://dev.w3.org/fxtf/compositing-1
-  name: Compositing and Blending Level 1
-- url: http://caniuse.com/#feat=css-backgroundblendmode
-  name: background-blend-mode
-- url: http://caniuse.com/#feat=css-mixblendmode
-  name: mix-blend-mode
-- url: http://dev.w3.org/csswg/css-shapes/
-  name: CSS Shapes Module Level 1
-- url: http://caniuse.com/#feat=css-shapes
-  name: CSS Shapes
-- url: http://www.w3.org/TR/SVG/filters.html
-  name: SVG Filter Effects
-- url: http://caniuse.com/#feat=svg-filters
-  name: SVG filters
-- url: /background-blend-mode/
-  name: Background-blend-mode
-- url: /css-and-svg-masks
-  name: CSS и SVG маски
-- url: /svg-in-ie8
-  name: Грабли на чистом SVG
+- href: http://dev.w3.org/fxtf/compositing-1
+  text: Compositing and Blending Level 1
+- href: http://caniuse.com/#feat=css-backgroundblendmode
+  text: background-blend-mode
+- href: http://caniuse.com/#feat=css-mixblendmode
+  text: mix-blend-mode
+- href: http://dev.w3.org/csswg/css-shapes/
+  text: CSS Shapes Module Level 1
+- href: http://caniuse.com/#feat=css-shapes
+  text: CSS Shapes
+- href: http://www.w3.org/TR/SVG/filters.html
+  text: SVG Filter Effects
+- href: http://caniuse.com/#feat=svg-filters
+  text: SVG filters
+- href: /background-blend-mode/
+  text: Background-blend-mode
+- href: /css-and-svg-masks
+  text: CSS и SVG маски
+- href: /svg-in-ie8
+  text: Грабли на чистом SVG
 
 ---
 Не так давно в <a href="https://developer.mozilla.org/en-US/Firefox/Releases/32">Firefox 32</a> включили поддержку <code>mix-blend-mode</code>, a в <a href="http://www.chromestatus.com/features/5163890719588352">Chrome 37</a> — <a href="http://dev.w3.org/csswg/css-shapes/">CSS shapes</a>, то есть возможность управлять формой, по которой текст будет обтекать элемент. Обе технологии выглядят очень интересно, так что я решила попробовать их в действии, заодно выяснив как будет выглядеть страница в браузерах, где они не поддерживаются.

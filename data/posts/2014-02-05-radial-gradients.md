@@ -7,16 +7,16 @@ image: //img-fotki.yandex.ru/get/9322/5091629.9b/0_7ee9c_26f15295_L.png
 desc: Радиальные градиенты работают иначе, чем линейные. Если цвета линейных располагаются перпендикулярно линии, задающей направление, то в радиальных цвета расходятся от заданного центра, а градиент может принимать форму круга или эллипса.
 
 links:
-- url: http://www.colorzilla.com/gradient-editor/
-  name: Ultimate CSS Gradient Generator
-- url: http://leaverou.github.io/css-colors/
-  name: leaverou.github.io/css-colors
-- url: http://www.webdirections.org/resources/lea-verou-mastering-css3-gradients/
-  name: Презентация про градиенты от Lea Verou
-- url: /tsveta
-  name: Цвета в Css
-- url: /3d-and-gradients/
-  name: СSS-градиенты и 3D
+- href: http://www.colorzilla.com/gradient-editor/
+  text: Ultimate CSS Gradient Generator
+- href: http://leaverou.github.io/css-colors/
+  text: leaverou.github.io/css-colors
+- href: http://www.webdirections.org/resources/lea-verou-mastering-css3-gradients/
+  text: Презентация про градиенты от Lea Verou
+- href: /tsveta
+  text: Цвета в Css
+- href: /3d-and-gradients/
+  text: СSS-градиенты и 3D
 ---
 
 Радиальные градиенты отрисовываются иначе, чем линейные. Если цвета линейных располагаются перпендикулярно линии, задающей направление, то в радиальных цвета расходятся от заданного центра, а градиент может принимать форму круга или эллипса.

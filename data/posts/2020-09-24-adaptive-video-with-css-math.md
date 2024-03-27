@@ -8,33 +8,33 @@ tags: [css-math]
 desc: Как можно при ресайзе подогнать видео по высоте без дополнительных обёрток и JS?
 
 links:
-- url: https://drafts.csswg.org/css-sizing-4/#ratios
-  name: 'aspect-ratio'
-- url: https://www.smashingmagazine.com/2019/03/aspect-ratio-unit-css/
-  name: Designing An Aspect Ratio Unit For CSS
-- url: https://stackoverflow.com/questions/6148012/setting-element-width-based-on-height-via-css
-  name: Setting Element Width Based on Height Via CSS
-- url: https://stackoverflow.com/questions/1495407/maintain-the-aspect-ratio-of-a-div-with-css
-  name: Maintain the aspect ratio of a div with CSS
-- url: https://css-tricks.com/fluid-width-video/
-  name: Fluid Width Video
-- url: https://www.w3.org/TR/css-values-4/#calc-notation
-  name: 'Mathematical Expressions: calc(), min(), max(), and clamp()'
-- url: https://www.w3.org/TR/css-values-3/#attr-notation
-  name: 'Attribute References: attr()'
-- url: https://developer.mozilla.org/en-US/docs/Web/CSS/attr
-  name: 'attr()'
-- url: https://css-tricks.com/when-sass-and-new-css-features-collide/
-  name: 'When Sass and New CSS Features Collide'
-- url: /size-units/#relative-units
-  name: Единицы размеров в CSS
-- url: /css-math
-  name: Математические функции в CSS
+- href: https://drafts.csswg.org/css-sizing-4/#ratios
+  text: 'aspect-ratio'
+- href: https://www.smashingmagazine.com/2019/03/aspect-ratio-unit-css/
+  text: Designing An Aspect Ratio Unit For CSS
+- href: https://stackoverflow.com/questions/6148012/setting-element-width-based-on-height-via-css
+  text: Setting Element Width Based on Height Via CSS
+- href: https://stackoverflow.com/questions/1495407/maintain-the-aspect-ratio-of-a-div-with-css
+  text: Maintain the aspect ratio of a div with CSS
+- href: https://css-tricks.com/fluid-width-video/
+  text: Fluid Width Video
+- href: https://www.w3.org/TR/css-values-4/#calc-notation
+  text: 'Mathematical Expressions: calc(), min(), max(), and clamp()'
+- href: https://www.w3.org/TR/css-values-3/#attr-notation
+  text: 'Attribute References: attr()'
+- href: https://developer.mozilla.org/en-US/docs/Web/CSS/attr
+  text: 'attr()'
+- href: https://css-tricks.com/when-sass-and-new-css-features-collide/
+  text: 'When Sass and New CSS Features Collide'
+- href: /size-units/#relative-units
+  text: Единицы размеров в CSS
+- href: /css-math
+  text: Математические функции в CSS
 ---
 
 Когда я в твиттере спросила для чего могут быть нужны в CSS [типизированные значения атрибутов](https://www.w3.org/TR/css-values-3/#attr-notation), Вадим Макеев [предположил](https://twitter.com/pepelsbey/status/1304036385599508480), что это было бы очень удобно для адаптивных картинок.
 
-Но я подумала, что картинки как-то [умеют](https://codepen.io/yoksel/pen/wvGNrro) при ресайзе изменять высоту, сохраняя пропорции, а вот фреймы — совсем нет. При этом на адаптивных сайтах важно иметь возможность подгонять под ширину окна любой контент, и видео тоже. Что тут можно сделать?
+Но я подумала, что картинки как-то [умеют](https://codepen.io/yoksel/pen/wvGNrro) при ресайзе изменять высоту, сохраняя пропорции, а вот фреймы — совсем нет. При этом на адаптивных сайтах важно иметь возможность подгонять под ширину окна любой контент, и видео тоже. Что тут можно сделать?<!-more-->
 
 Для решения этой задачи существуют [разные способы](https://css-tricks.com/fluid-width-video/): дополнительная обёртка с паддингом или варианты с JS, но простого изящного решения на чистом CSS до сих пор нет. В черновиках W3C для этих целей есть свойство [aspect-ratio](https://drafts.csswg.org/css-sizing-4/#ratios), подробнее про него можно почитать в статье [Designing An Aspect Ratio Unit For CSS](https://www.smashingmagazine.com/2019/03/aspect-ratio-unit-css/), но на данный момент оно [не поддерживается](https://caniuse.com/mdn-css_properties_aspect-ratio) ни одним браузером ([демо для потестить](https://codepen.io/yoksel/pen/WNwPEoV)).
 
