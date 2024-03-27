@@ -3,20 +3,13 @@ import { v4 as uuidv4 } from 'uuid';
 import classNames from 'classnames';
 import FadedText from '../../atoms/FadedText';
 import Link from '../../atoms/Link';
+import { PageUrl } from '../../../types';
 
 import styles from './styles.module.scss';
 
-type HrefOrId = { id: string } | { href: string };
-
-type PostLink = {
-  text?: string;
-  level?: number;
-  desc?: string;
-} & HrefOrId;
-
 interface PostLinksProps {
   title: string;
-  items: PostLink[];
+  items: PageUrl[];
 }
 
 const PostLinks = ({ title, items }: PostLinksProps) => {
