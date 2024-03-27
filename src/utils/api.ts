@@ -4,11 +4,12 @@ import fs from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
-import { ArticleData, ArticleType } from '../types';
+import { ArticleData, ArticleType, DataBySlag } from '../types';
 import customMarkdownToHtml from './customMarkdownToHtml';
 import { getSectionsList } from './getSectionsList';
+import { postsDataBySlug, pagesDataBySlug } from '../../data/meta/articlesDataBySlug';
 
-const getDirectory = (type: ArticleType = 'post') => {
+export const getDirectory = (type: ArticleType = 'post') => {
   let directoryPath = 'data/posts';
 
   if (type === 'page') {
@@ -20,10 +21,6 @@ const getDirectory = (type: ArticleType = 'post') => {
 
   return join(process.cwd(), directoryPath);
 };
-
-export function getArticlesSlugs(type: ArticleType = 'post'): string[] {
-  return fs.readdirSync(getDirectory(type));
-}
 
 type Fields = (keyof ArticleData)[];
 
@@ -38,14 +35,16 @@ export async function getArticleBySlug({
   fields = [],
   type = 'post',
 }: getArticleBySlugArgs): Promise<ArticleData | undefined> {
-  const realSlug = slug.replace(/\.md$/, '');
-  const slugWithMd = `${realSlug}.md`;
-  const fullPath = join(getDirectory(type), slugWithMd);
+  const articlesDataByType: DataBySlag = type === 'page' ? pagesDataBySlug : postsDataBySlug;
+  const slugWithSlash = slug.startsWith('/') ? slug : `/${slug}`;
+  const articlesData = articlesDataByType[slugWithSlash];
 
-  if (!fs.existsSync(fullPath)) {
-    console.log(`Slug not found: ${fullPath}`);
+  if (!articlesData) {
+    console.log(`Slug not found: ${slug}`);
     return;
   }
+
+  const fullPath = join(getDirectory(type), articlesData.fullSlug);
 
   const moreDelimiter = '<!--more-->';
 
@@ -59,7 +58,7 @@ export async function getArticleBySlug({
     // Ensure only the minimal needed data is exposed
     fields.forEach((field: keyof ArticleData) => {
       if (field === 'slug') {
-        filteredFields['slug'] = realSlug;
+        filteredFields['slug'] = slug;
       } else if (field === 'content') {
         filteredFields['content'] = customMarkdownToHtml(content).replace(moreDelimiter, '');
       } else if (field === 'excerpt') {
@@ -82,9 +81,8 @@ export async function getArticleBySlug({
       }
     }
 
-    const date = realSlug?.match(/\d{4}-\d{2}-\d{2}/)?.[0];
-    if (date) {
-      filteredFields.date = date;
+    if (articlesData.date) {
+      filteredFields.date = articlesData.date;
     }
 
     return filteredFields;
@@ -94,9 +92,10 @@ export async function getArticleBySlug({
 }
 
 export async function getAllArticles(fields: Fields = [], type: ArticleType = 'post') {
-  const slugs = getArticlesSlugs(type);
+  const articlesDataByType: DataBySlag = type === 'page' ? pagesDataBySlug : postsDataBySlug;
+  const slugs = Object.keys(articlesDataByType);
   const articlesPromises = slugs.map(async (slug) => {
-    const article = await getArticleBySlug({ slug, fields });
+    const article = await getArticleBySlug({ slug, fields, type });
 
     if (!article) return;
     const transformed = { ...article, href: article.slug, text: article.title, type };

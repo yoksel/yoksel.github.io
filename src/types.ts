@@ -27,3 +27,12 @@ export interface ArticleData {
   layout?: 'onecolumn';
   disableCounter?: boolean;
 }
+
+export interface SlugData {
+  date: string;
+  fullSlug: string;
+}
+
+export interface DataBySlag {
+  [key: string]: SlugData;
+}
