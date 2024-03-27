@@ -3,6 +3,7 @@ import customMarkdownToHtml, {
   addAnchorsReplacer,
   addHighlightingReplacer,
   addLinksReplacer,
+  addParagraphs,
 } from './customMarkdownToHtml';
 
 const expectedResultForCssCode = `<figure aria-label="Пример кода"><pre class="language-css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">{</span><span class="token property">color</span><span class="token punctuation">:</span> pink<span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre></figure>`;
@@ -32,6 +33,22 @@ describe('addLinksReplacer()', () => {
     const result = addLinksReplacer(null, 'hello', 'http://hello.com');
 
     expect(result).toBe(expectedResultForLink);
+  });
+});
+
+describe('addParagraphs()', () => {
+  test('to wrap with paragraphs', () => {
+    const result = addParagraphs('lorem ipsum\n\nlorem ipsum');
+    const expectedResult = `<p>lorem ipsum</p>\n\n<p>lorem ipsum</p>`;
+
+    expect(result).toBe(expectedResult);
+  });
+
+  test('to wrap with paragraphs', () => {
+    const string = `lorem ipsum
+    lorem ipsum`;
+
+    expect(addParagraphs(string)).toBe(string);
   });
 });
 
