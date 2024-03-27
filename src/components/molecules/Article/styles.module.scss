@@ -1,4 +1,4 @@
-@import "../../scss/globals.scss";
+// @import "../../scss/globals.scss";
 
 .post {
   word-break: break-word;
@@ -154,19 +154,19 @@
   LI,
   DD {
     margin-bottom: .75rem;
+    margin-left: 25px;
+
+    &::before {
+      content: "\2014";
+      position: absolute;
+      margin-left: -20px;
+      color: #AAA;
+    }
   }
 
   UL UL LI,
   OL OL LI {
     margin-top: .75rem;
-  }
-
-  DL:not(.no-bullets) DD {
-    @include item-with-dash;
-  }
-
-  UL:not(.no-bullets) LI {
-    @include item-with-dash;
   }
 
   OL {
@@ -190,21 +190,6 @@
     margin-top: 2rem;
   }
 }
-
-/* stylelint-disable declaration-no-important, no-descending-specificity */
-.post__share {
-  margin-top: 1.5rem;
-}
-
-.post__share LI {
-  margin: 0 .75rem 0 0 !important;
-
-  &::before,
-  & A::before {
-    content: none !important;
-  }
-}
-/* stylelint-enable declaration-no-important, no-descending-specificity */
 
 .post__header {
   display: flex;
@@ -262,14 +247,14 @@
   background-size: 80% 80%;
   border-radius: 50%;
   border: 5px solid #FFF;
-  box-shadow: -2px 0 5px $base-shadow-color;
+  box-shadow: -2px 0 5px var(--base-shadow-color);
   transform: translateX(var(--translateX));
   transition: all .5s;
   opacity: 1;
 
   &:hover,
   &:active {
-    background-color: $base-link-color;
+    background-color: var(--base-link-color);
     transform: translateX(var(--translateX)) rotate(-90deg);
   }
 
@@ -287,27 +272,3 @@
   opacity: 0;
 }
 
-.post__load-comments {
-  display: block;
-  width: 100%;
-  padding: .5rem;
-  background: none;
-  border: 1px solid;
-  text-align: center;
-  font: inherit;
-  color: $base-link-color;
-  cursor: pointer;
-
-  &:hover {
-    opacity: .75;
-  }
-}
-
-.no-js .post__load-comments {
-  display: none;
-}
-
-.dsq-brlink {
-  width: 100%;
-  text-align: center;
-}
