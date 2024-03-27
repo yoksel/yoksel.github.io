@@ -15,7 +15,7 @@ const Stars = ({ children }: React.PropsWithChildren) => {
       className={styles['widget__stars']}
       title="Звёзд на гитхабе"
     >
-      <VisuallyHiddenText>Звёзд на гитхабе:</VisuallyHiddenText>
+      <VisuallyHiddenText element="span">Звёзд на гитхабе:</VisuallyHiddenText>
       {children}
     </span>
   );
@@ -66,6 +66,7 @@ export interface WidgetItem {
   text: string;
   href: string;
   desc?: string;
+  excerpt?: string;
   stars?: number;
   event?: Event;
 }

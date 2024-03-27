@@ -1,7 +1,7 @@
 import styles from './styles.module.scss';
 
 interface VisuallyHiddenTextProps extends React.PropsWithChildren {
-  element?: 'div' | 'h2' | 'h3';
+  element?: 'span' | 'div' | 'h2' | 'h3';
 }
 
 const VisuallyHiddenText = ({ element: Element = 'div', children }: VisuallyHiddenTextProps) => (
