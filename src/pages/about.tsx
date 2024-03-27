@@ -1,88 +1,62 @@
 import React from 'react';
 import type { InferGetStaticPropsType, GetStaticProps } from 'next';
-import PropTypes from 'prop-types';
-import LayoutBase from '../layouts/layout-base';
 
-import profilesData from '../data/meta/profiles.json';
-import presentationsData from '../data/meta/presentations.json';
-import Widget from '../components/widget';
-import markdownToHtml from '../utils/markdownToHtml';
-import { getArticleBySlug } from '../utils/api';
-import { Post } from '../types';
-import Layout from '../components/layout';
-import Article from '../components/article';
+import Widget, { WidgetItem } from '../components/molecules/Widget';
+import { getAllArticles, getArticleBySlug } from '../utils/api';
+import { ArticleData } from '../types';
+import Layout from '../components/molecules/Layout';
+
+import profilesData from '../../data/meta/profiles.json';
+import presentationsData from '../../data/meta/presentations.json';
 
 export const getStaticProps = (async () => {
-  const post = getArticleBySlug({
+  const article = await getArticleBySlug({
     slug: 'about',
     fields: ['title', 'slug', 'content', 'links', 'additional_links'],
     type: 'service-page',
   });
 
-  console.log(post);
-
-  if (!post) {
-    throw new Error('Post not found');
+  if (!article) {
+    throw new Error('Article not found');
   }
 
-  // const allPosts = getAllPosts(['title', 'slug', 'order']);
+  const posts = (await getAllArticles(['title', 'slug', 'order'], 'post')) as WidgetItem[];
+  const pages = (await getAllArticles(['title', 'slug', 'order'], 'page')) as WidgetItem[];
 
-  return { props: { post, allPosts: [] } };
+  return { props: { article, posts, pages } };
 }) satisfies GetStaticProps<{
-  post: Post;
-  allPosts: Post[];
+  article: ArticleData;
+  posts: WidgetItem[];
+  pages: WidgetItem[];
 }>;
 
 export default function Page({
-  post,
-  allPosts,
+  article,
+  posts,
+  pages,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const content = markdownToHtml(post?.content || '');
-
-  console.log(content);
+  const slug = '/about';
 
   return (
     <Layout
-      slug={post.slug!}
-      post={post}
-      allPosts={allPosts}
+      isMain={false}
+      article={article}
+      posts={posts}
+      pages={pages}
     >
-      <Article content={content} />
+      <Widget
+        title="Презентации"
+        items={presentationsData}
+        id="presentations"
+        slug={slug}
+      />
+
+      <Widget
+        title="Профили на других сайтах"
+        items={profilesData}
+        id="profiles"
+        slug={slug}
+      />
     </Layout>
   );
 }
-
-interface AboutProps {
-  data: {};
-  path: string;
-}
-
-const About = ({ data, path }: AboutProps) => {
-  // const { html: content, frontmatter, fields } = data.markdownRemark;
-
-  // const pageData = {
-  //   ...frontmatter,
-  //   ...fields,
-  //   content
-  // };
-
-  return <div>hello</div>;
-
-  // return (
-  //   <LayoutBase
-  //     path={path}
-  //     pageData={pageData}>
-  //     <Widget
-  //       title="Презентации"
-  //       items={presentationsData}
-  //     />
-
-  //     <Widget
-  //       title="Профили на других сайтах"
-  //       items={profilesData}
-  //     />
-  //   </LayoutBase>
-  // );
-};
-
-// export default About;
