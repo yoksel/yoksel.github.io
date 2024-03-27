@@ -46,7 +46,7 @@ links:
 
 <svg class="svg" width="230" height="140"><rect x="5" y="5" width="220" height="130" fill="skyblue" stroke="steelblue" stroke-width="5" /></svg>
 
-```markup
+```html
 <svg width="230" height="140">
   <rect x="5" y="5" width="220" height="130"
     fill="skyblue" stroke="steelblue" stroke-width="5"
@@ -61,7 +61,7 @@ links:
 
 <svg class="svg" width="230" height="140"><rect x="5" y="5" width="220" height="130" rx="20" fill="yellowgreen" stroke="green" stroke-width="5" /></svg>
 
-```markup
+```html
 <svg width="230" height="140">
   <rect x="5" y="5" width="220" height="130" rx="20"
     fill="yellowgreen" stroke="green" stroke-width="5"
@@ -73,7 +73,7 @@ links:
 
 <svg class="svg" width="230" height="140"><rect x="5" y="5" width="220" height="130" rx="10" ry="50" fill="khaki" stroke="darkkhaki" stroke-width="5" /></svg>
 
-```markup
+```html
 <svg width="230" height="140">
   <rect x="5" y="5" width="220" height="130" rx="10" ry="50"
     fill="khaki" stroke="darkkhaki" stroke-width="5"
@@ -85,7 +85,7 @@ links:
 
 <svg class="svg" width="230" height="140"><polygon points="5,135 115,5 225,135" fill="violet" stroke="purple" stroke-width="5" /></svg>
 
-```markup
+```html
 <svg width="230" height="140">
   <polygon points="5,135 115,5 225,135"
     fill="violet" stroke="purple" stroke-width="5"
@@ -95,7 +95,7 @@ links:
 
 <svg class="svg" width="140" height="130"><polygon points="70,5 90,41 136,48 103,80 111,126 70,105 29,126 36,80 5,48 48,41" fill="turquoise" stroke="lightseagreen" stroke-width="5" /></svg>
 
-```markup
+```html
 <svg width="140" height="130">
   <polygon
     points="70,5 90,41 136,48 103,80 111,126 70,105 29,126 36,80 5,48 48,41"
@@ -112,7 +112,7 @@ links:
 
 <svg class="svg" width="140" height="140"><circle r="65" cx="70" cy="70" fill="orangered" stroke="crimson" stroke-width="5" /></svg>
 
-```markup
+```html
 <svg width="140" height="140">
   <circle r="65" cx="70" cy="70"
     fill="orangered" stroke="crimson" stroke-width="5"
@@ -125,7 +125,7 @@ links:
 
 <svg class="svg" width="230" height="140"><ellipse rx="110" ry="60" cx="115" cy="70" fill="gold" stroke="orange" stroke-width="5" /></svg>
 
-```markup
+```html
 <svg width="230" height="140">
   <ellipse rx="110" ry="60" cx="115" cy="70"
     fill="gold" stroke="orange" stroke-width="5"
@@ -142,7 +142,7 @@ links:
 
 При этом стиль фигур можно задать один раз для всей группы, а не отдельно для каждой фигуры:
 
-```markup
+```html
 <svg width="250" height="210" style="border: 1px solid">
   <g fill="#333">
     <ellipse rx="45" ry="37" cx="55" cy="60" transform="rotate(-45, 55, 55)"/>
@@ -158,7 +158,7 @@ links:
 
 <svg class="svg" width="230" height="140"><line x1="220" y1="10" x2="10" y2="130" stroke="violet" stroke-width="5" /></svg>
 
-```markup
+```html
 <svg width="230" height="140">
   <line
     x1="220" y1="10" x2="20" y2="130"
@@ -173,7 +173,7 @@ links:
 
 <svg class="svg" width="260" height="140"><polyline points="5,135 30,5 55,135 80,5, 105,135 130,5, 155,135 180,5, 205,135 230,5, 255,135" stroke="orangered" fill="none" stroke-width="5" /></svg>
 
-```markup
+```html
 <svg width="260" height="140">
   <polyline
     points="5,135 30,5 55,135 80,5, 105,135 130,5, 155,135 180,5, 205,135 230,5, 255,135"
@@ -196,7 +196,7 @@ SVG-фигуры можно видоизменять с помощью свой�
 
 <svg class="svg" width="230" height="140"><ellipse rx="110" ry="30" cx="115" cy="70" fill="gold" stroke="orange" stroke-width="5" transform="rotate(-23 115 70)"/></svg>
 
-```markup
+```html
 <svg width="230" height="140">
   <ellipse rx="110" ry="30" cx="115" cy="70"
     fill="gold" stroke="orange" stroke-width="5"

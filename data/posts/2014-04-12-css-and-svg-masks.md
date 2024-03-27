@@ -82,7 +82,7 @@ links:
 
 <b>SVG:</b>
 
-```markup
+```html
 <!-- Путь обрезки с полигоном -->
 <clipPath id="clipping">
   <polygon points="98.4999978 153.75..."/>
@@ -139,7 +139,7 @@ SVG <code>mask</code> (в отличие от <code>clipPath</code>) позво�
 
 <b>SVG:</b>
 
-```markup
+```html
 <!-- Маска с сочетанием градиентов и фигур -->
 <mask id="masking" maskUnits="objectBoundingBox">
   <!-- Фигура с полосатым градиентом -->
@@ -205,7 +205,7 @@ SVG <code>mask</code> (в отличие от <code>clipPath</code>) позво�
 
 <b>SVG:</b>
 
-```markup
+```html
 <!-- Паттерн с картинкой -->
 <pattern id="pattern" patternUnits="userSpaceOnUse"
   width="200" height="300" viewbox="0 0 200 300">

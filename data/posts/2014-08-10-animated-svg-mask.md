@@ -34,7 +34,7 @@ links:
 
 SVG:
 
-```markup
+```html
 <mask id="m-lines">
   <line x1="0" y1="0" x2="100%" y2="100%" class="elem-mask"/>
   <line x1="0" y1="100%" x2="100%" y2="0%" class="elem-mask"/>

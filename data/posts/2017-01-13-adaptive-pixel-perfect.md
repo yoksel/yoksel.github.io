@@ -33,7 +33,7 @@ links:
 
 Моё самое первое решение выглядело вот так:
 
-```markup
+```html
 <style>
   BODY {
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@ links:
 
 Если макеты задать фоном для <code>&lt;body></code>, при изменении прозрачности <code>&lt;body></code> макеты тоже станут полупрозрачными, поэтому в качестве слоя с макетами лучше использовать элемент <code>&lt;html></code>:
 
-```markup
+```html
 <style>
   HTML {
     background-repeat: no-repeat;
@@ -95,7 +95,7 @@ links:
 
 Как и в предыдущем случае, макеты будут лежать под разметкой, но сейчас если у <code>&lt;body></code> задан фон, их не будет видно. Сделаем слой с разметкой полупрозрачным, добавив <code>opacity</code> для <code>&lt;body></code>:
 
-```markup
+```html
 <style>
   /* Используем &lt;html> как слой с макетами */
   HTML {
@@ -138,7 +138,7 @@ links:
 <ol class="list list--has-codes">
 <li>Установите пакет в папку с проектом через npm:
 
-```markup
+```html
 npm i pixel-glass --save-dev
 ```
 </li>
@@ -147,7 +147,7 @@ npm i pixel-glass --save-dev
 
 <li>Вставьте в <code>&lt;head></code> страницы такой код:
 
-```markup
+```html
 <!-- Pixel Glass -->
 <style>
   HTML {

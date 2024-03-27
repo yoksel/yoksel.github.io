@@ -18,7 +18,7 @@ links:
 
 Самый простой пример кода выглядит вот так:
 
-```markup
+```html
 <pattern id="pattern"
   width="100%" height="100%">
   ...
@@ -34,7 +34,7 @@ links:
     fill="crimson"/>
 </svg>
 
-```markup
+```html
 <pattern id="pattern"
   width="100%" height="100%">
   <circle r="30%" cx="50%" cy="50%"
@@ -44,7 +44,7 @@ links:
 
 Сам по себе паттерн не отображается на странице. Чтобы увидеть паттерн в действии, его нужно применить к фигуре, это можно сделать, например, с помощью атрибута <code>fill</code>:
 
-```markup
+```html
 <polygon fill="url(#pattern)"
   points="85,0 170,61 137,161 32,161 0,61"/>
 ```
@@ -109,7 +109,7 @@ polygon {
 
 По умолчанию в SVG центр трансформации  (<code>transform-origin</code>) находится в левом верхнем углу SVG-элемента. Для вращения (<code>rotate</code>) можно вместе с углом поворота задать и центр трансформации, это выглядит примерно так:
 
-```markup
+```html
 patternTransform="rotate(45, 250, 150)"
 ```
 
@@ -117,7 +117,7 @@ patternTransform="rotate(45, 250, 150)"
 
 В этом коде координаты заданы в единицах текущей системы координат, это будет работать с <code>patternUnits="userSpaceOnUse"</code>. При использовании <code>patternUnits="objectBoundingBox"</code> координаты нужно задавать в относительных значениях в диапазоне от 0.0 до 1.0, код трансформации в этом случае должен быть таким:
 
-```markup
+```html
 patternTransform="rotate(45, .5, .5)"
 ```
 
@@ -189,7 +189,7 @@ patternTransform="rotate(45, .5, .5)"
 
 Пример кода:
 
-```markup
+```html
 <pattern id="pattern"
    patternUnits="userSpaceOnUse"
    viewBox="0 0 275 175"
@@ -216,7 +216,7 @@ patternTransform="rotate(45, .5, .5)"
 
 Пример кода:
 
-```markup
+```html
 <pattern id="pattern"
    patternContentUnits="objectBoundingBox"
    width="50%" height="50%">
@@ -231,7 +231,7 @@ patternTransform="rotate(45, .5, .5)"
 
 <b>Вариант 2.</b> Он проще и удобнее, потому что содержимое паттерна сохраняет свою систему координат и единицы измерения. При этом способе <code>patternUnits</code> не задаётся, потому что используется значение по умолчанию: <code>objectBoundingBox</code>. Размеры плитки паттерна задаются в процентах или в значениях от 0.0 до 1.0, они будут зависеть от размеров фигуры. Чтобы содержимое паттерна ресайзилось вместе с ним, нужно добавить <code>viewBox</code>, а чтобы оно при этом заполняло всю плитку, хоть и с искажениием пропорций, — <code>preserveAspectRatio="none"</code>:
 
-```markup
+```html
 <pattern id="pattern"
    width="75%" height="75%"
    viewBox="0 0 275 175"

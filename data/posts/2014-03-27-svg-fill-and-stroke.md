@@ -27,7 +27,7 @@ links:
 
 <svg class="svg" width="200" height="200"><defs><symbol id="s-rect"><rect width="70" height="70"/></symbol><linearGradient id="g-green" x1="0%" y1="0%" x2="0%" y2="90%">  <stop offset="0%" stop-color="yellowgreen" />  <stop offset="90%" stop-color="green" /></linearGradient></defs><use xlink:href="#s-rect" x="20" y="20" fill="hsla(348, 83%, 47%,.3)"/><use xlink:href="#s-rect" x="110" y="20" fill="rgb(255, 215, 0)"/> <use xlink:href="#s-rect" x="20" y="110" fill="url(#g-green)"/><use xlink:href="#s-rect" x="110" y="110" fill="skyblue"/>  </svg>
 
-```markup
+```html
 <svg width="200" height="200">
   <defs>
     <symbol id="s-rect">
@@ -96,7 +96,7 @@ links:
 
 <svg class="svg" width="200" height="200"><defs><symbol id="s-rect2"><rect width="100" height="100"/></symbol><linearGradient id="g-red" x1="0%" y1="0%" x2="0%" y2="90%"><stop offset="0%" stop-color="orange" /><stop offset="90%" stop-color="crimson" /></linearGradient><linearGradient id="g-green" x1="0%" y1="0%" x2="0%" y2="90%"><stop offset="0%" stop-color="yellowgreen" /><stop offset="90%" stop-color="green" /></linearGradient></defs><use xlink:href="#s-rect2" x="20" y="20" fill="url(#g-red)" fill-opacity=".5"/>  <use xlink:href="#s-rect2" x="50" y="50" fill="hsl(50, 100%, 50%)" fill-opacity=".5"/> <use xlink:href="#s-rect2" x="80" y="80" fill="url(#g-green)" fill-opacity=".5"/></svg>
 
-```markup
+```html
 <!-- ... -->
 <use xlink:href="#s-rect"
   x="20" y="20"
@@ -116,7 +116,7 @@ links:
 
 <svg class="svg" width="200" height="200"><rect width="160" height="160" x="20" y="20" fill="none" stroke="yellowgreen"/></svg>
 
-```markup
+```html
 <svg width="200" height="200">
   <rect width="160" height="160" x="20" y="20"
     fill="none"
@@ -132,7 +132,7 @@ links:
 
 <svg class="svg" width="200" height="200"><rect width="160" height="160" x="20" y="20" fill="none" stroke="yellowgreen" stroke-width="10%"/><rect width="100" height="100" x="50" y="50" fill="none" stroke="gold" stroke-width="10"/></svg>
 
-```markup
+```html
 <svg width="200" height="200">
   <rect width="100" height="100" x="50" y="50"
     fill="none" stroke="gold"
@@ -151,7 +151,7 @@ links:
 
 <svg class="svg" width="200" height="205"><symbol id="s-path-guide"><circle r="3" cx="30" cy="15"/><circle r="3" cx="170" cy="15"/><path d="M 30 15 170 15" stroke-width="2"/></symbol><symbol id="s-path"><path d="M 30 15 170 15" stroke-width="30"/></symbol><use xlink:href="#s-path" stroke="orangered" y="20" stroke-linecap="butt"/><use xlink:href="#s-path" stroke="olivedrab" y="85" stroke-linecap="round"/><use xlink:href="#s-path" stroke="steelblue" y="150" stroke-linecap="square"/><g class="guides"><use xlink:href="#s-path-guide" y="20" stroke="orange" fill="orange"/><use xlink:href="#s-path-guide" y="85" stroke="yellowgreen" fill="yellowgreen"/><use xlink:href="#s-path-guide" y="150" stroke="skyblue" fill="skyblue"/></g></svg>
 
-```markup
+```html
 <!-- ... -->
   <use xlink:href="#s-path" stroke="orangered" y="20"
     stroke-linecap="butt"/>
@@ -172,7 +172,7 @@ links:
 
 <svg class="svg" width="215" height="300"><symbol id="s-corner-guide"><circle r="3" cx="50" cy="100"/><circle r="3" cx="164" cy="100"/><path d="M 30 50 h 80 v 80" stroke-width="2" fill="none" transform="rotate(-45 100 50)"/></symbol><symbol id="s-corner"><path d="M 30 50 h 80 v 80" stroke-width="30" fill="none" transform="rotate(-45 100 50)"/></symbol><use xlink:href="#s-corner" stroke="orangered" y="0" stroke-linejoin="miter"/><use xlink:href="#s-corner" stroke="olivedrab" y="80" stroke-linejoin="round"/><use xlink:href="#s-corner" stroke="steelblue" y="160" stroke-linejoin="bevel"/><g class="guides"> <use xlink:href="#s-corner-guide" y="0" stroke="orange" fill="orange"/> <use xlink:href="#s-corner-guide" y="80" stroke="yellowgreen" fill="yellowgreen"/><use xlink:href="#s-corner-guide" y="160" stroke="skyblue" fill="skyblue"/></g></svg>
 
-```markup
+```html
 <!-- ... -->
   <use xlink:href="#s-corner" stroke="orangered" y="0"
     stroke-linejoin="miter"/>
@@ -194,7 +194,7 @@ links:
 
 <svg class="svg" width="300" height="160"><path d="M 20 20 h 260" stroke="purple" stroke-width="1" stroke-dasharray="1" /><path d="M 20 40 h 260" stroke="mediumspringgreen" stroke-width="15" stroke-dasharray="1 3" /><path d="M 20 60 h 260" stroke="orangered" stroke-width="1" stroke-dasharray="5%" /><path d="M 20 80 h 260" stroke="green" stroke-width="1" stroke-dasharray="1 5" /><path d="M 20 100 h 260" stroke="steelblue" stroke-width="1" stroke-dasharray="2 7 6" /> <path d="M 20 120 h 260" stroke="orange" stroke-width="5" stroke-dasharray="5" /> <path d="M 20 140 h 260" stroke="mediumseagreen" stroke-width="1" stroke-dasharray="12% 5%" /></svg>
 
-```markup
+```html
 <svg width="300" height="160">
   <path d="M 20 20 h 260"
     stroke="purple" stroke-width="1"
@@ -240,7 +240,7 @@ links:
 
 <svg class="svg" width="270" height="270"><g class="g-circles"  fill="none" stroke-width="15" stroke-dasharray="25% 110%" transform="rotate(72 135 135)"><circle r="115" cx="135" cy="135" stroke="crimson"/><circle r="115" cx="135" cy="135" stroke="orangered" stroke-dashoffset="25%"/><circle r="115" cx="135" cy="135" stroke="gold" stroke-dashoffset="50%"/></g></svg>
 
-```markup
+```html
 <svg width="270" height="270">
   <g class="g-circles" fill="none"
     stroke-width="15"
@@ -279,7 +279,7 @@ links:
 
 <svg class="svg" width="200" height="200"><g class="g-circles" fill="none" stroke-width="15"><circle r="40" cx="60" cy="60" stroke="crimson" stroke-opacity=".7"/><circle r="55" cx="100" cy="100" stroke="orangered" stroke-opacity=".5" /><circle r="40" cx="140" cy="140" stroke="gold" stroke-opacity=".25"/></g></svg>
 
-```markup
+```html
 <svg width="200" height="200">
   <g class="g-circles" fill="none"
     stroke-width="15">

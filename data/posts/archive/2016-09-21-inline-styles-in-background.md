@@ -30,7 +30,7 @@ SVG можно вставить в CSS прямо как есть, но тако
 
 Например, можно взять такой код:
 
-```markup
+```html
 <svg xmlns='http://www.w3.org/2000/svg'
   viewBox='0 0 100 100' width='50' height='50'
   style='transform: rotate(45deg) scale(.8,.8);
@@ -51,7 +51,7 @@ SVG можно вставить в CSS прямо как есть, но тако
 
 На самом деле, чтобы воспользоваться инлайновыйми стилями, нужен только элемент <code>svg</code>, его содержимое не играет роли и может отсутствовать:
 
-```markup
+```html
 <svg xmlns='http://www.w3.org/2000/svg'
   viewBox='0 0 100 100' width='50' height='50'
   style='transform: rotate(45deg) scale(.8,.8);

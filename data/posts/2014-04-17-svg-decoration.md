@@ -45,7 +45,7 @@ links:
 
 Вот код деревянного паттерна:
 
-```markup
+```html
 <!-- Нужно задать размеры и Id, по которому будет вызываться паттерн -->
 <pattern id="wood" width="400" height="400"
   patternUnits="userSpaceOnUse">

@@ -39,7 +39,7 @@ links:
 
  SVG:
 
-```markup
+```html
 <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon">
   <circle r="55" cx="50%" cy="50%" fill="yellowgreen"/>
   <text x="50%" y="50%" dy=".4em" text-anchor="middle"

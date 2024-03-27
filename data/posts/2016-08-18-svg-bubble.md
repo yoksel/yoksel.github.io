@@ -45,7 +45,7 @@ customCSS: bubble.css
 
 Важно: всё содержимое пузыря находится внутри тега <code>svg</code>:
 
-```markup
+```html
 <svg viewBox="0 0 200 200" width="150" height="150">
   <!-- слои будут тут -->
 </svg>
@@ -77,7 +77,7 @@ customCSS: bubble.css
   Пишем градиент:
 </p>
 
-```markup
+```html
 <linearGradient id="gradient--colors"
   x1="0" y1="100%"
   x2="100%" y2="0">
@@ -98,7 +98,7 @@ customCSS: bubble.css
 
 <p>Применяем его к фигуре:</p>
 
-```markup
+```html
 <circle r="50%" cx="50%" cy="50%"
   fill="url(#gradient--colors)"> <!-- градиентная заливка -->
 </circle>
@@ -120,7 +120,7 @@ customCSS: bubble.css
 
 <p>Для этого воспользуемся радиальным градиентом с черными и белыми оттенками разной степени прозрачности (значения подбирались опытным путём):</p>
 
-```markup
+```html
 <radialGradient id="gradient--colors-transparency">
   <stop offset="30%"
     stop-color="black"
@@ -142,7 +142,7 @@ viewBox="0 0 200 200" width="150" height="150">
 
 <p>Чтобы прозрачность выглядела более естественно, нужно немного сместить центр градиента, для этого воспользуемся атрибутами <code>fx</code> и <code>fy</code>:</p>
 
-```markup
+```html
 <radialGradient id="gradient--colors-transparency"
   fx="25%" fy="25%"> <!-- смещение центра градиента -->
   <stop offset="0%"
@@ -169,7 +169,7 @@ viewBox="0 0 200 200" width="150" height="150">
 
 <p>Теперь делаем маску. В <code>mask</code> кладётся прямоугольник, в качестве заливки используется свежесозданный градиент:</p>
 
-```markup
+```html
 <mask id="mask--colors-transparency">
   <rect fill="url(#gradient--colors-transparency)"
     width="100%" height="100%"></rect>
@@ -178,7 +178,7 @@ viewBox="0 0 200 200" width="150" height="150">
 
 <p>Затем добавляем маску к фигуре с разноцветной заливкой:</p>
 
-```markup
+```html
 <circle r="50%" cx="50%" cy="50%"
   fill="url(#gradient--colors)"
   mask="url(#mask--colors-transparency)"> <!-- маска -->
@@ -200,7 +200,7 @@ viewBox="0 0 200 200" width="150" height="150">
 
 <p>Весь код разноцветного слоя:</p>
 
-```markup
+```html
 <!-- Разноцветный градиент -->
 <linearGradient id="gradient--colors"
   x1="0" y1="100%"
@@ -275,7 +275,7 @@ viewBox="0 0 200 200" width="150" height="150">
 <li>
 <h4>Создаём фигуры с однотонной заливкой</h4>
 
-```markup
+```html
 <circle r="50%" cx="50%" cy="50%"
   fill="aqua"> <!-- голубая заливка -->
 </circle>
@@ -307,7 +307,7 @@ viewBox="0 0 200 200" width="150" height="150">
 
 <p>В этом градиенте так же используются белый и чёрный разной степени прозрачности, а центральный цвет сдвинут вверх с помощью атрибута <code>fy</code>:</p>
 
-```markup
+```html
 <radialGradient id="gradient--bw-light"
   fy="10%">
   <stop offset="60%"
@@ -329,7 +329,7 @@ viewBox="0 0 200 200" width="150" height="150">
 
 <p>Используя этот градиент, создадим две маски: для верхнего отражения и для нижнего. В маске для верхнего отражения используется тот же градиент, но прямоугольник с градиентом перевёрнут кверх ногами.</p>
 
-```markup
+```html
 <!-- Маска для нижнего отражения -->
 <mask id="mask--light-bottom">
   <rect fill="url(#gradient--bw-light)"
@@ -346,7 +346,7 @@ viewBox="0 0 200 200" width="150" height="150">
 
 <p>Добавляем маски к фигурам с заливкой:</p>
 
-```markup
+```html
 <!-- Нижнее отражение -->
 <circle r="50%" cx="50%" cy="50%"
   fill="aqua"
@@ -385,7 +385,7 @@ viewBox="0 0 200 200" width="150" height="150">
 
 Весь код слоя с отражениями:
 
-```markup
+```html
 <!-- Градиент для прозрачности -->
 <radialGradient id="gradient--bw-light" fy="10%">
   <stop offset="60%"
@@ -461,7 +461,7 @@ viewBox="0 0 200 200" width="150" height="150">
 
 <p>Он состоит из оттенков белого разной степени прозрачности, центральный цвет сдвинут к верхнему краю:</p>
 
-```markup
+```html
 <radialGradient id="gradient--spot"
   fy="20%">
   <stop offset="10%"
@@ -485,7 +485,7 @@ viewBox="0 0 200 200" width="150" height="150">
 
 <p>Один располагаем вверху слева, другой — внизу справа, добавляем градиентную заливку:</p>
 
-```markup
+```html
 <!-- Верхний блик -->
 <ellipse rx="65" ry="25" cx="55" cy="55"
    fill="url(#gradient--spot)">
@@ -523,7 +523,7 @@ viewBox="0 0 200 200" width="150" height="150">
 
 <p>Чтобы блики визуально находились на поверхности пузыря, их надо немного повернуть:</p>
 
-```markup
+```html
 <!-- Верхний блик -->
 <ellipse rx="55" ry="25" cx="55" cy="55"
    fill="url(#gradient--spot)"
@@ -563,7 +563,7 @@ viewBox="0 0 200 200" width="150" height="150">
 
 <p>Весь код слоя с бликами:</p>
 
-```markup
+```html
 <!-- Градиент блика -->
 <radialGradient id="gradient--spot" fy="20%">
   <stop offset="10%"
@@ -599,7 +599,7 @@ viewBox="0 0 200 200" width="150" height="150">
 
 Примерный код (маски и градиенты опущены, полный код есть ниже):
 
-```markup
+```html
 <svg viewBox="0 0 200 200" width="150" height="150">
   <defs>
     <!-- здесь должны быть маски и градиенты -->

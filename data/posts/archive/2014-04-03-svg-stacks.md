@@ -30,7 +30,7 @@ links:
 
 Примерный код:
 
-```markup
+```html
 <svg width="150" height="150">
   <g id="no">
     <rect fill="crimson" width="150" height="150" rx="8"/>

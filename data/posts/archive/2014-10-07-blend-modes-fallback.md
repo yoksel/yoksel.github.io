@@ -125,7 +125,7 @@ Firefox можно оставить как есть, но с IE надо что-
 
 Создаем фильтр:
 
-```markup
+```html
 <svg class="svg-defs">
   <filter id="multiply" x="0" y="0">
     <!-- задаем картинку фона для фильтра -->
@@ -141,7 +141,7 @@ Firefox можно оставить как есть, но с IE надо что-
 
 <i>Было бы куда удобнее задавать режим наложения исходной картинки на нижележащие слои страницы, а не на картинку, заданную в фильтре (здесь это <code>feImage</code>). Для этого в SVG предусмотрена возможность в качестве одного из источников фильтра задавать <code>BackgroundImage</code> — по смыслу это снимок экрана под областью действия фильтра. <code>BackgroundImage</code> позволил бы сделать фильтр гораздо короче:</i>
 
-```markup
+```html
 <svg class="svg-defs">
   <filter id="multiply" x="0" y="0">
     <feBlend mode="multiply" in2="BackgroundImage" in="SourceGraphic"/>
@@ -153,7 +153,7 @@ Firefox можно оставить как есть, но с IE надо что-
 
 Чтобы фильтры работали везде, картинки, к которым они применяются, тоже надо завернуть в SVG. Примерный код:
 
-```markup
+```html
 <svg class="pic pic--dragon" viewBox="0 0 300 161">
   <image xlink:href="//img-fotki.yandex.ru/get/6840/5091629.a1/0_855a9_b872dbe5_M" width="100%" height="100%"
     filter="url(#multiply)"/>
@@ -189,7 +189,7 @@ SVG-фильтры для SVG элементов работают во всех 
 
 Код маски:
 
-```markup
+```html
 <mask id="mask">
   <image xlink:href="//img-fotki.yandex.ru/get/4509/5091629.a2/0_85a64_94d6d625_M" width="203" height="300"/>
 </mask>

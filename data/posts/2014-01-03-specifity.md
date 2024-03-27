@@ -25,7 +25,7 @@ links:
 
 Вот пример проблемы. Есть див с <code>id="container"</code>, внутри него некоторый текст и список ссылок.
 
-```markup
+```html
 <div id="container">
   <p><a href="#">link in P</a></p>
 
@@ -170,7 +170,7 @@ links:
 
 В итоге разметка может быть такой:
 
-```markup
+```html
 <div class="container">
   <p><a href="#">link in P</a></p>
 

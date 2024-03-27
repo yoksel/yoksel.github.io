@@ -65,7 +65,7 @@ links:
 
 Пример разметки:
 
-```markup
+```html
 <h1 class="logo">Название сайта</h1>
 ```
 
@@ -94,7 +94,7 @@ links:
 
 Итоговая разметка будет выглядеть как-то так:
 
-```markup
+```html
 <h1
   class="logo"
   role="img"
@@ -104,7 +104,7 @@ links:
 
 Ещё можно скрывать текст с помощью <code>.visuallyhidden</code> (<a href="https://allyjs.io/tutorials/hiding-elements.html#how-to-hide-elements-visually">про него можно почитать тут</a>). В этом случае для обеспечения доступности не нужны вспомогательные атрибуты, но для текста потребуется дополнительная обёртка с классом <code>.visuallyhidden</code>:
 
-```markup
+```html
 <h1 class="logo">
   <span class="visuallyhidden">Название сайта</span>
 </h1>
@@ -205,7 +205,7 @@ VoiceOver во всех браузерах ведёт себя более-мен
 
 Пример разметки:
 
-```markup
+```html
 <img src="logo.png" alt="Название сайта">
 ```
 
@@ -252,7 +252,7 @@ VoiceOver во всех браузерах ведёт себя более-мен
 
 Пример разметки:
 
-```markup
+```html
 <svg width="100" height="50" viewBox="0 0 100 50"
   xmlns="http://www.w3.org/2000/svg">
   <path d="..."/>
@@ -298,7 +298,7 @@ VoiceOver во всех браузерах ведёт себя более-мен
 
 Также Леони Уотсон <a href="https://www.sitepoint.com/tips-accessible-svg/">рекомендует</a> добавить атрибут <code>aria-labelledby</code>, указав в нём <code>id</code> заголовка и описания. Получится примерно такое:
 
-```markup
+```html
 <svg width="100" height="50" viewBox="0 0 100 50"
   xmlns="http://www.w3.org/2000/svg"
   aria-labelledby="title desc">

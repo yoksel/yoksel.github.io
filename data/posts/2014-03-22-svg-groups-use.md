@@ -21,7 +21,7 @@ SVG-фигуры можно группировать, чтобы удобно с
 
 <svg width="275" height="100" class="svg"><g id="to-sun"><circle fill="purple" r="20" cx="25" cy="25"/><circle fill="crimson" r="20" cx="70" cy="25"/><circle fill="red" r="20" cx="115" cy="25"/><circle fill="orange" r="20" cx="160" cy="25"/><circle fill="gold" r="20" cx="205" cy="25"/><circle fill="yellow" r="20" cx="250" cy="25"/></g><g id="to-night"><circle fill="greenyellow" r="20" cx="25" cy="70"/><circle fill="yellowgreen" r="20" cx="70" cy="70"/><circle fill="green" r="20" cx="115" cy="70"/><circle fill="steelblue" r="20" cx="160" cy="70"/><circle fill="darkviolet" r="20" cx="205" cy="70"/><circle fill="purple" r="20" cx="250" cy="70"/></g></svg>
 
-```markup
+```html
 <svg width="275" height="100">
   <!-- Группа 1  -->
   <g id="to-sun">
@@ -58,7 +58,7 @@ SVG-фигуры можно группировать, чтобы удобно с
 </g>
 </svg>
 
-```markup
+```html
 <svg width="170" height="50">
   <!-- Красные фигуры -->
   <g id="to-sun" fill="tomato">
@@ -94,7 +94,7 @@ SVG-фигуры можно группировать, чтобы удобно с
   <use xlink:href="#sun" x="120" y="60"/><use xlink:href="#rect" x="0" y="110" transform="rotate(10 100 110)"/>
 </svg>
 
-```markup
+```html
 <svg width="200" height="200">
   <!-- Скрытый контейнер для эффектов и фигур -->
   <defs>
@@ -129,7 +129,7 @@ SVG-фигуры можно группировать, чтобы удобно с
 
 <svg class="svg" width="240" height="170"><defs><g><circle fill="gold" r="30" id="yellowball"/></g><symbol id="mouth"><polyline points="15 15 5 10 15 5" stroke="crimson" fill="none" stroke-width="3"/></symbol><symbol id="bird"><g stroke="brown"><polyline points="0 0 0 25" stroke-width="3" transform="translate(25 100)"/><polyline points="0 0 0 25" stroke-width="3" transform="translate(45 100)"/><polyline points="0 0 12 0" stroke-width="3" transform="translate(19 125)"/><polyline points="0 0 12 0" stroke-width="3" transform="translate(40 125)"/></g><use xlink:href="#mouth" x="83" y="35"/><use xlink:href="#yellowball" x="90" y="55" transform="scale(.75)"/><use xlink:href="#yellowball" x="35" y="75" width="100"/><polyline points="55 70 45 90 20 80" stroke="orange" stroke-width="3" fill="none"/><circle fill="black" r="5" cx="75" cy="35"/><circle fill="gray" r="1" cx="77" cy="35"/></symbol></defs><use xlink:href="#bird" x="15" y="15"/><use xlink:href="#bird" x="0" y="35" transform="translate(225 -20) scale(-1,1)"/></svg>
 
-```markup
+```html
 <svg width="240" height="170">
   <defs>
     <g>
@@ -184,7 +184,7 @@ SVG-фигуры можно группировать, чтобы удобно с
 
 <svg class="svg" width="260" height="140"><defs><symbol id="color-wheel"><circle r="50" fill="gold" cx="50" cy="50"/><circle r="35" fill="orangered" cx="50" cy="50"/><circle r="20" fill="crimson" cx="50" cy="50"/><circle r="5" fill="maroon" cx="50" cy="50"/></symbol></defs><use xlink:href="#color-wheel" x="20" y="20"/><use xlink:href="#color-wheel" x="140" y="20" height="50"/></svg>
 
-```markup
+```html
 <svg width="260" height="140">
   <defs>
     <!-- Создаем символ -->
@@ -211,7 +211,7 @@ SVG-фигуры можно группировать, чтобы удобно с
 
 <svg class="svg" width="260" height="140"><defs><symbol id="s-rect"><rect width="100" height="25" x="2" y="2"/></symbol></defs><use xlink:href="#s-rect" x="20" y="20"/><use xlink:href="#s-rect" x="140" y="20" width="50" fill="yellowgreen"/><use xlink:href="#s-rect" x="20" y="80" fill="gold" stroke="orange" stroke-width="4"/><use xlink:href="#s-rect" x="140" y="80" fill="skyblue" stroke="steelblue" stroke-width="2" transform="rotate(-25 190 92)"/></svg>
 
-```markup
+```html
 <svg width="260" height="140">
   <defs>
     <!-- Исходный символ, не отображается -->
@@ -241,7 +241,7 @@ SVG-фигуры можно группировать, чтобы удобно с
 
 <i class="tiny-text">Домик с <a href="http://icomoon.io/">icomoon.io</a></i>
 
-```markup
+```html
 <svg width="260" height="50">
   <style>
  .col-1 {

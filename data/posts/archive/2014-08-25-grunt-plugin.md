@@ -142,7 +142,7 @@ heart--w150--steelblue.svg</b></pre>
 2. В начале документа (после открывающего <code>&lt;body></code>) разместить библиотеку иконок (содержимое файла <b>myicons.svg</b>).
 3. Отдельные иконки на страницу вставляются вот таким образом:
 
- ```markup
+ ```html
 <svg xmlns="http://www.w3.org/2000/svg" class="myicons myicons--heart">
   <use xlink:href="#myicons--heart"></use>
 </svg>

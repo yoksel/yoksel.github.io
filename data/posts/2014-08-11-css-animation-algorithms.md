@@ -34,7 +34,7 @@ links:
 
 Делаем разметку галереи:
 
-```markup
+```html
 <ul class="rotation">
   <li class="rotation__item"></li>
   <li class="rotation__item"></li>
@@ -172,7 +172,7 @@ $step-perc: percentage(1/$max);
 
 Во-первых, под самым первым слоем тоже должно что-то быть, для этого немного меняем разметку и добавляем "дно":
 
-```markup
+```html
 <dl class="rotation">
   <dt class="rotation__item--static item--1"></dt> <!-- это дно -->
   <dd class="rotation__item item--2"></dd>

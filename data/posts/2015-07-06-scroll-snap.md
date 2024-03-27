@@ -45,7 +45,7 @@ Cпецификация: <a href="http://www.w3.org/TR/css-snappoints-1/">Scroll
 
 HTML:
 
-```markup
+```html
 <div class="gallery">
   <img src="image.jpg" alt=""/>
   <img src="image.jpg" alt=""/>
