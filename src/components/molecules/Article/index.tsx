@@ -4,7 +4,6 @@ import React, { useEffect, useRef } from 'react';
 
 import PostLinks from '../PostLinks';
 import PostTags from '../PostTags';
-import { dateToAttr } from '../../../helpers';
 import { ArticleData } from '../../../types';
 import ContentAsHtml from '../../atoms/ContentAsHtml';
 import ArticleDate from '../../atoms/ArticleDate';
@@ -13,7 +12,6 @@ import styles from './styles.module.scss';
 
 const Article = ({ article }: { article: ArticleData }) => {
   const { title, date, content, tags, links, navItems } = article;
-  const dateAttr = dateToAttr(date);
   const heading = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
