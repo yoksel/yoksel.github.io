@@ -6,6 +6,7 @@ import matter from 'gray-matter';
 import { marked } from 'marked';
 import { ArticleData, ArticleType } from '../types';
 import customMarkdownToHtml from './customMarkdownToHtml';
+import { getSectionsList } from './getSectionsList';
 
 const getDirectory = (type: ArticleType = 'post') => {
   let directoryPath = 'data/posts';
@@ -75,6 +76,10 @@ export async function getArticleBySlug({
 
     if (filteredFields.content) {
       filteredFields.content = await marked.parse(filteredFields.content || '');
+
+      if (fields.includes('navItems')) {
+        filteredFields.navItems = getSectionsList(filteredFields.content);
+      }
     }
 
     return filteredFields;

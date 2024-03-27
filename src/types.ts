@@ -1,5 +1,13 @@
 export type ArticleType = 'post' | 'page' | 'service-page';
 
+type HrefOrId = { id: string } | { href: string };
+
+export type PageUrl = {
+  text: string;
+  desc?: string;
+  level?: number;
+} & HrefOrId;
+
 export interface ArticleData {
   slug?: string;
   title?: string;
@@ -8,6 +16,7 @@ export interface ArticleData {
   excerpt?: string;
   type?: ArticleType;
   content?: string;
+  navItems?: PageUrl[];
   order?: number;
   links?: PageUrl[];
   additional_links?: PageUrl[];
@@ -18,10 +27,3 @@ export interface ArticleData {
   layout?: 'onecolumn';
   disableCounter?: boolean;
 }
-type HrefOrId = { id: string } | { href: string };
-
-export type PageUrl = {
-  text: string;
-  desc?: string;
-  level?: number;
-} & HrefOrId;
