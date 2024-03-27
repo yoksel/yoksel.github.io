@@ -7,7 +7,7 @@ const article = {
   title: 'Article title',
   content: 'Some long text',
   href: '#url',
-  date: '22-12-2023',
+  date: '2023-12-23',
   excerpt: '<b>Some html</b> here',
   links: [
     {
@@ -29,7 +29,7 @@ describe('Article', () => {
   test('to have date', () => {
     const { getByText } = render(<Article article={article} />);
 
-    expect(getByText(article.date)).toBeInTheDocument();
+    expect(getByText('23/12/2023')).toBeInTheDocument();
   });
 
   test('to have content', () => {

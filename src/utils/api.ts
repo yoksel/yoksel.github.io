@@ -82,6 +82,11 @@ export async function getArticleBySlug({
       }
     }
 
+    const date = realSlug?.match(/\d{4}-\d{2}-\d{2}/)?.[0];
+    if (date) {
+      filteredFields.date = date;
+    }
+
     return filteredFields;
   } catch (error) {
     console.log(error);
@@ -94,12 +99,7 @@ export async function getAllArticles(fields: Fields = [], type: ArticleType = 'p
     const article = await getArticleBySlug({ slug, fields });
 
     if (!article) return;
-    const date = article.slug?.match(/\d{4}-\d{2}-\d{2}/)?.[0];
     const transformed = { ...article, href: article.slug, text: article.title, type };
-
-    if (date) {
-      transformed.date = date;
-    }
 
     delete transformed.title;
     delete transformed.slug;

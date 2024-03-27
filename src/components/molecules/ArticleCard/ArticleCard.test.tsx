@@ -6,7 +6,7 @@ import ArticleCard from '.';
 const post = {
   text: 'text',
   href: '#url',
-  date: '22-12-2023',
+  date: '2023-12-23',
   excerpt: 'Text',
 };
 
@@ -28,7 +28,7 @@ describe('ArticleCard', () => {
   test('to have date', () => {
     const { getByText } = render(<ArticleCard post={post} />);
 
-    expect(getByText(post.date)).toBeInTheDocument();
+    expect(getByText('23/12/2023')).toBeInTheDocument();
   });
 
   test('to have excerpt', () => {

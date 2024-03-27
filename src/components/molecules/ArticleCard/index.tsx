@@ -1,3 +1,4 @@
+import ArticleDate from '../../atoms/ArticleDate';
 import ContentAsHtml from '../../atoms/ContentAsHtml';
 import FadedText from '../../atoms/FadedText';
 import Link from '../../atoms/Link';
@@ -33,12 +34,7 @@ const ArticleCard = ({ post }: ArticleCardProps) => {
       <div className={styles['articleCard__footer']}>
         <Link href={href}>Читать дальше →</Link>
 
-        <time
-          className="articleCard__date faded-text"
-          dateTime={date}
-        >
-          <FadedText>{date}</FadedText>
-        </time>
+        <ArticleDate date={date} />
       </div>
     </div>
   );

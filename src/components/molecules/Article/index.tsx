@@ -6,10 +6,10 @@ import PostLinks from '../PostLinks';
 import PostTags from '../PostTags';
 import { dateToAttr } from '../../../helpers';
 import { ArticleData } from '../../../types';
-import FadedText from '../../atoms/FadedText';
+import ContentAsHtml from '../../atoms/ContentAsHtml';
+import ArticleDate from '../../atoms/ArticleDate';
 
 import styles from './styles.module.scss';
-import ContentAsHtml from '../../atoms/ContentAsHtml';
 
 const Article = ({ article }: { article: ArticleData }) => {
   const { title, date, content, tags, links, navItems } = article;
@@ -42,12 +42,10 @@ const Article = ({ article }: { article: ArticleData }) => {
         </h1>
 
         {date && (
-          <time
+          <ArticleDate
+            date={date}
             className={styles['post__date']}
-            dateTime={dateAttr}
-          >
-            <FadedText>{date}</FadedText>
-          </time>
+          />
         )}
       </header>
 

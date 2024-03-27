@@ -5,7 +5,7 @@ const articleItemSimple = {
   title: 'Article title',
   content: 'Some long text',
   href: '#url',
-  date: '22-12-2023',
+  date: '2023-12-23',
   excerpt: '<b>Some html</b> here',
   links: [
     {
