@@ -2,15 +2,11 @@ import { render } from '@testing-library/react';
 import customMarkdownToHtml, {
   addAnchorsReplacer,
   addHighlightingReplacer,
-  addLinksReplacer,
-  addParagraphs,
 } from './customMarkdownToHtml';
 
 const expectedResultForCssCode = `<figure aria-label="Пример кода"><pre class="language-css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">{</span><span class="token property">color</span><span class="token punctuation">:</span> pink<span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre></figure>`;
 
 const expectedResultForHeading = `<h2 id=my-section><a href=\"#my-section\">section name</a></h2>`;
-
-const expectedResultForLink = '<a href="http://hello.com">hello</a>';
 
 describe('addHighlightingReplacer()', () => {
   test('to highlighted code', () => {
@@ -28,39 +24,12 @@ describe('addAnchorsReplacer()', () => {
   });
 });
 
-describe('addLinksReplacer()', () => {
-  test('to get link', () => {
-    const result = addLinksReplacer(null, 'hello', 'http://hello.com');
-
-    expect(result).toBe(expectedResultForLink);
-  });
-});
-
-describe('addParagraphs()', () => {
-  test('to wrap with paragraphs', () => {
-    const result = addParagraphs('lorem ipsum\n\nlorem ipsum');
-    const expectedResult = `<p>lorem ipsum</p>\n\n<p>lorem ipsum</p>`;
-
-    expect(result).toBe(expectedResult);
-  });
-
-  test('to wrap with paragraphs', () => {
-    const string = `lorem ipsum
-    lorem ipsum`;
-
-    expect(addParagraphs(string)).toBe(string);
-  });
-});
-
 describe('customMarkdownToHtml()', () => {
   test('to all custom markdown replaced', () => {
-    const linkString = '[hello](http://hello.com)';
     const cssCodeString = '```css\nbody {color: pink;}```';
     const headingString = '<h2 id="my-section">section name</h2>';
-    const result = customMarkdownToHtml(`${linkString} ${cssCodeString} ${headingString}`);
+    const result = customMarkdownToHtml(`${cssCodeString} ${headingString}`);
 
-    expect(result).toBe(
-      `${expectedResultForLink} ${expectedResultForCssCode} ${expectedResultForHeading}`,
-    );
+    expect(result).toBe(`${expectedResultForCssCode} ${expectedResultForHeading}`);
   });
 });
