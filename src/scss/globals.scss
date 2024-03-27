@@ -13,14 +13,3 @@
 
   --logo-transition: all .5s;
 }
-
-@mixin item-with-dash {
-  margin-left: 25px;
-
-  &::before {
-    content: "\2014";
-    position: absolute;
-    margin-left: -20px;
-    color: #AAA;
-  }
-}

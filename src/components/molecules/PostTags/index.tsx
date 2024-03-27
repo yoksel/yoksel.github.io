@@ -1,6 +1,7 @@
 import React from 'react';
 import { getTagsByName } from '../../../helpers';
 import Link from '../../atoms/Link';
+import classNames from 'classnames';
 
 import styles from './styles.module.scss';
 
@@ -16,7 +17,7 @@ const PostTags = ({ items }: PostTags) => {
   const tagsByName = getTagsByName();
 
   return (
-    <dl className={styles['post-tags']}>
+    <dl className={classNames(styles['post-tags'], 'no-bullets')}>
       <dt className={styles['post-tags__title']}>Метки:</dt>
 
       {items.map((name, index) => {

@@ -274,3 +274,12 @@ PRE CODE {
     transform: translateY(-50%) rotate(-60deg);
   }
 }
+
+DL.no-bullets DD,
+UL.no-bullets LI {
+  margin-left: 0;
+
+  &::before {
+    content: none;
+  }
+}
