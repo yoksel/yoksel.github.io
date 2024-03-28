@@ -11,6 +11,7 @@ import {
   postsDataBySlug,
   pagesDataBySlug,
   servicePagesDataBySlug,
+  archivedPostsDataBySlug,
 } from '../../data/meta/articlesDataBySlug';
 
 const MORE_DELIMITER = '<!--more-->';
@@ -18,10 +19,11 @@ const MORE_DELIMITER = '<!--more-->';
 export const getDirectory = (type: ArticleType = 'post') => {
   let directoryPath = 'data/posts';
 
-  if (type === 'page') {
+  if (type === 'archive') {
+    directoryPath = 'data/posts/archive';
+  } else if (type === 'page') {
     directoryPath = 'data/pages';
-  }
-  if (type === 'service-page') {
+  } else if (type === 'service-page') {
     directoryPath = 'data/service-pages';
   }
 
@@ -30,6 +32,8 @@ export const getDirectory = (type: ArticleType = 'post') => {
 
 const getArticlesDataByType = (type: ArticleType): DataBySlag => {
   switch (type) {
+    case 'archive':
+      return archivedPostsDataBySlug;
     case 'page':
       return pagesDataBySlug;
     case 'service-page':
@@ -59,14 +63,22 @@ export async function getArticleBySlug({
 }: getArticleBySlugArgs): Promise<ArticleData | undefined> {
   const articlesDataByType = getArticlesDataByType(type);
   const slugWithSlash = slug.startsWith('/') ? slug : `/${slug}`;
-  const articlesData = articlesDataByType[slugWithSlash];
+  let articlesData = articlesDataByType[slugWithSlash];
+  let directoryByType = getDirectory(type);
 
   if (!articlesData) {
-    console.log(`Slug not found: ${slug}`);
-    return;
+    // Trying to find archived articles
+    const articlesDataByType = getArticlesDataByType('archive');
+    articlesData = articlesDataByType[slugWithSlash];
+    directoryByType = getDirectory('archive');
+
+    if (!articlesData) {
+      console.log(`Slug not found: ${slug}`);
+      return;
+    }
   }
 
-  const fullPath = join(getDirectory(type), articlesData.fullSlug);
+  const fullPath = join(directoryByType, articlesData.fullSlug);
 
   if (!fs.existsSync(fullPath)) {
     console.log(`Path not found: ${fullPath}`);

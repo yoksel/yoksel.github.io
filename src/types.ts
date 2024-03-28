@@ -1,4 +1,4 @@
-export type ArticleType = 'post' | 'page' | 'service-page';
+export type ArticleType = 'post' | 'page' | 'service-page' | 'archive';
 
 type HrefOrId = { id: string } | { href: string };
 

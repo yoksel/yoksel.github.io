@@ -258,6 +258,113 @@ export const postsDataBySlug = {
   }
 };
 
+export const archivedPostsDataBySlug = {
+  "/gipnoshtuki": {
+    "date": "2013-09-16",
+    "fullSlug": "2013-09-16-gipnoshtuki.md"
+  },
+  "/css-hacks": {
+    "date": "2013-09-22",
+    "fullSlug": "2013-09-22-css-hacks.md"
+  },
+  "/maski-i-effekty": {
+    "date": "2013-09-26",
+    "fullSlug": "2013-09-26-maski-i-effekty.md"
+  },
+  "/odnostoronnie-otstupy-kak-sredstvo-ot-golovnoj-boli": {
+    "date": "2013-09-28",
+    "fullSlug": "2013-09-28-odnostoronnie-otstupy-kak-sredstvo-ot-golovnoj-boli.md"
+  },
+  "/cells": {
+    "date": "2013-09-29",
+    "fullSlug": "2013-09-29-cells.md"
+  },
+  "/skorostnoe-obuchenie-ili-pohod-na-yac2013": {
+    "date": "2013-10-04",
+    "fullSlug": "2013-10-04-skorostnoe-obuchenie-ili-pohod-na-yac2013.md"
+  },
+  "/tsvetovoj-krug-na-css": {
+    "date": "2013-10-09",
+    "fullSlug": "2013-10-09-tsvetovoj-krug-na-css.md"
+  },
+  "/vdohnovlyayushhie-shtuki": {
+    "date": "2013-10-10",
+    "fullSlug": "2013-10-10-vdohnovlyayushhie-shtuki.md"
+  },
+  "/responsive-web-design-clever-tips-and-techniques": {
+    "date": "2013-10-14",
+    "fullSlug": "2013-10-14-responsive-web-design-clever-tips-and-techniques.md"
+  },
+  "/jekyll-vagrant": {
+    "date": "2013-11-10",
+    "fullSlug": "2013-11-10-jekyll-vagrant.md"
+  },
+  "/go-and-css": {
+    "date": "2013-11-30",
+    "fullSlug": "2013-11-30-go-and-css.md"
+  },
+  "/go-and-css-next-attempt": {
+    "date": "2014-01-08",
+    "fullSlug": "2014-01-08-go-and-css-next-attempt.md"
+  },
+  "/about-animation": {
+    "date": "2014-01-19",
+    "fullSlug": "2014-01-19-about-animation.md"
+  },
+  "/css-rays": {
+    "date": "2014-02-01",
+    "fullSlug": "2014-02-01-css-rays.md"
+  },
+  "/jsbin-vs-codepen": {
+    "date": "2014-02-10",
+    "fullSlug": "2014-02-10-jsbin-vs-codepen.md"
+  },
+  "/svg-stacks": {
+    "date": "2014-04-03",
+    "fullSlug": "2014-04-03-svg-stacks.md"
+  },
+  "/about-svg-and-3d-in-css": {
+    "date": "2014-05-10",
+    "fullSlug": "2014-05-10-about-svg-and-3d-in-css.md"
+  },
+  "/font-face-support": {
+    "date": "2014-06-08",
+    "fullSlug": "2014-06-08-font-face-support.md"
+  },
+  "/you-dont-know-svg": {
+    "date": "2014-07-17",
+    "fullSlug": "2014-07-17-you-dont-know-svg.md"
+  },
+  "/grunt-plugin": {
+    "date": "2014-08-25",
+    "fullSlug": "2014-08-25-grunt-plugin.md"
+  },
+  "/svg-in-ie8": {
+    "date": "2014-10-03",
+    "fullSlug": "2014-10-03-svg-in-ie8.md"
+  },
+  "/blend-modes-fallback": {
+    "date": "2014-10-07",
+    "fullSlug": "2014-10-07-blend-modes-fallback.md"
+  },
+  "/svg-fallback-in-ie9-and-androids2x": {
+    "date": "2014-11-01",
+    "fullSlug": "2014-11-01-svg-fallback-in-ie9-and-androids2x.md"
+  },
+  "/svg-fallback-update": {
+    "date": "2014-11-16",
+    "fullSlug": "2014-11-16-svg-fallback-update.md"
+  },
+  "/svg-angular-firefox": {
+    "date": "2014-11-22",
+    "fullSlug": "2014-11-22-svg-angular-firefox.md"
+  },
+  "/inline-styles-in-background": {
+    "date": "2016-09-21",
+    "fullSlug": "2016-09-21-inline-styles-in-background.md"
+  }
+};
+
 export const pagesDataBySlug = {
   "/pages/svojstva-flexbox": {
     "date": "2013-09-03",
@@ -300,4 +407,4 @@ export const servicePagesDataBySlug = {
   "/drafts": {
     "fullSlug": "drafts.md"
   }
-};
+}

@@ -10,7 +10,7 @@ import Link from '../components/atoms/Link';
 export const getStaticProps = (async () => {
   const posts = (await getAllArticles(
     ['title', 'slug', 'order', 'excerpt', 'date'],
-    'post',
+    'archive',
   )) as ArticleWithDate[];
 
   return { props: { posts } };
@@ -22,10 +22,6 @@ export default function Page({ posts }: InferGetStaticPropsType<typeof getStatic
   return (
     <Layout isMain={true}>
       <ArticlesList items={posts} />
-
-      <p>
-        <Link href="/archive">Архив</Link>
-      </p>
     </Layout>
   );
 }

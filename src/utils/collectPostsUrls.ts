@@ -45,20 +45,25 @@ function getArticlesLongSlugsByShort(type: ArticleType = 'post') {
   return longSlugsByShort;
 }
 
+const formatObject = (content: DataBySlag) => JSON.stringify(content, null, '  ');
+
 /** It is used on pages with slug in getStaticPaths()
  * Run `npm run getPosts` to get posts list
  */
 const collectPostsUrls = () => {
   const postsSlugs = getArticlesLongSlugsByShort('post');
+  const archivedPostsSlugs = getArticlesLongSlugsByShort('archive');
   const pagesSlugs = getArticlesLongSlugsByShort('page');
   const servicePagesSlugs = getArticlesLongSlugsByShort('service-page');
 
   const content = `/* npm run getPosts */
-export const postsDataBySlug = ${JSON.stringify(postsSlugs, null, '  ')};
+export const postsDataBySlug = ${formatObject(postsSlugs)};
 
-export const pagesDataBySlug = ${JSON.stringify(pagesSlugs, null, '  ')};
+export const archivedPostsDataBySlug = ${formatObject(archivedPostsSlugs)};
 
-export const servicePagesDataBySlug = ${JSON.stringify(servicePagesSlugs, null, '  ')};`;
+export const pagesDataBySlug = ${formatObject(pagesSlugs)};
+
+export const servicePagesDataBySlug = ${formatObject(servicePagesSlugs)}`;
 
   fs.writeFileSync('data/meta/articlesDataBySlug.ts', content);
 

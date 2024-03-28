@@ -1,14 +1,14 @@
 import React from 'react';
 import type { InferGetStaticPropsType, GetStaticProps, GetStaticPaths } from 'next';
 import { getAllArticles, getArticleBySlug } from '../utils/api';
-import { postsDataBySlug } from '../../data/meta/articlesDataBySlug';
+import { archivedPostsDataBySlug, postsDataBySlug } from '../../data/meta/articlesDataBySlug';
 import { ArticleData, PrevNextProps, WidgetItem } from '../types';
 import Layout from '../components/molecules/Layout';
 
 export const getStaticPaths = (async () => {
   return {
     // List of all paths which should be created during the build
-    paths: [...Object.keys(postsDataBySlug)],
+    paths: [...Object.keys(postsDataBySlug), ...Object.keys(archivedPostsDataBySlug)],
     fallback: false, // false or "blocking"
   };
 }) satisfies GetStaticPaths;
