@@ -1,0 +1,36 @@
+.tagsCloud {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #EEE;
+  text-align: center;
+}
+
+.tagsCloud__item {
+  display: inline-block;
+  line-height: 2;
+}
+
+.tagsCloud__button {
+  margin: 0 .65em;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px dashed;
+  font: inherit;
+  line-height: 1;
+  color: #333;
+  cursor: pointer;
+
+  &--current {
+    border: 0;
+    outline: 0;
+    box-shadow: 0 0 0 4px #333;
+    background: #333;
+    color: #FFF;
+  }
+
+  &:hover {
+    border-bottom-color: transparent;
+  }
+}
