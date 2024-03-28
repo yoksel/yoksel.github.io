@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from 'react';
 
 import PostLinks from '../PostLinks';
 import PostTags from '../PostTags';
-import { ArticleData } from '../../../types';
+import { ArticleData } from '@src/types';
 import ContentAsHtml from '../../atoms/ContentAsHtml';
 import ArticleDate from '../../atoms/ArticleDate';
 

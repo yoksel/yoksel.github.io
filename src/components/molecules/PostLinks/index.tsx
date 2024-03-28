@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import classNames from 'classnames';
 import FadedText from '../../atoms/FadedText';
 import Link from '../../atoms/Link';
-import { PageUrl } from '../../../types';
+import { PageUrl } from '@src/types';
 
 import styles from './styles.module.scss';
 

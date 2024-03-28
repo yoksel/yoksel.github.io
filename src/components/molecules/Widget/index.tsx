@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import VisuallyHiddenText from '../../atoms/VisuallyHiddenText';
 import OptionalLink from '../OptionalLink';
 import classNames from 'classnames';
-import { WidgetItem } from '../../../types';
+import { WidgetItem } from '@src/types';
 
 import styles from './styles.module.scss';
 
@@ -105,7 +105,7 @@ const Widget = ({ id, title, items, slug, isTemplate, hideTitle, footerContent }
                 <Stars>{stars}</Stars>
               </OptionalLink>
               <Description desc={desc} />
-              <Event event={event} />
+              {event && <Event event={event} />}
             </li>
           );
         })}

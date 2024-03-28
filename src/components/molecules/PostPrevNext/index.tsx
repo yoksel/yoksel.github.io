@@ -2,7 +2,7 @@ import React from 'react';
 
 import classNames from 'classnames';
 import Link from '../../atoms/Link';
-import { PrevNextProps } from '../../../types';
+import { PrevNextProps } from '@src/types';
 
 import styles from './styles.module.scss';
 

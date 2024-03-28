@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import siteData from '../../../../data/config';
-import { ArticleData } from '../../../types';
+import { ArticleData } from '@src/types';
 
 const getUrl = (siteUrl: string, articleUrl?: string) => {
   return new URL(articleUrl || '', siteUrl).toString();
