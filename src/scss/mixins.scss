@@ -1,0 +1,34 @@
+@mixin decoratedList {
+  OL,
+  UL {
+    padding: 0;
+    list-style: none;
+  }
+
+  LI,
+  DD {
+    margin-bottom: .75rem;
+    margin-left: 25px;
+
+    &::before {
+      content: "\2014";
+      position: absolute;
+      margin-left: -20px;
+      color: #AAA;
+    }
+  }
+
+  UL UL LI,
+  OL OL LI {
+    margin-top: .75rem;
+  }
+
+  OL {
+    counter-reset: num-list;
+  }
+
+  OL LI::before {
+    content: counter(num-list) ". ";
+    counter-increment: num-list;
+  }
+}
