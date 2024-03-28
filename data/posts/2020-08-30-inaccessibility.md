@@ -355,9 +355,9 @@ links:
 </label>
 ```
 
-<p class="codepen" data-height="280" data-theme-id="dark" data-default-tab="result" data-user="yoksel" data-slug-hash="NWNjgbb" style="height: 280px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="NWNjgbb">
-  <span>See the Pen <a href="https://codepen.io/yoksel/pen/NWNjgbb">
-  NWNjgbb</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>)
+<p class="codepen" data-height="280" data-theme-id="dark" data-default-tab="result" data-user="yoksel" data-slug-hash="QWaPzJe" style="height: 280px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="QWaPzJe">
+  <span>See the Pen <a href="https://codepen.io/yoksel/pen/QWaPzJe">
+  QWaPzJe</a> by yoksel (<a href="https://codepen.io/yoksel">@yoksel</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
