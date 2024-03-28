@@ -6,12 +6,7 @@
   "license": "MIT",
   "packageManager": "yarn@4.1.0",
   "scripts": {
-    "build-old": "gatsby clean && node src/add-stars.js && gatsby build",
-    "develop": "gatsby develop",
     "deploy": "npm run build && gh-pages -d public -b master --dotfiles true",
-    "start-old": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
     "test": "jest",
     "lint-old": "npm run js:lint && npm run css:lint",
     "lint:fix": "npm run js:fix && npm run css:fix",
