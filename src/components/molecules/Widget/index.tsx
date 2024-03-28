@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import VisuallyHiddenText from '../../atoms/VisuallyHiddenText';
 import OptionalLink from '../OptionalLink';
 import classNames from 'classnames';
-import { WidgetItem } from '@src/types';
+import { EventProps, WidgetItem } from '@src/types';
 
 import styles from './styles.module.scss';
 
@@ -44,13 +44,7 @@ const Description = ({ desc }: { desc?: string }) => {
   );
 };
 
-interface Event {
-  name: string;
-  href: string;
-  date: string;
-}
-
-const Event = ({ event }: { event?: Event }) => {
+const Event = ({ event }: { event?: EventProps }) => {
   const { name, href, date } = event || {};
 
   if (!(name || href || date)) return null;

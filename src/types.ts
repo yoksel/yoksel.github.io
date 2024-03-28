@@ -29,12 +29,18 @@ export interface ArticleData {
 }
 
 export interface SlugData {
-  date: string;
+  date?: string;
   fullSlug: string;
 }
 
 export interface DataBySlag {
   [key: string]: SlugData;
+}
+
+export interface EventProps {
+  name: string;
+  href: string;
+  date: string;
 }
 
 export interface WidgetItem {
@@ -43,7 +49,7 @@ export interface WidgetItem {
   desc?: string;
   excerpt?: string;
   stars?: number;
-  event?: Event;
+  event?: EventProps;
 }
 
 export interface PrevNextItem extends WidgetItem {
