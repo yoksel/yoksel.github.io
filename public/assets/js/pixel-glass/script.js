@@ -430,7 +430,7 @@
 
       doc.documentElement.appendChild(controlsPanel);
 
-      stickyContainer.classList.add('sticky-container--collapse');
+      stickyContainer.classList.add('sticky-container--disabled');
 
       controlsPanel.removeEventListener('click', takeOutPanel);
 

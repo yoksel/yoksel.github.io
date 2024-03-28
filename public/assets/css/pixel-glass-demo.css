@@ -63,6 +63,14 @@ HTML,
   animation-fill-mode: forwards;
 }
 
+.sticky-container--disabled::after {
+  content: none;
+}
+
+.sticky-container--disabled .sticky-point {
+  opacity: .35;
+}
+
 .sticky-point .controls-panel {
   position: static;
   margin: 1rem auto;
