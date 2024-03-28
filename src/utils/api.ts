@@ -128,6 +128,10 @@ export async function getArticleBySlug({
       filteredFields.date = articlesData.date;
     }
 
+    if (type === 'archive') {
+      filteredFields.isArchived = true;
+    }
+
     return filteredFields;
   } catch (error) {
     console.log(error);

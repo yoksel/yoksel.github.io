@@ -1,5 +1,9 @@
 [
   {
+    "slug": "3D",
+    "name": "3D"
+  },
+  {
     "slug": "a11y",
     "name": "доступность"
   },
@@ -24,6 +28,10 @@
     "name": "Firefox"
   },
   {
+    "slug": "flexbox",
+    "name": "flexbox"
+  },
+  {
     "slug": "css-math",
     "name": "математика в CSS"
   },
@@ -41,7 +49,7 @@
   },
   {
     "slug": "js",
-    "name": "Js"
+    "name": "JS"
   },
   {
     "slug": "layout",

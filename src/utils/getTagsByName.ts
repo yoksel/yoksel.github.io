@@ -5,7 +5,7 @@ interface Tag {
   slug: string;
 }
 
-interface TagsByName {
+export interface TagsByName {
   [key: string]: string;
 }
 

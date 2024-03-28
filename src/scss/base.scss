@@ -4,11 +4,12 @@ HTML {
 
 BODY {
   display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 32px;
   padding-bottom: 0;
   background: #EEE;
-  justify-content: center;
+  align-items: center;
   font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
   font-size: var(--base-font-size);
   line-height: var(--base-line-height);

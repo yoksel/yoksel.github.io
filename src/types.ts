@@ -26,6 +26,7 @@ export interface ArticleData {
   customJs?: string;
   layout?: 'onecolumn';
   disableCounter?: boolean;
+  isArchived?: boolean;
 }
 
 export interface SlugData {
@@ -50,6 +51,7 @@ export interface WidgetItem {
   excerpt?: string;
   stars?: number;
   event?: EventProps;
+  isArchived?: boolean;
 }
 
 export interface PrevNextItem extends WidgetItem {
