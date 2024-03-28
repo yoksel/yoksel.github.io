@@ -1,8 +1,9 @@
 import React from 'react';
 
 import projectsData from '../../../../data/meta/projects.json';
-import Widget, { WidgetItem } from '../Widget';
+import Widget from '../Widget';
 import VisuallyHiddenText from '../../atoms/VisuallyHiddenText';
+import { WidgetItem } from '../../../types';
 
 interface AsideProps {
   slug?: string;
@@ -72,6 +73,11 @@ const Aside = ({ slug, isMain, articleType, posts, pages }: AsideProps) => {
       <>
         {pagesWidget}
         {projectsWidget}
+      </>
+    ) : isMain ? (
+      <>
+        {projectsWidget}
+        {pagesWidget}
       </>
     ) : (
       <>

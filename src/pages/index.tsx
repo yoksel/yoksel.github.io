@@ -13,14 +13,23 @@ export const getStaticProps = (async () => {
     'post',
   )) as ArticleWithDate[];
 
-  return { props: { posts } };
+  const pages = (await getAllArticles(
+    ['title', 'slug', 'order', 'excerpt', 'date'],
+    'page',
+  )) as ArticleWithDate[];
+
+  return { props: { posts, pages } };
 }) satisfies GetStaticProps<{
   posts: ArticleWithDate[];
+  pages: ArticleWithDate[];
 }>;
 
-export default function Page({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function Page({ posts, pages }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <Layout isMain={true}>
+    <Layout
+      isMain={true}
+      pages={pages}
+    >
       <ArticlesCardsList items={posts} />
 
       <p>
