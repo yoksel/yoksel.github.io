@@ -22,8 +22,8 @@ export interface ArticleData {
   additional_links?: PageUrl[];
   tags?: string[];
   image?: string;
-  customStyles?: string;
-  customScripts?: string;
+  customCSS?: string;
+  customJs?: string;
   layout?: 'onecolumn';
   disableCounter?: boolean;
 }
