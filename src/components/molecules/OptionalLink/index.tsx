@@ -7,7 +7,10 @@ interface OptionalLinkProps extends React.PropsWithChildren {
 }
 
 const OptionalLink = ({ slug, href, className, children }: OptionalLinkProps) => {
-  if (slug && href.includes(slug)) {
+  const slugWithSlash = slug?.startsWith('/') ? slug : `/${slug}`;
+  const isCurrent = slug && href.endsWith(slugWithSlash);
+
+  if (isCurrent) {
     return <span className={className}>{children}</span>;
   }
 

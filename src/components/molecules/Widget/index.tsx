@@ -1,6 +1,5 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import Link from '../../atoms/Link';
 import VisuallyHiddenText from '../../atoms/VisuallyHiddenText';
 import OptionalLink from '../OptionalLink';
 import classNames from 'classnames';
@@ -85,6 +84,7 @@ const Widget = ({ id, title, items, slug, isTemplate, hideTitle, footerContent }
   if (!items?.length && !isTemplate) {
     return null;
   }
+  const slugWithSlash = slug?.startsWith('/') ? slug : `/${slug}`;
 
   return (
     <div className={classNames(styles['widget'], styles[`widget--${id}`], isTemplate && 'hidden')}>
@@ -92,20 +92,24 @@ const Widget = ({ id, title, items, slug, isTemplate, hideTitle, footerContent }
 
       <ul className={styles['widget__list']}>
         {items?.map(({ text, href, desc, stars, event }) => {
+          const isCurrent = slug && href.endsWith(slugWithSlash);
+
           return (
             <li
               className={classNames(
                 styles['widget__item'],
-                href === slug && styles['widget__item--current'],
+                isCurrent && styles['widget__item--current'],
               )}
               key={uuidv4()}
             >
               <OptionalLink
                 href={href}
                 slug={slug}
-                className={classNames(href !== slug && styles['widget__link'])}
+                className={classNames(!isCurrent && styles['widget__link'])}
               >
-                <span className={styles['widget__link-text']}>{text}</span>
+                <span className={classNames(!isCurrent && styles['widget__link-text'])}>
+                  {text}
+                </span>
                 <Stars>{stars}</Stars>
               </OptionalLink>
               <Description desc={desc} />
