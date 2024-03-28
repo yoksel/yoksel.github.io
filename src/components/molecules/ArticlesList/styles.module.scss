@@ -1,0 +1,9 @@
+@import "../../../scss/mixins.scss";
+
+.articlesList {
+  @include decoratedList;
+}
+
+.articlesList__archive-mark {
+    margin-left: .5rem;
+}
