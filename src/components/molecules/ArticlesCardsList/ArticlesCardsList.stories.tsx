@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import ArticlesList from '.';
+import ArticlesCardsList from '.';
 
 const post = {
   text: 'text',
@@ -8,10 +8,10 @@ const post = {
   excerpt: '<b>Some html</b> here',
 };
 
-const meta: Meta<typeof ArticlesList> = {
-  title: 'Molecules/ArticlesList',
+const meta: Meta<typeof ArticlesCardsList> = {
+  title: 'Molecules/ArticlesCardsList',
   parameters: { layout: 'centered' },
-  component: ArticlesList,
+  component: ArticlesCardsList,
   tags: ['autodocs'],
 };
 

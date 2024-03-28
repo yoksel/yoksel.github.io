@@ -5,12 +5,12 @@ import ArticleCard, { ArticleWithDate } from '../ArticleCard';
 
 import styles from './styles.module.scss';
 
-interface ArticlesListProps {
+interface ArticlesCardsListProps {
   items: ArticleWithDate[];
   mod?: string;
 }
 
-const ArticlesList = ({ items, mod }: ArticlesListProps) => {
+const ArticlesCardsList = ({ items, mod }: ArticlesCardsListProps) => {
   if (!items.length) {
     return;
   }
@@ -36,4 +36,4 @@ const ArticlesList = ({ items, mod }: ArticlesListProps) => {
   );
 };
 
-export default ArticlesList;
+export default ArticlesCardsList;

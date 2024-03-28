@@ -1,46 +1,46 @@
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
-import ArticlesList from '.';
+import ArticlesCardsList from '.';
 
 const post = {
   text: 'text',
   href: '#url',
-  date: '22-12-2023',
+  date: '2023-12-22',
   excerpt: 'Text',
 };
 
-describe('ArticlesList', () => {
+describe('ArticlesCardsList', () => {
   test('to have titles with link', () => {
-    const { getByRole } = render(<ArticlesList items={[post, post]} />);
+    const { getByRole } = render(<ArticlesCardsList items={[post, post]} />);
 
     const list = getByRole('list');
     expect(list).toBeInTheDocument();
   });
 
   test('to have titles with link', () => {
-    const { getAllByRole } = render(<ArticlesList items={[post, post]} />);
+    const { getAllByRole } = render(<ArticlesCardsList items={[post, post]} />);
 
     const links = getAllByRole('link', { name: post.text });
     expect(links).toHaveLength(2);
   });
 
   test('to have Read more links', () => {
-    const { getAllByRole } = render(<ArticlesList items={[post, post]} />);
+    const { getAllByRole } = render(<ArticlesCardsList items={[post, post]} />);
 
     const links = getAllByRole('link', { name: 'Читать дальше →' });
     expect(links).toHaveLength(2);
   });
 
   test('to have dates', () => {
-    const { getAllByText } = render(<ArticlesList items={[post, post]} />);
+    const { getAllByText } = render(<ArticlesCardsList items={[post, post]} />);
 
-    expect(getAllByText(post.date)).toHaveLength(2);
+    expect(getAllByText('22/12/2023')).toHaveLength(2);
   });
 
   test('to have excerpts', () => {
-    const { getAllByText } = render(<ArticlesList items={[post, post]} />);
+    const { getAllByText } = render(<ArticlesCardsList items={[post, post]} />);
 
-    expect(getAllByText(post.date)).toHaveLength(2);
+    expect(getAllByText(post.excerpt)).toHaveLength(2);
   });
 });
