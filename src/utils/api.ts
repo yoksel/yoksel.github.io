@@ -48,6 +48,16 @@ const convertToHTML = async (content: string) => {
   return customMarkdownToHtml(htmlContent).replace(MORE_DELIMITER, '');
 };
 
+const getFormattedSlug = (slug: string, type: ArticleType) => {
+  let slugWithSlash = slug.startsWith('/') ? slug : `/${slug}`;
+
+  if (type === 'page') {
+    slugWithSlash = `/pages${slugWithSlash}`;
+  }
+
+  return slugWithSlash;
+};
+
 type Fields = (keyof ArticleData)[];
 
 interface getArticleBySlugArgs {
@@ -62,26 +72,26 @@ export async function getArticleBySlug({
   type = 'post',
 }: getArticleBySlugArgs): Promise<ArticleData | undefined> {
   const articlesDataByType = getArticlesDataByType(type);
-  const slugWithSlash = slug.startsWith('/') ? slug : `/${slug}`;
+  let slugWithSlash = getFormattedSlug(slug, type);
   let articlesData = articlesDataByType[slugWithSlash];
   let directoryByType = getDirectory(type);
 
-  if (!articlesData) {
+  if (!articlesData && type === 'post') {
     // Trying to find archived articles
     const articlesDataByType = getArticlesDataByType('archive');
     articlesData = articlesDataByType[slugWithSlash];
     directoryByType = getDirectory('archive');
+  }
 
-    if (!articlesData) {
-      console.log(`Slug not found: ${slug}`);
-      return;
-    }
+  if (!articlesData) {
+    console.log(`\nSlug not found: ${slug}\n`);
+    return;
   }
 
   const fullPath = join(directoryByType, articlesData.fullSlug);
 
   if (!fs.existsSync(fullPath)) {
-    console.log(`Path not found: ${fullPath}`);
+    console.log(`\nPath not found: ${fullPath}\n`);
     return;
   }
 
