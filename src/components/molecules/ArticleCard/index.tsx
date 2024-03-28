@@ -1,8 +1,7 @@
+import { WidgetItem } from '../../../types';
 import ArticleDate from '../../atoms/ArticleDate';
 import ContentAsHtml from '../../atoms/ContentAsHtml';
-import FadedText from '../../atoms/FadedText';
 import Link from '../../atoms/Link';
-import { WidgetItem } from '../Widget';
 
 import styles from './styles.module.scss';
 
