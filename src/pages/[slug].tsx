@@ -2,7 +2,7 @@ import React from 'react';
 import type { InferGetStaticPropsType, GetStaticProps, GetStaticPaths } from 'next';
 import { getAllArticles, getArticleBySlug } from '../utils/api';
 import { postsDataBySlug } from '../../data/meta/articlesDataBySlug';
-import { ArticleData, PrevNextItem, PrevNextProps, WidgetItem } from '../types';
+import { ArticleData, PrevNextProps, WidgetItem } from '../types';
 import Layout from '../components/molecules/Layout';
 
 export const getStaticPaths = (async () => {
@@ -24,7 +24,7 @@ export const getStaticProps = (async (context) => {
   const slugWithSlash = slug.startsWith('/') ? slug : `/${slug}`;
   const article = await getArticleBySlug({
     slug,
-    fields: ['title', 'slug', 'content', 'links', 'tags', 'navItems'],
+    fields: ['title', 'slug', 'content', 'links', 'tags', 'navItems', 'customCSS', 'customJs'],
     type: 'post',
   });
 

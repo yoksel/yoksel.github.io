@@ -128,8 +128,13 @@ const CustomHead = ({ article }: CustomHeadProps) => {
         content="F-TG-dOz9FIzxUZCGD9MBMwsTukpyzq9LXIX6ZsJl_k"
       />
 
-      {article?.customStyles}
-      {article?.customScripts}
+      {article?.customCSS && (
+        <link
+          rel="stylesheet"
+          href={`/assets/css/${article?.customCSS}`}
+        />
+      )}
+      {article?.customJs && <script src={`/assets/js/${article?.customJs}`}></script>}
 
       <script
         src="/assets/js/common.js"
