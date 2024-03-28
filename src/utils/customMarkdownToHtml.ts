@@ -1,7 +1,11 @@
 import Prism from 'prismjs';
 
 export function addHighlightingReplacer(_: unknown, type: string, code: string) {
-  const cleanCode = code.replace(/^\n/, '');
+  const cleanCode = code
+    .replace(/^\n/, '')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"');
   const highlightedCode = Prism.highlight(cleanCode, Prism.languages[type], 'type');
   return `<figure aria-label="Пример кода"><pre class="language-${type}"><code class="language-${type}">${highlightedCode}</code></pre></figure>`;
 }
