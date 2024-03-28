@@ -33,6 +33,15 @@ describe('PostPrevNext', () => {
     expect(nextLink).toHaveAttribute('title', next.text);
   });
 
+  test('to be rendered with one link', () => {
+    const { getByRole } = render(<PostPrevNext next={next} />);
+
+    const nextLink = getByRole('link', { name: `${next.text} →` });
+
+    expect(nextLink).toBeInTheDocument();
+    expect(nextLink).toHaveAttribute('title', next.text);
+  });
+
   test('not to be rendered', () => {
     const { queryByRole } = render(
       <PostPrevNext

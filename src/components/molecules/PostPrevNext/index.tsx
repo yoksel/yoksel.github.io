@@ -7,7 +7,7 @@ import { PrevNextProps } from '@src/types';
 import styles from './styles.module.scss';
 
 const PostPrevNext = ({ prev, next }: PrevNextProps) => {
-  if (!(prev && next)) {
+  if (!(prev || next)) {
     return null;
   }
 
