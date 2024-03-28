@@ -13,6 +13,8 @@ import {
   servicePagesDataBySlug,
 } from '../../data/meta/articlesDataBySlug';
 
+const MORE_DELIMITER = '<!--more-->';
+
 export const getDirectory = (type: ArticleType = 'post') => {
   let directoryPath = 'data/posts';
 
@@ -35,6 +37,11 @@ const getArticlesDataByType = (type: ArticleType): DataBySlag => {
     default:
       return postsDataBySlug;
   }
+};
+
+const convertToHTML = async (content: string) => {
+  const htmlContent = await marked.parse(content);
+  return customMarkdownToHtml(htmlContent).replace(MORE_DELIMITER, '');
 };
 
 type Fields = (keyof ArticleData)[];
@@ -61,10 +68,14 @@ export async function getArticleBySlug({
 
   const fullPath = join(getDirectory(type), articlesData.fullSlug);
 
-  const moreDelimiter = '<!--more-->';
+  if (!fs.existsSync(fullPath)) {
+    console.log(`Path not found: ${fullPath}`);
+    return;
+  }
 
   try {
     const fileContents = fs.readFileSync(fullPath, 'utf8');
+
     const { data, content } = matter(fileContents);
     const dataTyped = data;
 
@@ -75,25 +86,30 @@ export async function getArticleBySlug({
       if (field === 'slug') {
         filteredFields['slug'] = slug;
       } else if (field === 'content') {
-        filteredFields['content'] = customMarkdownToHtml(content).replace(moreDelimiter, '');
+        filteredFields['content'] = content;
       } else if (field === 'excerpt') {
         if (dataTyped['excerpt']) {
           filteredFields['excerpt'] = dataTyped['excerpt'];
-        } else if (content.includes(moreDelimiter)) {
-          const excerpt = content.split(moreDelimiter)?.[0];
-          filteredFields['excerpt'] = customMarkdownToHtml(excerpt);
+        } else if (content.includes(MORE_DELIMITER)) {
+          filteredFields['excerpt'] = content.split(MORE_DELIMITER)?.[0];
         }
       } else if (field && data[field] !== undefined) {
         filteredFields[field] = dataTyped[field];
       }
     });
 
+    // async handler
     if (filteredFields.content) {
-      filteredFields.content = await marked.parse(filteredFields.content || '');
+      filteredFields.content = await convertToHTML(filteredFields.content);
 
       if (fields.includes('navItems')) {
         filteredFields.navItems = getSectionsList(filteredFields.content);
       }
+    }
+
+    // async handler
+    if (filteredFields.excerpt) {
+      filteredFields.excerpt = await convertToHTML(filteredFields.excerpt);
     }
 
     if (articlesData.date) {

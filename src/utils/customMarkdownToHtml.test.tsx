@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react';
 import customMarkdownToHtml, {
   addAnchorsReplacer,
   addHighlightingReplacer,
@@ -26,7 +25,7 @@ describe('addAnchorsReplacer()', () => {
 
 describe('customMarkdownToHtml()', () => {
   test('to all custom markdown replaced', () => {
-    const cssCodeString = '```css\nbody {color: pink;}```';
+    const cssCodeString = '<pre><code class="language-css">body {color: pink;}</code></pre>';
     const headingString = '<h2 id="my-section">section name</h2>';
     const result = customMarkdownToHtml(`${cssCodeString} ${headingString}`);
 

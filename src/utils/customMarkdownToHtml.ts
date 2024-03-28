@@ -14,9 +14,8 @@ export function addAnchorsReplacer(_: unknown, level: string, id: string, text: 
 }
 
 export default function customMarkdownToHtml(markdown: string): string {
-  // Add markup and highlighting to code blocks
   const withCodeBlocks = markdown.replace(
-    /```(?<type>html|css|js)(?<code>[^`]+)```/gm,
+    /<pre><code class="language-(?<type>\w+)">(?<code>[^<]+)<\/code><\/pre>/gms,
     addHighlightingReplacer,
   );
 
