@@ -11,7 +11,7 @@ const post = {
 };
 
 describe('ArticlesCardsList', () => {
-  test('to have titles with link', () => {
+  test('to have list', () => {
     const { getByRole } = render(<ArticlesCardsList items={[post, post]} />);
 
     const list = getByRole('list');
