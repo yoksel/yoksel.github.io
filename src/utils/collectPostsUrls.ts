@@ -25,6 +25,10 @@ function getArticlesLongSlugsByShort(type: ArticleType = 'post') {
         date,
         fullSlug,
       };
+    } else {
+      longSlugsByShort[`/${articleSlug}`] = {
+        fullSlug,
+      };
     }
   });
 
@@ -37,10 +41,14 @@ function getArticlesLongSlugsByShort(type: ArticleType = 'post') {
 const collectPostsUrls = () => {
   const postsSlugs = getArticlesLongSlugsByShort('post');
   const pagesSlugs = getArticlesLongSlugsByShort('page');
+  const servicePagesSlugs = getArticlesLongSlugsByShort('service-page');
+
   const content = `/* npm run getPosts */
 export const postsDataBySlug = ${JSON.stringify(postsSlugs, null, '  ')};
 
-export const pagesDataBySlug = ${JSON.stringify(pagesSlugs, null, '  ')};`;
+export const pagesDataBySlug = ${JSON.stringify(pagesSlugs, null, '  ')};
+
+export const servicePagesDataBySlug = ${JSON.stringify(servicePagesSlugs, null, '  ')};`;
 
   fs.writeFileSync('data/meta/articlesDataBySlug.ts', content);
 

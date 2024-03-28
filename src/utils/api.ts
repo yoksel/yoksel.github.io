@@ -7,7 +7,11 @@ import { marked } from 'marked';
 import { ArticleData, ArticleType, DataBySlag } from '../types';
 import customMarkdownToHtml from './customMarkdownToHtml';
 import { getSectionsList } from './getSectionsList';
-import { postsDataBySlug, pagesDataBySlug } from '../../data/meta/articlesDataBySlug';
+import {
+  postsDataBySlug,
+  pagesDataBySlug,
+  servicePagesDataBySlug,
+} from '../../data/meta/articlesDataBySlug';
 
 export const getDirectory = (type: ArticleType = 'post') => {
   let directoryPath = 'data/posts';
@@ -20,6 +24,17 @@ export const getDirectory = (type: ArticleType = 'post') => {
   }
 
   return join(process.cwd(), directoryPath);
+};
+
+const getArticlesDataByType = (type: ArticleType): DataBySlag => {
+  switch (type) {
+    case 'page':
+      return pagesDataBySlug;
+    case 'service-page':
+      return servicePagesDataBySlug;
+    default:
+      return postsDataBySlug;
+  }
 };
 
 type Fields = (keyof ArticleData)[];
@@ -35,7 +50,7 @@ export async function getArticleBySlug({
   fields = [],
   type = 'post',
 }: getArticleBySlugArgs): Promise<ArticleData | undefined> {
-  const articlesDataByType: DataBySlag = type === 'page' ? pagesDataBySlug : postsDataBySlug;
+  const articlesDataByType = getArticlesDataByType(type);
   const slugWithSlash = slug.startsWith('/') ? slug : `/${slug}`;
   const articlesData = articlesDataByType[slugWithSlash];
 
@@ -92,7 +107,7 @@ export async function getArticleBySlug({
 }
 
 export async function getAllArticles(fields: Fields = [], type: ArticleType = 'post') {
-  const articlesDataByType: DataBySlag = type === 'page' ? pagesDataBySlug : postsDataBySlug;
+  const articlesDataByType = getArticlesDataByType(type);
   const slugs = Object.keys(articlesDataByType);
   const articlesPromises = slugs.map(async (slug) => {
     const article = await getArticleBySlug({ slug, fields, type });

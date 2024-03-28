@@ -255,6 +255,9 @@ export const postsDataBySlug = {
   "/css-math": {
     "date": "2020-09-26",
     "fullSlug": "2020-09-26-css-math.md"
+  },
+  "/archive": {
+    "fullSlug": "archive"
   }
 };
 
@@ -290,5 +293,14 @@ export const pagesDataBySlug = {
   "/pages/svg-links": {
     "date": "2014-03-19",
     "fullSlug": "2014-03-19-svg-links.md"
+  }
+};
+
+export const servicePagesDataBySlug = {
+  "/about": {
+    "fullSlug": "about.md"
+  },
+  "/drafts": {
+    "fullSlug": "drafts.md"
   }
 };
