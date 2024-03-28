@@ -19,7 +19,7 @@ describe('PostPrevNext', () => {
   test('to be rendered', () => {
     const { getByRole } = render(
       <PostPrevNext
-        previous={previous}
+        prev={previous}
         next={next}
       />,
     );
@@ -36,7 +36,7 @@ describe('PostPrevNext', () => {
   test('not to be rendered', () => {
     const { queryByRole } = render(
       <PostPrevNext
-        previous={undefined}
+        prev={undefined}
         next={undefined}
       />,
     );

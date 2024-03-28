@@ -13,7 +13,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    previous: {
+    prev: {
       id: 'previous',
       href: '#back',
       text: 'Read this',

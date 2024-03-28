@@ -36,3 +36,21 @@ export interface SlugData {
 export interface DataBySlag {
   [key: string]: SlugData;
 }
+
+export interface WidgetItem {
+  text: string;
+  href: string;
+  desc?: string;
+  excerpt?: string;
+  stars?: number;
+  event?: Event;
+}
+
+export interface PrevNextItem extends WidgetItem {
+  id: string;
+}
+
+export interface PrevNextProps {
+  prev?: PrevNextItem;
+  next?: PrevNextItem;
+}

@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import VisuallyHiddenText from '../../atoms/VisuallyHiddenText';
 import OptionalLink from '../OptionalLink';
 import classNames from 'classnames';
+import { WidgetItem } from '../../../types';
 
 import styles from './styles.module.scss';
 
@@ -60,15 +61,6 @@ const Event = ({ event }: { event?: Event }) => {
     </div>
   );
 };
-
-export interface WidgetItem {
-  text: string;
-  href: string;
-  desc?: string;
-  excerpt?: string;
-  stars?: number;
-  event?: Event;
-}
 
 interface WidgetProps {
   id: string;

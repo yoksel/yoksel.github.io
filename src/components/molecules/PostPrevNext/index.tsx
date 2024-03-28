@@ -1,28 +1,19 @@
 import React from 'react';
 
-import styles from './styles.module.scss';
 import classNames from 'classnames';
 import Link from '../../atoms/Link';
+import { PrevNextProps } from '../../../types';
 
-interface PrevNextLink {
-  id: string;
-  href: string;
-  text: string;
-}
+import styles from './styles.module.scss';
 
-interface PostPrevNextProps {
-  previous?: PrevNextLink;
-  next?: PrevNextLink;
-}
-
-const PostPrevNext = ({ previous, next }: PostPrevNextProps) => {
-  if (!previous && !next) {
+const PostPrevNext = ({ prev, next }: PrevNextProps) => {
+  if (!(prev && next)) {
     return null;
   }
 
   return (
     <div className={styles['post-prevnext']}>
-      {[previous, next].map((link) => {
+      {[prev, next].map((link) => {
         if (!link) return null;
 
         return (
