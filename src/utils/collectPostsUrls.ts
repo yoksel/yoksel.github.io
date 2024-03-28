@@ -1,10 +1,20 @@
-import fs from 'fs';
+import fs from 'node:fs';
+import { join } from 'path';
 
 import { getDirectory } from './api';
 import { ArticleType, DataBySlag } from '../types';
 
+const isFile = (fileName: string) => {
+  return fs.lstatSync(fileName).isFile();
+};
+
 export function getArticlesSlugsFromFs(type: ArticleType = 'post'): string[] {
-  return fs.readdirSync(getDirectory(type));
+  const filesList = fs.readdirSync(getDirectory(type));
+
+  return filesList.filter((fileName) => {
+    const fullPath = join(getDirectory(type), fileName);
+    return isFile(fullPath);
+  });
 }
 
 function getArticlesLongSlugsByShort(type: ArticleType = 'post') {
@@ -56,4 +66,3 @@ export const servicePagesDataBySlug = ${JSON.stringify(servicePagesSlugs, null, 
 };
 
 collectPostsUrls();
-

@@ -255,9 +255,6 @@ export const postsDataBySlug = {
   "/css-math": {
     "date": "2020-09-26",
     "fullSlug": "2020-09-26-css-math.md"
-  },
-  "/archive": {
-    "fullSlug": "archive"
   }
 };
 
