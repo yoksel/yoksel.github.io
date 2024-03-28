@@ -1,5 +1,5 @@
 import React from 'react';
-import { getTagsByName } from '../../../helpers';
+import { getTagsByName } from '../../../utils/getTagsByName';
 import Link from '../../atoms/Link';
 import classNames from 'classnames';
 
