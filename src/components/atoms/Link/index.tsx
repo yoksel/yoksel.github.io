@@ -3,15 +3,17 @@ interface LinkProps extends React.PropsWithChildren {
   className?: string;
   dataName?: string;
   title?: string;
+  ariaLabel?: string;
 }
 
-const Link = ({ href, className, children, dataName, title }: LinkProps) => (
+const Link = ({ href, className, children, dataName, title, ariaLabel }: LinkProps) => (
   <a
     href={href}
     className={className}
     data-name={dataName}
     rel={href.includes('http') ? 'noreferrer' : undefined}
     title={title}
+    aria-label={ariaLabel}
   >
     {children}
   </a>

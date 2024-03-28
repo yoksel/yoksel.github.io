@@ -42,6 +42,7 @@ const Logo = ({ isMain, parent = 'header' }: LogoProps) => {
         className={classNames(contentStyles, linkStyles)}
         href="/"
         dataName="Про CSS"
+        ariaLabel="Про CSS"
       >
         {logoContent}
       </Link>

@@ -1,5 +1,3 @@
-@import "../scss/globals";
-
 .page {
   display: grid;
   gap: 2rem;
@@ -10,16 +8,11 @@
   padding: 2rem;
   box-sizing: border-box;
   background: #FFF;
-  box-shadow: 0 5px 10px $base-shadow-color;
+  box-shadow: 0 5px 10px var(--base-shadow-color);
 
   @media ( max-width: 768px ) {
     padding: 1.5rem;
   }
-}
-
-.page-container {
-  // margin-left: var(--gap);
-  // margin-right: var(--gap);
 }
 
 .page-main-wrapper {
@@ -27,8 +20,8 @@
   gap: var(--gap);
   grid-template-columns: minmax(0, 3fr) minmax(270px, 1fr);
 
-  .page--main-page & {
-    // grid-template-columns: 1fr;
+  .page--main & {
+    grid-template-columns: 1fr;
   }
 
   &--onecolumn {

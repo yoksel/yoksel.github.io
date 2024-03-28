@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Article from '.';
 
-const articleItemSimple = {
+const article = {
   title: 'Article title',
   content: 'Some long text',
   href: '#url',
@@ -28,6 +28,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    article: articleItemSimple,
+    article: article,
   },
 };
