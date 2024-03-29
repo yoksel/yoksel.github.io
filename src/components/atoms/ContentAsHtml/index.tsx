@@ -2,7 +2,8 @@ import classNames from 'classnames';
 
 interface ContentAsHtmlProps {
   content: string;
-  element?: 'div' | 'p' | 'h2';
+  // P not allowed because of hydration issues if P inside P
+  element?: 'div' | 'h2';
   className?: string;
 }
 

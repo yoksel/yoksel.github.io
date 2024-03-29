@@ -25,7 +25,6 @@ const ArticleCard = ({ article }: ArticleCardProps) => {
 
       {excerpt && (
         <ContentAsHtml
-          element="p"
           className={styles['articleCard__text']}
           content={excerpt}
         />
