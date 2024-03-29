@@ -142,6 +142,10 @@ export async function getArticleBySlug({
       filteredFields.isArchived = true;
     }
 
+    if (type === 'page') {
+      filteredFields.type = 'page';
+    }
+
     return filteredFields;
   } catch (error) {
     console.log(error);
