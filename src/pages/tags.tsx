@@ -8,10 +8,10 @@ import { WidgetItem } from '../types';
 import TagCloud from '../components/molecules/TagCloud';
 import ArticlesList from '../components/molecules/ArticlesList';
 
-interface ArticleWitTags extends WidgetItem {
+type ArticleWitTags = {
   date: string;
   tags: string[];
-}
+} & WidgetItem;
 
 interface TagsWithPosts {
   id: string;

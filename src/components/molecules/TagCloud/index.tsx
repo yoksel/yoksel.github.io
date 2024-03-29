@@ -3,9 +3,9 @@ import { WidgetItem } from '../../../types';
 
 import styles from './styles.module.scss';
 
-interface ArticleWitTags extends WidgetItem {
+type ArticleWitTags = {
   tags: string[];
-}
+} & WidgetItem;
 
 interface TagWithPosts {
   id: string;

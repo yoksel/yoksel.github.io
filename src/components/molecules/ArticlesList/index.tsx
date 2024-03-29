@@ -25,7 +25,7 @@ const ArticlesList = ({ items }: ArticlesListProps) => {
             key={index}
           >
             {/* isArchived */}
-            <Link href={post.href}>{post.text}</Link>
+            <Link href={post.href}>{'text' in post && post.text}</Link>
             {post.isArchived && (
               <FadedText className={styles['articlesList__archive-mark']}>в архиве</FadedText>
             )}

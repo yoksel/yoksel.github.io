@@ -44,7 +44,6 @@ const Aside = ({ slug, isMain, articleType, posts, pages }: AsideProps) => {
       title="Фотографии"
       slug={slug}
       items={[]}
-      isTemplate={true}
       hideTitle={true}
       footerContent="<a href='https://unsplash.com/@yoksel/'>unsplash.com/@yoksel</a>"
     />

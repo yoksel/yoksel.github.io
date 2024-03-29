@@ -134,11 +134,6 @@ const CustomHead = ({ article }: CustomHeadProps) => {
           href={`/assets/css/${article?.customCSS}`}
         />
       )}
-
-      <script
-        src="/assets/js/common.js"
-        type="module"
-      ></script>
     </Head>
   );
 };

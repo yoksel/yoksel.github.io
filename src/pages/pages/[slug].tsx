@@ -38,7 +38,7 @@ export const getStaticProps = (async (context) => {
   let prevNext = {};
 
   const currentIndex = posts.findIndex((post) => {
-    return post.href === slugWithSlash;
+    return 'href' in post && post.href === slugWithSlash;
   });
 
   if (currentIndex > -1) {

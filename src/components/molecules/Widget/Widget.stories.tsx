@@ -11,6 +11,12 @@ const widgetItemWithDescription = {
   desc: 'description',
 };
 
+const widgetItemWithImage = {
+  href: '#url',
+  imageSrc:
+    'https://images.unsplash.com/photo-1602673452179-d372cc634ce1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE1MzIzMH0',
+};
+
 const widgetItemWithStars = {
   ...widgetItemSimple,
   stars: 4,
@@ -47,5 +53,12 @@ export const Default: Story = {
       widgetItemWithEvent,
       widgetItemWithAll,
     ],
+  },
+};
+
+export const WithImages: Story = {
+  args: {
+    layout: 'grid',
+    items: [widgetItemWithImage, widgetItemWithImage, widgetItemWithImage, widgetItemWithImage],
   },
 };

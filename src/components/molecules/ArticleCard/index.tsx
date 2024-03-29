@@ -5,9 +5,10 @@ import Link from '../../atoms/Link';
 
 import styles from './styles.module.scss';
 
-export interface ArticleWithDate extends WidgetItem {
+export type ArticleWithDate = {
+  text: string;
   date: string;
-}
+} & WidgetItem;
 
 interface ArticleCardProps {
   article: ArticleWithDate;

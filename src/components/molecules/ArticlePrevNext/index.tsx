@@ -15,6 +15,7 @@ const ArticlePrevNext = ({ prev, next }: PrevNextProps) => {
     <div className={styles['articlePrevNext']}>
       {[prev, next].map((link) => {
         if (!link) return null;
+        const text = 'text' in link ? link.text : undefined;
 
         return (
           <Link
@@ -24,10 +25,10 @@ const ArticlePrevNext = ({ prev, next }: PrevNextProps) => {
               styles['articlePrevNext__item'],
               styles[`articlePrevNext__item--${link.id}`],
             )}
-            title={link.text}
+            title={text}
           >
             {link.id === 'previous' && <span className={styles['articlePrevNext__arrow']}>←</span>}
-            <span className={styles['articlePrevNext__text']}>{link.text}</span>
+            <span className={styles['articlePrevNext__text']}>{text}</span>
             {link.id === 'next' && <span className={styles['articlePrevNext__arrow']}>→</span>}
           </Link>
         );

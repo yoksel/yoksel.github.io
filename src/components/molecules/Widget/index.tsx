@@ -1,5 +1,6 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import Image from 'next/image';
 import VisuallyHiddenText from '../../atoms/VisuallyHiddenText';
 import OptionalLink from '../OptionalLink';
 import classNames from 'classnames';
@@ -61,24 +62,32 @@ interface WidgetProps {
   title: string;
   items?: WidgetItem[];
   slug?: string;
-  isTemplate?: boolean;
   hideTitle?: boolean;
   footerContent?: string;
+  layout?: 'grid';
 }
 
-const Widget = ({ id, title, items, slug, isTemplate, hideTitle, footerContent }: WidgetProps) => {
-  if (!items?.length && !isTemplate) {
+const Widget = ({ id, title, items, slug, hideTitle, footerContent, layout }: WidgetProps) => {
+  if (!items?.length) {
     return null;
   }
   const slugWithSlash = slug?.startsWith('/') ? slug : `/${slug}`;
 
   return (
-    <div className={classNames(styles['widget'], styles[`widget--${id}`], isTemplate && 'hidden')}>
+    <div className={classNames(styles['widget'], styles[`widget--${id}`])}>
       <WidgetTitle hideTitle={hideTitle}>{title}</WidgetTitle>
 
-      <ul className={styles['widget__list']}>
-        {items?.map(({ text, href, desc, stars, event }) => {
+      <ul
+        className={classNames(
+          styles['widget__list'],
+          layout === 'grid' && styles['widget__list--grid'],
+        )}
+      >
+        {items?.map((item) => {
+          const { href, desc, stars, event } = item;
           const isCurrent = slug && href.endsWith(slugWithSlash);
+          const text = 'text' in item ? item.text : undefined;
+          const imageSrc = 'imageSrc' in item ? item.imageSrc : undefined;
 
           return (
             <li
@@ -93,6 +102,15 @@ const Widget = ({ id, title, items, slug, isTemplate, hideTitle, footerContent }
                 slug={slug}
                 className={classNames(!isCurrent && styles['widget__link'])}
               >
+                {imageSrc && (
+                  <Image
+                    src={imageSrc}
+                    alt=""
+                    loading="lazy"
+                    width="100"
+                    height="100"
+                  />
+                )}
                 <span className={classNames(!isCurrent && styles['widget__link-text'])}>
                   {text}
                 </span>

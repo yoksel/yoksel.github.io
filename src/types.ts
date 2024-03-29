@@ -45,19 +45,26 @@ export interface EventProps {
   date: string;
 }
 
-export interface WidgetItem {
+type WidgetItemWithText = {
   text: string;
+};
+
+type WidgetItemWithImage = {
+  imageSrc: string;
+};
+
+export type WidgetItem = {
   href: string;
   desc?: string;
   excerpt?: string;
   stars?: number;
   event?: EventProps;
   isArchived?: boolean;
-}
+} & (WidgetItemWithText | WidgetItemWithImage);
 
-export interface PrevNextItem extends WidgetItem {
+export type PrevNextItem = {
   id: string;
-}
+} & WidgetItem;
 
 export interface PrevNextProps {
   prev?: PrevNextItem;
