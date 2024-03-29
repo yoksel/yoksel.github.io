@@ -13,6 +13,7 @@ const widgetItemWithDescription = {
 
 const widgetItemWithImage = {
   href: '#url',
+  alt: 'Beautiful picture',
   imageSrc:
     'https://images.unsplash.com/photo-1602673452179-d372cc634ce1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE1MzIzMH0',
 };
