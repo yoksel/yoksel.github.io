@@ -37,12 +37,12 @@ $colors: getColors();
 }
 
 .header-logo {
-  --logo-size-koeff: .2;
-  --logo-circ-size-koeff: .1;
+  --logo-circ-size-koeff: 1.5;
   --logo-circ-size-diff: calc(var(--logo-size) * var(--logo-circ-size-koeff));
   --logo-circ-decor-size: calc(var(--logo-size) + var(--logo-circ-size-diff) * 2);
 
   position: absolute;
+  z-index: 1;
   width: var(--logo-size);
   height: var(--logo-size);
   margin: 0 auto;
@@ -83,7 +83,7 @@ $colors: getColors();
   text-decoration: none;
   transition: var(--logo-transition);
 
-  &::after {
+  &::before, &::after {
     content: "";
     display: block;
     position: absolute;
@@ -92,7 +92,11 @@ $colors: getColors();
     top: calc(var(--logo-circ-size-diff) * -1);
     left: calc(var(--logo-circ-size-diff) * -1);
     border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     transition: inherit;
+    pointer-events: none;
   }
 
   &:hover {
@@ -104,10 +108,21 @@ $colors: getColors();
     color: #DDD;
   }
 
+  &:hover::before,
   &:hover::after {
-    @include shadow(calc(var(--logo-circ-size-diff) * .65));
+    // @include shadow(calc(var(--logo-circ-size-diff) * .65));
+    // z-index: -1;
+    animation: rotate 30s linear infinite;
+  }
 
-    animation: rotate 2s linear infinite;
+  &:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='350'%3E%3CradialGradient id='grad' cx='50%25' y='50%25'%3E%3Cstop offset='20%25' stop-color='deepskyblue' class='stop-1' stop-opacity='.15'/%3E%3Cstop offset='100%25' stop-color='deepskyblue' stop-opacity='0' class='stop-2'/%3E%3C/radialGradient%3E%3Ccircle r='175' cx='175' cy='175' fill='none' stroke='url(%23grad)' stroke-width='250' stroke-dasharray='6.5% 6.5%'%3E%3C/circle%3E%3C/svg%3E");
+    animation-direction: reverse;
+    animation-duration: 25s;
+  }
+
+  &:hover::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='350'%3E%3CradialGradient id='grad' cx='50%25' y='50%25'%3E%3Cstop offset='20%25' stop-color='white' class='stop-1' stop-opacity='.35'/%3E%3Cstop offset='100%25' stop-color='white' stop-opacity='0' class='stop-2'/%3E%3C/radialGradient%3E%3Ccircle r='175' cx='175' cy='175' fill='none' stroke='url(%23grad)' stroke-width='250' stroke-dasharray='1% 3%'%3E%3C/circle%3E%3C/svg%3E");
   }
 }
 
