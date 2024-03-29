@@ -1,9 +1,9 @@
 import React from 'react';
 import type { InferGetStaticPropsType, GetStaticProps, GetStaticPaths } from 'next';
-import { getAllArticles, getArticleBySlug } from '../../utils/api';
-import { pagesDataBySlug } from '../../../data/meta/articlesDataBySlug';
-import { ArticleData, PrevNextItem, PrevNextProps, WidgetItem } from '../../types';
-import Layout from '../../components/molecules/Layout';
+import { getAllArticles, getArticleBySlug } from '../../../utils/api';
+import { pagesDataBySlug } from '../../../../data/meta/articlesDataBySlug';
+import { ArticleData, PrevNextItem, PrevNextProps, WidgetItem } from '../../../types';
+import Layout from '../../../components/molecules/Layout';
 
 export const getStaticPaths = (async () => {
   return {
