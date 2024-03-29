@@ -35,7 +35,7 @@ const Layout = ({ article, isMain = false, children, posts, pages, prevNext }: L
   return (
     <div className={classNames(styles['page'], isMain ? 'page--main' : 'page--single')}>
       <CustomHead article={article} />
-      <Script src={`/assets/js/${article?.customJs}`} />
+      {article?.customJs && <Script src={`/assets/js/${article?.customJs}`} />}
       <Script
         src="/assets/js/common.js"
         type="module"
