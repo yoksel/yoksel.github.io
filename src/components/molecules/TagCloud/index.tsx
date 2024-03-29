@@ -68,6 +68,7 @@ const TagCloud = ({ tagsByNameWithPosts, currentId, tagOnClick }: TagCloudProps)
       {Object.values(tagsByNameWithPosts).map((tagWithPosts) => {
         return (
           <TagCloudItem
+            key={tagWithPosts.id}
             tagWithPosts={tagWithPosts}
             isCurrent={tagWithPosts.id === currentId}
             step={step}
