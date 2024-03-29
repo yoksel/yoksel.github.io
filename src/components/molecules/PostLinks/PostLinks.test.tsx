@@ -9,17 +9,12 @@ const link = {
   text: 'Link text',
 };
 
-const linkWithIdWithText = {
-  id: 'id',
-  text: 'Link text',
-};
-
 const linkWithoutText = {
   id: 'id',
 };
 
 const linkWithHrefWithoutText = {
-  id: 'id',
+  href: '#href',
 };
 
 describe('PostLinks', () => {
@@ -64,7 +59,7 @@ describe('PostLinks', () => {
   });
 
   test('link with id and text', () => {
-    const { getByRole, getByText } = render(
+    const { getByRole } = render(
       <PostLinks
         title="Links list"
         items={[
@@ -98,17 +93,13 @@ describe('PostLinks', () => {
     const { getByRole } = render(
       <PostLinks
         title="Links list"
-        items={[
-          {
-            href: '#link',
-          },
-        ]}
+        items={[linkWithHrefWithoutText]}
       />,
     );
 
-    const linkElement = getByRole('link', { name: `#link` });
+    const linkElement = getByRole('link', { name: linkWithHrefWithoutText.href });
     expect(linkElement).toBeInTheDocument();
-    expect(linkElement).toHaveAttribute('href', '#link');
+    expect(linkElement).toHaveAttribute('href', linkWithHrefWithoutText.href);
   });
 
   test('not to be rendered if no links', () => {

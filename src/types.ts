@@ -3,7 +3,8 @@ export type ArticleType = 'post' | 'page' | 'service-page' | 'archive';
 type HrefOrId = { id: string } | { href: string };
 
 export type PageUrl = {
-  text: string;
+  // Will use href or id if no text
+  text?: string;
   desc?: string;
   level?: number;
 } & HrefOrId;
