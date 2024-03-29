@@ -1,44 +1,19 @@
 {
-  "extends": "stylelint-config-standard",
+  "extends": ["stylelint-config-standard", "stylelint-config-standard-scss"],
   "rules": {
-    "indentation": 2,
-    "string-quotes": "double",
     "no-duplicate-selectors": true,
-    "color-hex-case": "upper",
     "color-hex-length": "short",
     "selector-max-id": 0,
-    "selector-combinator-space-after": "always",
-    "selector-attribute-quotes": "always",
     "selector-type-case": "upper",
-    "declaration-block-trailing-semicolon": "always",
-    "declaration-no-important": true,
-    "declaration-colon-space-before": "never",
-    "declaration-colon-space-after": "always-single-line",
-    "declaration-colon-newline-after": null,
-    "property-no-vendor-prefix": true,
-    "value-no-vendor-prefix": true,
-    "number-leading-zero": "never",
-    "function-url-quotes": "always",
-    "function-name-case": null,
-    "font-family-name-quotes": "always-where-required",
-    "comment-whitespace-inside": "always",
-    "comment-empty-line-before": null,
+    "import-notation": "string",
+    "selector-class-pattern": null,
+    "custom-property-pattern": null,
+    "at-rule-no-unknown": null,
     "custom-property-empty-line-before": null,
-    "at-rule-no-vendor-prefix": true,
-    "at-rule-no-unknown": [
-      true,
-      ignoreAtRules: [
-        "mixin", "function", "include", "for", "if", "else", "return"
-      ]
-    ],
-    "selector-pseudo-element-colon-notation": "double",
-    "selector-pseudo-class-parentheses-space-inside": "never",
-    "selector-no-vendor-prefix": true,
-    "media-feature-range-operator-space-before": "always",
-    "media-feature-range-operator-space-after": "always",
-    "media-feature-parentheses-space-inside": "always",
-    "media-feature-colon-space-before": "never",
-    "media-feature-colon-space-after": "always"
-  },
-
+    "function-no-unknown": null,
+    "function-name-case": null,
+    "no-descending-specificity": null,
+    "scss/at-mixin-pattern": null,
+    "scss/at-function-pattern": null
+  }
 }

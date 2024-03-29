@@ -10,12 +10,12 @@ BODY {
   padding-bottom: 0;
   background: #EEE;
   align-items: center;
-  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   font-size: var(--base-font-size);
   line-height: var(--base-line-height);
   color: #000;
 
-  // https://web.dev/content-visibility/
+  /* https://web.dev/content-visibility/ */
   content-visibility: auto;
   contain-intrinsic-size: 1000px;
 
@@ -23,7 +23,7 @@ BODY {
     flex-grow: 1;
   }
 
-  @media ( max-width: 1000px ) {
+  @media ( width <= 1000px ) {
     padding: 32px 0 0;
   }
 }
@@ -107,7 +107,7 @@ CODE {
   padding: 0 3px !important;
   background: palegoldenrod !important;
   text-shadow: 1px 1px white !important;
-  font-family: Consolas, Monaco, Lucida Console, monospace;
+  font-family: Consolas, Monaco, "Lucida Console", monospace;
   line-height: 1.6;
   color: darkred !important;
   /* stylelint-enable declaration-no-important */
@@ -149,7 +149,7 @@ PRE CODE {
 .columns {
   display: flex;
 
-  @media ( max-width: 700px ) {
+  @media ( width <= 700px ) {
     .post & {
       flex-direction: column;
     }
@@ -203,7 +203,6 @@ PRE CODE {
   IFRAME {
     display: block;
     margin: 0;
-    // height: 100%;
   }
 
   &::after {

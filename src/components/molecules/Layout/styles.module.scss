@@ -10,7 +10,7 @@
   background: #FFF;
   box-shadow: 0 5px 10px var(--base-shadow-color);
 
-  @media ( max-width: 768px ) {
+  @media ( width <= 768px ) {
     padding: 1.5rem;
   }
 }
@@ -28,7 +28,7 @@
     grid-template-columns: 1fr;
   }
 
-  @media ( max-width: 1000px ) {
+  @media ( width <= 1000px ) {
     grid-template-columns: minmax(250px, 1fr);
   }
 }

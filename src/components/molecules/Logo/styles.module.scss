@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster&text=ПроCSS&display=swap');
+@use 'sass:list';
+@import "https://fonts.googleapis.com/css2?family=Lobster&text=ПроCSS&display=swap";
 
 $max: 9;
 $step: 360 / $max;
@@ -9,14 +10,12 @@ $koeff: 1.4;
   $out: null;
 
   @for $i from 1 through $max {
-    $color: hsla($step*($i - 1), 100%, 50%, $transp);
+    $color: hsla($step * ($i - 1), 100%, 50%, $transp);
 
-    @if ( $i == 1) {
+    @if $i == 1 {
       $out: $color;
-    }
-
-    @else {
-      $out: append($out, $color, comma);
+    } @else {
+      $out: list.append($out, $color, comma);
     }
   }
 
@@ -25,16 +24,16 @@ $koeff: 1.4;
 
 $colors: getColors();
 
-@mixin shadow ( $offset ) {
+@mixin shadow($offset) {
   box-shadow:
-    calc($offset * -1) calc($offset * -1) 0 nth($colors, 1),
-    calc($offset * $koeff * -1) 0 0 nth($colors, 2),
-    calc($offset * -1) $offset 0 nth($colors, 3),
-    0 calc($offset * $koeff) 0 nth($colors, 4),
-    $offset $offset 0 nth($colors, 5),
-    calc($offset * $koeff) 0 0 nth($colors, 6),
-    $offset calc($offset * -1) 0 nth($colors, 7),
-    0 calc($offset * $koeff * -1) 0 nth($colors, 8);
+    calc($offset * -1) calc($offset * -1) 0 list.nth($colors, 1),
+    calc($offset * $koeff * -1) 0 0 list.nth($colors, 2),
+    calc($offset * -1) $offset 0 list.nth($colors, 3),
+    0 calc($offset * $koeff) 0 list.nth($colors, 4),
+    $offset $offset 0 list.nth($colors, 5),
+    calc($offset * $koeff) 0 0 list.nth($colors, 6),
+    $offset calc($offset * -1) 0 list.nth($colors, 7),
+    0 calc($offset * $koeff * -1) 0 list.nth($colors, 8);
 }
 
 .header-logo {
@@ -82,7 +81,6 @@ $colors: getColors();
 .header-logo__content--link {
   color: inherit;
   text-decoration: none;
-
   transition: var(--logo-transition);
 
   &::after {
@@ -99,7 +97,7 @@ $colors: getColors();
 
   &:hover {
     background: #444;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .5) inset,
+    box-shadow: 0 5px 10px rgb(0 0 0 / 50%) inset,
       0 0 0 10px white,
       0 -3px 10px 9px var(--base-shadow-color);
     text-shadow: 0 2px 5px #000;
@@ -130,7 +128,6 @@ $colors: getColors();
   position: relative;
   text-decoration: none;
   color: #333;
-
   transition: var(--logo-transition);
 
   &::before {

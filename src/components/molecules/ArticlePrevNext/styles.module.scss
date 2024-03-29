@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @media ( max-width: 1000px ) {
+  @media ( width <= 1000px ) {
     padding: 1rem 0;
   }
 }
@@ -37,7 +37,7 @@
     }
   }
 
-  @media ( max-width: 1000px ) {
+  @media ( width <= 1000px ) {
     font-size: 32px;
     line-height: 1;
     text-decoration: none;
@@ -55,7 +55,7 @@
     text-decoration: none;
   }
 
-  @media ( max-width: 1000px ) {
+  @media ( width <= 1000px ) {
     display: none;
   }
 }
