@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import ArticlesList from '.';
 
-const post = {
+const article = {
   text: 'text',
   href: '#url',
   date: '22-12-2023',
@@ -20,6 +20,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    items: [post, post],
+    items: [article, article],
   },
 };

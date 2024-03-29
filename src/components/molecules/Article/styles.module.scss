@@ -1,6 +1,6 @@
 @import "../../../scss/mixins.scss";
 
-.post {
+.article {
   word-break: break-word;
   position: relative;
 
@@ -159,7 +159,7 @@
   }
 }
 
-.post__header {
+.article__header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -168,18 +168,18 @@
   border-bottom: 1px solid #DDD;
 }
 
-.post__title {
+.article__title {
   width: 100%;
   font-size: 2.5rem;
   margin-bottom: .4em;
 }
 
-.post__date,
-.post__link-to-comments {
+.article__date,
+.article__link-to-comments {
   font-size: .9em;
 }
 
-.post__warning {
+.article__warning {
   margin: 1rem 0;
   padding: 1em;
   border-radius: 10px;
@@ -194,11 +194,11 @@
   }
 }
 
-.post__comments {
+.article__comments {
   margin-top: 2rem;
 }
 
-.post__marker {
+.article__marker {
   --translateX: -100%;
 
   display: block;
@@ -236,7 +236,7 @@
   }
 }
 
-.post__marker--hidden {
+.article__marker--hidden {
   opacity: 0;
 }
 

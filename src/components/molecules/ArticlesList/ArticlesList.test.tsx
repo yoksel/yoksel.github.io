@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 
 import ArticlesList from '.';
 
-const post = {
+const article = {
   text: 'text',
   href: '#url',
   date: '2023-12-22',
@@ -12,16 +12,16 @@ const post = {
 
 describe('ArticlesList', () => {
   test('to have list', () => {
-    const { getByRole } = render(<ArticlesList items={[post, post]} />);
+    const { getByRole } = render(<ArticlesList items={[article, article]} />);
 
     const list = getByRole('list');
     expect(list).toBeInTheDocument();
   });
 
   test('to have titles with link', () => {
-    const { getAllByRole } = render(<ArticlesList items={[post, post]} />);
+    const { getAllByRole } = render(<ArticlesList items={[article, article]} />);
 
-    const links = getAllByRole('link', { name: post.text });
+    const links = getAllByRole('link', { name: article.text });
     expect(links).toHaveLength(2);
   });
 });

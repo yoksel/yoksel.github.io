@@ -22,8 +22,8 @@ const ArticleLinks = ({ title, items }: ArticleLinksProps) => {
   }
 
   return (
-    <dl className={styles['post-links']}>
-      <dt className={styles['post-links__title']}>{title}</dt>
+    <dl className={styles['articleLinks']}>
+      <dt className={styles['articleLinks__title']}>{title}</dt>
 
       {filteredItems.map((item) => {
         const { text, level, desc } = item;
@@ -35,8 +35,8 @@ const ArticleLinks = ({ title, items }: ArticleLinksProps) => {
         return (
           <dd
             className={classNames(
-              styles['post-links__item'],
-              level && styles[`post-links__item--level-${level}`],
+              styles['articleLinks__item'],
+              level && styles[`articleLinks__item--level-${level}`],
             )}
             key={uuidv4()}
           >

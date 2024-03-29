@@ -26,13 +26,13 @@ const Article = ({ article }: { article: ArticleData }) => {
 
   return (
     <article
-      className={styles['post']}
+      className={styles['article']}
       id="begin"
       aria-labelledby="article-title"
     >
-      <header className={styles['post__header']}>
+      <header className={styles['article__header']}>
         <h1
-          className={styles['post__title']}
+          className={styles['article__title']}
           ref={heading}
           id="article-title"
         >
@@ -42,7 +42,7 @@ const Article = ({ article }: { article: ArticleData }) => {
         {date && (
           <ArticleDate
             date={date}
-            className={styles['post__date']}
+            className={styles['article__date']}
           />
         )}
       </header>
@@ -56,7 +56,7 @@ const Article = ({ article }: { article: ArticleData }) => {
 
       {content && (
         <ContentAsHtml
-          className={styles['post__content']}
+          className={styles['article__content']}
           content={content}
         />
       )}

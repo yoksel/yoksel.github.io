@@ -1,4 +1,4 @@
-.post-prevnext {
+.articlePrevNext {
   margin: 2rem 0;
   padding: 2rem 0;
   border: 1px solid #DDD;
@@ -7,16 +7,12 @@
   justify-content: space-between;
   align-items: center;
 
-  &--posts {
-    flex-direction: row-reverse;
-  }
-
   @media ( max-width: 1000px ) {
     padding: 1rem 0;
   }
 }
 
-.post-prevnext__item {
+.articlePrevNext__item {
   margin: 0 .5em;
   text-decoration: none;
 
@@ -25,7 +21,7 @@
     margin-right: auto;
     padding-right: .5rem;
 
-    .post-prevnext__arrow {
+    .articlePrevNext__arrow {
       padding-right: .25em;
     }
   }
@@ -36,7 +32,7 @@
     padding-left: .5rem;
     text-align: right;
 
-    .post-prevnext__arrow {
+    .articlePrevNext__arrow {
       padding-left: .25em;
     }
   }
@@ -52,10 +48,10 @@
   }
 }
 
-.post-prevnext__text {
+.articlePrevNext__text {
   text-decoration: underline;
 
-  .post-prevnext__item:hover & {
+  .articlePrevNext__item:hover & {
     text-decoration: none;
   }
 

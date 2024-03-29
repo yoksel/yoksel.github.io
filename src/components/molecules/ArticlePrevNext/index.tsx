@@ -12,7 +12,7 @@ const ArticlePrevNext = ({ prev, next }: PrevNextProps) => {
   }
 
   return (
-    <div className={styles['post-prevnext']}>
+    <div className={styles['articlePrevNext']}>
       {[prev, next].map((link) => {
         if (!link) return null;
 
@@ -21,14 +21,14 @@ const ArticlePrevNext = ({ prev, next }: PrevNextProps) => {
             href={link.href}
             key={link.id}
             className={classNames(
-              styles['post-prevnext__item'],
-              styles[`post-prevnext__item--${link.id}`],
+              styles['articlePrevNext__item'],
+              styles[`articlePrevNext__item--${link.id}`],
             )}
             title={link.text}
           >
-            {link.id === 'previous' && <span className={styles['post-prevnext__arrow']}>←</span>}
-            <span className={styles['post-prevnext__text']}>{link.text}</span>
-            {link.id === 'next' && <span className={styles['post-prevnext__arrow']}>→</span>}
+            {link.id === 'previous' && <span className={styles['articlePrevNext__arrow']}>←</span>}
+            <span className={styles['articlePrevNext__text']}>{link.text}</span>
+            {link.id === 'next' && <span className={styles['articlePrevNext__arrow']}>→</span>}
           </Link>
         );
       })}

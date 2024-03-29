@@ -17,19 +17,19 @@ const ArticleTags = ({ items }: ArticleTags) => {
   const tagsByName = getTagsByName();
 
   return (
-    <dl className={classNames(styles['post-tags'], 'no-bullets')}>
-      <dt className={styles['post-tags__title']}>Метки:</dt>
+    <dl className={classNames(styles['articleTags'], 'no-bullets')}>
+      <dt className={styles['articleTags__title']}>Метки:</dt>
 
       {items.map((name, index) => {
         return (
           <dd
-            className={styles['post-tags__item']}
+            className={styles['articleTags__item']}
             key={name}
           >
             <Link href={`/tags/#${name}`}>{tagsByName[name] || name}</Link>
 
             {index < items.length - 1 && (
-              <span className={styles['post-tags__delim']}>,&nbsp;</span>
+              <span className={styles['articleTags__delim']}>,&nbsp;</span>
             )}
           </dd>
         );

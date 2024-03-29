@@ -10,11 +10,11 @@ export interface ArticleWithDate extends WidgetItem {
 }
 
 interface ArticleCardProps {
-  post: ArticleWithDate;
+  article: ArticleWithDate;
 }
 
-const ArticleCard = ({ post }: ArticleCardProps) => {
-  let { text, href, excerpt, date } = post;
+const ArticleCard = ({ article }: ArticleCardProps) => {
+  let { text, href, excerpt, date } = article;
 
   return (
     <div className={styles['articleCard']}>
