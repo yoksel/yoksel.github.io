@@ -4,6 +4,7 @@ import projectsData from '../../../../data/meta/projects.json';
 import Widget from '../Widget';
 import VisuallyHiddenText from '../../atoms/VisuallyHiddenText';
 import { WidgetItem } from '../../../types';
+import PhotosWidget from '../PhotosWidget';
 
 interface AsideProps {
   slug?: string;
@@ -38,16 +39,6 @@ const Aside = ({ slug, isMain, articleType, posts, pages }: AsideProps) => {
       items={projectsData}
     />
   );
-  const photosWidget = (
-    <Widget
-      id="photos"
-      title="Фотографии"
-      slug={slug}
-      items={[]}
-      hideTitle={true}
-      footerContent="<a href='https://unsplash.com/@yoksel/'>unsplash.com/@yoksel</a>"
-    />
-  );
 
   const widgetsOrder =
     articleType === 'page' ? (
@@ -59,7 +50,7 @@ const Aside = ({ slug, isMain, articleType, posts, pages }: AsideProps) => {
     ) : slug === 'about' ? (
       <>
         {projectsWidget}
-        {photosWidget}
+        <PhotosWidget />
         {articlesWidget}
         {pagesWidget}
       </>

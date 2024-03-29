@@ -107,8 +107,8 @@ const Widget = ({ id, title, items, slug, hideTitle, footerContent, layout }: Wi
                     src={imageSrc}
                     alt=""
                     loading="lazy"
-                    width="100"
-                    height="100"
+                    width="200"
+                    height="200"
                   />
                 )}
                 <span className={classNames(!isCurrent && styles['widget__link-text'])}>
@@ -125,7 +125,7 @@ const Widget = ({ id, title, items, slug, hideTitle, footerContent, layout }: Wi
 
       {footerContent && (
         <footer
-          className="widget__footer"
+          className={styles['widget__footer']}
           dangerouslySetInnerHTML={{ __html: footerContent }}
         />
       )}
