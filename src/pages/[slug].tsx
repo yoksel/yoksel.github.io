@@ -70,7 +70,6 @@ export default function Page({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <Layout
-      isMain={false}
       article={article}
       posts={posts}
       pages={pages}

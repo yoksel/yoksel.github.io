@@ -29,7 +29,6 @@ export const getStaticProps = (async (context) => {
   });
 
   if (!article) {
-    console.log({ article });
     throw new Error(`Article with slug "${slug}" not found in pages/[slug]`);
   }
 
@@ -76,7 +75,6 @@ export default function Page({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <Layout
-      isMain={false}
       article={article}
       posts={posts}
       pages={pages}

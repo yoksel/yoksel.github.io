@@ -39,7 +39,6 @@ export default function Page({
 
   return (
     <Layout
-      isMain={false}
       article={article}
       posts={posts}
       pages={pages}

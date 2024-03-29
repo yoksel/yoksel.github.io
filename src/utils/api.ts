@@ -51,7 +51,7 @@ const convertToHTML = async (content: string) => {
 const getFormattedSlug = (slug: string, type: ArticleType) => {
   let slugWithSlash = slug.startsWith('/') ? slug : `/${slug}`;
 
-  if (type === 'page') {
+  if (type === 'page' && !slugWithSlash.startsWith('/pages')) {
     slugWithSlash = `/pages${slugWithSlash}`;
   }
 
