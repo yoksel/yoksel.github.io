@@ -56,7 +56,7 @@ const collectPostsUrls = () => {
   const pagesSlugs = getArticlesLongSlugsByShort('page');
   const servicePagesSlugs = getArticlesLongSlugsByShort('service-page');
 
-  const content = `/* npm run getPosts */
+  const content = `/* npm run getArticles */
 export const postsDataBySlug = ${formatObject(postsSlugs)};
 
 export const archivedPostsDataBySlug = ${formatObject(archivedPostsSlugs)};

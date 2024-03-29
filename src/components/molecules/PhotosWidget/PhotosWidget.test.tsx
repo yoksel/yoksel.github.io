@@ -13,7 +13,8 @@ describe('PhotosWidget', () => {
   test('to have links', () => {
     const { getAllByRole } = render(<PhotosWidget />);
 
-    expect(getAllByRole('link', { name: '' })).toHaveLength(MAX_PHOTOS);
+    // + 1 for footer link
+    expect(getAllByRole('link')).toHaveLength(MAX_PHOTOS + 1);
   });
 
   test('to have images', () => {

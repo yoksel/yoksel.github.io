@@ -14634,6 +14634,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"unsplash-js@npm:^7.0.19":
+  version: 7.0.19
+  resolution: "unsplash-js@npm:7.0.19"
+  checksum: 10c0/ea139e38e80b43d21baa5a97b3a461f0938da4e80c3ca1c2af62e4609ee204f27b20800b7459b62287f39c201d4d6b0578393f8412db4e9d3fd2b586af32a8bb
+  languageName: node
+  linkType: hard
+
 "untildify@npm:^4.0.0":
   version: 4.0.0
   resolution: "untildify@npm:4.0.0"
@@ -15258,6 +15265,7 @@ __metadata:
     ts-jest: "npm:^29.1.2"
     ts-node: "npm:^10.9.2"
     typescript: "npm:^5"
+    unsplash-js: "npm:^7.0.19"
     uuid: "npm:^9.0.1"
   languageName: unknown
   linkType: soft

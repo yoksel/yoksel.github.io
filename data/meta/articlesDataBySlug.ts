@@ -1,4 +1,4 @@
-/* npm run getPosts */
+/* npm run getArticles */
 export const postsDataBySlug = {
   "/flexbox": {
     "date": "2013-09-03",

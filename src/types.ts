@@ -50,7 +50,8 @@ type WidgetItemWithText = {
 };
 
 type WidgetItemWithImage = {
-  imageSrc: string;
+  imageSrc: string | null;
+  alt: string | null;
 };
 
 export type WidgetItem = {

@@ -88,6 +88,7 @@ const Widget = ({ id, title, items, slug, hideTitle, footerContent, layout }: Wi
           const isCurrent = slug && href.endsWith(slugWithSlash);
           const text = 'text' in item ? item.text : undefined;
           const imageSrc = 'imageSrc' in item ? item.imageSrc : undefined;
+          const imageAlt = 'alt' in item ? item.alt : undefined;
 
           return (
             <li
@@ -105,7 +106,7 @@ const Widget = ({ id, title, items, slug, hideTitle, footerContent, layout }: Wi
                 {imageSrc && (
                   <Image
                     src={imageSrc}
-                    alt=""
+                    alt={imageAlt || ''}
                     loading="lazy"
                     width="200"
                     height="200"

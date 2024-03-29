@@ -21,7 +21,8 @@
     "format": "prettier 'src/**/*.ts*' --write",
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build",
-    "getPosts": "ts-node src/utils/collectPostsUrls.ts"
+    "getArticles": "ts-node src/utils/collectPostsUrls.ts",
+    "getPhotos": "ts-node src/utils/addPhotos.ts"
   },
   "dependencies": {
     "next": "14.1.4",
@@ -80,6 +81,7 @@
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "typescript": "^5",
+    "unsplash-js": "^7.0.19",
     "uuid": "^9.0.1"
   }
 }
