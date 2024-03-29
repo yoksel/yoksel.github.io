@@ -35,7 +35,6 @@ jobs:
         id: detect-package-manager
         run: |
           if [ -f "${{ github.workspace }}/yarn.lock" ]; then
-            echo "corepack enable" >> $GITHUB_OUTPUT
             echo "manager=yarn" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=yarn" >> $GITHUB_OUTPUT
@@ -72,9 +71,10 @@ jobs:
           # If source files changed but packages didn't, rebuild from a prior cache.
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
+      - name: Install corepack
+        run: corepack enable
       - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-      - name: Build with Next.js
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.|
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
