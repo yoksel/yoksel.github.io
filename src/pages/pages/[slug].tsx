@@ -81,6 +81,6 @@ export default function Page({
       posts={posts}
       pages={pages}
       prevNext={prevNext}
-    ></Layout>
+    />
   );
 }

@@ -3,7 +3,11 @@
 (() => {
   let controlsPanel = null;
 
-  function pixelGlass () {
+  // script loads at the end of body so DOM will be ready to that moment
+  pixelGlass();
+  runDemo();
+
+  function pixelGlass() {
     var doc = document;
     var controlsPanel;
     var panelClass = 'controls-panel';
@@ -16,22 +20,22 @@
     var currents = {
       state: getCurrent('state', statesList[1]),
       filter: getCurrent('filter', filtersList[0]),
-      opacity: getCurrent('opacity', 0.5)
+      opacity: getCurrent('opacity', 0.5),
     };
 
     var targets = {
       state: {
         elem: doc.documentElement,
-        attr: 'data'
+        attr: 'data',
       },
       filter: {
         elem: doc.body,
-        attr: 'data'
+        attr: 'data',
       },
       opacity: {
         elem: doc.body,
-        attr: 'style'
-      }
+        attr: 'style',
+      },
     };
 
     // States switcher params
@@ -45,8 +49,8 @@
       list: statesList,
       canDisableAll: true,
       attrs: {
-        tabindex: 1
-      }
+        tabindex: 1,
+      },
     };
 
     // Filters switcher params
@@ -59,8 +63,8 @@
       type: 'button',
       list: filtersList,
       attrs: {
-        tabindex: 2
-      }
+        tabindex: 2,
+      },
     };
 
     // Opacity range params
@@ -73,8 +77,8 @@
         min: 0,
         max: 1,
         step: 0.1,
-        tabindex: 3
-      }
+        tabindex: 3,
+      },
     };
 
     // ---------------------------------------------
@@ -83,7 +87,7 @@
 
     // ---------------------------------------------
 
-    function init () {
+    function init() {
       addExternalCSS();
       createContolsPanel();
       applyCurrentData();
@@ -91,7 +95,7 @@
 
     // ---------------------------------------------
 
-    function createContolsPanel () {
+    function createContolsPanel() {
       var targetElem = doc.documentElement;
 
       var stickyPoint = doc.querySelector('.sticky-point');
@@ -119,7 +123,7 @@
 
     // ---------------------------------------------
 
-    function initControls () {
+    function initControls() {
       createButton(paramsStates);
       createButton(paramsFilters);
       createInputNumber(paramsOpacity);
@@ -213,7 +217,7 @@
 
       controlsPanel.appendChild(input);
 
-      input.oninput = function  () {
+      input.oninput = function () {
         if (setAttr === 'style') {
           params.target.elem.style[itemName] = this.value;
           saveLocalStorage(itemName, this.value);
@@ -223,14 +227,14 @@
 
     // ---------------------------------------------
 
-    function createDragButton () {
+    function createDragButton() {
       var input = doc.createElement('button');
       input.classList.add(panelClass + '__control', panelClass + '__control--drag-n-drop');
       input.setAttribute('type', 'button');
 
       controlsPanel.appendChild(input);
 
-      input.onmousedown = function  () {
+      input.onmousedown = function () {
         // Place it here to get real sizes after
         // external styles has been loaded
         var offsetLeft = controlsPanel.clientWidth - this.clientWidth;
@@ -242,15 +246,15 @@
         controlsPanel.style.bottom = 'auto';
 
         doc.onmousemove = function (ev) {
-          var x = (ev.clientX - offsetLeft) + 'px';
-          var y = (ev.clientY) + 'px';
+          var x = ev.clientX - offsetLeft + 'px';
+          var y = ev.clientY + 'px';
 
           controlsPanel.style.left = x;
           controlsPanel.style.top = y;
         };
       };
 
-      input.onmouseup = function  () {
+      input.onmouseup = function () {
         var styles = getComputedStyle(controlsPanel);
         var left = +styles.left.replace(/px/, '');
         var right = +styles.right.replace(/px/, '');
@@ -285,7 +289,7 @@
 
     // ---------------------------------------------
 
-    function disableInputs () {
+    function disableInputs() {
       canBeDisabled.forEach(function (item) {
         item.setAttribute('disabled', '');
       });
@@ -293,7 +297,7 @@
 
     // ---------------------------------------------
 
-    function enableInputs () {
+    function enableInputs() {
       canBeDisabled.forEach(function (item) {
         item.removeAttribute('disabled');
       });
@@ -316,7 +320,7 @@
 
     // ---------------------------------------------
 
-    function addExternalCSS () {
+    function addExternalCSS() {
       var cssLink = doc.createElement('link');
       cssLink.setAttribute('rel', 'stylesheet');
       cssLink.setAttribute('href', '../assets/js/pixel-glass/styles.css');
@@ -326,7 +330,7 @@
 
     // ---------------------------------------------
 
-    function applyCurrentData () {
+    function applyCurrentData() {
       for (var key in targets) {
         var target = targets[key];
         var current = currents[key];
@@ -346,7 +350,7 @@
     }
     // ---------------------------------------------
 
-    function applyCurrentStyles () {
+    function applyCurrentStyles() {
       for (var key in targets) {
         var target = targets[key];
         var current = currents[key];
@@ -363,7 +367,7 @@
 
     // ---------------------------------------------
 
-    function removeCurrentStyles () {
+    function removeCurrentStyles() {
       for (var key in targets) {
         var target = targets[key];
 
@@ -384,12 +388,7 @@
   //  DEMO
   // ---------------------------------------------
 
-  document.addEventListener('DOMContentLoaded', () => {
-    pixelGlass();
-    runDemo();
-  });
-
-  function runDemo () {
+  function runDemo() {
     var doc = document;
     var stickyContainer;
     clearLocalStorage();
@@ -398,7 +397,7 @@
       searchControlsPanel();
     }
 
-    function searchControlsPanel () {
+    function searchControlsPanel() {
       controlsPanel = doc.querySelector('.controls-panel');
 
       if (!controlsPanel) {
@@ -417,9 +416,11 @@
 
     // ---------------------------------------------
 
-    function takeOutPanel () {
-      var offsetTop = controlsPanel.offsetTop - window.scrollY + controlsPanel.offsetParent.offsetTop;
-      var offsetLeft = controlsPanel.offsetLeft - window.scrollX + controlsPanel.offsetParent.offsetLeft;
+    function takeOutPanel() {
+      var offsetTop =
+        controlsPanel.offsetTop - window.scrollY + controlsPanel.offsetParent.offsetTop;
+      var offsetLeft =
+        controlsPanel.offsetLeft - window.scrollX + controlsPanel.offsetParent.offsetLeft;
 
       controlsPanel.style.position = 'fixed';
       controlsPanel.style.top = offsetTop + 'px';
@@ -440,7 +441,7 @@
 
     // ---------------------------------------------
 
-    function adjustPosition () {
+    function adjustPosition() {
       var styles = getComputedStyle(controlsPanel);
       var left = +styles.left.replace(/px/, '');
       var right = +styles.right.replace(/px/, '');
@@ -461,15 +462,16 @@
 
   // ---------------------------------------------
 
-  function clearLocalStorage () {
-    var list = ['pg-filter',
+  function clearLocalStorage() {
+    var list = [
+      'pg-filter',
       'pg-opacity',
       'pg-bottom',
       'pg-top',
       'pg-left',
       'pg-right',
       'pg-state',
-      'pg-released'
+      'pg-released',
     ];
 
     list.forEach(function (item) {

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-// import '@src/scss/styles.scss';
+import Script from 'next/script';
 import Article from '../Article';
 import Footer from '../Footer';
 import Aside from '../Aside';
@@ -35,6 +35,7 @@ const Layout = ({ article, isMain = false, children, posts, pages, prevNext }: L
   return (
     <div className={classNames(styles['page'], isMain ? 'page--main' : 'page--single')}>
       <CustomHead article={article} />
+      <Script src={`/assets/js/${article?.customJs}`} />
 
       <Header isMain={isMain} />
 

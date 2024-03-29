@@ -134,7 +134,6 @@ const CustomHead = ({ article }: CustomHeadProps) => {
           href={`/assets/css/${article?.customCSS}`}
         />
       )}
-      {article?.customJs && <script src={`/assets/js/${article?.customJs}`}></script>}
 
       <script
         src="/assets/js/common.js"
