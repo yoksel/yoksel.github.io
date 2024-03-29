@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import PostPrevNext from './index';
+import ArticlePrevNext from './index';
 
-const meta: Meta<typeof PostPrevNext> = {
-  title: 'Molecules/PostPrevNext',
+const meta: Meta<typeof ArticlePrevNext> = {
+  title: 'Molecules/ArticlePrevNext',
   parameters: { layout: 'centered' },
-  component: PostPrevNext,
+  component: ArticlePrevNext,
   tags: ['autodocs'],
 };
 

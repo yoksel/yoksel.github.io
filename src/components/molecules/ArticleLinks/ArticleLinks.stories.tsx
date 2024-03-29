@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import PostLinks from './index';
+import ArticleLinks from './index';
 
-const meta: Meta<typeof PostLinks> = {
-  title: 'Molecules/PostLinks',
+const meta: Meta<typeof ArticleLinks> = {
+  title: 'Molecules/ArticleLinks',
   parameters: { layout: 'centered' },
-  component: PostLinks,
+  component: ArticleLinks,
   tags: ['autodocs'],
 };
 

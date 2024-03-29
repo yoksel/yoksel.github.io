@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
-import PostPrevNext from '.';
+import ArticlePrevNext from '.';
 
 const previous = {
   id: 'previous',
@@ -15,10 +15,10 @@ const next = {
   text: 'Read that',
 };
 
-describe('PostPrevNext', () => {
+describe('ArticlePrevNext', () => {
   test('to be rendered', () => {
     const { getByRole } = render(
-      <PostPrevNext
+      <ArticlePrevNext
         prev={previous}
         next={next}
       />,
@@ -34,7 +34,7 @@ describe('PostPrevNext', () => {
   });
 
   test('to be rendered with one link', () => {
-    const { getByRole } = render(<PostPrevNext next={next} />);
+    const { getByRole } = render(<ArticlePrevNext next={next} />);
 
     const nextLink = getByRole('link', { name: `${next.text} →` });
 
@@ -44,7 +44,7 @@ describe('PostPrevNext', () => {
 
   test('not to be rendered', () => {
     const { queryByRole } = render(
-      <PostPrevNext
+      <ArticlePrevNext
         prev={undefined}
         next={undefined}
       />,

@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
-import PostLinks from '.';
+import ArticleLinks from '.';
 
 const link = {
   id: 'id',
@@ -17,10 +17,10 @@ const linkWithHrefWithoutText = {
   href: '#href',
 };
 
-describe('PostLinks', () => {
+describe('ArticleLinks', () => {
   test('to be rendered', () => {
     const { getByText } = render(
-      <PostLinks
+      <ArticleLinks
         title="Links list"
         items={[link]}
       />,
@@ -31,7 +31,7 @@ describe('PostLinks', () => {
 
   test('regular link', () => {
     const { getByRole } = render(
-      <PostLinks
+      <ArticleLinks
         title="Links list"
         items={[link]}
       />,
@@ -43,7 +43,7 @@ describe('PostLinks', () => {
 
   test('link with description', () => {
     const { getByRole, getByText } = render(
-      <PostLinks
+      <ArticleLinks
         title="Links list"
         items={[
           {
@@ -60,7 +60,7 @@ describe('PostLinks', () => {
 
   test('link with id and text', () => {
     const { getByRole } = render(
-      <PostLinks
+      <ArticleLinks
         title="Links list"
         items={[
           {
@@ -78,7 +78,7 @@ describe('PostLinks', () => {
 
   test('link with id and without text', () => {
     const { getByRole } = render(
-      <PostLinks
+      <ArticleLinks
         title="Links list"
         items={[linkWithoutText]}
       />,
@@ -91,7 +91,7 @@ describe('PostLinks', () => {
 
   test('link with href and without text', () => {
     const { getByRole } = render(
-      <PostLinks
+      <ArticleLinks
         title="Links list"
         items={[linkWithHrefWithoutText]}
       />,
@@ -104,7 +104,7 @@ describe('PostLinks', () => {
 
   test('not to be rendered if no links', () => {
     const { queryByText } = render(
-      <PostLinks
+      <ArticleLinks
         title="Links list"
         items={[]}
       />,
@@ -115,7 +115,7 @@ describe('PostLinks', () => {
 
   test('not to be rendered if no id or href in links', () => {
     const { queryByText } = render(
-      <PostLinks
+      <ArticleLinks
         title="Links list"
         items={[{ href: '' }]}
       />,

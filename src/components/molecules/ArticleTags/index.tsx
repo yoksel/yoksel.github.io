@@ -5,11 +5,11 @@ import classNames from 'classnames';
 
 import styles from './styles.module.scss';
 
-interface PostTags {
+interface ArticleTags {
   items: string[];
 }
 
-const PostTags = ({ items }: PostTags) => {
+const ArticleTags = ({ items }: ArticleTags) => {
   if (!items?.length) {
     return null;
   }
@@ -38,4 +38,4 @@ const PostTags = ({ items }: PostTags) => {
   );
 };
 
-export default PostTags;
+export default ArticleTags;

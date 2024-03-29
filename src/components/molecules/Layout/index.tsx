@@ -11,7 +11,7 @@ import Counter from '../../atoms/Counter';
 import styles from './styles.module.scss';
 import classNames from 'classnames';
 import VisuallyHiddenText from '../../atoms/VisuallyHiddenText';
-import PostPrevNext from '../PostPrevNext';
+import ArticlePrevNext from '../ArticlePrevNext';
 
 interface LayoutProps extends React.PropsWithChildren {
   isMain?: boolean;
@@ -46,7 +46,7 @@ const Layout = ({ article, isMain = false, children, posts, pages, prevNext }: L
           {children}
 
           {prevNext && (
-            <PostPrevNext
+            <ArticlePrevNext
               prev={prevNext.prev}
               next={prevNext.next}
             />

@@ -6,7 +6,7 @@ import { PrevNextProps } from '@src/types';
 
 import styles from './styles.module.scss';
 
-const PostPrevNext = ({ prev, next }: PrevNextProps) => {
+const ArticlePrevNext = ({ prev, next }: PrevNextProps) => {
   if (!(prev || next)) {
     return null;
   }
@@ -36,4 +36,4 @@ const PostPrevNext = ({ prev, next }: PrevNextProps) => {
   );
 };
 
-export default PostPrevNext;
+export default ArticlePrevNext;

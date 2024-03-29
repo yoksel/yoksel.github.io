@@ -1,25 +1,25 @@
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
-import PostTags from '.';
+import ArticleTags from '.';
 
 const items = ['a11y', 'animation'];
 
-describe('PostTags', () => {
+describe('ArticleTags', () => {
   test('to be rendered', () => {
-    const { getByText } = render(<PostTags items={items} />);
+    const { getByText } = render(<ArticleTags items={items} />);
 
     expect(getByText('Метки:')).toBeInTheDocument();
   });
 
   test('to have links', () => {
-    const { getAllByRole } = render(<PostTags items={items} />);
+    const { getAllByRole } = render(<ArticleTags items={items} />);
 
     expect(getAllByRole('link')).toHaveLength(2);
   });
 
   test('not to be rendered', () => {
-    const { queryByText } = render(<PostTags items={[]} />);
+    const { queryByText } = render(<ArticleTags items={[]} />);
 
     expect(queryByText('Метки:')).not.toBeInTheDocument();
   });

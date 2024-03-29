@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import PostTags from './index';
+import ArticleTags from './index';
 
-const meta: Meta<typeof PostTags> = {
-  title: 'Molecules/PostTags',
+const meta: Meta<typeof ArticleTags> = {
+  title: 'Molecules/ArticleTags',
   parameters: { layout: 'centered' },
-  component: PostTags,
+  component: ArticleTags,
   tags: ['autodocs'],
 };
 

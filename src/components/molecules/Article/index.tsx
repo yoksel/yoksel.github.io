@@ -2,8 +2,8 @@
 
 import React, { useEffect, useRef } from 'react';
 
-import PostLinks from '../PostLinks';
-import PostTags from '../PostTags';
+import ArticleLinks from '../ArticleLinks';
+import ArticleTags from '../ArticleTags';
 import { ArticleData } from '@src/types';
 import ContentAsHtml from '../../atoms/ContentAsHtml';
 import ArticleDate from '../../atoms/ArticleDate';
@@ -48,7 +48,7 @@ const Article = ({ article }: { article: ArticleData }) => {
       </header>
 
       {navItems && (
-        <PostLinks
+        <ArticleLinks
           title="Содержание:"
           items={navItems}
         />
@@ -62,13 +62,13 @@ const Article = ({ article }: { article: ArticleData }) => {
       )}
 
       {links && (
-        <PostLinks
+        <ArticleLinks
           title="Ссылки по теме:"
           items={links}
         />
       )}
 
-      {tags && <PostTags items={tags} />}
+      {tags && <ArticleTags items={tags} />}
     </article>
   );
 };

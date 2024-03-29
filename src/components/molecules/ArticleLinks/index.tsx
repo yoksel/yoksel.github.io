@@ -7,12 +7,12 @@ import { PageUrl } from '@src/types';
 
 import styles from './styles.module.scss';
 
-interface PostLinksProps {
+interface ArticleLinksProps {
   title: string;
   items: PageUrl[];
 }
 
-const PostLinks = ({ title, items }: PostLinksProps) => {
+const ArticleLinks = ({ title, items }: ArticleLinksProps) => {
   const filteredItems = items.filter(
     (item) => ('id' in item && item.id) || ('href' in item && item.href),
   );
@@ -49,4 +49,4 @@ const PostLinks = ({ title, items }: PostLinksProps) => {
   );
 };
 
-export default PostLinks;
+export default ArticleLinks;
