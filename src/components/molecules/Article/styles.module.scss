@@ -7,11 +7,11 @@
   /* stylelint-disable no-duplicate-selectors, no-descending-specificity */
   H2,
   H3,
-  H3,
   SECTION H2:first-child,
   SECTION H3:first-child,
   SECTION H3:first-child {
     transition: all .5s;
+    scroll-margin-top: 2rem;
   }
 
   H2 {

@@ -122,11 +122,11 @@ export async function getArticleBySlug({
 
     // async handler
     if (filteredFields.content) {
-      filteredFields.content = await convertToHTML(filteredFields.content);
-
       if (fields.includes('navItems')) {
         filteredFields.navItems = getSectionsList(filteredFields.content);
       }
+
+      filteredFields.content = await convertToHTML(filteredFields.content);
     }
 
     // async handler

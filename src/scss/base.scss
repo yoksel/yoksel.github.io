@@ -15,10 +15,6 @@ BODY {
   line-height: var(--base-line-height);
   color: #000;
 
-  /* https://web.dev/content-visibility/ */
-  content-visibility: auto;
-  contain-intrinsic-size: 1000px;
-
   & > * {
     flex-grow: 1;
   }

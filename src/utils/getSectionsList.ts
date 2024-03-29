@@ -24,16 +24,22 @@ export const getArticleNavItemsFromGroups = (groups: Group[]): PageUrl[] => {
 };
 
 export const getSectionsList = (content: string) => {
-  const elementsWithId = content?.matchAll(
+  const sectionsWithId = content?.matchAll(
     /<[^>]{1,20} id="(?<id>[^"]{1,200})"( data-name="(?<name>[^"]{1,200})")?><h(?<level>[^>]{1,})>(?<text>[^<]{1,})/g,
   );
+  const headingsWithId = content?.matchAll(
+    /<h(?<level>[^>]{1,}) id="(?<id>[^"]{1,200})"( data-name="(?<name>[^"]{1,200})")?>(?<text>[^<]{1,})/g,
+  );
 
-  if (!elementsWithId) return;
+  if (!(sectionsWithId || headingsWithId)) return;
 
-  const groups = Array.from(elementsWithId).map((item) => {
+  const sectionsGroups = Array.from(sectionsWithId).map((item) => {
+    return item.groups!;
+  });
+  const headingsGroups = Array.from(headingsWithId).map((item) => {
     return item.groups!;
   });
 
   // Article navigation for sections with id
-  return getArticleNavItemsFromGroups(groups);
+  return getArticleNavItemsFromGroups([...sectionsGroups, ...headingsGroups]);
 };
