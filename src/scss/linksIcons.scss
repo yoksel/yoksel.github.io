@@ -1,53 +1,82 @@
-A[href*="codepen"],
-A[href*="npmjs"],
-A[href*="github"],
-A[href*="twitter"],
-A[href*="livejournal"],
-A[href*="w3.org"],
-A[href*="drafts.csswg"],
-A[href*="css-tricks"],
-A[href*="mozilla"],
-A[href*="jsbin"],
-A[href*="youtube"],
-A[href*="pepelsbey"],
-A[href*="microsoft"],
-A[href*="medium"],
-A[href*="typekit"],
-A[href*="developers.google"],
-A[href*="lea.verou"],
-A[href*="wsd.events"],
-A[href*="web-standards"],
-A[href*="unsplash"],
-A[href*="wikipedia"],
-A[href*="webkit"],
-A[href*="sitepoint"],
-A[href*="sass-lang"],
-A[href*="lesscss"],
-A[href*="smashingmagazine"],
-A[href*="stackoverflow"],
-A[href*="habr.com"],
-A[href*="apple.com"],
-A[href*="caniuse"],
-A[href^="/"],
-A[href*="yoksel.github"],
-A[href^="/"],
-A[href*="yoksel.github"],
+.use-link-icons {
+  A[href*="codepen"],
+  A[href*="npmjs"],
+  A[href*="github"],
+  A[href*="twitter"],
+  A[href*="livejournal"],
+  A[href*="w3.org"],
+  A[href*="drafts.csswg"],
+  A[href*="css-tricks"],
+  A[href*="mozilla"],
+  A[href*="jsbin"],
+  A[href*="youtube"],
+  A[href*="pepelsbey"],
+  A[href*="microsoft"],
+  A[href*="medium"],
+  A[href*="typekit"],
+  A[href*="developers.google"],
+  A[href*="lea.verou"],
+  A[href*="wsd.events"],
+  A[href*="web-standards"],
+  A[href*="unsplash"],
+  A[href*="wikipedia"],
+  A[href*="webkit"],
+  A[href*="sitepoint"],
+  A[href*="sass-lang"],
+  A[href*="lesscss"],
+  A[href*="smashingmagazine"],
+  A[href*="stackoverflow"],
+  A[href*="habr.com"],
+  A[href*="apple.com"],
+  A[href*="caniuse"],
+  // A[href^="/"],
+  A[href*="yoksel.github"],
+  // A[href^="/"],
+  A[href*="yoksel.github"],
+  .win-logo {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      margin-right: .2em;
+      vertical-align: middle;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+    }
+  }
+
+  // A[href^="/"],
+  // A[href*="yoksel.github"],
+  // A[href^="/"],
+  // A[href*="yoksel.github"] {
+  //   &::before {
+  //     width: .95em;
+  //     height: .95em;
+  //     background-image: url("/assets/img/svg/icons/css-yoksel.svg");
+  //   }
+  // }
+}
+// .no-site-icons {
+//   A[href^="/"],
+//   A[href*="yoksel.github"],
+//   A[href^="/"],
+//   A[href*="yoksel.github"] {
+//     &::before {
+//       content: none
+//     }
+//   }
+// }
+
 .win-logo {
   &::before {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    margin-right: .2em;
-    vertical-align: middle;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
+    width: 1.2em;
+    height: 1.2em;
+    margin-top: -.2em;
+    margin-right: 0;
+    background-image: url("/assets/img/svg/icons/win.svg");
   }
-}
-
-/* Enable icons */
-.use-link-icons A::before {
-  content: "";
 }
 
 A[href*="codepen"] {
@@ -223,25 +252,4 @@ A[href*="caniuse"] {
   }
 }
 
-A[href^="/"],
-A[href*="yoksel.github"],
-A[href^="/"],
-A[href*="yoksel.github"] {
-  &::before {
-    width: .95em;
-    height: .95em;
-    background-image: url("/assets/img/svg/icons/css-yoksel.svg");
-  }
-}
 
-
-
-.win-logo {
-  &::before {
-    width: 1.2em;
-    height: 1.2em;
-    margin-top: -.2em;
-    margin-right: 0;
-    background-image: url("/assets/img/svg/icons/win.svg");
-  }
-}

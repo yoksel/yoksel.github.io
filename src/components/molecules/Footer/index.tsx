@@ -4,6 +4,7 @@ import Logo from '../Logo';
 import footerNavData from '../../../../data/meta/footer-nav.json';
 import OptionalLink from '../OptionalLink';
 import VisuallyHiddenText from '../../atoms/VisuallyHiddenText';
+import classNames from 'classnames';
 
 import styles from './styles.module.scss';
 
@@ -24,7 +25,13 @@ const Footer = ({ slug, isMain }: FooterProps) => {
             isMain={isMain}
           />
 
-          <ul className={styles['page-footer__nav-list']}>
+          <ul
+            className={classNames(
+              styles['page-footer__nav-list'],
+              'use-link-icons',
+              'no-site-icons',
+            )}
+          >
             {footerNavData.map(({ name, url }) => {
               return (
                 <li
