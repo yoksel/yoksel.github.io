@@ -110,6 +110,7 @@ const Widget = ({ id, title, items, slug, hideTitle, footerContent, layout }: Wi
                     loading="lazy"
                     width="200"
                     height="200"
+                    unoptimized
                   />
                 )}
                 <span className={classNames(!isCurrent && styles['widget__link-text'])}>
