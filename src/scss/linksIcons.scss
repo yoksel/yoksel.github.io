@@ -28,13 +28,12 @@ A[href*="stackoverflow"],
 A[href*="habr.com"],
 A[href*="apple.com"],
 A[href*="caniuse"],
-.post__content A[href^="/"],
-.post__content A[href*="yoksel.github"],
-.post-links A[href^="/"],
-.post-links A[href*="yoksel.github"],
+A[href^="/"],
+A[href*="yoksel.github"],
+A[href^="/"],
+A[href*="yoksel.github"],
 .win-logo {
   &::before {
-    content: "";
     display: inline-block;
     width: 1em;
     height: 1em;
@@ -46,8 +45,9 @@ A[href*="caniuse"],
   }
 }
 
-.posts-list--by-tag A::before {
-  content: none !important;
+/* Enable icons */
+.use-link-icons A::before {
+  content: "";
 }
 
 A[href*="codepen"] {
@@ -223,10 +223,10 @@ A[href*="caniuse"] {
   }
 }
 
-.post__content A[href^="/"],
-.post__content A[href*="yoksel.github"],
-.post-links A[href^="/"],
-.post-links A[href*="yoksel.github"] {
+A[href^="/"],
+A[href*="yoksel.github"],
+A[href^="/"],
+A[href*="yoksel.github"] {
   &::before {
     width: .95em;
     height: .95em;

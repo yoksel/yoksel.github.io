@@ -22,7 +22,7 @@ const ArticleLinks = ({ title, items }: ArticleLinksProps) => {
   }
 
   return (
-    <dl className={styles['articleLinks']}>
+    <dl className={classNames(styles['articleLinks'], 'use-link-icons')}>
       <dt className={styles['articleLinks__title']}>{title}</dt>
 
       {filteredItems.map((item) => {

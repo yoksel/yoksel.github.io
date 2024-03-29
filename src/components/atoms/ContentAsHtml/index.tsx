@@ -1,3 +1,5 @@
+import classNames from 'classnames';
+
 interface ContentAsHtmlProps {
   content: string;
   element?: 'div' | 'p' | 'h2';
@@ -9,7 +11,7 @@ const ContentAsHtml = ({ content, className, element: Element = 'div' }: Content
 
   return (
     <Element
-      className={className}
+      className={classNames(className, 'use-link-icons')}
       dangerouslySetInnerHTML={{ __html: content }}
     />
   );
