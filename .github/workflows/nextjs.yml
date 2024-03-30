@@ -56,12 +56,12 @@ jobs:
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        with:
-          # Automatically inject basePath in your Next.js configuration file and disable
-          # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
-          #
-          # You may remove this line if you want to manage the configuration yourself.
-          static_site_generator: next
+        # with:
+        #   # Automatically inject basePath in your Next.js configuration file and disable
+        #   # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
+        #   #
+        #   # You may remove this line if you want to manage the configuration yourself.
+        #   static_site_generator: next
       - name: Restore cache
         uses: actions/cache@v4
         with:
@@ -73,11 +73,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        run: yarn ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: npx --no-install next build
-      - name: Static HTML export with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next export
+      - name: Print Next Info
+        run: yarn next info
+      # - name: Static HTML export with Next.js
+      #   run: yarn next export
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
