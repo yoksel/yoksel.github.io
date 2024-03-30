@@ -326,10 +326,7 @@ export const DistortionFilter = () => (
         operator="in"
         in2="waves-image"
       />
-      <feComposite
-        operator="in2"
-        in2="SourceGraphic"
-      />
+      <feComposite in2="SourceGraphic" />
     </filter>
   </svg>
 );
