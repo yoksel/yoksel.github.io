@@ -1,10 +1,10 @@
 [
   {
-    "url": "/about/",
+    "url": "/about",
     "name": "О сайте"
   },
   {
-    "url": "/tags/",
+    "url": "/tags",
     "name": "Метки"
   },
   {
