@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import type { InferGetStaticPropsType, GetStaticProps } from 'next';
 
-import { getAllArticles } from '../../utils/api';
-import Layout from '../../components/molecules/Layout';
-import { getTagsByName } from '../../utils/getTagsByName';
-import { WidgetItem } from '../../types';
-import TagCloud from '../../components/molecules/TagCloud';
-import ArticlesList from '../../components/molecules/ArticlesList';
+import { getAllArticles } from '../utils/api';
+import Layout from '../components/molecules/Layout';
+import { getTagsByName } from '../utils/getTagsByName';
+import { WidgetItem } from '../types';
+import TagCloud from '../components/molecules/TagCloud';
+import ArticlesList from '../components/molecules/ArticlesList';
 
 type ArticleWitTags = {
   date: string;

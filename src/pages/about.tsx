@@ -1,13 +1,13 @@
 import React from 'react';
 import type { InferGetStaticPropsType, GetStaticProps } from 'next';
 
-import Widget from '../../components/molecules/Widget';
-import { getAllArticles, getArticleBySlug } from '../../utils/api';
-import { ArticleData, WidgetItem } from '../../types';
-import Layout from '../../components/molecules/Layout';
+import Widget from '../components/molecules/Widget';
+import { getAllArticles, getArticleBySlug } from '../utils/api';
+import { ArticleData, WidgetItem } from '../types';
+import Layout from '../components/molecules/Layout';
 
-import profilesData from '../../../data/meta/profiles.json';
-import presentationsData from '../../../data/meta/presentations.json';
+import profilesData from '../../data/meta/profiles.json';
+import presentationsData from '../../data/meta/presentations.json';
 
 export const getStaticProps = (async () => {
   const article = await getArticleBySlug({
