@@ -128,7 +128,7 @@ export const FireFilter = () => (
       height="140%"
       filterUnits="objectBoundingBox"
       primitiveUnits="userSpaceOnUse"
-      color-interpolation-filters="sRGB"
+      colorInterpolationFilters="sRGB"
     >
       <feGaussianBlur
         stdDeviation="0 10"
@@ -196,8 +196,8 @@ export const FireFilter = () => (
         result="composite1"
       />
       <feFlood
-        flood-color="#fc752d"
-        flood-opacity="1"
+        floodColor="#fc752d"
+        floodOpacity="1"
         x="0%"
         y="0%"
         width="100%"
@@ -257,8 +257,8 @@ export const FireFilter = () => (
         result="composite3"
       />
       <feFlood
-        flood-color="#ff8422"
-        flood-opacity="1"
+        floodColor="#ff8422"
+        floodOpacity="1"
         x="0%"
         y="0%"
         width="100%"
@@ -300,7 +300,7 @@ export const DistortionFilter = () => (
       height="140%"
       filterUnits="objectBoundingBox"
       primitiveUnits="userSpaceOnUse"
-      color-interpolation-filters="sRGB"
+      colorInterpolationFilters="sRGB"
     >
       <feImage
         href="/assets/img/svg/waves.png"
