@@ -192,6 +192,27 @@ $colors: getColors();
   }
 }
 
+.header-logo__link--fire {
+  &:hover {
+    .header-logo__content {
+      background: #000;
+      text-shadow:
+        0 1px 0 #fc752d,
+        1px 1px 0 #fc752d,
+        0 -1px 0 #fc752d,
+        -1px -1px 0 #fc752d,
+        0 2px 2px black,
+        2px 2px 2px black,
+        0 -2px 2px black,
+        -2px -2px 2px black;
+      color: black;
+    }
+    .header-logo__text {
+      filter: url('#filter-fire');
+    }
+  }
+}
+
 .header-logo__link--animated-rhombs {
   .header-logo__content::before {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style=%22transform: rotate(45deg); transform-origin: 50% 50%;background: black;box-shadow: 0 0 0 .5rem orangered, 0 0 0 1rem black,0 0 0 1.5rem indigo, 0 0 0 2rem black, 0 0 0 2.5rem teal, 0 0 0 .5rem black inset, 0 0 0 1rem gold inset, 0 0 0 1.5rem black inset, 0 0 0 2rem yellowgreen inset, 0 0 0 2.5rem black inset, 0 0 0 3rem teal inset, 0 0 0 3.5rem black inset, 0 0 0 4rem purple inset, 0 0 0 4.5rem black inset, 0 0 0 5rem crimson inset, 0 0 0 5.5rem black inset, 0 0 0 6rem orange inset, 0 0 0 6.5rem black inset, 0 0 0 7rem yellow inset, 0 0 0 7.5rem black inset, 0 0 0 8rem aqua inset, 0 0 0 8.5rem black inset, 0 0 0 9rem teal inset;%22%3E%3C/svg%3E");

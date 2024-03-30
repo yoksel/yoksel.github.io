@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import Link from '../../atoms/Link';
-import { BrokenGlassFilter, FlameFilter } from './Filters';
+import { BrokenGlassFilter, FlameFilter, FireFilter } from './Filters';
 
 import styles from './styles.module.scss';
 
@@ -49,15 +49,15 @@ const LogoContainer = ({ rootClassName, theme, children }: LogoContainerProps) =
   );
 };
 
-type Theme = 'circle' | 'rays' | 'glass' | 'flame' | 'animated-rhombs';
+type Theme = 'circle' | 'rays' | 'glass' | 'flame' | 'animated-rhombs' | 'fire';
 
 const Logo = ({ isMain, parent = 'header' }: LogoProps) => {
   const rootClassName = `${parent}-logo`;
   const containerClassName = `${rootClassName}__container`;
   const linkClassName = `${rootClassName}__link`;
   const isInHeader = parent === 'header';
-  const themes = ['circle', 'rays', 'glass', 'flame', 'animated-rhombs'];
-  const [theme, setTheme] = useState<Theme>('animated-rhombs');
+  const themes = ['circle', 'rays', 'glass', 'flame', 'animated-rhombs', 'fire'];
+  const [theme, setTheme] = useState<Theme>('fire');
 
   useEffect(() => {
     if (!isInHeader) return;
@@ -91,6 +91,7 @@ const Logo = ({ isMain, parent = 'header' }: LogoProps) => {
     >
       {theme === 'glass' && <BrokenGlassFilter />}
       {theme === 'flame' && <FlameFilter />}
+      {theme === 'fire' && <FireFilter />}
       <Link
         className={classNames(
           styles[containerClassName],
