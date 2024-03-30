@@ -6,7 +6,7 @@ desc: 'Пузыри у меня получились почти случайно
 
 tags: [svg, gradients, masks]
 
-include: ./static/assets/img/svg/bubble.svg
+include: /assets/img/svg/bubble.svg
 customCSS: bubble.css
 ---
 

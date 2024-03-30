@@ -134,6 +134,22 @@ export async function getArticleBySlug({
       filteredFields.excerpt = await convertToHTML(filteredFields.excerpt);
     }
 
+    // async handler
+    if (filteredFields.include) {
+      const includePath = filteredFields.include;
+      const includeFullPath = includePath.startsWith('/assets/')
+        ? `./public/${includePath}`
+        : includePath;
+      try {
+        const content = fs.readFileSync(includeFullPath, 'utf-8');
+        if (content) {
+          filteredFields.include = content;
+        }
+      } catch {
+        console.log(`Can't read file ${includeFullPath}`);
+      }
+    }
+
     if (articlesData.date) {
       filteredFields.date = articlesData.date;
     }

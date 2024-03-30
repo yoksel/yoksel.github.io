@@ -25,6 +25,7 @@ export interface ArticleData {
   image?: string;
   customCSS?: string;
   customJs?: string;
+  include?: string;
   layout?: 'onecolumn';
   disableCounter?: boolean;
   isArchived?: boolean;

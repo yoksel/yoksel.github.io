@@ -11,7 +11,7 @@ import ArticleDate from '../../atoms/ArticleDate';
 import styles from './styles.module.scss';
 
 const Article = ({ article }: { article: ArticleData }) => {
-  const { title, date, content, tags, links, navItems } = article;
+  const { title, date, content, tags, links, navItems, include } = article;
   const heading = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
@@ -30,6 +30,7 @@ const Article = ({ article }: { article: ArticleData }) => {
       id="begin"
       aria-labelledby="article-title"
     >
+      {include && <ContentAsHtml content={include} />}
       <header className={styles['article__header']}>
         <h1
           className={styles['article__title']}

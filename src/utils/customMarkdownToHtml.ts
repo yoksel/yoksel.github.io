@@ -5,6 +5,7 @@ export function addHighlightingReplacer(_: unknown, type: string, code: string) 
     .replace(/^\n/, '')
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
+    .replace(/&#39;/g, "'")
     .replace(/&quot;/g, '"');
   const highlightedCode = Prism.highlight(cleanCode, Prism.languages[type], 'type');
   return `<figure aria-label="Пример кода"><pre class="language-${type}"><code class="language-${type}">${highlightedCode}</code></pre></figure>`;
