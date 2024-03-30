@@ -43,10 +43,18 @@ $colors: getColors();
     0 calc($offset * $koeff * -1) 0 list.nth($colors, 8);
 }
 
+/* ---------------- */
+/* Header Logo      */
+/* ---------------- */
+
 .header-logo {
-  --logo-circ-size-koeff: 1.5;
+  --logo-circ-size-koeff: .1;
   --logo-circ-size-diff: calc(var(--logo-size) * var(--logo-circ-size-koeff));
   --logo-circ-decor-size: calc(var(--logo-size) + var(--logo-circ-size-diff) * 2);
+
+  &--rays {
+    --logo-circ-size-koeff: 1.5;
+  }
 
   position: absolute;
   z-index: 1;
@@ -85,7 +93,7 @@ $colors: getColors();
     0 -3px 10px 9px var(--base-shadow-color);
 }
 
-.header-logo__content--link {
+.header-logo__link {
   color: inherit;
   text-decoration: none;
   transition: var(--logo-transition);
@@ -114,11 +122,18 @@ $colors: getColors();
     text-shadow: 0 2px 5px #000;
     color: #DDD;
   }
+}
 
+.header-logo__link--circle {
+  &:hover::after {
+    @include shadow(calc(var(--logo-circ-size-diff) * .65));
+    animation: rotate 2s linear infinite;
+  }
+}
+
+.header-logo__link--rays {
   &:hover::before,
   &:hover::after {
-    // @include shadow(calc(var(--logo-circ-size-diff) * .65));
-    // z-index: -1;
     animation: rotate 30s linear infinite;
   }
 
@@ -139,13 +154,17 @@ $colors: getColors();
   }
 }
 
+/* ---------------- */
+/* Footer Logo      */
+/* ---------------- */
+
 .footer-logo {
   margin-right: 2rem;
   font-size: calc(var(--base-font-size) * 1.7);
   font-family: var(--logo-font-family);
 }
 
-.footer-logo__content--link {
+.footer-logo__link {
   display: inline-block;
   position: relative;
   text-decoration: none;
