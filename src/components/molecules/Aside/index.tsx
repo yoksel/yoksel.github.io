@@ -68,6 +68,7 @@ const Aside = ({ slug, isMain, articleType, posts, pages }: AsideProps) => {
       <>
         {projectsWidget}
         {pagesWidget}
+        <PhotosWidget />
       </>
     ) : (
       <>
