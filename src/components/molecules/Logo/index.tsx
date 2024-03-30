@@ -50,7 +50,15 @@ const LogoContainer = ({ rootClassName, theme, children }: LogoContainerProps) =
   );
 };
 
-type Theme = 'circle' | 'rays' | 'glass' | 'flame' | 'animated-rhombs' | 'fire' | 'distortion';
+type Theme =
+  | 'circle'
+  | 'rays'
+  | 'glass'
+  | 'flame'
+  | 'animated-rhombs'
+  | 'fire'
+  | 'distortion'
+  | 'amanita';
 
 type MouseEnterHandler = (event: React.MouseEvent) => void;
 
@@ -59,18 +67,34 @@ const Logo = ({ isMain, parent = 'header' }: LogoProps) => {
   const containerClassName = `${rootClassName}__container`;
   const linkClassName = `${rootClassName}__link`;
   const isInHeader = parent === 'header';
-  const themes = ['circle', 'rays', 'glass', 'flame', 'animated-rhombs', 'fire', 'distortion'];
-  const [theme, setTheme] = useState<Theme>('distortion');
+  const themes = [
+    'circle',
+    'rays',
+    'glass',
+    'flame',
+    'animated-rhombs',
+    'fire',
+    'distortion',
+    'amanita',
+  ];
+  const [theme, setTheme] = useState<Theme>('amanita');
   const [distortionFilterAnimation, setDistortionFilterAnimation] = useState<MouseEnterHandler>();
 
   useEffect(() => {
     if (!isInHeader) return;
+
+    const themeFromUrl = document.location.search?.replace('?', '');
+    if (themes.includes(themeFromUrl)) {
+      setTheme(themeFromUrl as Theme);
+      return;
+    }
 
     const randomIndex = Math.floor(Math.random() * themes.length);
     if (themes[randomIndex]) {
       setTheme(themes[randomIndex] as Theme);
     }
   }, []);
+
   useEffect(() => {
     if (theme === 'distortion') {
       setDistortionFilterAnimation(distortionFilterAnimationGetHandler);
