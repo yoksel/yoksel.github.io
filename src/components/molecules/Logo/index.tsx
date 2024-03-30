@@ -49,15 +49,15 @@ const LogoContainer = ({ rootClassName, theme, children }: LogoContainerProps) =
   );
 };
 
-type Theme = 'circle' | 'rays' | 'glass' | 'flame';
+type Theme = 'circle' | 'rays' | 'glass' | 'flame' | 'animated-rhombs';
 
 const Logo = ({ isMain, parent = 'header' }: LogoProps) => {
   const rootClassName = `${parent}-logo`;
   const containerClassName = `${rootClassName}__container`;
   const linkClassName = `${rootClassName}__link`;
   const isInHeader = parent === 'header';
-  const themes = ['circle', 'rays', 'glass', 'flame'];
-  const [theme, setTheme] = useState<Theme>('circle');
+  const themes = ['circle', 'rays', 'glass', 'flame', 'animated-rhombs'];
+  const [theme, setTheme] = useState<Theme>('animated-rhombs');
 
   useEffect(() => {
     if (!isInHeader) return;
