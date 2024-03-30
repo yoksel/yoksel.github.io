@@ -1,5 +1,6 @@
 
 @use 'sass:list';
+@import "./blendModeGradient.scss";
 
 @font-face {
   font-family: 'Lobster';
@@ -43,10 +44,18 @@ $colors: getColors();
     0 calc($offset * $koeff * -1) 0 list.nth($colors, 8);
 }
 
+/* ---------------- */
+/* Header Logo      */
+/* ---------------- */
+
 .header-logo {
-  --logo-circ-size-koeff: 1.5;
+  --logo-circ-size-koeff: .1;
   --logo-circ-size-diff: calc(var(--logo-size) * var(--logo-circ-size-koeff));
   --logo-circ-decor-size: calc(var(--logo-size) + var(--logo-circ-size-diff) * 2);
+
+  &--rays {
+    --logo-circ-size-koeff: 1.5;
+  }
 
   position: absolute;
   z-index: 1;
@@ -71,7 +80,29 @@ $colors: getColors();
   }
 }
 
+.header-logo__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: var(--logo-size);
+  height: var(--logo-size);
+  border-radius: 50%;
+  box-shadow: 0 0 0 transparent inset,
+    0 0 0 10px white,
+    0 -3px 10px 9px var(--base-shadow-color);
+
+  .header-logo__link:hover & {
+    box-shadow: 0 5px 10px rgb(0 0 0 / 50%) inset,
+      0 0 0 10px white,
+      0 -3px 10px 9px var(--base-shadow-color);
+    transition: inherit;
+  }
+}
+
 .header-logo__content {
+  position: absolute;
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,12 +111,26 @@ $colors: getColors();
   height: var(--logo-size);
   background: var(--logo-bgcolor);
   border-radius: 50%;
-  box-shadow: 0 0 0 transparent inset,
-    0 0 0 10px white,
-    0 -3px 10px 9px var(--base-shadow-color);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    border-radius: 50%;
+    opacity: 0;
+    transition: inherit;
+  }
+
+  .header-logo__link:hover & {
+    background: #444;
+    text-shadow: 0 2px 5px #000;
+    color: #DDD;
+    transition: inherit;
+  }
 }
 
-.header-logo__content--link {
+.header-logo__link {
   color: inherit;
   text-decoration: none;
   transition: var(--logo-transition);
@@ -105,20 +150,105 @@ $colors: getColors();
     transition: inherit;
     pointer-events: none;
   }
+}
 
-  &:hover {
-    background: #444;
-    box-shadow: 0 5px 10px rgb(0 0 0 / 50%) inset,
-      0 0 0 10px white,
-      0 -3px 10px 9px var(--base-shadow-color);
-    text-shadow: 0 2px 5px #000;
-    color: #DDD;
+.header-logo__link--circle {
+  &:hover::after {
+    @include shadow(calc(var(--logo-circ-size-diff) * .65));
+    animation: rotate 2s linear infinite;
+  }
+}
+
+.header-logo__link--glass {
+  .header-logo__content::before {
+    @include gradient-set($warm, 60deg, 6);
   }
 
+  &:hover {
+    .header-logo__content {
+      filter: url('#filter-broken-glass');
+      color: white;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.header-logo__link--flame {
+  .header-logo__content::before {
+    filter: url('#filter-flame');
+  }
+
+  &:hover {
+    .header-logo__content{
+      color: white;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.header-logo__link--fire {
+  &:hover {
+    .header-logo__content {
+      background: #000;
+      text-shadow:
+        0 1px 0 #fc752d,
+        1px 1px 0 #fc752d,
+        0 -1px 0 #fc752d,
+        -1px -1px 0 #fc752d,
+        0 2px 2px black,
+        2px 2px 2px black,
+        0 -2px 2px black,
+        -2px -2px 2px black;
+      color: black;
+    }
+    .header-logo__text {
+      filter: url('#filter-fire');
+    }
+  }
+}
+
+.header-logo__link--animated-rhombs {
+  .header-logo__content::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style=%22transform: rotate(45deg); transform-origin: 50% 50%;background: black;box-shadow: 0 0 0 .5rem orangered, 0 0 0 1rem black,0 0 0 1.5rem indigo, 0 0 0 2rem black, 0 0 0 2.5rem teal, 0 0 0 .5rem black inset, 0 0 0 1rem gold inset, 0 0 0 1.5rem black inset, 0 0 0 2rem yellowgreen inset, 0 0 0 2.5rem black inset, 0 0 0 3rem teal inset, 0 0 0 3.5rem black inset, 0 0 0 4rem purple inset, 0 0 0 4.5rem black inset, 0 0 0 5rem crimson inset, 0 0 0 5.5rem black inset, 0 0 0 6rem orange inset, 0 0 0 6.5rem black inset, 0 0 0 7rem yellow inset, 0 0 0 7.5rem black inset, 0 0 0 8rem aqua inset, 0 0 0 8.5rem black inset, 0 0 0 9rem teal inset;%22%3E%3C/svg%3E");
+    background-size: 8rem 8rem;
+    background-position: 50% 50%;
+  }
+
+  &:hover {
+    .header-logo__content{
+      color: white;
+
+      &::before {
+        opacity: 1;
+        animation: animated-rhombs 10s infinite;
+      }
+    }
+  }
+}
+
+@keyframes animated-rhombs {
+    25% {
+        background-size: 10rem 10rem;
+    }
+
+    50% {
+        background-size: 5rem 5rem;
+    }
+
+    75% {
+        background-size: 22rem 22rem;
+    }
+}
+
+.header-logo__link--rays {
   &:hover::before,
   &:hover::after {
-    // @include shadow(calc(var(--logo-circ-size-diff) * .65));
-    // z-index: -1;
     animation: rotate 30s linear infinite;
   }
 
@@ -133,11 +263,22 @@ $colors: getColors();
   }
 }
 
+.header-logo__text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @keyframes rotate {
   100% {
     transform: rotate(360deg);
   }
 }
+
+/* ---------------- */
+/* Footer Logo      */
+/* ---------------- */
 
 .footer-logo {
   margin-right: 2rem;
@@ -145,7 +286,7 @@ $colors: getColors();
   font-family: var(--logo-font-family);
 }
 
-.footer-logo__content--link {
+.footer-logo__link {
   display: inline-block;
   position: relative;
   text-decoration: none;

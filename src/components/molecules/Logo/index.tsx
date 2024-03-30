@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import Link from '../../atoms/Link';
+import { BrokenGlassFilter, FlameFilter, FireFilter } from './Filters';
 
 import styles from './styles.module.scss';
 
@@ -9,44 +10,104 @@ interface LogoProps {
   parent?: string;
 }
 
-const Logo = ({ isMain, parent = 'header' }: LogoProps) => {
-  const containerClassName = `${parent}-logo`;
-  const itemClassName = `${containerClassName}__item`;
-  const contentClassName = `${containerClassName}__content`;
-  const containerStyles = styles[containerClassName];
+interface LogoContentProps {
+  rootClassName: string;
+  isInHeader: boolean;
+}
+const LogoContent = ({ isInHeader, rootClassName }: LogoContentProps) => {
+  if (!isInHeader) {
+    return 'Про CSS';
+  }
+
+  const itemClassName = `${rootClassName}__item`;
   const itemStyles = styles[itemClassName];
   const itemAboutStyles = styles[`${itemClassName}--about`];
   const itemCSSStyles = styles[`${itemClassName}--css`];
-  const contentStyles = styles[contentClassName];
-  const linkStyles = styles[`${contentClassName}--link`];
-  const notLinkStyles = styles[`${contentClassName}__not-link`];
 
-  const logoContent = (
-    <>
-      <span className={classNames(itemStyles, itemAboutStyles)}>Про</span>&nbsp;
-      <span className={classNames(itemStyles, itemCSSStyles)}>CSS</span>
-    </>
+  return (
+    <div className={styles[`${rootClassName}__content`]}>
+      <div className={styles[`${rootClassName}__text`]}>
+        <span className={classNames(itemStyles, itemAboutStyles)}>Про</span>&nbsp;
+        <span className={classNames(itemStyles, itemCSSStyles)}>CSS</span>
+      </div>
+    </div>
   );
+};
+
+interface LogoContainerProps extends React.PropsWithChildren {
+  rootClassName: string;
+  theme?: string;
+}
+
+const LogoContainer = ({ rootClassName, theme, children }: LogoContainerProps) => {
+  return (
+    <div
+      className={classNames(styles[rootClassName], theme && styles[`${rootClassName}--${theme}`])}
+    >
+      {children}
+    </div>
+  );
+};
+
+type Theme = 'circle' | 'rays' | 'glass' | 'flame' | 'animated-rhombs' | 'fire';
+
+const Logo = ({ isMain, parent = 'header' }: LogoProps) => {
+  const rootClassName = `${parent}-logo`;
+  const containerClassName = `${rootClassName}__container`;
+  const linkClassName = `${rootClassName}__link`;
+  const isInHeader = parent === 'header';
+  const themes = ['circle', 'rays', 'glass', 'flame', 'animated-rhombs', 'fire'];
+  const [theme, setTheme] = useState<Theme>('fire');
+
+  useEffect(() => {
+    if (!isInHeader) return;
+
+    const randomIndex = Math.floor(Math.random() * themes.length);
+    if (themes[randomIndex]) {
+      setTheme(themes[randomIndex] as Theme);
+    }
+  }, []);
 
   if (isMain) {
     return (
-      <div className={containerStyles}>
-        <span className={classNames(contentStyles, notLinkStyles)}>{logoContent}</span>
-      </div>
+      <LogoContainer
+        rootClassName={rootClassName}
+        theme={theme}
+      >
+        <span className={classNames(styles[containerClassName])}>
+          <LogoContent
+            rootClassName={rootClassName}
+            isInHeader={isInHeader}
+          />
+        </span>
+      </LogoContainer>
     );
   }
 
   return (
-    <div className={containerStyles}>
+    <LogoContainer
+      rootClassName={rootClassName}
+      theme={theme}
+    >
+      {theme === 'glass' && <BrokenGlassFilter />}
+      {theme === 'flame' && <FlameFilter />}
+      {theme === 'fire' && <FireFilter />}
       <Link
-        className={classNames(contentStyles, linkStyles)}
+        className={classNames(
+          styles[containerClassName],
+          styles[linkClassName],
+          theme && styles[`${linkClassName}--${theme}`],
+        )}
         href="/"
         dataName="Про CSS"
         ariaLabel="Про CSS"
       >
-        {logoContent}
+        <LogoContent
+          rootClassName={rootClassName}
+          isInHeader={parent === 'header'}
+        />
       </Link>
-    </div>
+    </LogoContainer>
   );
 };
 
