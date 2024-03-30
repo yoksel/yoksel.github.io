@@ -4,9 +4,18 @@ interface LinkProps extends React.PropsWithChildren {
   dataName?: string;
   title?: string;
   ariaLabel?: string;
+  onMouseEnter?: (event: React.MouseEvent) => void;
 }
 
-const Link = ({ href, className, children, dataName, title, ariaLabel }: LinkProps) => (
+const Link = ({
+  href,
+  className,
+  children,
+  dataName,
+  title,
+  ariaLabel,
+  onMouseEnter,
+}: LinkProps) => (
   <a
     href={href}
     className={className}
@@ -14,6 +23,7 @@ const Link = ({ href, className, children, dataName, title, ariaLabel }: LinkPro
     rel={href.includes('http') ? 'noreferrer' : undefined}
     title={title}
     aria-label={ariaLabel}
+    onMouseEnter={onMouseEnter}
   >
     {children}
   </a>

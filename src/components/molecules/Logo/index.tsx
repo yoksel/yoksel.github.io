@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import Link from '../../atoms/Link';
-import { BrokenGlassFilter, FlameFilter, FireFilter } from './Filters';
+import { BrokenGlassFilter, FlameFilter, FireFilter, DistortionFilter } from './Filters';
+import distortionFilterAnimationGetHandler from './Filters/distortionFilterAnimation';
 
 import styles from './styles.module.scss';
 
@@ -49,15 +50,18 @@ const LogoContainer = ({ rootClassName, theme, children }: LogoContainerProps) =
   );
 };
 
-type Theme = 'circle' | 'rays' | 'glass' | 'flame' | 'animated-rhombs' | 'fire';
+type Theme = 'circle' | 'rays' | 'glass' | 'flame' | 'animated-rhombs' | 'fire' | 'distortion';
+
+type MouseEnterHandler = (event: React.MouseEvent) => void;
 
 const Logo = ({ isMain, parent = 'header' }: LogoProps) => {
   const rootClassName = `${parent}-logo`;
   const containerClassName = `${rootClassName}__container`;
   const linkClassName = `${rootClassName}__link`;
   const isInHeader = parent === 'header';
-  const themes = ['circle', 'rays', 'glass', 'flame', 'animated-rhombs', 'fire'];
-  const [theme, setTheme] = useState<Theme>('fire');
+  const themes = ['circle', 'rays', 'glass', 'flame', 'animated-rhombs', 'fire', 'distortion'];
+  const [theme, setTheme] = useState<Theme>('distortion');
+  const [distortionFilterAnimation, setDistortionFilterAnimation] = useState<MouseEnterHandler>();
 
   useEffect(() => {
     if (!isInHeader) return;
@@ -67,6 +71,11 @@ const Logo = ({ isMain, parent = 'header' }: LogoProps) => {
       setTheme(themes[randomIndex] as Theme);
     }
   }, []);
+  useEffect(() => {
+    if (theme === 'distortion') {
+      setDistortionFilterAnimation(distortionFilterAnimationGetHandler);
+    }
+  }, [theme]);
 
   if (isMain) {
     return (
@@ -92,6 +101,7 @@ const Logo = ({ isMain, parent = 'header' }: LogoProps) => {
       {theme === 'glass' && <BrokenGlassFilter />}
       {theme === 'flame' && <FlameFilter />}
       {theme === 'fire' && <FireFilter />}
+      {theme === 'distortion' && <DistortionFilter />}
       <Link
         className={classNames(
           styles[containerClassName],
@@ -101,6 +111,7 @@ const Logo = ({ isMain, parent = 'header' }: LogoProps) => {
         href="/"
         dataName="Про CSS"
         ariaLabel="Про CSS"
+        onMouseEnter={distortionFilterAnimation}
       >
         <LogoContent
           rootClassName={rootClassName}

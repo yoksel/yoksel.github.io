@@ -128,7 +128,7 @@ export const FireFilter = () => (
       height="140%"
       filterUnits="objectBoundingBox"
       primitiveUnits="userSpaceOnUse"
-      color-interpolation-filters="sRGB"
+      colorInterpolationFilters="sRGB"
     >
       <feGaussianBlur
         stdDeviation="0 10"
@@ -196,8 +196,8 @@ export const FireFilter = () => (
         result="composite1"
       />
       <feFlood
-        flood-color="#fc752d"
-        flood-opacity="1"
+        floodColor="#fc752d"
+        floodOpacity="1"
         x="0%"
         y="0%"
         width="100%"
@@ -257,8 +257,8 @@ export const FireFilter = () => (
         result="composite3"
       />
       <feFlood
-        flood-color="#ff8422"
-        flood-opacity="1"
+        floodColor="#ff8422"
+        floodOpacity="1"
         x="0%"
         y="0%"
         width="100%"
@@ -286,6 +286,47 @@ export const FireFilter = () => (
         <feMergeNode in="SourceGraphic" />
         <feMergeNode in="composite4" />
       </feMerge>
+    </filter>
+  </svg>
+);
+
+export const DistortionFilter = () => (
+  <svg className="svg-defs">
+    <filter
+      id="filter-distortion-circles"
+      x="-20%"
+      y="-20%"
+      width="140%"
+      height="140%"
+      filterUnits="objectBoundingBox"
+      primitiveUnits="userSpaceOnUse"
+      colorInterpolationFilters="sRGB"
+    >
+      <feImage
+        href="/assets/img/svg/waves.png"
+        x="-100"
+        y="-175"
+        width="350"
+        height="350"
+        className="distortion-circles__image"
+        result="waves-image"
+      />
+
+      <feDisplacementMap
+        in="SourceGraphic"
+        in2="waves-image"
+        scale="0"
+        xChannelSelector="R"
+        yChannelSelector="B"
+        className="distortion-circles__map"
+        result="displacementMap"
+      />
+
+      <feComposite
+        operator="in"
+        in2="waves-image"
+      />
+      <feComposite in2="SourceGraphic" />
     </filter>
   </svg>
 );
