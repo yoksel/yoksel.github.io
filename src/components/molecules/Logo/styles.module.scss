@@ -192,6 +192,12 @@ $colors: getColors();
   }
 }
 
+.header-logo__link--distortion {
+  .header-logo__content {
+    filter: url('#filter-distortion-circles');
+  }
+}
+
 .header-logo__link--fire {
   &:hover {
     .header-logo__content {

@@ -289,3 +289,47 @@ export const FireFilter = () => (
     </filter>
   </svg>
 );
+
+export const DistortionFilter = () => (
+  <svg className="svg-defs">
+    <filter
+      id="filter-distortion-circles"
+      x="-20%"
+      y="-20%"
+      width="140%"
+      height="140%"
+      filterUnits="objectBoundingBox"
+      primitiveUnits="userSpaceOnUse"
+      color-interpolation-filters="sRGB"
+    >
+      <feImage
+        href="/assets/img/svg/waves.png"
+        x="-100"
+        y="-175"
+        width="350"
+        height="350"
+        className="distortion-circles__image"
+        result="waves-image"
+      />
+
+      <feDisplacementMap
+        in="SourceGraphic"
+        in2="waves-image"
+        scale="0"
+        xChannelSelector="R"
+        yChannelSelector="B"
+        className="distortion-circles__map"
+        result="displacementMap"
+      />
+
+      <feComposite
+        operator="in"
+        in2="waves-image"
+      />
+      <feComposite
+        operator="in2"
+        in2="SourceGraphic"
+      />
+    </filter>
+  </svg>
+);
