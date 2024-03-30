@@ -1,0 +1,52 @@
+$transp: rgba(255,255,255,0);
+
+$colors-warm:
+  white,
+  lightblue,
+  skyblue,
+  steelblue,
+  darken(steelblue, 10%),
+  red,
+  lighten(red, 20%),
+  orange,
+  gold,
+  lighten(gold, 30%);
+
+$warm: (
+  colors: $colors-warm,
+  bg-color: orangered
+);
+
+@function gradient($colors, $direct: 60deg) {
+
+  $out: null;
+
+  @for $item from 1 through length($colors) {
+    $color: nth($colors, $item);
+    $pos: percentage($item/length($colors)/2);
+
+    $out-string: $color #{$pos - 10}, $color #{$pos};
+    $out: append($out, $out-string, comma);
+  }
+
+  @for $item from 1 through length($colors) {
+    $color: nth($colors, $item);
+    $pos: percentage($item/length($colors)/2) + 50;
+
+    $out-string: $color #{$pos - 10}, $color #{$pos};
+    $out: append($out, $out-string, comma);
+  }
+
+  @return linear-gradient($direct, $out);
+}
+
+@mixin gradient-set ($colors-set: $cold,$direct: 60deg, $size: 6){
+  $grad-colors: map-get($colors-set, colors);
+  $bg-color: map-get($colors-set, bg-color);
+
+  background-image: gradient($grad-colors,$direct),
+    gradient($grad-colors, $direct: -$direct);
+  background-color: $bg-color;
+  background-size: #{$size}rem #{$size*1.72}rem;
+  background-blend-mode: multiply, normal;
+}

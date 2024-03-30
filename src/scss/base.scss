@@ -88,6 +88,13 @@ IMG {
   display: none !important;
 }
 
+.svg-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0
+}
+
 /* Codes
 -------------------------------- */
 

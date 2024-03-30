@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import Link from '../../atoms/Link';
+import { BrokenGlassFilter, FlameFilter } from './Filters';
 
 import styles from './styles.module.scss';
 
@@ -10,71 +11,72 @@ interface LogoProps {
 }
 
 interface LogoContentProps {
-  itemClassName: string;
+  rootClassName: string;
   isInHeader: boolean;
 }
-const LogoContent = ({ isInHeader, itemClassName }: LogoContentProps) => {
+const LogoContent = ({ isInHeader, rootClassName }: LogoContentProps) => {
   if (!isInHeader) {
     return 'Про CSS';
   }
 
+  const itemClassName = `${rootClassName}__item`;
   const itemStyles = styles[itemClassName];
   const itemAboutStyles = styles[`${itemClassName}--about`];
   const itemCSSStyles = styles[`${itemClassName}--css`];
 
   return (
-    <>
-      <span className={classNames(itemStyles, itemAboutStyles)}>Про</span>&nbsp;
-      <span className={classNames(itemStyles, itemCSSStyles)}>CSS</span>
-    </>
+    <div className={styles[`${rootClassName}__content`]}>
+      <div className={styles[`${rootClassName}__text`]}>
+        <span className={classNames(itemStyles, itemAboutStyles)}>Про</span>&nbsp;
+        <span className={classNames(itemStyles, itemCSSStyles)}>CSS</span>
+      </div>
+    </div>
   );
 };
 
 interface LogoContainerProps extends React.PropsWithChildren {
-  containerClassName: string;
+  rootClassName: string;
   theme?: string;
 }
 
-const LogoContainer = ({ containerClassName, theme, children }: LogoContainerProps) => {
+const LogoContainer = ({ rootClassName, theme, children }: LogoContainerProps) => {
   return (
     <div
-      className={classNames(
-        styles[containerClassName],
-        theme && styles[`${containerClassName}--${theme}`],
-      )}
+      className={classNames(styles[rootClassName], theme && styles[`${rootClassName}--${theme}`])}
     >
       {children}
     </div>
   );
 };
 
+type Theme = 'circle' | 'rays' | 'glass' | 'flame';
+
 const Logo = ({ isMain, parent = 'header' }: LogoProps) => {
-  const containerClassName = `${parent}-logo`;
-  const itemClassName = `${containerClassName}__item`;
-  const contentClassName = `${containerClassName}__content`;
-  const linkClassName = `${containerClassName}__link`;
+  const rootClassName = `${parent}-logo`;
+  const containerClassName = `${rootClassName}__container`;
+  const linkClassName = `${rootClassName}__link`;
   const isInHeader = parent === 'header';
-  const themes = ['circle', 'rays'];
-  const [theme, setTheme] = useState<string>();
+  const themes = ['circle', 'rays', 'glass', 'flame'];
+  const [theme, setTheme] = useState<Theme>('circle');
 
   useEffect(() => {
     if (!isInHeader) return;
 
     const randomIndex = Math.floor(Math.random() * themes.length);
     if (themes[randomIndex]) {
-      setTheme(themes[randomIndex]);
+      setTheme(themes[randomIndex] as Theme);
     }
   }, []);
 
   if (isMain) {
     return (
       <LogoContainer
-        containerClassName={containerClassName}
+        rootClassName={rootClassName}
         theme={theme}
       >
-        <span className={classNames(styles[contentClassName])}>
+        <span className={classNames(styles[containerClassName])}>
           <LogoContent
-            itemClassName={itemClassName}
+            rootClassName={rootClassName}
             isInHeader={isInHeader}
           />
         </span>
@@ -84,12 +86,14 @@ const Logo = ({ isMain, parent = 'header' }: LogoProps) => {
 
   return (
     <LogoContainer
-      containerClassName={containerClassName}
+      rootClassName={rootClassName}
       theme={theme}
     >
+      {theme === 'glass' && <BrokenGlassFilter />}
+      {theme === 'flame' && <FlameFilter />}
       <Link
         className={classNames(
-          styles[contentClassName],
+          styles[containerClassName],
           styles[linkClassName],
           theme && styles[`${linkClassName}--${theme}`],
         )}
@@ -98,7 +102,7 @@ const Logo = ({ isMain, parent = 'header' }: LogoProps) => {
         ariaLabel="Про CSS"
       >
         <LogoContent
-          itemClassName={itemClassName}
+          rootClassName={rootClassName}
           isInHeader={parent === 'header'}
         />
       </Link>
