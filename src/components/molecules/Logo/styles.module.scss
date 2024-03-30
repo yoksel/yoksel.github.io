@@ -1,6 +1,13 @@
 
 @use 'sass:list';
-@import "https://fonts.googleapis.com/css2?family=Lobster&text=ПроCSS&display=swap";
+
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/lobster/font.woff2') format('woff2');
+}
 
 $max: 9;
 $step: 360 / $max;
