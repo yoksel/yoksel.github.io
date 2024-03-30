@@ -9,7 +9,7 @@ desc: Есть несколько способов обрезать элемен
 excerpt: <p>Есть несколько способов обрезать элемент по маске. Одни поддерживаются всеми современными браузерами, другие поддерживаются очень плохо, и пользоваться ими ещё нельзя. В некоторых способах маской может быть текст.</p>
 
 customCSS: css-and-svg-masks.css
-include: ./static/assets/img/svg/css-and-svg-masks.svg
+include: /assets/img/svg/css-and-svg-masks.svg
 
 links:
 - href: http://www.html5rocks.com/en/tutorials/masking/adobe/
