@@ -54,7 +54,7 @@ $colors: getColors();
   --logo-circ-decor-size: calc(var(--logo-size) + var(--logo-circ-size-diff) * 2);
 
   &--rays {
-    --logo-circ-size-koeff: 1.5;
+    --logo-circ-size-koeff: .75;
   }
 
   position: absolute;
@@ -91,6 +91,7 @@ $colors: getColors();
   box-shadow: 0 0 0 transparent inset,
     0 0 0 10px white,
     0 -3px 10px 9px var(--base-shadow-color);
+  transition: inherit;
 
   .header-logo__link:hover & {
     box-shadow: 0 5px 10px rgb(0 0 0 / 50%) inset,
@@ -111,15 +112,15 @@ $colors: getColors();
   height: var(--logo-size);
   background: var(--logo-bgcolor);
   border-radius: 50%;
+  transition: inherit;
 
-  &::before {
+  &::before, &::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: inherit;
     border-radius: 50%;
-    opacity: 0;
     transition: inherit;
+    opacity: 0;
   }
 
   .header-logo__link:hover & {
@@ -127,6 +128,10 @@ $colors: getColors();
     text-shadow: 0 2px 5px #000;
     color: #DDD;
     transition: inherit;
+
+    &::before, &::after {
+      opacity: 1;
+    }
   }
 }
 
@@ -149,11 +154,18 @@ $colors: getColors();
     background-size: cover;
     transition: inherit;
     pointer-events: none;
+    opacity: 0;
+  }
+
+  &:hover {
+    &::before, &::after {
+      opacity: 1;
+    }
   }
 }
 
 .header-logo__link--circle {
-  &:hover::after {
+  &::after {
     @include shadow(calc(var(--logo-circ-size-diff) * .65));
     animation: rotate 2s linear infinite;
   }
@@ -168,10 +180,6 @@ $colors: getColors();
     .header-logo__content {
       filter: url('#filter-broken-glass');
       color: white;
-
-      &::before {
-        opacity: 1;
-      }
     }
   }
 }
@@ -179,15 +187,13 @@ $colors: getColors();
 .header-logo__link--flame {
   .header-logo__content::before {
     filter: url('#filter-flame');
+    /* to make filter work */
+    background: inherit;
   }
 
   &:hover {
     .header-logo__content{
       color: white;
-
-      &::before {
-        opacity: 1;
-      }
     }
   }
 }
@@ -224,16 +230,12 @@ $colors: getColors();
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style=%22transform: rotate(45deg); transform-origin: 50% 50%;background: black;box-shadow: 0 0 0 .5rem orangered, 0 0 0 1rem black,0 0 0 1.5rem indigo, 0 0 0 2rem black, 0 0 0 2.5rem teal, 0 0 0 .5rem black inset, 0 0 0 1rem gold inset, 0 0 0 1.5rem black inset, 0 0 0 2rem yellowgreen inset, 0 0 0 2.5rem black inset, 0 0 0 3rem teal inset, 0 0 0 3.5rem black inset, 0 0 0 4rem purple inset, 0 0 0 4.5rem black inset, 0 0 0 5rem crimson inset, 0 0 0 5.5rem black inset, 0 0 0 6rem orange inset, 0 0 0 6.5rem black inset, 0 0 0 7rem yellow inset, 0 0 0 7.5rem black inset, 0 0 0 8rem aqua inset, 0 0 0 8.5rem black inset, 0 0 0 9rem teal inset;%22%3E%3C/svg%3E");
     background-size: 8rem 8rem;
     background-position: 50% 50%;
+    animation: animated-rhombs 10s infinite;
   }
 
   &:hover {
     .header-logo__content{
       color: white;
-
-      &::before {
-        opacity: 1;
-        animation: animated-rhombs 10s infinite;
-      }
     }
   }
 }
@@ -252,6 +254,26 @@ $colors: getColors();
     }
 }
 
+.header-logo__link--amanita {
+  .header-logo__content {
+    &::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cpattern id='p-dottes' width='40' height='40' viewBox='0 0 100 100' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23FFF'%3E%3Ccircle r='15' cx='20' cy='20'%3E%3C/circle%3E%3Ccircle r='22' cx='70' cy='70'%3E%3C/circle%3E%3C/g%3E%3C/pattern%3E%3Ccircle r='500' cx='250' cy='250' fill='url(%23p-dottes)' %3E%3C/circle%3E%3C/svg%3E");
+      background-position: 50% 50%;
+      animation: rotate 5s linear infinite;
+    }
+    &::before {
+      background-color: var(--logo-bgcolor);
+    }
+  }
+
+   &:hover {
+    .header-logo__content{
+      color: white;
+      text-shadow: 0 2px 5px crimson, 0 2px 5px rgba(0,0,0,.5);
+    }
+  }
+}
+
 .header-logo__link--rays {
   &:hover::before,
   &:hover::after {
@@ -259,18 +281,52 @@ $colors: getColors();
   }
 
   &:hover::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='350'%3E%3CradialGradient id='grad' cx='50%25' y='50%25'%3E%3Cstop offset='20%25' stop-color='deepskyblue' class='stop-1' stop-opacity='.15'/%3E%3Cstop offset='100%25' stop-color='deepskyblue' stop-opacity='0' class='stop-2'/%3E%3C/radialGradient%3E%3Ccircle r='175' cx='175' cy='175' fill='none' stroke='url(%23grad)' stroke-width='250' stroke-dasharray='6.5% 6.5%'%3E%3C/circle%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='350'%3E%3CradialGradient id='grad' cx='50%25' y='50%25'%3E%3Cstop offset='20%25' stop-color='mediumslateblue' class='stop-1' stop-opacity='.1'/%3E%3Cstop offset='70%25' stop-color='mediumslateblue' stop-opacity='0' class='stop-2'/%3E%3C/radialGradient%3E%3Ccircle r='175' cx='175' cy='175' fill='none' stroke='url(%23grad)' stroke-width='197' stroke-dasharray='2 3 5 7 10 15 15'%3E%3C/circle%3E%3C/svg%3E");
     animation-direction: reverse;
     animation-duration: 25s;
   }
 
   &:hover::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='350'%3E%3CradialGradient id='grad' cx='50%25' y='50%25'%3E%3Cstop offset='20%25' stop-color='white' class='stop-1' stop-opacity='.35'/%3E%3Cstop offset='100%25' stop-color='white' stop-opacity='0' class='stop-2'/%3E%3C/radialGradient%3E%3Ccircle r='175' cx='175' cy='175' fill='none' stroke='url(%23grad)' stroke-width='250' stroke-dasharray='1% 3%'%3E%3C/circle%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='350'%3E%3CradialGradient id='grad' cx='50%25' y='50%25'%3E%3Cstop offset='20%25' stop-color='dodgerblue' class='stop-1' stop-opacity='.25'/%3E%3Cstop offset='85%25' stop-color='dodgerblue' stop-opacity='0' class='stop-2'/%3E%3C/radialGradient%3E%3Ccircle r='175' cx='175' cy='175' fill='none' stroke='url(%23grad)' stroke-width='197' stroke-dasharray='10 15 2 3 5 7 15'%3E%3C/circle%3E%3C/svg%3E");
+    animation-direction: reverse;
+    animation-duration: 38s;
+  }
+
+  .header-logo__content {
+    &:hover {
+      color: #fff;
+    }
+    &::before, &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: var(--logo-circ-decor-size);
+      height: var(--logo-circ-decor-size);
+      top: calc(var(--logo-circ-size-diff) * -1);
+      left: calc(var(--logo-circ-size-diff) * -1);
+      border-radius: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: inherit;
+      pointer-events: none;
+      opacity: 0;
+      animation: rotate 30s linear infinite;
+    }
+
+    &::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='350'%3E%3CradialGradient id='grad' cx='50%25' y='50%25'%3E%3Cstop offset='20%25' stop-color='orchid' class='stop-1' stop-opacity='.35'/%3E%3Cstop offset='100%25' stop-color='orchid' stop-opacity='0' class='stop-2'/%3E%3C/radialGradient%3E%3Ccircle r='175' cx='175' cy='175' fill='none' stroke='url(%23grad)' stroke-width='197' stroke-dasharray='2 3 5 7 10 15 15'%3E%3C/circle%3E%3C/svg%3E");
+      animation-duration: 17s;
+    }
+    &::after {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='350'%3E%3CradialGradient id='grad' cx='50%25' y='50%25'%3E%3Cstop offset='20%25' stop-color='white' class='stop-1' stop-opacity='.85'/%3E%3Cstop offset='100%25' stop-color='white' stop-opacity='0' class='stop-2'/%3E%3C/radialGradient%3E%3Ccircle r='175' cx='175' cy='175' fill='none' stroke='url(%23grad)' stroke-width='197' stroke-dasharray='1% 3%'%3E%3C/circle%3E%3C/svg%3E");
+    }
   }
 }
 
 .header-logo__text {
   position: relative;
+  z-index: 20;
   display: flex;
   align-items: center;
   justify-content: center;
