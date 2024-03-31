@@ -55,6 +55,14 @@ $colors: getColors();
 
   &--rays {
     --logo-circ-size-koeff: .75;
+
+    @media (width <= 1000px) {
+      --logo-circ-size-koeff: .6;
+    }
+
+    @media (width <= 700px) {
+      --logo-circ-size-koeff: .5;
+    }
   }
 
   position: absolute;
@@ -168,6 +176,10 @@ $colors: getColors();
   &::after {
     @include shadow(calc(var(--logo-circ-size-diff) * .65));
     animation: rotate 2s linear infinite;
+
+    @media (width <= 400px) {
+      display: none;
+    }
   }
 }
 
@@ -277,7 +289,12 @@ $colors: getColors();
 .header-logo__link--rays {
   &:hover::before,
   &:hover::after {
+    z-index: -1;
     animation: rotate 30s linear infinite;
+
+    @media (width <= 600px) {
+      display: none;
+    }
   }
 
   &:hover::before {
@@ -300,6 +317,7 @@ $colors: getColors();
       content: "";
       display: block;
       position: absolute;
+      z-index: -1;
       width: var(--logo-circ-decor-size);
       height: var(--logo-circ-decor-size);
       top: calc(var(--logo-circ-size-diff) * -1);
@@ -312,6 +330,10 @@ $colors: getColors();
       pointer-events: none;
       opacity: 0;
       animation: rotate 30s linear infinite;
+
+      @media (width <= 600px) {
+        display: none;
+      }
     }
 
     &::before {
