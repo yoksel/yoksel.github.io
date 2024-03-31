@@ -24,7 +24,18 @@ export const getStaticProps = (async (context) => {
   const slugWithSlash = slug.startsWith('/') ? slug : `/${slug}`;
   const article = await getArticleBySlug({
     slug,
-    fields: ['title', 'slug', 'content', 'links', 'tags', 'navItems'],
+    fields: [
+      'title',
+      'slug',
+      'content',
+      'links',
+      'tags',
+      'navItems',
+      'customCSS',
+      'customJs',
+      'include',
+      'layout',
+    ],
     type: 'page',
   });
 
