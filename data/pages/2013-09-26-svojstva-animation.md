@@ -1,5 +1,4 @@
 ---
-layout: onecolumn
 title: Свойства Animation одной таблицей
 
 links_title: К статьям

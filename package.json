@@ -6,7 +6,7 @@
   "license": "MIT",
   "packageManager": "yarn@4.1.0",
   "scripts": {
-    "deploy": "npm run build && gh-pages -d public -b master --dotfiles true",
+    "ghp-deploy": "yarn build && yarn export && yarn gh-pages -d out -b gh-pages",
     "test": "jest",
     "js:lint": "eslint src",
     "js:fix": "eslint src --fix",
@@ -17,6 +17,7 @@
     "lint:next": "next lint",
     "dev": "next dev",
     "build": "next build",
+    "export": "yarn next export 2> /dev/null || true",
     "start": "next start",
     "format": "prettier 'src/**/*.ts*' --write",
     "storybook": "storybook dev -p 6006",
