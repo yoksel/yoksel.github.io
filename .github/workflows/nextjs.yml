@@ -78,6 +78,8 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./out
+      - name: Deploy to static content
+        run: yarn static-deploy
 
   # Deployment job
   deploy:
@@ -90,6 +92,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
-      - name: Deploy to static content
-        id: static
-        run: yarn static-deploy
