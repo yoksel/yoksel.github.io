@@ -6,7 +6,7 @@
   "license": "MIT",
   "packageManager": "yarn@4.1.0",
   "scripts": {
-    "ghp-deploy": "yarn build && yarn export && yarn gh-pages -d out -b gh-pages",
+    "static-deploy": "yarn build && yarn export && yarn gh-pages -d out -b static-content",
     "test": "jest",
     "js:lint": "eslint src",
     "js:fix": "eslint src --fix",
