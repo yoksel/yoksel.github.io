@@ -5,9 +5,10 @@ import Logo from '../Logo';
 
 interface HeaderProps {
   isMain: boolean;
+  slug?: string;
 }
 
-const Header = ({ isMain }: HeaderProps) => {
+const Header = ({ isMain, slug }: HeaderProps) => {
   const TitleElement = isMain ? 'h1' : 'div';
 
   return (
@@ -16,6 +17,7 @@ const Header = ({ isMain }: HeaderProps) => {
         <Logo
           parent="header"
           isMain={isMain}
+          slug={slug}
         />
       </TitleElement>
     </header>
