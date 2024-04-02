@@ -1,3 +1,5 @@
+import NextJsLink from 'next/link';
+
 interface LinkProps extends React.PropsWithChildren {
   href: string;
   className?: string;
@@ -16,7 +18,7 @@ const Link = ({
   ariaLabel,
   onMouseEnter,
 }: LinkProps) => (
-  <a
+  <NextJsLink
     href={href}
     className={className}
     data-name={dataName}
@@ -26,7 +28,7 @@ const Link = ({
     onMouseEnter={onMouseEnter}
   >
     {children}
-  </a>
+  </NextJsLink>
 );
 
 export default Link;

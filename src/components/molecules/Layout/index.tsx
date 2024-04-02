@@ -41,7 +41,10 @@ const Layout = ({ article, isMain = false, children, posts, pages, prevNext }: L
         type="module"
       />
 
-      <Header isMain={isMain} />
+      <Header
+        isMain={isMain}
+        slug={article?.slug}
+      />
 
       <div
         className={classNames(styles['page-main-wrapper'], styles[`page-main-wrapper--${layout}`])}

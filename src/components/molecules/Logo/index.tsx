@@ -6,11 +6,6 @@ import distortionFilterAnimationGetHandler from './Filters/distortionFilterAnima
 
 import styles from './styles.module.scss';
 
-interface LogoProps {
-  isMain: boolean;
-  parent?: string;
-}
-
 interface LogoContentProps {
   rootClassName: string;
   isInHeader: boolean;
@@ -62,26 +57,33 @@ type Theme =
 
 type MouseEnterHandler = (event: React.MouseEvent) => void;
 
-const Logo = ({ isMain, parent = 'header' }: LogoProps) => {
+interface LogoProps {
+  isMain: boolean;
+  parent?: string;
+  // to force random theme in Logo
+  slug?: string;
+}
+
+const Logo = ({ isMain, parent = 'header', slug }: LogoProps) => {
   const rootClassName = `${parent}-logo`;
   const containerClassName = `${rootClassName}__container`;
   const linkClassName = `${rootClassName}__link`;
   const isInHeader = parent === 'header';
-  const themes = [
-    'circle',
-    'rays',
-    'glass',
-    'flame',
-    'animated-rhombs',
-    'fire',
-    'distortion',
-    'amanita',
-  ];
   const [theme, setTheme] = useState<Theme>('amanita');
   const [distortionFilterAnimation, setDistortionFilterAnimation] = useState<MouseEnterHandler>();
 
   useEffect(() => {
     if (!isInHeader) return;
+    const themes = [
+      'circle',
+      'rays',
+      'glass',
+      'flame',
+      'animated-rhombs',
+      'fire',
+      'distortion',
+      'amanita',
+    ];
 
     const themeFromUrl = document.location.search?.replace('?', '');
     if (themes.includes(themeFromUrl)) {
@@ -93,7 +95,7 @@ const Logo = ({ isMain, parent = 'header' }: LogoProps) => {
     if (themes[randomIndex]) {
       setTheme(themes[randomIndex] as Theme);
     }
-  }, []);
+  }, [isInHeader, slug]);
 
   useEffect(() => {
     if (theme === 'distortion') {

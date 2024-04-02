@@ -49,6 +49,6 @@ describe('Article', () => {
     const { getByRole } = render(<Article article={article} />);
 
     const link = getByRole('link', { name: 'flexbox' });
-    expect(link).toHaveAttribute('href', '/tags/#flexbox');
+    expect(link).toHaveAttribute('href', '/tags#flexbox');
   });
 });
