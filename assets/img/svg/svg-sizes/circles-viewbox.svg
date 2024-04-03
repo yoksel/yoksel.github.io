@@ -1,0 +1,48 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+viewBox="0 0 210 210">
+  <style>.r--bounds {
+    fill: none;
+    stroke: rgba(127, 0, 255, 0.7);
+    stroke-width: 10;
+  }
+
+  .g--circles {
+    -webkit-transform: translate(15px, 15px);
+    -ms-transform: translate(15px, 15px);
+    transform: translate(15px, 15px);
+  }
+
+  use:nth-child(1) {
+    fill: rgba(255, 21, 0, 0.5);
+  }
+  use:nth-child(2) {
+    fill: rgba(255, 213, 0, 0.5);
+    -webkit-transform: translate(80px, 0);
+    -ms-transform: translate(80px, 0);
+    transform: translate(80px, 0);
+  }
+  use:nth-child(3) {
+    fill: rgba(128, 255, 0, 0.5);
+    -webkit-transform: translate(0, 80px);
+    -ms-transform: translate(0, 80px);
+    transform: translate(0, 80px);
+  }
+  use:nth-child(4) {
+    fill: rgba(0, 170, 255, 0.5);
+    -webkit-transform: translate(80px, 80px);
+    -ms-transform: translate(80px, 80px);
+    transform: translate(80px, 80px);
+  }
+  </style>
+
+  <symbol id="s--circle">
+    <circle r="50" cx="50" cy="50"></circle>
+  </symbol>
+  <rect width="100%" height="100%" class="r--bounds"></rect>
+  <g class="g--circles">
+    <use xlink:href="#s--circle"></use>
+    <use xlink:href="#s--circle"></use>
+    <use xlink:href="#s--circle"></use>
+    <use xlink:href="#s--circle"></use>
+  </g>
+</svg>

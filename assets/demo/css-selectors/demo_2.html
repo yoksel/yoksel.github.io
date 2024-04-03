@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №2 из статьи «Css-селекторы»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding-top: 10px;
+  text-align: center;
+  }
+P {
+  display: inline-block;
+  width: 40%;
+  margin: 2%;
+  padding: 7px;
+  box-sizing: border-box;
+  border: 2px solid #CCC;
+  border-radius: 10px;
+  }
+P[data-content="hello"] {
+  border: 2px solid orange;
+  }
+</style>
+</head>
+<body>
+<p>No attribute</p>
+<p data-content>data-content</p>
+<p data-content="hello">data-content="hello"</p>
+<p data-content="hello world">data-content="hello world"</p>
+<p data-content="hello-helloween">data-content="hello-helloween"</p>
+<p data-content="i say hello">data-content="i say hello"</p>
+</body>
+</html>

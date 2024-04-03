@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №7 из статьи «Css-селекторы, часть 2»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding-top: 10px;
+  text-align: center;
+  }
+P, DIV {
+  display: inline-block;
+  width: 40%;
+  margin: 1.5% 2%;
+  padding: 7px;
+  box-sizing: border-box;
+  border: 2px solid #CCC;
+  border-radius: 10px;
+  }
+  DIV {
+    color: #CCC;
+    }
+P:nth-last-of-type(1) {
+  border-color: crimson;
+  }
+P:nth-last-of-type(4) {
+  border-color: orange;
+  }
+P:nth-last-of-type(6) {
+  border-color: gold;
+  }
+</style>
+</head>
+<body>
+<div>div</div>
+<p>1</p>
+<p>2</p>
+<div>div</div>
+<p>3</p>
+<p>4</p>
+<div>div</div>
+<p>5</p>
+<div>div</div>
+<p>6</p>
+</body>
+</html>

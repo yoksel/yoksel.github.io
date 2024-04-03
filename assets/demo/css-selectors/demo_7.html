@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta http-equiv="content-language" content="en">
+<title>Демо №7 из статьи «Css-селекторы»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding-top: 20px;
+  text-align: center;
+  }
+
+P:before,
+P:after {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin-top: -15px;
+  padding: 3px 7px;
+  border-radius: 3px;
+}
+P:before {
+  content: "I'm :before";
+  margin-right: 10px;
+  background: tomato;
+  }
+P:after {
+  content: "I'm :after";
+  margin-left: 10px;
+  background: skyblue;
+  }
+</style>
+</head>
+<body>
+<p>element</p>
+</body>
+</html>

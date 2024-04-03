@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №5 из статьи «CSS-градиенты: линейные градиенты»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+HTML {
+  height: 100%;
+  }
+BODY {
+  background: white;
+  font: 16px/1.4 'Trebuchet MS', Verdana, sans-serif;
+  }
+
+UL {
+  padding: 0;
+  list-style: none;
+}
+LI {
+  width: 100%;
+  margin: 1em 0;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  }
+LI:after {
+  content: "";
+  display: block;
+  height: 5em;
+  margin-top: .5em;
+}
+
+.two:after {
+   background: linear-gradient(to right, mediumorchid 50%, orchid 50%);
+  }
+.four:after {
+   background: linear-gradient(to right,
+    #63A69F 20%,
+    #F2E1AC 20%, #F2E1AC 40%,
+    #F2836B 40%, #F2836B 60%,
+    #F2594B 60%, #F2594B 80%,
+    #CD2C24 80%);
+  }
+</style>
+</head>
+<body>
+<ul>
+  <li class="two">linear-gradient(to right, mediumorchid 50%, orchid 50%)</li>
+  <li class="four">linear-gradient(to right,<br>
+  #63A69F 20%,<br>
+  #F2E1AC 20%, #F2E1AC 40%,<br>
+  #F2836B 40%, #F2836B 60%, <br>
+  #F2594B 60%, #F2594B 80%, <br>
+  #CD2C24 80%);</li>
+</ul>
+</body>
+</html>

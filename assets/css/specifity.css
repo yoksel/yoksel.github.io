@@ -1,0 +1,11 @@
+.wrapper-with-dottes {
+  display: inline-block;
+  width: 150px;
+  background: linear-gradient( 90deg, #BBB 1px,
+rgba(255,255,255,0) 1px ) repeat-x right 90%;
+  background-size: 3px 1px;
+}
+.specifity {
+  background: #DDD !important;
+  color: #222 !important;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №2 из статьи «CSS-градиенты: линейные градиенты»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  background: white;
+  text-align: center;
+  font: 16px/1 'Trebuchet MS', Verdana, sans-serif;
+  }
+
+UL {
+  width: 24.8em;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+LI {
+  width: 8em;
+  height: 8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  text-shadow: 0 0 5px rgba(0,0,0,.9);
+  color: #FFF;
+  }
+.top {
+   background: linear-gradient(to top, purple, crimson, orangered, gold);
+}
+.right {
+   background: linear-gradient(to right, purple, crimson, orangered, gold);
+}
+.bottom {
+   background: linear-gradient(to bottom, purple, crimson, orangered, gold);
+}
+.left {
+   background: linear-gradient(to left, purple, crimson, orangered, gold);
+}
+.top-left {
+   background: linear-gradient(to top left, purple, crimson, orangered, gold);
+  }
+.top-right {
+   background: linear-gradient(to top right, purple, crimson, orangered, gold);
+  }
+.bottom-left {
+   background: linear-gradient(to bottom left, purple, crimson, orangered, gold);
+  }
+.bottom-right {
+   background: linear-gradient(to bottom right, purple, crimson, orangered, gold);
+  }
+</style>
+</head>
+<body>
+<ul>
+  <li class="top-left">to top left</li>
+  <li class="top">to top</li>
+  <li class="top-right">to top right</li>
+  <li class="left">to left</li>
+  <li class="center"></li>
+  <li class="right">to right</li>
+  <li class="bottom-left">to bottom left</li>
+  <li class="bottom">to bottom</li>
+  <li class="bottom-right">to bottom right</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <meta charset=utf-8 />
+    <title>Демо №1 из статьи «Клеточки на CSS»</title>
+
+    <script src="../../live-snippet/script.js"></script>
+    <link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+.grid-gradient {
+  background:
+    repeating-linear-gradient(
+    transparent,transparent 20px, yellowgreen 22px
+    ),
+    repeating-linear-gradient(
+    90deg,
+    transparent,transparent 20px, yellowgreen 22px
+    );
+  border: 2px solid yellowgreen;
+  }
+
+/* Helpers */
+BODY {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  }
+
+DIV {
+  position: relative;
+  width: 45%;
+  height: 15em;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+  }
+</style>
+  </head>
+  <body>
+    <div class="grid-gradient"></div>
+  </body>
+</html>

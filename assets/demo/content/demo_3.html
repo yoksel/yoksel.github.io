@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №3 из статьи «Свойство content»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding-top: 20px;
+  background: white;
+  }
+DIV {
+  padding: 20px;
+  background-color: hotpink;
+  background-image: linear-gradient(rgba(255,255,255,.2) 1px, rgba(255,255,255,0) 1px),
+                    linear-gradient(90deg,rgba(255,255,255,.2) 1px, rgba(255,255,255,0) 1px);
+  background-size: 10px 10px;
+  border-radius: 5px;
+  text-align: center;
+  font: 35px/1 Georgia;
+  color: #FFF;
+  }
+  DIV:before,
+  DIV:after {
+    content: "\272a";
+    display: inline-block;
+    vertical-align: bottom;
+    font: 40px/95% Arial Unicode Ms;
+    }
+  DIV:before  {
+    margin-right: 10px;
+    }
+  DIV:after  {
+    margin-left: 10px;
+    }
+</style>
+</head>
+<body>
+<div>Text</div>
+</body>
+</html>

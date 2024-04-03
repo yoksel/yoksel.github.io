@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №1 из статьи «Сколько весят селекторы?»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+#container A {
+  background: orange;
+  }
+
+.list A {
+  background: mediumspringgreen;
+  }
+
+/* Common
+------------------ */
+BODY {
+  background: #FFF;
+  font: 16px/1.4 Arial, sans-serif;
+  color: #222;
+  }
+A {
+  padding: 3px;
+  color: #222;
+  }
+.wrapper {
+  margin: 20px;
+  }
+#container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #DDD;
+  }
+#container:before {
+  content: ".container";
+  color: #999;
+  }
+.list:before {
+  content: ".list";
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #999;
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div id="container">
+    <p>Maecenas ut sollicitudin tortor, quis <a href="#">tempus massa</a>. Nunc eu justo ut mi tincidunt laoreet non ac tortor.</p>
+    <ul class="list">
+      <li><a href="#">Link1</a></li>
+      <li><a href="#">Link2</a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

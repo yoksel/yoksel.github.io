@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №1 из статьи «CSS-hacks»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+.green {
+  color: green;
+}
+
+:root .crimson {
+  color: crimson;
+}
+
+DIV:not([class="green"]){
+  color: orange;
+}
+
+BODY {
+  margin: 30px 20px;
+  line-height: 1.6;
+}
+</style>
+</head>
+<body>
+<div class="green">
+  It works.
+</div>
+
+<div class="green crimson">
+  Not works in IE8.
+</div>
+
+<div class="green orange">
+  Not works in IE8 too.
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №3 из статьи «Цвета в Css»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding: 20px;
+  background: white;
+  font-size: 1.2em;
+  }
+DIV {
+  width: 15em;
+  margin: .2em auto;
+  padding-bottom: .2em;
+  vertical-align: middle;
+  line-height: 2.2em;
+  border-bottom: 1px dotted #DDD;
+  }
+DIV:before {
+  content: "";
+  display: inline-block;
+  float: left;
+  width: 3em;
+  height: 2.2em;
+  margin-right: .3em;
+  border-radius: .3em;
+  vertical-align: middle;
+  }
+DIV:after {
+  content: attr(data-content);
+  display: inline-block;
+  float: left;
+  width: 3em;
+  margin-right: .7em;
+  border-radius: .3em;
+  background: #EEE;
+  text-align: center;
+  }
+.red:before {
+  background: hsl( 0, 100%, 50% );
+  }
+.yellow:before {
+  background: hsl( 60, 100%, 50% );
+  }
+.green:before {
+  background: hsl( 120, 100%, 50% );
+  }
+.cyan:before {
+  background: hsl( 180, 100%, 50% );
+  }
+.blue:before {
+  background: hsl( 240, 100%, 50% );
+  }
+.violet:before {
+  background: hsl( 300, 100%, 50% );
+  }
+</style>
+</head>
+<body>
+<div class="red" data-content="0&deg;">Red</div>
+<div class="yellow" data-content="60">Yellow</div>
+<div class="green" data-content="120">Green</div>
+<div class="cyan" data-content="180">Cyan</div>
+<div class="blue" data-content="240">Blue</div>
+<div class="violet" data-content="300">Violet</div>
+<div class="red" data-content="360">Red</div>
+</body>
+</html>

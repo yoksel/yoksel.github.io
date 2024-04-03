@@ -1,0 +1,535 @@
+<!DOCTYPE html><html lang="ru"><head><meta name="viewport" content="width=device-width"/><title>CSS-селекторы одной таблицей • Про CSS</title><meta charSet="utf-8"/><link rel="canonical" href="http://css.yoksel.ru/css-selectors"/><meta name="description" content="Статьи про CSS и SVG"/><meta name="yandex-verification" content="50720d52dcb3b0b9"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/><link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"/><link rel="manifest" href="/manifest.json"/><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/><meta name="theme-color" content="#ffffff"/><meta property="og:site_name" content="Про CSS"/><meta property="og:title" content="CSS-селекторы одной таблицей"/><meta property="og:type" content="website"/><meta property="og:url" content="http://css.yoksel.ru/css-selectors"/><meta property="og:description" content="Статьи про CSS и SVG"/><meta name="twitter:card" content="summary"/><meta name="twitter:creator" content="@yoksel"/><meta name="google-site-verification" content="F-TG-dOz9FIzxUZCGD9MBMwsTukpyzq9LXIX6ZsJl_k"/><meta name="next-head-count" content="21"/><link rel="preload" href="/_next/static/css/b021450b2efee70e.css" as="style" crossorigin=""/><link rel="stylesheet" href="/_next/static/css/b021450b2efee70e.css" crossorigin="" data-n-g=""/><link rel="preload" href="/_next/static/css/80ec7241589a05e6.css" as="style" crossorigin=""/><link rel="stylesheet" href="/_next/static/css/80ec7241589a05e6.css" crossorigin="" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" crossorigin="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-8fa1640cc84ba8fe.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/framework-5429a50ba5373c56.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/main-be3a54f9b08a4465.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/pages/_app-1e951eaaada53ad2.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/622-eaadf10c8fcae41f.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/506-29d8d4d3de5db38f.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/pages/pages/%5Bslug%5D-3b1a77d80eda0461.js" defer="" crossorigin=""></script><script src="/_next/static/LcKEv6KKPVPwwsRWWnW_1/_buildManifest.js" defer="" crossorigin=""></script><script src="/_next/static/LcKEv6KKPVPwwsRWWnW_1/_ssgManifest.js" defer="" crossorigin=""></script></head><body><div id="__next"><div class="styles_page___9hOn page--single"><header class="styles_page-header__CUYa8"><div><div class="styles_header-logo___2Vf2"><a class="styles_header-logo__container__se8yY styles_header-logo__link__yOlgc styles_header-logo__link--amanita__9V5G5" data-name="Про CSS" aria-label="Про CSS" href="/"><div class="styles_header-logo__content__41wOL"><div class="styles_header-logo__text__qp0yG"><span class="styles_header-logo__item--about__Xvl6l">Про</span> <span class="styles_header-logo__item--css__Fqt1q">CSS</span></div></div></a></div></div></header><div class="styles_page-main-wrapper__X3Qny styles_page-main-wrapper--onecolumn__t3ypk"><main><article class="styles_article__Sk90Z" id="begin" aria-labelledby="article-title"><header class="styles_article__header__WHF_g"><h1 class="styles_article__title__LVWr_" id="article-title">CSS-селекторы одной таблицей</h1><time dateTime="2013-11-16" class="styles_article__date__vJjD0"><span class="styles_faded-text__usyFy">16/11/2013</span></time></header><div class="use-link-icons"><p>Таблица отсюда: <a href="http://www.w3.org/TR/css3-selectors/#selectors">w3.org/TR/css3-selectors/#selectors</a></p>
+
+<p><i>В крайней правой колонке я добавила информацию о поддержке селектора разными версиями IE.</i></p>
+
+<p><i>Возможно, некоторые селекторы, работающие в IE7, могут работать и в IE6, но у меня пока не было возможности это проверить.</i></p>
+
+<table class="selectorsReview">
+  <thead>
+    <tr>
+      <th class="pattern">Pattern
+      </th>
+      <th class="meaning">Meaning
+      </th>
+      <th class="described">Type
+      </th>
+      <th class="origin">CSS level
+      </th>
+      <th class="support">Support
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="pattern">
+        *
+      </td>
+      <td class="meaning">any element
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#universal-selector">Universal selector</a>
+      </td>
+      <td class="origin">2
+      </td>
+      <td class="support">
+        IE7+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E
+      </td>
+      <td class="meaning">an element of type E
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#type-selectors">Type selector</a>
+      </td>
+      <td class="origin">
+      </td>
+      <td class="support">All
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E[foo]
+      </td>
+      <td class="meaning">an E element with a "foo" attribute
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">Attribute
+          selectors</a>
+      </td>
+      <td class="origin">2
+      </td>
+      <td class="support">IE7+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E[foo="bar"]
+      </td>
+      <td class="meaning">an E element whose "foo" attribute value is exactly
+        equal to "bar"
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">Attribute
+          selectors</a>
+      </td>
+      <td class="origin">2
+      </td>
+      <td class="support">IE7+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E[foo~="bar"]
+      </td>
+      <td class="meaning">an E element whose "foo" attribute value is a list of
+        whitespace-separated values, one of which is exactly equal to "bar"
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">Attribute
+          selectors</a>
+      </td>
+      <td class="origin">2
+      </td>
+      <td class="support">IE7+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E[foo^="bar"]
+      </td>
+      <td class="meaning">an E element whose "foo" attribute value begins
+        exactly with the string "bar"
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">Attribute
+          selectors</a>
+      </td>
+      <td class="origin">3
+      </td>
+      <td class="support">IE7+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E[foo$="bar"]
+      </td>
+      <td class="meaning">an E element whose "foo" attribute value ends exactly
+        with the string "bar"
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">Attribute
+          selectors</a>
+      </td>
+      <td class="origin">3
+      </td>
+      <td class="support">IE7+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E[foo*="bar"]
+      </td>
+      <td class="meaning">an E element whose "foo" attribute value contains the
+        substring "bar"
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">Attribute
+          selectors</a>
+      </td>
+      <td class="origin">3
+      </td>
+      <td class="support">IE7+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E[foo|="en"]
+      </td>
+      <td class="meaning">an E element whose "foo" attribute has a
+        hyphen-separated list of values beginning (from the left) with "en"
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">Attribute
+          selectors</a>
+      </td>
+      <td class="origin">2
+      </td>
+      <td class="support">IE7+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E:root
+      </td>
+      <td class="meaning">an E element, root of the document
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+          pseudo-classes</a>
+      </td>
+      <td class="origin">3
+      </td>
+      <td class="support">IE9+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E:nth-child(n)
+      </td>
+      <td class="meaning">an E element, the n-th child of its parent
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+          pseudo-classes</a>
+      </td>
+      <td class="origin">3
+      </td>
+      <td class="support">IE9+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E:nth-last-child(n)
+      </td>
+      <td class="meaning">an E element, the n-th child of its parent, counting
+        from the last one
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+          pseudo-classes</a>
+      </td>
+      <td class="origin">3
+      </td>
+      <td class="support">IE9+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E:nth-of-type(n)
+      </td>
+      <td class="meaning">an E element, the n-th sibling of its type
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+          pseudo-classes</a>
+      </td>
+      <td class="origin">3
+      </td>
+      <td class="support">IE9+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E:nth-last-of-type(n)
+      </td>
+      <td class="meaning">an E element, the n-th sibling of its type, counting
+        from the last one
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+          pseudo-classes</a>
+      </td>
+      <td class="origin">3
+      </td>
+      <td class="support">IE9+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E:first-child
+      </td>
+      <td class="meaning">an E element, first child of its parent
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+          pseudo-classes</a>
+      </td>
+      <td class="origin">2
+      </td>
+      <td class="support">IE7+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E:last-child
+      </td>
+      <td class="meaning">an E element, last child of its parent
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+          pseudo-classes</a>
+      </td>
+      <td class="origin">3
+      </td>
+      <td class="support">IE9+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E:first-of-type
+      </td>
+      <td class="meaning">an E element, first sibling of its type
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+          pseudo-classes</a>
+      </td>
+      <td class="origin">3
+      </td>
+      <td class="support">IE9+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E:last-of-type
+      </td>
+      <td class="meaning">an E element, last sibling of its type
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+          pseudo-classes</a>
+      </td>
+      <td class="origin">3
+      </td>
+      <td class="support">IE9+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E:only-child
+      </td>
+      <td class="meaning">an E element, only child of its parent
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+          pseudo-classes</a>
+      </td>
+      <td class="origin">3
+      </td>
+      <td class="support">IE9+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E:only-of-type
+      </td>
+      <td class="meaning">an E element, only sibling of its type
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+          pseudo-classes</a>
+      </td>
+      <td class="origin">3
+      </td>
+      <td class="support">IE9+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E:empty
+      </td>
+      <td class="meaning">an E element that has no children (including text
+        nodes)
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">Structural
+          pseudo-classes</a>
+      </td>
+      <td class="origin">3
+      </td>
+      <td class="support">IE9+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E:link<br>
+        E:visited
+      </td>
+      <td class="meaning">an E element being the source anchor of a hyperlink of
+        which the target is not yet visited (:link) or already visited
+        (:visited)
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#link">The link pseudo-classes</a>
+      </td>
+      <td class="origin">1
+      </td>
+      <td class="support">All
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E:active<br>
+        E:hover<br>
+        E:focus
+      </td>
+      <td class="meaning">an E element during certain user actions
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#useraction-pseudos">The user action
+          pseudo-classes</a>
+      </td>
+      <td class="origin">1 and 2
+      </td>
+      <td class="support">All
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E:target
+      </td>
+      <td class="meaning">an E element being the target of the referring URI
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#target-pseudo">The target pseudo-class</a>
+      </td>
+      <td class="origin">3
+      </td>
+      <td class="support">IE9+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E:lang(fr)
+      </td>
+      <td class="meaning">an element of type E in language "fr" (the document
+        language specifies how language is determined)
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#lang-pseudo">The :lang() pseudo-class</a>
+      </td>
+      <td class="origin">2
+      </td>
+      <td class="support">IE8+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E:enabled<br>
+        E:disabled
+      </td>
+      <td class="meaning">a user interface element E which is enabled or
+        disabled
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#UIstates">The UI element states
+          pseudo-classes</a>
+      </td>
+      <td class="origin">3
+      </td>
+      <td class="support">IE9+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E:checked
+        <!--<br>E:indeterminate-->
+      </td>
+      <td class="meaning">a user interface element E which is
+        checked
+        <!-- or in an
+    indeterminate state--> (for instance a
+        radio-button or checkbox)
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#UIstates">The UI element states
+          pseudo-classes</a>
+      </td>
+      <td class="origin">3
+      </td>
+      <td class="support">IE9+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E::first-line
+      </td>
+      <td class="meaning">the first formatted line of an E element
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#first-line">The ::first-line
+          pseudo-element</a>
+      </td>
+      <td class="origin">1
+      </td>
+      <td class="support">IE8+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E::first-letter
+      </td>
+      <td class="meaning">the first formatted letter of an E element
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#first-letter">The ::first-letter
+          pseudo-element</a>
+      </td>
+      <td class="origin">1
+      </td>
+      <td class="support">IE8+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E::before
+      </td>
+      <td class="meaning">generated content before an E element
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#gen-content">The ::before
+          pseudo-element</a>
+      </td>
+      <td class="origin">2
+      </td>
+      <td class="support">IE8+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E::after
+      </td>
+      <td class="meaning">generated content after an E element
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#gen-content">The ::after
+          pseudo-element</a>
+      </td>
+      <td class="origin">2
+      </td>
+      <td class="support">IE8+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E.warning
+      </td>
+      <td class="meaning">an E element whose class is "warning" (the document
+        language specifies how class is determined).
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#class-html">Class selectors</a>
+      </td>
+      <td class="origin">1
+      </td>
+      <td class="support">All
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E#myid
+      </td>
+      <td class="meaning">an E element with ID equal to "myid".
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#id-selectors">ID selectors</a>
+      </td>
+      <td class="origin">1
+      </td>
+      <td class="support">All
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E:not(s)
+      </td>
+      <td class="meaning">an E element that does not match simple selector s
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#negation">Negation pseudo-class</a>
+      </td>
+      <td class="origin">3
+      </td>
+      <td class="support">IE9+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E F
+      </td>
+      <td class="meaning">an F element descendant of an E element
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#descendant-combinators">Descendant
+          combinator</a>
+      </td>
+      <td class="origin">1
+      </td>
+      <td class="support">All
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E &gt; F
+      </td>
+      <td class="meaning">an F element child of an E element
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#child-combinators">Child combinator</a>
+      </td>
+      <td class="origin">2
+      </td>
+      <td class="support">IE7+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E + F
+      </td>
+      <td class="meaning">an F element immediately preceded by an E element
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators">Adjacent
+          sibling combinator</a>
+      </td>
+      <td class="origin">2
+      </td>
+      <td class="support">IE7+
+      </td>
+    </tr>
+    <tr>
+      <td class="pattern">E ~ F
+      </td>
+      <td class="meaning">an F element preceded by an E element
+      </td>
+      <td class="described"><a href="http://www.w3.org/TR/css3-selectors/#general-sibling-combinators">General
+          sibling combinator</a>
+      </td>
+      <td class="origin">3
+      </td>
+      <td class="support">IE7+
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div><dl class="styles_articleLinks__qmwVj use-link-icons"><dt class="styles_articleLinks__title__iqHJm">Ссылки по теме:</dt><dd class=""><a href="/css-selectors/">Css-селекторы</a></dd><dd class=""><a href="/css-selectors-part2/">Css-селекторы, часть 2</a></dd></dl></article><div class="styles_articlePrevNext__skbA4"><a class="styles_articlePrevNext__item__bHoHN styles_articlePrevNext__item--previous___NMI8" title="Контекст наложения" href="/kontekst-nalozheniya/"><span class="styles_articlePrevNext__arrow__E_rkL">←</span><span class="styles_articlePrevNext__text__WYoJ9">Контекст наложения</span></a><a class="styles_articlePrevNext__item__bHoHN styles_articlePrevNext__item--next___11g_" title="Css-селекторы, часть 2" href="/css-selectors-part2/"><span class="styles_articlePrevNext__text__WYoJ9">Css-селекторы, часть 2</span><span class="styles_articlePrevNext__arrow__E_rkL">→</span></a></div><a href="#begin" class="post__marker post__marker--hidden" title="Наверх"><div class="styles_visually-hidden__nDPfz">Наверх</div></a></main></div><footer class="styles_page-footer__3oCLD"><nav class="styles_page-footer__nav__V_rxP"><h2 class="styles_visually-hidden__nDPfz">Нижняя навигация</h2><div class="styles_page-footer__container__8C6jd"><div class="styles_footer-logo___tu5l"><a class="styles_footer-logo__link__r8dk3" data-name="Про CSS" aria-label="Про CSS" href="/">Про CSS</a></div><ul class="styles_page-footer__nav-list__wkQ8I use-link-icons no-site-icons"><li class="styles_page-footer__nav-item__5F9Tl"><a class="styles_page-footer__nav-text__0Ke53" href="/about/">О сайте</a></li><li class="styles_page-footer__nav-item__5F9Tl"><a class="styles_page-footer__nav-text__0Ke53" href="/tags/">Метки</a></li><li class="styles_page-footer__nav-item__5F9Tl"><a class="styles_page-footer__nav-text__0Ke53" rel="noreferrer" href="https://twitter.com/yoksel">Twitter</a></li><li class="styles_page-footer__nav-item__5F9Tl"><a class="styles_page-footer__nav-text__0Ke53" rel="noreferrer" href="https://github.com/yoksel">Github</a></li></ul></div></nav></footer><div class="styles_counter__Epo2H"><!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter22204352 = new Ya.Metrika({id:22204352, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/22204352" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter --></div></div></div><script id="__NEXT_DATA__" type="application/json" crossorigin="">{"props":{"pageProps":{"article":{"title":"CSS-селекторы одной таблицей","slug":"css-selectors","content":"\u003cp\u003eТаблица отсюда: \u003ca href=\"http://www.w3.org/TR/css3-selectors/#selectors\"\u003ew3.org/TR/css3-selectors/#selectors\u003c/a\u003e\u003c/p\u003e\n\n\u003cp\u003e\u003ci\u003eВ крайней правой колонке я добавила информацию о поддержке селектора разными версиями IE.\u003c/i\u003e\u003c/p\u003e\n\n\u003cp\u003e\u003ci\u003eВозможно, некоторые селекторы, работающие в IE7, могут работать и в IE6, но у меня пока не было возможности это проверить.\u003c/i\u003e\u003c/p\u003e\n\n\u003ctable class=\"selectorsReview\"\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth class=\"pattern\"\u003ePattern\n      \u003c/th\u003e\n      \u003cth class=\"meaning\"\u003eMeaning\n      \u003c/th\u003e\n      \u003cth class=\"described\"\u003eType\n      \u003c/th\u003e\n      \u003cth class=\"origin\"\u003eCSS level\n      \u003c/th\u003e\n      \u003cth class=\"support\"\u003eSupport\n      \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003e\n        *\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003eany element\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#universal-selector\"\u003eUniversal selector\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e2\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003e\n        IE7+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean element of type E\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#type-selectors\"\u003eType selector\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eAll\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE[foo]\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element with a \"foo\" attribute\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#attribute-selectors\"\u003eAttribute\n          selectors\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e2\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE7+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE[foo=\"bar\"]\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element whose \"foo\" attribute value is exactly\n        equal to \"bar\"\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#attribute-selectors\"\u003eAttribute\n          selectors\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e2\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE7+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE[foo~=\"bar\"]\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element whose \"foo\" attribute value is a list of\n        whitespace-separated values, one of which is exactly equal to \"bar\"\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#attribute-selectors\"\u003eAttribute\n          selectors\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e2\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE7+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE[foo^=\"bar\"]\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element whose \"foo\" attribute value begins\n        exactly with the string \"bar\"\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#attribute-selectors\"\u003eAttribute\n          selectors\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e3\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE7+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE[foo$=\"bar\"]\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element whose \"foo\" attribute value ends exactly\n        with the string \"bar\"\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#attribute-selectors\"\u003eAttribute\n          selectors\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e3\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE7+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE[foo*=\"bar\"]\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element whose \"foo\" attribute value contains the\n        substring \"bar\"\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#attribute-selectors\"\u003eAttribute\n          selectors\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e3\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE7+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE[foo|=\"en\"]\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element whose \"foo\" attribute has a\n        hyphen-separated list of values beginning (from the left) with \"en\"\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#attribute-selectors\"\u003eAttribute\n          selectors\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e2\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE7+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE:root\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element, root of the document\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#structural-pseudos\"\u003eStructural\n          pseudo-classes\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e3\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE9+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE:nth-child(n)\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element, the n-th child of its parent\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#structural-pseudos\"\u003eStructural\n          pseudo-classes\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e3\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE9+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE:nth-last-child(n)\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element, the n-th child of its parent, counting\n        from the last one\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#structural-pseudos\"\u003eStructural\n          pseudo-classes\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e3\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE9+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE:nth-of-type(n)\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element, the n-th sibling of its type\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#structural-pseudos\"\u003eStructural\n          pseudo-classes\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e3\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE9+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE:nth-last-of-type(n)\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element, the n-th sibling of its type, counting\n        from the last one\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#structural-pseudos\"\u003eStructural\n          pseudo-classes\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e3\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE9+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE:first-child\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element, first child of its parent\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#structural-pseudos\"\u003eStructural\n          pseudo-classes\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e2\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE7+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE:last-child\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element, last child of its parent\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#structural-pseudos\"\u003eStructural\n          pseudo-classes\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e3\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE9+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE:first-of-type\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element, first sibling of its type\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#structural-pseudos\"\u003eStructural\n          pseudo-classes\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e3\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE9+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE:last-of-type\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element, last sibling of its type\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#structural-pseudos\"\u003eStructural\n          pseudo-classes\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e3\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE9+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE:only-child\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element, only child of its parent\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#structural-pseudos\"\u003eStructural\n          pseudo-classes\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e3\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE9+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE:only-of-type\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element, only sibling of its type\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#structural-pseudos\"\u003eStructural\n          pseudo-classes\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e3\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE9+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE:empty\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element that has no children (including text\n        nodes)\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#structural-pseudos\"\u003eStructural\n          pseudo-classes\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e3\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE9+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE:link\u003cbr\u003e\n        E:visited\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element being the source anchor of a hyperlink of\n        which the target is not yet visited (:link) or already visited\n        (:visited)\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#link\"\u003eThe link pseudo-classes\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e1\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eAll\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE:active\u003cbr\u003e\n        E:hover\u003cbr\u003e\n        E:focus\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element during certain user actions\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#useraction-pseudos\"\u003eThe user action\n          pseudo-classes\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e1 and 2\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eAll\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE:target\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element being the target of the referring URI\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#target-pseudo\"\u003eThe target pseudo-class\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e3\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE9+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE:lang(fr)\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean element of type E in language \"fr\" (the document\n        language specifies how language is determined)\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#lang-pseudo\"\u003eThe :lang() pseudo-class\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e2\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE8+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE:enabled\u003cbr\u003e\n        E:disabled\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ea user interface element E which is enabled or\n        disabled\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#UIstates\"\u003eThe UI element states\n          pseudo-classes\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e3\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE9+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE:checked\n        \u003c!--\u003cbr\u003eE:indeterminate--\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ea user interface element E which is\n        checked\n        \u003c!-- or in an\n    indeterminate state--\u003e (for instance a\n        radio-button or checkbox)\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#UIstates\"\u003eThe UI element states\n          pseudo-classes\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e3\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE9+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE::first-line\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ethe first formatted line of an E element\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#first-line\"\u003eThe ::first-line\n          pseudo-element\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e1\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE8+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE::first-letter\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ethe first formatted letter of an E element\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#first-letter\"\u003eThe ::first-letter\n          pseudo-element\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e1\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE8+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE::before\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003egenerated content before an E element\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#gen-content\"\u003eThe ::before\n          pseudo-element\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e2\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE8+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE::after\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003egenerated content after an E element\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#gen-content\"\u003eThe ::after\n          pseudo-element\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e2\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE8+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE.warning\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element whose class is \"warning\" (the document\n        language specifies how class is determined).\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#class-html\"\u003eClass selectors\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e1\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eAll\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE#myid\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element with ID equal to \"myid\".\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#id-selectors\"\u003eID selectors\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e1\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eAll\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE:not(s)\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean E element that does not match simple selector s\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#negation\"\u003eNegation pseudo-class\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e3\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE9+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE F\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean F element descendant of an E element\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#descendant-combinators\"\u003eDescendant\n          combinator\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e1\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eAll\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE \u0026gt; F\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean F element child of an E element\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#child-combinators\"\u003eChild combinator\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e2\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE7+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE + F\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean F element immediately preceded by an E element\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators\"\u003eAdjacent\n          sibling combinator\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e2\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE7+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd class=\"pattern\"\u003eE ~ F\n      \u003c/td\u003e\n      \u003ctd class=\"meaning\"\u003ean F element preceded by an E element\n      \u003c/td\u003e\n      \u003ctd class=\"described\"\u003e\u003ca href=\"http://www.w3.org/TR/css3-selectors/#general-sibling-combinators\"\u003eGeneral\n          sibling combinator\u003c/a\u003e\n      \u003c/td\u003e\n      \u003ctd class=\"origin\"\u003e3\n      \u003c/td\u003e\n      \u003ctd class=\"support\"\u003eIE7+\n      \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n","links":[{"href":"/css-selectors/","text":"Css-селекторы"},{"href":"/css-selectors-part2/","text":"Css-селекторы, часть 2"}],"layout":"onecolumn","navItems":[],"date":"2013-11-16","type":"page"},"posts":[{"date":"2020-09-26","href":"/css-math","text":"Математические функции в CSS","type":"post"},{"date":"2020-09-24","href":"/adaptive-video-with-css-math","text":"Адаптивное видео с помощью встроенных математических функций CSS","type":"post"},{"date":"2020-08-30","href":"/inaccessibility","text":"Недоступность в картинках","type":"post"},{"date":"2020-08-13","href":"/size-units","text":"Единицы размеров в CSS","type":"post"},{"date":"2020-07-27","href":"/color-themes-generator","text":"Генератор цветовых тем","type":"post"},{"date":"2020-07-25","href":"/jekyll-gatsby","text":"Jekyll → Gatsby","type":"post"},{"date":"2018-06-18","href":"/opentype-variable-fonts","text":"Вариативные шрифты","type":"post"},{"date":"2017-08-15","href":"/svg-sizes","text":"Размеры в SVG","type":"post"},{"date":"2017-01-13","href":"/adaptive-pixel-perfect","text":"Адаптивный Pixel Perfect","type":"post"},{"date":"2016-12-20","href":"/a11y-for-logotypes","text":"Логотип не отвечает или временно недоступен","type":"post"},{"date":"2016-11-23","href":"/svg-patterns","text":"SVG-паттерны","type":"post"},{"date":"2016-08-18","href":"/svg-bubble","text":"Мыльные пузыри на SVG","type":"post"},{"date":"2016-08-11","href":"/svg-gradients","text":"SVG-градиенты","type":"post"},{"date":"2016-02-12","href":"/funny-little-console","text":"Весёлая консолька","type":"post"},{"date":"2016-02-04","href":"/svg-masks","text":"SVG-маски","type":"post"},{"date":"2015-07-06","href":"/scroll-snap","text":"Умная прокрутка со Scroll Snap Points","type":"post"},{"date":"2014-08-11","href":"/css-animation-algorithms","text":"CSS-анимации для ротации изображений","type":"post"},{"date":"2014-08-10","href":"/animated-svg-mask","text":"Анимированные SVG-маски","type":"post"},{"date":"2014-07-26","href":"/svg-stroke","text":"Странности обводки в SVG","type":"post"},{"date":"2014-07-08","href":"/svg-preloaders","text":"SVG-прелоадеры","type":"post"},{"date":"2014-07-04","href":"/animated-gradients-2","text":"Анимируем градиенты ещё раз","type":"post"},{"date":"2014-06-15","href":"/background-blend-mode","text":"Background-blend-mode","type":"post"},{"date":"2014-04-17","href":"/svg-decoration","text":"Возможности оформления SVG","type":"post"},{"date":"2014-04-12","href":"/css-and-svg-masks","text":"CSS и SVG маски","type":"post"},{"date":"2014-04-06","href":"/nth-child","text":"Nth-child и nth-of-type","type":"post"},{"date":"2014-03-29","href":"/svg-icons","text":"SVG-иконки","type":"post"},{"date":"2014-03-27","href":"/svg-fill-and-stroke","text":"SVG: заливка и обводка","type":"post"},{"date":"2014-03-23","href":"/svg-path","text":"SVG-path","type":"post"},{"date":"2014-03-22","href":"/svg-groups-use","text":"SVG: группировка и переиспользование элементов","type":"post"},{"date":"2014-03-21","href":"/svg-shapes","text":"SVG-фигуры и трансформации","type":"post"},{"date":"2014-03-19","href":"/svg","text":"SVG","type":"post"},{"date":"2014-03-04","href":"/3d-and-gradients","text":"СSS-градиенты и 3D","type":"post"},{"date":"2014-02-23","href":"/shadowpainter","text":"Рисовалка анимированных теней","type":"post"},{"date":"2014-02-12","href":"/new-patterns","text":"Свежие CSS-паттерны","type":"post"},{"date":"2014-02-07","href":"/css-patterns","text":"CSS-паттерны","type":"post"},{"date":"2014-02-05","href":"/radial-gradients","text":"Радиальные градиенты","type":"post"},{"date":"2014-02-04","href":"/linear-gradients","text":"Линейные градиенты","type":"post"},{"date":"2014-01-25","href":"/tic-tac-toe","text":"Крестики-нолики на CSS","type":"post"},{"date":"2014-01-22","href":"/border-image","text":"Border-image","type":"post"},{"date":"2014-01-19","href":"/digital-watch","text":"Электронные часы на CSS и JS.","type":"post"},{"date":"2014-01-03","href":"/specifity","text":"Сколько весят селекторы?","type":"post"},{"date":"2014-01-02","href":"/unicode","text":"Символы юникода","type":"post"},{"date":"2013-12-22","href":"/content","text":"Свойство content","type":"post"},{"date":"2013-12-16","href":"/animation-for-gradients","text":"Анимируем CSS-градиенты","type":"post"},{"date":"2013-12-09","href":"/text-effects","text":"Текстовые эффекты","type":"post"},{"date":"2013-11-27","href":"/list-like-tree","text":"Древовидный список на CSS","type":"post"},{"date":"2013-11-20","href":"/css-selectors-part2","text":"Css-селекторы, часть 2","type":"post","id":"next"},{"date":"2013-11-16","href":"/css-selectors","text":"Css-селекторы","type":"post"},{"date":"2013-10-22","href":"/kontekst-nalozheniya","text":"Контекст наложения","type":"post","id":"previous"},{"date":"2013-10-09","href":"/box-sizing","text":"Box-sizing","type":"post"},{"date":"2013-10-09","href":"/dva-sposoba-proshit-e-lement-po-krayu","text":"Два способа \"прошить\" элемент по краю","type":"post"},{"date":"2013-10-06","href":"/tsveta","text":"Цвета в CSS","type":"post"},{"date":"2013-10-04","href":"/fon-pod-strochkami-dobavlyaem-polya","text":"Фон под строчками: добавляем поля","type":"post"},{"date":"2013-09-29","href":"/box-shadow","text":"Box-shadow","type":"post"},{"date":"2013-09-27","href":"/css-figury-lepestok","text":"Css-фигуры: лепесток","type":"post"},{"date":"2013-09-26","href":"/3d-cube","text":"3D-куб","type":"post"},{"date":"2013-09-26","href":"/css-animation","text":"Css Animation","type":"post"},{"date":"2013-09-26","href":"/transform","text":"Transform","type":"post"},{"date":"2013-09-17","href":"/border-radius","text":"Border-radius","type":"post"},{"date":"2013-09-10","href":"/first-letter","text":"First letter","type":"post"},{"date":"2013-09-06","href":"/css-figury","text":"CSS-фигуры","type":"post"},{"date":"2013-09-06","href":"/eti-glaza-naprotiv","text":"Эти глаза напротив","type":"post"},{"date":"2013-09-04","href":"/strelki-s-pomoshh-yu-svojstva-border","text":"Стрелки с помощью свойства border","type":"post"},{"date":"2013-09-03","href":"/flexbox","text":"Flexbox","type":"post"}],"pages":[{"date":"2014-03-19","type":"page","href":"/pages/svg-links","text":"SVG: полезные ссылки"},{"date":"2013-11-16","type":"page","href":"/pages/css-selectors","text":"CSS-селекторы одной таблицей"},{"date":"2013-10-06","type":"page","href":"/pages/tablitsa-imenovanny-h-tsvetov","text":"Таблица именованных цветов"},{"date":"2013-09-27","type":"page","href":"/pages/transform-functions","text":"Функции Transform"},{"date":"2013-09-26","type":"page","href":"/pages/svojstva-animation","text":"Свойства Animation одной таблицей"},{"date":"2013-09-26","type":"page","href":"/pages/svojstva-transform","text":"Свойства Transform"},{"date":"2013-09-04","type":"page","href":"/pages/razny-j-sintaksis-flexbox","text":"Разный синтаксис Flexbox"},{"date":"2013-09-03","type":"page","href":"/pages/svojstva-flexbox","text":"Свойства Flexbox одной таблицей"}],"prevNext":{"prev":{"date":"2013-10-22","href":"/kontekst-nalozheniya","text":"Контекст наложения","type":"post","id":"previous"},"next":{"date":"2013-11-20","href":"/css-selectors-part2","text":"Css-селекторы, часть 2","type":"post","id":"next"}}},"__N_SSG":true},"page":"/pages/[slug]","query":{"slug":"css-selectors"},"buildId":"LcKEv6KKPVPwwsRWWnW_1","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>

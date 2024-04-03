@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №2 из статьи «Css-фигуры»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+.ring {
+  display: inline-block;
+  margin: 1em;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  vertical-align: middle;
+  }
+.ring-1 {
+  border: 1.5em solid orange;
+  }
+.ring-2 {
+  box-shadow: 0 0 0 1.3em skyblue inset;
+  }
+.ring-3 {
+  width: 7em;
+  height: 7em;
+  box-shadow: 0 0 0 .25em darkmagenta inset,
+    0 0 0 .6em crimson inset,
+    0 0 0 .9em orangered inset,
+    0 0 0 1.2em orange inset,
+    0 0 0 1.5em gold inset,
+    0 0 0 1.8em yellowgreen inset,
+    0 0 0 2.1em skyblue inset,
+    0 0 0 2.4em steelblue inset,
+    0 0 0 2.7em darkmagenta inset
+    ;
+  }
+.ring-4 {
+  width: 6em;
+  height: 6em;
+  box-shadow: .5em 0 0 0 darkmagenta inset,
+              1em 0 0 0 crimson inset,
+              1.5em 0 0 0 orangered inset,
+              2em 0 0 0 orange inset,
+              2.5em 0 0 0 gold inset,
+              3em 0 0 0 yellowgreen inset,
+              3.5em 0 0 0 skyblue inset,
+              4em 0 0 0 steelblue inset,
+              4.5em 0 0 0  darkmagenta inset,
+              .5em 0 0 0 darkmagenta,
+              1em 0 0 0 crimson,
+              1.5em 0 0 0 orangered,
+              2em 0 0 0 orange,
+              2.5em 0 0 0 gold,
+              3em 0 0 0 yellowgreen,
+              3.5em 0 0 0 skyblue,
+              4em 0 0 0 steelblue,
+              4.5em 0 0 0  darkmagenta;
+  }
+</style>
+</head>
+<body>
+<div>
+    <div class="ring ring-1"></div>
+    <div class="ring ring-2"></div>
+</div>
+<div>
+    <div class="ring ring-3"></div>
+    <div class="ring ring-4"></div>
+</div>
+</body>
+</html>

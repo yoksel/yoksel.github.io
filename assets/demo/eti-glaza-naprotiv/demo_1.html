@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset=utf-8 />
+<title>Демо №1 из статьи «Эти глаза напротив»</title>
+
+    <script src="../../live-snippet/script.js"></script>
+    <link rel="stylesheet" href="../../live-snippet/styles.css" />
+    <style id="demo-css">
+BODY {
+  overflow: hidden;
+  background: white;
+  font-size: .8em;
+  text-align: center;
+}
+
+.eye-wrapper {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  top: 0;
+  height: 5em;
+  margin: 1em;
+  }
+.eye {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  width: 10em;
+  height: 4em;
+  overflow: hidden;
+  background: white;
+  border: 0 solid black;
+  border-width: 6px 0 1px;
+  border-radius: 50%;
+  animation: close-eye 2s infinite ease-in;
+  }
+.eye:before,
+.eye:before,
+.eyeball:before,
+.eyeball:after {
+  content: "";
+  display: block;
+  position: absolute;
+  }
+
+.eyeball {
+  position: relative;
+  top: 0;
+  left: 50%;
+  margin: -.5em 0 0 -2.5em;
+  width: 5em;
+  height: 5em;
+  background: radial-gradient(skyblue 30%, steelblue);
+  box-shadow: 0 0 2px 3px rgba(0,0,0,.1);
+  border-radius: 50%;
+  animation: rise-eyeball 2s infinite ease-in;
+  }
+.eye-wrapper:nth-child(7n+1) .eyeball{
+  background: radial-gradient(yellowgreen 30%, steelblue);
+  }
+.eye-wrapper:nth-child(7n+2) .eyeball {
+  background: radial-gradient(gold 30%, violet);
+  }
+.eye-wrapper:nth-child(7n+3) .eyeball {
+  background: radial-gradient(crimson 30%, maroon);
+  }
+.eye-wrapper:nth-child(7n+4) .eyeball {
+  background: radial-gradient(darkturquoise 30%, navy);
+  }
+.eye-wrapper:nth-child(7n+5) .eyeball {
+  background: radial-gradient(saddlebrown 30%, tan);
+  }
+.eye-wrapper:nth-child(7n+6) .eyeball {
+  background: radial-gradient(darkviolet 30%, plum);
+  }
+.eyeball:before {
+  left: 50%;
+  top: 50%;
+  margin: -.7em 0 0 -.7em;
+  width: 1.5em;
+  height: 1.5em;
+  background: black;
+  box-shadow: 0 0 2px 3px rgba(0,0,0,.1);
+  border-radius: 50%;
+  }
+.eyeball:after {
+  left: 55%;
+  top: 30%;
+  width: 1em;
+  height: 1em;
+  background: #FFF;
+  opacity: .8;
+  border-radius: 50%;
+  }
+
+.eye-wrapper:nth-child(7n+1) .eye,
+.eye-wrapper:nth-child(7n+1) .eyeball {
+  animation-delay: 1s;
+}
+
+.eye-wrapper:nth-child(7n+2) .eye,
+.eye-wrapper:nth-child(7n+2) .eyeball {
+  animation-delay: 2s;
+}
+.eye-wrapper:nth-child(7n+3) .eye,
+.eye-wrapper:nth-child(7n+3) .eyeball {
+  animation-delay: 3s;
+}
+.eye-wrapper:nth-child(7n+4) .eye,
+.eye-wrapper:nth-child(7n+4) .eyeball {
+  animation-delay: 1.5s;
+}
+.eye-wrapper:nth-child(7n+5) .eye,
+.eye-wrapper:nth-child(7n+5) .eyeball {
+  animation-delay: 2.5s;
+}
+.eye-wrapper:nth-child(7n+6) .eye,
+.eye-wrapper:nth-child(7n+6) .eyeball {
+  animation-delay: 3.5s;
+}
+@keyframes close-eye {
+  30% {
+    height: 0em;
+    top: 2em;
+    animation-timing-function: ease-out;
+  }
+  60% {
+    height: 4em;
+    top: 0em;
+    }
+}
+
+@keyframes rise-eyeball {
+  30% {
+    top: -2em;
+    animation-timing-function: ease-out;
+    }
+  60% {
+    top: 0;
+    }
+}
+</style>
+  </head>
+<body>
+<div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eye-wrapper">
+    <div class="eye">
+      <div class="eyeball-wrapper">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

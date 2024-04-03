@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <meta charset=utf-8 />
+  <title>Демо №1 из статьи «Маски и эффекты»</title>
+
+  <script src="../../live-snippet/script.js"></script>
+  <link rel="stylesheet" href="../../live-snippet/styles.css" />
+  <style id="demo-css">
+BODY {
+  height: 500px;
+  overflow: hidden;
+  background: black;
+  }
+
+
+DIV {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  }
+.container {
+  margin: 1rem auto;
+    background: url(//img-fotki.yandex.ru/get/4301/yoksel.51/0_3b50c_c6d45e3c_L.jpg) center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 200px #000 inset;
+  animation: 5s round-window infinite;
+  }
+.container:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  height: 296px;
+  width: 296px;
+  border-radius: 50%;
+  border: 4px solid #000;
+}
+@keyframes round-window {
+  50% {
+    box-shadow: 0 0 0 0 #000 inset;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container"></div>
+</body>
+</html>

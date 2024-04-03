@@ -1,0 +1,60 @@
+.svg-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  font-size: 12px
+}
+
+.g--clip-path-img {
+  -webkit-clip-path: url(#clipping-star);
+  clip-path: url(#clipping-star)
+}
+
+#clipping-text {
+  font: 700 italic 15em/1 Georgia
+}
+
+.g--clip-path-text {
+  transform: translate(100);
+  -webkit-clip-path: url(#clipping-text);
+  clip-path: url(#clipping-text);
+  font: 700 italic .8em/1 Georgia;
+  stroke: red;
+  fill: #006432
+}
+
+#pattern-text {
+  font: 700 italic 1.1em/1 Georgia
+}
+
+.g--svg-mask-svg image {
+  -webkit-mask: url(#masking);
+  mask: url(#masking)
+}
+
+.g--svg-mask-svg-soft image {
+  -webkit-mask: url(#masking-soft);
+  mask: url(#masking-soft)
+}
+
+.g--svg-mask-svg-lum rect {
+  -webkit-mask: url(#masking-lum);
+  mask: url(#masking-lum)
+}
+
+.g--svg-fill text {
+  fill: url(#pattern);
+  font: 700 italic 10em/1 Georgia
+}
+
+.g--svg-fill-text text,
+.g--svg-stroke {
+  fill: url(#pattern-text);
+  font: 700 italic 10em/1 Georgia
+}
+
+.g--svg-stroke {
+  stroke: url(#pattern);
+  stroke-width: 4;
+  fill: none
+}

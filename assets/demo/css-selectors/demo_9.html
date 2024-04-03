@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №9 из статьи «Css-селекторы»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding: 10px;
+  }
+
+P, H3 {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  border: 2px solid #CCC;
+  border-radius: 10px;
+  font-weight: normal;
+  color: #CCC;
+  }
+  P + H3 {
+    background: darkturquoise;
+    border-color: lightseagreen;
+    color: lightseagreen;
+  }
+</style>
+</head>
+<body>
+<div>
+  <h3>H3</h3>
+  <p>P</p>
+  <p>P</p>
+  <h3>H3</h3>
+</div>
+</body>
+</html>

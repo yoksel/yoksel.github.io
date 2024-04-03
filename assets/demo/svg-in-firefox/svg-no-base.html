@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class=''>
+    <head>
+        <meta charset='UTF-8'>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="layout">
+          <div class="wrapper">
+            <div class="svg-wrapper">
+                <svg id="old-svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="270" height="120">
+                    <symbol id="test-use">
+                      <g>
+                        <circle r="50" cx="60" cy="60" fill="orangered"></circle>
+                        <text x="60" y="50%" dy=".3em" text-anchor="middle" fill="#FFF">Symbol</text>
+                      </g>
+                    </symbol>
+                    <g>
+                      <circle r="50" cx="60" cy="60" fill="skyblue"></circle>
+                      <text x="60" y="50%" dy=".3em" text-anchor="middle" fill="#FFF">Shape</text>
+                    </g>
+                    <use xlink:href="#test-use" transform="translate(150)"></use>
+              </svg>
+            </div>
+          </div>
+
+          <button id="button">Add &lt;base&gt; and clone SVG</button>
+
+          <div class="wrapper">
+            <div id="recipient" class="svg-wrapper">
+
+            </div>
+          </div>
+
+        <script>
+            var button = document.querySelector("#button");
+            var head = document.querySelector("head");
+            var oldSvg = document.querySelector("#old-svg");
+            var newSvg = oldSvg.cloneNode(true);
+
+            var recipient = document.querySelector("#recipient");
+
+            button.onclick = function(){
+              console.log("button is clicked");
+              var baseElem = document.createElement("base");
+              baseElem.setAttribute("href","/new-url/");
+
+              head.appendChild(baseElem);
+
+              recipient.appendChild(newSvg);
+            }
+        </script>
+    </body>
+</html>

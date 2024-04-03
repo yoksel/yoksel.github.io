@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №17 из статьи «Css-селекторы, часть 2»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding-top: 10px;
+  }
+P, DIV, SPAN{
+  margin: 2.5% 2%;
+  padding: 7px;
+  box-sizing: border-box;
+  border: 2px solid #CCC;
+  border-radius: 10px;
+  color: #CCC;
+  }
+P ~ DIV {
+  border-color: yellowgreen;
+  }
+</style>
+</head>
+<body>
+<div>DIV</div>
+<p>P</p>
+<div>DIV</div>
+<div>DIV</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №3 из статьи «Css-фигуры: лепесток»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+.petal:before,
+.petal:after {
+  content: "";
+  display: block;
+  }
+
+.petal {
+  position: relative;
+  width: 5em;
+  height: 5em;
+  margin: 2em 7em;
+  background: crimson;
+  border-radius: 100% 0;
+  box-shadow: -5em 5em crimson;
+}
+
+.petal:before {
+  position: absolute;
+  left: -12em;
+  top: -2em;
+  width: 5em;
+  height: 5em;
+  margin: 2em 7em;
+  background: crimson;
+  border-radius: 0 100%;
+  box-shadow: 5em 5em crimson;
+  }
+</style>
+</head>
+<body>
+<div class="petal"></div>
+</body>
+</html>

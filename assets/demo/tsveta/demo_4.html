@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Демо №4 из статьи «Цвета в Css»</title>
+
+<script src="../../live-snippet/script.js"></script>
+<link rel="stylesheet" href="../../live-snippet/styles.css" />
+<style id="demo-css">
+BODY {
+  padding: 20px;
+  background: white;
+  font-size: 1.2em;
+  }
+DIV {
+  position: relative;
+  clear: both;
+  width: 5em;
+  height: 1.5em;
+  margin: .2em auto;
+  border-radius: .3em;
+  }
+DIV:before,
+DIV:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5em;
+  height: 1.5em;
+  border-radius: .3em;
+ }
+DIV:before {
+  left: -5.2em;
+  }
+DIV:after {
+  right: -5.2em;
+  }
+.red {
+  background: hsl( 0, 100%, 50% );
+  }
+  .red:before {
+    background: hsl( 0, 100%, 75% );
+    }
+  .red:after {
+    background: hsl( 0, 50%, 50% );
+    }
+.yellow {
+  background: hsl( 60, 100%, 50% );
+  }
+  .yellow:before {
+    background: hsl( 60, 100%, 75% );
+    }
+  .yellow:after {
+    background: hsl( 60, 50%, 50% );
+    }
+.green {
+  background: hsl( 120, 100%, 50% );
+  }
+  .green:before {
+    background: hsl( 120, 100%, 75% );
+    }
+  .green:after {
+    background: hsl( 120, 50%, 50% );
+    }
+.cyan {
+  background: hsl( 180, 100%, 50% );
+  }
+  .cyan:before {
+    background: hsl( 180, 100%, 75% );
+    }
+  .cyan:after {
+    background: hsl( 180, 50%, 50% );
+    }
+.blue {
+  background: hsl( 240, 100%, 50% );
+  }
+  .blue:before {
+    background: hsl( 240, 100%, 75% );
+    }
+  .blue:after {
+    background: hsl( 240, 50%, 50% );
+    }
+.violet {
+  background: hsl( 300, 100%, 50% );
+  }
+.violet:before {
+  background: hsl( 300, 100%, 75% );
+  }
+.violet:after {
+  background: hsl( 300, 50%, 50% );
+  }
+</style>
+</head>
+<body>
+<div class="red"> </div>
+<div class="yellow"></div>
+<div class="green"></div>
+<div class="cyan"></div>
+<div class="blue"></div>
+<div class="violet"></div>
+</body>
+</html>
