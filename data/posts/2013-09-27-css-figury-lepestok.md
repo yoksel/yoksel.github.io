@@ -3,7 +3,7 @@ title: 'Css-фигуры: лепесток'
 
 tags: [experiments, box-shadow, draw-on-css]
 
-desc: 'Из одного div с помощью border-radius легко можно сделать лепесток.'
+description: 'Из одного div с помощью border-radius легко можно сделать лепесток.'
 ---
 Из одного <code>div</code> с помощью <code>border-radius</code> легко можно сделать лепесток:<!--more-->
 

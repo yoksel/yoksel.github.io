@@ -34,13 +34,13 @@ const WidgetTitle = ({ children, hideTitle }: WidgetTitleProp) => {
   return <h3 className={styles['widget__title']}>{children}</h3>;
 };
 
-const Description = ({ desc }: { desc?: string }) => {
-  if (!desc) return null;
+const Description = ({ text }: { text?: string }) => {
+  if (!text) return null;
 
   return (
     <div
       className={styles['widget__desc']}
-      dangerouslySetInnerHTML={{ __html: desc }}
+      dangerouslySetInnerHTML={{ __html: text }}
     />
   );
 };
@@ -84,7 +84,7 @@ const Widget = ({ id, title, items, slug, hideTitle, footerContent, layout }: Wi
         )}
       >
         {items?.map((item) => {
-          const { href, desc, stars, event } = item;
+          const { href, description, stars, event } = item;
           const isCurrent = slug && href.endsWith(slugWithSlash);
           const text = 'text' in item ? item.text : undefined;
           const imageSrc = 'imageSrc' in item ? item.imageSrc : undefined;
@@ -118,7 +118,7 @@ const Widget = ({ id, title, items, slug, hideTitle, footerContent, layout }: Wi
                 </span>
                 <Stars>{stars}</Stars>
               </OptionalLink>
-              <Description desc={desc} />
+              <Description text={description} />
               {event && <Event event={event} />}
             </li>
           );

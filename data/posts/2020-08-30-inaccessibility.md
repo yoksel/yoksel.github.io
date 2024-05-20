@@ -5,7 +5,7 @@ image: //css.yoksel.ru/assets/img/articles/inaccessibility/preview.png
 
 tags: [a11y]
 
-desc: Как скринридеры видят сайты и что они могут там не найти, если страница свёрстана плохо
+description: Как скринридеры видят сайты и что они могут там не найти, если страница свёрстана плохо
 
 links:
 - href: https://www.nvaccess.org/
@@ -28,7 +28,7 @@ links:
   text: Генератор HTML-дерева
 - href: https://weblind.ru/
   text: Веблайнд
-  desc: Рекомендации по разработке сайтов для людей с нарушениями зрения
+  description: Рекомендации по разработке сайтов для людей с нарушениями зрения
 - href: https://web-standards.ru/articles/tags/a11y/
   text: Статьи про доступность в блоге Веб-стандартов
 - href: https://habr.com/ru/company/yandex/blog/515460/

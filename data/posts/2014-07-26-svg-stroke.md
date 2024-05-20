@@ -4,7 +4,7 @@ title: Странности обводки в SVG
 tags: [svg]
 
 image: //img-fotki.yandex.ru/get/6741/5091629.a1/0_84606_4e6f483e_orig
-desc: Веселые приключения SVG-свойства stroke-width, а также несколько странный способ сделать кроссбраузерную анимацию масок.
+description: Веселые приключения SVG-свойства stroke-width, а также несколько странный способ сделать кроссбраузерную анимацию масок.
 
 links:
 - href: http://www.w3.org/TR/SVG/masking.html

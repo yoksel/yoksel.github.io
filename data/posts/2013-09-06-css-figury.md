@@ -3,13 +3,13 @@ title: CSS-фигуры
 
 tags: [borders, box-shadow, pseudo-elements, draw-on-css]
 
-desc: Фигуры с помощью CSS — тема богатая и интересная. Помимо базовых фигур, используя тени и псевдоэлементы можно сделать много всякого другого, причем некоторые фигуры можно сделать двумя и более способами.
+description: Фигуры с помощью CSS — тема богатая и интересная. Помимо базовых фигур, используя тени и псевдоэлементы можно сделать много всякого другого, причем некоторые фигуры можно сделать двумя и более способами.
 
 links:
 - href: http://css-tricks.com/examples/ShapesOfCSS/
   text: The Shapes of CSS
 - href: http://nicolasgallagher.com/pure-css-gui-icons/demo/
-  desc: целое семейство иконок, сделанных на чистом Css
+  description: целое семейство иконок, сделанных на чистом Css
 - href: /box-shadow
   text: Box shadow
 - href: /transform

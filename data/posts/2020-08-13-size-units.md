@@ -5,7 +5,7 @@ image: //css.yoksel.ru/assets/img/articles/size-units/preview.png
 
 tags: [fonts, units, text]
 
-desc: 'Абсолютные и относительные единицы измерения в CSS: от пикселей до единиц вьюпорта'
+description: 'Абсолютные и относительные единицы измерения в CSS: от пикселей до единиц вьюпорта'
 
 links:
 - href: https://www.w3.org/TR/css-values-4/#lengths
@@ -16,13 +16,13 @@ links:
   text: 'Point (typography)'
 - href: https://lists.w3.org/Archives/Public/www-style/1998Dec/0030.html
   text: 'platform-specific font size issues'
-  desc: Mailing lists, 15 Dec 1998
+  description: Mailing lists, 15 Dec 1998
 - href: https://lists.w3.org/Archives/Public/www-style/2010Jan/0058.html
   text: Making pt a non-physical unit
-  desc: Mailing lists, 6 Jan 2010
+  description: Mailing lists, 6 Jan 2010
 - href: https://lists.w3.org/Archives/Public/www-style/2010Jun/0461.html
   text: '[CSS21] Issue 149 - px vs. pt'
-  desc: Mailing lists, 16 Jun 2010
+  description: Mailing lists, 16 Jun 2010
 - href: https://www.w3.org/Style/Examples/007/units.ru.html
   text: 'em, px, pt, cm, in…'
 - href: https://meyerweb.com/eric/thoughts/2018/06/28/what-is-the-css-ch-unit/

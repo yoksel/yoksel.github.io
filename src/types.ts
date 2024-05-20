@@ -5,7 +5,7 @@ type HrefOrId = { id: string } | { href: string };
 export type PageUrl = {
   // Will use href or id if no text
   text?: string;
-  desc?: string;
+  description?: string;
   level?: number;
 } & HrefOrId;
 
@@ -57,7 +57,7 @@ type WidgetItemWithImage = {
 
 export type WidgetItem = {
   href: string;
-  desc?: string;
+  description?: string;
   excerpt?: string;
   stars?: number;
   event?: EventProps;

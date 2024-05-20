@@ -2,35 +2,35 @@
   {
     "href": "https://yoksel.github.io/grid-cheatsheet/",
     "text": "Grid Cheatsheet",
-    "desc": "Шпаргалка по&nbsp;гридам",
+    "description": "Шпаргалка по&nbsp;гридам",
     "img": "projects/grid-cheatsheet.png",
     "stars": 147
   },
   {
     "href": "https://yoksel.github.io/flex-cheatsheet/",
     "text": "Flexbox Cheatsheet",
-    "desc": "Шпаргалка по&nbsp;флексбоксам",
+    "description": "Шпаргалка по&nbsp;флексбоксам",
     "img": "projects/flex-cheatsheet.png",
     "stars": 1298
   },
   {
     "href": "https://yoksel.github.io/tema/",
     "text": "Tema",
-    "desc": "Генератор цветовых тем из CSS/SCSS/Less-переменных",
+    "description": "Генератор цветовых тем из CSS/SCSS/Less-переменных",
     "img": "projects/tema.png",
     "stars": 32
   },
   {
     "href": "https://yoksel.github.io/svg-filters/",
     "text": "SVG Filters",
-    "desc": "Конструктор SVG-фильтров",
+    "description": "Конструктор SVG-фильтров",
     "img": "projects/svg-filters.png",
     "stars": 270
   },
   {
     "href": "https://yoksel.github.io/svg-gradient-map/",
     "text": "SVG Gradient Map Filter",
-    "desc": "Конструктор фильтров c&nbsp;Gradient&nbsp;Map",
+    "description": "Конструктор фильтров c&nbsp;Gradient&nbsp;Map",
     "img": "projects/svg-gradient-map.png",
     "stars": 149
   },
@@ -43,49 +43,49 @@
   {
     "href": "https://github.com/yoksel/common-words",
     "text": "Common Words",
-    "desc": "Слова, часто используемые в&nbsp;CSS-классах",
+    "description": "Слова, часто используемые в&nbsp;CSS-классах",
     "img": "projects/common-words.png",
     "stars": 3073
   },
   {
     "href": "https://yoksel.github.io/html-tree/",
     "text": "HTML Tree",
-    "desc": "Генератор структуры документа с&nbsp;проверкой БЭМ-классов",
+    "description": "Генератор структуры документа с&nbsp;проверкой БЭМ-классов",
     "img": "projects/html-tree.png",
     "stars": 220
   },
   {
     "href": "https://github.com/yoksel/pixel-glass-js",
     "text": "Pixel Glass",
-    "desc": "Небольшой скрипт для проверки разметки на&nbsp;соответствие макету",
+    "description": "Небольшой скрипт для проверки разметки на&nbsp;соответствие макету",
     "img": "projects/pixel-glass.png",
     "stars": 154
   },
   {
     "href": "https://yoksel.github.io/handy-colors/",
     "text": "Handy Colors",
-    "desc": "Список именованных цветов с&nbsp;готовыми палитрами",
+    "description": "Список именованных цветов с&nbsp;готовыми палитрами",
     "img": "projects/handy-colors.png",
     "stars": 35
   },
   {
     "href": "https://yoksel.github.io/relative-clip-path/",
     "text": "Relative Clip Path",
-    "desc": "Конвертер абсолютных координат пути в относительные",
+    "description": "Конвертер абсолютных координат пути в относительные",
     "img": "projects/relative-clip-path.png",
     "stars": 171
   },
   {
     "href": "https://yoksel.github.io/emoji-brush/",
     "text": "Emoji Brush",
-    "desc": "Кисточка с эмоджи",
+    "description": "Кисточка с эмоджи",
     "img": "projects/emoji-brush.png",
     "stars": 32
   },
   {
     "href": "https://yoksel.github.io/snowflake/",
     "text": "Snowflake",
-    "desc": "Генератор снежинок",
+    "description": "Генератор снежинок",
     "img": "projects/snowflake.png",
     "stars": 37
   },
@@ -98,14 +98,14 @@
   {
     "href": "https://yoksel.github.io/wave-maker/",
     "text": "Wave Maker",
-    "desc": "Конструктор волн с&nbsp;использованием <a href=\"https://www.w3.org/TR/SVG2/paths.html#PathDataEllipticalArcCommands\">SVG Arcs</a>",
+    "description": "Конструктор волн с&nbsp;использованием <a href=\"https://www.w3.org/TR/SVG2/paths.html#PathDataEllipticalArcCommands\">SVG Arcs</a>",
     "img": "projects/wave-maker.png",
     "stars": 22
   },
   {
     "href": "https://yoksel.github.io/shadowPainter/",
     "text": "Shadow Painter",
-    "desc": "Рисовалка пиксельных анимаций на&nbsp;основе box-shadow",
+    "description": "Рисовалка пиксельных анимаций на&nbsp;основе box-shadow",
     "img": "projects/shadow-painter.png",
     "stars": 17
   }

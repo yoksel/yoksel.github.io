@@ -5,7 +5,7 @@ image: //css.yoksel.ru/assets/img/articles/adaptive-video-with-css-math/preview.
 
 tags: [css-math]
 
-desc: Как можно при ресайзе подогнать видео по высоте без дополнительных обёрток и JS?
+description: Как можно при ресайзе подогнать видео по высоте без дополнительных обёрток и JS?
 
 links:
 - href: https://drafts.csswg.org/css-sizing-4/#ratios

@@ -3,7 +3,7 @@ title: Полезное про анимацию и эффекты
 
 tags: [animation]
 
-desc: Видео от Lea Verou и пост от Сss-tricks c переводом.
+description: Видео от Lea Verou и пост от Сss-tricks c переводом.
 ---
 
 Видео от <a href="http://lea.verou.me/">Lea Verou</a> и пост от <a href="http://css-tricks.com">Сss-tricks</a>. <!--more-->

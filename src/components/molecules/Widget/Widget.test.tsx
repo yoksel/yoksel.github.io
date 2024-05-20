@@ -12,7 +12,7 @@ const defaultProps = {
 const widgetItemWithAll = {
   text: 'text',
   href: '#url',
-  desc: 'description',
+  description: 'description',
   stars: 4,
   event: { href: '#url', name: 'Amazing event', date: '19-12-2023' },
 };
@@ -48,7 +48,7 @@ describe('Widget', () => {
       />,
     );
 
-    expect(getByText(widgetItemWithAll.desc)).toBeInTheDocument();
+    expect(getByText(widgetItemWithAll.description)).toBeInTheDocument();
   });
 
   test('link has stars', () => {

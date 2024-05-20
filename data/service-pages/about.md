@@ -1,7 +1,7 @@
 ---
 title: О сайте
 
-desc: О сайте и об авторе
+description: О сайте и об авторе
 image: //yoksel.github.io/assets/img/me.jpeg
 
 ---

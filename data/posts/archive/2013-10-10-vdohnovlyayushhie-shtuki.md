@@ -1,7 +1,7 @@
 ---
 title: Вдохновляющие штуки
 
-desc: Пара интересных демо с Codepen.io.
+description: Пара интересных демо с Codepen.io.
 ---
 Пара интересных демо с <a href="https://codepen.io">Codepen.io</a>.<!--more-->
 

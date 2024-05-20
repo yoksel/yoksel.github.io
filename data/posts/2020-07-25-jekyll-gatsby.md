@@ -4,7 +4,7 @@ title: Jekyll → Gatsby
 image: //css.yoksel.ru/assets/img/articles/jekyll-gatsby/preview.png
 tags: [tools]
 
-desc: На днях сайт обновил движок. Последний раз это случалось в 2013-м, и тогда сайт переехал с Wordpress на Jekyll, сейчас — с Jekyll на Gatsby. Мои вопросы про Gatsby вызвали довольно оживленную дискуссию в твиттере, поэтому я решила отдельно рассказать про смену движка и опыт с Gatsby.
+description: На днях сайт обновил движок. Последний раз это случалось в 2013-м, и тогда сайт переехал с Wordpress на Jekyll, сейчас — с Jekyll на Gatsby. Мои вопросы про Gatsby вызвали довольно оживленную дискуссию в твиттере, поэтому я решила отдельно рассказать про смену движка и опыт с Gatsby.
 
 links:
 - href: https://www.gatsbyjs.org/

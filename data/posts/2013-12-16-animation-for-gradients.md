@@ -4,7 +4,7 @@ title: Анимируем CSS-градиенты
 tags: [gradients, animation, box-shadow, draw-on-css]
 
 image: //img-fotki.yandex.ru/get/9104/5091629.9a/0_7ec7a_bce9f6bd_M.png
-desc: Как анимировать градиенты если очень нужно.
+description: Как анимировать градиенты если очень нужно.
 
 links:
 - href: /box-shadow/

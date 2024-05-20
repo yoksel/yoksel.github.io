@@ -3,7 +3,7 @@ title: 'Responsive Web Design: Clever Tips and Techniques'
 
 tags: []
 
-desc: Выступление Виталия Фридмана на Яке2013.
+description: Выступление Виталия Фридмана на Яке2013.
 ---
 Искала выступление Виталия Фридмана на Яке2013, нашла вот это<!--more-->:
 

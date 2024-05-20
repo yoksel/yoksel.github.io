@@ -26,7 +26,7 @@ const ArticleLinks = ({ title, items }: ArticleLinksProps) => {
       <dt className={styles['articleLinks__title']}>{title}</dt>
 
       {filteredItems.map((item) => {
-        const { text, level, desc } = item;
+        const { text, level, description } = item;
 
         const url = ('href' in item && item.href) || ('id' in item && `#${item.id}`);
 
@@ -41,7 +41,7 @@ const ArticleLinks = ({ title, items }: ArticleLinksProps) => {
             key={uuidv4()}
           >
             <Link href={url}>{text || url}</Link>
-            {desc && <FadedText> — {desc}</FadedText>}
+            {description && <FadedText> — {description}</FadedText>}
           </dd>
         );
       })}

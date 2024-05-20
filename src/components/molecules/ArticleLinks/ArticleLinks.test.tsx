@@ -48,7 +48,7 @@ describe('ArticleLinks', () => {
         items={[
           {
             ...link,
-            desc: 'Link description',
+            description: 'Link description',
           },
         ]}
       />,

@@ -1,7 +1,7 @@
 ---
 title: Css-селекторы
 
-desc: Справочник по селекторам.
+description: Справочник по селекторам.
 tags: [selectors]
 
 links:

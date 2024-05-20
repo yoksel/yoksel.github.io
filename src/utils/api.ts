@@ -110,7 +110,7 @@ export async function getArticleBySlug({
       } else if (field === 'content') {
         filteredFields['content'] = content;
       } else if (field === 'description' && dataTyped['desc'] !== undefined) {
-        filteredFields['description'] = dataTyped['desc'];
+        filteredFields['description'] = dataTyped['description'];
       } else if (field === 'excerpt') {
         if (dataTyped['excerpt']) {
           filteredFields['excerpt'] = dataTyped['excerpt'];

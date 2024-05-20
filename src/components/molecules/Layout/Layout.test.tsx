@@ -34,7 +34,7 @@ const prevNext = {
 const widgetItem = {
   text: 'text',
   href: '#url',
-  desc: 'description',
+  description: 'description',
 };
 
 const defaultProps = {

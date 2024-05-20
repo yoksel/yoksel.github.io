@@ -3,7 +3,7 @@ title: Цветовой круг на CSS
 
 tags: [experiments]
 
-desc: На css-tricks.com опубликовали интересный способ получить цветовой круг с помощью Css. В уроке код для SASS, я попробовала сделать это простым CSS и используя меньшее количество элементов.
+description: На css-tricks.com опубликовали интересный способ получить цветовой круг с помощью Css. В уроке код для SASS, я попробовала сделать это простым CSS и используя меньшее количество элементов.
 
 links:
 - href: http://docs.webplatform.org/wiki/svg/tutorials/smarter_svg_filters

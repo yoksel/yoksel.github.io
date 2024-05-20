@@ -4,7 +4,7 @@ title: Background-blend-mode
 tags: [blend-modes, patterns]
 
 image: //img-fotki.yandex.ru/get/6728/5091629.a0/0_83425_21180cd2_orig.png
-desc: Режимы смешивания в Firefox 30 или новые приключения CSS-градиентов.
+description: Режимы смешивания в Firefox 30 или новые приключения CSS-градиентов.
 
 links:
 - href: http://www.w3.org/TR/2014/CR-compositing-1-20140220/#background-blend-mode

@@ -6,7 +6,7 @@ tags: [selectors]
 customCSS: 'specifity.css'
 
 image: //img-fotki.yandex.ru/get/9797/5091629.9a/0_7ec6f_cda36757_M.png
-desc: Все CSS-селекторы имеют свой вес, который определяет как взаимодействуют одинаковые свойства, заданные в разных местах кода одному и тому же элементу.
+description: Все CSS-селекторы имеют свой вес, который определяет как взаимодействуют одинаковые свойства, заданные в разных местах кода одному и тому же элементу.
 
 links:
 - href: http://css-tricks.com/specifics-on-css-specificity/

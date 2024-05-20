@@ -3,12 +3,12 @@ title: Transform
 
 tags: [3D, transform]
 
-desc: CSS-свойство позволяет трансформировать элементы, в том числе в трехмерном пространстве.
+description: CSS-свойство позволяет трансформировать элементы, в том числе в трехмерном пространстве.
 
 links:
 - href: https://tympanus.net/Development/CreativeLinkEffects/#cl-effect-2
   text: tympanus.net/Development/CreativeLinkEffects
-  desc: интересный пример 3D-трансформации по наведению
+  description: интересный пример 3D-трансформации по наведению
 
 ---
 <section>CSS-свойство <code>transform</code> позволяет трансформировать элементы, в том числе в трехмерном пространстве.<!--more-->

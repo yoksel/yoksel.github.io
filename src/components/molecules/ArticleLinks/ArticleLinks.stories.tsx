@@ -18,7 +18,7 @@ const linkWithDescription = {
   id: 'id',
   href: '#link-url',
   text: 'Link text',
-  desc: 'Link description',
+  description: 'Link description',
 };
 
 const linkWithLevel1 = {
@@ -26,7 +26,7 @@ const linkWithLevel1 = {
   href: '#link-url',
   text: 'Link text',
   level: 1,
-  desc: 'Link description',
+  description: 'Link description',
 };
 
 export default meta;

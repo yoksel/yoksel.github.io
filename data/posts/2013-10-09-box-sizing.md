@@ -3,7 +3,7 @@ title: Box-sizing
 
 tags: [layout]
 
-desc: Свойство box-sizing позволяет указать как ведут себя размеры блока при наличии рамок и полей.
+description: Свойство box-sizing позволяет указать как ведут себя размеры блока при наличии рамок и полей.
 
 links:
 - href: http://www.paulirish.com/2012/box-sizing-border-box-ftw/

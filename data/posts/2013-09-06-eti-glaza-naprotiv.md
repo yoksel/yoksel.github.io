@@ -3,7 +3,7 @@ title: Эти глаза напротив
 
 tags: [experiments, animation, draw-on-css]
 
-desc: Рисование на CSS с использованием градиентов и border-radius
+description: Рисование на CSS с использованием градиентов и border-radius
 ---
 
 Тени, градиенты, скругленные углы.<!--more-->

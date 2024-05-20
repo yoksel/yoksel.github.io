@@ -8,7 +8,7 @@ const widgetItemSimple = {
 
 const widgetItemWithDescription = {
   ...widgetItemSimple,
-  desc: 'description',
+  description: 'description',
 };
 
 const widgetItemWithImage = {
@@ -30,7 +30,7 @@ const widgetItemWithEvent = {
 
 const widgetItemWithAll = {
   ...widgetItemSimple,
-  desc: 'description',
+  description: 'description',
   stars: 4,
   ...widgetItemWithEvent,
 };

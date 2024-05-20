@@ -4,7 +4,7 @@ title: Border-image
 tags: [borders]
 
 image: //img-fotki.yandex.ru/get/9264/5091629.9a/0_7ec6d_c2452b04_L.png
-desc: Border-image — свойство, которое задает фоновое изображение для рамки элемента. Оно позволяет легко делать невероятные штуки, для которых раньше требовалось от 3-х до 8-ми картинок и манипуляции с разметкой.
+description: Border-image — свойство, которое задает фоновое изображение для рамки элемента. Оно позволяет легко делать невероятные штуки, для которых раньше требовалось от 3-х до 8-ми картинок и манипуляции с разметкой.
 
 links:
 - href: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Background_and_Borders/Border-image_generator
