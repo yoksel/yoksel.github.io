@@ -109,6 +109,8 @@ export async function getArticleBySlug({
         filteredFields['slug'] = slug;
       } else if (field === 'content') {
         filteredFields['content'] = content;
+      } else if (field === 'description') {
+        filteredFields['description'] = dataTyped['desc'];
       } else if (field === 'excerpt') {
         if (dataTyped['excerpt']) {
           filteredFields['excerpt'] = dataTyped['excerpt'];

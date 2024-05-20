@@ -26,6 +26,7 @@ export const getStaticProps = (async (context) => {
     slug,
     fields: [
       'title',
+      'description',
       'slug',
       'content',
       'links',
