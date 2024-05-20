@@ -12,7 +12,7 @@ import presentationsData from '../../data/meta/presentations.json';
 export const getStaticProps = (async () => {
   const article = await getArticleBySlug({
     slug: 'about',
-    fields: ['title', 'slug', 'content', 'links', 'additional_links'],
+    fields: ['title', 'description', 'slug', 'content', 'links', 'additional_links'],
     type: 'service-page',
   });
 

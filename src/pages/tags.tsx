@@ -75,7 +75,7 @@ export default function Page({
   };
 
   return (
-    <Layout article={{ title: 'Метки' }}>
+    <Layout article={{ title: 'Метки', description: 'Статьи сгруппированные по тегам' }}>
       <TagCloud
         tagsByNameWithPosts={tagsByNameWithPosts}
         currentId={tagId}
