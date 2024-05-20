@@ -27,7 +27,7 @@ const CustomHead = ({ article }: CustomHeadProps) => {
       <title>{title}</title>
       <meta
         name="description"
-        content={siteData.description}
+        content={description}
       ></meta>
       <meta charSet="utf-8" />
       <link
